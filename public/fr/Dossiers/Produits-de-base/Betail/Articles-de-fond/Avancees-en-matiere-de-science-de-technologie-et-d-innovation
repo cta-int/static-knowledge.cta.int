@@ -1,0 +1,1176 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                            
+<title>Knowledge for development</title>
+<!--<title>Avancées en matière de science, de technologie et d’innovation / Articles de fond / Bétail / Produits de base / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="L’industrie de la viande dans les pays ACP va des petits producteurs de bêtes sur pied aux grandes entreprises, des simples points d’abattage aux abattoirs sophistiqués équipés d’installations de réfrigération et de congélation. En ce qui concerne la transformation de la viande, l’éventail est tout aussi large, allant des opérations rudimentaires jusqu’aux usines modernes de transformation complexe. En matière de commercialisation, la vente de viande fraîche prédomine dans de nombreux pays AC..." /><meta name="keywords" content="La viande, connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Produits-de-base/Betail/Articles-de-fond/Avancees-en-matiere-de-science-de-technologie-et-d-innovation" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/Commodities/Livestock/Feature-articles/Advances-in-Science-Technology-and-Innovation-Relevance-for-the-ACP-Meat-Industry">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/fr">Accueil</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Produits-de-base">Produits de base</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Produits-de-base/Betail">Bétail</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Produits-de-base/Betail/Articles-de-fond">Articles de fond</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Avancées en matière d...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image" >
+																
+																			<img src="/var/knowledge/storage/images/media/images/generic-backup-images/abs-image-gen/344183-1-eng-GB/abs-image-gen_contentfront.jpg" />
+																</div>
+	
+					<div class="content-intro-text">
+						<h1>Avancées en matière de science, de technologie et d’innovation</h1>
+													<p class="author"><strong>Author:</strong>
+								Professeur Lindela R. Ndlovu, Université nationale des sciences et technologies, Zimbabwe</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							25/05/2007</p>
+																									<p class="intro">Introduction:</p>
+							<p>L’industrie de la viande dans les pays ACP va des petits producteurs de bêtes sur pied aux grandes entreprises, des simples points d’abattage aux abattoirs sophistiqués équipés d’installations de réfrigération et de congélation. En ce qui concerne la transformation de la viande, l’éventail est tout aussi large, allant des opérations rudimentaires jusqu’aux usines modernes de transformation complexe. En matière de commercialisation, la vente de viande fraîche prédomine dans de nombreux pays ACP, avec une quantité limitée de viandes transformées localement. La viande provient principalement de ruminants (bovins, moutons et chèvres) et sa qualité est étroitement liée à l’efficacité du système de production animale. Les ventes de viande de porc et de volaille sont cependant en hausse, en raison de la croissance de la production des petits exploitants (Sonaiya, 2007). L’amélioration de l’industrie de la viande des pays ACP requiert une réflexion englobant toute la chaîne de production, de la conception jusqu’à la consommation : identification et sélection des races, production, abattage, transformation – y compris la mise au point de nouveaux produits –, commercialisation et consommation.</p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/fr/layout/set/print/content/view/full/4849">Print</a>
+																				</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<p>La viande est composée de muscles comestibles, de tissus conjonctifs et de graisses associées. Elle représente une source importante de protéines de haute qualité renfermant des acides aminés essentiels. Celles-ci peuvent être utilisées pour compléter les protéines extraites de plantes auxquelles manquent souvent ces acides aminés essentiels : lysine, tryptophane, méthionine et thréonine (Bender, 1992 ; Bindraban et Rabbinge, 2004 ; Wilson et al., 2005). La surconsommation de viande a été associée à certains risques pour la santé, les acides gras en étant la cause (Pisulewski et al., 2005 ; Webb et al., 1994). </p><p>Les principales caractéristiques de la viande sont ses qualités gustatives (apparence, goût, tendreté, succulence), nutritionnelles (protéines, graisse, micronutriments et teneur en minéraux), sanitaires (absence d’agents pathogènes et autres agents de contamination) et technologiques (pouvoir de rétention d’eau, pH, contenu spécifique en protéines, contenu spécifique en lipides, tissus conjonctifs, statut antioxydant), son aptitude au stockage et son prix (Andersen et al., 2005 ; Webb, 2006). Les plus grands défis pour l’industrie de la viande ACP consistent à garantir que les produits réunissent toutes ces caractéristiques. L’exposé qui suit examinera certaines des avancées en matière de science, de technologie et d’innovation (ST&amp;I) et montrera comment les pays ACP peuvent en tirer avantage afin de faire face aux défis rencontrés par les industriels, notamment ceux ayant accès aux marchés d’exportation régionaux et internationaux.</p><a name="eztoc139985_0_1" id="eztoc139985_0_1"></a><h3>Avancées en matière de science, de technologie et d’innovation et industrie de la viande ACP, Génétique et amélioration des animaux</h3><p>La race d’un animal et son génotype contribuent à la qualité gustative de la viande (Hopkins et al., 2005) et la sélection et l’élevage constituent par conséquent des outils importants pour l’amélioration de cette caractéristique. La tendreté, l’une des qualités gustatives majeures, est contrôlée par un nombre de loci et jusqu’ici il s’est avéré difficile d’opérer une sélection pour ce caractère. Les percées en matière de biologie moléculaire et de technologies génétiques rendent possible l’utilisation de la sélection assistée par marqueurs pour maîtriser de telles caractéristiques, qui sont contrôlées par ce que l’on désigne sous le nom de locus de caractères quantitatifs (Cunningham, 2005). La technologie génétique peut aussi être utilisée pour sélectionner d’autres caractéristiques qualitatives – l’apparence de la viande (sa couleur), son goût, sa succulence et sa teneur en graisse – en se basant sur la carcasse de sa progéniture. Les technologies génétiques ne sont pas communément répandues dans les pays ACP en raison du manque de compétences et de moyens technologiques ainsi qu’en raison de l’ampleur du défi que constituent l’accès aux ressources et la mise en œuvre des installations et des compétences nécessaires à la conduite de recherches innovantes dans ce domaine. Les organisations internationales, telles que l’Organisation des Nations unies pour l'alimentation et l'agriculture (FAO), pourraient s’avérer des partenaires utiles afin d’aider les pays ACP à acquérir ces compétences. Les programmes bilatéraux de recherche en coopération tels que ceux qui existent entre l’Afrique du Sud et l’Australie pour cartographier les gènes des races animales indigènes de ces pays constituent une nouvelle voie ouverte pour les pays ACP vers l’acquisition des compétences et des technologies nécessaires à l’optimisation des technologies génétiques.</p><a name="eztoc139985_0_2" id="eztoc139985_0_2"></a><h3>Nourriture et systèmes alimentaires</h3><p>La viande contient des acides gras essentiels qui ne peuvent pas être synthétisés dans le corps humain (Enser et al., 1998 ; Singh et al., 2003). Les travaux récents sur la nutrition animale ont révélé que le profil des acides gras essentiels contenus dans la viande peut être altéré par le biais de l’alimentation (Dymnicka et al., 2004 ; Givens, 2005 ; Pisulewski et al., 2005 ; Webb, 2006). Ainsi, à travers l’adoption de stratégies d’alimentation appropriées, la viande peut devenir un aliment fonctionnel. Il a été démontré que la biologie moléculaire et les technologies génétiques peuvent être utilisées afin d’introduire une enzyme qui produit les acides gras essentiels chez le bétail (Morimoto et al., 2005). Toutefois, la viande issue de l’élevage transgénique est un sujet qui préoccupe de nombreux esprits et les débats internationaux portant sur la question sont loin d’être clos.</p><p>La nourriture provenant de plantes qui contiennent du tanin donne des carcasses plus maigres, et donc de la viande plus maigre (Barry et al., 1986 ; Nyamambi et al., 2000 ; Carpenter et al., 2007). Dans les pays ACP, la plupart des légumineuses utilisées pour nourrir les animaux, telles que leucaena, niébé ou acacia, ont une forte teneur en tanin. Bien que disponibles en abondance, elles doivent être uniquement utilisées de façon limitée pour l’alimentation du bétail. Le défi consiste à accroître leur utilisation, mais ceci est rendu impossible par la faiblesse des recherches menées dans les pays ACP quant à l’effet de cette alimentation tannifère sur la qualité de la viande (Makgobatlou, 2004 ; Nyamambi, 2006 ; Vasta et al., 2007). L’accent a été porté sur la recherche des effets antinutritionnels de ces aliments et sur l’impact qu’ils peuvent avoir sur la performance des animaux vivants (Dube et al., 2001 ; Hove et al., 2001 ; Komolong et al., 2001 ; Halimani et al., 2005). Par conséquent, il n’y a pas d’efforts de recherche constants pour intégrer les légumineuses dans les régimes alimentaires et déterminer leur utilité dans l’amélioration de la qualité de la viande.</p><p>La plupart des viandes des régions ACP sont présentées sous la forme fraîche et il est important qu’elles soient conservées dans cet état le plus longtemps possible. La durée de conservation (ou maintien de la qualité de la viande) est déterminée par le degré d’oxydation de ses lipides et protéines musculaires. Ces réactions oxydatives ainsi que l’altération microbienne sont les facteurs les plus importants pour déterminer la durée de conservation de la viande : ce sont eux qui donnent à la viande un goût rance et une couleur inacceptable (Andersen et al., 2005). La complémentation diététique des animaux en vitamine E réduit considérablement l’oxydation des lipides (Webb, 2006). Les nourritures à teneur élevée en tanin ont aussi la capacité de réduire largement la vitesse de détérioration de la viande (Carpenter et al., 2007 ; Vasta et al., 2007). Aucun effort concerté n’a été cependant mené pour tirer avantage de cette évolution des connaissances scientifiques afin d’améliorer les systèmes de production animale et de prolonger la durée de conservation de la viande fraîche.</p><a name="eztoc139985_0_3" id="eztoc139985_0_3"></a><h3>Pré-abattage et abattage </h3><p>Les progrès concernant la biologie et la physiologie des muscles ont démontré la relation déterminante entre stress et qualité de la viande (Terlouw, 2005). Le stress durant la période qui précède l’abattage et les procédures d’abattage elles-mêmes influent sur la dureté de la viande qui est liée au pH du muscle. Le pH idéal de la viande est approximativement compris entre 5,2 et 5,7 ; en fonction des races et du type de muscle, des pH plus élevés ont tendance à donner une viande sombre, dure et de mauvaise conservation. Un déclin rapide du pH entraîne un durcissement de la viande ; ceci peut être atténué en réduisant au maximum les conditions de stress telles que les combats et les techniques d’étourdissement mal maîtrisées qui conduisent l’animal à se débattre, ainsi qu’en évitant de surcharger les zones d’abattage. Dans de nombreux pays ACP, la prise en charge du pré-abattage des animaux – les longues distances à parcourir, les méthodes lentes de mise à mort et le surpeuplement dans les zones d’abattage – prédispose fortement l’animal au stress. Un traitement respectueux des animaux avant et pendant l’abattage est nécessaire pour améliorer la qualité de la viande proposée à la vente. Il est par ailleurs indispensable de faire un meilleur usage des progrès en biologie musculaire afin de réduire le stress des animaux avant l’abattage.</p><p>Dans la plupart des pays ACP, les installations destinées à l’abattage sont généralement très rudimentaires et nécessitent d’être rénovées afin de satisfaire aux standards minimaux de sécurité et d’hygiène alimentaires tels qu’ils sont stipulés dans le Codex Alimentarius. Les améliorations techniques des équipements et des machines, la conception des sites et leur aménagement, tout comme la construction des structures, ne sont pas accessibles aux petites boucheries compte tenu des coûts élevés et du besoin de conseil technique adapté. Les scientifiques nationaux, les technologues et les ingénieurs alimentaires doivent améliorer leur capacité technique et fournir assistance aux producteurs et aux transformateurs de viande, en vue de répondre aux exigences de conception et de mise en œuvre de structures conformes aux normes sanitaires et phytosanitaires permettant l’échange local et international de viande saine.</p><a name="eztoc139985_0_4" id="eztoc139985_0_4"></a><h3>Traçabilité et sécurité sanitaire des aliments</h3><p>Le déclenchement d’épidémies majeures (par exemple l’ESB , la fièvre aphteuse, la grippe aviaire) durant ces dernières années a accru les pressions exercées sur l’industrie de la viande pour qu’elle se conforme aux critères nouveaux et plus stricts en ce qui concerne la santé des animaux et le contrôle des maladies, l’usage de médicaments et d’aliments, la composition chimique et microbiologique de la viande et des autres produits carnés. Tous ces défis sont lancés à des pays ACP où, en l’état actuel, le contrôle, voire l’éradication, de certaines maladies telles que la fièvre aphteuse seraient impossibles sans le recours aux médicaments (Banque mondiale, 2005) et où l’infrastructure des laboratoires a besoin d’être améliorée pour permettre de prendre en charge le contrôle de la conformité aux critères internationaux de qualité des intrants et des produits. Au-delà du respect de ces règles de sécurité alimentaire, les questions concernant le bien-être des animaux ont désormais pris une place prépondérante dans les préoccupations de certains consommateurs qui veulent connaître les conditions de traitement des animaux avant l’abattage. La place de ces considérations varie selon les pays, où la question a plus ou moins d’importance.</p><p>Ces préoccupations ont cependant rendu plus impérieuse la nécessité d’assurer la traçabilité des produits animaux qui vont de la ferme jusque dans les assiettes, ceci afin d’entrer en conformité avec les normes établies au niveau international et éviter ainsi la destruction de viandes d’origine ACP aux points d’importation ou la perte de marchés importants. Les progrès des technologies de l’information et de la communication offrent des possibilités de transparence sans précédent pour le traçage, l’identification et les systèmes de rapport de suivi (Andersen et al., 2005). Les coûts d’application des systèmes de traçabilité et de sécurité alimentaire du type HACCP (méthode d’analyse des dangers et de maîtrise des points critiques) dépassent cependant les moyens de la plupart des producteurs ACP. Des systèmes manuels qui permettent d’identifier le pays et la ferme d’origine, l’origine génétique de l’animal, son régime alimentaire et médicamenteux, les coordonnées du producteur et du négociant et les conditions dans lesquelles la viande a été prise en charge et stockée pourraient être en revanche instaurés à faible coût. Surmonter les défis en parvenant à satisfaire complètement aux normes et à fournir des rapports de suivi standards nécessite l’intervention de scientifiques et d’ingénieurs, d’une main-d’œuvre compétente, ainsi que la sensibilisation des producteurs et des fabricants, la mise en place d’une législation et la création de laboratoires certifiés.</p><a name="eztoc139985_0_5" id="eztoc139985_0_5"></a><h3>Conclusion</h3><p>Les avancées de la science, de la technologie et de l’innovation concernant la reproduction des animaux, la sélection et l’élevage, les aliments et les systèmes alimentaires, la biologie moléculaire et musculaire, la technologie génétique, les équipements de production et de transformation, la conception et la construction des installations et les technologies de l’information et de la communication fournissent une base permettant à l’industrie de la viande ACP de répondre aux inquiétudes et de commercialiser une viande et des produits carnés de qualité. La communauté des scientifiques et des ingénieurs ACP doit cependant développer une base de compétences, mener à bien des recherches pertinentes et mettre en œuvre des solutions techniques répondant aux attentes des producteurs et des transformateurs de viande – et plus particulièrement à celles des plus modestes d’entre eux – en vue de les aider à devenir compétitifs sur les marchés locaux, régionaux et internationaux. La communauté des chercheurs doit aussi se mobiliser, se concerter avec les responsables politiques, leur faire saisir la nature des défis posés par l’industrie de la transformation de la viande, faire pression pour obtenir les infrastructures et les compétences nécessaires à la mise en place des laboratoires. Les partenariats entre le secteur public et le secteur privé, comme les collaborations régionales et internationales, sont une occasion supplémentaire d’espérer que la communauté de la recherche ACP pourra pourvoir aux besoins de la filière viande.</p><a name="eztoc139985_1" id="eztoc139985_1"></a><h2>Références</h2><p>Andersen H. J., Oksbjerg N., Therkildsen M., 2005. Potential quality control tools in the production of fresh pork, beef and lamb demanded by the European Society. Livestock Production Science, 94 : 105-124.</p><p>Banque mondiale, 2005. <a href="http://www.oecd.org/dataoecd/41/46/34410813.pdf" target="_blank">Food Safety and Agricultural Health Standards: Opportunities and Challenges for Developing Country Exports</a>.</p><p>Barry T. N., Allsop T., Kedekopp C., 1986. The role of condensed tannins in the nutritional value of Lotuc pendiculatus for sheep. 5. Effects on the endocrine system and on adipose tissue metabolism. The British Journal of Nutrition, 56 : 607-614.</p><p>
+ Bender A., 1992. Meat and meat products in human nutrition in developing countries. Food and Nutrition Paper n° 53. FAO, Rome, Italie.<br />
+ Bindraban P. S., Rabbinge R., 2004. Technologies that can make a difference: Enhancing Agricultural Productivity in Africa. InterAcademy of Sciences, Washington, États-Unis.<br /> </p><p>Carpenter R., O’Grady M. N., O’Callaghan Y. C., O’Brien N. M., Kerry J. P., 2007. Evaluation of the antioxidant potential of grape seed and bearberry extracts in raw and cooked pork. Meat Science, 76 : 604-610.</p><p>Cunningham E. P., 2005. Gene-based Technologies for Livestock Industries in the 3rd Millenium. In : H. P. S. Makkar et G. J. Viljoen (éditeurs). Applications of gene-based Technologies for Improving Animal Production and Health in Developing Countries. Springer, Dordrecht, Pays-Bas.</p><p>Dube J. S., Reed J. D., Ndlovu L. R., 2001. Proanthocyanidins and related phenolics in acacia leaves of Southern Africa. Animal Feed Science and Technology, 91 : 59-67.</p><p>Dymnicka M., Klupczynski J., Lozicki A., Micinski J., Strzetelski J., 2004. Polyunsaturated fatty acids in M-longissimus thoracis of fattening bulls fed silage of grass or maize. Journal of Animal and Feed Sciences, 13 : 101-104.</p><p>Enser M., Hallet K. G., Hewett B., Fursey G. A., Wood J. D., 1998. Fatty acid content and composition of UK beef and lamb muscle in relation to production system and implications for human nutrition. Meat Science, 49 : 329-341.</p><p>Givens D. I., 2005. The role of animal nutrition in improving the nutritive value of animal-derived foods in relation to chronic disease. Proceedings of the Nutrition Society, 64 : 395-402.</p><p>Halimani T. E., Ndlovu L. R., Dzama K., Chimonyo M., Miller B. G., 2005. Metabolic response of pigs supplemented with incremental levels of leguminous Acacia karroo, Acacia nilotica and Colophospermum mopane leaf meals. Animal Science, 81 : 39-45.</p><p>Hopkins D. L., Hegarty R. S., Farrell T. C., 2005. Relationship between sire estimated breeding values and the meat and eating quality of meat from their progeny grown on two planes of nutrition. Australian Journal of Experimental Agriculture, 45 : 525-533.</p><p>Hove L., Topps J. H., Sibanda S., Ndlovu L. R., 2001. Nutrient intake and utilization by goats fed dried leaves of the shrub legumes Acacia angustissima, Calliandra calothyrsus and Leucaena leucocephala as supplements to native pasture. Animal Feed Science and Technology, 91 : 95-106.</p><p>Komolong M. K., Barber D. G., McNeill D. M., 2001. Post-ruminal protein supply and N retention of weaner sheep fed on a basal diet of Lucerne hay (Medicago sativa) with increasing levels of quebracho tannins. Animal Feed Science and Technology, 92 : 59-72.</p><p>Makgobatlou M. G., 2004. Effects of tannins at finisher stage on fat content and broiler chicken carcass characteristics. Thèse, Université de Limpopo, Afrique du Sud, 72 p.</p><p>Morimoto K. C., Van Eenennaam A.L., DePeters E. J., Medrano J. F., 2005. Endogenous production of n-3 and n-6 fatty acids in mammalian cells. Journal of Dairy Science, 88 : 1142-1146.</p><p>Nyamambi B., 2006. The effects of level and type of sorghum proanthocyanidins on the physiology and metabolism of broiler chicken. Thèse, Université du Zimbabwe, 360 p.</p><p>Nyamambi B., Ndlovu L. R., Read J. S., Reed J. D., 2000. The effects of sorghum proanthocyanidins on digestive enzyme activity in vitro and in the digestive tract of chicken. Journal of Science of Food and Agriculture, 80 : 2223-2231.</p><p>Pisulewski P. M., Franczyk M., Kostogrys R. B., 2005. Health–related effects of nutritionally modified foods of animal origin. Journal of Animal and Feed Science, 14 : 7-85.</p><p>Singh P. N., Sabate J., Fraser G. E., 2003. Does low meat consumption increase life expectancy in humans? American Journal of Clinical Nutrition, 78 : 526S-532S.</p><p>Sonaiya E. P., 2007. Family poultry, food security and the impact of highly pathogenic avian influenza (HPAI). World’s Poultry Science Journal, 63 : 132-138.</p><p>Terlouw C., 2005. Stress reactions at slaughter and meat quality in pigs: genetic background and prior experience. A review of recent findings. Livestock Production Science, 94 : 125-135.</p><p>Union africaine, 2006. <a href="http://www.africa-union.org" target="_blank">An African Position on Genetically Modified Organisms in Agriculture</a>. Conférence des ministres de l’Agriculture de l’Union africaine, Libreville, Gabon, 27 novembre - 1er décembre 2006.</p><p>Vasta V., Pennisi P., Lanza M., Barbagallo D., Bella M., Priolo A., 2007. Intramuscular fatty acid composition of lambs given a tanniniferous diet with or without polyethylene glycol supplementation. Meat Science, 76 : 739-745.</p><p>Wachira A. M., Sinclair L. A., Wilkinson R. G., Enser M., Wood J. D., Fisher A.V., 2002. Effects of dietary fat source and breed on the carcass composition, n-3 polyunsaturated fatty acid and conjugated linoleic acid content of sheep meat and adipose tissue. British Journal of Nutrition, 88 : 697-709.</p><p>Webb E. C., 2006. Physiological limits to growth manipulation and the related effects on meat quality.</p><p>Webb E. C., Casey N. H., Van Niekerk W. A., 1994. Fatty acids in the subcutaneous adipose tissue of intensively fed SA Mutton Merino and Dorper Wethers. Meat Science, 38 : 123-131.</p><p>Wilson T., Pearson A., Bradbear N., Jayasuriya A., Laswai H., Mtenga L., Richards S., Smith R., 2005. Livestock products – valuable and more valuable. In : E. Owen, A. Kitalyi, N. Jayasuriya et T. Smith (éditeurs). Livestock and wealth Creation. Nottingham University Press, Nottingham, Grande-Bretagne.</p>
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+				
+
+		<strong class="date_small">25/05/2007</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+				
+<div id="column-right">
+			
+										<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/fr/Dossiers/Produits-de-base/Betail">Bétail</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+		 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":743,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

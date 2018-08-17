@@ -1,0 +1,1387 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Résilience aux changements climatiques / S&amp;T et défis agricoles / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Une traduction française de ce dossier sera bientôt disponible"/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/20" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/S-T-Issues/Climate-change/Related-developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles">S&T et défis agricoles</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">Résilience aux change...</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				<p>Une traduction française de ce dossier sera bientôt disponible</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Gestion-integree-des-zones-cotieres-enseignements-tires-en-matiere-de-renforcement-des-capacites-et-de-bonne-gouvernance" title="Gestion intégrée des zones côtières : enseignements tirés en matière de renforcement des capacités et de bonne gouvernance   " alt="link">Gestion intégrée des zones côtières : enseignements tirés en matière de renforcement des capacités et de bonne gouvernance   </a></h2>
+
+	
+					<p>Ce numéro publié par START International (<i>Global Change System for Analysis, Research and Training</i>) explore les connaissances dominantes sur les interactions entre la gestion des zones côtières et leur adaptation, en mettant particulièrement l’accent sur le cadre de gestion intégrée des zones côtières en vue de promouvoir la santé des systèmes écologiques côtiers et marins. La gestion intégrée des zones côtières offre un cadre permettant de gérer durablement ces zones en facilitant l’intégration spatiale et sectorielle, et en assurant une meilleure coordination des activités dans l’espace côtier. &nbsp;&nbsp;(<a href="http://start.org/publications/integrated-coastal-management-lessons-in-capacity-building-good-governance-for-coastal-adaptation" target="_self">START International</a>, 19/02/2014) &nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Gestion-integree-des-zones-cotieres-enseignements-tires-en-matiere-de-renforcement-des-capacites-et-de-bonne-gouvernance">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-rapport-du-GIEC-sur-les-changements-climatiques-2014-pointe-un-risque-croissant-pour-les-cultures" title="Le rapport du GIEC sur les changements climatiques 2014 pointe un risque croissant pour les cultures   " alt="link">Le rapport du GIEC sur les changements climatiques 2014 pointe un risque croissant pour les cultures   </a></h2>
+
+	
+					<p>Le Groupe d’experts intergouvernemental sur l’évolution du climat (GIEC) a publié son cinquième rapport d’évaluation (AR5) le 31 mars 2014. Les experts du GIEC ont révisé leurs estimations, faisant apparaître des pertes considérables en raison d’une hausse des températures de seulement deux degrés Celsius dans les régions productrices de denrées alimentaires. Dans les rapports précédents, on pensait que seule une hausse de trois à quatre degrés Celsius pouvait avoir un impact significatif sur la production agricole. La modification des estimations communiquées par les experts sur la manière dont le changement climatique affectera l’agriculture constitue l’un des points majeurs du rapport. Ce cinquième rapport d’évaluation souligne que la production de céréales (maïs, blé, riz) pourrait commencer à diminuer d’ici 2030 et baisser de 2 % par décennie (le changement climatique semble déjà affecter les cultures, mais cela a jusqu’à présent été compensé par l’amélioration des rendements agricoles). Les sections du rapport consacrées à l’agriculture sont également résumées sur le blog Agricultural Biodiversity. &nbsp;<a href="http://www.technologyreview.com/news/525891/un-climate-report-warns-of-increased-risk-to-crops/" target="_self">http://www.technologyreview.com/news/525891/un-climate-report-warns-of-increased-risk-to-crops/</a>&nbsp;&nbsp;<a href="http://agro.biodiver.se/2014/04/that-ipcc-report-in-3-handy-diagrams/" target="_self">http://agro.biodiver.se/2014/04/that-ipcc-report-in-3-handy-diagrams/</a>&nbsp;&nbsp;(<i>MIT Technology Review</i> and Agrobiodiverse, 31/03/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-rapport-du-GIEC-sur-les-changements-climatiques-2014-pointe-un-risque-croissant-pour-les-cultures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-et-capacite-d-adaptation-des-systemes-agricoles-mesures-de-soutien-a-l-adaptation" title="Évolution et capacité d’adaptation des systèmes agricoles : mesures de soutien à l’adaptation  " alt="link">Évolution et capacité d’adaptation des systèmes agricoles : mesures de soutien à l’adaptation  </a></h2>
+
+	
+					<p>Jami Dixon et ses collègues de l’Ecole des sciences de la Terre et de l’Environnement (Université de Leeds, Royaume-Uni) examinent dans quelle mesure les tendances (climatiques et économiques) historiques ont influencé les capacités d’adaptation des systèmes agricoles en Ouganda. En comparant deux systèmes agricoles, ils notent trois conclusions majeures : 1) des tendances similaires dans l’évolution des systèmes agricoles ont eu différents impacts sur la diversité de ces systèmes; 2) ces tendances ont contribué à l’érosion des institutions sociales et culturelles informelles, mais aussi à accentuer la dépendance vis-à-vis des institutions formelles; 3) il faut concilier au mieux les composantes de la capacité d’adaptation au niveau des exploitations agricoles, ce qui influe sur la capacité d’adaptation des systèmes agricoles. Afin d’identifier les effets réels des changements climatiques futurs et de leur variabilité, les auteurs soulignent l’importance de reconnaître la nature dynamique de l’adaptation. En réalité, les domaines identifiés en vue d’un soutien accru à l’adaptation comprennent : l’abandon des approches uniques, l’identification et l’intégration de méthodes modernes d’agriculture plus appropriées, le développement d’institutions inclusives (formelles et informelles) et une compréhension plus nuancée du rôle et du processus décisionnel des acteurs externes les plus influents. Il convient d’approfondir les recherches afin de mieux comprendre les avantages et les inconvénients au niveau des exploitations, ainsi que les conséquences qui en découlent à l’échelle spatiale et temporelle. &nbsp;&nbsp;<a href="http://www.mdpi.com/2079-9276/3/1/182" target="_self">http://www.mdpi.com/2079-9276/3/1/182</a>&nbsp; &nbsp;(<i>Resources</i>, 27/02/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-et-capacite-d-adaptation-des-systemes-agricoles-mesures-de-soutien-a-l-adaptation">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Ameliorer-l-alimentation-du-betail-pour-lutter-contre-le-changement-climatique-et-l-insecurite-alimentaire" title="Améliorer l’alimentation du bétail pour lutter contre le changement climatique et l’insécurité alimentaire   " alt="link">Améliorer l’alimentation du bétail pour lutter contre le changement climatique et l’insécurité alimentaire   </a></h2>
+
+	
+					<p>Des travaux de recherche menés par l’Institut international pour l’analyse des systèmes appliqués (IIASA, Autriche) révèlent que, chez le bétail, le passage d’une alimentation à base de pâturages naturels à un régime complété par des aliments de meilleure qualité permettra de réduire les émissions de gaz à effet de serre (GES) de 23&nbsp;% d’ici 2030. Si la réduction de viande dans les régimes alimentaires est souvent considérée comme un moyen permettant de réduire les émissions de GES, l’article explique que, au cours des années à venir, il sera plus rentable pour les exploitants de mettre en place des systèmes de production mixtes – systèmes herbagers et aliments de meilleure qualité – que d’avoir recours à une production purement herbagère. Cela permettrait en effet de réduire de 23&nbsp;% les émissions liées à l’utilisation des terres au cours des deux prochaines décennies sans devoir mettre en œuvre une politique explicite en matière de lutte contre le changement climatique. D’après cette nouvelle étude, la hausse du coût des terrains et l’augmentation continue des rendements agricoles entraîneront une amélioration de l’alimentation animale. De tels régimes alimentaires sont une aubaine non seulement du point de vue de la possibilité de réduction des émissions de GES, mais aussi du point de vue de la maximisation des profits des exploitations et de la production alimentaire. &nbsp; &nbsp;<a href="http://www.iiasa.ac.at/web/home/about/news/20140225-PNAS.html" target="_self">http://www.iiasa.ac.at/web/home/about/news/20140225-PNAS.html</a>&nbsp; &nbsp;(IIASA, 25/02/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Ameliorer-l-alimentation-du-betail-pour-lutter-contre-le-changement-climatique-et-l-insecurite-alimentaire">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-des-conditions-climatiques-extremes-observees-dans-la-region-du-Sahel-en-Afrique-de-l-Ouest" title="Évolution des conditions climatiques extrêmes observées dans la région du Sahel en Afrique de l’Ouest   " alt="link">Évolution des conditions climatiques extrêmes observées dans la région du Sahel en Afrique de l’Ouest   </a></h2>
+
+	
+					<p>Ly Mouhamed et ses collègues du Centre régional AGRHYMET (Niger) ont analysé l’évolution de certaines températures extrêmes et d’indices de précipitations dans une grande partie de l’Afrique de l’Ouest. En utilisant les observations quotidiennes des précipitations et de la température disponibles au Centre régional AGRHYMET pour la période&nbsp;1960–2010, ils sont parvenus à identifier une tendance générale au réchauffement dans la région au cours de cette période, observant notamment une tendance négative dans le nombre de nuits fraîches, une fréquence accrue du nombre de journées chaudes et d’épisodes chauds. C’est le cas non seulement à l’intérieur du continent, mais aussi dans les zones côtières. Les tendances des régimes de précipitations ne sont pas aussi uniformes que celles des températures. Néanmoins, la période étudiée est caractérisée par une tendance générale à la baisse des précipitations annuelles et un nombre maximal de jours de pluie consécutifs. Sur le plan politique, les implications de ces tendances comprennent notamment l’investissement et la promotion de systèmes de production d’énergie respectueux de l’environnement à faible coût, la mise à niveau des infrastructures et des systèmes de production afin de tenir compte des risques de pertes dues aux inondations et/ou aux sécheresses et la promotion de la recherche en vue de développer des espèces végétales/animales et des cultivars/races plus tolérants à la chaleur. &nbsp; &nbsp;<a href="http://www.sciencedirect.com/science/article/pii/S2212094713000066" target="_self">http://www.sciencedirect.com/science/article/pii/S2212094713000066</a>&nbsp; &nbsp;(<i>Weather and Climate Extremes</i>, 25/08/2013)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-des-conditions-climatiques-extremes-observees-dans-la-region-du-Sahel-en-Afrique-de-l-Ouest">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-secteur-ougandais-du-cafe-veut-faconner-une-chaine-de-valeur-resistante-au-climat" title="Le secteur ougandais du café veut façonner une chaîne de valeur résistante au climat   " alt="link">Le secteur ougandais du café veut façonner une chaîne de valeur résistante au climat   </a></h2>
+
+	
+					<p>L’Institut international du développement durable (IISD, Canada), le ministère ougandais du Commerce, de l’Industrie et des Coopératives (MoTIC), l’Université Makerere (MAK) et le Climate and Development Knowledge Network (CDKN) ont travaillé en étroite collaboration pendant six mois (2013) afin de fournir une plateforme de dialogue sur la gestion des risques climatiques entre les acteurs de la chaîne de valeur du café. Les résultats de l’étude ont montré que les aléas climatiques, tels que les sécheresses, les inondations et l’évolution du régime des précipitations, affectaient l’ensemble des acteurs de la chaîne de valeur du café et à des degrés divers. Ils ont également révélé que les producteurs et les transformateurs de café étaient généralement plus vulnérables aux aléas climatiques que les négociants, les intermédiaires ou les exportateurs, compte tenu de leur diversification limitée, de leurs capacités organisationnelles insuffisantes et d’un contexte politique défavorable. À la suite de cette initiative pilote, les risques climatiques ont pour la première fois en Ouganda été intégrés aux questions liées au commerce à l’échelle ministérielle. Une note d’information à ce sujet a été publiée&nbsp;: «&nbsp;Promotion d’une approche intégrée de l’adaptation aux risques climatiques&nbsp;: enseignements tirés de la chaîne de valeur du café en Ouganda&nbsp;» («&nbsp;<i>Promoting an Integrated Approach to Climate Adaptation: Lessons from the coffee value chain in Uganda&nbsp;»</i>). &nbsp; &nbsp;<a href="http://www.iisd.org/media/press.aspx?id=270" target="_self">http://www.iisd.org/media/press.aspx?id=270</a>&nbsp; &nbsp;(IISD, 18/03/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-secteur-ougandais-du-cafe-veut-faconner-une-chaine-de-valeur-resistante-au-climat">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Tanzanie-adaptation-des-cultures-au-changement-climatique-dans-les-zones-semi-arides" title="Tanzanie : adaptation des cultures au changement climatique dans les zones semi-arides  " alt="link">Tanzanie : adaptation des cultures au changement climatique dans les zones semi-arides  </a></h2>
+
+	
+					<p>Cet article écrit par Ola T. Westengen et Anne K Brystinf de l'Université d'Oslo en Norvège présente une étude de cas sur le rôle des ressources génétiques et des systèmes semenciers dans l'adaptation aux bouleversements climatiques dans la région agroécologique semi-aride de la Tanzanie. Dans ce cas, l'adaptation des cultures nécessite l'utilisation de variétés améliorées de maïs associées aux variétés locales de maïs et de sorgho. Une étude montre que pour s’adapter aux bouleversements climatiques, les ménages bénéficiant de services de vulgarisation agricole et possédant du bétail sont plus susceptibles d'utiliser les variétés tolérantes à la sécheresse que celles qui n’en possèdent pas. Le système semencier dans la zone étudiée se compose d'éléments formels et informels. Ce sont les canaux informels qui fournissent la plus grande quantité de semences de sorgho et de maïs. La récupération des variétés améliorées de maïs est fréquente et la plupart des ménages pratiquent la sélection des semences. Une évaluation approfondie de trois catégories différentes de ressources génétiques (locales, améliorées et variétés récupérées par les agriculteurs) montre que la tolérance à la sécheresse constitue bien souvent une raison expliquant l’utilisation de variétés locales au détriment des variétés améliorées de maïs et de sorgho. &nbsp; &nbsp;&nbsp;<a href="http://www.agricultureandfoodsecurity.com/content/3/1/3/abstract" target="_self">http://www.agricultureandfoodsecurity.com/content/3/1/3/abstract</a>&nbsp; &nbsp; &nbsp;(<i>Agriculture and Food Security</i>, 01/02/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">27/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Tanzanie-adaptation-des-cultures-au-changement-climatique-dans-les-zones-semi-arides">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-du-generateur-de-conditions-meteorologiques-MarkSimGCM" title="Evolution du générateur de conditions météorologiques MarkSimGCM     " alt="link">Evolution du générateur de conditions météorologiques MarkSimGCM     </a></h2>
+
+	
+					<p>L’outil MarkSim GCM peut être utilisé pour générer des données climatiques quotidiennes (pluviométrie, températures maximales et minimales et ensoleillement) sur plusieurs années, caractéristiques des différents climats de la planète. La première version de MarkSim GCM, disponible depuis juin 2011, a été mise à jour; elle comporte désormais une interface Google Earth. Certaines nouvelles fonctionnalités ont en outre été ajoutées. Par exemple, comme auparavant, l’utilisateur peut pointer n’importe quel endroit sur la surface de la Terre et générer des données météorologiques quotidiennes pour ce point. A présent, l’utilisateur peut également représenter graphiquement des données climatiques, en termes de valeurs moyennes mensuelles de précipitations et de températures maximales et minimales. MarkSim GCM peut aussi servir à générer des données quotidiennes qui sont, dans une certaine mesure, caractéristiques des climats futurs. &nbsp; &nbsp;&nbsp;<a href="http://ccafs.cgiar.org/blog/new-updates-marksimgcm-weather-generator#.UvJUO7Qp_jI" target="_self">http://ccafs.cgiar.org/blog/new-updates-marksimgcm-weather-generator#.UvJUO7Qp_jI</a>&nbsp; &nbsp; &nbsp;(CGIAR CCAFS, 27/01/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">27/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Evolution-du-generateur-de-conditions-meteorologiques-MarkSimGCM">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/L-utilisation-du-biocharbon-pour-accroitre-la-productivite-des-sols-et-des-cultures" title="L’utilisation du biocharbon pour accroître la productivité des sols et des cultures " alt="link">L’utilisation du biocharbon pour accroître la productivité des sols et des cultures </a></h2>
+
+	
+					<p>David Filiberto (Cornell University) et John Gaunt (Carbon Consulting, Ithaca, USA) explique pourquoi il est nécessaire de clarifier davantage la question de l’optimisation de l’utilisation du biocharbon (charbon de bois) pour stimuler le rendement de différentes cultures et ainsi contribuer à l’amendement des sols. L’ajout de biochar aux sols permettrait d’améliorer leur qualité, de remplacer certains engrais issus de combustibles fossiles conventionnels et de séquestrer le carbone. Toutefois, l’utilisation du biocharbon comme amendement des sols n’est pas une mince affaire. Les auteurs laissent entendre qu’il faudrait mener des recherches plus poussées pour déterminer le taux d’application optimal du biochar. Selon eux, les stratégies axées sur les cultures à forte valeur ajoutée nécessitant un taux élevé d’application d’engrais peuvent s’avérer fructueuses pour assurer la viabilité économique de cette technique. &nbsp; &nbsp;&nbsp;<a href="http://www.mdpi.com/2077-0472/3/4/715" target="_self">http://www.mdpi.com/2077-0472/3/4/715</a>&nbsp; &nbsp; &nbsp;&nbsp;(<i>Agriculture</i>, 17/10/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/L-utilisation-du-biocharbon-pour-accroitre-la-productivite-des-sols-et-des-cultures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Trinite-et-Tobago-les-agriculteurs-directement-touches-par-les-effets-du-changement-climatique" title="Trinité-et-Tobago: les agriculteurs directement touchés par les effets du changement climatique  " alt="link">Trinité-et-Tobago: les agriculteurs directement touchés par les effets du changement climatique  </a></h2>
+
+	
+					<p>Ce bulletin d’informations d’IPS montre à quel point le changement climatique à Trinité-et-Tobago affecte les plantes racines, et dans quelle mesure les agriculteurs qui les cultivent souffrent du retard et de la rareté des pluies, bien que torrentielles lorsqu’elles arrivent. Dans de telles conditions météorologiques, les plantes racines poussent plus lentement mais les champs de niébé sont détruits. Frein au développement des insectes volants ravageurs, l’évolution globale de l’intensité des précipitations rend inutile l’usage des pesticides. La prolifération des champignons et des bactéries constitue un phénomène encore plus inquiétant. Des solutions existent pourtant : une meilleure gestion des sols peut-être une solution rapide, mais à long terme, la région devra tout faire pour collecter, préserver et améliorer le germoplasme local afin de développer des cultures plus adaptées.&nbsp;&nbsp;<a href="http://www.ipsnews.net/2013/09/trinidads-farmers-outpaced-by-climate-change/" target="_self">http://www.ipsnews.net/2013/09/trinidads-farmers-outpaced-by-climate-change/</a>&nbsp; &nbsp; &nbsp;(IPS, 23/09/2013)</p>
+							<p><span class="date">5/11/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Trinite-et-Tobago-les-agriculteurs-directement-touches-par-les-effets-du-changement-climatique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Avec-le-rechauffement-climatique-la-proliferation-des-ravageurs-nuisibles-aux-recoltes-menace-la-securite-alimentaire-dans-le-monde" title="Avec le réchauffement climatique, la prolifération des ravageurs nuisibles aux récoltes menace la sécurité alimentaire dans le monde 	  " alt="link">Avec le réchauffement climatique, la prolifération des ravageurs nuisibles aux récoltes menace la sécurité alimentaire dans le monde 	  </a></h2>
+
+	
+					<p>Une nouvelle étude révèle que le réchauffement climatique contribue à la prolifération des ravageurs nuisibles aux récoltes dans les hémisphères nord et sud à un &nbsp;rythme d’environ 3 km par an. L’étude, publiée dans la revue <i>Nature Climate Change</i> et réalisée par des chercheurs de l’Université d’Exeter et de l’Université &nbsp;d’Oxford, met en exergue un lien étroit entre la hausse des températures ces 50 dernières années et la prolifération des ravageurs nuisibles aux récoltes. &nbsp; &nbsp;<a href="http://www.eurekalert.org/pub_releases/2013-09/uoe-soc082913.php" target="_self">http://www.eurekalert.org/pub_releases/2013-09/uoe-soc082913.php</a>&nbsp; &nbsp;&nbsp;(EurekAlert, 01/09/2013)</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Avec-le-rechauffement-climatique-la-proliferation-des-ravageurs-nuisibles-aux-recoltes-menace-la-securite-alimentaire-dans-le-monde">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Approches-empiriques-et-mecanistes-de-modelisation-du-climat-comparaison" title="Approches empiriques et mécanistes de modélisation du climat : comparaison       	" alt="link">Approches empiriques et mécanistes de modélisation du climat : comparaison       	</a></h2>
+
+	
+					<p>Les dégâts éventuels causés par le changement climatique sur le rendement des cultures peuvent fortement varier en fonction du type de modèle utilisé pour faire &nbsp;ces projections, selon des travaux de recherche de l’Université de Princeton. Si les modèles empiriques cherchent à établir la relation entre les rendements observés &nbsp;et les conditions environnementales antérieures, les modèles mécanistes sont en revanche basés sur la compréhension physiologique de la croissance et de la &nbsp;reproduction des plantes en réponse à certaines conditions. Les modèles empiriques sont plus simples et nécessitent moins d’apports; ils sont essentiels pour &nbsp;étudier les effets possibles du changement climatique sur les écosystèmes, pour lesquels données et connaissances sur la plupart des espèces font cruellement &nbsp;défaut. Les modèles mécanistes sont plus communément utilisés pour étudier l’agriculture, qui fournit une multitude de données et de connaissances accumulées &nbsp;au cours de plusieurs milliers d’années de développement agricole. A l’aide de ces deux classes de modèles, les chercheurs ont la possibilité d’identifier les biais &nbsp;pour chaque classe et de les corriger. Chaque modèle possède ses forces et faiblesses qui pourraient s’avérer complémentaires, si elles étaient combinées. &nbsp; &nbsp;&nbsp;<a href="http://www.sciencedaily.com/releases/2013/08/130814144811.htm" target="_self">http://www.sciencedaily.com/releases/2013/08/130814144811.htm</a>&nbsp; &nbsp; &nbsp;(Science Daily, 14/08/2013) &nbsp; &nbsp;</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Approches-empiriques-et-mecanistes-de-modelisation-du-climat-comparaison">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Biodiversite-des-sols-un-enjeu-majeur-pour-optimiser-les-programmes-de-gestion-des-terres-face-au-changement-climatique" title="Biodiversité des sols : un enjeu majeur pour optimiser les programmes de gestion des terres face au changement climatique    " alt="link">Biodiversité des sols : un enjeu majeur pour optimiser les programmes de gestion des terres face au changement climatique    </a></h2>
+
+	
+					<p>Des travaux de recherche menés par des scientifiques de l’Université de Manchester et Lancaster montrent que le maintien d’une biodiversité saine des sols peut &nbsp;dans une large mesure contribuer à l’optimisation des programmes de gestion des terres face au changement climatique. L’étude montre qu’il existe de fortes &nbsp;interactions entre les organismes du sol et le fonctionnement des écosystèmes. C’est la première fois que les chercheurs explorent les communautés d’organismes &nbsp;du sol et la dynamique associée à la libération de l’azote nécessaire à la croissance des plantes et à la capture du carbone. Les résultats de ces recherches &nbsp;contribueront à prévoir l’impact de l’utilisation des sols et du changement climatique sur les écosystèmes, mais permettront aussi de chercher les moyens de &nbsp;réduire au maximum les changements néfastes. &nbsp; &nbsp;&nbsp;<a href="http://phys.org/news/2013-08-soil-biodiversity-crucial-future-response.html" target="_self">http://phys.org/news/2013-08-soil-biodiversity-crucial-future-response.html</a>&nbsp; &nbsp;(Phys.org, 12/08/2013) &nbsp;&nbsp;</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Biodiversite-des-sols-un-enjeu-majeur-pour-optimiser-les-programmes-de-gestion-des-terres-face-au-changement-climatique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Eco-ribbean-une-ressource-interactive-sur-le-changement-climatique-pour-les-etudiants-caribeens" title="« Eco-ribbean » : une ressource interactive sur le changement climatique pour les étudiants caribéens   " alt="link">« Eco-ribbean » : une ressource interactive sur le changement climatique pour les étudiants caribéens   </a></h2>
+
+	
+					<p>«&nbsp;Eco-ribbean&nbsp;» contient des jeux captivants, des puzzles et des simulations, ainsi que des vidéos et des photos en haute résolution qui permettent de mieux &nbsp;comprendre le changement climatique et d’enrichir nos connaissances à ce sujet, d’autant plus important qu’il touche l’ensemble des Caraïbes. Cet environnement &nbsp;multisensoriel (DVD-ROM) a été développé par le NIHERST à Trinité-et-Tobago, avec l’appui du Programme des Nations Unies pour le développement (PNUD) et le &nbsp;Conseil caribéen pour la science et la technologie (CCST). Les écoles secondaires caribéennes recevront plusieurs exemplaires d’Eco-ribbean. &nbsp;&nbsp;<a href="http://knowledge.cta.int/Dossiers/CTA-and-S-T/Developments/Eco-ribbean-A-Climate-of-Change" target="_self">http://knowledge.cta.int/Dossiers/CTA-and-S-T/Developments/Eco-ribbean-A-Climate-of-Change</a></p>
+							<p><span class="date">4/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Eco-ribbean-une-ressource-interactive-sur-le-changement-climatique-pour-les-etudiants-caribeens">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Activites-agricoles-post-recolte-dans-le-contexte-du-changement-climatique-en-Afrique-quelle-importance-pour-les-petits-exploitants-agricoles" title="Activités agricoles post-récolte dans le contexte du changement climatique en Afrique : quelle importance pour les petits exploitants agricoles ? " alt="link">Activités agricoles post-récolte dans le contexte du changement climatique en Afrique : quelle importance pour les petits exploitants agricoles ? </a></h2>
+
+	
+					<p>Cette étude menée par des chercheurs de l’Institut des ressources naturelles de l’Université de Greenwich (Royaume-Uni) et du Département des sciences du sol et de l’ingénierie &nbsp;agronomique de l’Université du Zimbabwe décrit les systèmes post-récolte de céréales utilisés en Afrique orientale et australe, et examine l’impact probable des différentes tendances du &nbsp;changement climatique sur les activités post-récolte et les résultats en termes de bien-être humain et économique. Elle a permis d’identifier les opportunités d’adaptation des systèmes &nbsp;(dont bon nombre sont déjà connues des prestataires de services post-récolte) et de mettre en relief l’important défi qui consiste à déployer les connaissances post-récolte à grande échelle. &nbsp;Afin de renforcer la capacité d’adaptation des systèmes post-récolte, il convient de prendre en compte des facteurs tels que leur omission dans les programmes de formation, les défis du &nbsp;système d’innovation, la politique différenciée en matière de dépenses agricoles pré-récolte, la prédominance du maïs dans le système alimentaire.Cet article n’est pas gratuit.(<i>Sécurité alimentaire</i>, Vol. 5, N° 3, 06/2013)</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Activites-agricoles-post-recolte-dans-le-contexte-du-changement-climatique-en-Afrique-quelle-importance-pour-les-petits-exploitants-agricoles">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Varietes-halotolerantes-de-taro-identifiees-aux-Palaos" title="Variétés halotolérantes de taro identifiées aux Palaos " alt="link">Variétés halotolérantes de taro identifiées aux Palaos </a></h2>
+
+	
+					<p>Trois variétés de taro (Dungersuul, Dirrubong, Kirang) ont été identifiées comme tolérantes au sel dans le cadre d’essais de recherche réalisés aux Palaos. Les travaux de recherche sont &nbsp;dirigés par le Dr Aurora Del Rosario, chercheuse / spécialiste en vulgarisation au sein de la <i>Palau Community Colleges Cooperative Research and Extension</i> (Koror, Palaos), en collaboration &nbsp;avec les équipes ressources génétiques, production agricole, vulgarisation et changement climatique de la Division des ressources foncières du Ministère des Palaos chargé des ressources &nbsp;naturelles, de l’environnement et du tourisme. Ces travaux de recherche comprenaient par ailleurs une évaluation de l’impact des engrais et du fumier. &nbsp;(Marianas Variety, 26/06/2013)</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Varietes-halotolerantes-de-taro-identifiees-aux-Palaos">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Modeles-climatiques-plus-de-questions-que-de-reponses" title="Modèles climatiques : plus de questions que de réponses " alt="link">Modèles climatiques : plus de questions que de réponses </a></h2>
+
+	
+					<p>Sonja Vermeulen, responsable recherche du Programme de recherche du CGIAR sur le changement climatique, l’agriculture et la sécurité alimentaire (CCFAS), examine la pertinence des modèles climatiques actuels, se fondant sur les résultats d’un récent rapport&nbsp;intitulé « <i>Implications of regional improvement in global climate models for agricultural impact research</i>&nbsp;».&nbsp; Elle explique pourquoi ces modèles ne tiennent pas compte des variabilités interannuelles et pourquoi ils sont bien plus adaptés pour certaines régions ou cultures que d’autres. Selon elle, «&nbsp;la capacité des modèles à représenter le climat s’améliore [...].&nbsp; Toutefois, si les modèles se doivent de progresser suffisamment pour permettre l’évaluation des futurs rendements des cultures avant que les jeunes scientifiques d’aujourd’hui aient pris leur retraite, nous avons besoin de percées majeures dans les approches de modélisation, et pas seulement d’améliorations continues&nbsp;».(GCIAR CCAFS, 01/07/2013)&nbsp;</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Modeles-climatiques-plus-de-questions-que-de-reponses">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Distribution-de-plantes-racines-resilientes-au-climat-a-Fidji" title="Distribution de plantes racines résilientes au climat à Fidji  " alt="link">Distribution de plantes racines résilientes au climat à Fidji  </a></h2>
+
+	
+					<p>Trois variétés halophytes de dalo (taro), manioc et kumala (patate douce) pouvant être cultivées dans des régions où les nappes phréatiques sont très riches en sel ont été introduites dans &nbsp;plusieurs villages de l’île. Le projet PPAC (Adaptation au changement climat dans le Pacifique) et le ministère fidjien de l’Agriculture distribuent ces variétés capables de survivre à des &nbsp;périodes de pluies intenses dans des zones sujettes à inondations mais les institutions sont confrontées à des difficultés d’approvisionnement en raison de la forte demande. Les régions &nbsp;dans lesquelles ces plantes racines sont distribuées disposent de systèmes de drainage peu performants construits par l’homme aggravant les effets du changement climatique. &nbsp;(Island Business, 02/07/2013)&nbsp;</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Distribution-de-plantes-racines-resilientes-au-climat-a-Fidji">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/aWhere-une-base-de-donnees-meteorologiques-ouverte-interactive-et-consultable-gratuitement" title="aWhere : une base de données météorologiques ouverte, interactive et consultable gratuitement" alt="link">aWhere : une base de données météorologiques ouverte, interactive et consultable gratuitement</a></h2>
+
+	
+					<p>La plate-forme de localisation géospatiale aWhere permet de convertir en actions des données complexes sur l’agriculture, l’environnement et la santé publique. Utilisée en mode SaaS (logiciel en tant que service), la plate-forme aWhere offre actuellement un accès gratuit (après un rapide enregistrement) à des données météorologiques. Grâce à ses possibilités interactives, elle permettra d’analyser, de visualiser et de comparer des séries de données ouvertes dans des graphiques, des cartes et des tableaux. Une banque de données exhaustive compilée à partir de diverses sources de données ouvertes (FAO, ONUSIDA, entre autres) permettra une analyse approfondie des données météorologiques. &nbsp;&nbsp;(<a href="http://www.awhere.com/en-us/awherehome?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_self">aWhere</a>, 2013)</p>
+							<p><span class="date">2/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/aWhere-une-base-de-donnees-meteorologiques-ouverte-interactive-et-consultable-gratuitement">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-climat-menace-la-securite-alimentaire-des-iles-du-Pacifique" title="Le climat menace la sécurité alimentaire des îles du Pacifique" alt="link">Le climat menace la sécurité alimentaire des îles du Pacifique</a></h2>
+
+	
+					<p>Le réchauffement de la planète devrait considérablement diminuer leurs ressources accessibles en poissons au cours des prochaines décennies. <a href="http://www.ipsnews.net/2013/05/climate-change-makes-life-tougher-for-solomon-island-farmers-2" target="_blank">L’étude</a> révèle que l’élévation de la température des eaux de surface, plus importante à l’ouest du bassin océanique, entraînerait la migration des thons vers la Polynésie à l’est. Les zones de prises s’éloigneraient ainsi des côtes mélanésiennes les thons fuient vers l’est.&nbsp; Les écosystèmes coraliens et la disponibilité des poissons récifiens sont aussi menacés. L’aquaculture et les pêcheries en eau douce sont par contre porteur d’avenir.(IRD et <i>Nature <a href="http://www.nature.com/nclimate/journal/vaop/ncurrent/full/nclimate1838.html " target="_blank">Climate Change</a></i>, 15/04/2013)</p>
+							<p><span class="date">27/06/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/Le-climat-menace-la-securite-alimentaire-des-iles-du-Pacifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/40"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements">1</a></span>
+            
+        <span class="current">2</span>
+
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/40">3</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/100">6</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/120">7</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/140">8</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques/Developpements/(offset)/240">13</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":699,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

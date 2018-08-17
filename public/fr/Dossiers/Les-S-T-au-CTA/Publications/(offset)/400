@@ -1,0 +1,1872 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Publications / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Sélection de publications et de rapports concernant la S&amp;amp;T pour le développement dans les pays ACP."/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Publications/(offset)/400" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Selected-publications">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="active">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Les-S-T-au-CTA">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Publications</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Publications</h1>
+				<p>Sélection de publications et de rapports concernant la S&amp;T pour le développement dans les pays ACP.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Savoirs-des-Femmes-medecine-traditionnelle-et-nature-Maurice-Reunion-et-Rodrigues" title="Savoirs des Femmes: médecine traditionnelle et nature (Maurice, Réunion et Rodrigues)" alt="link">Savoirs des Femmes: médecine traditionnelle et nature (Maurice, Réunion et Rodrigues)</a></h2>
+
+	
+					<p>
+(Source: UNESCO/Natural Sciences, 8 April 2011); 
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/unesco-logo/320067-1-eng-GB/unesco-logo.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Par<b> Laurence Pourchez, Unesco Publishing, Collection Savoirs locaux et autochtones, 2011.</b>La Réunion, Maurice et Rodrigues présentent des traditions médicinales uniques. Fruits d'un processus de créolisation dont les origines sont multiples, ces usages sont indissociables de la nature dans laquelle ils puisent. Ils constituent une clé privilégiée pour comprendre des sociétés qui se situent dans une dialectique constante entre tradition et modernité.Ces îles, initialement désertes, ont été peuplées à partir de la fin du XVIIe siècle par des populations originaires d'Europe, de Madagascar, d'Afrique, d'Inde et de Chine, voire de Polynésie ou d'Australie. Le dialogue entre les savoirs médicinaux propres à chacune d'elles a permis la naissance d'un savoir commun, transmis en grande partie par les femmes.Cet ouvrage met en lumière la connaissance qu'ont ces femmes des plantes médicinales et des gestes médicaux, notamment ceux qui accompagnent la naissance. Il interroge également la place des savoirs médicinaux dans ces sociétés insulaires à l’heure d’une occidentalisation croissante et de certains replis identitaires.</p>
+							<p><span class="date">4/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Savoirs-des-Femmes-medecine-traditionnelle-et-nature-Maurice-Reunion-et-Rodrigues">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/La-recherche-contribue-t-elle-a-la-reduction-de-la-pauvrete-Evaluer-l-impact-social-de-la-recherche-axee-sur-des-politiques-agricoles-appropriees" title="La recherche contribue-t-elle à la réduction de la pauvreté ? Evaluer l’impact social de la recherche axée sur des politiques agricoles appropriées" alt="link">La recherche contribue-t-elle à la réduction de la pauvreté ? Evaluer l’impact social de la recherche axée sur des politiques agricoles appropriées</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ids-logo-small/324252-1-eng-GB/IDS-logo-small.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Par: <b>Edoardo Masset, Rajendra Mulmi et Andy Sumner; document de travail de l’IDS n° 360; 2011.</b>Le présent document s’inspire de travaux effectués par d’autres auteurs. Il s’appuie sur la littérature agricole existante et suggère différent moyens d’évaluer l’impact de la recherche « axée sur les politiques ». Il examine les différents types de recherche, la littérature sur les « théories du changement » dans le contexte du développement international, les méthodes d’analyse de l’impact de la recherche axée sur les politiques, passe en revue la littérature pertinente sur l’agriculture et propose une batterie d’indicateurs susceptibles d’être utilisés pour évaluer l’impact de la recherche, exemples à l’appui.Dans le contexte actuel marqué par les répercussions de la crise financière internationale, les montants alloués au développement (et à la recherche pour le développement) risquent d’être moins importants que par le passé. Ce manque de ressources financières risque de limiter les gains associés au développement. Chaque dollar investi dans la recherche pour le développement doit, plus que jamais auparavant, compter et contribuer à la réduction durable de la pauvreté. On ne connaît pas bien, toutefois, l’impact de la recherche pour le développement sur le changement politique et la pauvreté (ni sur l’agriculture). L’évaluation de l’impact de la recherche est un domaine disciplinaire émergent.</p>
+							<p><span class="date">4/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/La-recherche-contribue-t-elle-a-la-reduction-de-la-pauvrete-Evaluer-l-impact-social-de-la-recherche-axee-sur-des-politiques-agricoles-appropriees">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Nouvel-ouvrage-sur-les-paiements-pour-services-ecosystemiques-des-systemes-agricoles" title="Nouvel ouvrage sur les paiements pour services écosystémiques des systèmes agricoles" alt="link">Nouvel ouvrage sur les paiements pour services écosystémiques des systèmes agricoles</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/cirad-logo/248279-1-eng-GB/CIRAD-Logo.gif" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<b>Ecosystem services from agriculture and agroforestry: Measurement and payment, </b>par Bruno Rapidel, Fabrice DeClerck, Jean-François Le Coq and John Beer; Earthscan Editions, 2011.Un ouvrage sur les paiements pour services écosystémiques des systèmes agricoles, présentant les difficultés méthodologiques liées à la quantification et à la commercialisation de ces services ainsi que des études de cas pratiques.
+Les systèmes agricoles ne sont plus évaluées uniquement sur la base de la nourriture qu'ils fournissent, mais aussi sur leur capacité à limiter les impacts sur l'environnement, ainsi que sur leur contribution à l'atténuation et l'adaptation au changement climatique. Ils doivent internaliser les coûts et les avantages de leur impact sur l'environnement. Les paiements pour services écosystémiques doivent encourager et promouvoir des pratiques durables par le biais d'incitations financières.Les auteurs montrent que si le principe est simple, la pratique est beaucoup plus compliquée.Les deux premiers chapitres du livre présentent des problèmes méthodologiques liés à la quantification et à la commercialisation des services écosystémiques de l'agriculture, y compris l'agroforesterie. La dernière et troisième partie présente des études de cas de mise en pratique de paiements pour services écosystémiques et des expériences en Europe centrale et en Amérique du Sud. Il tire quelques leçons du développement durable et efficace des mécanismes de compensation pour services écosystémiques rendus.(Source : CIRAD, Mars 2011)</p>
+							<p><span class="date">4/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Nouvel-ouvrage-sur-les-paiements-pour-services-ecosystemiques-des-systemes-agricoles">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Les-sols-des-Caraibes" title="Les sols des Caraïbes" alt="link">Les sols des Caraïbes</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/carib-soils-textbook/320650-1-eng-GB/carib-soils-textbook.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	N. Ahmad, CTA/Ian Randle Publishers, 2011</b>Les sols des Caraïbes constituent les ressources les plus précieuses de la région. Une utilisation appropriée des sols favorise la sécurité alimentaire, l’augmentation des exportations de produits agricoles et contribue au développement de l’habitat, du tourisme et de l’industrie, mais aussi des installations récréatives et sportives. Le livre se divise en deux parties : la première partie dresse un panorama de la situation géographique au niveau régional, identifie les caractéristiques communes des sols et leurs modes de gestion, et passe en revue les systèmes de classification d’utilisation des terres en vigueur. La seconde partie présente une série d’études pédologiques détaillées (géologie, relief, climat et végétation) menées dans chaque pays des Caraïbes. Les textes sont agrémentés de nombreuses cartes, de chiffres et de tableaux. Celle-ci propose également une section illustrée de photos de sols mettant en exergue les spécificités propres à chaque pays.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Les-sols-des-Caraibes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Propriete-intellectuelle-et-developpement-humain-tendances-actuelles-et-scenarios-futurs" title="Propriété intellectuelle et développement humain : tendances actuelles et scénarios futurs" alt="document">Propriété intellectuelle et développement humain : tendances actuelles et scénarios futurs</a></h2>
+
+	
+	
+	
+	
+					<p><b>Conseillers en propriété intellectuelle d’intérêt public (PIIPA), 2011</b>Elaboré par l’équipe internationale de professionnels de la propriété intellectuelle (PIIPA) et les partenaires du développement humain, cet ouvrage étudie l’impact social des lois et réglementations consacrées à la propriété intellectuelle sur la santé, la sécurité alimentaire, l’enseignement, les nouvelles technologies, la préservation de l’héritage bio-culturel. Il examine dans quelle mesure il est possible d’adapter les cadres de référence sur la propriété intellectuelle pour répondre aux besoins socio-économiques des pays à différents stades de développement, compte tenu des contextes locaux et des milieux culturels différents.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Propriete-intellectuelle-et-developpement-humain-tendances-actuelles-et-scenarios-futurs">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Le-monde-de-l-agriculture-biologique-2011" title="Le monde de l’agriculture biologique 2011" alt="link">Le monde de l’agriculture biologique 2011</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ifoam-logo/321574-1-eng-GB/IFOAM-logo.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<b>Fédération internationale des mouvements d’agriculture biologique (IFAOM)</b>La 12ème édition de « The World of Organic Agriculture » (<i>Le monde de l’agriculture biologique</i>) comprend un chapitre général sur l’agriculture biologique dans le monde, la situation et les tendances de développement. Cette étude présente les contributions des représentants du secteur bio ainsi que des statistiques complètes compilées par l’Institut de recherche de l’agriculture biologique (FiBL) et l’IFOAM. Elle fournit un riche matériel documentaire sur les surfaces agricoles biologiques dans le monde et propose des informations spécifiques sur l’utilisation des terres dans les systèmes de production biologique, les exploitations agricoles et les intervenants de la filière, ainsi que des données sur le marché des produits biologiques.Cet ouvrage propose également des informations sur le marché mondial de l’alimentation biologique, les avancées les plus récentes en matière de certification biologique, ainsi que des informations relatives aux normes et réglementations sur tous les continents. Il contient en outre un chapitre consacré à l’apiculture et à la normalisation volontaire, ainsi que plusieurs rapports pays : Arménie, Australie, Canada, Chili, Chine, Costa Rica, Indonésie, Kazakhstan, République de Corée, Iles du Pacifique, Suisse, Tunisie, Ouganda, Etats-Unis et Ukraine.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Le-monde-de-l-agriculture-biologique-2011">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Agriculture-alimentation-et-eau-les-nanotechnologies-au-service-des-plus-pauvres" title="Agriculture, alimentation et eau : les nanotechnologies au service des plus pauvres" alt="link">Agriculture, alimentation et eau : les nanotechnologies au service des plus pauvres</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ifpri-to-release-major-ifpri-pub-logo/319013-1-eng-GB/IFPRI-to-release-major-IFPRI-PUB-logo.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	G. Gruère, C. Narrod, L. Abbott, Institut international de recherche sur les politiques alimentaires (IFPRI), 2011</b>Ce document présente tout d’abord une évaluation rapide des technologies les plus susceptibles d’exercer un impact significatif sur la réduction de la pauvreté, à travers notamment l’augmentation de la productivité agricole et l’amélioration de la sécurité alimentaire, hydrique et nutritionnelle. Il passe en revue les principaux obstacles au déploiement et à l’adoption de ces technologies par les pauvres. Il examine enfin le rôle potentiel du CGIAR pour faciliter l’accès des pauvres aux bénéfices de ces nanotechnologies.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Agriculture-alimentation-et-eau-les-nanotechnologies-au-service-des-plus-pauvres">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Le-trace-d-un-avenir-plus-radieux-analyse-spatiale-et-politiques-d-elevage-en-faveur-des-pauvres-en-Ouganda" title="Le tracé d'un avenir plus radieux : analyse spatiale et politiques d’élevage en faveur des pauvres en Ouganda" alt="link">Le tracé d'un avenir plus radieux : analyse spatiale et politiques d’élevage en faveur des pauvres en Ouganda</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/livestock-maps-pic/321563-1-eng-GB/livestock-maps-pic.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	N. Henninger, F. Landsberg, Ministère de l’Agriculture ougandais et BoStats, FAO, ILRI 2010</b>Ce rapport, commissionné par l’Institut des ressources mondiales aux Etats-Unis, examine les relations spatiales entre la pauvreté, les systèmes de production d’élevage et l’implantation des services destinés à l’élevage à l’aide de données de cartographie comparée pour s’assurer que les petits exploitants et les zones de pauvreté extrême tirent profit des investissements publics affectés au secteur de l’élevage. Le processus de compilation des données, de production des cartes et d’analyse cartographique a montré que :
+
+
+les analystes travaillant avec le Bureau des statistiques de l’Ouganda, le ministère ougandais de l’Agriculture, de l’Elevage et de la Pêche et d’autres collaborateurs peuvent associer les cartes de pauvreté aux cartes mettant en perspective la typologie des systèmes d’élevage et leur répartition, les zones de surplus et de pénurie de lait, ainsi que les zones à fort risque de maladies, afin de mettre en évidence leurs interactions, qui ne sont pas immédiatement visibles ou observables autrement.
+
+les analystes peuvent, à partir de ces relevés cartographiques, créer de nouveaux indicateurs et de nouvelles cartes juxtaposant les niveaux de pauvreté, ainsi que les types et les niveaux de production (viande, lait).
+
+les analystes peuvent utiliser ces indicateurs et ces cartes pour sélectionner des zones géographiques correspondant à des profils de pauvreté et d’élevage spécifiques afin de cibler les populations les plus pauvres.
+
+les décideurs peuvent utiliser ces indicateurs et ces cartes pour faire des choix plus éclairés et plus transparents au moment d’allouer les investissements au secteur de l’élevage et communiquer ces priorités au public.
+
+
+Les cartes des zones de surplus et de pénurie de lait permettent de mettre en lumière des différences géographiques concernant les opportunités de marché pour les petits producteurs de lait. Ces informations peuvent aider les décideurs, les chercheurs spécialisés dans les produits laitiers et les agences de développement à mieux cibler la diffusion des connaissances, les investissements en infrastructures de marché et les prestations de services aux producteurs de lait.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Le-trace-d-un-avenir-plus-radieux-analyse-spatiale-et-politiques-d-elevage-en-faveur-des-pauvres-en-Ouganda">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Indications-geographiques-conservation-in-situ-et-savoirs-traditionnels" title="Indications géographiques, conservation in situ et savoirs traditionnels" alt="link">Indications géographiques, conservation in situ et savoirs traditionnels</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ictsd-logo/319687-1-eng-GB/ICTSD-logo.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<b>J. Larson Guerra, Note d’orientation n°3 de l’ICTSD, Novembre 2010</b>Jorge Larson Guerra, biologiste à l’Université nationale du Mexique, a rédigé une note d’orientation dans le cadre du projet du Centre international pour le commerce et le développement durable (ICTSD) sur les ressources génétiques. Après avoir introduit le concept d’indication géographique et fait valoir l’intérêt qu’il présente, l’auteur décrit le cadre juridique des indications géographiques dans les pays en développement, en mettant l’accent sur les efforts qu’ils ont déployés pour mettre en œuvre et promouvoir ce concept dans leurs domaines de compétence. Il décrit également les filières bénéficiant d’indications géographiques spécifiques et explique de manière approfondie leur rôle dans la préservation des patrimoines biologiques et les savoirs traditionnels.Cette note d’orientation contient de nombreuses références et fournit des informations actualisées sur les indications géographiques, naturellement placées au cœur des politiques de développement agricole. Selon l’auteur, « il faut mettre fin au manque d’intérêt suscité par les indications géographiques dans les débats sur la conservation in situ et la protection des savoirs traditionnels, et réfléchir sur leurs inconvénients possibles pour les pays en développement et sur leur contribution positive aux projets de conservation et de développement dans les zones rurales à travers le monde ».</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Indications-geographiques-conservation-in-situ-et-savoirs-traditionnels">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Nature-et-portee-de-la-recherche-en-Afrique-Rapport-sur-la-recherche-mondiale-de-Thomson-Reuters" title=" Nature et portée de la recherche en Afrique (Rapport sur la recherche mondiale de Thomson Reuters)" alt="link"> Nature et portée de la recherche en Afrique (Rapport sur la recherche mondiale de Thomson Reuters)</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/global-reseach-report-africa/321079-1-eng-GB/global-reseach-report-africa.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Titre </b>: <b>Nature et portée de la recherche en Afrique (Rapport sur la recherche mondiale de Thomson Reuters)</b><b>Auteurs</b>: J. Adams, C. King, D. Hook<b>Editeur</b>: Thomson Reuters, 2010Ce rapport identifie les grands traits caractéristiques de la recherche en Afrique. Si, globalement, le volume des activités de recherche sur le continent demeure relativement faible, chaque pays apporte en revanche une contribution qualitative notable et de haut niveau à la recherche scientifique.L’Afrique est confrontée a d’énormes défis et la recherche traditionnelle permettrait d’apporter des réponses à la fois efficaces et ciblées, selon les auteurs Il n’existe pas de relation clairement établie entre d’une part, la quantité et l’éventail de ressources dont dispose un pays et, d’autre part, le niveau et le volume des ses contributions à la recherche. Par exemple, le Malawi, dont le nombre d’articles scientifiques publiés annuellement est dix fois inférieur à celui du Nigeria, produit une recherche de qualité bien au-delà du niveau moyen de référence international, alors que les potentialités de la recherche scientifique au Nigeria restent en-deçà des besoins nationaux.L’avenir de la recherche en Afrique dépend dans une large mesure de la capacité des pays à promouvoir la croissance, à travers notamment le développement du leadership, la multiplication des projets d’investissement au niveau local, la création et l’appui aux infrastructures clés, en vue d’attirer et d’aider les partenaires qui, pour l’heure, disposent de ressources limitées, concluent les auteurs.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Nature-et-portee-de-la-recherche-en-Afrique-Rapport-sur-la-recherche-mondiale-de-Thomson-Reuters">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Communique-sur-la-science-les-savoirs-autochtones-et-l-innovation-implications-pour-l-agriculture-ACP-Comite-consultatif-sur-les-S-T-pour-le-developpement-agricole-et-rural-des-pays-ACP" title="Communiqué sur « la science, les savoirs autochtones et l’innovation : implications pour l’agriculture ACP » – Comité consultatif sur les S&amp;T pour le développement agricole et rural des pays ACP" alt="article">Communiqué sur « la science, les savoirs autochtones et l’innovation : implications pour l’agriculture ACP » – Comité consultatif sur les S&amp;T pour le développement agricole et rural des pays ACP</a></h2>
+
+	
+	
+	
+	
+					<p>Le Comité consultatif sur les S&amp;T pour le développement agricole et rural a publié un communiqué au terme de sa 9ème réunion sur le thème « la science, les savoirs autochtones et l’innovation : implications pour l’agriculture ACP », tenue en Afrique du Sud du 22 au 26 novembre 2010.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Communique-sur-la-science-les-savoirs-autochtones-et-l-innovation-implications-pour-l-agriculture-ACP-Comite-consultatif-sur-les-S-T-pour-le-developpement-agricole-et-rural-des-pays-ACP">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/De-Maastricht-a-Montpellier-Enseignements-tires-du-programme-de-renforcement-des-capacites-du-CTA-sur-l-analyse-des-systemes-agricoles-de-science-technologie-et-innovation-ASTI-2004-2009" title="De Maastricht à Montpellier : Enseignements tirés du programme de renforcement des capacités du CTA sur l’analyse des systèmes agricoles de science, technologie et innovation  (ASTI) (2004 – 2009)" alt="article">De Maastricht à Montpellier : Enseignements tirés du programme de renforcement des capacités du CTA sur l’analyse des systèmes agricoles de science, technologie et innovation  (ASTI) (2004 – 2009)</a></h2>
+
+	
+	
+	
+	
+					<p>Depuis 2004, le CTA a contribué au renforcement des capacités des pays ACP en matière de compréhension, d’analyse et d’amélioration des systèmes agricoles de science, technologie et innovation (ASTI). Le Centre a apporté son soutien, à travers l’approche basée sur les systèmes d’innovation, à la mise en œuvre de nombreuses études de cas ASTI axées sur un large éventail de produits de base agricoles d’importance pour les pays ACP. Parmi les critères pris en compte pour le choix de ces produits, citons notamment leur contribution à la sécurité alimentaire, les recettes d’exportation, la diversification des exportations ou la menace émergente de la perte de l’accès préférentiel des exportations.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/De-Maastricht-a-Montpellier-Enseignements-tires-du-programme-de-renforcement-des-capacites-du-CTA-sur-l-analyse-des-systemes-agricoles-de-science-technologie-et-innovation-ASTI-2004-2009">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Valider-les-connaissances-de-la-medicine-traditionnelle-valoriser-les-ressources-autochtones" title="Valider les connaissances de la médicine traditionnelle : valoriser les ressources autochtones" alt="article">Valider les connaissances de la médicine traditionnelle : valoriser les ressources autochtones</a></h2>
+
+	
+	
+	
+	
+					<p>Prof. Ermias Dagne affirme que les savoirs autochtones fondés sur l’utilisation des ressources biologiques endémiques peuvent effectivement servir de base pour la recherche scientifique moderne et générer de nouvelles découvertes démontrant des résultats prometteurs, comme c’est le cas pour le café et le coca cola. Cet article présente une étude scientifique menée sur six espèces importantes de plantes ou composés naturels utilisés en médecine traditionnelle en Ethiopie. L’auteur présente les diverses utilisations traditionnelles du café, du khat, du civettone, du « Kebericho » (<i>Echinops kebericho</i>), de la « Dingetegna » (<i>Taverniera abyssinica</i>) et du cumin noir (<i>Nigella sativa</i>). Il décrit le principal composé actif et donne la structure moléculaire de chacun de ces produits naturels, puis présente un résumé des utilisations traditionnelles et des maladies courantes que l’on peut soigner grâce à ces plantes. En outre, il met en avant les progrès scientifiques réalisés à partir des composés naturels et leur utilisation dans les applications médicales modernes, mais aussi commerciales. Ce document a été présenté lors de la 9ème réunion du Comité consultatif sur les S&amp;T pour le développement agricole et rural, qui s’est tenu en Afrique du Sud du 22 au 26 novembre 2010.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="article" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Valider-les-connaissances-de-la-medicine-traditionnelle-valoriser-les-ressources-autochtones">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Democratiser-la-recherche-agricole-pour-la-souverainete-alimentaire-en-Afrique-de-l-Ouest" title="Démocratiser la recherche agricole pour la souveraineté alimentaire en Afrique de l’Ouest" alt="link">Démocratiser la recherche agricole pour la souveraineté alimentaire en Afrique de l’Ouest</a></h2>
+
+	
+					<p><b>Michel Pimbert, Boukary Barry, Anne Berson, Khanh Tran-Thanh (IIED, CNOP, IRPAD, Kene Conseils, Centre Djoliba, URTEL), Octobre 2010.</b>Ce livre multimédia relate une initiative qui s’est déroulée en Afrique de l’Ouest afin d’organiser des espaces de discussions entre producteurs et consommateurs pour leur permettre de repenser la recherche agricole et alimentaire au service du bien public. Cette initiative visait explicitement à renforcer l’influence et l’efficacité des petits producteurs alimentaires, ainsi que d’autres citoyens, dans la gouvernance de la recherche agricole, l’établissement de priorités de recherche stratégiques et la validation des connaissances.Mêlant texte, photos, contenus audio et vidéo, ce livre a pour objet de décrire les méthodes utilisées dans les processus de délibération et d’inclusion impliquant petits producteurs (agriculteurs, éleveurs, pêcheurs et transformateurs alimentaires) et experts en recherche agronomique. Cette publication multimédia est disponible en ligne et sera proposée en version papier début 2011.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Democratiser-la-recherche-agricole-pour-la-souverainete-alimentaire-en-Afrique-de-l-Ouest">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Les-petits-exploitants-agricoles-zimbabweens-adoptent-des-pratiques-agroforestieres" title="Les petits exploitants agricoles zimbabwéens adoptent des pratiques agroforestières" alt="link">Les petits exploitants agricoles zimbabwéens adoptent des pratiques agroforestières</a></h2>
+
+	
+					<p>La présente étude avait pour objectif d’évaluer et de comparer les niveaux d’adoption des pratiques agroforestières entre agriculteurs formés et non formés, et d’identifier les facteurs qui empêchent l’adoption de ces pratiques. Des informations ont été collectées au moyen de questionnaires structurés auprès de 300 petits exploitants agricoles sélectionnés dans des villages où les agents du changement ont été formés par le Centre international pour la recherche en agroforesterie (ICRAF). Les résultats ont montré que les agriculteurs n’étaient pas suffisamment sensibilisés aux pratiques agroforestières et que seuls ceux ayant bénéficié d’une formation ont adopté ces pratiques. Il ressort également de cette étude que la probabilité de constituer des clôtures en haies vives a été largement influencée par des facteurs tels que la propriété foncière, la sensibilisation, la formation, la sécheresse, la main d’œuvre et les institutions locales. Les facteurs ayant influencé la plantation d’arbres pour la nutrition sont l’appartenance à une association paysanne, la sensibilisation, la formation, la superficie agricole et les institutions locales. L’utilisation des jachères améliorées a été influencée par des facteurs comme la situation d’emploi, l’appartenance à une association paysanne, la sensibilisation et la superficie des terres. Enfin, les facteurs ayant influencé l’utilisation des banques fourragères sont la situation d’emploi, la sensibilisation et la formation. (C. Parwada, C. T. Gadzirayi, W. T. Muriritirwa et D. Mwenye, Journal de l’économie agricole et du développement. Vol. 2(10), pages 351 à 358, Octobre 2010).</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Les-petits-exploitants-agricoles-zimbabweens-adoptent-des-pratiques-agroforestieres">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Guide-pratique-sur-les-droits-de-propriete-et-l-action-collective-pour-la-gestion-des-ressources" title="Guide pratique sur les droits de propriété et l’action collective pour la gestion des ressources" alt="link">Guide pratique sur les droits de propriété et l’action collective pour la gestion des ressources</a></h2>
+
+	
+					<p>Programme du CGIAR sur l’action collective et les droits de propriété (CAPRi).Publié par le Programme du CGIAR sur l’action collective et les droits de propriété (CAPRi), ce recueil de textes originaux est directement basé sur les expériences et les enseignements tirés du programme CAPRi à travers le monde. S’ils couvrent plusieurs types d’activités de la recherche fondamentale, les textes sont toutefois rédigés dans un langage simple et facilement accessible. L’objectif de cet ouvrage est de sensibiliser les organismes de R&amp;D quant à l’importance et la pertinence des concepts CAPRi, mais aussi d’appliquer les méthodes de recherche et les leçons tirées de ce programme aux actions mises en place avec les communautés, les décideurs et les autres parties prenantes. Le présent recueil devrait servir de guide pratique et pertinent aux professionnels du développement, aux formateurs et aux responsables politiques. Il sera également utilisé dans les universités et autres établissements d’enseignement supérieur.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Guide-pratique-sur-les-droits-de-propriete-et-l-action-collective-pour-la-gestion-des-ressources">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Quelles-sont-les-perspectives-d-amelioration-genetique-de-plantes-cultivees-tolerantes-a-la-secheresse" title="Quelles sont les perspectives d’amélioration génétique de plantes cultivées tolérantes à la sécheresse ?" alt="link">Quelles sont les perspectives d’amélioration génétique de plantes cultivées tolérantes à la sécheresse ?</a></h2>
+
+	
+					<p>
+L’objectif de cette étude est d’établir un état des lieux des recherches et de la diffusion de plantes cultivées possédant un potentiel d’adaptation à la sécheresse supérieur aux variétés actuelles. En effet, la sécheresse, contrainte environnementale actuelle, risque aussi d’être une des conséquences majeures du changement climatique. La méthode de travail a consisté en deux étapes principales. D’abord une analyse bibliographique, puis des enquêtes auprès des laboratoires d’organismes publics de recherche et d’entreprises privées. Ces enquêtes se sont déroulées en France et plus largement en Europe, ainsi qu’aux États-Unis et au Kenya. L’étude a donné la priorité aux céréales cultivées dans les pays développés comme dans les pays en voie de développement (maïs, blé, riz, sorgho et mil), et s’est intéressée aux différentes perspectives de recherche mises en œuvre pour la sélection des plantes, soit à la sélection classique comme à la transgénèse.(Source: Fondation FARM, 7 décembre 2010)</p>
+							<p><span class="date">14/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Quelles-sont-les-perspectives-d-amelioration-genetique-de-plantes-cultivees-tolerantes-a-la-secheresse">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Seconde-edition-du-bulletin-d-information-AgriForum-de-l-ASARECA" title="Seconde édition du bulletin d’information 'AgriForum' de l’ASARECA" alt="link">Seconde édition du bulletin d’information 'AgriForum' de l’ASARECA</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/asareca-logo/317399-1-eng-GB/asareca-logo.png" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+La seconde édition du bulletin d’information AgriForum met en avant le rôle de l’ASARECA dans le programme de renforcement des capacités pour la recherche et le développement agricole en Afrique (projet SCARDA), mais aussi dans le programme de productivité agricole en Afrique de l’Est (EAAPP), la recherche des mécanismes de résistance du sorgho au striga et les multiples vertus de la patate douce à chair orange. AgriForum est disponible sur support papier et peut également être téléchargé sur le <a href="http://www.asareca.org/index.php?page&amp;as=267" target="_blank">site web</a> de l’ASARECA. (Source : ASARECA, Novembre 2010)</p>
+							<p><span class="date">25/01/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Seconde-edition-du-bulletin-d-information-AgriForum-de-l-ASARECA">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Seconde-edition-du-bulletin-d-information-AgriForum-de-l-ASARECA2" title="Seconde édition du bulletin d’information 'AgriForum' de l’ASARECA" alt="link">Seconde édition du bulletin d’information 'AgriForum' de l’ASARECA</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/asareca-logo/317399-1-eng-GB/asareca-logo.png" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+La seconde édition du bulletin d’information AgriForum met en avant le rôle de l’ASARECA dans le programme de renforcement des capacités pour la recherche et le développement agricole en Afrique (projet SCARDA), mais aussi dans le programme de productivité agricole en Afrique de l’Est (EAAPP), la recherche des mécanismes de résistance du sorgho au striga et les multiples vertus de la patate douce à chair orange. AgriForum est disponible sur support papier et peut également être téléchargé sur le <a href="http://www.asareca.org/index.php?page&amp;as=267" target="_blank">site web</a> de l’ASARECA. (Source : ASARECA, Novembre 2010)</p>
+							<p><span class="date">25/01/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Seconde-edition-du-bulletin-d-information-AgriForum-de-l-ASARECA2">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Vers-une-science-plus-inclusive.-Evolutions-dans-la-production-du-savoir" title="Vers une science plus inclusive. Evolutions dans la production du savoir" alt="document">Vers une science plus inclusive. Evolutions dans la production du savoir</a></h2>
+
+	
+	
+	
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/toulouse/317201-1-eng-GB/toulouse.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<b>Exposé sur la production du savoir, par Gérard Toulouse</b> de l'École normale supérieure (Paris), présenté lors de la réunion &quot;Science, Indigenous Knowledge and Innovation&quot; du Comité consultatif du CTA sur la science et la technologie, Johannesburg, 22-26 novembre 2010.Pourquoi et comment la science moderne – telle qu’elle s’est développée en Occident durant les quatre siècles passés – a-t-elle pu se montrer aussi aveugle quant à la valeur de ces domaines d’investigation ? En bref, pourquoi une si longue phase de négligence condescendante pour les savoirs traditionnels et indigènes ? &quot;</p>
+							<p><span class="date">11/01/2011</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Publications/Vers-une-science-plus-inclusive.-Evolutions-dans-la-production-du-savoir">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/380"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/420"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">1</a>...
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/260">14</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/280">15</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/300">16</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/320">17</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/340">18</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/360">19</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/380">20</a></span>
+            
+        <span class="current">21</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/420">22</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/440">23</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/460">24</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/480">25</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/500">26</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/520">27</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications/(offset)/1360">69</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":323,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

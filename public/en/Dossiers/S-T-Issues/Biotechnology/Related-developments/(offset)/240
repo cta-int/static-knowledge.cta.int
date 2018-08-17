@@ -1,0 +1,1326 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Related developments / Biotechnology / S&amp;T Issues / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="/en" title="Knowledge front page"/>
+<link rel="Index" href="/en"/>
+<link rel="Search" href="/en/content/search" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/en/layout/set/print/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/240" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/en">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/en/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/en/About/About">About</a> | </li>
+							<li><a href="/en/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/en/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/en/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/en">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers/S-T-Issues">S&T Issues</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers/S-T-Issues/Biotechnology">Biotechnology</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Related developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Related developments</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Scientists-unveil-pest-resistant-cotton" title="Scientists unveil pest resistant cotton" alt="link">Scientists unveil pest resistant cotton</a></h2>
+
+	
+					<p>Scientists have developed new cotton varieties to tame jassids, the notorious cotton pest which has been causing havoc in the 35 cotton growing districts. The insects cause cotton leaves to curl at the edges, turning yellow or redish and may dry in severe cases. The pests may lead to stunted growth and can reduce yields by up to 80% in severe cases. Dr George Epieru, an insect expert at the National Semi-Arid Resources Research Institute in Soroti district, says many farmers in Lango, Acholi and Kasese districts had given up cotton production due to the insects (Source: by Kikonyogo Ngatya, New Vision, 24 June, 2008).</p>
+							<p><span class="date">29/07/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Scientists-unveil-pest-resistant-cotton">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/West-African-farmers-switching-to-biopesticides" title="West African farmers switching to biopesticides " alt="link">West African farmers switching to biopesticides </a></h2>
+
+	
+					<p> The problems caused by the misuse of chemical insecticides have driven scientists, policy makers including donors and development institutions to promote the production of biological cotton in northern Benin. According to a report from a research project funded by the International Institute of Tropical Agriculture (IITA), and presented at a conference for smallholder farmers in Nairobi that farmers’ perceptions and willingness to pay for a biopesticide developed from Metarhizium anisopliae a fungi have increased. Both organic and conventional cotton producers have expressed a significant interest in the use of Metarhizium to control Helicoverpa on cotton. Until recently, the available pest control method was many sprays of chemical insecticides against a variety of insect pest species that attack cotton (aphids, bugs, whiteflies and mites). Today this biopesticide represents about 2.5% of the overall pesticide market, and is expected to grow to about 4.2% by 2010. Source: Nyambati M. Kwamboka, African Science News Service, 24 May 2008. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/West-African-farmers-switching-to-biopesticides">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Madagascar-new-eco-deals-protect-unique-forests" title="Madagascar: new eco-deals protect unique forests" alt="link">Madagascar: new eco-deals protect unique forests</a></h2>
+
+	
+					<p> Madagascar has signed a series of environment agreements to protect unique forests and support local communities as part of a commitment by the government to ramp up environmental protection on the Indian Ocean island. In its largest ever debt-for-nature swap, Madagascar signed a deal with France this month, in which US$20 million of debt owed to the former colonial power was put into a conservation fund, the Foundation for Protected Areas and Biodiversity (FPAB). Source: IRIN, 19 June 2008.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Madagascar-new-eco-deals-protect-unique-forests">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Europe-warms-to-GM-crops-as-possible-solution-to-food-crisis" title="Europe warms to GM crops as possible solution to food crisis" alt="link">Europe warms to GM crops as possible solution to food crisis</a></h2>
+
+	
+					<p> The European Union has launched a study into whether a large-scale expansion of genetically modified crops would curb soaring global food prices. Gordon Brown backed the move after the European Commission said GM crops could &quot;play an important role in mitigating the effects of the food crisis&quot;. Jose Manuel Barroso, the Commission president, warned that the EU's current obstacles to GM products could result in higher food prices in Europe than the rest of the world. EU leaders endorsed the plans to review the complex system of approving GM licences, which is split between the EU and national governments. It could be streamlined to make the approval process easier. Plans by the Commission to give &quot;pre-marketing authorisation&quot; to 16 GMOs have been blocked by the Council of Ministers, which is the EU's main decision-making body. The Commission has urged member states with national bans on GM crops to lift them, saying that they are not &quot;scientifically justified&quot;. Source: Andrew Grice and Vanessa Mock, Brussels, The Independent, 21 June 2008. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Europe-warms-to-GM-crops-as-possible-solution-to-food-crisis">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Researchers-consider-advantage-of-transgenic-cotton-crops-for-farmers-in-Burkina-Faso" title="Researchers consider advantage of transgenic cotton crops for farmers in Burkina Faso " alt="link">Researchers consider advantage of transgenic cotton crops for farmers in Burkina Faso </a></h2>
+
+	
+					<p> Burkina Faso in Western Africa is one of the poorest countries in the world with 90 percent of the population engaged in subsistence agriculture. Where possible, farmers are producing cotton as a cash crop, accounting for more than 50 percent of all exports in Burkina Faso. However, cotton production in Burkina Faso is susceptible to frequent drought and insect infestations that can often result in damage to up to 90 percent of the crop. As a result, cotton production is highly dependent on insecticide treatments to control these pests. To provide growers with more options for insect control and potentially greater productivity in the field, Burkina Faso began field trials and evaluations with genetically modified (GM) or transgenic cotton crops in 2003. If approved for commercial use, Burkinabe farmers are expected to benefit from less labor, less pesticide spraying and increased income. Source: Interview with Dr. Ouola Traoré, Monsanto Company, 2008. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Researchers-consider-advantage-of-transgenic-cotton-crops-for-farmers-in-Burkina-Faso">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Uganda-GM-banana-fails-to-defeat-diseases" title="Uganda GM banana fails to defeat diseases" alt="link">Uganda GM banana fails to defeat diseases</a></h2>
+
+	
+					<p> A field trial of a Genetically-Modified (GM) banana variety in Uganda has failed to defeat the occurrence of banana diseases. The variety was attacked by Black Sigatoka disease, which can cut a banana tree’s fruit production by half. Scientists at Kawanda National Agricultural Research laboratories had hoped the modified banana would help reduce the occurrence of banana diseases. Local banana varieties are vulnerable to numerous diseases and pests, including the banana bacterial wilt disease and weevils. Source: African Science News Service, Uganda, 18 June 2008.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Uganda-GM-banana-fails-to-defeat-diseases">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/ACP-Region-must-harness-biotechnology-for-a-better-future-ACP-Policy-Brief" title="ACP Region must harness biotechnology for a better future (ACP Policy Brief)" alt="document">ACP Region must harness biotechnology for a better future (ACP Policy Brief)</a></h2>
+
+	
+	
+	
+	
+					<p>Biotechnology, embraces both life sciences and engineering, and has been used for centuries to produce food and to solve health and environmental problems. It is widely accepted that modern advances in biotechnology hold great promise for addressing key challenges in agriculture, human health and the environment. However, African, Caribbean and Pacific (ACP) countries lack the resources to make the investments needed in research and product and process development and innovation to harness biotechnology for sustainable social and economic development and wealth creation. Biotechnology when exploited appropriately can improve the collective welfare of the population. ACP countries must act now to avoid being left behind in yet another technological revolution. Therefore, ACP experts are calling on governments in the ACP region to invest more in science and technology and more specifically biotechnology if the region is to be assured of a better future.</p>
+							<p><span class="date">1/11/2005</span></p>
+	<div class="cnt">
+	<a class="document" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/ACP-Region-must-harness-biotechnology-for-a-better-future-ACP-Policy-Brief">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Global-Initiative-for-Plant-Breeding-Capacity-Building" title="Global Initiative for Plant Breeding Capacity Building " alt="link">Global Initiative for Plant Breeding Capacity Building </a></h2>
+
+	
+					<p> AgBioView, 19 May 2006 | This new program, to be launched in June, will aim at strengthening the capacity of developing countries and economies in transition to develop better plant breeding and seed delivery systems. The reductions in public investment in agriculture and rural development over the last two decades have led to the demise of many already relatively weak national plant breeding programs. National programs are being prevented from meeting the needs of developing countries by the lack of access to germplasm and promising new technologies, as well as lack of trained personnel and institutional capability. GIPB is a multiparty initiative of knowledge institutions and agencies that will work with governments, the private sector, and other stakeholders to identify and address needs for plant breeding and related biotechnologies. The initiative will coordinate resources from GIPB partner institutions with the needs of developing programs for training, germplasm, and technology.</p>
+							<p><span class="date">9/06/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Global-Initiative-for-Plant-Breeding-Capacity-Building">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Biotech-in-Horn-of-Africa" title="Biotech in Horn of Africa" alt="link">Biotech in Horn of Africa</a></h2>
+
+	
+					<p> Crop Biotech Update, 12 May 2006 |  The Horn Biotechnology Forum (HBF), founded in 2002, will hold a workshop on biotechnology in the Horn of Africa countries (Djibouti, Eritrea, Ethiopia, Somalia, and Sudan) on June 29, 2006 in Addis Ababa, Ethiopia. The &quot;Workshop on Present Status, Challenges and Future Opportunities&quot; aims to raise biotechnology awareness and promote understanding of the current status, challenges, and future opportunities of biotechnology applications for the region.</p>
+							<p><span class="date">9/06/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Biotech-in-Horn-of-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Call-for-abstracts-first-international-meeting-on-cassava-plant-breeding-biotechnology-and-ecology-Brazil" title="Call for abstracts: first international meeting on cassava plant breeding, biotechnology and ecology, Brazil" alt="link">Call for abstracts: first international meeting on cassava plant breeding, biotechnology and ecology, Brazil</a></h2>
+
+	
+					<p> Gene Conserve (2006). The first International meeting on cassava plant breeding, biotechnology and ecology will be held in Brasilia, Brazil, from 11-15 November 2006. There is now a call for abstract for the following sessions: Biotechnology tools and breeding methods; Conservation and evalution of genetic resources; Cassava as a feed and for industry; and more.</p>
+							<p><span class="date">9/06/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Call-for-abstracts-first-international-meeting-on-cassava-plant-breeding-biotechnology-and-ecology-Brazil">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Cuban-Indian-joint-venture-inaugurates-biotechnology-plant" title="Cuban-Indian joint venture inaugurates biotechnology plant" alt="link">Cuban-Indian joint venture inaugurates biotechnology plant</a></h2>
+
+	
+					<p> <i>Granma.cu</i>, 24 April 2006 | A modern plant has been opened in India for the production of a human monoclonal antibody developed by Cuban specialists, which is being used with promising results in the treatment of head and neck tumors in combination with radio therapy.</p>
+							<p><span class="date">22/05/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Cuban-Indian-joint-venture-inaugurates-biotechnology-plant">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Benefits-of-genetic-food-engineering" title="Benefits of genetic food engineering" alt="link">Benefits of genetic food engineering</a></h2>
+
+	
+					<p> <i>Jamaica Gleaner</i>, 20 April 2006 | Genetic engineering offers opportunities to develop new products in many different fields, including agriculture. Most of the developments in agriculture, however, have been of greater benefit to producers than to consumers.</p>
+							<p><span class="date">22/05/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Benefits-of-genetic-food-engineering">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Role-of-biotechnology-for-the-characterisation-and-conservation-of-genetic-resources" title="Role of biotechnology for the characterisation and conservation of genetic resources " alt="link">Role of biotechnology for the characterisation and conservation of genetic resources </a></h2>
+
+	
+					<p> 20 July 2005 |  FAO - This document is a background paper to an e-forum conference hosted by the FAO Biotechnology Forum (June- July 2005), and considers the use of biotechnology tools in the characterisation and conservation of crop, forest, animal and fishery genetic resources in developing countries. It provides a brief overview of genetic resources for food and agriculture; detailed information regarding the current status of the genetic resources in the different food and agricultural sectors Crop, Forest, and Animal.</p>
+							<p><span class="date">9/08/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Role-of-biotechnology-for-the-characterisation-and-conservation-of-genetic-resources">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Cartagena-Protocol-reports" title="Cartagena Protocol reports" alt="link">Cartagena Protocol reports</a></h2>
+
+	
+					<p> 3 June 2005 | Convention on biological diversity --The report of the 2nd meeting of the Conference of the Parties serving as the meeting of Parties to the Cartagena Protocol on Biosafety (COP-MOP/2), that took place from 30 May to 3 June 2005 in Montreal, Canada, is now available. In addition, the report of the 1st meeting of the Ad Hoc Open-ended Working Group of Legal and  Technical Experts on Liability and Redress in the Context of the Cartagena Protocol on Biosafety, held on 25-27 May 2005 inMontreal, Canada, is also available on the same webpage (document  UNEP/CBD/BS/COP-MOP/2/11).</p>
+							<p><span class="date">9/08/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Cartagena-Protocol-reports">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/USAID-Making-the-world-hungry-for-GM-crops" title="USAID : Making the world hungry for GM crops" alt="link">USAID : Making the world hungry for GM crops</a></h2>
+
+	
+					<p> April 2005 |  Grain  - This briefing examines how the US government uses USAID to actively promote GM agriculture. The focus is on USAID’s major programmes for agricultural biotechnology and the regions where these programmes are most active in parts of Africa and Asia. These USAID programmes are part of a multi-pronged strategy to advance US interests with GM crops. Increasingly the US government uses multilateral and bilateral free trade agreements and high-level diplomatic pressure to push countries towards the adoption of many key bits of corporate-friendly regulations related to GM crops. And this external pressure has been effectively complimented by lobbying and funding from national and regional USAID biotech networks.. GRAIN is an international non-governmental organisation which promotes the sustainable management and use of agricultural biodiversity based on people’s control over genetic resources and local knowledge.</p>
+							<p><span class="date">8/07/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/USAID-Making-the-world-hungry-for-GM-crops">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/GM-Contamination-Register" title="GM Contamination Register" alt="link">GM Contamination Register</a></h2>
+
+	
+					<p> This GM contamination register is the first of its kind in the world. Although GM crops were grown on over 80 million hectares in 2004, there is no global monitoring system. Because of this failure of national and international agencies, GeneWatch UK and Greenpeace International have launched this joint initiative to record all incidents of contamination arising from the intentional or accidental release of genetically modified (GM) organisms (which are also known as genetically engineered organisms). It also includes illegal plantings of GM crops and the negative agricultural side-effects that have been reported.</p>
+							<p><span class="date">15/06/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/GM-Contamination-Register">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/How-USAID-actively-promotes-GM-agriculture" title="How USAID actively promotes GM agriculture" alt="link">How USAID actively promotes GM agriculture</a></h2>
+
+	
+					<p> Monday, 23 May 2005 | This briefing examines how the US government uses USAID to actively promote GM agriculture, focusing on USAID's major programmes for agricultural biotechnology and the regions where these programmes are most active in parts of Africa and Asia. The briefing highlights that: these USAID programmes are part of a multi-pronged strategy to advance US interests with GM crops increasingly the US government uses multilateral and bilateral free trade agreements and high-level diplomatic pressure.</p>
+							<p><span class="date">7/06/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/How-USAID-actively-promotes-GM-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Zambia-builds-high-tech-lab-to-detect-GM-food-imports" title="Zambia builds high-tech lab to detect GM food imports" alt="link">Zambia builds high-tech lab to detect GM food imports</a></h2>
+
+	
+					<p> Friday, 13 May 2005 | LUSAKA - Zambia has begun building a modern molecular biology laboratory to detect genetically modified (GM) organisms entering the country. The National Institute for Scientific and Industrial Research (NISIR) began the project last month. It is expected to finish by December. The Norwegian government has donated US$330,000 for buying equipment and training scientists.</p>
+							<p><span class="date">7/06/2005</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/Zambia-builds-high-tech-lab-to-detect-GM-food-imports">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/220"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+          
+<span class="pages"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments">1</a>...
+                      <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/100">6</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/120">7</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/140">8</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/160">9</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/180">10</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/200">11</a></span>
+                              <span class="other"><a href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments/(offset)/220">12</a></span>
+            
+        <span class="current">13</span>
+
+    
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/en/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/en/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/en/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/en/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/en/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/en/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/en/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/en/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/en/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":288,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

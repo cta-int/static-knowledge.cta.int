@@ -1,0 +1,1633 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Bourses et appels / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/160" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="active">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Les-S-T-au-CTA">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Bourses et appels</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Bourses et appels</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-d-etudes-de-Master-en-sciences-de-l-environnement-politique-et-management" title="Bourses d’études de Master en sciences de l’environnement, politique et management" alt="link">Bourses d’études de Master en sciences de l’environnement, politique et management</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/mespom/290303-1-eng-GB/Mespom.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	 Ce Master en sciences de l’environnement, politique et management (MESPOM) est un programme de l’Union européenne (UE). Il prépare les étudiants au développement de solutions intégrées pour faire face aux défis de l’environnement, notamment dans un contexte international. Le programme Erasmus Mundus de l’UE offre des bourses à des étudiants exceptionnels résidant hors de l’Union européenne pour leur permettre de suivre ce master, mais aussi à des universitaires pour les encourager à enseigner et à effectuer des recherches. La date limite de dépôt des candidatures pour le programme MESPOM est fixée au 1er avril 2010. A noter que des bourses pourront également être octroyées à des étudiants fréquentant d’autres cours.</p>
+							<p><span class="date">21/12/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-d-etudes-de-Master-en-sciences-de-l-environnement-politique-et-management">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TWOWS-cree-un-nouveau-prix-pour-les-jeunes-femmes-scientifiques" title="TWOWS crée un nouveau prix pour les jeunes femmes scientifiques" alt="link">TWOWS crée un nouveau prix pour les jeunes femmes scientifiques</a></h2>
+
+	
+					<p>L’organisation mondiale des femmes scientifiques a ouvert la liste des candidatures au prix des meilleures femmes scientifiques des pays en développement. Un chèque de 5 000 dollars sera remis à chacune des lauréates des quatre régions du monde en développement (Afrique, région Arabe, Asie et Pacifique, Amérique latine et Caraïbe), à l’occasion de l’Assemblée générale de TWOWS, qui se tiendra à Pékin (Chine) en juin 2010. Date-butoir pour le dépôt des candidatures : 15 janvier 2010.</p>
+							<p><span class="date">5/03/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TWOWS-cree-un-nouveau-prix-pour-les-jeunes-femmes-scientifiques">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-d-etudes-et-de-perfectionnement-du-Commonwealth-CSFP" title="Programme de bourses d’études et de perfectionnement du Commonwealth (CSFP)" alt="link">Programme de bourses d’études et de perfectionnement du Commonwealth (CSFP)</a></h2>
+
+	
+					<p>Le CSFP est un programme international à travers lequel les pays membres offrent des bourses d’études à des citoyens d’autres pays du Commonwealth. Chaque candidat devra déposer sa candidature auprès d’une agence locale de son pays d’origine. Avant de soumettre son dossier de candidature, il appartient au candidat de vérifier auprès de cette agence s’il existe d’autres critères d’éligibilité que ceux déjà pris en compte par la commission. Le candidat pourra en outre y demander conseil pour optimiser sa candidature. <b>La date limite de soumission des dossiers de candidature est fixée au 31 décembre 2009.</b></p>
+							<p><span class="date">20/10/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-d-etudes-et-de-perfectionnement-du-Commonwealth-CSFP">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidatures-Bourses-de-la-Schlumberger-Programme-Faculty-for-the-Future-2010-Fondation" title="Appel à candidatures - Bourses de la Schlumberger : Programme « Faculty for the Future » 2010 Fondation" alt="link">Appel à candidatures - Bourses de la Schlumberger : Programme « Faculty for the Future » 2010 Fondation</a></h2>
+
+	
+					<p>Les bourses « Faculty for the Future » sont octroyées à des femmes originaires de pays en développement ou émergents qui suivent une formation post-doctorale en sciences physiques, en ingénierie ou dans des disciplines connexes pour leur permettre de poursuivre des études de niveau supérieur à l’étranger dans les meilleures universités. Lancé en 2004 par la Fondation Schlumberger, le programme « Faculty for the Future » a déjà fourni un appui à 110 femmes représentant 35 pays. L’objectif à long terme de ce programme est d’encourager les femmes à mener une carrière universitaire dans les disciplines scientifiques. Les bénéficiaires d’une bourse sont sélectionnées tant pour leurs talents scientifiques que pour leurs capacités de leadership. Elles devront ensuite rentrer dans leur pays d’origine pour poursuivre leur carrière universitaire et inspirer d’autres jeunes femmes. <b>La date limite de dépôt des candidatures est fixée au 30 novembre 2009.</b> Les prix seront annoncés le 28 février 2010.</p>
+							<p><span class="date">20/10/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidatures-Bourses-de-la-Schlumberger-Programme-Faculty-for-the-Future-2010-Fondation">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidatures-Bourses-de-recherche-2009-du-CGIAR" title="Appel à candidatures – Bourses de recherche 2009 du CGIAR" alt="link">Appel à candidatures – Bourses de recherche 2009 du CGIAR</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/cgiar/141273-1-eng-GB/cgiar.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+Le Programme de bourses du CGIAR reconnaît et récompense l’excellence scientifique. Mesurant l’importance de continuer à promouvoir l’intérêt de la science au sein de la communauté et l’art de la communication dans le domaine de la R&amp;D, le CGIAR a mis en place un dispositif d’attribution de bourses en communication scientifique et en journalisme en 2002.Trois catégories de bourses sont prévues pour 2009 :
+
+
+ Jeune scientifique prometteur, Expertise scientifique remarquable et Article scientifique exceptionnel. Chaque lauréat recevra un prix de 5 000 dollars en espèces.
+
+Equipe d’appui scientifique exceptionnelle et Partenariat scientifique de premier plan. Chaque lauréat recevra un prix de 10 000 dollars en espèces.
+
+Communication éminente et Activités de journalisme scientifique remarquables. Chaque lauréat recevra un prix de 5 000 dollars en espèces.
+
+
+La liste de tous les lauréats sera annoncée à l’occasion de la cérémonie des bourses de recherche offertes par le CGIAR, en partenariat avec la Conférence mondiale sur la recherche agricole pour le développement (GCARD) prévue fin mars 2010 à Montpellier, en France. Les frais de voyage des lauréats seront pris en charge pour leur permettre de recevoir leur prix lors de la conférence GCARD 2010. <i>La date de clôture des nominations dans toutes les catégories est fixée au 30 novembre 2009.</i></p>
+							<p><span class="date">2/10/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidatures-Bourses-de-recherche-2009-du-CGIAR">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-propositions-2009-du-7eme-FP7" title="Appel à propositions 2009 du 7ème FP7" alt="link">Appel à propositions 2009 du 7ème FP7</a></h2>
+
+	
+					<p>Le Septième programme-cadre de recherche et développement technologique (FP7) est le principal instrument de financement de la R&amp;D à l’échelon européen. Il s’étend sur la période 2007-2013 et dispose d’un budget total de plus de 50 milliards d’euros. La plupart des financements inscrits dans le cadre du FP7 prennent la forme de subventions accordées aux acteurs de la recherche, à travers l’Europe et au-delà, pour cofinancer des projets de R&amp;D et de démonstration. Le 30 juillet 2009, la CE a publié 53 appels à propositions consacrés à divers domaines de recherche, et notamment : « la santé », « l’alimentation, l’agriculture, la pêche et la biotechnologie », « les technologies de l’information et de la communication », « les nanosciences, les nanotechnologies, les matériaux et les nouvelles techniques de production », « l’énergie », « l’environnement (y compris le changement climatique) », « les transports », « les sciences socio-économiques et les sciences humaines », « l’espace », « la sécurité ». Tous les appels à propositions peuvent être consultés sur le site web. Les documents de candidature y sont également accessibles.</p>
+							<p><span class="date">10/08/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-propositions-2009-du-7eme-FP7">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/IFS-appel-general-a-candidatures" title="IFS : appel général à candidatures" alt="link">IFS : appel général à candidatures</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/ifs/262938-1-eng-GB/IFS.png" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les jeunes scientifiques des pays en développement sont invités à faire une demande de subvention de recherche IFS pour effectuer une recherche sur la gestion durable, l’utilisation ou la conservation des ressources biologiques ou hydriques. Cet appel à projets de recherche en sciences naturelles et sociales couvre les thèmes suivants : agriculture, aménagement des sols, production animale, sciences alimentaires, foresterie, agroforesterie, ressources aquatiques, produits naturels, ressources hydriques, etc. Les candidatures sont acceptées tout au long de l’année et doivent être transmises via le <a href="http://www.ifs.se/Forms/list_of_all_forms.asp" target="_blank">Formulaire de candidature IFS</a>.</p>
+							<p><span class="date">5/08/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/IFS-appel-general-a-candidatures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/IFS-recherche-sur-l-eau-verte" title="IFS : recherche sur l’eau verte" alt="link">IFS : recherche sur l’eau verte</a></h2>
+
+	
+					<p>L’eau verte est l’eau qui est stockée dans le sol, dans la zone racinaire, et qui est à disposition des plantes pour leur développement. Elle provient de l’eau de pluie qui s’infiltre dans le sol, elle est absorbée par les plantes pour la photosynthèse et la transpiration. La Fondation internationale pour la science (IFS) invite les jeunes chercheurs à soumettre des propositions de recherche qui abordent les thématiques suivantes : bonne gestion, conservation et utilisation de l’eau verte à des fins d’accroissement des productions agricoles, alimentaires et biologiques à travers : la gestion des terrains et la conservation de l’humidité du sol, des pratiques d’aménagement de sols pour augmenter l’humidité du sol, pour augmenter l’infiltration de l’eau de pluie dans le sol et la zone des racines, pour augmenter la capacité de rétention d’eau, pour réduire l’évaporation à la surface du sol ; des pratiques d’aménagement des sols pour réduire l’érosion du sol et avoir un impact sur l’infiltration de l’eau ; des pratiques agricoles, la récolte des eaux de pluie et la conservation de l’eau pour augmenter l’infiltration de l’eau ; la gestion de la fertilité des sols et l’efficience de l’utilisation de l’eau pour accroître la production ; l’impact de la gestion des plantes sur l’efficience de l’utilisation de l’eau, les effets de la densité des plantes sur l’efficience de l’utilisation de l’eau de pluie, la relation entre le système de plantes intercalaires et le ruissellement ; l’utilisation et le développement de plantes tolérantes à la sécheresse et de là avoir un impact sur le bilan de la demande globale en eau pour la production alimentaire, en préservant l’équilibre environnemental durable; les aspects socio-économiques de la recherche sur l’utilisation et la gestion de l’eau verte. Date limite de soumission des candidatures :<b> 31 décembre 2009.</b></p>
+							<p><span class="date">5/08/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/IFS-recherche-sur-l-eau-verte">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Assistant-de-recherche-TWOWS-modeliser-la-croissance-et-les-relations-hydriques-des-cultures-tolerantes-a-la-secheresse" title="Assistant de recherche (TWOWS) : modéliser la croissance et les relations hydriques des cultures tolérantes à la sécheresse" alt="link">Assistant de recherche (TWOWS) : modéliser la croissance et les relations hydriques des cultures tolérantes à la sécheresse</a></h2>
+
+	
+					<p>La Commission de recherche sur l’eau (WRC) en Afrique du Sud parraine un projet de recherche pour améliorer la tolérance des cultures indigènes et sous-utilisées à la sécheresse. Un aspect important de la recherche consiste à calibrer et à tester les modèles de culture en utilisant des données expérimentales collectées dans le cadre de ce projet. L’objectif est de développer un outil susceptible d’être utilisé pour déterminer les options de production qui seront proposées aux petits exploitants sud-africains. Le candidat sélectionné travaillera avec des chercheurs agronomes sud-africains expérimentés pour identifier des modèles appropriés, déterminer leurs paramètres, calibrer et tester ces modèles dans la perspective d’une adaptation aux conditions locales. Les résultats des travaux de recherche seront présentés sous forme de sections dans un rapport de recherche, d’articles dans des revues scientifiques et si possible dans une thèse de doctorat. Le titulaire du poste sera nommé pour une période de deux ans (chercheur post-doctoral) ou de trois ans (doctorant) et sera basé à Durban, Afrique du Sud. Clôture de l’appel à candidatures : <b>30 août 2009</b> ou dès lors qu’un candidat qualifié aura été sélectionné.</p>
+							<p><span class="date">23/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Assistant-de-recherche-TWOWS-modeliser-la-croissance-et-les-relations-hydriques-des-cultures-tolerantes-a-la-secheresse">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-global-en-faveur-de-la-RAD-l-UE-lance-son-appel-a-propositions-2009" title="Programme global en faveur de la RAD : l’UE lance son appel à propositions 2009" alt="link">Programme global en faveur de la RAD : l’UE lance son appel à propositions 2009</a></h2>
+
+	
+					<p>Dans le cadre du <a href="http://ec.europa.eu/europeaid/what/food-security/index_en.htm" target="_blank">Programme thématique sécurité alimentaire</a> (PTSA) de la CE, un appel à propositions ouvert a été lancé. La présente action se rattache plus spécifiquement à la composante du volet « Soutenir l’offre de biens publics internationaux contribuant à la sécurité alimentaire par la recherche et la technologie » du PTSA et concerne la fourniture de biens publics mondiaux dans le domaine de la recherche agricole. Le programme a pour objectif général de promouvoir l’innovation agricole en faveur de la sécurité alimentaire destinée aux petits agriculteurs des pays en développement, dans le contexte de l’impact et de l’adaptation au changement climatique et en faveur du développement économique. Chaque proposition devra porter sur l’une des six priorités du programme suivantes : l’agriculture de conservation pour lutter contre la dégradation des sols dans les zones arides, les systèmes d’innovation tenant compte des savoirs traditionnels, l’accès aux marchés, la gestion des risques, la diversification agricole et la lutte contre les maladies et les zoonoses endémiques affectant la production animale. La date limite de soumission des demandes est fixée au <b>6 novembre 2009</b>.</p>
+							<p><span class="date">23/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-global-en-faveur-de-la-RAD-l-UE-lance-son-appel-a-propositions-2009">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TEEAL-une-bibliotheque-numerique-de-revues-agricoles" title="TEEAL, une bibliothèque numérique de revues agricoles" alt="document">TEEAL, une bibliothèque numérique de revues agricoles</a></h2>
+
+	
+	
+	
+	
+					<p>Le CTA facilite l’accès à la littérature scientifique dans le monde : TEEAL, une bibliothèque numérique de revues agricoles. Le CTA acceptera jusque fin août 2009 les candidatures des universités et organismes de recherche ACP pour l’achat des systèmes complets de la bibliothèque agricole électronique essentielle (TEEAL). TEEAL est une bibliothèque numérique en texte intégrale de 149 revues agricoles, mise à disposition à prix rabais pour les institutions dans les pays éligibles. La collection des revues commence dans les années 1990 ; elle est mise à jour chaque année. L’abonnement initial comprend les 149 revues publiées depuis 17 ans (de 1993 à 2009). Les mises à jour annuelles sont fournies un an après la date de publication. Ainsi, la mise à jour 2008 sera disponible fin 2009 et la mise à jour 2009 sera publiée fin 2010. Le coût de l’abonnement s’élève à 4 500 dollars. Le CTA peut accorder une aide en faveur d’un investissement initial (comprenant la collection 1993-2007 ainsi que les mises à jour 2008 et 2009) pour améliorer les fonds documentaires aux fins de promouvoir la recherche agricole dans la région ACP. En retour, les institutions ACP doivent s’engager à signer le contrat de licence TEAAL et à payer les mises à jour annuelles à compter de 2010. Le coût de la mise à jour 2010 s’élèvera à 525 dollars. Les tarifs 2011 seront confirmés ultérieurement. Vous pouvez télécharger le formulaire de candidature en anglais et en français (un seul document).</p>
+							<p><span class="date">10/07/2009</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TEEAL-une-bibliotheque-numerique-de-revues-agricoles">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-post-doctorale-TWAS-BIOTEC" title="Programme de bourses de recherche post-doctorale TWAS-BIOTEC" alt="link">Programme de bourses de recherche post-doctorale TWAS-BIOTEC</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/twas/246848-1-eng-GB/TWAS.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	L’Académie des sciences du tiers-monde (TWAS) et le Centre national d’ingénierie génétique et de biotechnologie (BIOTEC) ont convenu de réserver une certain nombre de bourses de recherche post-doctorale pour les meilleurs laboratoires de biotechnologie en Thaïlande. Ce programme permet à de jeunes chercheurs originaires de pays en développement (autres que la Thaïlande) de travailler pendant une période de 12 à 24 mois dans plusieurs domaines (biologie moléculaire, génétique moléculaire, microbiologie, biochimie, biotechnologie et bio-informatique) au Centre national d’ingénierie génétique et de biotechnologie. La date limite de réception des candidatures est fixée au 15 septembre de chaque année.</p>
+							<p><span class="date">3/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-post-doctorale-TWAS-BIOTEC">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-TWAS-en-sciences-fondamentales" title="Programme de bourses de recherche TWAS en sciences fondamentales" alt="link">Programme de bourses de recherche TWAS en sciences fondamentales</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/twas/246848-1-eng-GB/TWAS.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Le Programme de bourses de recherche TWAS en sciences fondamentales a été établi pour répondre aux besoins de jeunes chercheurs prometteurs dans les pays en développement, en particulier ceux qui travaillent dans des institutions non équipées d’infrastructures de recherche appropriées. Dans le cadre de ce programme, des subventions sont accordées à des chercheurs individuels et à des unités de recherche dans 80 pays en retard sur le plan scientifique et technologique afin de leur permettre d’acquérir les équipements dont ils ont besoin pour accroître leur productivité. Date limite de réception des candidatures : 31 août 2009.</p>
+							<p><span class="date">3/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-TWAS-en-sciences-fondamentales">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Prix-scientifique-de-Trieste-Ernesto-Illy" title="Prix scientifique de Trieste Ernesto Illy" alt="link">Prix scientifique de Trieste Ernesto Illy</a></h2>
+
+	
+					<p>L’Académie des sciences du Tiers Monde et Illycaffé lancent un Prix scientifique de Trieste, qui sera décerné chaque année, en témoignage de la reconnaissance internationale pour des travaux de recherche remarquables menés dans les pays en développement. Le Prix sera décerné chaque année à des chercheurs travaillant dans diverses filières scientifiques, qui sont représentées à tour de rôle : le changement climatique et ses effets sur l’agriculture dans les pays en développement (2009) ; l’énergie (2010) ; les sciences des matériaux (2011) ; la santé humaine (2012). La date limite de réception des candidatures pour l’attribution du Prix 2009 est fixée au 31 mai 2009.</p>
+							<p><span class="date">17/04/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Prix-scientifique-de-Trieste-Ernesto-Illy">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Une-initiative-de-bourses-d-etudes-le-Programme-YES" title="Une initiative de bourses d’études : le Programme « YES »" alt="link">Une initiative de bourses d’études : le Programme « YES »</a></h2>
+
+	
+					<p>Le programme de soutien aux jeunes dans leurs études « YES » est l’une des principales composantes de l’initiative spéciale « Jeunes et enfants » de l’UIT-D, en faveur des jeunes nécessiteux et méritants ressortissants des PMA (pays les moins avancés), de pays en développement et de pays dont l’économie est en transition et qui souhaitent mener à terme leur éducation tertiaire dans le domaine des technologies de l’information et de la communication (TIC) ou un domaine connexe. Il s’agit de permettre à des jeunes gens motivés de contribuer au développement de leur communauté, de leur pays et de leur région en mettant à profit les connaissances et compétences acquises dans le domaine des TIC.</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Une-initiative-de-bourses-d-etudes-le-Programme-YES">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-sur-la-biosecurite-au-CIGGB" title="Programme de bourses sur la biosécurité au CIGGB " alt="link">Programme de bourses sur la biosécurité au CIGGB </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/frontpage-uploads/icgeb/248044-1-eng-GB/ICGEB.gif" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Le Centre international du génie génétique et de la biotechnologie (CIGGB) offre actuellement une bourse sur la biosécurité dans le cadre de son initiative pour le renforcement des capacités en Afrique subsaharienne. Le CIGGB est une organisation internationale et intergouvernementale dédiée à la recherche et à la formation en génie génétique et biotechnologie, avec une attention particulière aux besoins du monde en développement. Le Centre a mis au point un programme complet de biosécurité, axé sur le renforcement des capacités et la dissémination des informations scientifiques. Télécharger et remplir le formulaire de candidature à soumettre au plus tard le 29 mai 2009.</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-sur-la-biosecurite-au-CIGGB">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Chercheur-post-doctoral-charge-de-recherche-Systeme-d-analyse-strategique-et-d-appui-a-la-connaissance-SAKSS" title="Chercheur post-doctoral / chargé de recherche – Système d’analyse stratégique et d’appui à la connaissance (SAKSS)" alt="link">Chercheur post-doctoral / chargé de recherche – Système d’analyse stratégique et d’appui à la connaissance (SAKSS)</a></h2>
+
+	
+					<p>L’IFPRI (Institut international de recherche sur les politiques alimentaires) recherche un candidat qualifié pour un contrat de chercheur post-doctoral / chargé de recherche dans le cadre de la mise en œuvre de l’initiative SAKSS (Système d’analyse stratégique et d’appui à la connaissance) au Malawi. Il s’agit d’un contrat à durée déterminée de deux ans renouvelable. Le titulaire du poste sera basé à Lilongwe, au Malawi, et relèvera directement du directeur de la Division Stratégie de Développement et Gouvernance de l’IFPRI. L’expérience et les résultats obtenus seront pris en considération pour la sélection finale</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Chercheur-post-doctoral-charge-de-recherche-Systeme-d-analyse-strategique-et-d-appui-a-la-connaissance-SAKSS">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-doctorat-collaboratif-en-etudes-du-developpement-international-EDI-Universite-de-Guelph-Ontario-Canada" title="Programme de doctorat collaboratif en études du développement international (EDI), Université de Guelph, Ontario, Canada " alt="link">Programme de doctorat collaboratif en études du développement international (EDI), Université de Guelph, Ontario, Canada </a></h2>
+
+	
+					<p>Le département des études du développement international (EDI) de l’Université de Guelph offre un nouveau programme de doctorat unique en son genre au Canada. Sur le modèle réussi du programme de master collaboratif, l’EDI a ouvert des programmes doctoraux disciplinaires en vue de cibler la recherche avancée sur les questions du développement international. Ce programme traite non seulement les grandes questions concernant l’économie politique internationale, la sécurité alimentaire, l’environnement et le développement, les migrations, le développement participatif, mais aussi la recherche de pointe interdisciplinaire liée au développement qui met en évidence l’étendue des intérêts communs des participants au programme collaboratif en études du développement international à l’Université de Guelph. Date de clôture : 25 juin 2009.</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-doctorat-collaboratif-en-etudes-du-developpement-international-EDI-Universite-de-Guelph-Ontario-Canada">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Fonds-pour-l-amelioration-et-l-adoption-des-especes-vegetales-cultivees-en-Afrique-FIAAC" title="Fonds pour l’amélioration et l’adoption des espèces végétales cultivées en Afrique (FIAAC)" alt="link">Fonds pour l’amélioration et l’adoption des espèces végétales cultivées en Afrique (FIAAC)</a></h2>
+
+	
+					<p>Le Programme pour les systèmes de semences pour l’Afrique (PASS) vise à financer l’amélioration des cultures en Afrique dans le but de diversifier les variétés actuellement cultivées et d’encourager les petits exploitants agricoles à distribuer et à adopter ces espèces végétales. Cette bourse devrait permettre le développement de quelque 200 nouvelles variétés améliorées sur cinq ans. Coût total du projet : 43 millions de dollars EU, dont 14,3 millions à titre de contribution octroyée par la Fondation Rockefeller.&nbsp;</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Fonds-pour-l-amelioration-et-l-adoption-des-especes-vegetales-cultivees-en-Afrique-FIAAC">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/AWARD-seconde-serie-d-appel-a-candidatures-pour-attribution-de-bourses-2009" title="AWARD seconde série d’appel à candidatures pour attribution de bourses 2009 " alt="link">AWARD seconde série d’appel à candidatures pour attribution de bourses 2009 </a></h2>
+
+	
+					<p>Ces bourses seront décernées aux femmes scientifiques engagées dans la recherche agricole en Ethiopie, au Ghana, au Kenya, au Malawi, au Mozambique, au Nigeria, au Rwanda, en Tanzanie, en Ouganda et en Zambie. J’ai le plaisir de vous annoncer le lancement de la seconde série d’appel à candidatures pour attribution de bourses dans le cadre du programme AWARD ! Le Programme Genre et Diversité du Groupe consultatif pour la recherche agricole internationale (CGIAR) invite chaleureusement les femmes scientifiques africaines engagées dans la recherche agricole à soumettre leur candidature pour participer à ce programme de bourses innovant et exaltant. Le programme AWARD permet à des scientifiques hautement compétentes d’obtenir des bourses pour des formations de deux ans, à trois stades cruciaux de leur carrière : après l’obtention de la licence en sciences, la maîtrise ou le doctorat. Les femmes africaines des différents pays participants, et dont les recherches s’inscrivent dans les disciplines suivantes, sont vivement encouragées à soumettre leur candidature : sciences des cultures (y compris l’horticulture), sciences du sol, sciences animales et du bétail, virologie végétale et animale, agroforesterie, agroéconomie, ressources halieutiques, sciences alimentaires et nutritionnelles, gestion des ressources naturelles et écologie, conservation de la biodiversité, entomologie, éducation pour la vulgarisation agricole, biologie moléculaire (appliquée à la biotechnologie végétale/animale) et gestion de l’eau et de l’irrigation. Date limite de dépôt des candidatures : lundi 30 mars 2009.</p>
+							<p><span class="date">27/02/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/AWARD-seconde-serie-d-appel-a-candidatures-pour-attribution-de-bourses-2009">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/140"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/180"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">1</a>
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/20">2</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/40">3</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/100">6</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/120">7</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/140">8</a></span>
+            
+        <span class="current">9</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/180">10</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/200">11</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/220">12</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/240">13</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/260">14</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/280">15</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/440">23</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":317,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1962 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Developments / CTA and S&amp;T / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="News items relevant to the policy dialogue on S&amp;amp;T for Development." /><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/CTA-and-S-T/Developments/(offset)/2260" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="active">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/CTA-and-S-T">CTA and S&T</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Developments</h1>
+				<p>News items relevant to the policy dialogue on S&amp;T for Development.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/FAO-welcomes-UN-Resolution-on-International-Year-of-Natural-Fibres-2009" title="FAO welcomes UN Resolution on International Year of Natural Fibres 2009 " alt="link">FAO welcomes UN Resolution on International Year of Natural Fibres 2009 </a></h2>
+
+	
+					<p> The UN General Assembly decision declaring 2009 the International Year of Natural Fibres will contribute to the MDGs by further developing the efficiency and sustainability of these agricultural industries that employ millions of people in some of the world’s poorest countries. Natural fibres contribute to food security and economic development for these farmers. The International Year of Natural Fibres will raise consumer awareness and strengthen demand for natural fibre products, improving the livelihoods of the farmers who produce them and revenues for countries that export them, says FAO. At the same time, promoting the use of natural fibres will enhance the environment. Natural fibres include cotton, wool, jute, flax, silk, sisal, coconut fibre and many others. Some are produced from plants, others from animals, and they are used in clothing and other consumer goods, as well as in industrial applications. Virtually every country in the world produces some natural fibres (FAO Newsroom, 21 December 2006).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/FAO-welcomes-UN-Resolution-on-International-Year-of-Natural-Fibres-2009">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Lab-altered-grapes-uncork-fears-of-frankenwine" title="Lab-altered grapes uncork fears of ‘frankenwine’" alt="link">Lab-altered grapes uncork fears of ‘frankenwine’</a></h2>
+
+	
+					<p> Researchers at the University of Stellenbosch’s Institute for Wine Biotechnology in South Africa have developed genetically modified (GM) varieties of chardonnay and sultana grapes with resistance to fungal infection. The institute has grown GM grape varieties in greenhouses for four years, and recently applied to the South African government for permission to conduct outdoor trials. Sarita Groenewald, research manager at the institute, says, ‘The aim is to make wine more environmentally friendly and let farmers use less of these horrible [anti-fungal] chemicals.’ The institute’s application for field trials, however, has drawn opposition from wine drinkers and others. Buyers in the UK, one of South Africa’s top export markets, and in Germany cancelled orders for South African wine. The local wine industry, which funds and supports the institute’s research, has also expressed concerns. The industry issued a statement saying it ‘will not use GM organisms in the production of wine until such time as it is quite clear that this practice is internationally acceptable.’ Groenewald ‘admits’ South African winemakers have made it clear they do not want to be the first to use GM technology, but ‘we’ll be a close second. We’ll be ready when the market’s ready’ (Chicago Tribune, 8 December 2006).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Lab-altered-grapes-uncork-fears-of-frankenwine">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/US-250M-for-the-safe-management-of-pesticides-in-Africa" title="US$250M for the safe management of pesticides in Africa" alt="link">US$250M for the safe management of pesticides in Africa</a></h2>
+
+	
+					<p> The regional representative for the World Wildlife Fund (WWF) in Africa, Kwame Koranteng, has said the African Development Bank, the Global Environment Facility (GEF), and the governments of the Netherlands and Canada have agreed to donate approximately US$250 million to improve pesticide management in Africa. The funding will initially go to benefit seven African countries: Ethiopia, Mali, Morocco, Nigeria, South Africa, Tanzania, and Tunisia. Koranteng made the announcement during a recent Conference of Parties to the Basel Convention on the control of transboundary movement of hazardous wastes and their disposal, which was held at UNEP headquarters in Nairobi, Kenya. Most hazardous wastes are industrial and obsolete pesticides. Koranteng said poor pesticide management has affected agriculture, human health, environment, water quality, biodiversity, and soil quality in Africa (Crop Biotech Update, 1 December 2006).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/US-250M-for-the-safe-management-of-pesticides-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/World-Bank-Green-Belt-Movement-Project-to-Reforest-Regions-of-Kenya" title="World Bank &amp; Green Belt Movement Project to Reforest Regions of Kenya " alt="link">World Bank &amp; Green Belt Movement Project to Reforest Regions of Kenya </a></h2>
+
+	
+					<p> The Kenya Green Belt Movement has signed an emission reductions purchase agreement (ERPA) with the World Bank’s BioCarbon Fund for the Kenya Green Belt Movement Reforestation Project to reforest 1,876 hectares within the Mount Kenya and Aberdares regions of Kenya in 2007 and 2008. From this project, the BioCF will purchase 375,000 tonnes of carbon dioxide equivalent emission reductions between 2007 and 2017, with a call option to purchase an additional 150,000 tonnes. ‘I am happy to be working with the World Bank in a pilot project’, said Green Belt Movement founder Professor Maathai. ‘The project will inform grassroots movements and governments on the potential of the carbon market for community-based reforestation and forest protection. We have set some building blocks with this pilot project. We hope that we are showing the way for many more organizations in Africa and beyond to follow’ (World Bank, 15 November 2006).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/World-Bank-Green-Belt-Movement-Project-to-Reforest-Regions-of-Kenya">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Change-in-IRRI-s-copyright-policy-to-facilitate-the-free-exchange-of-vital-information" title="Change in IRRI’s copyright policy to facilitate the free exchange of vital information " alt="link">Change in IRRI’s copyright policy to facilitate the free exchange of vital information </a></h2>
+
+	
+					<p> The International Rice Research Institute (IRRI) has announced a change to its intellectual property (IP) policy, under which the institute’s research will be made available to all, provided they do no not place restrictions on its use by anyone else. The press release says the new policy echoes the software industry’s ‘open-source’ movement. IRRI had already offered ‘relatively free’ use of its information to other parties, but the press release says that now, potential users need not ask permission. The press release also reports on IRRI’s involvement in a plan initiated at this year’s International Rice Congress in New Delhi, India. The IRC’s ministerial roundtable released a document called the ‘Delhi Declaration on Rice,’ which agrees to the establishment of ‘a comprehensive partnership among the participants through strengthened dialogue on a regular basis for strengthening rice research and development efforts laying greater emphasis on the social, cultural, and human dimensions.’ IRRI will host a task force comprising a representative group of experts to develop a road map for this purpose (IRRI press release, 1 November 2006).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Change-in-IRRI-s-copyright-policy-to-facilitate-the-free-exchange-of-vital-information">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Invest-in-science-says-World-Bank-president" title="Invest in science, says World Bank president" alt="link">Invest in science, says World Bank president</a></h2>
+
+	
+					<p> 
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/global_forum_wb/116607-1-eng-GB/global_forum_wb.gif" rel="lightbox[]" >	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;The president of the World Bank has urged developing countries to recognise the importance of science and technology in reducing poverty....... The meeting of more than 300 ministers, science officials, private sector representatives and nongovernmental organisations addressed the role of science, technology and innovation in reducing poverty and achieving sustainable growth. Wolfowitz pointed out that there was no explicit mention of science and technology in the UN Millennium Development Goals, partly because some quarters see scientific research as a luxury' (Source: Scidev (David Dickson), 16 February 2007).</p>
+							<p><span class="date">21/02/2007</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Invest-in-science-says-World-Bank-president">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITOR-S-FORUM-Finding-use-for-idle-hands" title="GLEANER EDITOR'S FORUM: Finding use for idle hands" alt="link">GLEANER EDITOR'S FORUM: Finding use for idle hands</a></h2>
+
+	
+					<p> In continuation of our special focus on the agricultural sector we present excerpts of the views of key agricultural stakeholders on the state of agricultural education in Jamaica. <b>Victor Cummings - state minister, Agriculture and Lands</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/cummings/92201-1-eng-GB/cummings.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;One thing I would like to add and where we have been talking about education is the issue of the National Youth Service. We need to see how we can link the National Youth Service more with what we are trying to do. We have a lot of idle land sitting there, we have a Youth Service Programme; perhaps and I know discussion has started, we need to see how we can expand the Youth Service Programme to really bring an agricultural component into it. But you can't just put people on land, because when I am talking about the people in youth service, I am thinking of young men and women who are sitting on the corner. Some of them, (there is) the problem of illiteracy. We need to look at a re-socialisation programme because they might see putting them in a youth service and putting them on the farm as some form of punishment. We need to do some type of re-socialisation with them to show them that it is a honourable profession and somehow (ensure that) whatever is produce, they would be able to earn something. <b>A good curriculum at CASE</b>  <b>Senator Anthony Johnson, Opposition Spokesman, Agriculture.</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/johnson/92204-1-eng-GB/johnson.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;From what I know of CASE (College of Agriculture, Science and Education), I would think that it's curriculum is probably as good as one would expect to find in an institution of that kind in a country at our stage of development. The problem is not the curriculum or the out-turn, the problem is that when a person graduates from CASE at the moment - if they want to enjoy a normal lifestyle - they can't go into agriculture, not because they don't know what to do or because they don't want to go into agriculture, but because the other elements which are required for agricultural production are either absent or at a level where it wouldn't make any difference whether they are absent or not. You need to have an infrastructure in the country that permits agriculture. Agriculture is not something that you can do in a vacuum.&quot; <b>Geographic location a hindrance</b>  <b>Thomas Burton, deputy executive director, Rural Agricultural Development Authority (RADA)</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/burton/92207-1-eng-GB/burton.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;The School of Agriculture was able to benefit from experiences and practical know-how from practitioners in the extension field by getting persons employed to the Ministry of Agriculture to lecture to the students. But because of the geographic positioning of CASE, this is not possible on a day to day basis to pull people from Kingston to go out to Portland to pass on this hands-on practical agricultural extension training to the persons who are going to come out and convince the traditional farmers to change their practices. We want to look on agricultural training to convince the farmers who are currently engaged and have traditional experience, to practice what we could call new scientific findings. To get this across, you need someone who can pass this on to them and I think in this regard, we could look now at strengthening the teaching component of agriculture to the graduates coming out of the College of Agriculture.&quot; <b>Agriculture: more than just getting dirty</b>  <b>Karelle McCormack, public relations officer, Jamaica 4H Club.</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/mccormack/92222-1-eng-GB/mccormack.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;I am also one of those who thinks that we need to start this whole process of agricultural education from very early, but before we even do that, what we also have to try and pay attention to is the mindset. It is all good and well that you go through a school system and you may do practical or you learn things by rope, but if you still come out with a mindset that agriculture is all about getting dirty, it is not going to work, but I think that is where we have to start from. You have to find a way to make it exciting, show the linkages. I personally like to break things down in a simple fashion, and I think this is the way we have to start. We also have to provide information out there as to how you can access these agricultural advantages.&quot;   This article was first published in <i>Jamaica Gleaner</i>, Wednesday August 2, 2006</p>
+							<p><span class="date">30/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITOR-S-FORUM-Finding-use-for-idle-hands">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITORS-FORUM" title="GLEANER EDITORS FORUM" alt="link">GLEANER EDITORS FORUM</a></h2>
+
+	
+					<p> In continuation of our special focus on the agricultural sector we present excerpts of the views of key agricultural stakeholders on the state of agricultural education in Jamaica. <b>DERMON SPENCE - PRINCIPAL, EBONY PARK HEART ACADEMY</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/spence/91982-1-eng-GB/spence.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;The quality of agricultural education in this country is quite good, apart from certain aspects of research which we seem to be not so sure as to which direction we are going. The fact is, while you have to produce in the field, a lot of the problems with agriculture and agricultural education is happening really at the policy level and I daresay that there is need for a serious concentration on that aspect of the education. We can grow things and we can grow it well. We have some of the best things that are grown, (but) how do you really attack the situation in terms of policy is really where the issue is at. We have investments that are coming in but in terms of charting a course and making agriculture look attractive, public education has to continue and we need to provide incentive for our youngsters to see that the farmer of old is a long gone thing. There are lots of technologies around - the green house technology, hydroponics and these things that will channel and excite their interest but we have to, as a government, as a people, really put our foot down in terms of public education and continue to build on the strengths of what I consider to be, if not, in the Caribbean the most illustrious industry that has blazed a trail across the Caribbean region. So there is need for real strengthening on policy issue, public education and government interest so that youngsters can see that there is really a way out and there are opportunities now. So it is a good time that we are having this discussion and I hope it will help.&quot; <b>DR. PAUL IVY - PRESIDENT, COLLEGE OF AGRICULTURE, SCIENCE AND EDUCATION (CASE)</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ivy/91976-1-eng-GB/ivy.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;The important role that CASE plays must be matched by the resources that are made available to the institution to carry out its mandate and at present, having available adequate resources is decidingly not the case. As you know, that is an issue that needs attention and to be explored. Agricultural policy in Jamaica and its formulation must include CASE and the other agricultural educational institutions at the point of formulation of the policy. What's going to happen to the graduates when they come out so that they can be encouraged and motivated to go into production agriculture and for them to have viable careers after they have invested in the training? One of the points that has been made and something we have recognised, is that those persons who come to the agricultural education institutions, they really do have an interest outside of the high school scenario where they are warehoused in doing agriculture. If you find a person at Knockalva or Elim, Ebony Park or CASE, they do in fact want to do agriculture. In fact, it might be interesting for you to know or probably surprising that every year we are oversubscribed in the number of applicants to agricultural programmes that we offer, but because of space constraint, we can't take all of them. I was so happy when Mr. Stanberry and I met in St. Lucia and he made the point that there has to now be a connection between the Ministries of Agriculture and Education. He has made overtures to the PS (permanent secretary) in (the Ministry of) Education regarding the role of CASE as an established policy framework and how it will operate within the whole framework of our agricultural policy and education which is formulated within the country.&quot; <b>ALBERT SHAND - EXECUTIVE DIRECTOR, RURAL AGRICULTURAL DEVELOPMENT AUTHORITY (RADA)</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/shand/91979-1-eng-GB/shand.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;I believe that we have to determine the needs or at least our aims and objectives and then formulate our agricultural education programmes to satisfy these. I say that to say different sectors of the society (and) different age groups have different needs. If we are going to turn out agricultural professionals as CASE does, then we have to address the issue from the early ages. A lot of us can recall the very active, vibrant, agricultural programme that we had in primary school some years ago, the whole school garden programme that was there and somehow the Ministry of Education had downplayed that. They have to go back and look at the agricultural programme in schools. We at RADA (and the) Ministry of Agriculture have tried to do something towards this. The whole agricultural scenario in Jamaica and in the Caribbean must be addressed by the institutions that we have. As I said, we tend to be turning out people who are trained in the sciences rather than turning out people who can more or less assist or who are prepared to assist with the development of agriculture as it relates to the Caribbean. If we look at the matter of the farmers themselves, we as an institution are supposed to be transferring knowledge to them and it is critical that we gear our training programme to really develop agricultural product professionals from the farmer's level as business people rather than just addressing the industry, crops and livestock production, but rather making a complete person of a farmer so they can move forward with farming as a business that is comparable to manufacturing medicine.&quot; <b>DONOVAN STANBERRY - PERMANENT SECRETARY, MINISTRY OF AGRICULTURE AND LANDS</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/stanberry/91687-1-eng-GB/stanberry.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;One of the first things that I did was to sit with the FAO within days to get their commitment for some support in terms of putting together a comprehensive agriculture and rural development policy. We have bits and pieces here and there but we want something which is cohesive, with the linkages, with all the various things, the education, the tourism, manufacturing and so on. I don't know that by policy any government can force any particular school to teach agriculture, but I think what we need to do is to be able to have some kind of a demonstration effect because nothing succeeds like success and if we can demonstrate that agriculture is something that is worthwhile then probably people will start changing their perspective on agriculture. We are going to promulgate a comprehensive agricultural policy that is going to be consultative and we will put out once and for all in one document what is our agricultural policy. Education without empowerment doesn't avail much, never before have we had so many people with certification in this country and I go back and say that the system cannot absorb so many people if people want to work for people. I think a little innovation and a little collaboration can go a far way in terms of assisting. For instance, all the research stations owned by the Ministry of Agriculture must now become available to CASE, where your students can come - whether it is cattle breeding or plant genetics - that must now be made available. Other programmes, some of which are funded by loans and grants, like the EU Programme, the Agricultural Support Services Project, must be strategically used, because there is a symbiotic relationship, so you are using one stone to kill many birds. I think that there is a way that more can be available if we use the little that we have in an optimal way in terms of partnership.&quot;  First published in <i>Jamaica Gleaner</i>, Monday July 24, 2006</p>
+							<p><span class="date">30/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITORS-FORUM">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITORS-FORUM-on-Agriculture" title="GLEANER EDITORS FORUM on Agriculture" alt="link">GLEANER EDITORS FORUM on Agriculture</a></h2>
+
+	
+					<p> <b>In continuation of our special focus on the agricultural sector we present excerpts of the views of key agricultural stakeholders on the state of agricultural education in Jamaica.</b>   <a name="eztoc91141_1" id="eztoc91141_1"></a>It must be a part of our curriculum <b>Senator Norman Grant - president, Jamaica Agricultural Society (JAS)</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/norman/91148-1-eng-GB/norman.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;MY VIEW is that the quality of education is woefully inadequate. When you look at the whole question of the importance of research and technology and how that can drive and transform the agricultural sector and a number of industries, agro processing and all those related things, you find research and development are in segments and patches.I think we need to move to the centre where we have a more centralised approach to research and development. For example, where the University of the West Indies becomes a part of that process and where CASE as a part of their mandate acts as one of the research areas for the agriculture sector. I have done a little reading in the developed countries and I realise that, some people all they do is go into the lab, they look and they predict what is going to happen in 15 years or in 10 years and they try and work out the solution. What sort of approach can we take to drive that? CENTRALISATION OF RESEARCH I think we need to really look on the centralisation of a research and technologically driven approach towards this area. The teaching of agriculture must start from the primary school, it must start from the basic school, it must be a part of our curriculum, because it is not only a question of appreciating what agriculture can do, but is to appreciate that the survival of agriculture impacts on our own survival.   <a name="eztoc91141_2" id="eztoc91141_2"></a>Start from an education point of view <b>Jasmine Holness - deputy director of research, Ministry of Agriculture and Lands</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/holness/91160-1-eng-GB/holness.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;ANY RESEARCHER requires an enquiring mind. To what level does our institutions encourage enquiry? It begins - not necessarily at the primary level - but definitely at the level where a high school student begins to develop an interest in a career path, in a what you would call a vocation because the idea of coming out and working for somebody is not necessarily the way that one goes these days. So we need to look at it as a vocation and we have to think of delivering agriculture and agricultural knowledge in such a way that it develops an interest, a child develops an interest in it, just as how he wants to become a lawyer (or) a doctor. AGRICULTURE IN SCHOOLS We now have to look at the delivery of agricultural education from the high school level. When I look for instance in one of the newspapers (that) has the CXC curriculum and whatever it is they put out and what I see, the questions being asked, the responses or what is being taught by these persons who are supposed to be the resource persons, I wonder if I learnt the same agriculture as they did. The fundamental thing is that it has to start from an education point of view, both on a social level as well as an educational level, that agriculture must be seen as a good option for vocation.&quot;   <a name="eztoc91141_3" id="eztoc91141_3"></a>Research necessary for development <b>Balteano Duffus - agribusiness consultant</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/duffus/91157-1-eng-GB/duffus.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;THE MORE relevant issues to me are the institutional capacity of the existing institutions to deliver and the relevance of the existing curriculum. Liberalisation and globalisation have been accompanied by increasingly more intense competition driven by even more stringent and more demanding customers, rapidly changing technology. Therefore, to compete effectively in such an environment requires greater efficiency, more responsiveness to customers and the adoption of new technologies more rapidly. MAJOR CHALLENGES Two of the major challenges facing the Jamaican educational institutions responsible for providing agricultural education are their research capabilities, and the level of literacy and the numeracy scale of the large base of farmers that we have because it is no use developing curricula and the people to which you would get to eventually are not in a position to accept. Also, there is the issue of the communication between what we previously called extension officers and farmers in that extension officers would go into the farm and they would try to tell the farmers what they have learned at these various institutions. But in many cases research has shown that given local conditions, there are things that the farmers know that could be of assistance to the extension officers which could be incorporated into the knowledge base and disseminated more widely. Also indigenous research ought to be done for the basis of development. Now, my question is, how much research is being done and what has been the contribution of the University of the West Indies because in the world that we are today, for example, countries are using different methods of keeping out goods from their borders. For example, the whole question of traceability and farmers competence, we have got to look at the competence of our farmers in the context of the people with whom we compete and more often than not farmers like, for example, in Europe have to present certificates which show their competency.   <a name="eztoc91141_4" id="eztoc91141_4"></a>&quot;Non-formal education is just as important&quot; <b>Dr. Francis Aseidu - country representative, Caribbean Agricultural Development and Research Institute (CARDI)</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/aseidu/91154-1-eng-GB/aseidu.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;I THINK where we seem to be having a great problem is what happens after that education and perhaps many of us who have come through the agricultural educational system will agree with me, that agriculture perhaps is the only discipline that spans several faculties in any university. You go from life sciences through humanities, through economics, through almost all the departments in every university. As a discipline, it prepares individuals for life. Now, I think what is happening is how we apply the knowledge and the skills that we have acquired. As the PS (permanent secretary in the Ministry of Agriculture and Lands) said agriculture is a business and that's where we should be looking towards. PLACING EMPHASIS So far, I think we have spent quite a time on the formal agricultural educational system. Mr. Shand alluded to the other side which is the non-formal because of obviously his agency. I think non-formal agricultural education is of equal importance as the formal educational courses that take place in the tertiary and secondary schools and for the non-formal education, the emphasis obviously is on the recipients or the farmers. Technology transfer is one of the things that perhaps we should embrace and strengthen. In this respect, CARDI, as one of its mandates is to generate and provide the extension and dissemination of the various technologies to the farming community. Mr. Duffus also touched on the point of feedback mechanism between the persons transferring the knowledge and the recipients. In fact, we just recently concluded a study funded by the CTU which looked at what is called the farmer experimentation and innovation because farmers by their own right do experiment and they live by trial and error because their backs are against the wall.  This article was first published in <i>Jamaica Gleaner</i> on Wednesday July 19, 2006 </p>
+							<p><span class="date">30/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/GLEANER-EDITORS-FORUM-on-Agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/EDITORS-FORUM-Give-agriculture-colleges-bigger-cut-of-tax-pie" title="EDITORS' FORUM - 'Give agriculture colleges bigger cut of tax pie'" alt="link">EDITORS' FORUM - 'Give agriculture colleges bigger cut of tax pie'</a></h2>
+
+	
+					<p> EXECUTIVE DIRECTOR of the Jamaica 4-H Clubs, Lenworth Fulton, is proposing that the Government channel resources from taxes received by the HEART Trust /NTA to support financially-strapped educational institutions, such as the College of Agriculture, Science and Education (CASE). Speaking at a Gleaner Editors' Forum on Tuesday, Mr. Fulton insisted that more financial resources should be allocated to the agricultural institution. 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/fulton/91684-1-eng-GB/fulton.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	&quot;I think HEART is collecting taxpayers' money for education, you can't take taxpayers' money and put it in HEART alone.&quot; <b>CASE STRUGGLING</b>  During the discussion, administrators at CASE said the institution was struggling to effectively carry out its mandate. &quot;The quality of the programmes that we offer hinges on the availability of adequate resources to put out graduates who are fit for the intended purpose,&quot; said president of CASE, Dr. Paul Ivey. 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ivy/91976-1-eng-GB/ivy.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	 Dr. Ivey later told The Gleaner/Power 106 News Centre that it is costing approximately $280 million a year to run the agricultural institution. But, he said, this year the Government provided only $180 million in subvention. This is six per cent less than the amount the institution received for the 2004/2005 budget And Dr. Ivy said earnings from school fees and school projects are inadequate to meet the $100 million deficit. <b>CALL FOR COLLABORATION</b>  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/stanberry/91687-1-eng-GB/stanberry.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Permanent Secretary in the Ministry of Agriculture and Land, Donovan Stanberry, said there was a need for greater collaboration between agricultural entities, noting that all the agricultural research stations, owned by the ministry, including Bodles in St. Catherine, were now available to CASE for educational purposes. In the meantime, Captain John Lamey, the dean of the Faculty of Agriculture at CASE, said he is concerned that in one year approximately 30 per cent of CASE graduates migrated to find agricultural jobs overseas.    Author: Edmond Campbell, Senior News Coordinator This article was first published in <i>Jamaica Gleaner</i>, Friday, July 14 2006</p>
+							<p><span class="date">30/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/EDITORS-FORUM-Give-agriculture-colleges-bigger-cut-of-tax-pie">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/East-African-Women-in-Science-The-Cream-of-the-Crop" title="East African Women in Science: The Cream of the Crop" alt="link">East African Women in Science: The Cream of the Crop</a></h2>
+
+	
+					<p> Wednesday 12th July 2006, Nairobi - The cream of East Africa's women crop scientists have been awarded the competitive CGIAR fellowships for career enhancement. Eleven outstanding women were selected as winners of the 2006 Fellowships for Enhancing the Careers of East African Women Crop Scientists. The program, just entering its second year, aims at increasing skills, visibility and contributions to science and development of women who work in crop science and biotechnology in Kenya, Uganda and Tanzania. The program contributes directly to the Millennium Development Goal to promote gender equality and empower women.</p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/East-African-Women-in-Science-The-Cream-of-the-Crop">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/UNIDO-South-South-biosafety-training-network" title="UNIDO South-South biosafety training network" alt="link">UNIDO South-South biosafety training network</a></h2>
+
+	
+					<p> The United Nations Industrial Development Organization (UNIDO) has established a South-South capacity building network for biosafety training. The network comprises the Universities of Concepción (Chile), Malaya (Malaysia) and Dar es Salaam (Tanzania). The biosafety programme offered by the network is intended to strengthen the capacity of regulatory institutions in developing countries through the provision of quality multi-disciplinary training. The programme, targeting professionals from government, industry and academia involved in biotechnology regulation, is of twelve months duration and leads to an accredited post-graduate diploma. </p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/UNIDO-South-South-biosafety-training-network">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/South-Africa-State-Rejects-CSIR-Sorghum-Experiment" title="South Africa: State Rejects CSIR Sorghum Experiment" alt="link">South Africa: State Rejects CSIR Sorghum Experiment</a></h2>
+
+	
+					<p> Business Day (Johannesburg) - July 19, 2006 | Tamar Kahn - Cape Town, Government has turned down an application by the Council for Scientific an Industrial Research (CSIR) to perform greenhouse experiments on genetically modified sorghum, citing concern about the risks posed to indigenous wild relatives. The decision is a blow for the African Biotechnology Sorghum Project, a consortium of nine research groups, including the CSIR, that has received $16,9m from the Bill and Melinda Gates Foundation to develop more nutritious sorghum. </p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/South-Africa-State-Rejects-CSIR-Sorghum-Experiment">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Launch-of-new-scheme-for-research-on-Sustainable-Agriculture-for-International-Development" title="Launch of new scheme for research on Sustainable Agriculture for International Development" alt="link">Launch of new scheme for research on Sustainable Agriculture for International Development</a></h2>
+
+	
+					<p> 25 July 2006, DFID - The Biotechnology and Biological Sciences Research Council (BBSRC) and the Department for International Development (DFID) have announced a new scheme to promote biotechnology and biological sciences research that addresses the challenges of agriculture in developing countries. The scheme will strengthen collaboration between BBSRC and DFID to support research that provides answers on how to increase agricultural productivity and food security so as to make significant differences to the lives of poor people in Africa and Asia. </p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Launch-of-new-scheme-for-research-on-Sustainable-Agriculture-for-International-Development">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Breaking-the-silence-on-developing-world-science" title="Breaking the silence on developing-world science" alt="link">Breaking the silence on developing-world science</a></h2>
+
+	
+					<p> 14 July 2006, Source: SciDev.Net | Christina Scott, Diran Onifade and Julie Clayton say journalistic mentoring is key to getting African science the attention it deserves. Is any science going on in developing countries? Take Africa. Considering the level of research activity on the continent — in biomedicine, climate change and the environment, for instance — the answer should be yes. But with a few exceptions, the world rarely hears of research from and for Africa.</p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Breaking-the-silence-on-developing-world-science">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Ghana-Equipment-for-Research-into-Biotechnology" title="Ghana: Equipment for Research into Biotechnology" alt="link">Ghana: Equipment for Research into Biotechnology</a></h2>
+
+	
+					<p> Ghana News Agency, 20 July 2006 - The Ghanaian government has given 7.6 billion cedis (US$855,000) worth of scientific equipment to two of the country's Council for Scientific and Industrial Research (CSIR) institutes, to enable research in agricultural biotechnology. CSIR's Crop Research Institute in Kumasi, Ghana, will serve the northern portion of the country, focusing on building research capacity for the development of disease resistant crop varieties and higher yielding crops.</p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Ghana-Equipment-for-Research-into-Biotechnology">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/ICRISAT-Maps-Out-Vision-and-Strategy-to-2015" title="ICRISAT Maps Out Vision and Strategy to 2015" alt="link">ICRISAT Maps Out Vision and Strategy to 2015</a></h2>
+
+	
+					<p> ICRISAT, 18 July 2006 | The International Crops Research Institute for the Semi-Arid Tropics (ICRISAT) has mapped out a new &quot;vision and strategy to 2015&quot;. As part of this new vision, the institute has adopted what it calls &quot;integrated genetic and natural resource management (IGNRM)&quot; as its &quot;overarching research strategy&quot; for attaining scientific excellence and relevance in agriculture in the semi-arid tropics.</p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/ICRISAT-Maps-Out-Vision-and-Strategy-to-2015">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Brazil-will-share-expertise-in-agriculture-with-Africa" title="Brazil will share expertise in agriculture with Africa" alt="link">Brazil will share expertise in agriculture with Africa</a></h2>
+
+	
+					<p> Carla Almeida, 14 July 2006 - Source: SciDev.Net | African nations are set to benefit from Brazilian expertise in tropical agriculture thanks to an agreement between Brazil and Ghana. Under the agreement signed this week (10 July), Ghana will host the first African branch of the Brazilian Agricultural Research Corporation (Embrapa).</p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Brazil-will-share-expertise-in-agriculture-with-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/COMESA-and-other-RECs-in-ESA-allocated-euro-465-Million-under-the-10th-EDF" title="COMESA and other RECs in ESA allocated &amp;euro;465 Million under the 10th EDF" alt="link">COMESA and other RECs in ESA allocated &amp;euro;465 Million under the 10th EDF</a></h2>
+
+	
+					<p> Ministers of Finance from the Eastern and Southern Africa (ESA) region together with their Trade counterparts met in Mauritius last week to discuss modalities for financing regional integration with emphasis on trade and infrastructure development. Among items on the ministerial agenda was the ongoing negotiations between ESA and the European Union (EU), Economic Partnership Agreement and collaboration with the European Commission under the European Development Fund. </p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/COMESA-and-other-RECs-in-ESA-allocated-euro-465-Million-under-the-10th-EDF">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Developments/Comments-invited-for-draft-report-on-Biotechnology-in-Africa-s-development" title="Comments invited for draft report on Biotechnology in Africa's development" alt="link">Comments invited for draft report on Biotechnology in Africa's development</a></h2>
+
+	
+					<p> 
+This draft report on Biotechnology in Africa's development is available for public comment. Comments should be submitted by 31 August 2006 to <a href="mailto:aambali@nrf.ac.za" target="_self">aambali@nrf.ac.za</a>.See report at <a href="http://www.nepadst.org/doclibrary/pdfs/abp_july2006.pdf" target="_self">http://www.nepadst.org/doclibrary/pdfs/abp_july2006.pdf</a>    </p>
+							<p><span class="date">8/08/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Developments/Comments-invited-for-draft-report-on-Biotechnology-in-Africa-s-development">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2240"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2280"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/Dossiers/CTA-and-S-T/Developments">1</a>...
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2120">107</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2140">108</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2160">109</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2180">110</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2200">111</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2220">112</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2240">113</a></span>
+            
+        <span class="current">114</span>
+
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2280">115</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2300">116</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2320">117</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2340">118</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2360">119</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2380">120</a></span>
+            <span class="other">...</span><span class="other"><a href="/Dossiers/CTA-and-S-T/Developments/(offset)/2420">122</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":339,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

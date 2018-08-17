@@ -1,0 +1,1362 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Selected publications  / CTA and S&amp;T / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="Publications and reports in the field of S&amp;amp;T for Development in ACP countries." /><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1080" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Les-S-T-au-CTA/Publications">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="active">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/CTA-and-S-T">CTA and S&T</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Selected publications </span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Selected publications </h1>
+				<p>Publications and reports in the field of S&amp;T for Development in ACP countries.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Gender-and-climate-change-mapping-the-linkages.-A-scoping-study-on-knowledge-and-gaps" title="Gender and climate change: mapping the linkages. A scoping study on knowledge and gaps" alt="link">Gender and climate change: mapping the linkages. A scoping study on knowledge and gaps</a></h2>
+
+	
+					<p> Alyson Brody, Justina Demetriades and Emily Esplen June, BRIDGE, June 2008. This paper, prepared for the UK Department for International Development’s (DFID) Equity and Rights Team, seeks to make the most of the available resources, pulling from them useful insights that could inform and strengthen future research on and interventions into gender and climate change. Drawing on existing publicly available literature and personal communications with experts in the field of gender and climate change, the paper outlines key linkages between climate change and gender inequality – focusing particularly on adaptation and mitigation policies and practices. It seeks to identify gaps in the existing body of work on gender and the environment, which has focused primarily on women’s agricultural livelihoods, access to natural resources, or disaster risk reduction. Where possible it reviews best practice on adaptation and mitigation, with an emphasis on research, policy and practice. The paper ends with recommendations regarding priority areas for future research and highlights some practical steps required to achieve more equitable, appropriate climate change policies and programmes.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Gender-and-climate-change-mapping-the-linkages.-A-scoping-study-on-knowledge-and-gaps">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Soaring-Food-Prices-Facts-Perspectives-Impacts-and-Actions-Required" title="Soaring Food Prices: Facts, Perspectives, Impacts and Actions Required " alt="link">Soaring Food Prices: Facts, Perspectives, Impacts and Actions Required </a></h2>
+
+	
+					<p> FAO, preparation paper for High-Level Conference on World Food Security, April 2008. The world is experiencing a dramatic increase in food prices. During the first three months of 2008, international nominal prices of all major food commodities reached their highest levels in nearly 50 years while prices in real terms were the highest in nearly 30 years. Although the food market situation differs from country to country and future evolution remains highly uncertain, best projections suggest that food prices are likely to remain high in the next few years and high prices are expected to affect most developing country markets. The general purpose of this technical background document is to discuss the causes and consequences of the recent increases in food prices. The paper starts from a broad, global perspective, proceeds to national level impacts, and then to household level effects. The concluding section discusses possible actions to deal with rising prices. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Soaring-Food-Prices-Facts-Perspectives-Impacts-and-Actions-Required">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Business-for-Development-2008-Promoting-Commercial-Agriculture-in-Africa" title="Business for Development 2008: Promoting Commercial Agriculture in Africa" alt="link">Business for Development 2008: Promoting Commercial Agriculture in Africa</a></h2>
+
+	
+					<p> OECD, May 2008. Business for Development 2008 offers a fresh look at African agriculture and seeks ways for it to become a profitable industry. The changing pattern of international trade in agriculture has profound implications for Africa. The book’s authors discuss these trade flows, map the corporate landscape of agro-food (including the emergent indigenous sector) and assess trends in international development co-operation in agriculture. Particular focus is given to “aid for trade” programmes that aim to foster private-sector development and trade-capacity building. The final chapter draws lessons from five country case studies, and provides evidence of the (in) effectiveness of government intervention and donor programmes in promoting market access for African agriculture. It also offers evidence-based advice on how to foster agricultural development. The book emphasises how the domestic and international private sectors can become drivers of change. This book is a “must read” for government officials, private actors and the donor community and it may help lead to more balanced support programmes.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Business-for-Development-2008-Promoting-Commercial-Agriculture-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Global-impact-of-biotech-crops-socio-economic-and-environmental-effects-1996-2006" title="Global impact of biotech crops: socio-economic and environmental effects 1996-2006 " alt="link">Global impact of biotech crops: socio-economic and environmental effects 1996-2006 </a></h2>
+
+	
+					<p> Graham Brookes &amp; Peter Barfoot, PG Economics Ltd, UK, June 2008. This study presents the findings of research into the global socio-economic and environmental impact of GM crops in the eleven years since they were first commercially planted on a significant area. It focuses on the farm level economic effects, the environmental impact resulting from changes in the use of insecticides and herbicides, and the contribution towards reducing greenhouse gas (GHG) emissions. GM technology has, to date delivered several specific agronomic traits that have overcome a number of production constraints for many farmers. This has resulted in improved productivity and profitability for the 10.25 million adopting farmers who have applied the technology to about 100 million hectares in 2006. During the last eleven years, this technology has made important positive socio-economic and environmental contributions. These have arisen even though only a limited range of GM agronomic traits have so far been commercialised, in a small range of crops.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Global-impact-of-biotech-crops-socio-economic-and-environmental-effects-1996-2006">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Plant-genetic-resources-for-agriculture-plant-breeding-and-biotechnology-Experiences-from-Cameroon-Kenya-the-Philippines-and-Venezuela" title="Plant genetic resources for agriculture, plant breeding, and biotechnology: Experiences from Cameroon, Kenya, the Philippines, and Venezuela." alt="link">Plant genetic resources for agriculture, plant breeding, and biotechnology: Experiences from Cameroon, Kenya, the Philippines, and Venezuela.</a></h2>
+
+	
+					<p> Falck-Zepeda, José; Zambrano, Patricia; Cohen, Joel I.; Borges, Orangel; Guimarães, Elcio P.; Hautea, Desiree; Kengue, Joseph; Songa, Josephine. 2008 (IFPRI Discussion Paper 762). Local farming communities throughout the world face binding productivity constraints, diverse nutritional needs, environmental concerns, and significant economic and financial pressures. Developing countries address these challenges in different ways, including public and private sector investments in plant breeding and other modern tools for genetic crop improvement. In order to measure the impact of any technology and prioritize investments, we must assess the relevant resources, human capacity, clusters, networks and linkages, as well as the institutions performing technological research and development, and the rate of farmer adoption. IFPRI, in collaboration with FAO and national experts contracted by FAO to complete in-country surveys, identified and analyzed plant breeding and biotechnology programs in four developing countries: Cameroon, Kenya, the Philippines, and Venezuela. Here, we use an innovation systems framework to examine the investments in human and financial resources and the distribution of resources among the different programs, as well as the capacity and policy development for agricultural research in the four selected countries. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Plant-genetic-resources-for-agriculture-plant-breeding-and-biotechnology-Experiences-from-Cameroon-Kenya-the-Philippines-and-Venezuela">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Biofuels-and-Grain-Prices-Impacts-and-Policy-Responses" title="Biofuels and Grain Prices: Impacts and Policy Responses" alt="link">Biofuels and Grain Prices: Impacts and Policy Responses</a></h2>
+
+	
+					<p> 
+Mark W. Rosegrant, International Food Policy Research Institute, May 7, 2008. Recent dramatic increases in food prices are having severe consequences for poor countries and poor people. The Food and Agriculture Organization of the United Nations (FAO) reports that food prices rose by nearly 40 percent in 2007 and made further large jumps in early 2008. Nearly all agricultural commodities—including rice, maize, wheat, meat, dairy products, soybeans, palm oil, and cassava—are affected. In response to the price hikes, food riots have occurred in many developing countries, including Burkina Faso, Cameroon, Côte d’Ivoire, Egypt, Haiti, Indonesia, Senegal, and Somalia. According to the FAO, 37 countries are now facing food crises.The role of biofuel policies in the food-price hikes has become particularly controversial. The rapid increase in demand for and production of biofuels, particularly bioethanol from maize and sugarcane, has had a number of effects on grain supply-and-demand systems.  </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Biofuels-and-Grain-Prices-Impacts-and-Policy-Responses">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Agricultural-R-D-Capacity-and-Investments-in-the-Asia-Pacific-Region" title="Agricultural R&amp;D Capacity and Investments in the Asia–Pacific Region" alt="link">Agricultural R&amp;D Capacity and Investments in the Asia–Pacific Region</a></h2>
+
+	
+					<p> 
+Nienke M. Beintema and Gert-Jan Stads, Research Brief Policy No. 11, 2008. Science and technology (S&amp;T) are major contributors to food security, poverty reduction, and economic growth, as has been proven in Asia since the early-1970s through the Green Revolution in agriculture. Continuing to secure such gains, however, is becoming an increasingly complex undertaking. More than ever, quantitative data are vital for measuring, monitoring, and benchmarking the performance of agricultural S&amp;T systems, including their inputs and outcomes.This brief reviews major institutional developments and investment and human resource trends in agricultural research and development (R&amp;D) in 11 countries of the Asia–Pacific region. The brief draws on a set of country briefs, reports, and underlying datasets developed by the Agricultural Science and Technology Indicators (ASTI) initiative. ASTI worked with regional partners to collect detailed quantitative and qualitative information on research capacity and investment trends within agricultural R&amp;D agencies.  </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Agricultural-R-D-Capacity-and-Investments-in-the-Asia-Pacific-Region">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Yokohama-Declaration-towards-a-Vibrant-Africa" title="Yokohama Declaration towards a Vibrant Africa " alt="link">Yokohama Declaration towards a Vibrant Africa </a></h2>
+
+	
+					<p> TICAD IV, 30 May, 2008. The Heads of State and Government, and delegations of Japan and 51 African countries, together with the representatives of 34 other countries, 75 international and regional organizations, and representatives of the private sector, academic institutions and civil society organizations from both Africa and Asia, met in Yokohama, Japan from 28 to 30 May, 2008, for the Fourth Tokyo International Conference on African Development - TICAD IV. The Conference took place against the backdrop of a rapidly-changing Africa determined to take responsibility for and to assert ownership over its own destiny: and an Africa increasingly confident and capable, itself, of determining that destiny. The Participants at TICAD IV also recognized the need for Africa’s diversified development partners, working together with the governments of Africa and with the African Union (AU) and its institutions and programmes - in particular the New Partnership for African Development (NEPAD) - to actively strive for far greater synergy and effective coordination between and among existing and future initiatives in support of the continent’s development.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Yokohama-Declaration-towards-a-Vibrant-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Springing-back-climate-resilience-at-Africa-s-grassroots" title="Springing back: climate resilience at Africa’s grassroots" alt="link">Springing back: climate resilience at Africa’s grassroots</a></h2>
+
+	
+					<p> Sonja Vermuelen, Krystel Dossou, Duncan Macqueen, Dominic Walubengo, and Everhart Nangoma, Sustainable Development Opinion, May 2008. Climate change is often seen as a global problem demanding global solutions. But for poor people hit hard by the impacts, climate change is a not a boardroom abstraction, but day-to-day reality. Faced with local shifts in weather patterns and natural resources, they are forced to find ways of coping that are locally relevant. This kind of experience, gained at the grassroots, boosts resilience as no top-down initiative can. Three case studies from rural communities in Benin, Kenya and Malawi show how it is done. In all the case studies, growing seasons were found to be less predictable and available surface water less abundant than two or three decades ago. These changes are partly due to changing local climates. Meanwhile, growing human populations and largescale land use change, such as the spread of industrial plantations, add to environmental pressures that could, for instance, affect water availability. People’s adaptations to environmental change combine technical fixes (such as faster-maturing crop species and varieties) with institutional support, via social networks and more formal organisations.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Springing-back-climate-resilience-at-Africa-s-grassroots">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Physicochemical-Characterization-of-Rice-Straw-Pretreated-with-Sodium-Hydroxide-in-the-Solid-State-for-Enhancing-Biogas-Production" title="Physicochemical Characterization of Rice Straw Pretreated with Sodium Hydroxide in the Solid State for Enhancing Biogas Production" alt="link">Physicochemical Characterization of Rice Straw Pretreated with Sodium Hydroxide in the Solid State for Enhancing Biogas Production</a></h2>
+
+	
+					<p> He, Yanfeng, Yunzhi Pang, Yanping Liu, Xiujin Li, and Kuisheng Wang, ASAP Energy Fuels, May 14, 2008. The biogas yield of rice straw during anaerobic digestion can be substantially increased through solid-state sodium hydroxide (NaOH) pretreatment. This study was conducted to explore the mechanisms of biogas yield enhancement. The chemical compositions of the pretreated rice straw were first analyzed. The changes of chemical compositions, chemical structures, and physical characteristics made rice straw become more available and biodegradable and thus were responsible for the enhancement of the biogas yield.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Physicochemical-Characterization-of-Rice-Straw-Pretreated-with-Sodium-Hydroxide-in-the-Solid-State-for-Enhancing-Biogas-Production">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/High-Food-Prices-The-What-Who-and-How-of-Proposed-Policy-Actions" title="High Food Prices: The What, Who, and How of Proposed Policy Actions" alt="link">High Food Prices: The What, Who, and How of Proposed Policy Actions</a></h2>
+
+	
+					<p> Braun, von Joachim, Akhter Ahmed, Kwadwo Asenso-Okyere, Shenggen Fan, Ashok Gulati, John Hoddinott, Rajul Pandya-Lorch, Mark W. Rosegrant, Marie Ruel, Maximo Torero, Teunis van Rheenen, and Klaus von Grebmer, Policy Brief, May 2008. The complex causes of the current food and agriculture crisis require a comprehensive response. In view of the urgency of assisting people and countries in need, the first set of policy actions—an emergency package—consists of steps that can yield immediate impact. Investment in these actions calls for additional resources. Policymakers should consider mobilizing resources from four sources: the winners from the commodity boom among countries; the community of traditional and new donor countries; direct or indirect progressive taxation and reallocation of public expenditures in the affected countries themselves; and mobilization of private sector finance, including through improved outreach of banking to agriculture. Global and national action is needed, through existing mechanisms, well-coordinated special initiatives, and possibly a special fund.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/High-Food-Prices-The-What-Who-and-How-of-Proposed-Policy-Actions">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Bio-fuels-research-in-the-CGIAR-A-Perspective-from-the-Science-Council" title="Bio-fuels research in the CGIAR: A Perspective from the Science Council" alt="link">Bio-fuels research in the CGIAR: A Perspective from the Science Council</a></h2>
+
+	
+					<p> SC Secretariat, 24 April 2008. There are serious concerns about the greenhouse gas (GHG) emissions, energy and nutrient and water use efficiency of large-scale, first generation bio-energy feedstocks currently in use. A major question is whether biofuels obtained from these feedstocks are effective in combating climate change and what impact they will have on soil and water resources. Another fundamental issue relates to the magnitude and nature of their impact on food prices and ultimately on the livelihoods of the poor. A possible solution to overcome the current potentially large negative effects of large-scale biofuel production is developing second and third generation conversion techniques from agricultural residues and wastes and step up the scientific research efforts to achieve sustainable biofuel production practices. Until such sustainable techniques are available governments should scale back their support for and promotion of biofuels. Multipurpose feedstocks should be investigated making use of the bio-refinery concept (bio-based economy). </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Bio-fuels-research-in-the-CGIAR-A-Perspective-from-the-Science-Council">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Why-are-current-world-food-prices-so-high-A-memo" title="Why are current world food prices so high? A memo" alt="link">Why are current world food prices so high? A memo</a></h2>
+
+	
+					<p> Martin Banse, Peter Nowicki and Hans van Meijl, LEI Wageningen UR, May 2008. The price increases of food have several roots and a normally functioning market will in time provide a certain degree of corrective action. But policy/political decisions can prevent the market from doing so. In any case, the time lapse for the market to act does not remove the acuity of the price distortion that affects the poorest people, and urgent intervention is necessary to alleviate the effects of price peaks. Natural resource prices lead basic food commodity prices; the rate of growth of the former has historically been (and is again at present) higher than the latter. Biofuels create a more direct link between food and fuel prices, if fuel prices are high: the long term trend of declining real food prices might be dampened or reversed.</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Why-are-current-world-food-prices-so-high-A-memo">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Farmers-can-t-wait-for-wheat" title="Farmers can't wait for wheat" alt="link">Farmers can't wait for wheat</a></h2>
+
+	
+					<p> 
+New Agriculturalist 2008/3. A new drought-resistant, high-yielding wheat variety is proving so popular with farmers in Kenya, that crop breeders are struggling to keep up with demand.
+Developed over the last ten years at the Kenya Agricultural Research Institute (KARI), the new variety, Njoro-BW1, is now being cultivated on more than 10,000 hectares in the country.The strain was developed through a process of 'mutation plant breeding', which uses radiation-based techniques to modify crop characteristics. KARI worked closely with the International Atomic Energy Agency and the African Co-operative Agreement for Research, Development and Training related to Nuclear Science and Technology to create Njoro-BW1, which also produces good quality flour, and has moderate resistance to wheat rust. As its popularity with farmers has grown, the Kenya Cereal Growers Association has provided KARI with much-needed land and support in its efforts to produce enough seed. It is hoped the new variety will continue to boost the proportion of home-grown wheat consumed in Kenya. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Farmers-can-t-wait-for-wheat">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Innovation-system-approach-to-agricultural-development-Policy-implications-for-agricultural-extension-delivery-in-Nigeria" title="Innovation system approach to agricultural development: Policy implications for agricultural extension delivery in Nigeria" alt="link">Innovation system approach to agricultural development: Policy implications for agricultural extension delivery in Nigeria</a></h2>
+
+	
+					<p> 
+Agwu, A. E., Dimelu, M. U. and Madukwe, M. C. African Journal of Biotechnology Vol. 7 (11), pp. 1604-1611, 3 June, 2008A sustainable and dynamic approach to agricultural development has remained of great concern to the government and priority for discourse in the policy arena. Past efforts have concentrated on investment in research and development which was established on the consensus that the application of science and technology is responsible for the structural transformation required to propel the agricultural sector. This paper concludes that government, policy makers, and administrators should invest and promote researches in sectors/sub sectors of economic and food security importance, using this analytical framework. Government should encourage and facilitate farmer and private sector innovative strength by enacting favourable polices (patenting and reward system) that will act as incentives. Institutional context of any innovation should be sufficiently analyzed by policy makers as requisite to promoting such innovation, while extension workers should build such information in technology packages to farmers. </p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Innovation-system-approach-to-agricultural-development-Policy-implications-for-agricultural-extension-delivery-in-Nigeria">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/OECD-FAO-Agricultural-Outlook-2008-2917" title="OECD/FAO Agricultural Outlook 2008-2917" alt="link">OECD/FAO Agricultural Outlook 2008-2917</a></h2>
+
+	
+					<p> OECD/FAO, June 2008. Due to a combination of permanent factors underpinning the recent increases in food prices, these higher prices are here for another 10 years at least says the above report by the Organisation for Economic Co-operation and Development (OECD) and the Food and Agriculture Organisation (FAO) of the UN. Although the current price peaks will come down slightly, the report states that “when the average for 2008 to 2017 is compared with that over 1998 to 2007, beef and pork prices may be some 20% higher; raw and white sugar around 30%; wheat, maize and skim milk powder 40 to 60%; butter and oilseeds more than 60% and vegetable oils over 80%.” The report sets out to answer vital questions surrounding the current food crisis and agricultural development like which of the factors that are driving up prices are temporary and which will prove to be more permanent influences? How will they individually and collectively affect price levels, price trends and price volatility in the future? How will markets react to currently high prices and a more uncertain price outlook? What are the appropriate policy responses?</p>
+							<p><span class="date">30/06/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/OECD-FAO-Agricultural-Outlook-2008-2917">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Gender-and-Equity-Issues-in-Liquid-Biofuels-Production-Minimizing-the-Risks-to-Maximize-the-Opportunities" title="Gender and Equity Issues in Liquid Biofuels Production: Minimizing the Risks to Maximize the Opportunities" alt="link">Gender and Equity Issues in Liquid Biofuels Production: Minimizing the Risks to Maximize the Opportunities</a></h2>
+
+	
+					<p> 
+Andrea Rossi and Yianna Lambrou, FAO 2008This paper discusses the potential gender-differentiated risks of liquid biofuels production and identify research and policy strategies to better understand and address them. The potential environmental and socio-economic risks that may arise from the establishment and operation of large-scale plantations for the production of biofuels are considered. The paper provides some specific recommendations for future research, such as conducting field-assessments to generate sex-disaggregated data for testing the hypotheses discussed in this paper.  </p>
+							<p><span class="date">29/05/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Gender-and-Equity-Issues-in-Liquid-Biofuels-Production-Minimizing-the-Risks-to-Maximize-the-Opportunities">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Poverty-and-Water-Explorations-of-the-Reciprocal-Relationship" title="Poverty and Water: Explorations of the Reciprocal Relationship" alt="link">Poverty and Water: Explorations of the Reciprocal Relationship</a></h2>
+
+	
+					<p> 
+Eds David Hemson, Kassim Kulindwa, Haakon Lein, Adolfo Mascarenhas, Zed Books, 2008This book uses a global spread of case studies to illustrate that water is not simply an issue of physical scarcity, but rather a complex and politically driven issue with profound future implications, both in the developing world and outside it. The book argues that for the international community to achieve the MDGs, governments must step in to protect the rights of the poor. Here, the links between poverty and access to clean water are explored with an eye to political reform that can end the exploitative policies of big business and help to shape a more equitable world for all. </p>
+							<p><span class="date">29/05/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/Poverty-and-Water-Explorations-of-the-Reciprocal-Relationship">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/The-maize-seed-system-in-Ethiopia-challenges-and-opportunities-in-drought-prone-areas" title="The maize seed system in Ethiopia: challenges and opportunities in drought prone areas" alt="link">The maize seed system in Ethiopia: challenges and opportunities in drought prone areas</a></h2>
+
+	
+					<p> 
+Dawit Alemu, Wilfred Mwangi, Mandefro Nigussie and David J.Spielman, African Journal of Agricultural Research Vol. 3 (4), pp. 305-314, April, 2008This study examines how the performance of the maize seed system in Ethiopia affects small-scale farmers’ access to and use of improved maize varieties. Findings show that despite extensive varietal development by the public research system, dissemination of improved varieties to farmers remains limited. The result is a seed market characterized by limited competition, insufficient supply of seed relative to demand, limited choice in the few varieties that are available, and excessively high costs of maize seed production. </p>
+							<p><span class="date">29/05/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/The-maize-seed-system-in-Ethiopia-challenges-and-opportunities-in-drought-prone-areas">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Selected-publications/African-Journal-on-Food-Agriculture-Nutrition-and-Development-AJFAND-2008-Vol-8-no-1" title="African Journal on Food, Agriculture, Nutrition and Development (AJFAND), 2008, Vol 8 no 1" alt="link">African Journal on Food, Agriculture, Nutrition and Development (AJFAND), 2008, Vol 8 no 1</a></h2>
+
+	
+					<p> The articles in this issue includes: Socio-demographic &lt;http://www.ajfand.net/Issue18/PDFs/Hassan_1835.pdf&gt; variables associated with AIDS epidemic: Evidence from Organization for Economic Cooperation and Development (OECD) and the African countries.</p>
+							<p><span class="date">24/04/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Selected-publications/African-Journal-on-Food-Agriculture-Nutrition-and-Development-AJFAND-2008-Vol-8-no-1">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1060"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1100"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/Dossiers/CTA-and-S-T/Selected-publications">1</a>...
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/940">48</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/960">49</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/980">50</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1000">51</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1020">52</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1040">53</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1060">54</a></span>
+            
+        <span class="current">55</span>
+
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1100">56</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1120">57</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1140">58</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1160">59</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1180">60</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1200">61</a></span>
+            <span class="other">...</span><span class="other"><a href="/Dossiers/CTA-and-S-T/Selected-publications/(offset)/1360">69</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":322,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

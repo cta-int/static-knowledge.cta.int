@@ -1,0 +1,1581 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                            
+<title>Knowledge for development</title>
+<!--<title>Science, Technology and Innovation at the NANO Scale / Feature articles / Nanotechnology / S&amp;T Issues / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="Much is expected of Science, Technology and Innovation at the NANO-scale (STI-NANO). In making a case for in-depth US commitment to the development of STI-NANO, Mr. Newt Gingrich, Former Speaker of the US House of Representatives, stated: &amp;quot;I think what you're dealing with, between nanoscale quantum behavior and biology, it's clearly bigger than the impact of physics on the 20th century” (1). Richard Smalley - Nobel Laureate in Chemistry and co-discoverer of carbon nano-balls (fullerenes)..." /><meta name="keywords" content=", science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/S-T-Issues/Nanotechnology/Feature-articles/Science-Technology-and-Innovation-at-the-NANO-Scale" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies/Articles-de-fond/La-science-la-technologie-et-l-innovation-a-l-echelle-nanometrique">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/">Home</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues">S&amp;T Issues</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues/Nanotechnology">Nanotechnology</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues/Nanotechnology/Feature-articles">Feature articles</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Science, Technology a...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image" >
+										
+						
+
+    
+                <div class="imageleft">
+    
+    
+                                                                                                                                     <a href="/var/knowledge/storage/images/dossiers/s-t-issues-in-perspective/nanotechnology/articles/science-technology-and-innovation-at-the-nano-scale/211301-9-eng-GB/Science-Technology-and-Innovation-at-the-NANO-Scale.jpg" rel="lightbox[]" >        <img src="/var/knowledge/storage/images/dossiers/s-t-issues-in-perspective/nanotechnology/articles/science-technology-and-innovation-at-the-nano-scale/211301-9-eng-GB/Science-Technology-and-Innovation-at-the-NANO-Scale_contentfront.jpg" width="185" height="54"  style="border: 0px  ;" alt="Science, Technology and Innovation at the NANO Scale" title="Science, Technology and Innovation at the NANO Scale" />
+        </a>
+    
+    
+            </div>
+    
+    																					</div>
+	
+					<div class="content-intro-text">
+						<h1>Science, Technology and Innovation at the NANO Scale</h1>
+													<p class="author"><strong>Author:</strong>
+								Ishenkumba Kahwa</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							29/04/2008</p>
+																									<p class="intro">Introduction:</p>
+							<p>Much is expected of Science, Technology and Innovation at the NANO-scale (STI-NANO). In making a case for in-depth US commitment to the development of STI-NANO, Mr. Newt Gingrich, Former Speaker of the US House of Representatives, stated: <i>&quot;I think what you're dealing with, between nanoscale quantum behavior and biology, it's clearly bigger than the impact of physics on the 20th century”</i> (1). Richard Smalley - Nobel Laureate in Chemistry and co-discoverer of carbon nano-balls (fullerenes), testified before the US Congress that: <i>“the impact of nanotechnology on health, wealth and the standard of living for people will be at least the combined influences of microelectronics, medical imaging, computer-aided engineering and man-made polymers in the 20th century”</i> (2). </p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/layout/set/print/content/view/full/6810">Print</a>
+																				</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<p>The extraordinary stakes anticipated from this new technological revolution, are fueling strategic interest and significant investments in the development and commercialization of STI-NANO materials and processes. The US National Nanotechnology Initiative estimates that global expenditure on STI-NANO Research and Development (R&amp;D) increased tenfold, to US$4 billion between 1997 and 2005 (3). So high is the faith in the transformative potential of STI-NANO that it is believed that success in achieving the United Nations Millennium Development Goals, especially in poor developing countries, is dependent on their ability to develop and commercialize STI-NANO systems, devices and processes. The UN Millennium Project STI team reported that STI-NANO applications can support the management of various development challenges namely; availability and utilization of water and energy resources, diagnosis and treatment of diseases, detection and destruction of plant and animal pathogens, improvements in general agricultural productivity as well as food production and storage (4). When STI-NANO prospects are combined with genomics, biotechnology and ICT platforms, the opportunities for achieving socio-economic development in developing countries become much brighter. ACP countries are therefore encouraged to make deliberate and targeted investments in STI-NANO.</p><a name="eztoc211300_0_1" id="eztoc211300_0_1"></a><h3>2. STI-NANO: Market potential and global efforts</h3><p>According to Market Research (5), earnings from several STI-NANO products show promise when the actual and potential annual value in millions of US Dollars (USD) are considered: nanoelectronics - 1,827USD (2005) to 4,200USD (2010); nanofoods - 20,400USD (2010); nanotextiles - 13,600USD (2007) to 1154USD (2012), nanotech tools - USD0.9 (2008) to USD 2.7(2013). Recognizing this potential, the US initiated a Strategic Initiative in STI-NANO in 2001(6) while the EU coupled its strategic STI-NANO initiative to its quests for global leadership in information-led economic development, e.g. nanoelectronics research for which Euro 3 Billion was allocated over the next 10 years (7).</p><p>South Africa’s keen interest in STI-NANO is demonstrated by its careful planning in hosting the 2007 World Nano-Economic Congress (WNEC) (8) in which local entrepreneurs, policy makers and researchers were deliberately exposed to cutting edge developments in STI-NANO. The seriousness of China in STI-NANO is evident by its initiation and hosting of a series conference - the China International Conference on Nanoscience and Technology in 2005 and 2007 (9). These conference series provided opportunities for absorption of advanced and cutting edge STI-NANO knowledge while entrenching and strengthening the host communities’ participation in the evolution of that knowledge. The selection of Bangalore, Kolkatta and Mohali as host sites for India’s new STI-NANO centers is a clear indication of how seriously India views the economic potential of STI-NANO and the imperative of her engagement with and exploitation of that potential. Brazil’s understanding of the economic potential of STI-NANO (10) began in 2000 and in 2004 STI-NANO became part of that nation’s multi-year development plan (2004-7) (11). According to Z.G. Khim, president of the Korean Nano Researchers’ Association (12), Korea began investing reasonably in STI-NANO and is getting some interesting returns on that investment. Singapore and Korea along with Japan and OECD countries are also strong in STI-NANO (13).</p><p>T 
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig1/211233-1-eng-GB/nano_fig1.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig1/211233-1-eng-GB/nano_fig1_medium.jpg" width="200" height="126">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	he list of major contributors to new knowledge on STI-NANO reveals a healthy mix of developing and developed countries but the ACP countries are missing in the action. STI-NANO articles in journals covered by the ISI Web of Knowledge have been increasing (Figure 1). The countries which are active in the STI-NANO research effort are shown in Figure 2. The People’s Republic of China is followed by the USA and Japan.</p><p><i>Figure 1: Published research articles on the topic -NANO</i> </p><p>
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="131">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig2/211236-1-eng-GB/nano_fig2.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig2/211236-1-eng-GB/nano_fig2_medium.jpg" width="131" height="200">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 </p><p><i>Figure 2: Countries contributing research articles on NANO 2001-2008 (Data retrieved from and processed at the ISI Web of Knowledge site) </i>(14) <i>. </i> </p><a name="eztoc211300_0_2" id="eztoc211300_0_2"></a><h3>3. Unusual properties of matter at the nano scale</h3><p>This behaviour of materials and devices at the nano scale level is supremely diverse, complex and different. The real potential of STI-NANO lies in the possibility of manipulating and controlling those unusual properties and their interactions with matter. Some materials in the nano scale are stronger than they usually are in the bulk form. For example, the bone and teeth materials are now known to be largely nano-particles of crystalline hydroxylapatite (Ca10(PO4)6(OH)2)) dispersed in collagen fibrils to produce a rather strong biological material (D.Nicollela (15)). Because of quantum confinement of electronic states of nano particles, physical behaviour of matter, such as colour of absorbed or emitted light, is size dependent as shown in Figure 3 by cadmium selenide (CdSe) and cadmium telluride (CdTe) quantum dots in a variety of particle sizes (16). </p><a name="eztoc211300_0_3" id="eztoc211300_0_3"></a><h3> 
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="190">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig3/211246-1-eng-GB/nano_fig3.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig3/211246-1-eng-GB/nano_fig3_medium.jpg" width="190" height="200">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 </h3><p><i>Figure 3: A constellation of colours of emitted light from quantum dots. The wavelength of emitted light increases with quantum dots particle size.</i> </p><p>A team of University of California, Riverside researchers discovered that iron oxide (Fe3O4) nanocrystals coated with a charged polymer (polyacrylic acid) forms superparamagnetic colloid solutions in water the colours of which are tunable by application of a magnetic field or variation of its strength (Figure 4).</p><p>
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig4/211254-1-eng-GB/nano_fig4.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig4/211254-1-eng-GB/nano_fig4_medium.jpg" width="200" height="58">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 </p><p><i>Figure 4: Image shows the solution of iron oxide (Fe3O4) in water changing colour under the influence of a magnetic field, with increasing strength of the field from left to right. </i><i>Photo credit: Yin laboratory, University of California, Riverside </i>(17) <i>. </i> </p><p>
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="176">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig5/211257-2-eng-GB/nano_fig5.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig5/211257-2-eng-GB/nano_fig5_medium.jpg" width="176" height="200">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	Potential applications of quantum dots and colloidal particles with such photonic potential include display units and biomedical diagnostics and imaging. Good examples include effective and refreshingly convenient use of quantum dots in detection of proteins in proteomics and other molecular biology disciplines (Figure 5). </p><p>Cutting tools made from nano-materials of tungsten, titanium and tantalum carbides are much harder, much more wear-resistant, erosion-resistant, and last longer than those fabricated from bulk materials (18). Pure nano-crystalline copper has yield strength in excess of 400 MPa, which is six times higher than that of coarse-grained copper (19).</p><p>Besides materials with interesting physical properties, nano-container materials of various shapes have been made and are being developed as nano-delivery vessels for a variety of important purposes, especially in biomedical areas. The amazing carbon nanotube structures (Figures 6 and 7) have been studied extensively and derivatized to make them soluble in a variety of solvents or tailor them to a variety of applications (including biomedical) (20).</p><p>
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig6/211272-1-eng-GB/nano_fig6.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig6/211272-1-eng-GB/nano_fig6_medium.jpg" width="200" height="143">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 </p><p><i>Figure 6: Structure of carbon nanotubes: single wall (left) and multi-walled nanotube (right). Copyright Alain Rochefort Assistant Professor Engineering Physics Department, Nanostructure Group, Center for Research on Computation and its Applications (CERCA) </i>(21) <i>.</i> </p><p>
+ 
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig7/211275-1-eng-GB/nano_fig7.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig7/211275-1-eng-GB/nano_fig7_medium.jpg" width="200" height="164">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 <br />
+ <i>Figure 7: </i> <i>Rendition of a functionalized nanotube carrying drugs. Prato M, Kostarelos K and Bianco A, Accounts of Chemical Research 41, 1, 60 (2008). Copy Right: American Chemical Society 2008 </i>(22) <i>. </i> <br /> </p><a name="eztoc211300_0_4" id="eztoc211300_0_4"></a><h3>4. Agriculture and Medicine and STI-NANO Developments</h3><p>Protein and DNA materials are usually nano-structures with remarkable efficiency and effectiveness in their regulation or facilitation of biological functions. Thus, while exciting developments and potential applications of STI–NANO in chemistry, physics and engineering have already emerged, it is their link with biology and medicine which is believed to hold the most promise. Indeed, the efforts of physical, chemical and engineering research at the NANO level are dominated by discovery, fabrication and development of novel materials and devices, which are suitable for use in biological interventions. Examples of biological and biomedical areas with the potential to be positively impacted by STI-NANO include: </p>
+<ol>
+
+<li>smart sensors - which are good at detecting pathogens and are capable of delivering drugs to kill them; </li>
+
+<li>Molecular imaging; </li>
+
+<li>quantitative analysis; </li>
+
+<li>integration of quantitative analysis and imaging into ICT systems; </li>
+
+<li>physical models of a cell as a machine; and, </li>
+
+<li>better ex-vivo tests and improvements in current laboratory techniques. </li>
+
+</ol>
+<p>We examine briefly two areas to illustrate the challenges and opportunities that lie ahead in STI-NANO.</p><p><b>4. 1 Smart sensors</b> </p><p>In agriculture and medicine, there is a need to rapidly detect the presence of undesirable microorganisms, diseased biomolecules and biochemical imbalances in plants and animals before significant biological damage sets in. Once plant, animal or human diseases or potential health problems have been identified there is need to take quick steps to destroy the invasive microbes or restore biochemical and physiological balance. It is best if the diagnosis and treatment can be achieved in a single package of processes. Thus combining at a biomolecular level, nano-photonic or electrochemical sensors with nano-containers capable of carrying and delivering drugs hold considerable promise for improving agricultural productivity, food safety and security and public health and medical care. A number of materials and devices with such potential have been fabricated. Examples other than nanotubes include a recently biomimetic molecular nano-shuttle (Figure 8):</p><p>
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="199">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig8/211290-1-eng-GB/nano_fig8.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig8/211290-1-eng-GB/nano_fig8_medium.jpg" width="199" height="200">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 </p><p>
+ Nano-systems that can monitor blood sugar levels and also send a signal to a nano-actuator which then delivers an appropriate amount of insulin into the blood stream would help many diabetic sufferers; examples of such devices have been widely reported on the web.<br />
+ A nano-system that can detect cancer cells or bacteria and selectively kill them would be a most welcome development. An innovative proof of concept for such a system was reported recently by Chinese researchers (Figure 9). Cobalt disulfide (CoS2) can be assembled into nanostructures that are hollow at the centre, where platinum-iron (FePt) units can be accommodated. Once taken in by a cell, platinum and iron are oxidized to Pt2+ and Fe3+ respectively; then Pt2+ becomes attracted to the damaged DNA strands and somehow causes them to die and exit the cell leaving healthy DNA behind. This is achieved more effectively than with the popular cancer drug cisplatin. With such a system, disease causing pathogens and cancer cells would be detected while present in small quantities and before disease symptoms occur. <br /> </p><p>
+ 
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="192">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table  border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/nano_fig9/211293-1-eng-GB/nano_fig9.jpg" rel="lightbox[]" >	<img border="0" src="/var/knowledge/storage/images/media/images/nano_fig9/211293-1-eng-GB/nano_fig9_medium.jpg" width="192" height="200">
+	  </a></td>
+	<tr>
+	
+	</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1" /></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	 <br />
+ <i>Figure 9: Destruction of bacteria or cancer-damaged DNA by a nano-system containing FePt particles in the cavity of cobalt CoS2 nano-cavity . Copy right: American Chemical Society. Gao et al. Journal of the American Society, 129, 1529 (2007). Copy right: American Chemical Society 2007.</i> <br /> </p><p>A smart chicken feed developed at Clemson University contains coated nanoparticles that attract and detect pathogens; immobilizing them and facilitating their safe excretion from the animal. This has potential to eliminate micro-organisms such as salmonella and e-coli from chicken meat, save lives and minimize financial losses.</p><p><b>4.2 Molecular imaging</b> </p><p>Diagnosis and treatment of diseases could benefit significantly from improved understanding of how biological processes and devices work at the nano-level and how they are integrated in cells to enable/regulate physiological function and overall intra- and inter-cell responses to a variety of stimuli. An effective combination of biomolecular sensors, electromechanical devices, algorithms for interpreting signals in real time and three dimensional space and ICT systems to manage them will be required to create functional nano-devices for biomolecular imaging. The challenge has been that, besides Fluorescence Resonance Energy Transfer (FRET) in which energy transfer among electronically active sites provides spatial resolution at the 1-10 nm level, popular techniques like Magnetic Resonance Imaging (MRI), Ultrasound and Positron Emission Tomography (PET) still lack nano-scale resolution capability. Thus developments in analytical nano-techniques are required and those of atomic force microscopy are showing increasing promise.</p><a name="eztoc211300_0_5" id="eztoc211300_0_5"></a><h3>5. Safety and ethical issues of STI –NANO</h3><p>While the potential benefits of STI-NANO are promising, the public is genuinely worried and uncertain about nano materials and are cautious about their wide use, especially in food production, processing and storage or beauty products. Within this context and given fear of the unknown, reports of adverse health effects of nano materials on humans or animals (even when relatively minor) will cause considerable anxiety over the whole industry. For example, an aerosol consumer product containing nano-particles which were designed to protect surfaces from dirt and make them easier to clean has been recalled because of complaints including fever, coughing, headaches and pulmonary edema after two years on the market (23). Concerns have also been raised about the similarity between the fibrous structures of asbestos and carbon nanotubes, especially after toxicity to mice was reported (Warheit et al Toxicol. Science 77, 117 (2004) (24). While reports of adverse health effects of nanomaterials are few, as indeed are nanoproducts on the market, health and safety concerns in the emerging nano industry must be at the top of the research and public engagement agenda. Ethical and safety issues must be considered and resolved. </p><p>Key research questions on safety relate to: </p>
+<ul>
+
+<li>the extremely small size of nano particles which may afford them uninhibited access to more organs and parts of the human body than hitherto; </li>
+
+<li>the extraordinarily unusual, diverse and complex chemical and physical properties of matter at the atomic and molecular levels, which make it difficult to predict outcomes of their interaction with human tissue and organs. </li>
+
+</ul>
+<p>With respect to ethical issues, there are worrying questions: </p>
+<ul>
+
+<li>Who will benefit from the enormous potential of STI-NANO? - Will the developing countries and poor people be left out? </li>
+
+<li>How will products emerge from research laboratories to trials and off to the market? </li>
+
+<li>Will the public have an informed say on the industry? </li>
+
+<li>How will the democratic rights of people and their core values be affected – how will these fare in the nano-world? </li>
+
+</ul>
+<p>Answers to these questions must be sought as the scientific community develops nano-products for the market place. Consequently, capacity building in STI and ethics will be vital for the success of STI-NANO and it is heartening to know that developed countries have embraced this approach as an important STI-NANO development strategy (25).</p><a name="eztoc211300_0_6" id="eztoc211300_0_6"></a><h3>6. What does STI-NANO hold for ACP countries?</h3><p>Clearly STI-NANO has the potential to transform human society in far reaching ways. Human health, economy, agriculture, environment, security and economic growth and sustainability could be affected by STI-NANO developments. The hope is that the effects will be mostly positive, despite concerns that have arisen concerning safety and ethics. The ACP community should heed the admonition of the STI group of the Millennium Development Project by getting their feet in the STI-NANO door and make the necessary investments as soon as possible. The possibility of working at the nano level means use of much less quantities of raw materials than is normally the case. This may contribute to sustainable development by reducing pressure on resources, the amount of waste to be disposed of in the environment, energy and water resources and provide effective mechanisms of payments for environmental services. Successful STI-NANO-practices could improve land use by producing adequate food on small land plots while better diagnosis of diseases will increase life expectancy and improve the overall quality of life.</p><p>At a nano–scale, issues of availability of raw materials are minor. Thus ACP communities should not be limited to research and development in areas that are relevant to their raw material base. It is important for ACP countries to develop STI-NANO intellectual property in diverse areas and build a knowledge-based economy. In seeking to build a strong R&amp;D base in STI-NANO developing countries could include cooperation among themselves and with institutions in developed countries. There are weak voices calling for immediate inclusion of developing countries in the unfolding STI-NANO revolution (e.g. Whitesides G in: Nanotechnology Societal Implications - Maximizing benefits for humanity (Report of the NNI December 2-3, 2003, Pg. 39 (26)). ACP countries should amplify these voices in their south-south, south–north and south-north-south development strategies’ dialogue. This is urgent as the ACP countries, with the greatest need for an STI-NANO driven economic revolution, are currently far behind in terms of institutional capacity and strategic integration of STI-NANO into development strategies. The USA, Europe and Japan currently represent approximately 78% of the investments in STI-NANO; the rest of the world has about 22% and will need to catch up soon (27).</p><p>The challenge is that ACP countries are still struggling to determine how STI can propel their economies to prosperity. It is critical for ACP countries to bravely start investing in STI, even though there are legitimate competing demands for increasing investments in education, healthcare and infrastructure (roads, electricity, water and ICTs) despite the limited available resources. If this investment in STI is followed by serious demands of accountability for those entrusted with the precious investment and incremental investment improvements in areas where success is realized ACP countries could in the process build sufficient capacity to make giant steps in STI, and STI-NANO in particular. Along with this effort, there needs to be a cadre of journalist and public communicators who understand the dynamics underpinning STI and can present economic opportunities to be unleashed by developments in STI-NANO to the populace in a balanced way- competently and objectively showing the potential and risks of the technology.</p><p><b><i>Prof. Ishenkumba Kahwa is Professor of Supramolecular Chemistry at the University of the West Indies and Head of the Department of Chemistry at the University’s Mona Campus, Jamaica.</i> </b> </p><a name="eztoc211300_1" id="eztoc211300_1"></a><h2>Footnotes</h2>
+<ol>
+
+<li><a href="http://www.wtec.org/loyola/nano/NSET.Societal.Implications/" target="_blank">http://www.wtec.org/loyola/nano/NSET.Societal.Implications/</a> </li>
+
+<li><a href="http://www.foresight.org/Updates/Update37/Update37.1.html" target="_blank">http://www.foresight.org/Updates/Update37/Update37.1.html</a> </li>
+
+<li><a href="http://www.nano.gov/nni_societal_implications.pdf" target="_blank">http://www.nano.gov/nni_societal_implications.pdf</a> </li>
+
+<li><a href="http://www.nano.gov/nni_societal_implications.pdf" target="_blank">http://www.unmillenniumproject.org/documents/Science-complete.pdf</a>, pg. 69</li>
+
+<li><a href="http://www.marketresearch.com/product/display.asp?productid=1324644&amp;SID=48696894-409888317-445212675&amp;kw=nanotechnology" target="_blank">http://www.marketresearch.com/product/display.asp?productid=1324644&amp;SID=48696894-409888317-445212675&amp;kw=nanotechnology</a> </li>
+
+<li><a href="http://www.nano.gov/" target="_blank">http://www.nano.gov/</a> </li>
+
+<li><a href="http://europa.eu/rapid/pressReleasesAction.do?reference=IP/08/284" target="_blank">http://europa.eu/rapid/pressReleasesAction.do?reference=IP/08/284</a> </li>
+
+<li><a href="http://www.world-nano.com/southafrica/" target="_blank">http://www.world-nano.com/southafrica/</a> </li>
+
+<li><a href="http://www.chinanano.org/" target="_blank">http://www.chinanano.org/</a> </li>
+
+<li><a href="http://www.nanowerk.com/news/newsid=3591.php" target="_blank">http://www.nanowerk.com/news/newsid=3591.php</a> </li>
+
+<li><a href="http://www.nanowerk.com/spotlight/spotid=767.php" target="_blank">http://www.nanowerk.com/spotlight/spotid=767.php</a> </li>
+
+<li><a href="http://mri63.adtech.icair.org:7777/pls/portal/docs/PAGE/IVIPG/f_info/report/Khim-SNU-Korear.pdf" target="_blank">http://mri63.adtech.icair.org:7777/pls/portal/docs/PAGE/IVIPG/f_info/report/Khim-SNU-Korear.pdf</a> </li>
+
+<li><a href="http://www.berr.gov.uk/files/file25254.pdf" target="_blank">http://www.berr.gov.uk/files/file25254.pdf</a> </li>
+
+<li><a href="http://apps.isiknowledge.com/WOS_AdvancedSearch_input.do?product=WOS&amp;SID=R2O@kFjM2@8iJOeL8OO&amp;search_mode=AdvancedSearch" target="_blank">http://apps.isiknowledge.com/WOS_AdvancedSearch_input.do?product=WOS&amp;SID=R2O@kFjM2@8iJOeL8OO&amp;search_mode=AdvancedSearch#</a> </li>
+
+<li><a href="http://www.swri.edu/3pubs/ttoday/fall98/bone.htm" target="_blank">http://www.swri.edu/3pubs/ttoday/fall98/bone.htm</a> </li>
+
+<li><a href="http://www.rsc.org/chemistryworld/News/2005/September/19090501.asp" target="_blank">http://www.rsc.org/chemistryworld/News/2005/September/19090501.asp</a> </li>
+
+<li><a href="http://www.newsroom.ucr.edu/cgi-bin/display.cgi?id=1628" target="_blank">http://www.newsroom.ucr.edu/cgi-bin/display.cgi?id=1628</a> </li>
+
+<li><a href="http://www.azom.com/details.asp?ArticleID=1066" target="_blank">http://www.azom.com/details.asp?ArticleID=1066</a> </li>
+
+<li><a href="http://www.nature.com/nature/journal/v419/n6910/full/nature01133.html" target="_blank">http://www.nature.com/nature/journal/v419/n6910/full/nature01133.html</a> </li>
+
+<li><a href="http://www.nanotech-now.com/nanotube-buckyball-sites.htm" target="_blank">http://www.nanotech-now.com/nanotube-buckyball-sites.htm</a> </li>
+
+<li><a href="http://www.nanotech-now.com/nanotube-buckyball-sites.htm" target="_blank">http://www.nanotech-now.com/nanotube-buckyball-sites.htm</a> </li>
+
+<li><a href="http://pubs.acs.org/cgi-bin/sample.cgi/achre4/2008/41/i01/pdf/ar700089b.pdf" target="_blank">http://pubs.acs.org/cgi-bin/sample.cgi/achre4/2008/41/i01/pdf/ar700089b.pdf</a> </li>
+
+<li><a href="http://pubs.acs.org/cen/news/84/i15/8415nanotech.html" target="_blank">http://pubs.acs.org/cen/news/84/i15/8415nanotech.html</a> (Also appeared in print April 17, 2006, p. 10).</li>
+
+<li><a href="http://toxsci.oxfordjournals.org/cgi/reprint/77/1/117" target="_blank">http://toxsci.oxfordjournals.org/cgi/reprint/77/1/117</a> </li>
+
+<li><a href="http://www.nano.gov/NNI_Strategic_Plan_2007.pdf" target="_blank">http://www.nano.gov/NNI_Strategic_Plan_2007.pdf</a> </li>
+
+<li><a href="http://www.nano.gov/nni_societal_implications.pdf" target="_blank">http://www.nano.gov/nni_societal_implications.pdf</a> </li>
+
+<li><a href="http://www.marketresearch.com/product/display.asp?productid=1324644&amp;SID=48696894-409888317-445212675&amp;kw=nanotechnology" target="_blank">http://www.marketresearch.com/product/display.asp?productid=1324644&amp;SID=48696894-409888317-445212675&amp;kw=nanotechnology</a> </li>
+
+</ol>
+
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+				
+
+		<strong class="date_small">29/04/2008</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+				
+<div id="column-right">
+			
+										<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/Dossiers/S-T-Issues/Nanotechnology">Nanotechnology</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+																													 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":354,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

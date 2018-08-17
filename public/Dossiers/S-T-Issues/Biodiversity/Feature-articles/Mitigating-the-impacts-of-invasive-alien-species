@@ -1,0 +1,1195 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                            
+<title>Knowledge for development</title>
+<!--<title>Mitigating the impacts of invasive alien species  / Feature articles / Biodiversity / S&amp;T Issues / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="Invasive alien species (IAS) are responsible for serious ecological, economic and social problems in the world today. Indeed, the problem has been described as an “immense, insidious and usually irreversible” one by the IUCN in 2000 and as “the second biggest cause of ecological disintegration, second only to habitat loss” by Vitousek et al. in 1997. Whilst there is no universally accepted definition, it is increasingly accepted..." /><meta name="keywords" content=", science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/S-T-Issues/Biodiversity/Feature-articles/Mitigating-the-impacts-of-invasive-alien-species" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Articles-de-fond/Attenuer-les-impacts-des-especes-exotiques-envahissantes">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/">Home</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues">S&amp;T Issues</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues/Biodiversity">Biodiversity</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/Dossiers/S-T-Issues/Biodiversity/Feature-articles">Feature articles</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Mitigating the impact...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image" >
+																		
+															
+								
+
+    
+                <div class="imageleft">
+    
+    
+                                                                                                                                     <a href="/var/knowledge/storage/images/media/images/eichhornia_crassipes-water_hyacinth2/305548-1-eng-GB/Eichhornia_crassipes-water_hyacinth.jpg" rel="lightbox[]" >        <img src="/var/knowledge/storage/images/media/images/eichhornia_crassipes-water_hyacinth2/305548-1-eng-GB/Eichhornia_crassipes-water_hyacinth_contentfront.jpg" width="185" height="100"  style="border: 0px  ;" alt="Eichhornia_crassipes-water_hyacinth" title="Eichhornia_crassipes-water_hyacinth" />
+        </a>
+    
+    
+            </div>
+    
+    																					
+															</div>
+	
+					<div class="content-intro-text">
+						<h1>Mitigating the impacts of invasive alien species </h1>
+													<p class="author"><strong>Author:</strong>
+								Moses T.K. Kairo, Center for Biological Control, College of Engineering Sciences, Technology and Agriculture, Florida A&amp;M University, USA,  Julien Lamontagne-Godwin, CABI, UK.</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							30/06/2010</p>
+																									<p class="intro">Introduction:</p>
+							
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/eichhornia_crassipes-water_hyacinth2/305548-1-eng-GB/Eichhornia_crassipes-water_hyacinth.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<p>Invasive alien species (IAS) are responsible for serious ecological, economic and social problems in the world today. Indeed, the problem has been described as an “immense, insidious and usually irreversible” one by the IUCN in 2000 and as “the second biggest cause of ecological disintegration, second only to habitat loss” by Vitousek <i>et al.</i> in 1997. Whilst there is no universally accepted definition, it is increasingly accepted that IAS are those alien (alternatively referred to as introduced, exotic, non-indigenous, pest or non-native) species which pose a threat to or have a negative impact on environments, economies and/or human health. All major taxa contain invasive species, including microorganisms, fungi, lower and higher plants, and animals. Problems posed by IAS have come to the fore in recent years, as expanding human activities linked with trade, tourism, transport and air travel have dramatically increased their spread worldwide, either intentionally or accidentally (Mack <i>et al.,</i> 2000). </p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/layout/set/print/content/view/full/12027">Print</a>
+																				</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<p>IAS impinge directly on managed ecosystems – through threats to food security, human and livestock health, and environmental function and integrity (GISP, 2007; McNeely et al., 2001) – and natural ecosystems, by affecting native or endemic vegetation and wild animals in terrestrial or aquatic ecosystems (Moore, 2005, Lockwood et al. 2007). IAS affect ecosystems through a variety of mechanisms: direct competition for resources, predation, disease vectoring, and interbreeding with local populations, leading to development of hybrids and loss of species integrity. Loss of ecosystem resilience is demonstrated by the dramatic changes caused by aquatic weeds such as water hyacinth (<i>Eichhornia crassipe</i>) and giant salvinia (<i>Salvinia molesta</i>) (Oliver, 1993). The impacts of IAS on agricultural productivity are well known, for instance, the tremendous risks posed by the invasive cassava mealybug (<i>Phenacoccus manihoti</i>) on food production in Africa (Belloti <i>et al.,</i> 1999).</p><p>The economic impacts of invasive species are substantial, although estimates of costs vary widely (Office of Technology Assessment, 1993; McNeely <i>et al.,</i> 2001, Pimentel <i>et al.,</i> 2005; Reaser <i>et al.,</i> 2007). While the US Office of Technology Assessment estimated the cumulative costs of IAS over the period 1906-1991 to be US$131-185 billion, Pimentel<i> et al.</i> (2005) estimated the annual costs to be around $120 billion. IAS have a disproportionately large effect on islands, some of which are biodiversity hotspots, such as the Caribbean. For instance, recent reports indicate that the deliberate introduction of the small Indian mongoose (<i>Herpestes auropunctatus</i>) has been linked to the extinction of at least five endemic species (one lizard (<i>Celestrus occiduus</i>), one snake (<i>Alsophis ater</i>), two birds (<i>Siphonorhis americanus </i>and <i>Pterodroma caribbaea</i>) and one rodent (<i>Oryzomys antillurum</i>) in Jamaica (Conservation International http://www.biodiversityhotspots.org/xp/Hotspots/caribbean/Pages/default.aspx); Mack <i>et al.,</i> 2000; Morgan &amp; Woods, 1986; Whittaker, 1998; Kairo <i>et al.</i>, 2003). </p><p>Mitigating the impacts of IAS is therefore an extremely important issue. This has been recognised by the Convention on Biological Diversity (UNCBD, 1992), which calls on Parties to:</p><p>‘a<i>s far as possible and as appropriate: prevent the introduction of, control or eradicate those alien species which threaten ecosystems, habitats or species.</i>’ </p><p>Article 8(h)</p><a name="eztoc305417_0_0_0_1" id="eztoc305417_0_0_0_1"></a><h5>Mitigating the impacts of IAS: various pathways to success</h5><p>
+<b>Pathways to success: strong, policy and regulatory frameworks, and regional/national/international partnerships and linkages</b><br />Effective mitigation efforts require a multi-dimensional approach encompassing political, economic, social and technical considerations addressing issues along the continuum from prevention to control. Thus, the development of robust policies – as well as scientific and technological solutions – is crucial to the success of mitigation efforts. To this end, the last two decades have seen a growing number of increasingly interlinked international, regional and national political, scientific and technological initiatives that have resulted in significant outputs in terms of providing guidance relating to governance and implementation of mitigation measures. </p><p>
+<b>International policy and regulatory frameworks</b><br />International initiatives include the World Trade Organisation (WTO) Sanitary and Phytosanitary (SPS) Agreement, which came into force in 1995. The agreement</p><p><i>‘..sets out the basic rules for food safety and animal and plant health standards. It allows countries to set their own standards. But it also says regulations must be based on science. They should be applied only to the extent necessary to protect human, animal or plant life or health. And they should not arbitrarily or unjustifiably discriminate between countries where identical or similar conditions prevail.</i>’</p><p>The WTO SPS agreement offers solutions in a political, legal and technical capacity, which is critical when considering international trade. Within the ambit or the WTO SPS Agreement, other instruments, including the International Plant Protection Convention, Office Internationale des Epizooties and the International Maritime Organization, address specific aspects of IAS. At the sixth Conference of the Parties (COP 6), Parties adopted guiding principles and a programme of work for the implementation of Article 8(h) (UN CBD 2002; Decision VI/23). Although not all the components are universally accepted, these guiding principles provide a basic framework that identifies the key elements of an effective programme against IAS. It also identifies priorities for action and cooperation at both the national and international levels. Young (2006) identifies three areas that require focus: (1) financial, technical and human support for national and sub-regional implementation of IAS related controls, (2) development of specific standards for international movement of specific commodities or products, and (3) addressing the interaction of environmental and precautionary concerns with trade and commercial concerns. </p><p>
+<b>National initiatives and frameworks</b><br />Regional and international policies governing trans-boundary movement of plants and animals and other living organisms are of great significance to minimization of the spread of IAS; however, it is the action within national borders that will define success or failure of any programme to mitigate the impact of IAS. The need for development of national strategies as a first step in the development of comprehensive effort to deal with the problem of IAS was captured by Wittenberg and Cock (2001), among others, and included the development of a national strategy, and options, for dealing with IAS centred on a four-step hierarchical process that emphasizes: (1) prevention, (2) early detection and eradication, (3) control and management to be applied when all other options fail, and finally (4) restoration. This process should necessarily involve all critical players, including local and international local cooperation. The strategic plan would crystallize a clear vision, goal and objectives and should ideally be seamlessly linked to other sectoral plans. The Bahamas (2003) was among the first countries in the Caribbean to develop a specific national plan to address IAS. Across the globe other countries have also continued to develop similar plans (Sherley <i>et al.,</i> 2000; Palau National Invasives Strategy 2007; Developing Indonesia’s National Strategy on Invasive Alien Species, 2008). Local community initiatives are rarer, as typically there are fewer resources and less coordination of implementation measures, and there is less academic research into the problems from the alien species. However, the advantages of such initiatives are their ability to provide local understanding of the problem, and potentially enlist fierce local support, as the issue generally directly affects local communities (Wittenberg and Cock, 2001). </p><p>
+<b>Robust scientific and technological support</b><br />All of the mitigation measures for international and national strategies/policies discussed above are knowledge-intensive, thereby requiring indispensable scientific and technological support. Prevention of the introduction and establishment of IAS species is the first line of defence. This includes measures such as trade regulations, risk analysis, quarantine enforcement, and public education; and is frequently the most cost-effective approach, since most subsequent measures for managing an invasion may require substantial resources (Keller et al., 2006; McNeely et al. 2001). Such measures do require, the necessary infrastructure including, facilities, highly trained technical personnel among other things. However, preventative activities are often under-resourced because of the difficulty of demonstrating potential risks and success of these measures. Even with the most effective prevention efforts, it is impossible to guarantee that the species will not escape and become established.</p><p>In cases where such prevention strategies were not successful or used and the IAS has become established, the second line of defence is early detection and response. The premise here is that incipient invasions can be detected early and eliminated before they spread. Early discoveries are often made accidentally by the general public; however, public entities can be encouraged to establish sensitive and specific monitoring areas. Rapid response to new infestations requires timely answers to critical questions on identity, knowledge of distribution and availability of effective mitigation measures (Waugh, 2009). Careful planning, coordination and timely allocation of resources are crucial to success of such efforts. When IAS are widely established and eradication is not feasible, it is then necessary to implement control and management programmes to slow the rate of spread and to reduce impacts (Wittenberg and Cock, 2001).</p><p>Implementation of effective measures requires broad-based knowledge. In many cases, very little knowledge is available for such species, and it is therefore necessary to carry out research on different aspects before effective measures can be put in place. A good understanding of the ecological, economic and social impacts of IAS will be important in order to prioritise targets and control, and management actions. After IAS are effectively controlled, it is critical to undertake restorative actions to attempt to return ecosystems to their original form. Restoration may include actions such as reintroduction of native species to invaded habitats with a view to restore long-term ecosystem resiliency. </p><p>
+<b>Expanding the knowledge base on invasive species</b><br />All steps described above require timely and unlimited access to global knowledge bases on invasive species at various ecological and geographical levels. These databases are vital for increasing information dissemination and building knowledge capacity regarding invasives. To this end, <a href="http://www.issg.org/database/welcome/aboutGISD.asp" target="_self">the Global Invasive Species Database </a>(GISD) developed by ISSG, <a href="http://www.gisinetwork.org/" target="_self">the Global Invasive Species Information Network</a> (GISIN), and <a href="http://www.europe-aliens.org/" target="_self">the Delivering Alien Species Inventory in Europe</a> (DAISIE) have been making contributions in this area. </p><p>A similar project was initiated by <a href="http://www.gisp.org/" target="_self">the Global Invasive Species Programme</a> (GISP), containing information on species taxonomy and ecology, and their native and invasive distribution, as well as their invasive potential. This can contribute to prevention and early detection, and can also adapt to include factors such as climatic suitability and pathways used. <a href="http://i3n.iabin.net/" target="_self">The I3N Project</a>, a regional initiative, funded by a Global Environment Project is currently attempting to develop an accessible database of regional invasive species. This project has developed common platforms for collation of data. While efforts have continued to expand the initiative beyond the initial pilot countries, it is felt that such efforts are extremely important at the regional, national and international scale.</p><p>In the context of particular areas, such as the Caribbean, Kairo <i>et al.</i> (2003) made a first attempt to compile a regional list of invasive species. This was undertaken as a one-time activity with the possibility of subsequently developing an accessible database. <a href="http://www.hear.org/Pier/" target="_self">The Pacific Island Ecosystem at Risk </a>website is another regional initiative developed to compile and disseminate reference information on exotic plant species of known or potential threat to Pacific island ecosystems. PIER was originally requested by the Pacific Island Committee, Council of Western State Foresters and National Association of State Foresters, and was funded by USDA Forest Service International Program funds. </p><p><b>Conclusion</b></p><p>With the ever-increasing speed of globalisation, one thing is certain, and that is that IAS will continue to pose a growing dilemma, at a global level and in particular within insular and developing nations. It is therefore clear that many challenges lie ahead and it will be critical for countries to prioritise IAS as an important issue, and to support the development of the necessary infrastructural, human and fiscal resources to facilitate effective action.</p><p>There is now a growing body of knowledge on IAS that, coupled with the increasingly interlinked regional and international initiatives, provides a useful resource to enable countries to develop effective programmes for the mitigation of IAS. For instance, the initiative by CABI: <a href="http://www.cabi.org/default.aspx?site=170&amp;page=1017&amp;pid=2916" target="_self">“Mitigating the Threats of Invasive Alien Species in the Insular Caribbean”</a> aims to broaden the approach to deal with invasive alien species both by strengthening existing national capacity and measures and by fostering regional cooperation frameworks through which Caribbean-wide strategies can be developed (). What is more, the importance of biodiversity conservation is making the IAS issue topical, as the decision to increase dramatically the IAS budget in Africa keenly demonstrates (UNEP, 2005). In essence, IAS problems are set to be tackled more energetically and efficiently than ever before, and scientific/social research and technological innovation will continue to underpin the development of effective mitigation measures along the continuum from prevention to restoration.</p><p><b>References</b></p><p>Bahamas. 2003. The National Invasive Species Strategy for the Bahamas. The Bahamas Environment, Science and Technology (BEST) Commission, Ministry of Health and Environment in conjunction with the British High Commission, Nassau, The Bahamas, 34 pp.</p><p>Belloti A., Smith L. and Lapointe S. 1999. Recent advances in cassava pest management <i>Annual Review of Entomology </i><b>44</b>: 343–70.</p><p>Developing Indonesia’s National Strategy On Invasive Alien Species. Paper Presented in COP-9 CBD, Bonn, Germany, 19-30 May 2008.</p><p>GISP. 2007. <a href="http://www.gisp.org/publications/reports/invasivesandpoverty.pdf" target="_self">Invasive species and poverty: Exploring the links</a>. Global Invasive Species Programme, Claremont, South Africa.<b>a</b></p><p>IUCN. 2000. Guidelines for the prevention of biodiversity loss due to biological invasion. IUCN – The World Conservation Union, Gland, Switzerland.</p><p>Kairo, M.T., Bibi, A., Cheesman, O., Haysom, K. and Murphy, S. 2003. Invasive Species Threats to the Caribbean Region: a report to The Nature Conservancy, Report to the Nature Conservancy. CABI Bioscience, Egham, Surrey, UK.</p><p>Keller, R., Lodge, D. and Finnoff, D.C. 2006. Risk assessment for invasive species produces net economic benefits. <i>Proceedings of the National Academies of Sciences </i><b>104</b>: 203-207.</p><p>Lockwood, J.L., Hoopes, M.F. and Marchetti, M.P. 2007. <i>Invasion ecology</i>. Blackwell, Oxford, UK. </p><p>Mack R.N., Simberloff, D., Lonsdale, W.M., Evans H., Clout, M. and Bazzaz F.A. 2000. Issues in Ecology. Biotic invasions: causes, epidemiology, global consequences, and control. <i>Ecological Applications</i><b>10 </b>(3): 689-710.</p><p>McNeely, J.A., Mooney, H.A., Neville, I.E., Schei, P.J. and Waage, J.K., eds. 2001. Global Strategy on Invasive Alien Species. IUCN in collaboration with the Global Invasive Species Programme, Cambridge, UK.</p><p>Meissner, H.A. Lemay, C. Bertone, K. Schwartzburg, L. Ferguson, L. and Newton, L. 2009. Evaluation of Pathways for Exotic Plant Movement Into and Within the Greater Caribbean Region. US Department of Agriculture, Animal and Plant Health Inspection Service, Plant Protection and Quarantine, Raleigh, Jan 9 2009.</p><p>Mooney H.A. and Hobbs R.J., eds. 2000. <i>Invasive Species in a Changing World.</i> Island Press. Washington DC, USA.</p><p>Moore, B.A. 2005. <a href="http://www.fao.org//docrep/008/j6854e/j6854e00.htm" target="_self">Forest Health and Biosecurity Working Paper FBS/8E</a>. Forestry Department, FAO, Rome. </p><p>Morgan, G.S. and Woods, C.A. 1986. Extinction and zoogeography of West Indian land mammals. <i>Biological Journal of the Linnean Society </i><b>28</b>: 167-203.</p><p>Office of Technology Assessment. 1993. Harmful nonindigenous insect species in the United States. OTA-F-565. Office of Technology Assessment, Washington, DC, USA.</p><p>Oliver, J.D. 1993. A review of the biology of giant salvinia (<i>Salvinia molesta </i>Mitchell) <i>Journal of Aquatic Plant Management</i><b>31 (</b>2): 227-231.</p><p>Palau National Invasive Species Strategy National Invasive Species Committee Action Plan 2007 – 2010.</p><p>Pimentel, D., Zuniga, R. and Morrison, D. 2005. Update on the environmental and economic costs associated with alien-invasive species in the United States. <i>Ecological Economics</i><b>52</b>: 273-288.</p><p>Reaser, J.K., Meyerson, L.A., Cronk, Q., de Poorter, M., Eldrege, L.G., Green, E., Kairo, M., Latasi, P., Mack, R.M., Mauremootoo, J., O’Dowd, D., Orapa, W., Sastroutomo, S., Saunders, A., Shine, C., Thrainsson, S. and Vaiutu, L. 2007. Ecological and socioeconomic impacts of invasive alien species in island ecosystems. <i>Environmental Conservation</i><b>34</b> (2): 98-111.</p><p>Sherley, G. 2000. Invasive species in the Pacific: a technical review and draft regional strategy. Apia, Samoa. </p><p>UN. 1992. Convention on Biological Diversity [on-line] http://www.cbd.int/convention/convention.shtml, United Nations Environment Programme. </p><p>
+UN. 1992. <a href="http://www.cbd.int/decision/cop/?id=7197" target="_self">Convention on Biological Diversity, COP 6 Decision VI/23</a>. Alien species that threaten ecosystems, habitats or species. <br />UNEP. 2005. <a href="http://www.unep.org/DEWA/Africa/docs/en/aeo-2/factsheets/aeo-2_IAS_factsheet.pdf" target="_self">Our Environment, Our Wealth; United Nations Environment Programme (UNEP) and African Ministerial Conference on the Environment (AMCEN). </a><i>UNEP Outlook </i><b>2</b>; </p><p>Vitousek, P.M., D’Antonio, C.M., Loope, L.L., Rejmanek, M. and Westbrooks, R. 1997. Introduced species: a significant component of human-caused global change. <i>New Zealand</i><i> Journal of Ecology</i><b>21</b>: 1-16.</p><p>
+Waugh, J.D. 2009. <a href="http://cmsdata.iucn.org/downloads/caribbean_report_1.pdf" target="_self">Trade and invasives species in the Caribbean: A universe of risk. </a><br />Whittaker, R.J. 1998. <i>Island Biogeography</i>. Oxford University Press, Oxford, UK.</p><p>Wittenberg, R. and Cock, M.J.W. 2001. Invasive Alien Species: A Toolkit of Best Prevention and Management Practices. CABI Publishing, Wallingford, UK (on behalf of the Global Invasive Species Programme).</p><p>Young, T.R. 2006. National and regional legislation for promotion and support to the prevention, control, and eradication of invasive species. Environmental Department Papers. Paper No. 108, 88 pp. The World Bank, Washington DC, USA.</p>
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+				
+
+		<strong class="date_small">30/06/2010</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+				
+<div id="column-right">
+			
+										<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/Dossiers/S-T-Issues/Biodiversity">Biodiversity</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+					 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":428,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

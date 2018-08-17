@@ -1,0 +1,1527 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Développements / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;amp;T pout le développment."/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/630" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="active">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Les-S-T-au-CTA">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				<p>Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;T pout le développment.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-etude-revele-pourquoi-les-pecheurs-poursuivent-leurs-activites-malgre-une-baisse-des-captures" title="Une étude révèle pourquoi les pêcheurs poursuivent leurs activités malgré une baisse des captures" alt="link">Une étude révèle pourquoi les pêcheurs poursuivent leurs activités malgré une baisse des captures</a></h2>
+
+	
+					<p>Des recherches menées par l´Université d´East Anglia (UEA), au Royaume-Uni, remettent en cause des notions clés jusqu´ici admises sur la pauvreté et l´adaptation, en cherchant à savoir pourquoi les pêcheurs poursuivent leurs activités de pêche malgré des captures en diminution. L´équipe de recherche a enquêté auprès de presque 600 pêcheurs dans cinq pays d´Afrique et a pu constater que la moitié des pêcheurs n´étaient pas prêts à changer d´activité - en dépit du fait que les captures ont diminué de 50 %. Les pêcheurs des économies les plus dynamiques et développées avaient moins tendance à abandonner leurs activités que ceux des communautés plus pauvres. Les chercheurs ont noté que les pêcheurs de Madagascar, considéré comme faisant partie des pays pauvres, quitteraient plus volontiers le secteur de la pêche que ceux des Seychelles, un pays plus riche. Ce n´est pas seulement la rentabilité économique qui amène les pêcheurs à prendre une telle décision ; d´autres facteurs sont également pris en considération : la satisfaction vis-à-vis de leur emploi, la tradition familiale, le sens de l´identité, entre autres. Le secteur de la pêche est confronté aux effets combinés de la surpêche, du changement climatique, de la détérioration des écosystèmes et des politiques de conservation. Selon les auteurs, il est essentiel de comprendre comment les pêcheurs s´adaptent face à ces changements pour gérer leurs activités et d´identifier des axes d´intervention pour la mise en ouvre de politiques de conservation.  (<a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=116279&amp;CultureCode=en" target="_blank">Alpha Galileo</a>, 9/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-etude-revele-pourquoi-les-pecheurs-poursuivent-leurs-activites-malgre-une-baisse-des-captures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-fermes-d-elevage-de-crevettes-affichent-un-bilan-carbone-eleve" title="Les fermes d´élevage de crevettes affichent un bilan carbone élevé" alt="link">Les fermes d´élevage de crevettes affichent un bilan carbone élevé</a></h2>
+
+	
+					<p>Cinquante à soixante pour cent des élevages de crevettes sont implantés dans les zones de bord de mer des pays asiatiques, souvent dans des mangroves (forêts côtières) qui ont été défrichées. L´empreinte carbone de crevettes produites sur ce type de terres est environ dix fois plus importante que la quantité de bouf équivalente produite en zone de forêt tropicale.  (<a href="http://www.physorg.com/news/2012-02-tiny-shrimp-giant-carbon-footprint.html" target="_blank">Physorg</a> via <a href="http://www.theatlanticwire.com/global/2012/02/your-shrimp-cocktail-ruining-planet/48901/" target="_blank">The Atlantic Wire</a>, 18/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-fermes-d-elevage-de-crevettes-affichent-un-bilan-carbone-eleve">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Peche-captures-mondiales" title="Pêche : captures mondiales" alt="link">Pêche : captures mondiales</a></h2>
+
+	
+					<p>Des chercheurs de l´Université de Colombie-Britannique, au Canada, ont présenté lors de la réunion annuelle de l´Association américaine pour l´avancement des sciences (AAAS) les résultats d´une étude de cas révélant que les accords de pêche conclus entre l´Union européenne (UE) et Madagascar, concernant l´accès aux produits de la mer de Madagascar, ne sont pas aussi équitables qu´ils le paraissent sur le papier. Selon les auteurs, le problème réside dans le fait que les données recueillies sur les pêches sont incomplètes. Les statistiques officielles des Nations unies sous-estiment les captures des flottes de pêche dans le monde. Elles excluent en effet les opérations de pêche de petite envergure et les activités de pêche récréative. L´étude montre que, lorsque ces données sont prises en compte dans les statistiques officielles, les captures de pêche totales peuvent être six fois plus élevées que les chiffres des captures commerciales.  (<a href="http://news.sciencemag.org/sciencenow/2012/02/global-fisheries-deals-whats-the.html" target="_blank">Science</a>, 19/02/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Peche-captures-mondiales">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-cadre-methodologique-pour-elaborer-et-evaluer-les-systemes-de-tracabilite-des-denrees-alimentaires" title="Un cadre méthodologique pour élaborer et évaluer les systèmes de traçabilité des denrées alimentaires" alt="link">Un cadre méthodologique pour élaborer et évaluer les systèmes de traçabilité des denrées alimentaires</a></h2>
+
+	
+					<p><a href="http://purl.umn.edu/120861" target="_blank">Cet article</a> de l´<i>International Food and Agribusiness Management Review</i> présente un cadre méthodologique destiné à élaborer, évaluer et gérer les systèmes de traçabilité des denrées alimentaires. Les services proposés aux multiples bénéficiaires des systèmes de traçabilité sont énumérés et classés selon des critères de performance rigoureux. Une bibliothèque de solutions techniques modulaires pour aider les concepteurs à choisir les solutions de traçabilité les mieux appropriées est également proposée. Les critères de performances techniques et pratiques sont fournis pour le contrôle quotidien de la traçabilité. Le système de performance proposé peut être utilisé aussi bien dans une méthodologie de conception que pour mener l´audit d´un système de traçabilité. Le modèle sert de base pour un système d´information appliqué à un abattoir de volailles.</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-cadre-methodologique-pour-elaborer-et-evaluer-les-systemes-de-tracabilite-des-denrees-alimentaires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-nouvelle-ere-pour-la-politique-americaine-de-securite-sanitaire-des-aliments" title="Une nouvelle ère pour la politique américaine de sécurité sanitaire des aliments" alt="link">Une nouvelle ère pour la politique américaine de sécurité sanitaire des aliments</a></h2>
+
+	
+					<p><a href="http://purl.umn.edu/120793" target="_blank">Cette note d´information</a> du Service de recherche économique du Département de l´Agriculture américain explique dans quelle mesure la Loi de modernisation de la sécurité sanitaire des aliments récemment adoptée (2011) implique la mise en place d´un suivi préventif tout au long de la chaîne alimentaire, « de la ferme à l´assiette », qui reflète un consensus scientifique/managérial établi pour améliorer les systèmes de sécurité sanitaire des aliments (c´est-à-dire un système HACCP - Analyse des risques et maîtrise des points critiques - plus détaillé). Elle plaide pour davantage d´initiatives de recherche sur la sécurité sanitaire des aliments, à l´instar du système HACCP, pour guider la mise en application de la loi. Cette note souligne l´importance de relations positives et constructives entre les chercheurs et les décideurs politiques afin de renforcer les réglementations dans l´industrie agroalimentaire.</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-nouvelle-ere-pour-la-politique-americaine-de-securite-sanitaire-des-aliments">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Ressources-actuelles-en-eau-en-Europe-et-en-Afrique" title="Ressources actuelles en eau en Europe et en Afrique" alt="link">Ressources actuelles en eau en Europe et en Afrique</a></h2>
+
+	
+					<p>Le rapport du Centre commun de recherche (JRC) intitulé <i>Current Water Resources in Europe and Africa</i> (Ressources actuelles en eau en Europe et en Afrique) montre qu´il existe des variations quant à la génération annuelle d´eau douce, qui vont de 10 mm à plus de 500 mm pour l´Europe et de moins de 0,1 mm à plus de 500 mm pour l´Afrique. Le rapport fait état des incertitudes actuelles et identifie les recherches à mener pour améliorer la gestion des ressources en eau. Tout en reconnaissant qu´il est particulièrement difficile d´estimer précisément les pénuries d´eau, il est jugé indispensable d´améliorer les données relatives aux prélèvements d´eau, en ce sens que les données les plus récentes recueillies en Afrique datent de 2000. Le manque de données disponibles sur les débits des fleuves en Afrique, par exemple, ne permet pas de calibrer ni de vérifier les modèles hydrologiques pour le continent. Les données satellitaires fournissent des données météorologiques améliorées pour l´Afrique, mais les données sur les prélèvements d´eau doivent être mises à jour plus régulièrement.  (<a href="http://www.physorg.com/news/2012-03-current-resources-europe-africa.html" target="_blank">Physorg</a>, 14/03/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Ressources-actuelles-en-eau-en-Europe-et-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-plantes-se-souviennent-de-la-secheresse-et-elles-adaptent-leurs-reponses-pour-survivre" title="Les plantes se souviennent de la sécheresse et elles adaptent leurs réponses pour survivre" alt="link">Les plantes se souviennent de la sécheresse et elles adaptent leurs réponses pour survivre</a></h2>
+
+	
+					<p>Une équipe de chercheurs de l´Université du Nebraska-Lincoln, aux États-Unis, a montré que les plantes soumises à une période de sécheresse antérieure supporteront mieux de nouvelles périodes de stress hydrique. Les travaux de recherche confirment pour la première fois la base scientifique que les jardiniers et les pépiniéristes professionnels ont souvent apprise à force de persévérance : une privation d´eau de quelques jours favorise le développement des jeunes plants et leur endurcissement à la sécheresse avant de les transplanter. Ce phénomène d´endurcissement à la sécheresse a été documenté lorsque les chercheurs ont comparé la réaction des plantes préalablement soumises à un stress hydrique à celle des plantes qui ne l´ont pas été. Les plantes préalablement stressées se remettent plus rapidement la prochaine fois qu´elles seront déshydratées. Plus spécialement, les plantes les moins éprouvées se dessèchent plus rapidement et leurs feuilles perdent leur eau beaucoup plus vite. Les pépinières qui adoptent ce processus d´endurcissement pourront rassurer les petits exploitants agricoles des régions affectées par la sécheresse. (<a href="http://www.sciencedaily.com/releases/2012/03/120315094457.htm" target="_blank">ScienceDaily</a>, 15/03/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-plantes-se-souviennent-de-la-secheresse-et-elles-adaptent-leurs-reponses-pour-survivre">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-processus-a-moindre-cout-permet-de-produire-une-eau-potable-propre-a-partir-d-une-proteine-du-moringa" title="Un processus à moindre coût permet de produire une eau potable propre à partir d´une protéine du moringa" alt="link">Un processus à moindre coût permet de produire une eau potable propre à partir d´une protéine du moringa</a></h2>
+
+	
+					<p>Des chercheurs de l´Université d´État de Pennsylvanie décrivent, dans un podcast pour le projet Global Challenges/Chemistry Solutions, un nouveau processus durable et bon marché de traitement de l´eau qui utilise les graines de <i>Moringa olifeira</i> pour purifier et clarifier l´eau polluée. Des recherches antérieures ont montré qu´une protéine issue des graines de moringa peut nettoyer l´eau. Les chercheurs ont ajouté un extrait de la graine contenant la protéine de moringa chargée positivement, qui se lie aux sédiments et tue les microbes, à des particules de sable chargées négativement. La « résultante fonctionnelle », ou « f-sand » (sable fonctionnel), a prouvé son efficacité en laboratoire, en réussissant à capturer et endommager les membranes d´<i>E. coli</i>. Le f-sand a été également en mesure de retirer des sédiments dans des échantillons d´eau. Les résultats ouvrent la possibilité d´un processus simple et durable, au niveau local, de production d´eau potable et stockable. <a href="http://goo.gl/fzYcm" target="_blank"><i>Global Challenges/Chemistry Solutions</i></a> est une série de podcasts décrivant les problèmes les plus épineux du XXIe siècle, et comment la recherche de pointe dans le domaine de la chimie a un rôle important dans la quête de solutions.  (<a href="http://www.eurekalert.org/pub_releases/2012-02/acs-nac022812.php" target="_blank">Eurekalert</a>, 29/02/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-processus-a-moindre-cout-permet-de-produire-une-eau-potable-propre-a-partir-d-une-proteine-du-moringa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-projet-europeen-pour-une-production-et-une-distribution-plus-durables-des-produits-alimentaires" title="Un projet européen pour une production et une distribution plus durables des produits alimentaires" alt="link">Un projet européen pour une production et une distribution plus durables des produits alimentaires</a></h2>
+
+	
+					<p>Le projet SENSE (<i>Harmonised Environmental Sustainability in the European food and drink chain</i>) rassemble des chercheurs, des producteurs, des transformateurs et des distributeurs afin de développer une approche harmonisée pouvant être utilisée pour évaluer l´impact environnemental des produits alimentaires avec efficacité et précision. Le projet SENSE (7e PC) vise à contribuer à l´engagement du secteur de l´alimentation et des boissons pour des méthodes de production, de transformation et de distribution écologiquement durables. La situation actuelle montre clairement la nécessité de disposer d´outils permettant de réduire l´impact environnemental de cette industrie tout au long de la chaîne de valeur, depuis la production et la transformation jusqu´à la distribution commerciale. Les membres de SENSE s´attacheront en particulier à créer une méthodologie pouvant être appliquée aux secteurs des jus, des produits laitiers, de la viande et de l´aquaculture, choisis pour leur importance dans les marchés européens. (<a href="http://www.eurekalert.org/pub_releases/2012-02/ef-aep022212.php" target="_blank">EurekAlert</a>, 22/02/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-projet-europeen-pour-une-production-et-une-distribution-plus-durables-des-produits-alimentaires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Le-Nouveau-partenariat-europeen-d-innovation-sur-le-theme-Durabilite-et-productivite-de-l-agriculture" title="Le Nouveau partenariat européen d´innovation sur le thème « Durabilité et productivité de l´agriculture »" alt="link">Le Nouveau partenariat européen d´innovation sur le thème « Durabilité et productivité de l´agriculture »</a></h2>
+
+	
+					<p>En février 2012, la Commission européenne a dévoilé ses projets concernant deux nouveaux partenariats européens d´innovation (PEI) qui devraient contribuer à résoudre les problèmes environnementaux et sociaux auxquels l´Europe sera confrontée dans un avenir proche. Le PEI pour l´agriculture s´attaquera aux problèmes croissants de la sécurité alimentaire en Europe, où, au cours de ce siècle, une forte augmentation des besoins en aliments pour animaux, fibres, biomasse et biomatériaux est attendue. Malheureusement, cette demande coïncidera avec un ralentissement de la production, dû à des coupes budgétaires dans la recherche agricole et aux conséquences de nos actions sur l´environnement et les ressources naturelles. Ce nouveau partenariat vise à encourager l´innovation au service d´une sécurité alimentaire durable.  (<a href="http://cordis.europa.eu/fetch?CALLER=EN_NEWS&amp;ACTION=D&amp;SESSION=&amp;RCN=34354" target="_self">CORDIS</a>, 01/03/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Le-Nouveau-partenariat-europeen-d-innovation-sur-le-theme-Durabilite-et-productivite-de-l-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Opinion-on-doit-apprendre-aux-scientifiques-a-gerer" title="Opinion : on doit apprendre aux scientifiques à gérer" alt="link">Opinion : on doit apprendre aux scientifiques à gérer</a></h2>
+
+	
+					<p>Cette chronique publiée par un jeune chercheur dans la revue <i>Nature</i> développe l´argument selon lequel les scientifiques ne sont pas formés pour diriger des laboratoires et gérer une équipe de recherche. Cela leur met une pression supplémentaire. Selon l´auteur, la mise en place d´un cadre logique de référence pour la gestion de laboratoire contribuerait au succès des start-up de recherche, et il plaide pour une formation de base en gestion au niveau postdoctoral et professoral. (<a href="http://www.nature.com/news/scientists-must-be-taught-to-manage-1.10334" target="_self">Nature</a>, 28/03/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Opinion-on-doit-apprendre-aux-scientifiques-a-gerer">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-le-developpement-agricole-a-travers-le-renforcement-des-capacites-de-l-enseignement-superieur-en-Afrique" title="Promouvoir le développement agricole à travers le renforcement des capacités de l´enseignement supérieur en Afrique" alt="link">Promouvoir le développement agricole à travers le renforcement des capacités de l´enseignement supérieur en Afrique</a></h2>
+
+	
+					<p>Le projet « Nourrir la planète » de l´Institut World Watch présente un article d´opinion sur le renforcement des capacités de l´enseignement supérieur en Afrique, qui centre la discussion sur l´initiative <i>Feed the Future</i> de l´Agence américaine pour le développement international. Est mise en avant l´<a href="http://www.africa-initiative.org/" target="_blank">Initiative Afrique-États-Unis pour l´enseignement supérieur</a>, conduite par l´Association of Public and Land-grant Universities, qui a récemment permis de financer onze partenariats à long terme entre des universités américaines et africaines. Un certain nombre de prix ont été décernés dans le cadre du programme Enseignement supérieur pour le développement. Ces partenariats visent à renforcer les capacités institutionnelles et humaines en Afrique afin d´assurer la sécurité alimentaire sur le continent. Ils devraient non seulement contribuer à l´amélioration de l´enseignement agricole au sein des universités africaines, mais aussi à leur transformation radicale en centres intellectuels et scientifiques susceptibles de relever le défi de la sécurité alimentaire dans la région.  (<a href="http://blogs.worldwatch.org/nourishingtheplanet/achieving-agricultural-development-through-capacity-building-for-african-higher-education/" target="_blank">Nourishing the planet</a>, 01/03/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-le-developpement-agricole-a-travers-le-renforcement-des-capacites-de-l-enseignement-superieur-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/La-CEDEAO-lance-un-projet-pour-assurer-le-suivi-de-l-information-agricole-en-Afrique-de-l-Ouest" title="La CEDEAO lance un projet pour assurer le suivi de l´information agricole en Afrique de l´Ouest" alt="link">La CEDEAO lance un projet pour assurer le suivi de l´information agricole en Afrique de l´Ouest</a></h2>
+
+	
+					<p>La Communauté économique des États de l´Afrique de l´Ouest (CEDEAO) a élaboré puis mis en ouvre à Accra un projet pour assurer le suivi des données et de l´information agricoles dans la sous-région. Le projet intitulé « Système d´information sur le secteur agricole de la CEDEAO » (ECOAGRIS) devrait permettre aux décideurs politiques d´utiliser des informations fiables et des analyses actualisées pour formuler des stratégies améliorées de développement agricole et en assurer le suivi. Il aidera en outre à gérer de manière efficace les questions liées à la sécurité alimentaire et facilitera les échanges de produits alimentaires au sein de la sous-région. L´initiative a été conçue dans le cadre de la politique agricole de la CEDEAO et du Programme détaillé pour le développement de l´agriculture en Afrique (PDDAA).  (<a href="http://www.ghanabusinessnews.com/2012/03/07/ecowas-launches-project-to-monitor-agricultural-information-in-west-africa/" target="_blank">Ghana Business News</a>, 7/03/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/La-CEDEAO-lance-un-projet-pour-assurer-le-suivi-de-l-information-agricole-en-Afrique-de-l-Ouest">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/TIC-GIC-dans-la-recherche-agricole-pour-le-developpement-RAD-dans-la-region-Asie-Pacifique-rapport-d-etape-2011" title="TIC/GIC dans la recherche agricole pour le développement (RAD) dans la région Asie-Pacifique : rapport d´étape (2011)" alt="link">TIC/GIC dans la recherche agricole pour le développement (RAD) dans la région Asie-Pacifique : rapport d´étape (2011)</a></h2>
+
+	
+					<p><a href="http://www.apaari.org/publications/ictsr2011.html" target="_blank">Ce rapport</a> présente les résultats d´une évaluation de l´état, de l´utilisation et de l´application des TIC et de la GIC dans la RAD dans les systèmes nationaux de recherche et d´innovation agricoles de 19 pays de la région Asie-Pacifique. Les résultats reposent sur les données collectées dans le cadre d´une étude sur les responsables GIC et sur les rapports d´étape par pays dans les ateliers TIC/GIC organisés par l´Association des institutions de recherche agricole de l´Asie et du Pacifique (APAARI) en 2010-2011. Il conclut que l´élaboration, la mise en ouvre et la gestion des systèmes d´information de la plupart des systèmes nationaux de recherche agricole pour le développement souffrent d´une coordination insuffisante. Ces systèmes ne permettent pas de mettre en ouvre de nouveaux concepts et de nouvelles technologies pouvant améliorer les services d´information. Il est donc urgent de les réformer afin de stimuler le développement agricole et du pays en général. Les pays qui manquent le plus de capacités en matière de partage des connaissances et de l´information auront le moins de capacités pour participer effectivement à l´émergence d´une économie mondiale basée sur les connaissances. Des indicateurs clés sont fournis sur l´état des TIC et de la GIC dans la RAD à Fidji, en Papouasie-Nouvelle-Guinée et dans les îles Samoa. Le rapport souligne en outre la nécessité d´intégrer les TIC et la GIC dans la RAD à différents niveaux, de promouvoir l´engagement politique ; d´augmenter, d´améliorer et de cibler les investissements ; de renforcer les capacités, d´améliorer la gouvernance ; de faciliter le partage des données, des informations et des connaissances à différents niveaux.</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/TIC-GIC-dans-la-recherche-agricole-pour-le-developpement-RAD-dans-la-region-Asie-Pacifique-rapport-d-etape-2011">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Nightmare-2020-Concours-de-films-et-de-videos-CTA-CCST-CARDI-UWI-sur-l-agriculture-et-la-science-dans-les-Caraibes" title="« Nightmare 2020 » - Concours de films et de vidéos CTA/CCST/CARDI/UWI sur l´agriculture et la science dans les Caraïbes" alt="link">« Nightmare 2020 » - Concours de films et de vidéos CTA/CCST/CARDI/UWI sur l´agriculture et la science dans les Caraïbes</a></h2>
+
+	
+					<p>Kevin Richard Bhall est titulaire d´un diplôme en génie mécanique de l´Université des West Indies. Son film d´animation réalisé à la main intitulé « Nightmare 2000 », qui a remporté le premier prix, a été coécrit par Bhall et Aaron Ramsingh (tous deux originaires de Trinité-et-Tobago). L´aspect novateur du film repose sur une vision apocalyptique de Trinité-et-Tobago. Basé sur les tendances mondiales et les prévisions des effets du réchauffement climatique, le film « Nightmare 2000 » tente de montrer une image de Trinité-et-Tobago si ces effets persistent. Il convient d´explorer ces questions plus avant et d´encourager les décideurs à prendre des décisions éclairées concernant le développement du pays à tous les niveaux. Les auteurs espèrent que le film sensibilisera davantage l´opinion publique aux questions liées au changement climatique, pour que des solutions soient apportées - de quelque manière que ce soit - dans les domaines de l´agriculture et de la science au sein de la région. </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Nightmare-2020-Concours-de-films-et-de-videos-CTA-CCST-CARDI-UWI-sur-l-agriculture-et-la-science-dans-les-Caraibes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Cartographie-de-la-couverture-des-terres-et-des-forets-des-iles-Salomon" title="Cartographie de la couverture des terres et des forêts des îles Salomon" alt="link">Cartographie de la couverture des terres et des forêts des îles Salomon</a></h2>
+
+	
+					<p>Le Programme des Nations unies pour le développement et la Division géosciences et technologies appliquées (SOPAC) de la Commission du Pacifique Sud, en partenariat avec le gouvernement des îles Salomon, envisagent d´utiliser la technologie de télédétection et le système d´information géographique pour cartographier les couvertures des terres et des forêts des îles Salomon. L´exercice consistera à cartographier la couverture agricole et forestière, y compris les pâturages, les mangroves et les plantations forestières. Il permettra de surveiller le changement climatique et l´utilisation des terres dans ces îles.  (<a href="http://www.sopac.org/index.php/media-releases/1-latest-news/394-solomons-benefits-from-mapping-technologies" target="_blank">SOPAC</a> via <a href="http://sids-l.iisd.org/news/undpspc-introduces-gis-mapping-for-land-and-forest-in-solomon-islands/" target="_blank">IISD</a>, 23/03/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Cartographie-de-la-couverture-des-terres-et-des-forets-des-iles-Salomon">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Taro-geant-des-marais-un-potentiel-encore-inexploite-dans-la-region-Pacifique" title="Taro géant des marais : un potentiel encore inexploité dans la région Pacifique" alt="link">Taro géant des marais : un potentiel encore inexploité dans la région Pacifique</a></h2>
+
+	
+					<p>Le projet « Nourrir la planète » de l´Institut World Watch décrit une autre culture vivrière peu connue ayant un potentiel encore inexploité pour assurer la sécurité alimentaire. Le taro géant des marais (<i>Cyrtosperma chamissonis</i>) est plus abondant dans les atolls du Pacifique que son cousin, le taro (<i>Colocasia esculenta</i>), mais beaucoup moins disponible sur le plan commercial. Sa culture traditionnelle nécessite une main-d´ouvre importante et un environnement toujours saturé, ce qui fait qu´on le cultive seulement sur des petites parcelles marécageuses. Le taro des marais est une plante originaire des Philippines, dont il existe des dizaines de variétés dans la plupart des îles tropicales du Pacifique. Le taro géant des marais est cultivé et récolté sur de petites surfaces pour sa racine épaissie en gros tubercule farineux, appelé bulbe. Les fermiers des atolls cultivent souvent cette espèce en polycultures complexes, à l´ombre des grands arbres. Selon les chercheurs, le potentiel du taro géant des marais reste largement inexploité, du fait notamment qu´il est peu étudié par les chercheurs et qu´il n´existe à ce jour aucune technique permettant d´améliorer la culture de cette plante. (<a href="http://blogs.worldwatch.org/nourishingtheplanet/giant-swamp-taro-untapped-potential-in-the-pacific/" target="_blank">Nourishing the Planet</a>, 27/02/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Taro-geant-des-marais-un-potentiel-encore-inexploite-dans-la-region-Pacifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/De-la-glaci-egrave-re-agrave-l-acute-eacute-tuve" title="De la « glaci&amp;egrave;re » &amp;agrave; l&amp;acute;« &amp;eacute;tuve » ?" alt="link">De la « glaci&amp;egrave;re » &amp;agrave; l&amp;acute;« &amp;eacute;tuve » ?</a></h2>
+
+	
+					<p>En <a href="http://www.rienet.net/" target="_blank">mars 2012</a>, le Réseau RIE (Innovation et entrepreneuriat en matière de recherche dans les Caraïbes) mettait l´accent sur un certain nombre d´innovations agricoles dans la région, et notamment l´<a href="http://www.rienet.net/ri_.cfm?cat_=Research%20Update&amp;ID=590" target="_blank">incubation d´entreprises</a> du secteur agroalimentaire et le système national intégré d´incubateurs d´entreprises à Trinité-et-Tobago (IBIS) : « L´incubation d´entreprises est un processus utilisé par un certain nombre de petits et grands pays pour tirer des avantages tangibles d´une série d´initiatives en matière d´innovation et d´entrepreneuriat. Il s´agit d´un processus qui n´est pas si simple à mettre en place. Les incubateurs d´entreprises dans le monde ne sont pas de simples entités avec une équipe de personnes basées dans un lieu physique déterminé mais des écosystèmes complexes qui recouvrent différents aspects de la création et du développement d´entreprises, y compris la mise à l´épreuve du concept, la validation des produits et services, l´établissement d´alliances et de réseaux extensifs au niveau mondial, le développement d´une forte composante de financement et la promotion du partage et de la collaboration à tous les niveaux et dans tous les domaines. En outre, de nombreux incubateurs d´entreprises ont élaboré des modèles qui leur permettent éventuellement de s´autofinancer. »(Caribbean RIE Network, 03/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/De-la-glaci-egrave-re-agrave-l-acute-eacute-tuve">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Conference-PACE-Net-renforcer-la-cooperation-entre-l-Europe-et-le-Pacifique-dans-les-domaines-de-la-recherche-du-developpement-et-de-l-innovation-communique-de-presse" title="Conférence PACE-Net : renforcer la coopération entre l´Europe et le Pacifique dans les domaines de la recherche, du développement et de l´innovation (communiqué de presse)" alt="document">Conférence PACE-Net : renforcer la coopération entre l´Europe et le Pacifique dans les domaines de la recherche, du développement et de l´innovation (communiqué de presse)</a></h2>
+
+	
+	
+	
+	
+					<p>Le Pacifique est trop important pour l´Europe et le reste du monde pour être laissé de côté. C´est l´une des principales conclusions de la conférence PACE-Net qui s´est tenue à Bruxelles du 20 au 23 mars 2012. PACE-Net, le Réseau UE-Pacifique pour la science et la technologie (<a href="http://www.pacenet.eu/" target="_blank">www.pacenet.eu/</a>), un projet de coopération de trois ans entre l´Europe et le Pacifique, est financé par la Commission européenne. Cette conférence a réuni plus d´une centaine de chercheurs et de représentants venus d´Europe, d´Australie, de Nouvelle-Zélande, d´États insulaires du Pacifique (tels que Fidji, Samoa, Papouasie-Nouvelle-Guinée, Tuvalu, Kiribati) ainsi que de Polynésie française et Nouvelle-Calédonie. Au centre de cet événement, des ateliers interactifs de deux jours ont été organisés sur les sujets suivants : 1) l´eau, 2) l´agriculture et la foresterie, 3) les aléas naturels, 4) la pêche et 5) les politiques de recherche, de développement et d´innovation à moyen terme. Chaque atelier a élaboré des projets de cadres intégrés en matière de recherche, de développement et d´innovation pour des partenariats équitables entre l´UE et le Pacifique. Les points abordés dans ces projets sont les suivants : les politiques existantes et requises, l´évaluation des besoins stratégiques en matière de recherche, développement et innovation, les interventions requises et les stratégies de financement associées. Le dernier jour, les projets de cadres, les présentations ainsi que les résultats du panel d´experts ont fait l´objet de débats entre les participants aux ateliers.</p>
+							<p><span class="date">10/04/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Conference-PACE-Net-renforcer-la-cooperation-entre-l-Europe-et-le-Pacifique-dans-les-domaines-de-la-recherche-du-developpement-et-de-l-innovation-communique-de-presse">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Rappel-Concours-2012-2013-Femmes-et-sciences-et-Jeunes-professionnels-et-sciences-en-Afrique-Date-limite-pour-la-soumission-des-resumes-14-mai-2012" title="Rappel : Concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique – Date limite pour la soumission des résumés : 14 mai 2012" alt="link">Rappel : Concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique – Date limite pour la soumission des résumés : 14 mai 2012</a></h2>
+
+	
+					<p><b>//**// MàJ du 15 mai 2012 : les dates limites sont reportées. <a href="http://knowledge.cta.int/fr/content/view/full/15390" target="_blank">Lire la mise à jour ici</a>. //**// </b>Les concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique, organisés par un consortium composé du CTA, du FARA, de l’IFS, de l’ANAFE et du RUFORUM, avec l’appui de leurs partenaires associés, l’AGRA et l’APCN, visent à promouvoir l’excellence, mais aussi à faire reconnaître et récompenser les femmes scientifiques et les jeunes professionnels de talent qui entreprennent des activités de recherche scientifique novatrice, de technologie et d’ingénierie liées au développement, et qui communiquent les résultats obtenus (connaissances, technologies et approches) afin d’améliorer les performances agricoles et le développement socio-économique en Afrique.Peuvent faire acte de candidature les femmes scientifiques et les jeunes professionnels qui, au cours des cinq dernières années, ont entrepris une activité de recherche et développement liée aux ST&amp;I autour du thème « Nourrir 1 milliard d’Africains dans un monde en évolution » et ayant un effet mesurable (potentiel ou avéré) sur le développement de l’agriculture ou les moyens de subsistance des communautés rurales en Afrique.Les candidats devront soumettre un résumé détaillé (1000 à 2000 mots) décrivant de façon claire leur projet ST&amp;I. Les résumés reçus le 14 mai 2012 (date limite pour la soumission) ou avant seront évalués par un groupe d’experts composé de scientifiques, de décideurs politiques, d’agriculteurs et de spécialistes du genre et de l’information et de la communication. Les 20 demi-finalistes seront annoncés le 11 juillet 2012. Ils seront invités à participer à un atelier de rédaction et de communication scientifiques qui se tiendra en marge de la 3e conférence biennale du RUFORUM, en Ouganda en septembre 2012. Les 10 finalistes de chaque concours se disputeront les 5 premières places lors de la finale à l’Assemblée générale du FARA en 2013 au Ghana.Il y a des prix en espèces (US$ 500 à US$ 5,000), des trophées, de l’équipement électronique (par exemple, des ordinateurs) et des livres. Toutes les soumissions acceptées seront rédigées et publiées.Toutes les informations nécessaires sont disponiobles sur la page Internet suivante :<a href="http://knowledge.cta.int/fr/content/view/full/15390" target="_blank">http://knowledge.cta.int/fr/content/view/full/15390</a></p>
+							<p><span class="date">5/04/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Rappel-Concours-2012-2013-Femmes-et-sciences-et-Jeunes-professionnels-et-sciences-en-Afrique-Date-limite-pour-la-soumission-des-resumes-14-mai-2012">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-avancee-dans-la-recherche-sur-le-mais-transgenique-suscite-un-vif-interet-lors-de-l-Assemblee-generale-de-l-ASARECA" title="Une avancée dans la recherche sur le maïs transgénique suscite un vif intérêt lors de l’Assemblée générale de l’ASARECA" alt="link">Une avancée dans la recherche sur le maïs transgénique suscite un vif intérêt lors de l’Assemblée générale de l’ASARECA</a></h2>
+
+	
+					<p>Lors de l’Assemblée générale de l’Association pour le renforcement de la recherche agricole en Afrique de l’Est et en Afrique centrale (ASARECA), le Dr Seyfu Ketema, Directeur exécutif, a annoncé la mise au point de semences de maïs transgénique à l’aide d’une construction génique codée PNOV-ASARAnxzm35. Le gène, également connu sous le nom de gène ASARECA, a été isolé des cellules ovulaires du maïs. Les plants porteurs de ce gène sont plus résistants aux déficits hydriques. Ils se rétablissent complètement après desséchement. Neuf lignées de maïs ont été transformées par l’introduction de gènes conférant aux plants une tolérance à la sécheresse. Ces travaux ont été dirigés par le professeur Jesse Machuka de l’Université Kenyatta, au Kenya. Les neuf lignées ont été multipliées en chambre de culture à l’Université Kenyatta avant essais sur le terrain en milieu confiné.(<a href="http://www.asareca.org/?q=content/breakthrough-gmo-maize-research-excites-asareca-general-assembly " target="_blank">ASARECA</a>, 18/01/2012)</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-avancee-dans-la-recherche-sur-le-mais-transgenique-suscite-un-vif-interet-lors-de-l-Assemblee-generale-de-l-ASARECA">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Concours-Defi-Climat-l-innovation-des-jeunes-a-Apps4Africa" title="Concours Défi Climat : l’innovation des jeunes à Apps4Africa" alt="link">Concours Défi Climat : l’innovation des jeunes à Apps4Africa</a></h2>
+
+	
+					<p>Les communautés de familles rurales et celles dont la subsistance est à la merci des aléas climatiques peuvent grandement bénéficier d’une meilleure utilisation des TIC pour réduire la pauvreté et trouver des techniques agricoles durables. A ce titre, les développeurs et les entrepreneurs de tout le continent ont travaillé sur des systèmes mobiles et Web s’attaquant au changement climatique de manière créative. Cette créativité a été récompensée par le département d’Etat américain chargé des affaires africaines à l’occasion du concours Défi Climat organisé par <a href="http://www.apps4africa.org/blog/2012/01/14/east-africa-winners-announced-at-villages-in-action-2012/" target="_blank">Apps4Africa</a>. Annoncé en janvier 2012, le premier prix a été décerné au Tanzanien Eric Mutta, 29 ans, pour son application « The Grainy Bunch ». Il s’agit d’un système de gestion de l’approvisionnement du secteur céréalier qui surveille l’achat, le stockage, la distribution et la consommation de céréales sur l’ensemble du territoire. L’élaboration de ce système tient compte du fait qu’il est plus facile de vendre les « effets de l’efficacité » que les « effets du changement climatique » aux acteurs de la chaîne d’approvisionnement des céréales.<a href="http://www.elearning-africa.com/eLA_Newsportal/youthful-innovation-at-apps4africa/" target="_self">http://www.elearning-africa.com/eLA_Newsportal/youthful-innovation-at-apps4africa/</a></p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Concours-Defi-Climat-l-innovation-des-jeunes-a-Apps4Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Evaluer-le-potentiel-des-ressources-en-energies-renouvelables-en-Afrique" title="Evaluer le potentiel des ressources en énergies renouvelables en Afrique" alt="link">Evaluer le potentiel des ressources en énergies renouvelables en Afrique</a></h2>
+
+	
+					<p>Le Centre commun de recherche (JRC) de la Commission européenne a publié une étude sur le vaste potentiel de l’Afrique en matière d’énergies renouvelables. Le rapport présente une analyse de la consommation énergétique actuelle en Afrique ainsi qu’une évaluation du potentiel des ressources en énergies renouvelables (soleil, vent, biomasse et hydroélectricité), leur rapport coût-efficacité et leur durabilité sur le plan environnemental. Cette publication a coïncidé avec le lancement officiel en Europe de « l’Année internationale de l’énergie durable pour tous », proclamée par l’Assemblée générale des Nations Unies. La carte du potentiel énergétique solaire en Afrique, basée sur le système interactif en ligne d’information géographique sur l’énergie photovoltaïque (PVGIS) du JRC, a montré qu’il était possible de produire, avec la même surface photovoltaïque, deux fois plus d’électricité en Afrique qu’en Europe centrale. Afin d’évaluer la capacité de production électrique issue de l’énergie solaire pour alimenter les zones rurales, il convient toutefois de déterminer les coûts inhérents à une extension du réseau de distribution par rapport aux générateurs diesel traditionnels. Une analyse combinée des systèmes photovoltaïques, des réseaux de distribution et des solutions diesel permet de déterminer l’option la plus adéquate pour chaque zone. (<a href="http://www.physorg.com/news/2012-02-screening-africa-renewable-energies-potential.html" target="_blank">Physorg</a>, 14/02/2012)</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Evaluer-le-potentiel-des-ressources-en-energies-renouvelables-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Approbation-a-l-echelle-mondiale-d-une-nouvelle-methodologie-d-inventaire-des-stocks-de-carbone-dans-le-sol" title="Approbation à l’échelle mondiale d’une nouvelle méthodologie d’inventaire des stocks de carbone dans le sol" alt="link">Approbation à l’échelle mondiale d’une nouvelle méthodologie d’inventaire des stocks de carbone dans le sol</a></h2>
+
+	
+					<p>Les exploitants agricoles de l’ouest du Kenya ont été confrontés à l’impact désastreux du changement climatique, caractérisé par la sécheresse et la baisse de la fertilité des sols qui menacent sérieusement leurs moyens de subsistance. Le Verified Carbon Standard (VSC) a approuvé la méthodologie d’inventaire des stocks de carbone dans le sol au travers d’une gestion durable des terres, développée par la Banque mondiale pour le projet Smallholder Agriculture Carbon Finance mené par l’ONG Vi Agroforestery dans l’ouest du Kenya. Cette méthode encourage notamment les petits exploitants agricoles kenyans à adopter des techniques agricoles améliorées, accroître leur productivité, améliorer leur résilience face au changement climatique et gagner des crédits carbone. Le projet pilote compte plus de 60 000 petits exploitants sur 45 000 hectares de terre. Il est mené conjointement avec les exploitants agricoles et soutenu par le Fonds Biocarbone de la Banque mondiale (<a href="http://web.worldbank.org/WBSITE/EXTERNAL/NEWS/0,,contentMDK:23100745~pagePK:34370~piPK:34424~theSitePK:4607,00.html" target="_blank">Banque mondiale</a>, 30/01/2012).</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Approbation-a-l-echelle-mondiale-d-une-nouvelle-methodologie-d-inventaire-des-stocks-de-carbone-dans-le-sol">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-l-enseignement-superieur-en-sciences-et-technologies" title="Promouvoir l’enseignement supérieur en sciences et technologies" alt="link">Promouvoir l’enseignement supérieur en sciences et technologies</a></h2>
+
+	
+					<p>La Banque africaine de développement a lancé un projet destiné à réorganiser complètement la formation scientifique et technologique dans sept établissements d’enseignement supérieur au Malawi. Ce projet, qui vise notamment à améliorer l’accès à l’enseignement supérieur, mais aussi sa qualité et sa pertinence, constitue une aide précieuse pour les Malawiens. Trois universités et quatre écoles polytechniques, ainsi que plusieurs centres de formation professionnelle, seront les bénéficiaires du projet Enseignement supérieur, sciences et technologies. Ce projet comprendra également l’enseignement technique ainsi que la formation professionnelle et entrepreneuriale (TEVET).(<a href="http://www.universityworldnews.com/article.php?story=20120218071029291 " target="_blank">University World News</a>, 18/02/2012)</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-l-enseignement-superieur-en-sciences-et-technologies">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/La-BEI-et-la-Banque-caribeenne-de-developpement-lancent-un-programme-de-prets-consacre-a-l-action-pour-le-climat" title="La BEI et la Banque caribéenne de développement lancent un programme de prêts consacré à l’action pour le climat" alt="link">La BEI et la Banque caribéenne de développement lancent un programme de prêts consacré à l’action pour le climat</a></h2>
+
+	
+					<p>La Banque européenne d’investissement (BEI) et la Banque caribéenne de développement (CDB) sont parvenues à un accord sur les modalités d’un prêt de 65 millions de dollars EU consacré à l’action pour le climat et à un programme d’assistance technique qui sera financé par la BEI. Ce nouveau programme de prêts fournira des ressources à long terme à des conditions avantageuses pour des projets publics ou privés visant à lutter contre les effets attendus des bouleversements du climat terrestre. Les projets pouvant prétendre à un financement dans le cadre de ce nouveau programme de prêts doivent porter sur l’adaptation aux changements climatiques, les énergies renouvelables, les transports durables, l’exploitation forestière, les innovations sobres en carbone et les initiatives dans le domaine du changement climatique. Les 18 pays admissibles dans le cadre de ce programme sont les suivants : Anguilla, Antigua-et-Barbuda, Bahamas, Barbade, Belize, îles vierges britanniques, îles Caïman, Dominique, Grenade, Guyana, Haïti, Jamaïque, Montserrat, Saint-Kitts-Et-Nevis, Sainte-Lucie, Saint-Vincent-et-les-Grenadines, Trinité-et-Tobago, les îles Turques et Caïques.</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/La-BEI-et-la-Banque-caribeenne-de-developpement-lancent-un-programme-de-prets-consacre-a-l-action-pour-le-climat">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Concours-de-films-et-de-videos-sur-la-science-et-l-agriculture-dans-les-Caraibes" title="Concours de films et de vidéos sur la science et l’agriculture dans les Caraïbes" alt="link">Concours de films et de vidéos sur la science et l’agriculture dans les Caraïbes</a></h2>
+
+	
+					<p>Le premier prix du concours de films et de vidéos organisé par le CTA, en collaboration avec un certain nombre d’organisations partenaires (CCST, CARDI et UWI), a été décerné à « Bee wise », un docudrame exceptionnel signé Vincent Lewis sur l’utilisation des données scientifiques pour influencer les politiques nationales sur l’agrobiodiversité. Cette présentation souligne l’intérêt d’impliquer les jeunes professionnels pour faire passer le message sur les sciences complexes et les questions politiques. La vidéo peut être visionnée à la page <a href="http://vimeo.com/36006227" target="_blank">http://vimeo.com/36006227</a>.</p>
+							<p><span class="date">8/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Concours-de-films-et-de-videos-sur-la-science-et-l-agriculture-dans-les-Caraibes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Communique-de-la-conference-de-sensibilisation-sur-le-PDDAA-a-l-intention-des-universites-africaines-et-des-etablissements-d-enseignement-superieur-agricole-francophones" title="Communiqué de la conférence de sensibilisation sur le PDDAA à l’intention des universités africaines et des établissements d’enseignement supérieur agricole francophones" alt="document">Communiqué de la conférence de sensibilisation sur le PDDAA à l’intention des universités africaines et des établissements d’enseignement supérieur agricole francophones</a></h2>
+
+	
+	
+	
+	
+					<p>En novembre 2011, le CTA, en collaboration avec l’ANAFE et plusieurs autres organisations partenaires, a organisé à Ouagadougou (Burkina Faso) une conférence de sensibilisation sur le PDDAA à l’intention des recteurs et directeurs d’institutions d’enseignement supérieur agricole en Afrique. Ce colloque visait les objectifs suivants : 1) Sensibiliser les présidents/directeurs d’universités et d’institutions d’enseignement supérieur agricole, et leurs partenaires, aux processus du PDDAA; 2) Renforcer l’engagement des universités et des institutions d’enseignement supérieur agricole en Afrique; 3) Elaborer un plan d’action régional visant à renforcer leur engagement à appuyer les processus du PDDAA; 4) Définir les mesures d’accompagnement destinées à renforcer l’engagement des universités et des autres institutions d’enseignement supérieur agricole francophones. Un certain nombre de documents, dont un projet de stratégie CTA/WUR pour améliorer la participation des universités dans le PDDAA, ont été présentés puis débattus à cette occasion, et une série de propositions a été soumise. Les résultats suivants ont été obtenus : a) Sensibilisation aux objectifs, aux contraintes et aux résultats escomptés du PDDAA; b) Compréhension accrue du rôle des universités et des autres institutions d’enseignement supérieur agricole dans la coopération avec leur ministères de tutelle et ceux chargés de l’agriculture; c) Volonté accrue de contribuer à la réalisation des objectifs du PDDAA.</p>
+							<p><span class="date">8/03/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Communique-de-la-conference-de-sensibilisation-sur-le-PDDAA-a-l-intention-des-universites-africaines-et-des-etablissements-d-enseignement-superieur-agricole-francophones">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-des-concours-2012-2013-Femmes-et-sciences-et-Jeunes-professionnels-et-sciences-en-Afrique" title="Lancement des concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique  " alt="link">Lancement des concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique  </a></h2>
+
+	
+					<p><b><b>//**// MàJ du 15 mai 2012 : les dates limites sont reportées. <a href="http://knowledge.cta.int/fr/content/view/full/15390" target="_blank">Lire la mise à jour ici</a>. //**//</b></b><b><b>Appel à résumés : « <i>Nourrir 1 milliard d’Africains dans un monde en évolution</i> ». Date limite</b>: 14 mai 2012.</b>Le consortium CTA/FARA/IFS/ANAFE/RUFORUM, en collaboration avec l’AGRA et l’APCN, a le plaisir d’annoncer le lancement des concours 2012-2013 « Femmes et sciences » et « Jeunes professionnels et sciences » en Afrique. Avec environ 1,03 milliard d’individus en 2011 et une augmentation de 24 millions d’habitants chaque année, la population africaine devrait doubler d’ici 2050. Le continent doit accroître durablement la productivité agricole et trouver des solutions endogènes face aux défis qui se posent. Le niveau des investissements dans la science et l’innovation en Afrique reste faible et seule une université africaine figure parmi les 500 premières universités du monde. Les femmes sont sous-représentées dans les domaines de la politique, de l’enseignement et de la recherche, et la jeunesse (âgée de 30 ans et moins, soit 70 % de la population), dans sa majorité, ne voit pas d’avenir dans l’agriculture ou la science. De manière générale, l’Afrique fait face à un manque de connaissances et de compétences compte tenu du départ à la retraite de nombreux chercheurs et universitaires.Les concours des sciences en Afrique 2012-2013 permettront d’évaluer, de reconnaître et de récompenser les contributions des femmes et des jeunes professionnels impliqués dans : <b>1) </b>une recherche pionnière et innovante ;<b> 2) </b>la communication de leurs résultats de recherche et avancées technologiques ; <b>3) </b>le plaidoyer en faveur d’un changement de politique et qui influencent le processus d’élaboration des politiques à travers leur recherche. Ils permettront par ailleurs de mieux sensibiliser à la nécessité de valoriser et de pérenniser l’engagement des femmes et des jeunes professionnels scientifiques, mais aussi de faciliter leur contribution à la transformation socio-économique de l’Afrique.<b>Lire l'appel à résumés pour le concours « Femmes et sciences en Afrique » 2012-2013:</b>Version française <a href="http://knowledge.cta.int/fr/content/view/full/15382" target="_blank">http://knowledge.cta.int/fr/content/view/full/15382</a><b><b>Lire l'appel à résumés pour le concours « Jeunes professionnels et sciences en Afrique » 2012-2013:</b></b>Version française <a href="http://knowledge.cta.int/fr/content/view/full/15383" target="_blank">http://knowledge.cta.int/fr/content/view/full/15383</a><b>Lire la note conceptuelle:</b><a href="http://knowledge.cta.int/fr/Media/Multimedia/Concept-Note-2012-2013-Africa-Wide-Women-and-Young-Professionals-in-Science-Competition" target="_blank">http://knowledge.cta.int/fr/Media/Multimedia/Concept-Note-2012-2013-Africa-Wide-Women-and-Young-Professionals-in-Science-Competition</a></p>
+							<p><span class="date">8/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-des-concours-2012-2013-Femmes-et-sciences-et-Jeunes-professionnels-et-sciences-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Indice-de-l-autonomisation-des-femmes-dans-l-agriculture-WEAI" title="Indice de l’autonomisation des femmes dans l’agriculture (WEAI)" alt="link">Indice de l’autonomisation des femmes dans l’agriculture (WEAI)</a></h2>
+
+	
+					<p>Si les femmes jouent un rôle crucial dans l’économie agricole des pays en développement, mais aussi dans le processus de transformation du secteur, elles sont néanmoins confrontées à des obstacles persistants et à des contraintes économiques qui entravent leur inclusion dans l’agriculture. Progrès majeur dans ce domaine, l’indice WEAI permettra de mieux appréhender les relations entre autonomisation des femmes, sécurité alimentaire et croissance agricole. Il mesurera le rôle et le degré d’influence qu’auront les femmes sur : 1) les décisions relatives à la production agricole; 2) la participation à la prise de décision et l’accès aux ressources productives; 3) le contrôle de l’utilisation des revenus; 4) le leadership au sein de la communauté; 5) leur emploi du temps. Il mesurera également la part que les femmes jouent (par rapport aux hommes) dans la prise de décision au sein des ménages. Il permettra d’identifier les femmes qui se sentent complètement déresponsabilisées et de comprendre comment améliorer leur autonomie et leur pouvoir de décision dans des domaines clés.</p>
+							<p><span class="date">8/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Indice-de-l-autonomisation-des-femmes-dans-l-agriculture-WEAI">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/600"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/660"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">1</a>...
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/420">15</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/450">16</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/480">17</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/510">18</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/540">19</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/570">20</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/600">21</a></span>
+            
+        <span class="current">22</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/660">23</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/690">24</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/720">25</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/750">26</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/780">27</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/810">28</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/2460">83</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":324,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

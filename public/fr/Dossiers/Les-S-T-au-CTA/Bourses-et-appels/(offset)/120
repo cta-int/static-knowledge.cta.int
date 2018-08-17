@@ -1,0 +1,1713 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Bourses et appels / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/120" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="active">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Les-S-T-au-CTA">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Bourses et appels</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Bourses et appels</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-Doctorants-du-Sud-de-l-AIRD-CIRAD-Appel-a-projets-2011" title="AIRD - CIRAD : Doctorants du Sud Program (2011 Call for applications)" alt="document">AIRD - CIRAD : Doctorants du Sud Program (2011 Call for applications)</a></h2>
+
+	
+	
+	
+	
+					<p><a href="http://www.aird.fr/bourses/index.html" target="_self">http://www.aird.fr/bourses/index.html</a><b>Date limite de soumission de projets: 15 juillet 2011.</b>Envoyez votre candidature à Philippe Tixier (<a href="mailto:philippe.tixier@cirad.fr" target="_blank">philippe.tixier@cirad.fr</a>) et à Sylvain Depigny (<a href="mailto:sylvain.depigny@cirad.fr" target="_blank">sylvain.depigny@cirad.fr</a>) et consultez le site pour plus d'information: <a href="http://www.aird.fr/bourses/index.html" target="_self">http://www.aird.fr/bourses/index.html</a>« Doctorants du Sud » est un des programmes d'appui au renforcement et à la consolidation des potentiels de recherche dans les pays du Sud, mis en oeuvre par l'Agence interétablissements de recherche pour le développement (AIRD) pour le compte du Cirad (Centre de coopération internationale en recherche agronomique pour le développement). A travers ce programme, <b>l'AIRD entend contribuer à la formation initiale de futurs chercheurs des pays du Sud</b>. Dans le même temps, ce programme entend renforcer les partenariats de recherche entre les unités du Cirad et une ou plusieurs équipes du Sud.Le public visé est celui des étudiants des pays du Sud qui souhaitent réaliser une thèse dans le cadre d'un partenariat entre une équipe de recherche du Cirad et une équipe de recherche du Sud leur garantissant un encadrement et un environnement de travail de qualité.L'objectif du soutien est de préparer de jeunes scientifiques à intégrer, au terme de leur thèse, le système d'enseignement supérieur et de recherche d'un pays du Sud et, par là même, à renforcer les capacités de recherche de ces pays.Trouvez toutes les informations nécessaires sur le site <a href="http://www.aird.fr/bourses/index.html" target="_self">http://www.aird.fr/bourses/index.html</a></p>
+							<p><span class="date">8/07/2011</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-Doctorants-du-Sud-de-l-AIRD-CIRAD-Appel-a-projets-2011">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-de-recherche-2011-du-RUFORUM-Appel-a-propositions" title="Bourses de recherche 2011 du RUFORUM – Appel à propositions" alt="link">Bourses de recherche 2011 du RUFORUM – Appel à propositions</a></h2>
+
+	
+					<p>
+<b>Date limite de soumission des candidatures : 30 septembre 2011</b> Le RUFORUM a lancé son quatrième appel à propositions pour des bourses de recherche de deuxième cycle (GRG, RU/CGS/GRG/30/9/11). Cet appel vise à renforcer les capacités au niveau du deuxième cycle d'études et à établir une passerelle entre les universités, d'une part, et les communautés rurales et les instituts de recherche, les organismes de vulgarisation et les agences de développement, d'autre part. Reportez-vous au <a href="http://www.ruforum.org/sites/default/files/file/Grants/RUFORUM%20CGS%20Manual.pdf" target="_blank">guide des bourses compétitives</a> pour de plus amples informations sur ce programme. Ce guide fournit des directives générales pour vous aider à répondre au mieux à l'appel à propositions. Les résultats de la sélection seront communiqués d'ici mi-mars 2012. Les organisations intéressées sont invitées à consulter la <a href="http://www.ruforum.org/news/graduate-research-grants-%E2%80%93-call-proposals-rucgsgrg30911" target="_blank">page web officielle</a>.</p>
+							<p><span class="date">1/07/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-de-recherche-2011-du-RUFORUM-Appel-a-propositions">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-TWAS-en-sciences-fondamentales2" title="Programme de bourses de recherche TWAS en sciences fondamentales" alt="link">Programme de bourses de recherche TWAS en sciences fondamentales</a></h2>
+
+	
+					<p><a href="http://twas.ictp.it/prog/grants/research-grants" target="_self">http://twas.ictp.it/prog/grants/research-grants</a> <b>Date limite de soumission des candidatures : 31 août 2011</b> Ces bourses sont destinées aux chercheurs et instituts de recherche dans les pays qui accusent un retard par rapport aux autres pays sur le plan scientifique et technologique. Le <a href="http://twas.ictp.it/prog/grants/research-grants" target="_blank">Programme de bourses de recherche TWAS</a> en sciences fondamentales a été établi pour répondre aux besoins des jeunes chercheurs prometteurs originaires de pays en développement, et notamment ceux qui évoluent au sein d'institutions non équipées d'infrastructures de recherche appropriées. Attribuées aux chercheurs et instituts de recherche dans 80 pays qui accusent un retard sur le plan scientifique et technologique, ces bourses devraient leur permettre d'acquérir les infrastructures de recherche dont ils ont besoin pour accroître leur productivité.</p>
+							<p><span class="date">1/07/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-bourses-de-recherche-TWAS-en-sciences-fondamentales2">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Annonce-de-la-3eme-conference-biennale-RUFORUM" title="Annonce de la 3ème conférence biennale RUFORUM" alt="event">Annonce de la 3ème conférence biennale RUFORUM</a></h2>
+
+	
+	
+					<p>Dates: 24-28 septembre 2012
+Lieu: Sokoine University of Agriculture, Dar es Salaam (Tanzanie)
+  La troisième conférence biennale du RUFORUM sera organisée à Dar es Salaam (Tanzanie) en marge de la réunion de l'Assemblée générale de l'organisation sous le thème « La recherche agricole pour le développement en Afrique : renforcement des capacités d'innovation et d'adaptation pour améliorer les moyens de subsistance des populations ». Contact: Ms Nodumo Dhlamini; Biennial Conference Coodinator; Regional Universities Forum for Capacity Building in Agriculture (RUFORUM); Email 1: n.dhlamini@ruforum.org; <a href="http://www.ruforum.org" target="_blank">http://www.ruforum.org</a></p>
+					<p><span class="date">lundi 24 septembre 2012 - vendredi 28 septembre 2012</p><div class="cnt">
+	<a class="event" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Annonce-de-la-3eme-conference-biennale-RUFORUM">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-maitrise-Agro-industrie-international-et-Developpement-rural-IARD" title="Programme de maîtrise Agro-industrie international et Développement rural (IARD)" alt="link">Programme de maîtrise Agro-industrie international et Développement rural (IARD)</a></h2>
+
+	
+					<p>Le Programme de maîtrise Agro-industrie international et Développement rural (IARD) est offert conjointement par l'Université Georg-August de Göttingen (Allemagne) et l'Universidad de Talca (Chili) – ouvrir <a href="http://www.iard.uni-goettingen.de/" target="_blank">www.iard.uni-goettingen.de</a> pour de plus amples informations sur les bourses de recherche de deuxième cycle. Le DAAD offre des bourses aux étudiants originaires d'Amérique latine et des Caraïbes. Les candidatures des étudiants originaires des Caraïbes sont vivement encouragées pour ce programme de maîtrise. Si vous êtes intéressé(e) par ce programme, consultez directement le site web : <a href="http://www.uni-goettingen.de/en/136089.html" target="_blank">www.uni-goettingen.de/en/136089.html</a>. Si vous pensez satisfaire aux conditions d'admission, n'hésitez pas à envoyer votre dossier de candidature : lire la section « Comment poser sa candidature » : <a href="http://www.uni-goettingen.de/en/136179.html" target="_blank">www.uni-goettingen.de/en/136179.html</a>.M.Sc. Thelma BrenesDepartment for Agricultural Economics and Rural Development Platz der Göttinger Sieben 5, 37073 Göttingen, GermanyE-mail: tbrenes[at]gwdg.de - Internet: <a href="http://www.iard.uni-goettingen.de/" target="_blank">http://www.iard.uni-goettingen.de/</a></p>
+							<p><span class="date">16/06/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-maitrise-Agro-industrie-international-et-Developpement-rural-IARD">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Prix-de-l-Africa-College-sur-l-impact-en-matiere-de-securite-alimentaire-et-de-sante-humaine" title="Prix de l’Africa College sur l’impact en matière de sécurité alimentaire et de santé humaine" alt="link">Prix de l’Africa College sur l’impact en matière de sécurité alimentaire et de santé humaine</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/africa_college-conf/321073-1-eng-GB/africa_college-conf.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	En marge de la conférence sur la sécurité alimentaire, la santé humaine et l’impact, Africa College organise un concours pour aider à identifier les meilleures pratiques visant à traduire les résultats de la recherche en avantages concrets pour améliorer la sécurité alimentaires et la santé humaine en Afrique subsaharienne, et reconnaître les individus travaillant au sein des organisations de R&amp;D, de la société civile, des associations d’agriculteurs et du secteur privé ayant contribué à cet effort. Pour de plus amples informations, cliquez sur le lien suivant.Les candidats sont invités à répondre à trois questions :
+
+
+Quel a été l’impact et qui en a bénéficié ?
+
+Qu’a fait l’auteur pour y parvenir ?
+
+Quels enseignements peut-on tirer afin d’améliorer l’impact de la recherche sur la sécurité alimentaire et la santé humaine en Afrique subsaharienne ?
+
+
+Les candidats devront soumettre un résumé de 1 500 mots au maximum et remplir le formulaire de candidature disponible sur le site web d’Africa College.<b>Date limite de soumission des candidatures : 17h00 (GMT) le 6 juin 2011.</b>Les lauréats seront annoncés lors de la <a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements/Conference-internationale-sur-la-securite-alimentaire-la-sante-et-l-impact" target="_blank">conférence sur la sécurité alimentaire, la santé humaine et l’impact</a>, qui se tiendra du 22 au 24 juin 2011.Pour obtenir de plus amples informations et télécharger le formulaire de candidature, cliquer sur le lien ci-après<a href="http://www.africacollege.leeds.ac.uk/conf2011/prize.php%20" target="_blank">http://www.africacollege.leeds.ac.uk/conf2011/prize.php</a> ou demander ce formulaire à l’adresse <a href="mailto:africacollege@leeds.ac.uk" target="_blank">africacollege@leeds.ac.uk</a></p>
+							<p><span class="date">4/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Prix-de-l-Africa-College-sur-l-impact-en-matiere-de-securite-alimentaire-et-de-sante-humaine">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-maitrise-TIC-pour-le-developpement-1-annee-et-programme-de-bourse-Development-Leaders-Bursary-2011-de-l-Universite-de-Manchester" title="Programme de maîtrise TIC pour le développement (1 année) et programme de bourse Development Leaders Bursary 2011 de l’Université de Manchester" alt="link">Programme de maîtrise TIC pour le développement (1 année) et programme de bourse Development Leaders Bursary 2011 de l’Université de Manchester</a></h2>
+
+	
+					<p>Le programme de maîtrise TIC pour le développement de l’Université de Manchester vise à créer des « ICT4D champions » (des leaders dans le secteur des TIC pour le développement) dotés de compétences techniques et managériales pour diriger des systèmes d’information et gérer des projets, mais possédant également des connaissances pratiques et théoriques ayant trait au développement : <a href="http://www.sed.manchester.ac.uk/postgraduate/taught/courses/06237/?code=06237&amp;pg=2" target="_blank">http://www.sed.manchester.ac.uk/postgraduate/taught/courses/06237/?code=06237&amp;pg=2</a>Le programme Development Leaders Bursary 2011 – doté d’une bourse d’une valeur de 6 150 £ – s’adresse à des candidats originaires de pays en développement qui souhaitent s’inscrire au programme de maîtrise ICT4D (<b>date limite de dépôt des candidatures : 27 mai 2011</b>). Cliquer sur le lien ci-après pour consulter les conditions et modalités de sélection : <a href="http://www.sed.manchester.ac.uk/idpm/postgraduate/taught/funding/" target="_blank">http://www.sed.manchester.ac.uk/idpm/postgraduate/taught/funding/</a>Cette page donne aux étudiants des précisions sur les autres sources de financement et les opportunités d’emploi à temps partiel qui leur sont offertes pendant leurs études à Manchester.</p>
+							<p><span class="date">4/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-maitrise-TIC-pour-le-developpement-1-annee-et-programme-de-bourse-Development-Leaders-Bursary-2011-de-l-Universite-de-Manchester">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidature-du-CCAFS-CGIAR" title="Appel à candidature du CCAFS-CGIAR" alt="link">Appel à candidature du CCAFS-CGIAR</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logo-amma-la-mousson/323138-1-eng-GB/logo-AMMA-la-mousson.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Un nouvel appel à candidature pour des bourses ($35,000) lancé par le Programme de recherche &quot;Changements climatiques, agriculture et sécurité alimentaire&quot; (CCAFS) du Groupe Consultatif pour la Recherche Agricole Internationale (CGIAR) à l’intention des jeunes femmes chercheurs ressortissants du <b>Burkina Faso, Ghana, Mali, Niger, Sénégal, Ethiopie, Kenya, Tanzanie, Ouganda, Inde, Népal, Bangladesh</b>, intéressées par un PhD ou un Post Doc dans le domaine des changements climatiques.Soumettre l'application avant le <b>1er Mai 2011 </b>(par email).Trouvez <a href="http://knowledge.cta.int/en/Media/Multimedia/CCAFS-Call-for-Competitive-Small-Grants-Proposals" target="_blank">ici les instructions à suivre</a> et <a href="http://knowledge.cta.int/en/Media/Multimedia/CCAFS-Application-Form-for-the-Competitive-Small-Grants-Proposals" target="_blank">ici le formulaire d'application</a>. (En anglais.)Des informations plus détaillées sur le CCAFS sont disponibles sur le site <a href="http://www.ccafs.cgiar.org" target="_blank">http://www.ccafs.cgiar.org</a></p>
+							<p><span class="date">11/04/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-candidature-du-CCAFS-CGIAR">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-contribution-Articles-pour-le-bulletin-d-information-Villes-Agricoles-2eme-numero" title="Appel à contribution - Articles pour le bulletin d'information « Villes Agricoles », 2eme numéro" alt="document">Appel à contribution - Articles pour le bulletin d'information « Villes Agricoles », 2eme numéro</a></h2>
+
+	
+	
+	
+	
+					<p>Le bulletin d’information « Villes Agricoles » est publié chaque 3 mois sur le site web de l’Institut Africain de Gestion Urbaine (IAGU-BAU) (www.iagu.org) et est aussi par envoyé par voie électronique aux souscripteurs.L'IAGU souhaite votre contribution pour le deuxième numéro suivant qui portera sur le : <b>Financement de l’agriculture urbaine</b><b>Date limite de soumission : </b><b>20 avril 2011</b><b>Les articles</b>Les articles doivent faire au plus 1600 mots (deux pages), de préférence accompagnés par un résumé de quelques lignes, des références bibliographiques, des données chiffrées et des photos de bonne qualité. Les articles doivent être rédigés de façon simple et claire pour être facilement compris par une large variété d’acteurs.</p>
+							<p><span class="date">25/03/2011</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-contribution-Articles-pour-le-bulletin-d-information-Villes-Agricoles-2eme-numero">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-de-recherche-MS-doctorat-2011-au-SEARCA" title=" Bourses de recherche MS/doctorat 2011 au SEARCA" alt="link"> Bourses de recherche MS/doctorat 2011 au SEARCA</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/fellowship-grants/321604-1-eng-GB/Fellowship-grants.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Date limite de soumission des candidatures : 30 juillet 2011.</b>Lancé au titre de l’année universitaire 1968-1969, ce programme de bourses d’études supérieures vise à renforcer les capacités d’évolution et d’adaptation des chercheurs et professionnels de l’agriculture de l’Asie du Sud-Est face aux enjeux du développement durable dans le monde. Le programme offre un appui financier aux étudiants de maîtrise et de doctorat dont les travaux de recherche s’inscrivent dans les thématiques prioritaires de l’organisation (agriculture, foresterie et domaines connexes). Le SEARCA prépare les professionnels hautement qualifiés œuvrant dans le domaine du développement agricole et rural à des postes de responsabilité dans les pays membres de la SEAMEO.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourses-de-recherche-MS-doctorat-2011-au-SEARCA">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourse-doctorale-en-phytogenetique-du-Centre-africain-pour-l-amelioration-des-cultures" title="Bourse doctorale en phytogénétique du Centre africain pour l’amélioration des cultures" alt="link">Bourse doctorale en phytogénétique du Centre africain pour l’amélioration des cultures</a></h2>
+
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/acci-logo/321593-1-eng-GB/ACCI-logo.gif" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Date limite de soumission des candidatures : 31 octobre 2011.</b>Le Centre africain pour l’amélioration des cultures de l’Université du KwaZulu – Natal, Pietermaritzburg (Afrique du Sud), offre cette bourse prestigieuse à de jeunes chercheurs africains désireux de faire carrière dans le domaine de la phytogénétique. L’objectif du Centre est de former des phytogénéticiens africains, en Afrique, sur les cultures africaines. Cette formation implique deux années d’études à l’Université du KwaZulu – Natal et trois années d’expérience sur le terrain dans le pays d’origine des étudiants, au sein de leurs institutions respectives. Les plantes cultivées par les étudiants sont destinées à assurer la sécurité alimentaire : céréales, légumes, racines et tubercules. Les candidats sélectionnés commenceront leurs études en janvier 2012.</p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourse-doctorale-en-phytogenetique-du-Centre-africain-pour-l-amelioration-des-cultures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TEEAL-concours-de-memoires-de-recherche-de-troisieme-cycle-2011" title="TEEAL : concours de mémoires de recherche de troisième cycle 2011" alt="document">TEEAL : concours de mémoires de recherche de troisième cycle 2011</a></h2>
+
+	
+	
+	
+	
+					<p><b>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/teeal-logo/322334-1-eng-GB/teeal-logo.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Date limite d’inscription : 31 mai 2011.</b>La Bibliothèque agricole électronique de référence (TEEAL) a le plaisir d’annoncer le lancement du premier concours de mémoires de recherche s’adressant à des étudiants de troisième cycle originaires de pays africains qui bénéficient d’un accès à TEEAL. TEEAL invite les étudiants de maîtrise et de doctorat à soumettre leur mémoire de recherche dans les domaines de la production alimentaire, la sécurité alimentaire, la politique agricole et alimentaire, et le développement rural. TEEAL est une bibliothèque numérique qui contient des articles de référence consacrés à l’agriculture et aux sciences connexes. Les chercheurs, les étudiants, les personnels universitaires et les bibliothécaires ont accès à des milliers d’articles en texte intégral au format PDF sans être connectés à Internet. Ce concours est ouvert uniquement aux étudiants de maîtrise et de doctorat qui sont inscrits à un programme de troisième cycle ou doivent passer leur examen en 2011. Les étudiants de premier cycle et les enseignants ne peuvent participer à ce concours.Visitez le <a href="http://teeal.org/teaching-and-learning/contest" target="_blank">site du TEAAL</a> pour plus d'information. </p>
+							<p><span class="date">30/03/2011</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/TEEAL-concours-de-memoires-de-recherche-de-troisieme-cycle-2011">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-notes-conceptuelles-2011-lance-par-le-Fonds-canadien-de-recherche-sur-la-securite-alimentaire-internationale" title="Appel à notes conceptuelles 2011 lancé par le Fonds canadien de recherche sur la sécurité alimentaire internationale" alt="link">Appel à notes conceptuelles 2011 lancé par le Fonds canadien de recherche sur la sécurité alimentaire internationale</a></h2>
+
+	
+					<p>Le CRDI a lancé l’appel à notes conceptuelles ouvert et concurrentiel du Fonds canadien de recherche sur la sécurité alimentaire internationale (FCRSAI) pour l’année 2011. La date limite de dépôt des notes conceptuelles est fixée au 23 mars 2011.Les budgets alloués aux projets dans le cadre de cet appel varient entre 1 et 5 millions de dollars canadiens. Cet appel enregistre quelques changements notables par rapport à l’année précédente, à savoir :
+
+
+Admissibilité accrue des organisations internationales ; 
+
+Restrictions sur le nombre de candidatures admissibles de chercheurs ;
+
+Durée de projet écourtée : le projet ne peut durer plus de 30 mois (les activités de recherche doivent être menées à bien et le rapport final doit être produit au cours de cette période) ;
+
+
+Le FCRSAI est doté d’une enveloppe budgétaire de 62 millions de dollars canadiens (pour une durée de 5 ans) et vise à renforcer les partenariats stratégiques entre les organismes de recherche canadiens et ceux installés dans les pays en développement afin de trouver des solutions durables dans la lutte contre la faim et l’insécurité alimentaire dans les pays du Sud. Le Fonds s’inscrit dans le cadre de la stratégie de sécurité alimentaire de l’ACDI et des programmes prioritaires de sécurité alimentaire du CRDI.
+Pour obtenir des informations générales sur le Fonds, consulter la page suivante :<a href="http://www.idrc.ca/cifsrf%20" target="_blank">http://www.idrc.ca/cifsrf </a>
+L’appel à notes conceptuelles est accessible en cliquant sur le lien suivant
+<a href="http://www.idrc.ca/uploads/user-S/12960834381CIFSRF_Call_for_Concept_Notes_2011_EN.doc%20" target="_blank">http://www.idrc.ca/uploads/user-S/12960834381CIFSRF_Call_for_Concept_Notes_2011_EN.doc </a>Le formulaire de demande en ligne est disponible à la page <a href="http://www.idrc.ca/cifsrf/ev-151057-201-1-DO_TOPIC.html" target="_blank">http://www.idrc.ca/cifsrf/ev-151057-201-1-DO_TOPIC.html</a> du 9 février au <b>23 mars 2011</b>.Consulter le site web afin d’obtenir les instructions permettant de remplir ce formulaire et la liste des pays admissibles.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-a-notes-conceptuelles-2011-lance-par-le-Fonds-canadien-de-recherche-sur-la-securite-alimentaire-internationale">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-conjoint-a-projets-collaboratifs-Systemes-de-culture-integres-pour-une-production-durable-au-service-du-developpement-international-Initiative-SCPRID" title="Appel conjoint à projets collaboratifs : « Systèmes de culture intégrés pour une production durable au service du développement international » (Initiative SCPRID)" alt="link">Appel conjoint à projets collaboratifs : « Systèmes de culture intégrés pour une production durable au service du développement international » (Initiative SCPRID)</a></h2>
+
+	
+					<p>Date limite de dépôt des candidatures : 31 mars 2011Le gouvernement britannique, conjointement avec le Conseil de recherche en biotechnologie et en sciences biologiques (BBSRC), le Département pour le développement international (DFID), la Fondation Bill &amp; Melinda Gates, le Département de biotechnologie du Ministère indien de la science et de la technologie et le Conseil indien pour la recherche agricole, a procédé au lancement d’un nouveau programme de 20 millions de livres. Ce programme appelé « Systèmes de culture intégrés pour une production durable au service du développement international » permettra aux scientifiques de faire de la recherche sur les facteurs de stress abiotique (sécheresse, température, salinité, carences nutritionnelles, etc.) et biotique (pathogènes, ravageurs, plantes parasites nuisibles) qui affectent les cultures alimentaires dans les pays en développement d’Afrique subsaharienne et d’Asie du Sud. Les travaux de recherche menés dans le cadre de ce programme doivent être d’excellence qualité scientifique et constituer un outil pertinent pour le développement. Les projets devraient en outre ouvrir la voie à des partenariats mutuellement bénéfiques entre le Royaume-Uni et les pays en développement.</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Appel-conjoint-a-projets-collaboratifs-Systemes-de-culture-integres-pour-une-production-durable-au-service-du-developpement-international-Initiative-SCPRID">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-mobilite-universitaire-intra-ACP-Premier-appel-a-propositions-reference-EACEA-35-10" title=" Programme de mobilité universitaire intra-ACP – Premier appel à propositions (référence EACEA/35/10)" alt="link"> Programme de mobilité universitaire intra-ACP – Premier appel à propositions (référence EACEA/35/10)</a></h2>
+
+	
+					<p><b>Date limite du premier appel : 6 mai 2011</b>Le programme de mobilité universitaire intra-ACP encourage la coopération entre les établissements d’enseignement supérieur et favorise la mobilité dans les pays ACP (Afrique, Caraïbes, Pacifique). Ce programme vise non seulement à améliorer l’accès à un enseignement de qualité qui encouragera les étudiants originaires des pays ACP à poursuivre leurs études post-universitaires, mais aussi à favoriser la rétention des étudiants dans la région et la mobilité des personnels enseignants et administratifs. Le programme intra-ACP devrait ainsi permettre d’améliorer la compétitivité et l’attrait des institutions elles-mêmes. Cette stratégie de coopération s’appuie sur le programme Mwalimu Nyerere pour l’Afrique, par l’octroi de fonds supplémentaires, ainsi que par la mise en place d’un programme similaire pour les régions des Caraïbes et du Pacifique. Il est finance par le Fonds européen de développement (FED).</p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Programme-de-mobilite-universitaire-intra-ACP-Premier-appel-a-propositions-reference-EACEA-35-10">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/AWARD-Appel-a-candidatures-pour-l-edition-2011" title="AWARD : Appel à candidatures pour l’édition 2011" alt="link">AWARD : Appel à candidatures pour l’édition 2011</a></h2>
+
+	
+					<p>L’appel à candidatures est à présent ouvert. AWARD est un programme de bourses d’études, attribuées pour deux années, qui offre un plan de développement de carrière. Ce programme offre la possibilité de :
+
+
+mettre en place un tutorat avec un maître de recherches
+
+consolider les capacités d’expertise scientifique
+
+de développer les capacités leadership
+
+
+
+Les cours de formation AWARD sont dispensés sur une période de deux ans dans de nombreux centres à travers l’Afrique.Les femmes scientifiques agricoles originaires d’Ethiopie, du Ghana, du Kenya, du Liberia, du Malawi, du Mozambique, du Nigeria, du Rwanda, de Tanzanie, d’Ouganda ou de Zambie titulaires d’une licence, d’une maîtrise ou d’un doctorat dans les disciplines énumérées ci-dessous sont invitées à soumettre leur candidature. Les candidates retenues devront résider sur le continent africain pendant toute la durée du programme. Aucune condition d’âge n’est exigée.<b>Date limite: 25 mars 2011</b></p>
+							<p><span class="date">22/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/AWARD-Appel-a-candidatures-pour-l-edition-2011">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourse-d-etudes-de-l-Universite-de-Nottingham-The-Duke-of-Portland-Developing-Solutions-Scholarship" title="Bourse d’études de l’Université de Nottingham – “The Duke of Portland Developing Solutions Scholarship”" alt="link">Bourse d’études de l’Université de Nottingham – “The Duke of Portland Developing Solutions Scholarship”</a></h2>
+
+	
+					<p>
+L’Université de Nottingham offre une bourse d’études complète prenant en charge la totalité des frais de scolarité à un étudiant d’origine africaine désireux de suivre un programme de maîtrise en amélioration des cultures à la faculté de biosciences. Vous êtes éligible pour ce programme de bourse si
+- vous êtes ressortissant (ou résident permanent) d’un pays d’Afrique
+- vous êtes classé comme étudiant étranger payant ses droits de scolarité
+- vous avez déjà reçu une offre pour suivre un programme de maîtrise à temps plein en amélioration des cultures à Nottingham en 2011.Date limite de dépôt des candidatures : 6 avril 2011.</p>
+							<p><span class="date">25/01/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Bourse-d-etudes-de-l-Universite-de-Nottingham-The-Duke-of-Portland-Developing-Solutions-Scholarship">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Subventions-de-recherches-de-l-Union-africaine-2011-avis-a-manifestation-d-interet" title="Subventions de recherches de l’Union africaine 2011 : avis à manifestation d’intérêt   " alt="link">Subventions de recherches de l’Union africaine 2011 : avis à manifestation d’intérêt   </a></h2>
+
+	
+					<p>Date limite de dépôt des propositions : 30 avril 2011
+La Commission de l’Union africaine est en quête de projets de recherche sur les priorités thématiques suivantes indiquées dans le Plan d’action consolidé de l’Afrique pour la science et la technologie et dans ses projets phares :
+(a) Gestion post-récolte et agriculture,
+(b) Energies renouvelables et durables,
+(c) Eau et assainissement en Afrique.
+Le programme est financé grâce à l’Accord financier entre la Commission de l’UE et le Groupe des Etats ACP (Afrique, Caraïbes, Pacifique) et de l’Enveloppe budgétaire intra-ACP du 10ème FED consacrée au Programme de recherche du Groupe ACP pour le développement durable.Toutes les directives concernant l’avis à manifestation d’intérêt, le formulaire de demande et d’autres documents pertinents peuvent être téléchargés sur le <a href="http://www.acp-st.eu/node/415" target="_blank">site Internet.</a> </p>
+							<p><span class="date">25/01/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/Subventions-de-recherches-de-l-Union-africaine-2011-avis-a-manifestation-d-interet">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/PAEPARD-Formulaire-d-application-Appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche" title="PAEPARD Formulaire d'application - Appui au développement des partenariats multi-acteurs pour la promotion d'une innovation agricole axée sur la demande et la recherche" alt="document">PAEPARD Formulaire d'application - Appui au développement des partenariats multi-acteurs pour la promotion d'une innovation agricole axée sur la demande et la recherche</a></h2>
+
+	
+	
+	
+	
+					<p><a name="eztoc314140_0_0_1" id="eztoc314140_0_0_1"></a>Le PAEPARD invite des partenariats à formuler une demande d’appui 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/paepard_call_12/314154-1-eng-GB/paepard_call_1.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La Plateforme pour un partenariat Afrique-Europe dans le domaine de la recherche agricole pour le développement (PAEPARD) appuie la création des partenariats innovants par les acteurs africains et européens qui s’impliquent dans l’innovation agricole et dans la recherche collective afin d’aborder les opportunités et les défis communs des partenaires identifiés. Les partenariats qu’appuie le PAEPARD visent à entreprendre des processus d’innovation conjoints qui abordent des opportunités et des défis communs. Plus précisément, dans le contexte de leurs processus d’innovation, ces partenariats souhaitent formuler des propositions de financement pour les activités conjointes relatives à la Recherche agricole pour le développement (RAD) qui soutiennent leurs processus d’innovation.Alors que ces activités de recherche seront conduites par un partenaire de recherche, le leadership d’un processus d’innovation va au-delà du mandat et de la compétence d’un organisme de recherche et exige donc qu’un autre acteur joue ce rôle.Les partenariats intéressés sont priés de formuler une demande d’appui pour constituer leur partenariat et formuler des propositions conjointes portant sur la RAD ciblant des opportunités de financement identifiées.Ceux qui veulent recevoir les informations mises à jour du PAEPARD et les opportunités de financement devraient s’inscrire au <a href="http://dgroups.org/groups/fara-net/PAEPARD%20" target="_blank">DGroupe PAEPARD</a>.Plus d'information sur l'appel <a href="http://knowledge.cta.int/fr/Dossiers/CTA-et-S-T/Bourses/PAEPARD-Appel-a-manifestation-d-interet-pour-l-appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche" target="_blank">ici</a>.Télécharger le formulaire d'inscription à partir du lien ci-bas.</p>
+							<p><span class="date">15/12/2010</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/PAEPARD-Formulaire-d-application-Appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/PAEPARD-Appel-a-manifestation-d-interet-pour-l-appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche" title="PAEPARD Appel à manifestation d'intérêt pour l'appui au développement des partenariats multi-acteurs pour la promotion d'une innovation agricole axée sur la demande et la recherche" alt="document">PAEPARD Appel à manifestation d'intérêt pour l'appui au développement des partenariats multi-acteurs pour la promotion d'une innovation agricole axée sur la demande et la recherche</a></h2>
+
+	
+	
+	
+	
+					<p><a name="eztoc314127_0_0_1" id="eztoc314127_0_0_1"></a>Le PAEPARD invite des partenariats à formuler une demande d’appui
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/paepard_call_1/314151-1-eng-GB/paepard_call_1.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La Plateforme pour un partenariat Afrique-Europe dans le domaine de la recherche agricole pour le développement (PAEPARD) appuie la création des partenariats innovants par les acteurs africains et européens qui s’impliquent dans l’innovation agricole et dans la recherche collective afin d’aborder les opportunités et les défis communs des partenaires identifiés.Les partenariats qu’appuie le PAEPARD visent à entreprendre des processus d’innovation conjoints qui abordent des opportunités et des défis communs. Plus précisément, dans le contexte de leurs processus d’innovation, ces partenariats souhaitent formuler des propositions de financement pour les activités conjointes relatives à la Recherche agricole pour le développement (RAD) qui soutiennent leurs processus d’innovation. Alors que ces activités de recherche seront conduites par un partenaire de recherche, le leadership d’un processus d’innovation va au-delà du mandat et de la compétence d’un organisme de recherche et exige donc qu’un autre acteur joue ce rôle. 
+ Les partenariats intéressés sont priés de formuler une demande d’appui pour constituer leur partenariat et formuler des propositions conjointes portant sur la RAD ciblant des opportunités de financement identifiées.Ceux qui veulent recevoir les informations mises à jour du PAEPARD et les opportunités de financement devraient s’inscrire au <a href="http://dgroups.org/groups/fara-net/PAEPARD" target="_blank">DGroupe PAEPARD</a>.Davantage d'information dans le document à télécharger ci-dessous. Pour s'inscrire, utiliser le formulaire qui se trouve sur <a href="http://knowledge.cta.int/fr/Dossiers/CTA-et-S-T/Bourses/PAEPARD-Formulaire-d-application-Appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche" target="_blank">cette page</a>.</p>
+							<p><span class="date">15/12/2010</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/PAEPARD-Appel-a-manifestation-d-interet-pour-l-appui-au-developpement-des-partenariats-multi-acteurs-pour-la-promotion-d-une-innovation-agricole-axee-sur-la-demande-et-la-recherche">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/100"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/140"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">1</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/20">2</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/40">3</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/100">6</a></span>
+            
+        <span class="current">7</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/140">8</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/160">9</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/180">10</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/200">11</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/220">12</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/240">13</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels/(offset)/440">23</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":311,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

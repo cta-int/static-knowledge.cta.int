@@ -1,0 +1,1858 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Related developments / Water / S&amp;T Issues / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="/" title="Knowledge front page"/>
+<link rel="Index" href="/"/>
+<link rel="Search" href="/content/search" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/layout/set/print/Dossiers/S-T-Issues/Water/Related-developments/(offset)/40" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture/Developpements">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/S-T-Issues">S&T Issues</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/S-T-Issues/Water">Water</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Related developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Related developments</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Mapping-underground-water-sources-for-drip-irrigation-a-necessity" title="Mapping underground water sources for drip irrigation a necessity" alt="link">Mapping underground water sources for drip irrigation a necessity</a></h2>
+
+	
+					<p>Stanford scientists are calling for investments in small-scale irrigation projects and hydrologic mapping to help buffer the growers from the erratic weather and poor crop yields that are expected to worsen with climate change in West Africa. The researchers partnered with the Solar Electric Light Fund (SELF) to measure economic and nutritional impacts of solar-powered drip-irrigated gardens on villages in West Africa's Sudano-Sahel region. They worked in two northern Benin villages with women's cooperative agricultural groups to install three of such irrigation systems. Drip irrigation conserves water by delivering it directly to the base of plants and the technique also reduces fertilizer runoff. However, for smallholder irrigation projects to be successful, NGOs and governments need to prioritize detailed hydrologic mapping in the region to produce geophysical surveys and map an quantify water sources such as groundwater, rainwater, surface water and artesian wells. (<a href="http://news.stanford.edu/news/2011/december/solar-drip-irrigation-120511.html" target="_blank">Stanford University</a>, 5/12/2011)</p>
+							<p><span class="date">12/01/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Mapping-underground-water-sources-for-drip-irrigation-a-necessity">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/River-basins-could-double-food-production-study" title="River basins could double food production – study" alt="link">River basins could double food production – study</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/watershed2/361019-1-eng-GB/watershed.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The world's major river systems have enough water to double food production by 2050 if the resource - a potential source of conflict – is used efficiently and distributed fairly through the breadbaskets of ten river basins, says a worldwide study released in Brazil at the XIV World Water Congress. The study, from the Challenge Program on Water and Food (CPWF) of the CGIAR, finds that inefficient use and inequitable distribution of water are the problem, not water scarcity. The study, a result of five years of research by scientists in 30 countries, is the most comprehensive effort to date to assess how, over vast regions, people are coping with the growing need for water. The ten river basins that were studied are: the Andes and São Francisco in South America; the Limpopo, Niger, Nile and Volta basins in Africa; and the Indus-Ganges, Karkheh, Mekong, and Yellow in Asia.(<a href="http://www.trust.org/alertnet/news/river-basins-could-double-food-production-study/" target="_blank">AlertNet</a>, 26/9/2011)</p>
+							<p><span class="date">2/11/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/River-basins-could-double-food-production-study">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Kenya-farmers-adopt-new-method-to-grow-more-rice-with-less-water" title="Kenya farmers adopt new method to grow more rice with less water" alt="link">Kenya farmers adopt new method to grow more rice with less water</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/ricesri/360982-1-eng-GB/riceSRI.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Kenyan rice farmers are switching to the System for Rice Intensification (SRI) developed by the Jomo Kenyatta University of Agriculture and Technology, Kenya. SRI is expected to improve production by more than 50 % while reducing water use by about 25 % to 50 % (allowing for the saved water to be used to expand the production area). Farmers will use only 25 % of seeds used in the conventional paddy system and save on input costs. One of the disadvantages of the new system, however, is that it requires more weeding since weeds tend to grow more rapidly under un-flooded conditions. The extra effort is compensated by increased yields of one to two tonnes per hectare. (A<a href="http://www.africanagricultureblog.com/2011/09/kenya-new-rice-planting-system-saves.html" target="_blank">frican Agriculture</a>, 26/9/2011)</p>
+							<p><span class="date">2/11/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Kenya-farmers-adopt-new-method-to-grow-more-rice-with-less-water">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Research-on-satellite-imagery-aims-to-advance-sustainable-agriculture" title="Research on satellite imagery aims to advance sustainable agriculture" alt="link">Research on satellite imagery aims to advance sustainable agriculture</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/satellite_image_flickr_dailyinvention/347463-1-eng-GB/Satellite_image_Flickr_dailyinvention.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The excessive use of irrigation water has resulted in serious environmental concerns in many dry-land countries, where rising demand has deteriorated groundwater resources, depleted aquifers, and accelerated saltwater intrusion. Scientists in Spain are working on new technologies to classify and monitor irrigated crops with a goal of promoting sustainable agricultural practices. The field studies the researchers designed were to evaluate the potential of multispectral reflectance and seven vegetation indices in the visible and near-infrared spectral range for discriminating and classifying bare soil and several horticultural irrigated crops. The research is the first step of a broader project with the overall goal of using satellite imagery with high spatial and multispectral resolutions for mapping irrigated crops. (American Society for Horticultural Science via <a href="http://www.physorg.com/news/2011-04-satellite-imagery-aims-advance-sustainable.html" target="_blank">Physorg</a>, 1/4/2011)</p>
+							<p><span class="date">30/08/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Research-on-satellite-imagery-aims-to-advance-sustainable-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Solar-power-for-crop-irrigation" title="Solar power for crop irrigation" alt="link">Solar power for crop irrigation</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/solar-egypt/347441-1-eng-GB/solar-egypt.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	For fruits, cereals and leguminous plants such as oranges, wheat, beans and olives to grow in hot and dry climates, they must be irrigated regularly. And very often the water used comes from deep wells. In Egypt, many farmers currently use diesel generators to water their fields. A model project in Upper Egypt shows that other methods are possible. Here, a photovoltaic stand-alone system takes care of irrigating a wheat field. Concentrator photovoltaic system (CPV) modules – which, due to their higher degree of effectiveness and their particular construction, require far less space than traditional PV modules – supply the energy, while Fresnel lenses concentrate the rays of the sun onto pinhead-sized multi-junction solar cells. With the aid of a tracking motor, the CPV cells, which are attached to a pillar, follow the sun precisely to achieve an optimized yield of solar light. They supply the energy for a submersible pump that pumps the water up from a well that is 105 feet deep and for a small desalination unit that satisfies farmers’ potable water requirements. The CPV cells also supply the energy for PV-module trackers, the monitoring and control system and an air-conditioning unit that cools the utility room of the facility.(<a href="http://www.fraunhofer.de/en/press/research-news/2010-2011/20/solar-power-management.jsp" target="_blank">Frauenhofer-Gesellschaft</a> via <a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=109523&amp;CultureCode=en" target="_blank">AlphaGalileo</a>, 2/8/2011)</p>
+							<p><span class="date">30/08/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Solar-power-for-crop-irrigation">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Crops-with-deeper-roots-could-boost-CO2-storage" title="Crops with deeper roots could boost CO2 storage" alt="link">Crops with deeper roots could boost CO2 storage</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/crops-with-deeper-roots/347422-1-eng-GB/Crops-with-deeper-roots.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Breeding crops with deeper roots could significantly reduce atmospheric levels of carbon dioxide and make crops more drought resistant, according to a research <a href="http://www.manchester.ac.uk/aboutus/news/display/?id=7296" target="_blank">study</a> conducted at the University of Manchester. Reporting in the journal, Annals of Botany, professor Douglas Kell calculated that breeding crops whose roots extend 2 meters underground, rather than the 1-meter roots common to many crops, could double the amount of carbon captured from the atmosphere. In principle, any crop could be treated in this way, giving more productive yields while also being better for the environment. Kell reported that creating crops and plants with deeper and bushier roots would also lead to more water and nutrient retention and produce more sustainable plant yields as the world warms and droughts increase in water-stressed regions. (<a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=109631&amp;CultureCode=en" target="_blank">AlphaGalileo</a>, 3/8/2011)</p>
+							<p><span class="date">30/08/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Crops-with-deeper-roots-could-boost-CO2-storage">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/Dossiers/S-T-Issues/Water/Related-developments/YouMaRes-2011-Oceans-amidst-science-innovation-and-society" title="YouMaRes 2011: “Oceans amidst science, innovation and society” " alt="event">YouMaRes 2011: “Oceans amidst science, innovation and society” </a></h2>
+
+	
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/youmares_poster_1200/326274-1-eng-GB/youmares_poster_1200.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	This is the announcement for the<b> Young Marine Research</b> (YOUMARES) network-meeting and conference event, organized by the <i>Working Group Studies and Education of the German Society for Marine Research</i> (DGM). Follow the link below to register for the 2nd international network of young marine researchers.<a href="http://www.youmares.net/en.html" target="_blank">http://www.youmares.net/en.html</a>Conference topics and sessions
+
+
+Human impacts on the oceans and subsequent environmental responses
+
+Remote sensing: Higher orbits for deeper understanding
+
+Living with the sea: coastal livelihoods and management
+
+Aquaculture: Main research priorities to fulfill our need for sustainable seafood
+
+Marine Technology – The art of engineering in synergy with natural sciences
+
+Ocean of diversity: From micro scales to macro results
+
+
+YOUMARES is going to take place from <b>7-9 </b><b>September 2011</b> in <b>Bremerhaven, Germany</b> in close proximity to Marine Resources and Beyond (MRB2011, <a href="http://www.mrb2011.org/" target="_blank">http://www.mrb2011.org/</a>).Registration start: <b>1st April 2011</b>Abstract deadline: <b>1st July 2011</b>Event date : <b>7-9 September 2011</b> Venue: Deutsches Schiffahrtsmuseum Bremerhaven, Hans-Scharoun-Platz 1, Bremerhaven, Germany</p>
+					<p><span class="date">Wednesday 07 September 2011 - Friday 09 September 2011</p><div class="cnt">
+	<a class="event" href="/Dossiers/S-T-Issues/Water/Related-developments/YouMaRes-2011-Oceans-amidst-science-innovation-and-society">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Mapping-permeability-over-the-surface-of-the-Earth" title="Mapping permeability over the surface of the Earth " alt="link">Mapping permeability over the surface of the Earth </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/aquifer-permeability-map/324449-1-eng-GB/Aquifer-permeability-map.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	University of British Columbia researchers have produced the first map of the world outlining the ease of fluid flow through the planet's porous surface rocks and sediments. The maps and data, published in Geophysical Research Letters (January 2011), could help improve water resource management and climate modelling, and eventually lead to new insights into a range of geological processes.Using recent world-wide lithology (rock type) results from researchers at the University of Hamburg (Germany) and Utrecht University (The Netherlands); the authors were able to map permeability across the globe to depths of approximately 100 metres. Typical permeability maps have only dealt with the top one to two metres of soil, and only across smaller areas.
+ A better understanding of large scale permeability of rock and sediment is critical for water resource management. Groundwater represents approximately 99 % of the fresh, unfrozen water on earth. Groundwater also feeds surface water bodies and moistens the root zone of terrestrial plants.(Source: Science Daily, 25 Jan. 2011) </p>
+							<p><span class="date">3/05/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Mapping-permeability-over-the-surface-of-the-Earth">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Improving-water-productivity-of-crop-livestock-systems-in-drought-prone-regions" title="Improving water productivity of crop-livestock systems in drought-prone regions" alt="link">Improving water productivity of crop-livestock systems in drought-prone regions</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/improving-water-cattle/319079-1-eng-GB/improving-water-cattle.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+The publication of <a href="http://journals.cambridge.org/action/displayIssue?decade=2010&amp;jid=EAG&amp;volumeId=47&amp;issueId=S1&amp;iid=7967357" target="_blank">a special issue of<i> Experimental Agriculture</i></a> presents evidence from Ethiopia, Zimbabwe and India, and captures current understanding of strategies to improve water productivity in drought-prone crop-livestock systems. Crop-livestock systems in sub-Saharan Africa (SSA) are mostly rainfall-dependent and based on fragmented marginal lands that are vulnerable to soil erosion, drought and variable weather conditions. The threat of water scarcity in these systems is real, due to expanding demand for food and feed, climate variability and inappropriate land use. Strategies and policies to reduce rural poverty should not only target increasing food production but should also emphasize improving water productivity at farm, landscape, sub-basin and higher levels. In drought-prone rural areas, an increase of 1% in crop water productivity makes available at least an extra 24 litres of water a day per person. Moreover, farming systems with efficient use of water resources are commonly responsive to external and internal drivers of change. (Source: ILRI, 14 January 2011)</p>
+							<p><span class="date">14/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Improving-water-productivity-of-crop-livestock-systems-in-drought-prone-regions">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Small-islands-in-the-Pacific-duel-between-freshwater-and-sea-water" title="‘Small islands in the Pacific : duel between freshwater and sea water’" alt="link">‘Small islands in the Pacific : duel between freshwater and sea water’</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/pacific-fisheries3/319109-1-eng-GB/pacific-fisheries.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+Scientists at the Institut de recherche pour le développement (IRD) and their research partners have investigated the processes behind the occurrence, in coral reef islands of the Pacific, of freshwater underground reservoirs, the way they change and develop, their capacity and vulnerability (as ‘lenses’ in balance with the underlying sea water). The team’s geological, hydrogeological and geophysical surveys showed that the lens structure and internal processes depend strongly on the island’s vegetation cover and topography. This work opens up ways towards assessing what will happen to this resource as a consequence of expected changes in the climate and sea level. This analysis can help assess the water resources of the Pacific coral islands in the context of the search for indicators of vulnerability in the face of global climate change and bring significant evidence concerning future changes and developments in coral islands, which contributes to the survival and development of numerous terrestrial and marine species and of their inhabitants.(Source: IRD via AlphaGalileo, 15 December 2010.)</p>
+							<p><span class="date">14/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Small-islands-in-the-Pacific-duel-between-freshwater-and-sea-water">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Satellite-data-provide-a-new-way-to-monitor-groundwater-in-agricultural-regions" title="Satellite data provide a new way to monitor groundwater in agricultural regions" alt="link">Satellite data provide a new way to monitor groundwater in agricultural regions</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/logos/remote-sensing-south-africa/262923-1-eng-GB/Remote-Sensing-South-Africa.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	
+Scientists at Stanford University (USA) have found a way to cheaply and effectively monitor aquifer levels in agricultural regions using data from satellites that are already in orbit. In agricultural regions, groundwater regulators have to monitor aquifer levels carefully to avoid drought. They make do with direct measurements from wells drilled into the aquifers, but wells are generally few and far between compared to the vast size of most groundwater systems. Jessica Reeves, a geophysics doctoral student, has shown how to get more data into the hands of regulators, with satellite-based studies of the ground above an aquifer. As the amount of water in an aquifer goes up and down, specialized satellites can detect the movements of the land above the water system and hydrologists can use that information to infer how much water lies below. Previously, accurate elevation data could only be acquired on barren lands such as deserts. The satellites use interferometric synthetic aperture radar, known as InSAR. It is a radar technique that measures the shape of the surface of Earth and can be used to track shape changes over time. Earth scientists often use InSAR to measure how much the ground has shifted after an earthquake. Hydrologists and regulatory bodies looking for more data to better understand their groundwater system could one day set policies requiring farmers to leave a patch of land clear for InSAR data collection. Furthermore, the technique could be used in agricultural regions anywhere in the world, even those that lack modern infrastructure such as wells.(Source: ScienceDaily, 15 December 2010.)</p>
+							<p><span class="date">14/02/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Satellite-data-provide-a-new-way-to-monitor-groundwater-in-agricultural-regions">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Oceans-choking-on-CO2-face-deadly-changes-study" title="Oceans choking on CO2, face deadly changes: study" alt="link">Oceans choking on CO2, face deadly changes: study</a></h2>
+
+	
+					<p>The world's oceans are virtually choking on rising greenhouse gases, destroying marine ecosystems and breaking down the food chain -- irreversible changes that have not occurred for several million years, a new study says. The changes could have dire consequences for hundreds of millions of people around the globe who rely on oceans for their livelihoods. The Australia-U.S. report, published in Science magazine on the 18th of June, studied 10 years of marine research and found that climate change was causing major declines in marine ecosystems. (Source: Reuters, 17 June 2010)</p>
+							<p><span class="date">30/06/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Oceans-choking-on-CO2-face-deadly-changes-study">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/New-UN-science-body-to-monitor-biosphere" title="New UN science body to monitor biosphere " alt="link">New UN science body to monitor biosphere </a></h2>
+
+	
+					<p>Representatives from close to 90 countries gathered in Busan, South Korea, in the second week of June 2010. They have approved the formation of a new organization to monitor the ecological state of the planet and its natural resources. Dubbed the <a href="http://www.ipbes.net/" target="_self">Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services </a>(IPBES), the new entity will likely meet for the first time in 2011 and operate much like the Intergovernmental Panel on Climate Change (IPCC). According to the document approved June 11, IPBES will conduct periodic assessments of the diversity of life on earth and its 'ecosystem services'—those outputs of ecosystems, such as clean fresh water, fish, game, timber and a stable climate, that benefit humankind. These assessments will answer questions about how much biodiversity is declining and what the implications of extinctions and ecosystem change are for humanity. Assessments will take place on global, regional and sub-regional scales. (Source: Nature News, 12 June 2010).</p>
+							<p><span class="date">30/06/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/New-UN-science-body-to-monitor-biosphere">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Modified-plant-clears-up-deadly-water-toxin" title="Modified plant clears up deadly water toxin" alt="link">Modified plant clears up deadly water toxin</a></h2>
+
+	
+					<p>Plants can be a useful tool in clearing water of harmful toxins produced by blue-green algae, new research indicates. Some blue-green algae (cyanobacteria) - which grow in warm, nutrient-rich waters - produce toxins that can severely damage the liver or nervous system. The effects of the toxins range from a mild illness to rapid death. They can remain in water supplies after the algae have been killed. A team at St George's Medical School, part of the UK-based University of London, has modified tobacco plants to secrete antibodies from the roots that then bind to microcystin-LR — the most common cyanobacteria toxin in water — rendering it harmless. (Source: SciDev.net, 15 April 2010)</p>
+							<p><span class="date">26/04/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Modified-plant-clears-up-deadly-water-toxin">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Biofuels-that-save-water-and-land" title="Biofuels that save water and land" alt="link">Biofuels that save water and land</a></h2>
+
+	
+					<p>A number of influential studies including a 2009 United Nations study, argue that liquid fuels derived from plants have the potential to shift energy production to much cleaner products and practices, but that to date the environmental benefits have not yet surpassed the risks. That tilt may soon be righted by researchers at the University of Virginia and the Seawater Foundation, who discovered that the most important source of the risk-benefit imbalance was the heavy reliance on fresh water and the need for petroleum-based fertilizer to improve plant productivity. Researchers at both organizations substituted wastewater rich in organic material and developed much cleaner and efficient practices for biofuels development. (Source: Circle of Blue, 6 April 2010)</p>
+							<p><span class="date">26/04/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Biofuels-that-save-water-and-land">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Examining-links-between-water-and-food-security-in-Ethiopia" title="Examining links between water and food security in Ethiopia" alt="link">Examining links between water and food security in Ethiopia</a></h2>
+
+	
+					<p>The DFID-funded Research Inspired Policy and Practice Learning in Ethiopia and the Nile Region (RiPPLE) programme has published new research exploring the inter-linkages between water and food security. The study provides information and analytical tools for policy-makers, water resource managers and institutions in order to protect livelihoods along a transect line from lowlands to highlands in Eastern Ethiopia. Water availability and access vary across the transect, which for the purposes of the research was divided into a series of 'livelihood zones'. These are used to identify different household wealth groups and the economic focus of each area. (Source: R4D, 29 March 2010)</p>
+							<p><span class="date">26/04/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Examining-links-between-water-and-food-security-in-Ethiopia">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Holistic-approach-to-water-scarcity-from-plant-science-industry" title="Holistic approach to water scarcity from plant science industry" alt="link">Holistic approach to water scarcity from plant science industry</a></h2>
+
+	
+					<p>A renewed focus on water is being taken at the World Water Day on March 21, with the leading plant science industry association Crop Life International calling for a holistic approach to address water scarcity. &quot;World Water Day is a reminder that global efforts to better manage our water resources must continue&quot;, says Howard Minigh, CEO and President of CropLife International. Four key principles to address the global shortage of water (1.optimizing agricultural productivity; 2. increasing water efficiency in agriculture; 3. investing in research to mitigate and adapt to water scarcity; and 4. disseminate knowledge and technologies) were highlighted in a press release to assure the growing population that there is sufficient quality water for consumption. (Source: CBU, 26 March 2010) </p>
+							<p><span class="date">26/04/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Holistic-approach-to-water-scarcity-from-plant-science-industry">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Seeds-from-the-Moringa-tree-can-be-used-for-water-purification" title="Seeds from the Moringa tree can be used for water purification" alt="link">Seeds from the Moringa tree can be used for water purification</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/moringa-tree/296477-1-eng-GB/Moringa-tree.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Clean water is a key requirement for good health and new cheap, safe methods are required in many countries. Researchers from Uppsala University in co-operation with the University of Botswana describe how extracts from seeds of the Moringa oleifera tree can be used for water purification. They describe how very small amounts of the protein from these seeds can bind strongly to surfaces and thus would cause contaminant particles to aggregate to large lumps that can easily be removed from the water. (Source: Uppsala University, 18 February 2010).</p>
+							<p><span class="date">22/03/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Seeds-from-the-Moringa-tree-can-be-used-for-water-purification">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Green-belt-initiative-taking-shape-in-Malawi" title="'Green belt' initiative taking shape in Malawi " alt="link">'Green belt' initiative taking shape in Malawi </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/malawi-green-belt/291963-1-eng-GB/Malawi-Green-belt.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The ‘Green belt’ programme seeks to make Malawi independent of rain-fed agriculture. The plan is to protect the gains in food security, reduce vulnerability to drought and to boost production still further by irrigating a million hectares of land in a swathe lying within 20 kilometres of the country’s three lakes and 13 perennial rivers. The plan will also attempt to diversify crops, targeting increased production of wheat, rice, millet, cotton, lentils and beans for export. Local agriculture experts explain that two districts in the southern tip of the country could feed the entire country all year round if the Shire River, which cuts through the length of this southern plain, was utilised for intensive irrigation farming. (Source: IPS, 11 January 2010)</p>
+							<p><span class="date">4/02/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Green-belt-initiative-taking-shape-in-Malawi">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Solar-powered-irrigation-significantly-improves-diet-and-income-in-rural-Sub-Saharan-Africa" title="Solar-powered irrigation significantly improves diet and income in rural Sub-Saharan Africa " alt="link">Solar-powered irrigation significantly improves diet and income in rural Sub-Saharan Africa </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/solar-powered-pump/291997-1-eng-GB/Solar-Powered-Pump.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Solar-powered drip irrigation systems significantly enhance household incomes and nutritional intake of villagers in arid sub-Saharan Africa, according to a new Stanford University study published in the Proceedings of the National Academy of Sciences <a href="http://www.pnas.org/" target="_blank">(PNAS)</a>. The two-year study found that solar-powered pumps installed in remote villages in the West African nation of Benin were a cost-effective way of delivering much-needed irrigation water, particularly during the long dry season. (Source: ScienceDaily, 5 January 2010) </p>
+							<p><span class="date">4/02/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/S-T-Issues/Water/Related-developments/Solar-powered-irrigation-significantly-improves-diet-and-income-in-rural-Sub-Saharan-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/S-T-Issues/Water/Related-developments/(offset)/20"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/S-T-Issues/Water/Related-developments/(offset)/60"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/Dossiers/S-T-Issues/Water/Related-developments">1</a></span>
+                              <span class="other"><a href="/Dossiers/S-T-Issues/Water/Related-developments/(offset)/20">2</a></span>
+            
+        <span class="current">3</span>
+
+                      <span class="other"><a href="/Dossiers/S-T-Issues/Water/Related-developments/(offset)/60">4</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":315,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

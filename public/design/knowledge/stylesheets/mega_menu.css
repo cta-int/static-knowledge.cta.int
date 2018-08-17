@@ -1,0 +1,191 @@
+html>body .globalmenu {
+width:950px;
+}
+
+/* mega menu container */
+.globalmenu {
+	width:950px;
+	margin:0 auto;
+	position: relative;
+	border-bottom:5px solid #60ABC1;
+}
+body.homepage .globalmenu {
+	border-bottom:5px solid #B6C979;
+}
+
+/* basic menu */
+.globalmenu .toplevel {
+	background-color:#FFFFFA;
+	height:30px;
+}
+.globalmenu .mega_menu_dropdown {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	/*height:500px;*/
+	z-index: 100;
+	border-top:5px solid #60ABC1;
+	background: url(../images/mega_menu_bg.png) repeat-y left top;
+}
+.ie6 .globalmenu .mega_menu_dropdown {
+	background: url(../images/mega_menu_bg.gif) repeat-y left top;
+}
+body.homepage .globalmenu .mega_menu_dropdown {
+	border-top:5px solid #B6C979;
+	background: url(../images/mega_menu_bg_home.png) repeat-y left top;
+}
+.ie6 body.homepage .globalmenu .mega_menu_dropdown {
+	background: url(../images/mega_menu_bg_home.gif) repeat-y left top;
+}
+.globalmenu.open {
+}
+.globalmenu.open .mega_menu_dropdown {
+	display: block;
+}
+
+/* all menus */
+.globalmenu ul {
+	width:950px;
+	list-style-type:none;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.globalmenu ul li {
+	width:235px;
+	float:left;
+	list-style-type:none;
+	list-style-image:none;
+	margin:0;
+	padding:0;
+}
+
+
+.globalmenu ul li a {
+	margin-top:2px;
+	margin-bottom:4px;
+	height:28px;
+	text-decoration:none;
+	color:#006fb4;
+	display:block;
+	padding:0;
+}
+
+.globalmenu ul li a span {
+	display:block;
+	font-weight:700;
+	color:#006fb4;
+	font-size:1.1em;
+	margin:0;
+	padding:8px 0 4px 8px;
+}
+
+.globalmenu a:hover,
+.globalmenu a:hover span {
+	text-decoration:none;
+	color:#60ABC1!important;
+}
+.globalmenu a:hover strong{
+	font-weight: bold;
+}
+.globalmenu ul li a span {
+	background:url(../images/menu/menu-main-nav.gif) 0 12px no-repeat;
+}
+.globalmenu ul li a:hover span {
+	background:url(../images/menu/menu-main-nav-ro.gif) 0 12px no-repeat;
+}
+.globalmenu ul li a span.active {
+	background:url(../images/menu/menu-main-nav-active.gif) 0 11px no-repeat;
+}
+.globalmenu ul li a:hover span.active {
+	background:url(../images/menu/menu-main-nav-active-ro.gif) 0 11px no-repeat;
+}
+
+.globalmenu ul li a:hover,
+.globalmenu ul li.on a {
+	text-decoration:none;
+	color:#fff;
+	list-style-type:none;
+}
+
+.globalmenu ul li:hover ul,
+.globalmenu ul li.iehover ul {
+	display:block;
+}
+
+
+/* mega menu */
+.globalmenu .mega_menu_dropdown {
+	width: 100%;
+	border-top:5px solid #60ABC1;
+	border-bottom:2px solid #60ABC1;
+	height: auto;
+	padding: 10px 0 10px 0;
+}
+body.homepage .globalmenu .mega_menu_dropdown {
+	border-top:5px solid #B6C979;
+	border-bottom:2px solid #B6C979;
+}
+
+.globalmenu .mega_menu_dropdown ul {
+	float: left;
+	width: 234px;
+	margin-left: 1px;
+	height: 100%;
+}
+.globalmenu .mega_menu_dropdown ul.last,
+body.homepage .globalmenu .mega_menu_dropdown ul.last {
+	border-right:none;
+}
+
+
+.globalmenu .mega_menu_dropdown ul li {
+	float: none;
+	width: 100%;
+}
+.globalmenu .mega_menu_dropdown ul li a,
+.globalmenu .mega_menu_dropdown ul li a span {
+	text-align: left;
+	font-weight: normal;
+	margin-top:0px;
+	margin-bottom:0px;
+	line-height: 16px;
+	height:auto;
+	display:block;
+	padding:2px 2px 2px 10px;
+}
+
+.globalmenu .mega_menu_dropdown ul li dl dd {
+	display: none;
+}
+.globalmenu .mega_menu_dropdown ul li dl dt {
+	display: block;
+	margin-left: 10px;
+}
+.globalmenu .mega_menu_dropdown ul li dl dt a {
+	display: block;
+	margin-left: 10px;
+	padding: 2px 5px 2px 10px;
+	font-size: 11px;
+}
+.globalmenu .mega_menu_dropdown ul li a span,
+.globalmenu dl dt a {
+	background:url(../images/menu/menu-main-nav.gif) 0 8px no-repeat;
+}
+
+.globalmenu .mega_menu_dropdown ul li a:hover span,
+.globalmenu dl dt a:hover {
+	background:url(../images/menu/menu-main-nav-ro.gif) 0 8px no-repeat;
+}
+
+.globalmenu .mega_menu_dropdown ul ul,
+.globalmenu .mega_menu_dropdown ul ul li,
+.globalmenu .mega_menu_dropdown ul ul li a span {
+	background: none;
+}
+.globalmenu .mega_menu_dropdown ul ul li a {
+	margin-left: 10px;
+	font-size: 0.8em;
+}
+

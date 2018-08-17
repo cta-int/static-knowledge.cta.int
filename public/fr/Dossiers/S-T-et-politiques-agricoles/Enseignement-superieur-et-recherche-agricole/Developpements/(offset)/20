@@ -1,0 +1,1404 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Enseignement supérieur et recherche agricole / S&amp;T et politiques agricoles / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/20" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education/Related-developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-politiques-agricoles">S&T et politiques agr...</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">Enseignement supérieu...</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/De-nouvelles-directives-appellent-a-de-profonds-changements-dans-l-enseignement-scientifique" title="De nouvelles directives appellent à de profonds changements dans l’enseignement scientifique" alt="link">De nouvelles directives appellent à de profonds changements dans l’enseignement scientifique</a></h2>
+
+	
+					<p>Les étudiants peuvent devenir des consommateurs de science plus intelligents en apprenant comment les travaux scientifiques sont menés : comment sont développées et testées les idées, que doit-on considérer comme données probantes ou médiocres, et comment les informations relevant de nombreuses disciplines scientifiques contribuent-elles à donner une image cohérente du monde&nbsp;?<a href="http://nyti.ms/10QTwAU" target="_self">http://nyti.ms/10QTwAU</a>(The New York Times, 09/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/De-nouvelles-directives-appellent-a-de-profonds-changements-dans-l-enseignement-scientifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-editeurs-de-Research4Life-s-engagent-a-etendre-le-libre-acces-a-faible-cout-jusqu-en-2020" title="Les éditeurs de Research4Life s’engagent à étendre le libre accès à faible coût jusqu’en 2020" alt="link">Les éditeurs de Research4Life s’engagent à étendre le libre accès à faible coût jusqu’en 2020</a></h2>
+
+	
+					<p>Quelque 6 000 institutions de plus de 100 pays en développement continueront de bénéficier d’un accès gratuit ou à bas coût à un contenu en ligne validé par des pairs provenant des plus grands éditeurs mondiaux des domaines scientifique, technique et médical. Research4Life est le nom collectif de quatre partenariats public-privé : Accès à la recherche dans le domaine de la santé (HINARI, OMS), Système de recherche mondiale en ligne sur l’agriculture (AGORA, FAO), Accès en ligne pour la recherche sur l’environnement (OARE, PNUE) et Accès à la recherche pour le développement et l’innovation (ARDI, OMPI), qui visent à donner accès à la recherche scientifique essentielle aux chercheurs de pays en développement. En novembre 2012, les partenaires de Research4Life ont annoncé qu’ils acceptaient de prolonger leur coopération jusqu’en 2020.(<a href="http://www.research4life.org/research4life-publisher-partners-commit-to-free-and-low-cost-access-through-2020" target="_blank">Research4Life</a> via <a href="http://aims.fao.org/news/research4life-publishers-extend-partnership-free-low-cost-access-through-2020" target="_blank">AIMS</a>, 14/11/2012)</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-editeurs-de-Research4Life-s-engagent-a-etendre-le-libre-acces-a-faible-cout-jusqu-en-2020">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Stimuler-la-recherche-de-pointe-une-etude-comparative" title="Stimuler la recherche de pointe : une étude comparative" alt="link">Stimuler la recherche de pointe : une étude comparative</a></h2>
+
+	
+					<p>Cette <a href="http://www.kva.se/Documents/Vetenskap_samhallet/Forskningspolitik/2012/akademirapport_breakthrough_research_121209.pdf" target="_blank">étude comparative</a> des systèmes de recherche dans cinq pays (Suède, Danemark, Finlande, Pays-Bas et Suisse) a été réalisée à la demande de l’Académie royale des sciences de Suède (KVA). Soucieuse du manque de valorisation de la recherche suédoise au niveau international, l’Académie a cherché à comprendre les raisons du déclin de ce secteur et à explorer les possibilités d’y remédier. Parmi les raisons invoquées figurent : 1) l’augmentation rapide de l’effort national en faveur de l’enseignement supérieur de premier cycle sans financement adéquat et la séparation de plus en plus prononcée entre les activités d’enseignement et de recherche ; 2) la transition actuelle vers une recherche plus stratégique, associée à l’augmentation des financements externes à court terme qui a affaibli la recherche fondamentale plus exigeante, fondée sur le travail des chercheurs et nécessitant une vision à plus long terme. Le rapport recommande aux universités suédoises de prendre des mesures afin d’améliorer les conditions de la recherche et ainsi a) conférer aux universités une plus grande indépendance par rapport aux réglementations gouvernementales, et donc plus de liberté ; b) garantir le financement global à long terme de la recherche fondamentale dans les universités ; c) élaborer des systèmes administratifs plus efficaces pour les secteurs opérationnels&nbsp;; enseignement de premier cycle, recherche universitaire prioritaire à long terme, bénéficiant de financements externes, recherche ciblée et commercialisation bénéficiant de financement externes&nbsp;; d) mettre en place des programmes de chaire de recherche attractifs au niveau international et renforcer la mobilité nationale et internationale des chercheurs&nbsp;; e) et aborder les questions relatives aux droits de propriété intellectuelle (DPI) de façon plus professionnelle.(<a href="http://www.kva.se/Documents/Vetenskap_samhallet/Forskningspolitik/2012/akademirapport_breakthrough_research_121209.pdf" target="_blank">rapport de la KVA </a>mentionné dans <i><a href="http://www.universityworldnews.com/article.php?story=20121214121354858" target="_blank">University World News</a></i>, 16/12/2012)</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Stimuler-la-recherche-de-pointe-une-etude-comparative">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Obstacles-restreignant-l-acces-a-la-recherche-scientifique-l-Afrique-releguee-au-rang-de-contributeur-invisible" title="Obstacles restreignant l'accès à la recherche scientifique : l'Afrique reléguée au rang de contributeur invisible" alt="link">Obstacles restreignant l'accès à la recherche scientifique : l'Afrique reléguée au rang de contributeur invisible</a></h2>
+
+	
+					<p>Intervenant sur&nbsp;<i>Engineering News Online</i>lors de la Conférence de Berlin 10 sur le Libre Accès, qui s'est tenue à Stellenbosch, M. Derek Hanekom, ministre sud-africain de la Science et des Technologies, a déclaré que l'essor de la recherche en Afrique et la capacité à trouver des solutions aux problèmes du continent resteront limitées si les bibliothèques universitaires continuent d'avoir un accès restreint aux informations officielles relatives à la recherche. Le coût de nombreuses revues académiques, notamment dans les domaines de la science et de la médecine, limite l'accès des pays aux informations de recherche essentielles. « Les obstacles à l'accès font même parfois que des résultats de recherche et des connaissances pertinents générés en Afrique sont publiés dans des revues à l'étranger, publications que les universités africaines n'ont pas les moyens de se procurer. » Selon lui, l'adoption de principes de libre accès permettant à l'information scientifique d'être davantage disponible sur Internet, en levant les contraintes financières à cet accès, constitue « l'un des meilleurs moyens de faire progresser et de mettre en valeur la recherche en Afrique ». Lire l'article intégral sur&nbsp;<a href="http://www.engineeringnews.co.za/article/access-barriers-relegating-africa-to-invisible-research-contributor-2012-11-08" target="_blank"><i>Engineering News Online</i></a>&nbsp;(8/11/2012).</p>
+							<p><span class="date">23/11/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Obstacles-restreignant-l-acces-a-la-recherche-scientifique-l-Afrique-releguee-au-rang-de-contributeur-invisible">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Valorisation-de-la-recherche-le-role-du-communicateur-universitaire" title="Valorisation de la recherche : le rôle du « communicateur universitaire »" alt="link">Valorisation de la recherche : le rôle du « communicateur universitaire »</a></h2>
+
+	
+					<p>Le programme DRUSSA (valorisation de la recherche et du développement en Afrique subsaharienne) vise à renforcer les capacités des services de communication dans les universités, notamment en Afrique subsaharienne. L'auteur, Lynda Cilliers,<a href="http://goo.gl/H2ukx" target="_blank">estime</a>&nbsp;qu'il faudrait ajouter des activités annexes (recherche, gestion de la recherche, vulgarisation et relations avec les communautés) au mandat du « communicateur universitaire » (ce terme englobe un large éventail de services de communication au sein de l'université). Le renforcement des services de communication permettra aux universitaires de communiquer les résultats de leurs recherches sur une grande échelle et ainsi de valoriser leur travail. Le projet a pour ambition de sensibiliser le grand public via les médias traditionnels (presse écrite, radio et TV) et les nouveaux médias (plates-formes en ligne et mobiles), des publications et des événements. Faire connaître l'importance de la recherche auprès des décideurs politiques concernés (tant au niveau local, provincial, national que régional), d'organisations non gouvernementales ou internationales ciblées, au bon moment et de manière appropriée, peut avoir des conséquences majeures pour les communautés africaines (le public est le bénéficiaire ultime). Pour en savoir plus sur la valorisation de la recherche, visitez le site&nbsp;<a href="http://www.drussa.net/" target="_blank">DRUSSA</a>.</p>
+							<p><span class="date">23/11/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Valorisation-de-la-recherche-le-role-du-communicateur-universitaire">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Nigeria-financement-de-la-recherche-orientee-vers-la-demande" title="Nigeria : financement de la recherche orientée vers la demande" alt="link">Nigeria : financement de la recherche orientée vers la demande</a></h2>
+
+	
+					<p>Le Fonds fiduciaire pour l’enseignement supérieur (TETFUND) du Nigeria a débloqué 3 milliards de dollars pour financer les instituts de recherche et ainsi promouvoir la recherche orientée vers la demande. Les subventions seront octroyées à certaines institutions d’enseignement supérieur afin de les aider à développer les capacités et les infrastructures nécessaires pour mener des projets de recherche orientée vers la demande.(<a href="http://www.universityworldnews.com/article.php?story=20120720152600264" target="_self">University World News</a>, 22/7/2012)</p>
+							<p><span class="date">16/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Nigeria-financement-de-la-recherche-orientee-vers-la-demande">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Afrique-de-l-Ouest-et-Afrique-centrale-la-recherche-passee-au-microscope" title="Afrique de l’Ouest et Afrique centrale : la recherche passée au microscope" alt="link">Afrique de l’Ouest et Afrique centrale : la recherche passée au microscope</a></h2>
+
+	
+					<p>La recherche demeure un&nbsp; parent pauvre des universités des pays d'Afrique au sud du Sahara particulièrement pour celles qui sont situées dans la partie ouest et centrale du continent, selon University World News. Le constat vient d'être amèrement réitéré par les participants au forum tenu à Dakar du 2 au 4 juillet 2012 sur le thème : « Stratégies pour un financement durable de la recherche universitaire en Afrique de l'Ouest et du Centre&nbsp;».<b> </b>La&nbsp; situation constatée dans cette partie de l’Afrique&nbsp;jure nettement avec celle de certains pays situés à l’Est et au Sud du continent, qui ont réussi à tirer leur épingle du jeu en la matière et qui bénéficient ainsi de l’intervention des bailleurs et des donateurs intéressés par le financement de la recherche universitaire.<b> </b>Leur performance est souvent expliquée par le fait&nbsp;qu’ils ont accordé très tôt une attention particulière à l’activité dans leurs efforts d’investissement. Tout le contraire des pays d’Afrique de l’Ouest et du Centre ainsi d’ailleurs que plusieurs autres pays du continent où la part du PIB destinée à la&nbsp;recherche est estimée seulement à 0,3 %<b>.</b>(<a href="http://www.universityworldnews.com/article.php?story=2012072015331199" target="_self">University World News</a>, 22/7/2012)</p>
+							<p><span class="date">16/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Afrique-de-l-Ouest-et-Afrique-centrale-la-recherche-passee-au-microscope">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Mandats-politiques-sur-le-libre-acces" title="Mandats politiques sur le libre accès" alt="link">Mandats politiques sur le libre accès</a></h2>
+
+	
+					<p>L’équipe AIMS (Normes pour la gestion de l’information agricole) de la FAO a compilé une liste de mandats sur le libre accès tirés du registre sur les politiques d’autoarchivage (ROARMAP). Celle-ci présente les organisations agricoles dotées de différents types de mandats – institutionnels, sub-institutionnels, mandats d’investisseurs et de thèse. Cette liste a été élaborée comme point de référence pour les communautés agricoles qui souhaitent un mandat institutionnel ou simplement pour ceux qui accordent de l’intérêt aux mandats au sein de la communauté agricole.<a href="http://aims.fao.org/news/institutional-open-access-mandates-agriculture-and-related-institutions" target="_self">http://aims.fao.org/news/institutional-open-access-mandates-agriculture-and-related-institutions</a> </p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Mandats-politiques-sur-le-libre-acces">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Centre-pour-l-agroecologie-et-la-securite-alimentaire" title="Centre pour l’agroécologie et la sécurité alimentaire" alt="link">Centre pour l’agroécologie et la sécurité alimentaire</a></h2>
+
+	
+					<p>Le Centre pour l’agroécologie et la sécurité alimentaire (CAFS) a pour mission de conduire des travaux de recherche rigoureux et pertinents qui veilleront au respect des bonnes pratiques liées à la production de denrées alimentaires économiquement viables et socialement justes et contribueront à promouvoir une protection à long terme des ressources naturelles. Le CAFS réunit des chercheurs dont l’expertise en matière de recherche dans les domaines de l’agriculture et de l’alimentation est reconnue depuis plusieurs décennies. Le centre est hébergé par l’Université de Conventry (Royaume-Uni).</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Centre-pour-l-agroecologie-et-la-securite-alimentaire">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Un-nouveau-centre-de-recherche-regional-elabore-un-programme-de-formation-sur-le-changement-climatique" title="Un nouveau centre de recherche régional élabore un programme de formation sur le changement climatique" alt="link">Un nouveau centre de recherche régional élabore un programme de formation sur le changement climatique</a></h2>
+
+	
+					<p>Le nouveau centre d’Afrique australe pour les sciences et services pour l’adaptation au changement climatique et la gestion durable des sols (SASSCAL), basé en Namibie, travaille en collaboration avec les établissements d’enseignement supérieur de la région pour mettre au point de nouveaux cours de premier cycle dans le domaine du changement climatique. Peter Erb, l’un des deux directeurs nationaux de programmes au Centre SASSCAL, a déclaré à <i>University World News</i> que les cours – dispensés au niveau de la maîtrise – contribueraient aux efforts visant à renforcer la capacité des pays d’Afrique australe à s’adapter aux impacts du changement climatique. SASSCAL travaille en collaboration avec des institutions basées en Angola, au Botswana, en Namibie, en Afrique du Sud et en Zambie. Créé à l’initiative du gouvernement allemand, SASSCAL est l’un des deux centres scientifiques régionaux financés par l’Allemagne sur le continent – l’autre étant basé en Afrique de l’Ouest. (<a href="http://www.universityworldnews.com/article.php?story=20120614124222461" target="_blank">University World News</a>, 14/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Un-nouveau-centre-de-recherche-regional-elabore-un-programme-de-formation-sur-le-changement-climatique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Enseignement-superieur-dans-la-region-de-l-Afrique-australe-tendances-actuelles-defis-et-recommandations" title="Enseignement supérieur dans la région de l’Afrique australe : tendances actuelles, défis et recommandations" alt="link">Enseignement supérieur dans la région de l’Afrique australe : tendances actuelles, défis et recommandations</a></h2>
+
+	
+					<p>Cet article est tiré d’un document intitulé « Enseignement supérieur dans la région de l’Afrique australe : tendances actuelles, défis et recommandations », qui a été présenté lors d’un colloque extraordinaire des ministres de l’éducation tenu à Johannesburg en juin 2012 comme contribution à l’élaboration d’un plan stratégique régional visant à redynamiser et à renforcer l’enseignement supérieur dans la région de la SADC. Conduites par l’Association régionale des universités de l’Afrique australe (SARUA), les consultations avec les responsables et les décideurs de l’enseignement supérieur au sein de la région ont permis de relever un certain nombre de constats et de formuler des recommandations pour redynamiser et renforcer l’enseignement supérieur dans les pays de la SADC. Dix stratégies ont ainsi été adoptées pour étendre et transformer l’enseignement supérieur dans la région et une série de recommandations formulées à l’intention des ministres de l’éducation. Parmi ces recommandations figurent notamment : 1) Etendre et moderniser le système d’enseignement supérieur en mettant à profit les infrastructures TIC ; 2) Accroître l’efficacité des exercices de planification de l’enseignement supérieur ; 3) Accroître la mobilité des personnels et des étudiants dans l’ensemble de la région. Pour de plus amples informations, cliquez sur le lien ci-dessous.(<a href="http://www.universityworldnews.com/article.php?story=20120609110849181" target="_blank">University World News</a>, 10/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Enseignement-superieur-dans-la-region-de-l-Afrique-australe-tendances-actuelles-defis-et-recommandations">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-travaux-d-etudiants-africains-de-maitrise-publies-dans-la-revue-African-Crop-Science" title="Les travaux d’étudiants africains de maîtrise publiés dans la revue African Crop Science" alt="link">Les travaux d’étudiants africains de maîtrise publiés dans la revue African Crop Science</a></h2>
+
+	
+					<p>Quinze documents de recherche élaborés par des étudiants africains de maîtrise financés dans le cadre du projet SCARDA, en partenariat avec le RUFORUM, ont été publiés dans un numéro spécial de la revue <i>African Crop Science</i>. Débuté en février 2007, le projet SCARDA (Renforcement des capacités pour la recherche et le développement agricole en Afrique) a pris fin en décembre 2010. (<a href="http://www.nri.org/news/archive/2012/20120525-publish.htm%20" target="_blank">NRI</a>, 25/05/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-travaux-d-etudiants-africains-de-maitrise-publies-dans-la-revue-African-Crop-Science">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Conseil-de-la-recherche-mondiale-coordonner-les-collaborations-dans-le-domaine-de-la-recherche-scientifique" title="Conseil de la recherche mondiale : coordonner les collaborations dans le domaine de la recherche scientifique" alt="link">Conseil de la recherche mondiale : coordonner les collaborations dans le domaine de la recherche scientifique</a></h2>
+
+	
+					<p>Si les partenariats de recherche se multiplient rapidement, toutes les agences nationales de financement de la recherche gèrent leur science de la même manière, ce qui ne favorise pas forcément la coopération au-delà des frontières. Pour trouver une solution au problème, un forum volontaire, le Conseil de la recherche mondiale (GRC), a été créé pour partager les meilleurs pratiques et promouvoir des principes communs au niveau international. Les responsables de 50 organes de financement de la recherche dans le monde se sont réunis début mai 2012 au siège de la NSF (Fondation nationale américaine pour la science) pour discuter de l’agenda du GRC : l’évaluation par les pairs, le partage de données, l’intégrité de la recherche, le libre accès, le développement de carrières et les considérations éthiques relatives à la recherche menée avec des sujets humains. (<a href="http://www.nature.com/news/global-council-aims-to-coordinate-science-1.10680%20" target="_blank">Nature News</a>, 21/05/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Conseil-de-la-recherche-mondiale-coordonner-les-collaborations-dans-le-domaine-de-la-recherche-scientifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-pays-membres-de-l-ASARECA-plaident-en-faveur-de-nouvelles-universites-d-agriculture" title="Les pays membres de l’ASARECA plaident en faveur de nouvelles universités d’agriculture" alt="link">Les pays membres de l’ASARECA plaident en faveur de nouvelles universités d’agriculture</a></h2>
+
+	
+					<p>Les pays membres de l’Association pour le renforcement de la recherche agricole en Afrique centrale et de l’Est (ASARECA) devraient créer une nouvelle génération d’universités d’agriculture orientées vers l’innovation ayant pour mission d’intégrer la recherche à la formation et aux services de vulgarisation. Il s’agit de l’une des principales recommandations formulées lors de la clôture de la première Assemblée générale de l’ASARECA, qui s’est tenue à Entebbe, en Ouganda, du 14 au 16 décembre 2011. La réunion de l’ASARECA a plaidé pour la mise en place d’une collaboration plus étroite entre les pays de la région, mais aussi entre les chercheurs, les enseignants et les fournisseurs de services. Cette collaboration devrait également comprendre le secteur privé, surtout en ce qui concerne la diffusion des résultats de la recherche. Selon ces recommandations, les universités ainsi créées feraient affaires avec les ministres de l’agriculture mais aussi avec d’autres, tels que ceux de l’éducation, de l’environnement et des transports. Cela permettrait de résoudre le problème de déconnexion entres les instituts nationaux de recherche agricole et les facultés d’agriculture au sein des universités existantes. (<a href="http://www.asareca.org/content/asareca-stakeholders-call-new-agricultural-universities-0 " target="_blank">ASARECA</a>, 5/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-pays-membres-de-l-ASARECA-plaident-en-faveur-de-nouvelles-universites-d-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Research4Life-augmente-de-facon-considerable-la-recherche-validee-par-les-pairs-aux-pays-en-developpement" title="Research4Life augmente de façon considérable la recherche validée par les pairs aux pays en développement" alt="link">Research4Life augmente de façon considérable la recherche validée par les pairs aux pays en développement</a></h2>
+
+	
+					<p>Plus de 7 000 ouvrages scientifiques et techniques d’Elsevier sont désormais accessibles en ligne grâce aux programmes HINARI, AGORA, OARE et ARDI. Research4Life a annoncé que le contenu disponible par le biais de son partenariat de collaboration public-privé avait considérablement augmenté depuis 2011 et comptait aujourd’hui 17 000 revues, ouvrages et bases de données scientifiques validés par des pairs. Research4Life permet à plus de 6 000 institutions dans quelque 100 pays en développement d’accéder gratuitement ou à faible coût à un contenu en ligne validé par des pairs provenant des principaux éditeurs dans les domaines scientifique, technique et médical. L’inclusion de la collection de livres numériques de SciVerse ScienceDirect d’Elsevier fait suite aux 1 700 ouvrages cliniques, scientifiques et techniques apportésen 2011. Elsevier offre également l’accès à plus de 2000 revues électroniques et à SciVerse Scopus, la plus grande base de données de résumés et de citations issus de publications validées par des pairs, avec près de 19 500 titres de plus 5 000 éditeurs. (<a href="http://www.research4life.org/Research4Life_Greatly_Expands_Peer_Reviewed_Research_%20Available_%20to_%20Developing_World16May2012" target="_blank">R4L</a>, 16/05/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Research4Life-augmente-de-facon-considerable-la-recherche-validee-par-les-pairs-aux-pays-en-developpement">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Vers-une-science-libre-et-ouverte-au-XXIe-siecle" title="Vers une science libre et ouverte au XXIe siècle" alt="link">Vers une science libre et ouverte au XXIe siècle</a></h2>
+
+	
+					<p>Les membres d’ALLEA (All European Academies) ont présenté en avril 2012 leurs recommandations pour une science libre dans une déclaration intitulée « Vers une science libre et ouverte au XXIe siècle ». La déclaration expose la vision d’une science ouverte au XXIe siècle et dresse une liste des conditions requises pour réaliser cette vision :&nbsp;
+
+
+ Accès à des contenus scientifiques ouverts issus de la recherche financée sur des fonds publics
+
+
+&nbsp;
+
+
+ Infrastructures électroniques ouvertes pour la recherche publique et privée
+
+
+&nbsp;
+
+
+ Vers une culture de la science ouverte
+
+
+&nbsp;Elle décrit, sous le titre « <i>Making it happen</i> », comment l’ALLEA et ses membres plaideront pour l’adoption d’une science libre et ouverte.(Via <a href="http://aims.fao.org/news/european-academies-declare-open-science-21st-century" target="_self">AIMS</a>, 04/2012)</p>
+							<p><span class="date">31/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Vers-une-science-libre-et-ouverte-au-XXIe-siecle">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Le-MIT-et-l-Universite-de-Harvard-vont-offrir-des-cours-gratuits-en-ligne" title="Le MIT et l’Université de Harvard vont offrir des cours gratuits en ligne" alt="link">Le MIT et l’Université de Harvard vont offrir des cours gratuits en ligne</a></h2>
+
+	
+					<p>Le mensuel <i>The Atlantic</i> relate l’initiative prise par deux des plus prestigieux établissements américains – l’Université de Harvard et le Massachusetts Institute of Technology (MIT) – qui souhaitent offrir des cours gratuits en ligne. Le MIT et l’Université de Harvard ont « [versé] 30 millions de dollars dans un partenariat sans but lucratif, baptisé edX (<a href="http://www.edxonline.org/" target="_self">http://www.edxonline.org/</a>), qui, espèrent-ils, rendra les enseignants et les cours de premier ordre de leurs écoles disponibles pour des millions de personnes à travers le monde. À travers edX, les deux institutions vont collaborer pour améliorer l’éducation sur leurs campus et bâtir une communauté mondiale d’apprentissage en ligne. La plate-forme technologique créée par MITx, qui sera la base d’un nouveau système d’enseignement, a été conçue pour offrir des versions en ligne des cours du MIT avec des éléments en vidéo, des quiz, un feedback immédiat, des exercices questions-réponses, des laboratoires en ligne et des cours adaptés aux étudiants. Des certificats de maîtrise (bien que ne portant pas la mention Harvard ou MIT) seront délivrés à ceux qui sont motivés et capables de démontrer leur connaissance des cours dispensés.(<a href="http://www.edxonline.org/release.html%20" target="_blank">edX</a> via <a href="http://www.theatlantic.com/technology/archive/2012/05/the-single-biggest-change-in-education-since-the-printing-press/256655/" target="_blank">The Atlantic</a>, 2/5/2012)</p>
+							<p><span class="date">31/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Le-MIT-et-l-Universite-de-Harvard-vont-offrir-des-cours-gratuits-en-ligne">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-investissements-consentis-par-les-pays-dans-l-enseignement-superieur-ont-ils-des-effets-reels" title="Les investissements consentis par les pays dans l’enseignement supérieur ont-ils des effets réels ?" alt="link">Les investissements consentis par les pays dans l’enseignement supérieur ont-ils des effets réels ?</a></h2>
+
+	
+					<p>Ce document de travail de la Banque mondiale examine les liens entre les niveaux de dépenses d’éducation et les résultats obtenus. Ce thème a déjà été largement traité pour le niveau primaire et secondaire, mais il est peu documenté pour l’enseignement supérieur – en dépit de dépenses sans cesse croissantes. Le document analyse l’impact de ces différentes dépenses sur un certain nombre de résultats obtenus dans l’enseignement supérieur, à l’aide de comparaisons croisées entre pays de la région de l’Asie du Sud. Il montre que le niveau des dépenses publiques est faiblement corrélé avec les résultats obtenus en termes d’accès et de participation, mais qu’il est lié à une certaine amélioration de la qualité d’enseignement. Les dépenses privées semblent n’avoir aucun impact sur la quantité ou la qualité. Cette recherche exploratoire présente des scénarios très différents pour les pays à revenu élevé et les pays moins développés. (<a href="http://documents.worldbank.org/curated/en/2012/02/15961985/countries-investments-tertiary-education-making-difference" target="_blank">Banque mondiale</a>, 22/03/2012)</p>
+							<p><span class="date">31/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Les-investissements-consentis-par-les-pays-dans-l-enseignement-superieur-ont-ils-des-effets-reels">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Promouvoir-l-enseignement-superieur-en-sciences-et-technologies" title="Promouvoir l’enseignement supérieur en sciences et technologies" alt="link">Promouvoir l’enseignement supérieur en sciences et technologies</a></h2>
+
+	
+					<p>La Banque africaine de développement a lancé un projet destiné à réorganiser complètement la formation scientifique et technologique dans sept établissements d’enseignement supérieur au Malawi. Ce projet, qui vise notamment à améliorer l’accès à l’enseignement supérieur, mais aussi sa qualité et sa pertinence, constitue une aide précieuse pour les Malawiens. Trois universités et quatre écoles polytechniques, ainsi que plusieurs centres de formation professionnelle, seront les bénéficiaires du projet Enseignement supérieur, sciences et technologies. Ce projet comprendra également l’enseignement technique ainsi que la formation professionnelle et entrepreneuriale (TEVET).(<a href="http://www.universityworldnews.com/article.php?story=20120218071029291 " target="_blank">University World News</a>, 18/02/2012)</p>
+							<p><span class="date">14/03/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/Promouvoir-l-enseignement-superieur-en-sciences-et-technologies">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/L-ESRI-annonce-une-subvention-de-10-millions-US-aux-universites-africaines" title="L'ESRI annonce une subvention de 10 millions $US aux universités africaines" alt="link">L'ESRI annonce une subvention de 10 millions $US aux universités africaines</a></h2>
+
+	
+					<p>
+L'Institut de recherche sur les systèmes environnementaux (ESRI), leader mondial du marché des logiciels SIG, s'est <a href="http://apb.directionsmag.com/entry/water-resources-visualization-grant-and-other-education-gis-news/212317" target="_blank">engagé</a> à verser 10 millions $US pour promouvoir l'enseignement des systèmes d'information géographique (SIG) dans quelque 100 universités africaines. Fin 2011 et au cours de l'année 2012, l'ESRI prévoit d'étendre son programme en proposant aux universités des licences sur site et en renforçant ses relations avec une centaine d'universités. Ce programme vise à accélérer les opportunités d'enseignement des SIG en Afrique afin de créer un vivier de professionnels qualifiés capables d'exploiter ces systèmes. Des ateliers pédagogiques et un forum facilitant la collaboration des universités participantes ont été mis en place lors de la conférence SIG Afrique à Abuja (Nigeria) en novembre 2011.  (<a href="http://events.esri.com/uc/QandA/index.cfm?fuseaction=answer&amp;conferenceId=DD02CFE7-1422-2418-7F271831F47A7A31&amp;questionId=4076" target="_blank">ESRI</a>, 8/11/2011)</p>
+							<p><span class="date">12/01/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/L-ESRI-annonce-une-subvention-de-10-millions-US-aux-universites-africaines">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/40"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements">1</a></span>
+            
+        <span class="current">2</span>
+
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/40">3</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole/Developpements/(offset)/100">6</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":697,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

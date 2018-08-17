@@ -1,0 +1,1126 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Harnessing biodiversity for sustainable development (ACP Policy Brief) / ACP policy briefs / CTA and S&amp;T / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="ACP Governments are encouraged to put mechanisms in place that will promote the collection, characterisation and conservation of biological resources and facilitate exploration of new food and industrial product opportunities so that indigenous resources are not over exploited and indigenous people do not lose access to their traditional livelihoods."/><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="/en" title="Knowledge front page"/>
+<link rel="Index" href="/en"/>
+<link rel="Search" href="/en/content/search" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/en/layout/set/print/Dossiers/CTA-and-S-T/ACP-policy-briefs/Harnessing-biodiversity-for-sustainable-development-ACP-Policy-Brief" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/en">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/en/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/en/About/About">About</a> | </li>
+							<li><a href="/en/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/en/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation/Maitriser-la-biodiversite-pour-un-developpement-durable-Note-d-orientation-ACP">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/en/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/en">Home</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers/CTA-and-S-T">CTA and S&amp;T</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">ACP policy briefs</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Harnessing biodiversi...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image">
+																
+																			<img src="/var/knowledge/storage/images/media/images/generic-backup-images/cacao-fruits/354397-1-eng-GB/cacao-fruits_contentfront.jpg"/>
+																</div>
+	
+					<div class="content-intro-text">
+						<h1>Harnessing biodiversity for sustainable development (ACP Policy Brief)</h1>
+													<p class="author"><strong>Author:</strong>
+								Judith A. Francis et al.</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							30/11/2005</p>
+																									<p class="intro">Introduction:</p>
+							<p>ACP Governments are encouraged to put mechanisms in place that will promote the collection, characterisation and conservation of biological resources and facilitate exploration of new food and industrial product opportunities so that indigenous resources are not over exploited and indigenous people do not lose access to their traditional livelihoods.</p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/en/layout/set/print/content/view/full/2215">Print</a>
+																				</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+
+<div class="stdtext">
+			
+<p><b>Introduction</b></p><p>The Earth’s biodiversity, or the variety and variability of genes, species, populations and ecosystems, provide goods and services that support human livelihoods, fulfil aspirations and help societies adapt to changing circumstances. This diversity is found in the natural ecosystems of forests, savannahs, pastures and rangelands, deserts, tundras, rivers, lakes, islands, seas and gardens, particularly traditional subsistence gardens, and includes the relationships between the living organisms and their physical environment.</p><p>Biodiversity underpins sustainable development and is essential for food security, maintaining forest productivity and environmental protection and for developing new products. It plays an important role in the agricultural sector as a source of food and food products, genetic material for agricultural product improvement, bio-control agents including bioactive compounds and botanical pesticides and in several other industries as raw material for production of timber related products, textiles and pharmaceuticals and nutraceuticals, and contributes to ecosystem balance including maintenance of soil fertility. As the population in ACP countries continues to grow and outpace food production, greater diversity in cropping systems needs to be promoted, new products need to be developed to expand market and job opportunities to support economic growth and national and regional scientific capacity needs to be strengthened.</p><p><b>What is biodiversity?</b></p><p>The Convention on Biological Diversity (CBD Secretariat, 2005) defines 'biological diversity' or biodiversity as ' <i>the variability among living organisms from all sources including, inter alia, terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are part; this includes diversity within species, between species and of ecosystems</i>'.</p><p>The stability of ecosystems is directly related to biological diversity. The loss of species and the destruction of habitats and ecosystems reduce this diversity, and in turn undermine the ability to withstand or to recover from severe disturbances - this is especially true of island ecosystems such as in the Caribbean and Pacific regions. This imbalance in the stability of ecosystems has severe implications for ACP regions including predicting and mitigating climate change. Haiti provides a perfect illustration of how the destabilization of ecosystems increases human vulnerability. In 2004, approximately two thousand Haitian citizens died as a result of one of the weakest storms that hit the island - why - because heavy deforestation had left soils bare.</p><p>Agro-biodiversity contributes to the natural capital on which economies throughout the world revolve, so when a species is lost or an ecosystem irreversibly degraded, the total natural capital is reduced. Agricultural production systems contribute to both conservation and destruction of biological diversity. Unsustainable farming and harvesting practices, poor management of soils, degradation of ecosystems and the introduction of alien invasive species threaten this natural capital in the ACP region and contribute to the loss of crop varieties and livestock breeds. On the other hand, adequate food production, new food products or cheaper food and raw materials, sustainable livelihoods as well as opportunities for raising or diversifying sources of income, proper health and disease management (medicinal plants), soil fertility management and habitat conservation are all possible if biodiversity is properly harnessed. Sustainable production systems for coping with drought overgrazing and soil erosion and reducing requirements for potentially harmful chemicals can be identified or developed based on sound traditional practices. New discoveries in plant and animal genetic diversity can also deliver cultivars and breeds capable of higher productivity or reduced susceptibility to pests and diseases.</p><p>
+<b>Why is biodiversity important for the ACP region?</b> <br/> Biodiversity hotspots hold especially high numbers of endemic species, yet their combined area of remaining habitat covers only 2.3% of the Earth’s land surface. The decline in biodiversity is a global issue and was acknowledged at the International Biodiversity Conference 'Biodiversity: Science and Governance', Paris, January 2005. The ACP region is no exception as many of the biodiversity-rich hotspots are found in the ACP region. Each hotspot faces threats and reports indicate that they have already lost at least 70% of their original natural vegetation. In Africa, five internationally recognized biodiversity hotspots (WesternIndian OceanIslands, the CapeFloristic region, the Succulent Karoo, the Upper Guinea forest (DRC) and the Eastern Arc mountain forests of Eastern Africa) are under particular threat. In the CaribbeanIslands; Cuba, Hispaniola - Dominican Republic and Haiti, Jamaica and Puerto Rico representing 90% of the Caribbean hotspots, dozens of species are threatened with deforestation and encroachment contributing to the loss. In the Pacific, the East Melanesian islands are a designated hotspot - approximately 70% of the original area has already been lost.</p><p>Marine diversity is much higher in tropical regions than in temperate or artic regions. In the Caribbean, 50% of the human population live in the coastal zone resulting in increased pressure being exerted on the marine environment. Since these ecosystems (especially mangroves) serve as breeding grounds for marine and estuarine animals - they also mitigate against coastal erosion and natural phenomena such as hurricanes. As a result of the pressure on the coastal system, coral reefs, seagrass and mangroves, among other coastal ecosystems are under threat.</p><p>The vital combination of rich diversity and traditional knowledge (ehthnoscience) provides opportunities for the development of new products e.g. nutraceuticals and pharmaceuticals, which in turn have implications for income generation. The export market of kava ( <i>Piper methysticum</i>) in the Pacific region illustrates the potential of the ACP region to harness its rich biodiversity. The ongoing evaluation of <i>Homolanthus nutans</i> (mamala tree) for AIDS treatment, discovered in the Samoan forest is yet another example the inherent value of ACP diversity. New herbal products are in demand in the developed world - the German company Schwabe is showing interest in an herbal known as umckaloabo ( <i>Pelargonium reniforme</i>), found in Africa, for its antibiotic qualities.</p><p>Yet so much is still unknown. For the small islands, the diversity is the result of thousands of years of physical isolation from continental landmasses which enabled many island faunal species to evolve independently of relatives in other land masses - leading to a high level of endemism, which according to some reports exceed 80% in many islands. Many species are waiting to be discovered and described scientifically. To lose this treasure trove of nature would negatively impact on the socio-economic development of present and future generations.</p><p>The link to biotechnology must be emphasised as biodiversity provides the building blocks (raw material) for advances, from characterization to product development, which can add value to the rich biodiversity. The ACP region with such a rich base is well placed to take advantage of these opportunities to position itself competitively in the biotechnology field.</p><p>The lack of relevant policies and legislation is placing this source of rich diversity and the benefits that can de derived by the ACP region at risk, negatively impacting on sustainable livelihoods of present and future generations. The loss of biodiversity hotspots needs to be urgently addressed to minimize further decline and the urgency should be reflected in the policies and priority actions of ACP governments.</p><p>
+<b>What are the scientific challenges of biodiversity conservation and utilization in the ACP region?</b> <br/> The root causes of the failure to effectively conserve and utilize biodiversity reflect a complex combination of many factors but consideration of the scientific challenges point to a number of solutions. The multidisciplinary nature of biodiversity conservation and use requires expertise in a wide range of areas including taxonomy, ecological engineering, chemistry, biochemistry, pharmacology and advanced biotechnology. Building the scientific expertise is of extreme importance to support the type of coordinated research programmes that are needed to achieve maximum benefits from biodiversity and contribute to wealth and job creation and improved health. The brain drain in the ACP region and the limited capacity to train and retain skilled human resources are exacerbated by inadequate infrastructure and incentives, further reducing the pool of human resources available to harness biodiversity for the optimum benefit of the ACP region.</p><p><b> <i>Conservation</i> </b></p><p>In the ACP region there is a significant lack of knowledge on the available biodiversity at the species and genetic level. There is an urgent need to collect, characterize and document biodiversity and the traditional knowledge associated with its use and conservation.� Value addition to indigenous knowledge (ethnoscience) of related practices and products is weak and uncoordinated. Although modern technologies such as biotechnology offer new opportunities for conservation and optimization, these have not been fully exploited in the region due to lack of expertise and concern for potential negative impact on genetic diversity if biotechnology is not properly managed. Characterization and documentation of the genetic resources and assessment of risks of new products during handling, storage and transport and ensuring safety for human consumption and the environment, remain major challenges.</p><p>
+<b> <i>Utilisation</i> </b> <br/> Traditional farming and fishing systems are often criticized for their poor productivity and as such their role in sustainable conservation and utilization of biodiversity is often ignored. The ACP scientific community should be mobilised to conduct research of these traditional production and harvesting systems and document findings, and evaluate mechanisms for optimizing productivity. The lack of value adding capacity also limits the exploration of the potential of the region’s biodiversity. Against this background, the opportunities for the related sciences (chemistry, biology and biochemistry and chemical and environmental engineering and biotechnology) to expand usage and provide information on the advantages and potential risks of the related products derived from the rich biodiversity based on scientific rigour through coordinated action, need to be pursued.</p><p><b> <i>Related skills</i> </b></p><p>Understanding and unravelling complexity of biodiversity systems and its interactions with the different elements of the environment require special scientific skills but to ensure that all partners and the countries benefit from better utilisation of biodiversity and research conducted in the ACP region, the Intellectual Property Rights (IPR) legislative framework and benefit sharing protocols and legislation need to be developed and or strengthened Priority must be given to developing national and regional skills in IPR in order to fully protect and harness the economic value of the region’s biodiversity, and to build the supportive infrastructure.</p><p>
+<b> <i>Institutional capacity</i> </b> <br/> The scientific community in the ACP region continues to work under very difficult conditions. They have limited access to fast and robust communication tools and dwindling and outdated resources (equipment, laboratory, chemicals and reagents) and limited access to finances and training opportunities (e.g. international fellowships) for research and training. This is exacerbated by low prioritisation of the conservation and utilization of biodiversity in national socio-economic development plans.</p><p><b>What are the challenges for governance in the conservation and utilization of biodiversity in the ACP region? </b></p><p>There are significant challenges for governance because there is a preponderance of related international agreements (approximately 54). The Convention on Biological Diversity (CBD) is a legally binding agreement, which covers all biodiversity. Most of the countries in the ACP region have ratified this convention which requires that countries conserve their biological diversity and put practices in place for sustainable use. It asserts that states have the sovereign right to exploit their own resources. However, the CBD leaves unresolved the status of pre-CBD ex situ collections, farmers’ rights and benefit sharing. The CBD was negotiated by the Ministers of the Environment. The recent International Treaty on Plant Genetic Resources for Food and Agriculture (IT-PGRFA) provides a multilateral system for 35 crops considered to be crucial for food security. This treaty was negotiated by Ministers of Agriculture. In addition to these two agreements, WTO members have to have in place under the TRIPs agreement, plant variety protection, either through patents or a <i>sui generis</i> system. Many countries have become members of the International Union for the Protection of New Varieties of Plants (UPOV) in order to meet this requirement. UPOV was initially established for industrial breeding, and seems to be of little relevance for several developing countries. It is also resource demanding.</p><p>The nature and complexity of the multiple international agreements demands a harmonized approach to legislation governing biodiversity conservation and utilization and requires inter-ministerial information sharing, communication and collaboration and expert advice. It is only through a harmonized approach that the full utilization of these agreements can be achieved - facilitating the establishment of access and benefit sharing policies and access to funding.</p><p>Governments must understand that ratification of these international agreements is not sufficient as they must be implemented at the national level. Sadly this has not occurred e.g. the ACP region may not be able to achieve the 2010 Biodiversity targets as established under the CBD. Urgent steps must be taken to prepare a status report on the status of biodiversity to support requests from ACP countries for an extension and for identifying and accessing national, regional and international funding to support the conduct of the scientific research to honour the obligations. Conservation and management of biodiversity is crucial for the ACP region for the sustainable development and economic growth of the region.</p><p>In addition to urgently addressing the status of biodiversity in the ACP region, the traditional property rights arrangements governing the ownership, access to and use of biodiversity and natural resources as well as the associated traditional knowledge governing their management - an integral part of ACP societies and cultures must be addressed. Many traditional arrangements regarding the management of resources give rise to issues of gender balance, equity and conflict resolution. Where significant resources are communally owned, supportive government policies are needed to encourage direct local community involvement in sustainable resource management, and the building of their capacities to do this. Hotspots require special attention. While policies and legislation are needed to ensure their protection, these must not put at risk the livelihoods of communities depending on biodiversity hotspots. A balance between protection of biodiversity and the rights of indigenous communities must be struck.</p><p><b>What are the good science and governance lessons? </b></p><p>Costa Rica provides a good example of good science and governance in conservation management and utilization. 25% of the country is under biosphere and biodiversity reserves, which are managed by civil society (including INBIO - the National Biodiversity Institute) and government. It also enjoys international cooperation. The success achieved in Costa Rica highlights that progress in conservation and utilization of biodiversity requires political leadership, and with this, the establishment and implementation of clear and effective policies where biodiversity is given priority. Prioritization has to be accompanied by resource allocation and increased scientific capacity. Capacity building must be focused, not only on the scientific community, but also on the indigenous and local communities who should be trained to better manage and utilize their resources, as they are ultimately the guardians of this heritage. Their knowledge must be examined scientifically, valued, and developed. Last but not least the examples given show the importance of recognizing and valuing hotspots and putting in place effective and sustainable management strategies.</p><p><b>What is the responsibility of the scientific community?</b></p><p>The scientific community needs to communicate with policy makers that effective conservation and sustainable utilisation of biodiversity is essential for wealth creation and improvement in health and living standards. For effective R&amp;D programmes, the S&amp;T personnel need the participation of the private sector and the civil society across the research, extension and development continuum. Scientists thus need to (i) document and generate information on species composition, and extinction rates, (ii) expand knowledge on the impact of climate change and decline and loss of biodiversity on ecosystems (iii) identify and diversify product range for commercialisation (iv) build national, regional and international alliances to fill knowledge gaps and (v) inform policy-makers on the implications of international conventions and agreements (eg bio-prospecting) on biodiversity.�</p><p><b>What is the responsibility of government? </b></p><p>Governments should play a key role in harnessing the wealth that is available from the region’s biodiversity for present and future generations. Implementation of international agreements and establishment of national policies with access and benefit sharing components ensuring full acknowledgement of community and farmers’ rights is required. Governments should also encourage and promote harmonization at a regional level so that IPR and access and benefit conditions are harmonized across regions. Inter-agency and inter-ministerial coordination is also necessary. Different Ministries that are involved in the negotiations of international agreements should be mandated so communicate and collaborate with each other to improve understanding of their full implications and involve national and regional experts in the deliberations.</p><p>National governments need to improve development policies and to give priority to biodiversity issues, such as shown by the Madagascar government. Prioritization requires resource allocation for capacity building at all levels (institutional and human) recognizing that resource limitations can often be remedied through national and regional cooperation.</p><p>As significant resources are communally owned in the ACP region, Governments also need to put in place supportive policies to encourage direct local community involvement in sustainable resource management, and the building of their capacities to do this. The successful design and implementation of incentive measures require consideration of socio-cultural factors - economic factors are significant but are not the only determinants of biodiversity management outcomes.</p><p>Public-private sector partnerships and national, regional and international partnerships must be supported through government policies and incentives, both for conservation and also for the research and development required for the successful sustainable utilization of biodiversity. These partnerships can be promoted by re-building confidence in the public sector, through targeted capacity building and prioritization.</p><p>Finally, there is a need to facilitate and encourage public participation and awareness, and this includes reviewing curricula at all levels of the educational system. Public support for biodiversity conservation and utilization will greatly assist governments in implementing their policies.</p><p><i>Prepared by</i> ACP Scientists - Aggrey Ambali - Coordinator, NEPAD / African Biosciences Initiative, Republic of South Africa; Audia Barnett - Director, Scientific Research Council, Jamaica; Afihini Ijani - Principal Plant Pathologist, Tropical Pesticides Research Institute, Tanzania; Palata Kabudi, University of Kinhshasa, Democratic Republic of the Congo; Maureen Manchouck - President, National Institute for Higher Education, Research, Science and Technology, Republic of Trinidad and Tobago; Fina Opio - Director of Research, Namulonge Agricultural and Animal Production research Institute, National Agricultural Research Organization, Uganda; Eric Quaye - School of Biological Sciences, University of Cape Coast, Ghana; John Saka - Director, Natural Resources and Environment Centre, University of Malawi, Malawi; and Mary Taylor, Regional Germplasm Adviser, Secretariat of the Pacific Community in consultation with Judith Ann Francis, Senior Programme Coordinator, Science and Technology Strategies, Technical Centre for Agricultural and Rural Cooperation, The Netherlands; Osita Ogbu, Executive Director, African Technology Polices Studies Network and Albert Sasson, Former UNESCO Assistant Director General, (CNCDH, France). Edited by Judith Ann Francis, CTA.</p><p><i>Approved and adopted by</i> the Advisory Committee on Science and Technology for ACP Agricultural and Rural Development on November 11, 2005 during their 4th meeting which was held at CTA Headquarters Wageningen, The Netherlands, November 07 - 11, 2005.</p>
+		
+	<hr size=1 noshade>
+					<div class="docbox">
+				<label>Download:</label>
+				<div class="right">
+					<a href="/en/content/download/4187/51861/file/BIODIVERSITY+Policy+brief+-+Final+Version+%282%29.doc">Download DOC</a>&nbsp;(67.50 kB)				</div>
+			</div>
+				
+					<div class="docbox">
+				<label>Release date:</label>
+				<div class="right">
+					
+November 2005				</div>
+			</div>
+				
+					<div class="docbox">
+				<label>Publisher:</label>
+				<div class="right">
+					
+CTA, Wageningen, the Netherlands				</div>
+			</div>
+			<hr size=1 noshade>
+</div>
+					<br class="clear">
+				</div> 
+			</div>
+			
+			 
+		
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/en/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/en/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/en/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/en/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/en/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/en/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/en/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/en/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/en/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":686,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

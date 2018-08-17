@@ -1,0 +1,1425 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Pêches / Produits de base / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Produits-de-base/Peches/Developpements/(offset)/20" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/Commodities/Fisheries/Related-developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Produits-de-base">Produits de base</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Produits-de-base/Peches">Pêches</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Surveiller-les-effets-du-changement-climatique-sur-les-mollusques-en-Europe" title="Surveiller les effets du changement climatique sur les mollusques en Europe " alt="link">Surveiller les effets du changement climatique sur les mollusques en Europe </a></h2>
+
+	
+					<p>Les scientifiques n’ont pas encore pleinement compris comment les mollusques, tels que l’huître, la moule, le pétoncle et la palourde, fabriquent leurs coquilles, ou comment un changement environnemental affectera leurs populations. L’Union européenne a donc financé un programme scientifique ambitieux appelé CACHE (<i>Calcium in a Changing Environment</i>). Mis en œuvre par une équipe internationale de chercheurs, et coordonné par le British Antarctic Survey, ce programme mettra en lumière le rôle essentiel des mollusques pour le fonctionnement de l’écosystème marin et mettra l’accent sur la capacité d’adaptation des animaux à l’évolution des conditions marines. L’un des objectifs majeurs du programme est d’encourager les jeunes scientifiques à s’immiscer dans la recherche et le monde des affaires pour développer leur carrière.&nbsp;<a href="http://www.antarctica.ac.uk/about_bas/news/news_story.php?id=2417" target="_self">http://www.antarctica.ac.uk/about_bas/news/news_story.php?id=2417</a>(NERC BAS, 09/12/2013)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Surveiller-les-effets-du-changement-climatique-sur-les-mollusques-en-Europe">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Pecheurs-et-chercheurs-se-mobilisent-pour-sauver-la-filiere-peche-aux-Palaos" title="Pêcheurs et chercheurs se mobilisent pour sauver la filière pêche aux Palaos " alt="link">Pêcheurs et chercheurs se mobilisent pour sauver la filière pêche aux Palaos </a></h2>
+
+	
+					<p>Des chercheurs de l’organisation Nature Conservancy ont mis au point une nouvelle méthode pour comptabiliser les poissons qui vivent sur les récifs coralliens complexes du petit Etat insulaire des Palaos. Au lieu de compter le nombre de poissons dans l’eau, l’idée est de déterminer la proportion de la population capable de se reproduire pour chaque espèce de poissons. Les chercheurs ont appris aux pêcheurs à mesurer la longueur des poissons qu’ils pêchent. Ils leur ont également montré comment ouvrir l’estomac d’un poisson pour inspecter ses gonades et ainsi déterminer son sexe, mais aussi savoir s’il a atteint sa maturité sexuelle ou s’il s’agit d’un juvénile immature. Grâce à ces informations, ils sauront si suffisamment de poissons se reproduisent pour repeupler les cours d’eau et pérenniser les populations halieutiques, mais également si les poissons atteignent leur taille adulte. Les données recueillies sur une année mettent en avant le déclin et le risque de disparition des ressources halieutiques des Palaos. Largement impliqués dans le processus de collecte des données, les pêcheurs des Palaos ont pu constater et comprendre ce qui se passait. Parmi les options de réhabilitation, citons la détermination d’une taille minimale de capture des poissons et la fermeture de certaines zones de pêche pour reconstituer les stocks. &nbsp;&nbsp;<a href="http://www.icsf.net/samudra-news-alert/articledetail/51035:fishermen-in-palau-take-on-role-of-scientist-to-save-their-fishery.html?language=EN" target="_self">http://www.icsf.net/samudra-news-alert/articledetail/51035:fishermen-in-palau-take-on-role-of-scientist-to-save-their-fishery.html?language=EN</a>&nbsp; &nbsp;(International Collective in Support of Fishworkers, 05/11/2013) &nbsp;&nbsp;</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Pecheurs-et-chercheurs-se-mobilisent-pour-sauver-la-filiere-peche-aux-Palaos">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Modernisation-de-la-peche-artisanale-en-Haiti" title="Modernisation de la pêche artisanale en Haïti   " alt="link">Modernisation de la pêche artisanale en Haïti   </a></h2>
+
+	
+					<p>Le gouvernement haïtien, avec l’appui de l’ONG AquaDev et de GTZ, modernise actuellement la pêche en Haïti à travers le développement d’une pêche artisanale &nbsp;améliorée et durable, et notamment l’installation de dispositifs de concentration de poissons (DCP) le long des côtes et la formation des pêcheurs. Plus de 70 DCP &nbsp;ont déjà été installés ces dernières années en Haïti. &nbsp;&nbsp;<a href="http://www.haitilibre.com/en/news-9338-haiti-agriculture-modernization-of-artisanal-fisheries.html" target="_self">http://www.haitilibre.com/en/news-9338-haiti-agriculture-modernization-of-artisanal-fisheries.html</a>&nbsp; &nbsp;&nbsp;(Haiti Libre, 31/08/2013)</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Modernisation-de-la-peche-artisanale-en-Haiti">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-climat-menace-la-securite-alimentaire-des-iles-du-Pacifique" title="Le climat menace la sécurité alimentaire des îles du Pacifique" alt="link">Le climat menace la sécurité alimentaire des îles du Pacifique</a></h2>
+
+	
+					<p>Le réchauffement de la planète devrait considérablement diminuer leurs ressources accessibles en poissons au cours des prochaines décennies. <a href="http://www.ipsnews.net/2013/05/climate-change-makes-life-tougher-for-solomon-island-farmers-2" target="_blank">L’étude</a> révèle que l’élévation de la température des eaux de surface, plus importante à l’ouest du bassin océanique, entraînerait la migration des thons vers la Polynésie à l’est. Les zones de prises s’éloigneraient ainsi des côtes mélanésiennes les thons fuient vers l’est.&nbsp; Les écosystèmes coraliens et la disponibilité des poissons récifiens sont aussi menacés. L’aquaculture et les pêcheries en eau douce sont par contre porteur d’avenir.(IRD et <i>Nature <a href="http://www.nature.com/nclimate/journal/vaop/ncurrent/full/nclimate1838.html " target="_blank">Climate Change</a></i>, 15/04/2013)</p>
+							<p><span class="date">27/06/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-climat-menace-la-securite-alimentaire-des-iles-du-Pacifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Dialogue-sur-la-gouvernance-de-la-peche-cotiere-au-Ghana" title="Dialogue sur la gouvernance de la pêche côtière au Ghana" alt="link">Dialogue sur la gouvernance de la pêche côtière au Ghana</a></h2>
+
+	
+					<p>Ce document contient les présentations, les discussions et les résultats produits en vue d’un forum de parties prenantes (avril 2012) sur des questions relatives à la réforme de la gouvernance de la pêche côtière au Ghana. Ce colloque, le second dialogue national sur la gouvernance des pêches, avait pour objectif d’aider les acteurs concernés du secteur de la pêche à mieux comprendre les enseignements tirés et les perspectives de succès de la cogestion des pêches au Ghana, afin de répondre à l’appel lancé par les communautés de pêcheurs et le gouvernement ghanéen pour changer radicalement la manière dont les ressources halieutiques sont actuellement gérées. &nbsp;<a href="http://www.worldfishcenter.org/resources/publications/ghana-coastal-fisheries-governance-dialogue" target="_blank">http://www.worldfishcenter.org/resources/publications/ghana-coastal-fisheries-governance-dialogue</a>&nbsp;&nbsp;(WorldFish, 04/2012)</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Dialogue-sur-la-gouvernance-de-la-peche-cotiere-au-Ghana">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Ameliorer-la-surveillance-des-peches-pour-reduire-presque-a-neant-les-rejets-de-poissons" title="Améliorer la surveillance des pêches pour réduire presque à néant les rejets de poissons" alt="link">Améliorer la surveillance des pêches pour réduire presque à néant les rejets de poissons</a></h2>
+
+	
+					<p>Selon le dernier rapport sur les quotas de captures rédigé par la Marine Management Organisation (MMO, Royaume-Uni) les rejets, ou poissons rejetés à la mer après avoir été pêchés, ont été quasiment éliminés grâce à la mise en ouvre de programmes pilotes de surveillance. Dans le cadre de ces programmes pilotes, des équipements de surveillance à distance et des dispositifs CCTV ont été utilisés pour repérer les poissons rejetés en mer. Le rapport montre dans quelle mesure cette pratique pourrait constituer une méthode alternative de gestion des pêches, alors que la politique commune de la pêche de l’UE est en cours de réforme. Ces programmes pilotes encouragent les pêcheurs à développer des techniques plus sélectives et à débarquer sur la terre ferme la totalité de leurs captures.&nbsp;<a href="http://www.marinemanagement.org.uk/news/press/121130.htm" target="_blank">http://www.marinemanagement.org.uk/news/press/121130.htm</a>&nbsp;<a href="http://planetearth.nerc.ac.uk/blogs/post.aspx?id=1037&amp;pid=360&amp;cookieConsent=A" target="_blank">http://planetearth.nerc.ac.uk/blogs/post.aspx?id=1037&amp;pid=360&amp;cookieConsent=A</a>&nbsp;&nbsp;(MMO via NERC PlanetEarth, 30/11/2012)&nbsp;&nbsp;</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Ameliorer-la-surveillance-des-peches-pour-reduire-presque-a-neant-les-rejets-de-poissons">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Adaptation-au-changement-climatique-dans-les-secteurs-de-la-peche-et-de-l-aquaculture-aux-Fidji-quelles-priorites" title="Adaptation au changement climatique dans les secteurs de la pêche et de l’aquaculture aux Fidji : quelles priorités ?" alt="link">Adaptation au changement climatique dans les secteurs de la pêche et de l’aquaculture aux Fidji : quelles priorités ?</a></h2>
+
+	
+					<p>Le Secrétariat de la Communauté du Pacifique présente les résultats d’un atelier sur les mesures prioritaires d’adaptation au changement climatique dans les secteurs de la pêche et de l’aquaculture aux Fidji. Les DCP côtiers (dispositifs de concentration du poisson) sont apparus comme un outil d’adaptation essentiel et bénéfique à tous, qui devrait répondre à l’augmentation de la demande de poisson alors même que les récifs coralliens se dégradent. Les participants ont examiné, entre autres, les effets que les modifications des paramètres océaniques devraient avoir sur la répartition de la bonite à ventre rayé et les autres habitats et stocks de poissons. L’atelier s’est déroulé à Suava (Fidji) du 12 au 14 décembre 2012. &nbsp;<a href="http://sids-l.iisd.org/news/fiji-workshop-identifies-climate-change-adaptation-priorities-for-fisheries-and-aquaculture/" target="_blank">http://sids-l.iisd.org/news/fiji-workshop-identifies-climate-change-adaptation-priorities-for-fisheries-and-aquaculture/</a> &nbsp;&nbsp;(SPC via IISD RS, 14/12/2012)</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Adaptation-au-changement-climatique-dans-les-secteurs-de-la-peche-et-de-l-aquaculture-aux-Fidji-quelles-priorites">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/UE-les-reductions-des-quotas-de-peche-doivent-davantage-reposer-sur-les-avis-scientifiques" title="UE : les réductions des quotas de pêche doivent davantage reposer sur les avis scientifiques" alt="link">UE : les réductions des quotas de pêche doivent davantage reposer sur les avis scientifiques</a></h2>
+
+	
+					<p>Un rapport du Fonds mondial pour la nature (WWF) publié en décembre 2012 indique que ces dix dernières années, seulement 13 % des décisions des ministres européens de la pêche en matière de quotas ont été prises conformément aux avis des scientifiques. Il révèle que les pays européens ont fixé des quotas plus élevés de 45 % en moyenne que les recommandations scientifiques. Ces mauvaises décisions ont eu pour conséquence l’épuisement des stocks de poissons. L’UE travaille actuellement sur une réforme d’ensemble de ses politiques qui devrait être lancée en 2014. L’objectif est de résoudre le problème des poissons capturés puis rejetés en mer et des subventions pour les navires, susceptibles de favoriser la surpêche). &nbsp;&nbsp;<a href="http://phys.org/news/2012-12-eu-science-fish-quota.html" target="_blank">http://phys.org/news/2012-12-eu-science-fish-quota.html</a> &nbsp;&nbsp;(Phys.org, 14/12/2012)</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/UE-les-reductions-des-quotas-de-peche-doivent-davantage-reposer-sur-les-avis-scientifiques">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/CEDEAO-harmoniser-les-politiques-pour-le-developpement-de-la-peche" title="CEDEAO : harmoniser les politiques pour le développement de la pêche" alt="link">CEDEAO : harmoniser les politiques pour le développement de la pêche</a></h2>
+
+	
+					<p>Le Dr Marc Atouga, commissaire chargé de l’agriculture, de l’environnement et des ressources hydriques de la CEDEAO, a appelé les États membres à harmoniser leurs politiques et leurs efforts dans le secteur de la pêche en vue de promouvoir le commerce intra-régional des produits halieutiques. Le Dr Atouga a lancé cet appel dans son discours d’ouverture lors de la première réunion de la Commission régionale des pêches qui s’est tenue à Cotonou, au Bénin, le 27 août dernier, sur la cohérence des politiques du secteur de la pêche dans la région de la CEDEAO. Selon lui, ce secteur est confronté à un manque d’infrastructures de transport adaptées et à des obstacles dus à l’archaïsme de la réglementation douanière.(<a href="http://africanbrains.net/2012/08/29/ecowas-urges-policy-harmonization-for-fisheries-development/ " target="_blank">AfricaBrains</a>, 29/8/20112)</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/CEDEAO-harmoniser-les-politiques-pour-le-developpement-de-la-peche">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Les-commissions-des-peches-du-Ghana-et-du-Liberia-vont-deployer-des-systemes-d-information-geographique-SIG" title="Les commissions des pêches du Ghana et du Liberia vont déployer des systèmes d’information géographique (SIG)" alt="link">Les commissions des pêches du Ghana et du Liberia vont déployer des systèmes d’information géographique (SIG)</a></h2>
+
+	
+					<p>Des solutions SIG développées par SuperGeo, une société basée à Taïwan, ont été choisies par les commissions des pêches du Ghana et du Liberia. Cette technologie permettra au personnel de ces commissions de développer un système SIG pour analyser et gérer les ressources halieutiques. Ce système d’information géographique servira à visualiser et analyser la distribution géographique des ressources marines vivantes dans cette région du monde. Le système saura-t-il suivre les navires de pêche et évaluer la qualité des prises et des rendements ? Le <a href="http://www.cersgis.org/" target="_self">Centre de télédétection et de services d’information géographique</a> de l’Université du Ghana a prodigué des conseils sur le choix du logiciel.(SuperGeo, 30/7/2012)</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Les-commissions-des-peches-du-Ghana-et-du-Liberia-vont-deployer-des-systemes-d-information-geographique-SIG">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Too-Big-To-Ignore-un-partenariat-mondial-pour-la-recherche-scientifique-dans-le-secteur-de-la-peche-artisanale" title="« Too Big To Ignore » : un partenariat mondial pour la recherche scientifique dans le secteur de la pêche artisanale" alt="link">« Too Big To Ignore » : un partenariat mondial pour la recherche scientifique dans le secteur de la pêche artisanale</a></h2>
+
+	
+					<p>«&nbsp;Too Big to Ignore&nbsp;» est un nouveau réseau de recherche et partenariat pour la mobilisation des connaissances visant à promouvoir et à redynamiser la pêche artisanale dans la province de Terre-Neuve-et-Labrador, au Canada, et dans le reste du monde. Le premier objectif du réseau vise à mieux comprendre la contribution réelle de la pêche artisanale à la sécurité alimentaire et nutritionnelle, à l’amélioration des moyens de subsistance, à la réduction de la pauvreté, à la génération de revenus et au commerce, ainsi que les impacts et les conséquences de processus de changement globaux, tels que l’urbanisation, la mondialisation, les migrations, le changement climatique, l’aquaculture et les technologies de la communication sur le secteur de la pêche artisanale. Le deuxième objectif est de créer une plate-forme web innovante et interactive, un système d’information de la pêche artisanale (SFIS), pour mener une analyse locale et plus globale des pêcheries artisanales et évaluer leur contribution à la société dans son ensemble. Aujourd’hui, il est particulièrement difficile d’établir les caractéristiques générales du secteur de la pêche artisanale compte tenu du manque de statistiques officielles, même si les pêcheries artisanales représentent environ 90 % des 560 millions de personnes qui vivent de la pêche.</p>
+							<p><span class="date">28/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Too-Big-To-Ignore-un-partenariat-mondial-pour-la-recherche-scientifique-dans-le-secteur-de-la-peche-artisanale">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Conference-scientifique-du-CRFM-evaluation-de-l-etat-actuel-des-peches-dans-les-Caraibes-Infolettre-de-juillet" title="Conférence scientifique du CRFM : évaluation de l’état actuel des pêches dans les Caraïbes (Infolettre de juillet)" alt="link">Conférence scientifique du CRFM : évaluation de l’état actuel des pêches dans les Caraïbes (Infolettre de juillet)</a></h2>
+
+	
+					<p>L’organe scientifique du Mécanisme régional de gestion des pêches des Caraïbes (CRFM) <a href="http://www.caricom-fisheries.com/Portals/0/CRFM%20Files/documents/Press%20Release/Press%20Release%20-%20Caribbean%20leaders%20sharpen%20fisheries%20focus.pdf " target="_self">a évalué les principales pêcheries de la région</a> afin de déterminer si les populations naturelles de poissons étaient en bonne santé et si des mesures de contrôle de la gestion des pêches s’avéraient nécessaires. La 8ème conférence scientifique annuelle s’est tenue du 20 au 30 juin 2012 à Kingstown (St. Vincent-et-les-Grenadines). Elle a réuni des chercheurs de 12 des 17 Etats membres du CRFM participants. Les participants ont proposé un plan de gestion sous-régional pour le poisson volant des Caraïbes Orientales et testé de nouveaux outils pour l’analyse des données et la prise de décisions susceptibles d’offrir aux chercheurs de la région une base de données exhaustive pour mener leurs évaluations. Les nouveaux outils visent entre autres à prendre en compte les risques posés par le changement climatique et à mieux évaluer l’impact potentiel des mesures de gestion proposées sur le bien-être et les moyens de subsistance des communautés affectées.(via <a href="http://sids-l.iisd.org/news/crfm-scientific-meeting-assesses-state-of-caribbean-fisheries/" target="_self">IISD RS Sources, SIDS Policy&amp;Practice</a>, 30/6/2012)</p>
+							<p><span class="date">16/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Conference-scientifique-du-CRFM-evaluation-de-l-etat-actuel-des-peches-dans-les-Caraibes-Infolettre-de-juillet">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/8e-colloque-scientifique-annuel-du-Mecanisme-regional-des-peches-des-Caraibes" title="8e colloque scientifique annuel du Mécanisme régional des pêches des Caraïbes" alt="event">8e colloque scientifique annuel du Mécanisme régional des pêches des Caraïbes</a></h2>
+
+	
+	
+					<p><b>Date : 20-30 juin 2012</b><b>Lieu : Kingstown (Saint-Vincent-et-les Grenadines)</b>
+Ce colloque s´adresse aux experts scientifiques et techniques de la pêche à l´échelon national et régional chargés de conduire la recherche sur la pêche et les activités d´évaluation des pêches, mais aussi de formuler des conseils pour la gestion de la pêche. Les objectifs de cette rencontre se déclinent comme suit : 1) utiliser les données pertinentes disponibles pour évaluer l´état des ressources halieutiques pour lesquelles des conseils de gestion s´avèrent nécessaires ; 2) examiner et interpréter les résultats des analyses de données sur la pêche, en prenant en compte les connaissances locales et traditionnelles et en appréhendant mieux les pêcheries concernées ; 3) formuler des recommandations destinées à améliorer la gestion des pêches ; 4) formuler des recommandations destinées à améliorer les statistiques, la recherche et les évaluations ; et 5) proposer une formation consacrée à la manipulation et l´analyse des données sur la pêche.  Pour de plus amples informations, cliquez <a href="http://goo.gl/XQ08K" target="_blank">ici</a>.</p>
+					<p><span class="date">mercredi 20 juin 2012 - samedi 30 juin 2012</p><div class="cnt">
+	<a class="event" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/8e-colloque-scientifique-annuel-du-Mecanisme-regional-des-peches-des-Caraibes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-poisson-lion-Pterois-volitans-une-espece-invasive-dans-les-eaux-d-Antigua" title="Le poisson lion (Pterois volitans): une espèce invasive dans les eaux d'Antigua" alt="link">Le poisson lion (Pterois volitans): une espèce invasive dans les eaux d'Antigua</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/pterois-volitans/328354-1-eng-GB/pterois-volitans.jpg" rel="lightbox[]" >	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Le Département des pêches d'Antigua-et-Barbuda a <a href="http://www.ab.gov.ag/gov_v4/article_details.php?id=1432&amp;category=38" target="_blank">signalé l'apparition</a> pour la première fois du poisson lion (<i>Pterois volitans</i>), une espèce particulièrement invasive. La confirmation de la présence de cette espèce dans les eaux d'Antigua (elle a été aperçue dans les eaux proches de Saint Kitts en octobre 2010) est troublante étant donné l'impact négatif qu'une telle espèce peut avoir sur les récifs coralliens (un écosystème fragile et menacé), les populations de poissons locales et les communautés de pêcheurs. Le poisson lion est un prédateur vorace capable d'avaler une grande variété de poissons, y compris les poissons de fond d'intérêt commercial et les poissons coralliens qui contribuent à préserver les récifs de corail. Avec peu de prédateurs naturels dans cette zone, l'espèce peut donc proliférer rapidement et s'établir dans les récifs coralliens ou les fonds rocheux des Caraïbes.</p>
+							<p><span class="date">14/06/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-poisson-lion-Pterois-volitans-une-espece-invasive-dans-les-eaux-d-Antigua">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Tracage-genetique-de-la-peche-pour-lutter-contre-la-fraude-sur-les-produits-de-la-mer" title="Traçage génétique de la pêche pour lutter contre la fraude sur les produits de la mer" alt="link">Traçage génétique de la pêche pour lutter contre la fraude sur les produits de la mer</a></h2>
+
+	
+					<p>L’attention des médias sur le mauvais étiquetage des produits de la mer permet de sensibiliser les consommateurs aux pratiques de la pêche illicite, non déclarée et non réglementée. Des chercheurs de l’Université de Bangor et de l’Université de Salford expliquent dans quelle mesure les outils génétiques peuvent promouvoir la durabilité et nous garantir que l’étiquette reflète bien l’origine des poissons que nous achetons. L’auteur se penche également sur la question de la pêche illicite, non déclarée et non réglementée, qui n’est pas prise en compte dans l’évaluation des stocks, et examine les conséquences de la vente de poissons non identifiables (entraînant des cas de fraude et d’erreurs d’étiquetage). Il est possible de lutter contre la substitution illicite d’une espèce par une autre grâce au code-barre génétique fondé sur le gène COI, un processus qui permet d’analyser la séquence de la sous-unité 1 du gène de la cytochrome c oxydase (gène COI). Les résultats ADN des échantillons de poissons peuvent alors être comparés avec les séquences de référence de la bibliothèque du « Barcode of Life Data System » (<a href="http://www.boldsystems.org/" target="_self">www.boldsystems.org</a>), qui contient les séquences ADN de près d’un tiers des espèces répertoriées. La méthode est rentable et fiable. Il est généralement possible d’effectuer un contrôle sans équivoque sur un produit commercialisé en tant qu’espère particulière, n’importe où dans le monde, à l’aide du test code-barre fondé sur le gène COI. (<a href="http://planetearth.nerc.ac.uk/features/story.aspx?id=1217&amp;cookieConsent=A  " target="_blank">NERC Planet Earth Online</a>, 1/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Tracage-genetique-de-la-peche-pour-lutter-contre-la-fraude-sur-les-produits-de-la-mer">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Restauration-de-six-populations-de-poissons-dans-les-eaux-americaines" title="Restauration de six populations de poissons dans les eaux américaines" alt="link">Restauration de six populations de poissons dans les eaux américaines</a></h2>
+
+	
+					<p>L’Agence américaine responsable de l’étude des océans et de l’atmosphère (NOAA) a indiqué en mai dernier le rétablissement de la reproduction naturelle de six populations de poissons en 2011. Selon le Service des pêches de la NOAA, les restrictions relatives aux captures – sujettes à controverses et souvent impopulaires – imposées par le gouvernement ont bel et bien porté leurs fruits. Parmi les populations reconstituées figurent notamment le crabe des neiges de la mer de Bering, le cardeau d’été sur la côte Atlantique, l’églefin du golfe du Maine, le saumon quinnat sur la côte nord de la Californie, le saumon coho confiné aux côtes de l’Etat de Washington et le sébaste rocote du Pacifique. La NOAA est tenue de faire un rapport annuel sur l’état des stocks de poissons dans une zone de 200 miles au large des côtes américaines et les stocks halieutiques épuisés doivent être reconstitués au niveau de leur production équilibrée. De nombreuses espèces de poissons se sont éteintes depuis les années 1980, principalement en raison de la surpêche. Au total, 27 stocks de poissons ont été reconstitués au cours des 11 dernières années, selon l’agence. Cette reconstitution est la preuve que le contrôle des stocks et les restrictions relatives aux captures peuvent contribuer à réduire la surpêche et aider à rétablir la reproduction naturelle des populations de poissons. (<a href="http://green.blogs.nytimes.com/2012/05/14/a-rebound-for-6-fish-populations/ " target="_blank">NYT</a> via <a href="http://e360.yale.edu/digest/record_number_of_fish_stocks_rebuilt_in_2011_noaa_study_says/3465" target="_blank">e360</a>, 14/05/20112)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Restauration-de-six-populations-de-poissons-dans-les-eaux-americaines">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Sciences-halieutiques-aucune-confidentialite-n-est-prise-en-compte" title="Sciences halieutiques : aucune confidentialité n’est prise en compte" alt="link">Sciences halieutiques : aucune confidentialité n’est prise en compte</a></h2>
+
+	
+					<p>Des chercheurs mettent en garde contre le fait que les restrictions européennes relatives à l’accès aux données personnelles menacent la recherche marine et la durabilité des ressources. Une légère modification (passée quasi inaperçue) apportée aux nombreuses règles et réglementations de l’UE empêche les scientifiques spécialisés dans la pêche d’accéder aux données cruciales. Cette révision signifie que certains scientifiques n’ont plus accès aux données brutes utilisées pour assurer la surveillance des bateaux de pêche. Ces informations sont vitales pour assurer une gestion partagée et une surveillance scientifique des stocks de poissons dont la survie est massivement menacée en Europe. Les informations transmises par les systèmes de surveillance des navires de pêche, qui permettent d’enregistrer leur position, leur direction et leur vitesse, sont au cœur du problème. Grâce à ces données, il est possible d’améliorer l’efficacité, le suivi et la surveillance des navires de pêche ; elles permettent ainsi aux scientifiques d’évaluer leurs activités et, par exemple, d’analyser l’impact environnemental dans des zones spécifiques. En 2009, la Commission européenne a adopté une nouvelle réglementation restreignant l’accès à certaines données au sein de l’Union européenne. Il a fallu du temps pour mettre en œuvre cette nouvelle réglementation mais il semble désormais que les données halieutiques détaillées requises par un certain nombre d’universitaires ne soient plus disponibles. (<a href="http://www.nature.com/news/fisheries-science-falls-foul-of-privacy-rules-1.10788" target="_blank">Nature News</a>, 6/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Sciences-halieutiques-aucune-confidentialite-n-est-prise-en-compte">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Cogestion-des-peches-la-solution-la-plus-fiable-pour-lutter-contre-la-surpeche-dans-le-monde" title="Cogestion des pêches : la solution la plus fiable pour lutter contre la surpêche dans le monde" alt="link">Cogestion des pêches : la solution la plus fiable pour lutter contre la surpêche dans le monde</a></h2>
+
+	
+					<p>Une étude menée par la Société pour la conservation de la vie sauvage sur plus de 40 récifs coralliens dans les océans Indien et Pacifique indique que la « cogestion » – un arrangement collaboratif entre communautés locales, groupes de conservation et gouvernements – offre une solution au problème mondial de la surpêche. Dans le cadre d’une étude des pêcheries marines et des récifs coralliens cogérés, la plus importante jamais menée, des chercheurs ont étudié 42 systèmes de récifs dans cinq pays. L’étude a révélé, entre autres, que la cogestion avait véritablement permis de préserver les ressources halieutiques et d’améliorer les moyens de subsistance des communautés dans ces pays. Si plus de la moitié des pêcheurs interrogés estiment que la cogestion est une solution positive pour améliorer leurs moyens de subsistance, 9 % d’entre eux n’en sont pas convaincus. Une comparaison entre récifs cogérés et d’autres récifs a montré que les récifs cogérés avaient moins de risques d’être fortement victimes de surpêche. Le Dr Nick Graham, qui a travaillé sur le projet, a déclaré que « [...] nous avons aussi découvert que, lorsque les pêcheries sont plus proches des gros marchés très demandeurs, elles ont tendance à être dans un mauvais état. Cela suggère que la globalisation des chaînes alimentaires peut compromettre les efforts démocratiques locaux visant à mieux gérer les pêches. On pense généralement que la taille des populations locales constitue le principal facteur de la surpêche – mais nos recherches montrent que l’accès aux marchés mondiaux et la dépendance à l’égard des produits de la mer sont plus importants, et qu’ils constituent des leviers d’action possibles ».(<a href="http://www.eurekalert.org/pub_releases/2012-03/wcs-ost031912.php" target="_blank">EurekAlert</a>, 19/03/2012)</p>
+							<p><span class="date">31/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Cogestion-des-peches-la-solution-la-plus-fiable-pour-lutter-contre-la-surpeche-dans-le-monde">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-developpement-de-la-pisciculture-en-Papouasie-Nouvelle-Guinee" title="Le développement de la pisciculture en Papouasie-Nouvelle-Guinée" alt="link">Le développement de la pisciculture en Papouasie-Nouvelle-Guinée</a></h2>
+
+	
+					<p>Le blog de Malum Nalu présente un rapport succinct sur le programme d´aquaculture en Papouasie-Nouvelle-Guinée. Un membre du Département agriculture et élevage du Livestock Agriculture and Resource Development Centre (ARDC) met en lumière l´intérêt des pêcheurs et identifie les défis auxquels ils sont confrontés, y compris le manque de main-d´ouvre qualifiée, les obstacles au financement et les infrastructures qu´il convient de moderniser.  (<a href="http://malumnalu.blogspot.com/2012/02/inland-fish-farming-in-high-demand.html" target="_blank">Malum Nalu</a>, 02/2012)</p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Le-developpement-de-la-pisciculture-en-Papouasie-Nouvelle-Guinee">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Une-etude-revele-pourquoi-les-pecheurs-poursuivent-leurs-activites-malgre-une-baisse-des-captures" title="Une étude révèle pourquoi les pêcheurs poursuivent leurs activités malgré une baisse des captures" alt="link">Une étude révèle pourquoi les pêcheurs poursuivent leurs activités malgré une baisse des captures</a></h2>
+
+	
+					<p>Des recherches menées par l´Université d´East Anglia (UEA), au Royaume-Uni, remettent en cause des notions clés jusqu´ici admises sur la pauvreté et l´adaptation, en cherchant à savoir pourquoi les pêcheurs poursuivent leurs activités de pêche malgré des captures en diminution. L´équipe de recherche a enquêté auprès de presque 600 pêcheurs dans cinq pays d´Afrique et a pu constater que la moitié des pêcheurs n´étaient pas prêts à changer d´activité - en dépit du fait que les captures ont diminué de 50 %. Les pêcheurs des économies les plus dynamiques et développées avaient moins tendance à abandonner leurs activités que ceux des communautés plus pauvres. Les chercheurs ont noté que les pêcheurs de Madagascar, considéré comme faisant partie des pays pauvres, quitteraient plus volontiers le secteur de la pêche que ceux des Seychelles, un pays plus riche. Ce n´est pas seulement la rentabilité économique qui amène les pêcheurs à prendre une telle décision ; d´autres facteurs sont également pris en considération : la satisfaction vis-à-vis de leur emploi, la tradition familiale, le sens de l´identité, entre autres. Le secteur de la pêche est confronté aux effets combinés de la surpêche, du changement climatique, de la détérioration des écosystèmes et des politiques de conservation. Selon les auteurs, il est essentiel de comprendre comment les pêcheurs s´adaptent face à ces changements pour gérer leurs activités et d´identifier des axes d´intervention pour la mise en ouvre de politiques de conservation.  (<a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=116279&amp;CultureCode=en" target="_blank">Alpha Galileo</a>, 9/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Produits-de-base/Peches/Developpements/Une-etude-revele-pourquoi-les-pecheurs-poursuivent-leurs-activites-malgre-une-baisse-des-captures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/40"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements">1</a></span>
+            
+        <span class="current">2</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/40">3</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/100">6</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/120">7</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Produits-de-base/Peches/Developpements/(offset)/140">8</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":347,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

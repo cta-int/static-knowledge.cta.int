@@ -1,0 +1,2553 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                
+<title>Knowledge for development</title>
+<!--<title>Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="CTA's website knowledge for development supports the policy dialogue on science, technology and innovation (ST&amp;I) for ACP agricultural and rural development" /><meta name="keywords" content="science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/maps/items" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/en"></a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en">Home</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en">Maps</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Items</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+				 
+			
+				<div id="content-item">
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="">					<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyD4dVM8NyDte92juAyhvsPpwzcGGjVo62E" type="text/javascript"></script>
+
+
+<div class="content current">
+<div class="blank-line"></div>
+<h1>S&T organizations for ACP agricultural and rural development</h1>
+<p>
+	One of the features of the Knowledge for development website is a comprehensive list of S&T for development in African, Caribbean and Pacific countries. The organizations in this list have been plotted on this Google map. Each peg provides a direct link to the organizational description of one of the listed S&T organizations.
+</p>
+<br/><br/>
+<div id="map" style="width: 540px; height: 400px"></div>
+</div>
+<br/><br/>&nbsp;<br clear="all"/>
+<script>
+
+	function createMarker(point, number,link) {
+	  var marker = new GMarker(point);
+	  GEvent.addListener(marker, "mouseover", function() {
+	    marker.openInfoWindowHtml(link);
+	  });
+	  return marker;
+	}
+
+
+  if (GBrowserIsCompatible()) {   var map = new GMap2(document.getElementById("map"));
+    map.setCenter(new GLatLng(0, 50), 1);
+    map.addControl(new GSmallMapControl());
+	//map.addControl(new GMapTypeControl());
+	                             
+																																																																																																																																												var latitude="38.892091";
+																			var longitude="-77.024055";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/New-Directions-in-Global-Learning-for-Agricultural-Development'>New Directions in Global Learning for Agricultural Development</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="37.437328";
+																			var longitude="-122.159928";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Anita-Borg-Institute-for-Women-and-Technology'>Anita Borg Institute for Women and Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="40.349662";
+																			var longitude="-74.659708";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Science-Initiative-Group-Institute-for-Advanced-Study-Princeton-University'>Science Initiative Group, Institute for Advanced Study, Princeton University</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.756040";
+																			var longitude="-73.986941";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Scientists-without-Borders'>Scientists without Borders</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Bioenergy-portal'>FAO Bioenergy portal</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.913023";
+																			var longitude="-84.007207";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Global-Gender-and-Climate-Alliance-GGCA'>Global Gender and Climate Alliance (GGCA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="17.385044";
+																			var longitude="78.486671";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Learning-Innovation-Knowledge-LINK'>Learning Innovation Knowledge (LINK)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="42.444586";
+																			var longitude="-76.499259";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Women-Organizing-for-Change-in-Agriculture-and-NRM-WOCAN'>Women Organizing for Change in Agriculture and NRM (WOCAN)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/The-Global-Partnership-Initiative-for-Plant-Breeding-Capacity-Building-GIPB'>The Global Partnership Initiative for Plant Breeding Capacity Building (GIPB)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.8796";
+																			var longitude="12.4957";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/WorldWideScience.org'>WorldWideScience.org</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.195100";
+																			var longitude="0.742772";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Research-Into-Use-RIU-programme'>Research Into Use (RIU) programme</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="45.653630";
+																			var longitude="13.778407";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Group-on-Science-and-Innovation-Policy-GOSIP'>Group on Science and Innovation Policy (GOSIP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.500152";
+																			var longitude="-0.126236";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Evidence-Based-Policy-in-Development-Network-EBPDN'>Evidence-Based Policy in Development Network (EBPDN)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="50.837051";
+																			var longitude="4.367612";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/EDULINK-ACP-EU-Cooperation-Programme-in-Higher-Education'>EDULINK: ACP-EU Cooperation Programme in Higher Education</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.500152";
+																			var longitude="-0.126236";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ClimateChangeCorp.com'>ClimateChangeCorp.com</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="28.635308";
+																			var longitude="77.224960";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ARIDnet-Research-Network-for-Studies-of-Global-Desertification'>ARIDnet: Research Network for Studies of Global Desertification</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.8794";
+																			var longitude="12.4945";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Portal-on-Food-Safety-Animal-and-Plant-Health-IPFSAPH'>International Portal on Food Safety, Animal and Plant Health (IPFSAPH)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Sustainable-Agriculture-and-Rural-Development-SARD'>Sustainable Agriculture and Rural Development (SARD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.441860";
+																			var longitude="-93.361320";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Project-on-GMO-Environmental-Risk-Assessment-Methodologies'>International Project on GMO Environmental Risk Assessment Methodologies</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.579000";
+																			var longitude="120.972600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Users-Perspectives-with-Agricultural-Research-and-Development-UPWARD'>Users’ Perspectives with Agricultural Research and Development (UPWARD) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/UNCTAD-s-Network-of-Centres-of-Excellence'>UNCTAD's Network of Centres of Excellence</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.500152";
+																			var longitude="-0.126236";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ODI-Climate-change'>ODI Climate change</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="52.405838";
+																			var longitude="-1.512661";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Impacts-of-the-IPR-Rules-on-Sustainable-Development-IPDEV'>Impacts of the IPR Rules on Sustainable Development (IPDEV)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="38.8995";
+																			var longitude="-77.0423";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/World-Bank-Carbon-Finance-Unit-CFU'>World Bank Carbon Finance Unit (CFU) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="38.627522";
+																			var longitude="-90.198410";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Laboratory-for-Tropical-Agricultural-Biotechnology-ILTAB'>International Laboratory for Tropical Agricultural Biotechnology (ILTAB)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="52.091262";
+																			var longitude="5.122748";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Face-Foundation'>Face Foundation </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="50.8793";
+																			var longitude="4.70214";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ENCOFOR'>ENCOFOR </a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="-1.27464";
+																			var longitude="36.7965";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/CGIAR-Gender-and-Diversity-Program'>CGIAR Gender and Diversity Program</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="55.950254";
+																			var longitude="-3.187606";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/CDM-Capacity.org'>CDM Capacity.org </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/UNIDO-Youth-Entrepreneurship'>UNIDO Youth Entrepreneurship</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="45.65363";
+																			var longitude="13.778407";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Third-World-Organization-for-Women-in-Science-TWOWS'>Third World Organization for Women in Science (TWOWS) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.311053";
+																			var longitude="-72.930416";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Online-Access-to-Research-in-the-Environment-OARE-initiative'>Online Access to Research in the Environment (OARE) initiative</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Energy-and-Environmental-Technology'>FAO Energy and Environmental Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Climate-Change'>FAO: Climate Change </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Soil-Carbon-Sequestration-Programme'>FAO: Soil Carbon Sequestration Programme</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Research-and-Extension-Portal'>FAO Research and Extension Portal</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="57.047225";
+																			var longitude="9.920104";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Global-Network-for-the-Economics-of-Learning-Innovation-and-Competence-Building-Systems-GLOBELICS'>Global Network for the Economics of Learning, Innovation, and Competence Building Systems (GLOBELICS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="48.902695";
+																			var longitude="2.304080";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/L-Oreal-UNESCO-For-Women-in-Science-Partnership'>L’Oréal-UNESCO For Women in Science Partnership</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Bioenergy-Platform-IBEP'>International Bioenergy Platform (IBEP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="3.44958";
+																			var longitude="-76.5115";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/CIAT-System-of-Drought-Insurance-for-Poverty-Alleviation-in-Rural-Areas'>CIAT System of Drought Insurance for Poverty Alleviation in Rural Areas</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Biotechnology-Documents-webpage-updated'>FAO Biotechnology Documents webpage updated </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.756040";
+																			var longitude="-73.986941";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/SCOPE-2015'>SCOPE 2015</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																												var latitude="-35.288392";
+																			var longitude="149.11983";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ACIPA-Australian-Centre-for-Intellectual-Property-in-Agriculture'>ACIPA - Australian Centre for Intellectual Property in Agriculture</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="51.500152";
+																			var longitude="-0.126236";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Young-Professionals-Platform-for-Agricultural-Research-for-Development-YPARD'>Young Professionals' Platform for Agricultural Research for Development (YPARD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.813946";
+																			var longitude="-1.294785";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/DFID-s-Research-for-Development-portal'>DFID’s Research for Development portal</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="3.423315";
+																			var longitude="-76.524536";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/CGIAR-PRGA'>CGIAR PRGA </a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																									var latitude="39.905556";
+																			var longitude="116.395833";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Living-with-Deserts-New-South-South-Partnership-Launched'>Living with Deserts: New South-South: Partnership Launched</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="49.008085";
+																			var longitude="8.403756";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ITAS'>ITAS</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.438355";
+																			var longitude="-80.001983";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Envirolink'>Envirolink</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="50.837051";
+																			var longitude="4.367612";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Pesticides-Initiative-Programme-PIP'>Pesticides Initiative Programme (PIP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="48.856667";
+																			var longitude="2.350987";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Europe-Africa-Caribbean-Pacific-Liaison-Committee-COLEACP'>Europe-Africa-Caribbean-Pacific Liaison Committee (COLEACP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.964641";
+																			var longitude="5.662361";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Agrifood-Food-Chains-and-Networks'>Agrifood Food Chains and Networks </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="-77.024055";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Intellectual-Property-Alliance'>International Intellectual Property Alliance</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Genetic-Engineering-Intellectual-Property-Rights-Resource-Center-IATP'>Genetic Engineering &amp; Intellectual Property Rights Resource Center (IATP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.4208";
+																			var longitude="-0.568421";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/BioNET-International'>BioNET International</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="-77.024055";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Consultative-Group-on-International-Agricultural-Research-CGIAR'>Consultative Group on International Agricultural Research (CGIAR)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-6.211544";
+																			var longitude="106.845172";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Center-for-International-Forestry-Research-CIFOR'>Center for International Forestry Research (CIFOR)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="36.206700";
+																			var longitude="37.143600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Center-for-Agricultural-Research-in-the-Dry-Areas-ICARDA'>International Center for Agricultural Research in the Dry Areas (ICARDA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="19.418192";
+																			var longitude="-99.131098";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Center-for-the-Improvement-of-Maize-and-Wheat-CIMMYT'>International Center for the Improvement of Maize and Wheat (CIMMYT)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="3.423315";
+																			var longitude="-76.524536";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Centro-Internacional-de-Agricultura-Tropical-CIAT'>Centro Internacional de Agricultura Tropical (CIAT)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="38.892091";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Food-Policy-Research-Institute-IFPRI'>International Food Policy Research Institute (IFPRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="7.3917";
+																			var longitude="3.8923";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Institute-of-Tropical-Agriculture-IITA'>International Institute of Tropical Agriculture (IITA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.274359";
+																			var longitude="36.813106";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Livestock-Research-Institute-ILRI'>International Livestock Research Institute (ILRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Bioversity-International-formerly-IPGRI'>Bioversity International (formerly IPGRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-12.093084";
+																			var longitude="-77.046489";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Potato-Center-CIP'>International Potato Center (CIP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.579000";
+																			var longitude="120.972600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Rice-Research-Institute-IRRI'>International Rice Research Institute (IRRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="6.91383";
+																			var longitude="79.8585";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Water-Management-Institute-IWMI'>International Water Management Institute (IWMI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.274359";
+																			var longitude="36.813106";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/World-Agroforestry-Centre-International-Center-for-Research-on-Agroforestry-ICRAF'>World Agroforestry Centre (International Center for Research on Agroforestry, ICRAF)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.41924";
+																			var longitude="100.305";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/WorldFish-Center-International-Center-for-Living-Aquatic-Resources-Management-ICLARM'>WorldFish Center (International Center for Living Aquatic Resources Management, ICLARM)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="6.91401";
+																			var longitude="79.8565";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Water-Management-Institute-IWMI-Comprehensive-Assessment-of-Water-Management-in-Agriculture-CAWMA2'>International Water Management Institute (IWMI) - Comprehensive Assessment of Water Management in Agriculture (CAWMA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="-77.024055";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/World-Foundation-for-Environment-and-Development-WFED'>World Foundation for Environment and Development (WFED)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/United-Nations-Institute-for-Research-on-Social-Development-UNRISD'>United Nations Institute for Research on Social Development (UNRISD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/United-Nations-Conference-on-Trade-and-Development-UNCTAD-Science-and-Technology-for-Development-Network-STDev'>United Nations Conference on Trade and Development (UNCTAD) Science and Technology for Development Network (STDev)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/UN-Food-and-Agriculture-Organization-FAO'>UN Food and Agriculture Organization (FAO)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="45.65363";
+																			var longitude="13.778407";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Third-World-Network-of-Scientific-Organizations-TWNSO'>Third World Network of Scientific Organizations (TWNSO)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.42159";
+																			var longitude="100.311";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Third-World-Network'>Third World Network</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="45.653630";
+																			var longitude="13.778407";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Third-World-Academy-of-Sciences-TWAS'>Third World Academy of Sciences (TWAS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="59.332788";
+																			var longitude="18.064488";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Stockholm-Environment-Institute-SEI'>Stockholm Environment Institute (SEI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.756040";
+																			var longitude="-73.986941";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Special-Unit-for-Technical-Cooperation-among-Developing-Countries-TCDC'>Special Unit for Technical Cooperation among Developing Countries (TCDC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.203810";
+																			var longitude="6.139959";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/South-Centre'>South Centre</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="46.420659";
+																			var longitude="6.269308";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/SEED-Initiative-Supporting-Entrepreneurs-in-Environment-and-Development'>SEED Initiative - Supporting Entrepreneurs in Environment and Development</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.500152";
+																			var longitude="-0.126236";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/SciDev.Net'>SciDev.Net</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="6.91401";
+																			var longitude="79.8565";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Water-Management-Institute-IWMI-Comprehensive-Assessment-of-Water-Management-in-Agriculture-CAWMA'>International Water Management Institute (IWMI) - Comprehensive Assessment of Water Management in Agriculture (CAWMA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="50.879268";
+																			var longitude="4.702139";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Society-for-Horticultural-Science-IHIS'>International Society for Horticultural Science (IHIS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.8305";
+																			var longitude="12.4883";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/International-Fund-for-Agricultural-Development-IFAD'>International Fund for Agricultural Development (IFAD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.964641";
+																			var longitude="5.662361";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/ICRA-International-Centre-for-development-oriented-Research-in-Agriculture'>ICRA -  International Centre for development oriented Research in Agriculture</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																									var latitude="38.8899";
+																			var longitude="-77.0305";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/IAAST-International-Assessment-of-Agricultural-Science-and-Technology'>IAAST: International Assessment of Agricultural Science and Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.756040";
+																			var longitude="-73.986941";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Group-of-77-G77'>Group of 77 (G77)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																											var latitude="41.387917";
+																			var longitude="2.169919";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Genetic-Resources-Action-International-GRAIN'>Genetic Resources Action International (GRAIN)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="41.895466";
+																			var longitude="12.482324";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/FAO-Technology-for-Agriculture-TECA'>FAO: Technology for Agriculture (TECA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="33.675100";
+																			var longitude="73.094600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Commission-on-Science-and-Technology-for-Sustainable-Development-in-the-South-COMSATS'>Commission on Science and Technology for Sustainable Development in the South (COMSATS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.8995";
+																			var longitude="-77.0423";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/CGIAR-ICT-KM-Program'>CGIAR ICT-KM Program</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="48.856667";
+																			var longitude="2.350987";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Centre-de-Cooperation-Internationale-en-Recherche-Agronomique-pour-le-Developpement-CIRAD'>Centre de Coopération Internationale en Recherche Agronomique pour le Développement (CIRAD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="38.9087";
+																			var longitude="-77.0409";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/International/Center-for-Global-Development'>Center for Global Development</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								var latitude="-33.867195";
+																			var longitude="151.207131";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Pestnet'>Pacific: Pestnet</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="37.772050";
+																			var longitude="-122.214378";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Institute-Climate-impacts-and-adaptation-initiative'>Pacific Institute: Climate impacts and adaptation initiative</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-18.142866";
+																			var longitude="178.431099";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Biofuel'>Pacific Biofuel </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-18.142866";
+																			var longitude="178.431099";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Biofuel-Network'>Pacific Biofuel Network</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="35.655952";
+																			var longitude="139.755047";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/AP-Net-Asia-Pacific-network-on-climate-change'>AP-Net (Asia-Pacific network on climate change)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.271456";
+																			var longitude="-0.393290";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/BioNET-PACINET'>BioNET-PACINET</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-18.142866";
+																			var longitude="178.431099";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/University-of-the-South-Pacific-USP'>University of the South Pacific (USP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-18.142866";
+																			var longitude="178.431099";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/South-Pacific-Applied-Geoscience-Commission-SOPAC'>South Pacific Applied Geoscience Commission (SOPAC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="40.7557";
+																			var longitude="-73.9648";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Small-Island-Developing-States-Network-SIDSnet'>Small Island Developing States Network (SIDSnet)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-22.2727";
+																			var longitude="166.447";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Secretariat-of-the-Pacific-Community-SPC'>Secretariat of the Pacific Community (SPC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-6.619333";
+																			var longitude="146.998732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Papua-New-Guinea-National-Agricultural-Research-Institute'>Papua New Guinea : National Agricultural Research Institute</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-18.142866";
+																			var longitude="178.431099";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Islands-Forum-Secretariat'>Pacific Islands Forum Secretariat</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-41.286509";
+																			var longitude="174.776233";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Global-focus-Aotearoa'>Global focus Aotearoa </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-33.867195";
+																			var longitude="151.207131";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Pacific-Academy-of-Sciences'>Pacific Academy of Sciences</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-13.854";
+																			var longitude="-171.786";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Institute-for-Research-Training-and-Extension-in-Agriculture-and-Rural-Development-IRETA'>Institute for Research Training and Extension in Agriculture and Rural Development (IRETA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="28.637805";
+																			var longitude="77.224604";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/ENRAP-Knowledge-Networking-for-Rural-Development-in-Asia-Pacific-Region'>ENRAP (Knowledge Networking for Rural Development in Asia/Pacific Region)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-6.212671";
+																			var longitude="106.846117";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Asia-Pacific-Gender-Equity-in-Science-and-Technology-APGEST'>Asia Pacific Gender Equity in Science and Technology (APGEST)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="13.757339";
+																			var longitude="100.502002";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Asia-Pacific-Association-of-Agricultural-Research-Institutions-APAARI'>Asia Pacific Association of Agricultural Research Institutions (APAARI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																									var latitude="32.320708";
+																			var longitude="-106.771918";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific/Asian-and-Pacific-Centre-for-Transfer-of-Technology-APCTT'>Asian and Pacific Centre for Transfer of Technology (APCTT)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																																																																																																																																																						var latitude="17.04722";
+																			var longitude="-88.739838";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Caribbean-Community-Climate-Change-Centre'>Caribbean Community Climate Change Centre</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.434646";
+																			var longitude="-61.319033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Trinidad-and-Tobago-Foresight-and-Innovation-Network-TTFI'>Trinidad and Tobago Foresight and Innovation Network (TTFI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.459552";
+																			var longitude="-61.214958";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/The-Caribbean-Youth-Science-Forum-CYSF'>The Caribbean Youth Science Forum (CYSF)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="17.992226";
+																			var longitude="-76.791566";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Jamaica-Agricultural-Support-Services-Project-ASSP'>Jamaica: Agricultural Support Services Project (ASSP) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="29.919312";
+																			var longitude="-80.102332";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Bahamas-Caribbean-Marine-Research-Center'>Bahamas:Caribbean Marine Research Center</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.638572";
+																			var longitude="-61.396033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/CARDI-Caribbean-Agricultural-Research-and-Development-Institute'>CARDI: Caribbean Agricultural Research and Development Institute</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="18.012481";
+																			var longitude="-76.742840";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Caribbean-Academy-of-Sciences'>Caribbean Academy of Sciences</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="6.80458";
+																			var longitude="-58.154826";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Caribbean-Community-and-Common-Market-CARICOM'>Caribbean Community and Common Market,CARICOM</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="18.012481";
+																			var longitude="-76.742840";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Cariscience'>Cariscience</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.459552";
+																			var longitude="-61.214958";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/CCST-Caribbean-Council-for-Science-and-Technology'>CCST: Caribbean Council for Science and Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.434646";
+																			var longitude="-61.319033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Inter-American-Institute-for-Cooperation-on-Agriculture-IICA'>Inter-American Institute for Cooperation on Agriculture (IICA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="17.992226";
+																			var longitude="-76.791566";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Jamaica-Scientific-Research-Council-SRC'>Jamaica: Scientific Research Council (SRC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="18.012481";
+																			var longitude="-76.742840";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Jamaica-University-of-the-West-Indies-UWI'>Jamaica: University of the West Indies (UWI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.459552";
+																			var longitude="-61.214958";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/Trinidad-and-Tobago-National-Institute-of-Higher-Education-Research-Science-and-Technology-NIHERST'>Trinidad and Tobago: National Institute of Higher Education, Research, Science and Technology  (NIHERST)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="10.661030";
+																			var longitude="-61.479590";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean/UN-Economic-Commission-for-Latin-America-and-the-Caribbean-ECLAC-Science-and-Technology-Unit'>UN Economic Commission for Latin America and the Caribbean (ECLAC), Science and Technology Unit</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																																																																																																																																																																																																																																																																		var latitude="39.962794";
+																			var longitude="-83.001823";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/BioCassava-Plus'>BioCassava Plus</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Sub-Saharan-Africa-Challenge-Program-SSA-CP'>Sub-Saharan Africa Challenge Program (SSA CP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.501344";
+																			var longitude="-0.126715";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Network-for-the-Coordination-and-Advancement-of-sub-Saharan-Africa-EU-Science-Technology-Cooperation-CAAST-Net'>Network for the Coordination and Advancement of sub-Saharan Africa-EU Science &amp; Technology Cooperation (CAAST-Net)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="52.405838";
+																			var longitude="-1.512803";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Henry-Doubleday-Research-Association-HDRA'>Henry Doubleday Research Association (HDRA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-6.823000";
+																			var longitude="39.269579";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Pan-African-START-Secretariat-PASS'>Pan African START Secretariat (PASS) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="51.501344";
+																			var longitude="-0.126715";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Coordination-and-Advancement-of-sub-Saharan-Africa-EU-Science-and-Technology-Cooperation-Network-CAAST-Net'>Coordination and Advancement of sub-Saharan Africa-EU Science and Technology Cooperation Network (CAAST-Net)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Science-News-Service-ASNS'>African Science News Service (ASNS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="50.850021";
+																			var longitude="5.687121";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/The-governance-of-science-technology-and-innovation'>The governance of science technology and innovation</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="36.206715";
+																			var longitude="37.143572";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Oasis'>Oasis</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="19.539231";
+																			var longitude="-99.033101";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/CGIAR-Generation-Challenge-Programme'>CGIAR Generation Challenge Programme</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Platform-for-African-European-Partnerships-on-Agricultural-Research-for-Development-PAEPARD'>Platform for African–European Partnerships on Agricultural Research for Development (PAEPARD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-26.194540";
+																			var longitude="28.034011";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/AfricaArray'>AfricaArray</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="48.139127";
+																			var longitude="11.579908";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Competence-Platform-on-Energy-Crop-and-Agroforestry-Systems-for-Arid-and-Semi-arid-Ecosystems-Africa-COMPETE'>Competence Platform on Energy Crop and Agroforestry Systems for Arid and Semi-arid Ecosystems – Africa (COMPETE)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="50.864406";
+																			var longitude="4.693481";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Biopact'>Biopact</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="51.501344";
+																			var longitude="-0.126715";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/ODI-Africa-Web-Portal'>ODI Africa Web Portal</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="0.314309";
+																			var longitude="32.572868";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/RUFORUM'>RUFORUM</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Network-of-African-Science-Academies-NASAC'>Network of African Science Academies (NASAC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Alliance-for-a-Green-Revolution-in-Africa-AGRA'>Alliance for a Green Revolution in Africa (AGRA) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="-77.024250";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Science-Academy-Development-Initiative-ASADI'>African Science Academy Development Initiative (ASADI) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="0.314187";
+																			var longitude="32.5729";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Information-Communication-and-Technologies-for-Africa-Rural-Development-ICTARD'>Information Communication and Technologies for Africa Rural Development (ICTARD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Network-of-Scientific-and-Technology-Institutions-ANSTI'>African Network of Scientific and Technology Institutions (ANSTI) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Ministerial-Council-on-Science-and-Technology-AMCOST'>African Ministerial Council on Science and Technology (AMCOST)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Forest-Research-Network-AFORNET'>African Forest Research Network (AFORNET)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.332066";
+																			var longitude="-4.030600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Development-Bank-ADB'>African Development Bank (ADB)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.2762";
+																			var longitude="36.7965";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Academy-of-Sciences-for-the-Developing-World-Sub-Saharan-Africa-Subsite-TWAS-ROSSA'>Academy of Sciences for the Developing World - Sub-Saharan Africa Subsite (TWAS-ROSSA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="0.314269";
+																			var longitude="32.5729";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Agricultural-Capital-AAC'>African Agricultural Capital (AAC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="48.8566";
+																			var longitude="2.35097";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/UNESCO-cooperation-with-NEPAD-in-Science-and-Technology'>UNESCO cooperation with NEPAD in Science and Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.022764";
+																			var longitude="38.746741";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/UNECA-Committee-on-Natural-Resources-and-Science-and-Technology'>UNECA: Committee on Natural Resources and Science and Technology</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.022764";
+																			var longitude="38.746741";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/UNECA-Science-and-Technology-Network-ESTNET'>UNECA Science and Technology Network (ESTNET)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/UN-Integrated-Regional-Information-Networks-OCHA-IRIN'>UN Integrated Regional Information Networks - OCHA IRIN</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/NEPAD-African-Forum-on-Science-and-Technology-for-Development-AFSTD'>NEPAD: African Forum on Science and Technology for Development (AFSTD)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/International-Crops-Research-Institute-for-the-Semi-Arid-Tropics-ICRISAT'>International Crops Research Institute for the Semi-Arid Tropics (ICRISAT)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/Association-of-African-Universities-AAU'>Association of African Universities (AAU)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Technology-Policy-Studies-Network-ATPS'>African Technology Policy Studies Network (ATPS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.892091";
+																			var longitude="-77.024250";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-scientific-societies-and-associations'>African scientific societies and associations</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Economic-Research-Consortium-AERC'>African Economic Research Consortium (AERC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-17.821952";
+																			var longitude="31.049207";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Conservation-Tillage-ACT-Network'>African Conservation Tillage (ACT) Network</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Centre-for-Technology-Studies-ACTS'>African Centre for Technology Studies (ACTS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.275657";
+																			var longitude="36.814732";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/African-Academy-of-Sciences-AAS'>African Academy of Sciences (AAS)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="38.8983";
+																			var longitude="-77.0303";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Africa-wide-S-T-organizations/AfricaLink'>AfricaLink</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																																																																																																																																																																																																																																var latitude="1.385343";
+																			var longitude="32.293279";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Uganda-Nile-Basin-Reforestation-BioCarbon-Fund'>Uganda: Nile Basin Reforestation (BioCarbon Fund) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="0.314309";
+																			var longitude="32.572868";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Uganda-Millennium-Science-Initiative-Project'>Uganda: Millennium Science Initiative Project</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-National-Advisory-Council-on-Innovation-NACI'>South Africa: National Advisory Council on Innovation (NACI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-Foundation-for-Education-Science-and-Technology-FEST'>South Africa: Foundation for Education, Science and Technology (FEST)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-Council-for-Scientific-and-Industrial-Research-CSIR'>South Africa: Council for Scientific and Industrial Research (CSIR)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-Africa-Bio'>South Africa: Africa-Bio</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.508706";
+																			var longitude="-14.455281";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Senegal-ISRA-Institut-senegalais-de-recherches-agricoles'>Sénégal : ISRA Institut sénégalais de recherches agricoles</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.730278";
+																			var longitude="-17.484150";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Senegal-FNRAA-Fonds-National-de-Recherches-Agricoles-et-Agro-alimentaires'>Sénégal : FNRAA (Fonds National de Recherches Agricoles et Agro-alimentaires)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.686878";
+																			var longitude="-17.451975";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Senegal-Centre-de-suivi-ecologique-CSE'>Sénégal : Centre de suivi écologique (CSE)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.080041";
+																			var longitude="7.475370";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Nigeria-Federal-Ministry-of-Science-and-Technology-FMST'>Nigeria: Federal Ministry of Science and Technology (FMST)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-22.594971";
+																			var longitude="17.081846";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Namibia-Namibian-Biotechnology-Alliance-NABA'>Namibia: Namibian Biotechnology Alliance (NABA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-20.227248";
+																			var longitude="57.491173";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Mauritius-Mauritius-Sugar-Industry-Research-Institute-MSIRI'>Mauritius: Mauritius Sugar Industry Research Institute (MSIRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="12.653084";
+																			var longitude="-7.986443";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Mali-Institut-d-economie-rurale-IER'>Mali : Institut d'économie rurale (IER)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-13.366622";
+																			var longitude="49.716659";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Madagascar-Centre-National-de-Recherche-Appliquee-au-Developpement-Rural'>Madagascar : Centre National de Recherche Appliquée au Développement Rural</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-1.2727";
+																			var longitude="36.7937";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Kenya-Kenya-Agricultural-Research-Institute-KARI'>Kenya: Kenya Agricultural Research Institute (KARI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-ESASTAP'>South Africa: ESASTAP</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-28.941079";
+																			var longitude="30.825846";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/South-Africa-African-Centre-for-Crop-Improvement-ACCI'>South Africa: African Centre for Crop Improvement (ACCI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Ghana-Science-and-Technology-Policy-Research-Institute-STEPRI'>Ghana: Science and Technology Policy Research Institute (STEPRI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Ghana-Council-for-Scientific-and-Industrial-Research-CSIR'>Ghana: Council for Scientific and Industrial Research (CSIR)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.332066";
+																			var longitude="-4.030600";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Cote-d-Ivoire-Reseau-Technique-de-la-Francophonie-ISYSPHYT'>Côte d’Ivoire : Réseau Technique de la Francophonie (ISYSPHYT)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="5.332066";
+																			var longitude="´-4.030600°";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Ivory-Coast-National-Agricultural-Research-Centre'>Ivory Coast: National Agricultural Research Centre</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-3.373056";
+																			var longitude="29.918886";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Burundi-Agricultural-Research-Institute-of-Burundi'>Burundi : Agricultural Research Institute of Burundi</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="12.227645";
+																			var longitude="-1.567061";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Burkina-Faso-Institut-de-l-Environnement-et-des-Recherches-Agricoles-INERA'>Burkina Faso : Institut de l'environnement et des recherches agricoles (INERA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-22.342498";
+																			var longitude="24.662121";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Botswana-Botswana-Technology-Centre-BOTEC'>Botswana: Botswana Technology Centre (BOTEC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																												var latitude="9.080041";
+																			var longitude="7.475370";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Nigeria-National-Centre-for-Genetic-Resources-Biotechnology-NACGRAB'>Nigeria: National Centre for Genetic Resources &amp; Biotechnology (NACGRAB)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.537044";
+																			var longitude="-13.678478";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Guinee-L-Institut-de-recherche-agronomique-de-Guinee-IRAG'>Guinée : L'Institut de recherche agronomique de Guinée (IRAG)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-0.803689";
+																			var longitude="11.609444";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/National-S-T-organizations/Gabon-Institut-de-Recherches-Agronomiques-et-Forestieres-IRAF'>Gabon : Institut de Recherches Agronomiques et Forestières (IRAF)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																													var latitude="5.555675";
+																			var longitude="-0.196033";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/West-Africa-Agricultural-Productivity-Program-WAAPP'>West Africa Agricultural Productivity Program (WAAPP) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/South-African-Agency-for-Science-and-Technology-Advancement-SAASTA'>South African Agency for Science and Technology Advancement (SAASTA) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-25.731176";
+																			var longitude="28.218738";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/South-Africa-ComMark-Trust'>South-Africa: ComMark Trust </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-33.924681";
+																			var longitude="18.427929";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Southern-African-Research-and-Innovation-Management-Association-SARIMA'>Southern African Research and Innovation Management Association (SARIMA)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-33.924681";
+																			var longitude="18.427929";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Association-of-South-African-Women-in-Science-and-Engineering-SA-WISE'>Association of South African Women in Science and Engineering (SA WISE) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.022764";
+																			var longitude="38.746741";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Research-inspired-Policy-and-Practice-Learning-in-Ethiopia-and-the-Nile-Region-RiPPLE'>Research-inspired Policy and Practice Learning in Ethiopia and the Nile Region (RiPPLE) </a>";
+				map.addOverlay(createMarker(point,4,link));
+																																								var latitude="-17.821952";
+																			var longitude="31.049207";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Southern-Africa-Research-and-Documentation-Centre-SARDC'>Southern Africa Research and Documentation Centre (SARDC)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="12.653084";
+																			var longitude="-7.986443";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Institut-du-Sahel-INSAH'>Institut du Sahel (INSAH)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="14.686878";
+																			var longitude="-17.451975";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Conseil-ouest-et-centre-africain-pour-la-recherche-et-le-developpement-agricoles-CORAF'>Conseil ouest et centre africain pour la recherche et le développement agricoles (CORAF)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="6.350500";
+																			var longitude="2.433174";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Centre-du-riz-pour-l-Afrique-ADRAO'>Centre du riz pour l’Afrique (ADRAO)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="4.0445";
+																			var longitude="9.6977";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Centre-de-recherches-regionales-sur-bananiers-et-plantains-CRBP'>Centre de recherches régionales sur bananiers et plantains (CRBP)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="0.086947";
+																			var longitude="32.469121";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/ASARECA-Association-for-Strengthening-Agricultural-Research-in-Eastern-and-Central-Africa'>ASARECA: Association for Strengthening Agricultural Research in Eastern and Central Africa</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="-33.727139";
+																			var longitude="26.573391";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/African-Centre-for-Biosafety-ACB'>African Centre for Biosafety (ACB)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																																																																																																																																																																																																																																																				var latitude="5.54466";
+																			var longitude="-0.206893";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/CGIAR-FARA-Sub-Saharan-Africa-Challenge-Program'>CGIAR/FARA Sub-Saharan Africa Challenge Program</a>";
+				map.addOverlay(createMarker(point,4,link));
+																							var latitude="9.058051";
+																			var longitude="7.489053";
+								
+							
+				var point = new GLatLng(latitude,longitude)
+				var link="<a href='/Dossiers/CTA-and-S-T/S-T-organisations/Africa/Regional-S-T-organizations/Nelson-Mandela-Institution-NMI'>Nelson Mandela Institution (NMI)</a>";
+				map.addOverlay(createMarker(point,4,link));
+																													      }</script>
+
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+				
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/en/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":713,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

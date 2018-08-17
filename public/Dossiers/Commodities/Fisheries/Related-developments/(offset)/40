@@ -1,0 +1,1389 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Related developments / Fisheries / Commodities / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="/" title="Knowledge front page"/>
+<link rel="Index" href="/"/>
+<link rel="Search" href="/content/search" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/layout/set/print/Dossiers/Commodities/Fisheries/Related-developments/(offset)/40" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Produits-de-base/Peches/Developpements">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/Commodities">Commodities</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/Commodities/Fisheries">Fisheries</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Related developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Related developments</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Too-Big-To-Ignore-A-global-partnership-for-small-scale-fisheries-research" title="‘Too Big To Ignore’: A global partnership for small-scale fisheries research" alt="link">‘Too Big To Ignore’: A global partnership for small-scale fisheries research</a></h2>
+
+	
+					<p>‘Too Big to Ignore’ is a new research network and knowledge mobilization partnership to promote and revitalize small-scale fisheries in Newfoundland and Labrador, Canada, and around the world. The first goal of the network is to enhance the understanding of the real contribution of small-scale fisheries to food security, nutrition, sustaining livelihoods, poverty alleviation, wealth generation and trade, as well as the impacts and implications of global change processes such as urbanization, globalization, migration, climate change, aquaculture, and communication technology on small-scale fisheries. The second goal is to create an innovative and interactive web platform, a Small-scale Fisheries Information System (SFIS), for global and local analysis of small-scale fisheries and their contributions to the broader society. Currently, the characteristics of small-scale fisheries are difficult to capture because of the lack of official statistics, even though small-scale fisheries account for about 90% of the 560 million people who depend on fisheries.</p>
+							<p><span class="date">28/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Too-Big-To-Ignore-A-global-partnership-for-small-scale-fisheries-research">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/CRFM-scientific-meeting-assesses-state-of-Caribbean-fisheries" title="CRFM scientific meeting assesses state of Caribbean fisheries " alt="link">CRFM scientific meeting assesses state of Caribbean fisheries </a></h2>
+
+	
+					<p>The Caribbean Regional Fisheries Mechanism's (CRFM) scientific body evaluated major fisheries in the region to determine whether natural fish populations remain healthy and where fisheries management controls are necessary. The eighth annual Scientific Meeting met from 20-30 June 2012, in Kingstown, St. Vincent and the Grenadines, with fisheries scientists from 12 of 17 CRFM member States participating. The Meeting considered a subregional management plan for flying fish in the Eastern Caribbean and also tested new data analysis and decision-making tools that could allow the region's scientists a broader data set for evaluations. Among other things, the new tools are intended to take into account risks posed by climate change and to better assess potential impact of proposed management measures on the well-being and livelihoods of affected communities.(via <a href="http://sids-l.iisd.org/news/crfm-scientific-meeting-assesses-state-of-caribbean-fisheries/%20%20" target="_blank">IISD RS Sources, SIDS Policy&amp;Practice</a>, 30/6/2012)</p>
+							<p><span class="date">16/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/CRFM-scientific-meeting-assesses-state-of-Caribbean-fisheries">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/A-beginner-s-guide-to-using-remote-sensing-for-offshore-tuna-fishing" title="A beginner’s guide to using remote sensing for offshore tuna fishing" alt="link">A beginner’s guide to using remote sensing for offshore tuna fishing</a></h2>
+
+	
+					<p>This <a href="http://www.spc.int/images/publications/en/Divisions/Fisheries/en-guide-using-remote-sensing.pdf" target="_blank">guide</a> was designed to give a very basic knowledge of remote sensing to offshore tuna fishermen.</p>
+							<p><span class="date">12/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/A-beginner-s-guide-to-using-remote-sensing-for-offshore-tuna-fishing">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Feeding-cattle-algae-co-products" title="Feeding cattle algae co-products" alt="link">Feeding cattle algae co-products</a></h2>
+
+	
+					<p>Researchers in the US conducted a study where co-products of the production of biofuel from algae were fed with both medium and low-quality forages. Surprisingly, the steers used in the study were not picky eaters as they widely accepted the algal residue in a processed form. The algae co-product is what is left-over after oil extraction and is in powder form. The scientists said the algae feed performed much better than expected compared to cottonseed and that additional research is required to fully explore the value of feeding algae to grazing cattle. (<a href="http://www.allaboutfeed.net/news/research-feeding-cattle-algae-co-products-13292.html%20%20" target="_blank">AllAboutFeed</a>, 4/6/2012)</p>
+							<p><span class="date">12/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Feeding-cattle-algae-co-products">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Ban-on-fish-discards-approved-by-the-European-Union" title="Ban on fish discards approved by the European Union" alt="link">Ban on fish discards approved by the European Union</a></h2>
+
+	
+					<p>The European Union has decided to end the controversial practice of allowing fishermen to select high-value species from their nets and then discard the remainder of dead fish, a practice that leads to the destruction of an estimated 1 million tons of edible fish a year in EU waters. The EU Council announced its intention to implement a discard ban, but did not set a firm date, saying discard bans for some species could be phased in as late as 2020. Although some environmental groups praised the ban, others said that allowing the practice of fish discards to continue for another eight years could be too late to save some severely overfished species, such as plaice and sole. (<a href="http://e360.yale.edu/digest/ban_on_fish_discards__is_approved_by_the_european_union/3508/" target="_blank">e360</a>, 13/6/2012)</p>
+							<p><span class="date">12/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Ban-on-fish-discards-approved-by-the-European-Union">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/Dossiers/Commodities/Fisheries/Related-developments/Caribbean-Regional-Fisheries-Mechanism-eighth-annual-scientific-meeting" title="Caribbean Regional Fisheries Mechanism eighth annual scientific meeting" alt="event">Caribbean Regional Fisheries Mechanism eighth annual scientific meeting</a></h2>
+
+	
+	
+					<p><b>Date: 20-30 June 2012</b><b>Venue: Kingstown, St. Vincent and the Grenadines</b>This meeting is meant for national and regional technical and scientific fishery experts who have responsibility for conducting fishery research and fishery assessment activities and for formulating fisheries management advice. The objectives of the meeting are: (i) to use the available and relevant data to access the status of those fishery resources for which management advice is needed, (ii) to discuss, and interpret the results of completed fishery data analyses, taking into account local and traditional knowledge and understanding of the fisheries concerned, (iii) to make recommendations for management of the fisheries investigated for completed assessments, (iv) to make recommendations for improvements in statistics, research and assessments, and (v) to provide training in fishery data manipulation and analysis. More information <a href="http://www.caricom-fisheries.com/LinkClick.aspx?fileticket=8r4S7PSEfFg%3d&amp;tabid=57" target="_blank">here</a>.</p>
+					<p><span class="date">Wednesday 20 June 2012 - Saturday 30 June 2012</p><div class="cnt">
+	<a class="event" href="/Dossiers/Commodities/Fisheries/Related-developments/Caribbean-Regional-Fisheries-Mechanism-eighth-annual-scientific-meeting">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Invasive-lionfish-Pterois-volitans-sighted-In-Antigua-waters" title="Invasive lionfish (Pterois volitans) sighted In Antigua waters" alt="link">Invasive lionfish (Pterois volitans) sighted In Antigua waters</a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/pterois-volitans/328354-1-eng-GB/pterois-volitans.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The Fisheries Division of Antigua and Barbuda has its <a href="http://www.ab.gov.ag/gov_v4/article_details.php?id=1432&amp;category=38" target="_blank">first confirmed sighting</a> of the invasive Lionfish (<i>Pterois volitans</i>). The confirmation of this species in Antigua’s waters (it was spotted near neighbouring St. Kitts in October 2010) is troubling because of the negative impact that such invasive species can have on the fragile coral reef ecosystems, local fish populations and fishing communities. The lionfish is a voracious predator feeding on a variety of fish species including many commercially caught demersal fish (living near or on the bottom of the sea) and reef species that help maintain healthy coral reefs. With few natural predators in the area, the species has been allowed to proliferate and establish itself in coral and rocky reefs around the Caribbean.</p>
+							<p><span class="date">7/06/2011</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Invasive-lionfish-Pterois-volitans-sighted-In-Antigua-waters">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Fisheries-forensics-to-tackle-seafood-fraud" title="Fisheries forensics to tackle seafood fraud" alt="link">Fisheries forensics to tackle seafood fraud</a></h2>
+
+	
+					<p>Media attention to mislabelled seafood is helping bring the scale of illegal and unregulated fishing to consumers' attention. Bangor University and University of Salford scientists explain how genetic tools can promote sustainability and make sure the fish we buy is what it says on the label. The author also look at so-called IUU fishing (illegal, unreported and unregulated), which is not included in stock assessment and examine the consequence of unidentifiable marketed fish (that leads to fraud or mislabelling). The illegal substitution of one species for another is best tackled by a method known as 'COI barcoding', a process that works by analysing the 600 base-pair sequence of the mitochondrial DNA cytochrome c oxidase I gene. DNA results from fish samples can be matched against the Barcode of Life Data system (www.boldsystems.org) which currently contains the DNA sequences of nearly a third of known fish species. The method is cost-effective and reliable. Virtually any product advertised or sold as a particular species, anywhere in the world, can be verified unequivocally using a COI barcoding test. (<a href="http://planetearth.nerc.ac.uk/features/story.aspx?id=1217&amp;cookieConsent=A%20%20" target="_blank">NERC Planet Earth Online</a>, 1/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Fisheries-forensics-to-tackle-seafood-fraud">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/A-rebound-for-6-fish-populations-in-US-waters" title="A rebound for 6 fish populations in US waters" alt="link">A rebound for 6 fish populations in US waters</a></h2>
+
+	
+					<p>Six populations of fish returned to healthy levels in 2011, the US National Oceanic and Atmospheric Administration (NOAA) reported early May. NOAA’s Fisheries Service said the count showed that controversial and often unpopular catch limits imposed by the government have been working. Among the rebuilt populations are the Bering Sea snow crab, the summer flounder on the mid-Atlantic coast, the haddock in the Gulf of Maine, the Chinook salmon along the Northern California coast, the coho salmon off Washington State and the Pacific widow rockfish. NOAA must report annually on the state of fish stocks in waters within 200 miles of the coast, and depleted stocks must be rebuilt to healthy levels. Scores of fish species have been in serious decline since the 1980s, largely because of overfishing. Altogether, 27 fish stocks have been returned to health in the last 11 years, the agency said. The recovery is proof that catch limits and stocks monitoring can tone down overfishing and help replenish fish populations. (<a href="http://green.blogs.nytimes.com/2012/05/14/a-rebound-for-6-fish-populations/%20" target="_self">NYT</a> via <a href="http://e360.yale.edu/digest/record_number_of_fish_stocks_rebuilt_in_2011_noaa_study_says/3465" target="_blank">e360</a>, 14/05/20112)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/A-rebound-for-6-fish-populations-in-US-waters">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Fisheries-science-falls-foul-of-privacy-rules" title="Fisheries science falls foul of privacy rules" alt="link">Fisheries science falls foul of privacy rules</a></h2>
+
+	
+					<p>EU Scientists warn that European restrictions on personal data endanger marine research and sustainability. A little-noticed tweak to one of the EU’s many rules and regulations is leaving fisheries scientists struggling to access vital data. The rule change means that raw data from devices used to monitor fishing vessels are no longer available to some scientists. This information is vital for proper, scientifically based management of Europe’s troubled fish stocks. At the heart of the problem is information from devices called Vessel Monitoring Systems, which are attached to many fishing boats to record their position, direction and speed. From these data, the boats' fishing patterns can be reconstructed, allowing researchers to assess fishing activity and, for example, examine the environmental impact on specific areas. In 2009 a new EC rule was brought in, restricting who could access what data within the EU. This rule took some time to filter through but it is now becoming apparent that the very detailed fisheries data needed by some academics are no longer available. (<a href="http://www.nature.com/news/fisheries-science-falls-foul-of-privacy-rules-1.10788" target="_blank">Nature News</a>, 6/6/2012)</p>
+							<p><span class="date">11/07/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Fisheries-science-falls-foul-of-privacy-rules">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Selecting-the-best-tilapia-strain-to-maximize-productivity" title="Selecting the best tilapia strain to maximize productivity " alt="link">Selecting the best tilapia strain to maximize productivity </a></h2>
+
+	
+					<p>This project at the WorldFish Centre evaluates the relative growth performance of Nile tilapia strains that are currently cultured in the Philippines and compares them with a strain that has been undergoing 13 generations of selection – five generations in the Philippines and 8 generations in Malaysia. Tilapia, principally Nile tilapia (<i>Oreochromis niloticus</i>) is the second most important farmed aquaculture species in the Philippines, after milk fish. The Nile tilapia was imported into the Philippines in the early 1970s but after some initial success and popularity became inbred and yields declined. A ten year multi-national effort for genetic improvement led to the development of the hugely successful GIFT strain (Genetically Improved Farmed Tilapia). The ultimate aim of the study is to identify superior strains of Nile tilapia for aquaculture, when at least four strains will be assessed. Learn more about the different strains and the project methodology <a href="http://www.worldfishcenter.org/ongoing-projects/selecting-best-tilapia-strain-maximize-productivity" target="_self">here</a>. </p>
+							<p><span class="date">4/06/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Selecting-the-best-tilapia-strain-to-maximize-productivity">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Finding-an-alternative-to-feeding-fish-fish" title="Finding an alternative to feeding fish fish " alt="link">Finding an alternative to feeding fish fish </a></h2>
+
+	
+					<p>Scientists at the University of Liverpool, UK are developing a new plant-based product that could replace fishmeal, reducing the need for farmers to feed fish to other fish at a time when more than 90% of EU waters are at risk from overfishing. Currently farmed fish, such as salmon, are fed food containing fishmeal, which means that several kilograms of wild fish are consumed to produce one kilogram of farmed fish. To help sustain fish stocks, the aquaculture industry is working towards replacing fishmeal with plant proteins, such as soya. The difficulty with this approach, however, is that many plants contain anti-nutrients that prevent digestive enzymes from working, resulting in poor digestion and failure to absorb important nutrients. Researchers are now leading a consortium to resolve this issue by fermenting plant protein sources, which will use ‘good bacteria’ to predigest food and make nutrients more available for absorption in the gut. (<a href="http://phys.org/news/2012-05-alternative-fish.html%20" target="_blank">Physorg</a>; 15/5/2012)</p>
+							<p><span class="date">4/06/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Finding-an-alternative-to-feeding-fish-fish">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Co-management-of-fisheries-most-viable-solution-to-global-overfishing" title="Co-management of fisheries most viable solution to global overfishing" alt="link">Co-management of fisheries most viable solution to global overfishing</a></h2>
+
+	
+					<p>A study led by the Wildlife Conservation Society on more than 40 coral reefs in the Indian and Pacific Oceans indicates that ‘co-management’ – a collaborative arrangement between local communities, conservation groups, and governments – provides one solution to the global problem: overfishing. The finding is the outcome of the largest field investigation of co-managed tropical coral reef fisheries ever conducted, an effort in which researchers studied 42 managed reef systems in five countries. The study's main finding is that co-management has been largely successful in sustaining fisheries and improving people's livelihoods. More than half the fisherfolk surveyed felt co-management was positive for their livelihoods, whereas only 9% felt it was negative. A comparison of co-managed reefs with other reefs showed that co-managed reefs were half as likely to be heavily overfished. Dr. Nick Graham, who worked on the project, said: ‘[...] we also found that where fisheries are closest to big, hungry markets, they tend to be in worse shape. This strongly suggests globalized food chains can undermine local, democratic efforts to manage fisheries better. People often assume that local population size is the main driver of overfishing – but our research shows that access to global markets and seafood dependence are more important, and provide possible levers for action.’(<a href="http://www.eurekalert.org/pub_releases/2012-03/wcs-ost031912.php" target="_blank">EurekAlert</a>, 19/03/2012)</p>
+							<p><span class="date">31/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Co-management-of-fisheries-most-viable-solution-to-global-overfishing">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Inland-fish-farming-in-high-demand-in-PNG" title="Inland fish farming in high demand in PNG" alt="link">Inland fish farming in high demand in PNG</a></h2>
+
+	
+					<p>Malum Nalu has a short report on the aquaculture programme in Papua New Guinea. An officer of the Agriculture and Resource Development Centre (ARDC, within the Department of Agriculture and Livestock) highlights the interest of fishermen and identifies the challenges faced including lack of skilled manpower, funding constraints and facilities which need to be upgraded.  (<a href="http://malumnalu.blogspot.com/2012/02/inland-fish-farming-in-high-demand.html" target="_blank">Malum Nalu</a>, 02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Inland-fish-farming-in-high-demand-in-PNG">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Research-reveals-why-fishermen-keep-fishing-despite-dwindling-catches" title="Research reveals why fishermen keep fishing despite dwindling catches" alt="link">Research reveals why fishermen keep fishing despite dwindling catches</a></h2>
+
+	
+					<p>Research led by the University of East Anglia (UEA), UK, challenges previously held notions about poverty and adaptation by investigating why fishermen stick with their trade despite dwindling catches. The research team surveyed almost 600 fishers in five African countries and found that half of the fishermen would not be tempted to seek out a new livelihood - even if their catch declined by 50%. Fishermen in the more vibrant and developed economies were less likely to give up the trade than those from poorer communities. The researchers noted that fishermen in Madagascar, a country they rated as poor, would sooner leave the fisheries sector than those in the Seychelles, a wealthier country. Decisions are influenced by much more than simple profitability; the fishermen also consider job satisfaction, family tradition, sense of identity among a range of other factors. Fisheries are challenged by the combined effects of overfishing, climate change, deteriorating ecosystems and conservation policies. Understanding how fishermen respond to these changes is critical to managing fisheries, and identifying intervention points for conservation policies, the authors believe.  (<a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=116279&amp;CultureCode=en" target="_blank">Alpha Galileo</a>, 9/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Research-reveals-why-fishermen-keep-fishing-despite-dwindling-catches">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Shrimp-farms-have-high-carbon-footprint" title="Shrimp farms have high carbon footprint" alt="link">Shrimp farms have high carbon footprint</a></h2>
+
+	
+					<p>
+Fifty to sixty percent of shrimp farms are located in tidal zones in Asian countries, mostly on cleared mangrove forests. The carbon footprint of the shrimp from this land use is about 10-fold greater than the land use carbon footprint of an equivalent amount of beef produced from a pasture formed from a tropical rainforest.  (<a href="http://www.physorg.com/news/2012-02-tiny-shrimp-giant-carbon-footprint.html" target="_blank">Physorg</a> via <a href="http://www.theatlanticwire.com/global/2012/02/your-shrimp-cocktail-ruining-planet/48901/" target="_blank">The Atlantic Wire</a>, 18/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Shrimp-farms-have-high-carbon-footprint">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Global-fisheries-numbers-game" title="Global fisheries numbers game" alt="link">Global fisheries numbers game</a></h2>
+
+	
+					<p>Researchers from the University of British Columbia, Canada, presented at the annual meeting of the American Association for the Advancement of Science (AAAS), new results from a case study that found that fishing agreements between the European Union (EU) and Madagascar, for access to Madagascar's seafood, are not as fair as they may appear on paper. The problem is rooted in incomplete data about fisheries, the authors believe. The official numbers from the UN underestimate how much fishing fleets around the world catch, because they exclude smaller-scale operations and recreational activities. Analysis indicates that when these data are included, the final fisheries catches can be six times higher than commercial catch numbers alone.  (<a href="http://news.sciencemag.org/sciencenow/2012/02/global-fisheries-deals-whats-the.html" target="_blank">Science</a>, 19/02/2012) </p>
+							<p><span class="date">1/05/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Global-fisheries-numbers-game">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Diverse-catches-better-for-fishery-ecosystem" title="Diverse catches better for fishery ecosystem" alt="link">Diverse catches better for fishery ecosystem</a></h2>
+
+	
+					<p>A research project fostered by the International Union for the Conservation of Nature's (IUCN ) Commission on Ecosystem Management which involved both conservation and fisheries scientists, aimed at understanding the impsact of fisheries on marine ecosystems. The related paper titled 'Reconsidering the Consequences of Selective Fisheries' concludes that a moderate level of fishing – spread across a wide range of species, stocks and sizes – can achieve high catch levels while conserving biodiversity. In contrast, increasing fishing selectivity to catch a small group of species and sizes neither maximises production nor minimises the ecological effects of fishing. The authors show that heavy selective fishing has caused structural changes to fish communities in the North Sea and elsewhere. By contrast, in several African small-scale inland fisheries, the fish size spectrum – a measure of ecological community structure – has been maintained under intensive and diverse fishing activities that cause high mortality with low selectivity (i.e. diverse catches). Implementing balanced harvesting requires coordinated management at an ecosystem level across all fisheries in a region. Ecosystem modelling could help in determining appropriate patterns of fishing. Markets and the processing sector in some regions would need encouragement to accommodate sizes and species not traditionally utilised.Visit website for more details: <a href="http://www.sciencedaily.com/releases/2012/03/120315095801.htm" target="_self">http://www.sciencedaily.com/releases/2012/03/120315095801.htm</a></p>
+							<p><span class="date">10/04/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Diverse-catches-better-for-fishery-ecosystem">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Scientists-raise-red-flag-on-fish-sustainability" title="Scientists raise red flag on fish sustainability" alt="link">Scientists raise red flag on fish sustainability</a></h2>
+
+	
+					<p>An international team of scientists has discovered that the effect of fishing for tuna and similar species since the early 1960s has led to a decline in these populations by around 60%. The results have raised red flags, highlighting how several fish species have been overexploited, and particularly how the majority of tuna fish have been exploited to the limits of sustainability. Researchers from Canada, Italy, Spain and the United Kingdom have identified how cold water tuna is the species hardest hit by exploitation, with data showing that their numbers have shrunk by 80%. The Atlantic bluefin and the southern bluefin are part of this group, which is known for being big, long living, and of significant economic value. Another species, the mackerel, has also felt the effect in its numbers. Despite being smaller and having shorter lifespans, mackerel are part of a growing and worrisome trend. The study's findings suggest that fishing knows no boundaries: large or small, all species are at risk. The findings suggest that boosting hauls could continue to be a risky act, and that any global fishing effort must be followed with a great deal of care as demand continues to grow. (<a href="http://cordis.europa.eu/fetch?CALLER=EN_NEWS&amp;ACTION=D&amp;SESSION=&amp;RCN=34327 " target="_blank">CORDIS</a>, 22/02/2012)</p>
+							<p><span class="date">10/04/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Scientists-raise-red-flag-on-fish-sustainability">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Innovative-fish-trap-design-reduces-by-catch" title="Innovative fish trap design reduces by-catch" alt="link">Innovative fish trap design reduces by-catch</a></h2>
+
+	
+					<p>A WCS (World Conservation Society ) marine project to reduce by-catch in Kenya and Curacao through a low-cost, low-tech fish trap design has won top honour in a contest sponsored by Rare, in partnership with National Geographic.The contest, ‘<i>Solution Search: Turning the Tide for Coastal Fisheries’</i>, promotes fish traps with rectangular gaps that permit small, juvenile fish to escape. The wining project entitled ‘Bycatch Escape Gaps for Fish Traps’, reduces by-catch by 80 percent. It offers coastal fishers a low-cost, low-tech means of maintaining sustainable fisheries in coastal East Africa, the Caribbean, and other regions using traditional fish traps. Solutions submitted for the contest included the implementation of no-take zones, introduction of innovative fishing gear and the development of alternative livelihoods.(<a href="http://www.wcs.org/news-and-features-main/grand-prize-for-fisheries-project.aspx%20" target="_blank">WCS</a> via <a href="http://news.mongabay.com/2012/0111-hance_fishtrap_bycatch.html" target="_blank">Mongabay</a>, 11/01/2011)</p>
+							<p><span class="date">28/02/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Fisheries/Related-developments/Innovative-fish-trap-design-reduces-by-catch">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/20"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/60"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments">1</a></span>
+                              <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/20">2</a></span>
+            
+        <span class="current">3</span>
+
+                      <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/60">4</a></span>
+                              <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/80">5</a></span>
+                              <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/100">6</a></span>
+                              <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/120">7</a></span>
+                              <span class="other"><a href="/Dossiers/Commodities/Fisheries/Related-developments/(offset)/140">8</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":319,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

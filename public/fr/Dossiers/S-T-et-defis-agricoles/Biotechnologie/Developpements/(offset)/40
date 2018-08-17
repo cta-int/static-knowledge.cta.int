@@ -1,0 +1,1388 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Biotechnologie / S&amp;T et défis agricoles / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/40" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/S-T-Issues/Biotechnology/Related-developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles">S&T et défis agricoles</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">Biotechnologie</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biotechnologie-vegetale-des-promesses-ternies" title="Biotechnologie végétale : des promesses ternies" alt="link">Biotechnologie végétale : des promesses ternies</a></h2>
+
+	
+					<p>Un numéro spécial de la revue <i>Nature</i> sur les cultures GM passe en revue certaines des déclarations les plus controversées sur la biotechnologie végétale, examine les répercussions des attitudes négatives sur ce domaine de recherche, analyse les avancées récentes telles que les transporteurs membranaires et les techniques de génie génétique utilisées pour les cultures GM de seconde génération. Dans ce numéro, les éditeurs avancent que la recherche sur les plantes génétiquement modifiées doit se poursuivre en dehors du secteur (dans le secteur à but non lucratif), de sorte que les activités de recherche répondent uniquement à des objectifs et qu’elles ne soient pas axées sur des profits. Dans son message, la revue montre du doigt le développement de culture GM orienté vers la recherche de profit pour l’agriculture industrielle qui ne profiterait qu’aux revenus nationaux aux dépens des petits exploitants et de l’amélioration des conditions de vie des populations rurales. Les cultures GM sont un moyen de lutter contre la malnutrition, de garantir des rendements élevés, de réduire la consommation d’intrants onéreux, mais aussi de renforcer la stabilité des systèmes agroalimentaires dans les pays en développement.&nbsp;&nbsp;(<a href="http://www.nature.com/news/plant-biotechnology-tarnished-promise-1.12894?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_blank"><i>Nature</i></a>, adapté de&nbsp;<a href="http://clippings.ilri.org/2013/05/02/nature-takes-a-hard-look-at-the-messy-middle-ground-the-difficult-adolescence-of-gm-crops/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_blank">ILRI</a>, 02/05/2013)</p>
+							<p><span class="date">2/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biotechnologie-vegetale-des-promesses-ternies">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biodiversite-de-la-banane-identification-des-traits-de-tolerance-a-la-secheresse" title="Biodiversité de la banane : identification des traits de tolérance à la sécheresse " alt="link">Biodiversité de la banane : identification des traits de tolérance à la sécheresse </a></h2>
+
+	
+					<p>Il est impératif de mener des travaux de recherche afin de mieux comprendre la tolérance à la sécheresse. L’identification des variétés dotées d’une tolérance à la sécheresse et l’amélioration des cultures grâce à une exploitation plus efficace de l’eau constituent un premier pas décisif dans la bonne direction. Avec une production mondiale de plus de 135 millions de tonnes par an, les bananes et les plantains constituent des aliments de base (notamment en Afrique et dans la région Pacifique – note de l’éditeur) et des produits d’exportation majeurs (dans les Caraïbes – note de l’éditeur). Toutefois, l’eau est le facteur abiotique le plus limitant pour la production bananière. Cinq variétés représentant différentes constitutions génomiques de la banane (AAAh, AAA, AAB, AABp et ABB) ont été sélectionnées puis soumises à un stress osmotique léger. La variété ABB enregistre un retard de croissance imputable au stress extrêmement minime. &nbsp;(<a href="http://goo.gl/YSyRU?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_self">Bioversity International</a>, 2012)</p>
+							<p><span class="date">2/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biodiversite-de-la-banane-identification-des-traits-de-tolerance-a-la-secheresse">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Decryptage-des-genomes-des-cultures-orphelines-et-diffusion-gratuite-des-informations-afin-d-accroitre-les-recoltes" title="Décryptage des génomes des « cultures orphelines » et diffusion gratuite des informations afin d’accroître les récoltes " alt="link">Décryptage des génomes des « cultures orphelines » et diffusion gratuite des informations afin d’accroître les récoltes </a></h2>
+
+	
+					<p>Une équipe internationale de scientifiques dirigée par Howard-Yana Shapiro, directeur du département agricole de la société américaine de bonbons Mars (36 milliards de dollars de chiffre d’affaires), a séquencé le génome du cacaoyer, à partir duquel on fabrique le chocolat, puis publié le séquençage complet de ce génome en 2010. M.&nbsp;Shapiro envisage de travailler en collaboration avec des chercheurs américains et chinois afin de séquencer puis publier l’intégralité du patrimoine génétique d’une grande variété de cultures, comme l’igname, le millet perlé, le tef, l’arachide, le manioc et la patate douce. &nbsp;&nbsp;Pour de plus amples informations concernant la recherche sur le génome du cacao au sein du Groupe Mars&nbsp;: <a href="http://www.confectionerynews.com/Commodities/Mars-cocoa-genome-research-no-Monsanto-GM-moment" target="_self">http://www.confectionerynews.com/Commodities/Mars-cocoa-genome-research-no-Monsanto-GM-moment</a>&nbsp;&nbsp;(<a href="http://www.guardian.co.uk/science/2013/jun/02/genetic-mapping-plan-to-boost-africa-crops?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_blank"><i>The Guardian</i></a>, 02/06/2013)</p>
+							<p><span class="date">2/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Decryptage-des-genomes-des-cultures-orphelines-et-diffusion-gratuite-des-informations-afin-d-accroitre-les-recoltes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Les-plantes-sauvages-assurent-la-securite-alimentaire-et-nutritionnelle" title="Les plantes sauvages assurent la sécurité alimentaire et nutritionnelle" alt="link">Les plantes sauvages assurent la sécurité alimentaire et nutritionnelle</a></h2>
+
+	
+					<p>Favoriser la consommation d’aliments riches en éléments nutritifs provenant des forêts (comme les baies, la viande de gibier, les tubercules, les insectes ou les noix) contribuerait à réduire la malnutrition et à améliorer durablement la sécurité alimentaire des populations les plus pauvres du monde. Le rôle crucial que peuvent jouer les forêts pour améliorer la sécurité alimentaire et nutritionnelle est insuffisamment pris en compte dans les stratégies nationales de développement et de sécurité alimentaire. Les aliments provenant des forêts n’ont jamais réellement suscité un grand intérêt, en raison notamment des méthodes actuelles de mesure de la sécurité alimentaire en termes d’apport énergétique (ou calorique), et non d’apport en micronutriments. C’est pourquoi les aliments qui ne sont pas riches en calories (mais riches en micronutriments) ont souvent été négligés.(<a href="http://www.irinnews.org/Report/97820/Wild-foods-could-improve-nutrition-and-food-security?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_self">IRIN et CIFOR</a>, 10/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Les-plantes-sauvages-assurent-la-securite-alimentaire-et-nutritionnelle">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Un-nouveau-riz-tres-tolerant-au-sel-issu-d-une-souche-sauvage" title="Un nouveau riz très tolérant au sel issu d’une souche sauvage" alt="link">Un nouveau riz très tolérant au sel issu d’une souche sauvage</a></h2>
+
+	
+					<p>Un nouveau riz, issu d’un croisement entre deux souches de riz différentes –&nbsp;<i>Oryza coarctata</i>, une espèce exotique de riz sauvage, et la variété de riz IR56 de l’espèce de riz cultivé&nbsp;<i>O. sativa</i>, rejette dans l’air le sel puisé dans le sol à travers les glandes situées sur ses feuilles. L’IRRI perfectionne actuellement cette nouvelle variété de riz tolérant au sel et effectuera des tests à grande échelle pour s’assurer qu’il répond aux besoins des riziculteurs et des consommateurs. Les agriculteurs pourront cultiver cette nouvelle variété d’ici 4 à 5 ans.(<a href="http://goo.gl/wCdz9?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_self">IRRI</a>, 15/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Un-nouveau-riz-tres-tolerant-au-sel-issu-d-une-souche-sauvage">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/L-amelioration-genetique-du-riz-a-l-ere-post-genomique-du-concept-a-la-pratique" title="L’amélioration génétique du riz à l’ère post-génomique : du concept à la pratique" alt="link">L’amélioration génétique du riz à l’ère post-génomique : du concept à la pratique</a></h2>
+
+	
+					<p>Cet article décrit les capacités nécessaires à la Chine pour mettre en œuvre sa stratégie de sélection moléculaire et relever les défis de l’amélioration génétique du riz. Cette mise en œuvre implique des investissements colossaux dans le génotypage à haut débit, le phénotypage de précision et la génomique expérimentale.(<a href="http://www.sciencedirect.com/science/article/pii/S1369526613000435?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank"><i>Current Opinion on Plant Biology</i></a>, 06/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/L-amelioration-genetique-du-riz-a-l-ere-post-genomique-du-concept-a-la-pratique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Un-ble-capable-de-resister-au-rechauffement-de-la-planete" title="Un blé capable de résister au réchauffement de la planète" alt="link">Un blé capable de résister au réchauffement de la planète</a></h2>
+
+	
+					<p>Des chercheurs du projet&nbsp;<i>Climate Resilient Wheat</i>&nbsp;(Blé résistant au climat) ont pour objectif de mettre au point de nouvelles variétés de blé résistantes à la chaleur à l’aide d’outils de sélection destinés à identifier les gènes associés à cette tolérance. Ils espèrent obtenir dans un délai de cinq ans leurs premières variétés résilientes au climat. Si les recherches seront menées dans les plaines indo-gangétiques, toutes les régions productrices de blé dans le monde confrontées à des défis, tels que la pénurie d’eau et l’élévation des températures, tireront parti des résultats de ces recherches. La productivité d’un plant de blé diminue considérablement lorsque les températures dépassent les 28°C, en particulier au moment de la floraison.(<a href="http://www.eurekalert.org/pub_releases/2013-04/wsu-bwf040813.php?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">EurekAlert</a>, 9/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Un-ble-capable-de-resister-au-rechauffement-de-la-planete">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Soutenir-les-efforts-de-recherche-sur-la-rouille-de-la-tige-de-ble" title="Soutenir les efforts de recherche sur la rouille de la tige de blé" alt="link">Soutenir les efforts de recherche sur la rouille de la tige de blé</a></h2>
+
+	
+					<p>Les scientifiques prédisent que, sans soutien financier accru en faveur de la recherche, le nouveau champignon virulent s’attaquant au blé (baptisé Ug99 car apparu pour la première fois en Ouganda en 1999) continuera de se propager d’Afrique vers le Moyen-Orient et l’Asie du Sud-Ouest. Les scientifiques ont mis au point de nouvelles variétés de blé résistantes à cette maladie dévastatrice. Mais celle-ci évolue et se développe sous de nouvelles formes, d’où la nécessité de mettre au point des variétés encore plus résistantes. Le consortium international connu sous le nom d’Initiative internationale Borlaug contre la rouille du blé a engagé 26 millions US$ sur cinq ans pour lutter contre ce fléau. Quoique d’une importance capitale, cet effort ne devrait permettre de combler pour moitié uniquement les lacunes de la recherche sur le blé.(<a href="http://www.sciencemag.org/content/340/6129/147.summary?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank"><i>Science</i></a>&nbsp;<a href="http://www.sciencedaily.com/releases/2013/04/130415151450.htm?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">Daily</a>, 15/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Soutenir-les-efforts-de-recherche-sur-la-rouille-de-la-tige-de-ble">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Nouvelles-varietes-de-niebe-prometteuses" title="Nouvelles variétés de niébé prometteuses" alt="link">Nouvelles variétés de niébé prometteuses</a></h2>
+
+	
+					<p>Les nouvelles variétés de niébé ont une maturité très précoce, une meilleure teneur en protéines et un potentiel de rendement élevé, peuvent résister aux principales maladies et sont tolérantes à la chaleur et à la sécheresse. Riche en protéines, le niébé est la principale légumineuse alimentaire cultivée en Afrique, en Asie et en Amérique du sud. Les grains secs de niébé sont comestibles et ses jeunes feuilles, ses gousses et ses graines vertes peuvent également être consommées en tant que légumes. Les variétés testées ont été mises au point ces cinq dernières années à partir de croisements entre les meilleures lignées de niébé développées par l’Institut international d’agriculture tropicale (IITA) et la Texas A&amp;M University.(<a href="http://today.agrilife.org/2013/04/10/new-cowpea-varieties-offer-promise-in-south-africa-other-parts-of-the-world/?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">AgriLife Today</a>, 10/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Nouvelles-varietes-de-niebe-prometteuses">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Decouverte-d-un-gene-qui-permettra-de-faire-pousser-des-laitues-par-temps-chaud" title="Découverte d’un gène qui permettra de faire pousser des laitues par temps chaud" alt="link">Découverte d’un gène qui permettra de faire pousser des laitues par temps chaud</a></h2>
+
+	
+					<p>Un gène de laitue, et un enzyme associé qui freine la germination par temps très chaud, a été identifié afin de protéger la filière laitue aux États-Unis contre les aléas climatiques. Cette découverte devrait permettre de faire pousser des laitues toute l’année, même à des températures élevées et en condition de stress hydrique. Les chercheurs croient en outre que, dans la mesure où ce mécanisme qui empêche la germination des graines de laitue est commun à de nombreuses espèces végétales, d’autres cultures pourraient être modifiées afin d’améliorer leur germination sous des climats plus chauds et plus secs.(<a href="http://www.news.ucdavis.edu/search/news_detail.lasso?id=10546?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">UC Davis</a>, 28/03/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Decouverte-d-un-gene-qui-permettra-de-faire-pousser-des-laitues-par-temps-chaud">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biologie-synthetique-quel-role-pour-l-agriculture" title="Biologie synthétique : quel rôle pour l’agriculture ?" alt="link">Biologie synthétique : quel rôle pour l’agriculture ?</a></h2>
+
+	
+					<p>Un article de blog sur les concepts et les opportunités de la biologie synthétique a été examiné lors d’une conférence majeure sur le sujet « Comment la biologie synthétique et la conservation façonneront-elles l’avenir de la nature? », organisée en avril 2013 à l’Université de Cambridge. Il met en exergue, à travers le cas des biocarburants, le degré de complexité et les défis croissants de l’utilisation de la biologie synthétique dans l’agriculture. L’article présente un aperçu d’une récente conférence de haut niveau sur la biologie synthétique, ainsi que des liens vers d’autres articles approuvés en comités de lecture sur les avantages et les inconvénients – à la fois sur le plan éthique et environnemental – de l’utilisation de la biologie synthétique dans l’agriculture.(<a href="http://www.bigpictureagriculture.com/2013/04/synthetic-biology-what-does-it-mean-for-agriculture-348.html?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">Big Picture Agriculture</a>, 14/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Biologie-synthetique-quel-role-pour-l-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Amerique-centrale-les-petites-plantations-de-cafe-menacees-par-une-maladie-vegetale" title="Amérique centrale : les petites plantations de café menacées par une maladie végétale" alt="link">Amérique centrale : les petites plantations de café menacées par une maladie végétale</a></h2>
+
+	
+					<p>En Amérique centrale, la fréquence des précipitations intenses a favorisé l’émergence d’épidémies sévères de rouille des feuilles du caféier. La 5e conférence de l’Association américaine des cafés de spécialité a été l’occasion d’examiner la question de l’adaptation future de cette culture commerciale. La World Coffee Research (WCR) va mener une série de recherches sur la génétique du café et effectuer des essais de variétés dans plusieurs pays pour développer des lignées résistantes aux ravageurs à partir de plants de coffea sauvages. Le café possède un génome complexe et sa maturité pour la reproduction survient très tard : il faudra attendre une quinzaine d’années pour la mise en œuvre de solutions non transgéniques (privilégiées par les consommateurs de café de spécialité) au problème de la rouille des feuilles de caféier. La solution à court terme pourrait consister à pulvériser des fongicides préventifs et à alterner les modes d’action dans la rotation afin de limiter la résistance aux ravageurs.&nbsp;(<a href="http://appliedmythology.blogspot.nl/2013/04/the-livelihood-of-small-coffee-growers.html?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">Applied Mythology Blog</a>, 16/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Amerique-centrale-les-petites-plantations-de-cafe-menacees-par-une-maladie-vegetale">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Mieux-comprendre-la-croissance-du-manioc-un-enjeu-de-developpement-pour-l-Afrique" title="Mieux comprendre la croissance du manioc, un enjeu de développement pour l’Afrique " alt="link">Mieux comprendre la croissance du manioc, un enjeu de développement pour l’Afrique </a></h2>
+
+	
+					<p>Cet article de blog dresse un état des lieux détaillé de la filière manioc en Afrique et montre les efforts déployés dans le domaine de la recherche agricole pour améliorer les cultures. Il présente un nouvel article publié dans <i>AoB PLANTS</i> sur l’intégration de la génétique dans les programmes de sélection de l’Institut national de recherche sur les ressources végétales (NaCRRI) en Ouganda. Compte tenu des défis inhérents à l’amélioration génétique du manioc, il convient de mieux comprendre la base moléculaire de la réponse et de la tolérance du manioc à la sécheresse afin de mettre au point des variétés appropriées. L’hétérozygose élevée du manioc, les effets de l’interaction génotype-environnement, le long cycle de vie et la production limitée de semences limitent l’application des techniques traditionnelles d’amélioration, alors que la sélection moléculaire est limitée par le manque d’informations sur les régions génomiques et les gènes associés à la tolérance du manioc à la sécheresse.<a href="http://aobblog.com/2013/04/understanding-cassava-to-feed-africa/" target="_self">http://aobblog.com/2013/04/understanding-cassava-to-feed-africa/</a>(AoB Blog, 11/04/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Mieux-comprendre-la-croissance-du-manioc-un-enjeu-de-developpement-pour-l-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Des-chercheurs-tentent-d-identifier-le-gene-reconnu-responsable-de-la-petite-taille-du-millet-perle" title="Des chercheurs tentent d’identifier le gène reconnu responsable de la petite taille du millet perlé" alt="link">Des chercheurs tentent d’identifier le gène reconnu responsable de la petite taille du millet perlé</a></h2>
+
+	
+					<p>Des phytogénéticiens sont parvenus à isoler le gène qui permet de créer des variétés naines de millet perlé. Ces variétés naines sont importantes du point de vue économique aux États-Unis, en Inde et en Afrique notamment. Si les connaissances acquises pour améliorer la production de millet perlé permettront de mettre au point une nouvelle gamme de variétés de céréales semi-naines plus performantes sur le plan agronomique, les variétés naines de millet perlé ne sont généralement pas idéales pour l’ensemencement. En Afrique, nombre de fermiers privilégient les variétés plus grandes dans la mesure où ils utilisent les longues tiges pour construire des toits de chaume, par exemple. Toutefois, lorsque le millet est cultivé de façon intensive, les variétés naines permettent aux agriculteurs de récolter les graines au moyen de batteuses mécaniques. Les éleveurs utilisent le millet nain comme plante fourragère car il possède un ratio feuille/tige élevé. Mieux connaître cette variété permettra d’augmenter la production de semences résistantes à la sécheresse. &nbsp;&nbsp;(<a href="http://phys.org/news/2013-03-track-gene-responsible-short-stature.html" target="_blank">Phys.org</a>, 29/03/2013)&nbsp;</p>
+							<p><span class="date">10/04/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Des-chercheurs-tentent-d-identifier-le-gene-reconnu-responsable-de-la-petite-taille-du-millet-perle">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Mettre-en-place-des-politiques-appropriees-en-matiere-de-propriete-intellectuelle-en-Afrique" title="Mettre en place des politiques appropriées en matière de propriété intellectuelle en Afrique" alt="link">Mettre en place des politiques appropriées en matière de propriété intellectuelle en Afrique</a></h2>
+
+	
+					<p><i>Intellectual Property Watch</i>&nbsp;<a href="http://www.ip-watch.org/2013/03/01/speakers-outline-ideas-for-africa-to-find-appropriate-ip-policies/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_March2013" target="_self">fait état</a>&nbsp;des efforts consentis dans plusieurs pays d’Afrique pour mettre en place des politiques appropriées en matière de propriété intellectuelle, question abordée lors de la conférence sur la propriété intellectuelle en Afrique (février 2013). La question de l’application des droits de propriété intellectuelle aux savoirs autochtones, afin de protéger les intérêts de leurs détenteurs, tout en mettant à profit la contribution de ces savoirs dans le processus de développement, a donné lieu à un débat animé lors de la conférence.&nbsp;<i>IP-Watch.org</i>&nbsp;also&nbsp;<a href="http://www.ip-watch.org/2013/03/20/at-us-led-workshop-african-stakeholders-call-for-home-grown-ip-agenda/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_March2013" target="_self">fait également état</a>&nbsp;de l’atelier intitulé « Approches pratiques en matière d’utilisation et de protection de la propriété intellectuelle en Afrique », organisé en mars 2013 par le Département du Commerce des États-Unis en collaboration avec le Groupe sur la propriété intellectuelle en Afrique (AIPG), une nouvelle association de parties prenantes dans le domaine de la propriété intellectuelle. Les participants ont souligné la nécessité de mettre en place un agenda pour l’application des droits de propriété intellectuelle en Afrique, d’étendre la recherche sur l’impact d’une protection plus forte de ces droits et de démythifier l’idée d’une politique unique des droits de propriété intellectuelle en Afrique.&nbsp;Plus récemment,&nbsp;<i>IP-Watch.org</i>&nbsp;a publié un&nbsp;<a href="http://www.ip-watch.org/2013/04/05/african-regional-plant-variety-protection-draft-legislation-raises-protest/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_March2013" target="_self">article</a>&nbsp;sur le projet de protocole pour la protection des nouvelles variétés végétales qui a été proposé par la Communauté de développement de l’Afrique australe (SADC), un organisme intergouvernemental qui vise à promouvoir la coopération et l’intégration socio-économique sur le continent. Il indique que le projet de protocole pour la protection des variétés végétales a provoqué la colère de la société civile, préoccupée de l’impact potentiel de celui-ci sur les petits exploitants agricoles mais aussi du manque de consultations menées auprès des agriculteurs. Conformément au projet de protocole, le droit d’obtenteur permettra aux agriculteurs d’avoir accès à toute une gamme de variétés améliorées et de contribuer ainsi au développement de l’économie et à la sécurité alimentaire dans la région. Les groupes de la société civile ont indiqué que ce protocole ne permettra pas de créer un régime adapté aux besoins des États membres de la SADC et de leurs agriculteurs, qui restent fortement tributaires des semences de ferme, des échanges avec leurs voisins et les membres de leur famille, ou du troc des marchés villageois pour obtenir des semences.&nbsp;(<a href="http://www.ip-watch.org/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_March2013" target="_blank">Intellectual Property Watch</a>, mars/avril 2013)</p>
+							<p><span class="date">17/04/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Mettre-en-place-des-politiques-appropriees-en-matiere-de-propriete-intellectuelle-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Nouvelles-varietes-de-haricots-au-Cameroun" title="Nouvelles variétés de haricots au Cameroun" alt="link">Nouvelles variétés de haricots au Cameroun</a></h2>
+
+	
+					<p>Au Cameroun, les agriculteurs cultivent aujourd’hui de nouvelles variétés de haricots affichant un rendement jusqu’à trois fois supérieur à celui des cultures traditionnelles, qui ont souffert d’attaques d’organismes nuisibles, de maladies et de situations météorologiques défavorables. Sept variétés de haricots plus résistantes et plus nourrissantes sont désormais distribuées aux agriculteurs camerounais, à la suite de tests approfondis menés par l’Institut de recherche agricole pour le développement (<a href="http://www.iradcameroon.org/fr" target="_self">IRAD</a>)) basé dans le pays. Les variétés ont été sélectionnées parmi des centaines d’autres que le Cameroun a reçues de l’Alliance panafricaine de recherche sur le haricot (<a href="http://www.acdi-cida.gc.ca/cidaweb%5Ccpo.nsf/projEn/A032162001" target="_self">PABRA</a>), une initiative multi-agences qui coordonne la recherche sur le continent.&nbsp;(<a href="http://www.scidev.net/en/sub-suharan-africa/news/cameroon-settles-on-new-bean-varieties.html" target="_self">SciDev.Net</a>, 22/03/2013)&nbsp;</p>
+							<p><span class="date">10/04/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Nouvelles-varietes-de-haricots-au-Cameroun">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/L-adaptation-du-sorgho-au-changement-climatique" title="L’adaptation du sorgho au changement climatique" alt="link">L’adaptation du sorgho au changement climatique</a></h2>
+
+	
+					<p>Une équipe internationale de chercheurs a utilisé le génotypage par séquençage pour déterminer la constitution génétique de 971 variétés de sorgho issues de semences du monde entier. Le contrôle génétique de la panicule (structure située au sommet du plant et contenant les graines) a fait l’objet d’un examen approfondi. Par exemple, les graines serrées les unes contre les autres sont préférables pour obtenir un rendement maximal des cultures dans les zones arides; en revanche, dans les zones où les précipitations sont abondantes, un espacement plus large est souhaitable pour permettre aux graines de sécher plus facilement, mais aussi de réduire les pertes dues aux maladies causées par l’humidité. Les chercheurs ont identifié des gènes qui contribuent vraisemblablement à ces caractéristiques physiques. Ils les ont également cartographiés en fonction de la provenance des semences originales. Ce travail a permis de montrer comment diverses variantes de gènes se propagent en fonction du climat régional.&nbsp;<a href="http://phys.org/news/2013-01-sorghum-gene-bank-agriculture-climate.html" target="_blank">http://phys.org/news/2013-01-sorghum-gene-bank-agriculture-climate.html</a>&nbsp;&nbsp;(phys.org, 01/2013)</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/L-adaptation-du-sorgho-au-changement-climatique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Phytotracker-un-systeme-de-gestion-de-l-information-pour-faciliter-l-enregistrement-des-plantes-des-semences-et-des-plasmides" title="Phytotracker : un système de gestion de l’information pour faciliter l’enregistrement des plantes, des semences et des plasmides" alt="link">Phytotracker : un système de gestion de l’information pour faciliter l’enregistrement des plantes, des semences et des plasmides</a></h2>
+
+	
+					<p>De nombreuses lignées végétales sont produites et conservées dans des laboratoires de recherche végétale traditionnels, aussi bien sous la forme de stocks de semences que de plantes en pleine croissance. Leur suivi et leur conservation impliquent une gestion rigoureuse et minutieuse, ce qui, compte tenu des exigences réglementaires, constitue un problème particulièrement urgent dans les laboratoires de recherche qui effectuent des manipulations génétiques. <i>Phytotracker</i> est un système/logiciel de gestion en laboratoire spécialement conçu pour organiser et identifier les plasmides, les semences et les plantes cultivées pouvant être utilisés dans des environnements multiplateformes. Il recourt à la base de données relationnelle et interplateformes <i>Filemaker</i>, qui lui permet de fonctionner de façon autonome ou comme solution en réseau basée sur serveur afin de cataloguer et de rechercher des fonctions pour les plasmides, les lots de semences et les plantes cultivées dans des pots ou des bacs, mais aussi d’assurer la traçabilité de chaque plante, de la plantation des semences au nouveau lot de semences en passant par la récolte, et d’imprimer des étiquettes appropriées à chaque étape. Le logiciel a été développé à la Cardiff School of Biosciences, université de Cardiff (Royaume-Uni) par Jeroen Nieuwland et ses collègues. Pour en savoir plus sur ce logiciel, cliquez sur <a href="http://www.plantmethods.com/content/8/1/43/abstract" target="_blank">le lien</a>. &nbsp;(<i>Plant Methods</i> 2012, 8:43; 13/10/2012)</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Phytotracker-un-systeme-de-gestion-de-l-information-pour-faciliter-l-enregistrement-des-plantes-des-semences-et-des-plasmides">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/La-genomique-peut-elle-stimuler-la-productivite-des-cultures-orphelines" title="La génomique peut-elle stimuler la productivité des cultures orphelines ?" alt="link">La génomique peut-elle stimuler la productivité des cultures orphelines ?</a></h2>
+
+	
+					<p><a href="http://www.nature.com/nbt/journal/v30/n12/full/nbt.2440.html" target="_blank">Cet article d’opinion</a> publié par Rajeev K. Varshney de l’ICRISAT et ses collègues dans la revue <i>Nature Biotechnology</i> explique pourquoi la disponibilité d’outils avancés pour soutenir la génétique assistée par la génomique ne devrait plus être un problème pour les cultures orphelines, principalement des cultures vivrières. Les auteurs notent toutefois que «&nbsp;les efforts de sélection et d’adoption de technologies modernes sont extrêmement variables entre les pays en développement et sont généralement liés à la santé de l’économie nationale&nbsp;». Selon eux, «&nbsp;des services centralisés pour le séquençage à haut débit et le génotypage, combinés à l’accès aux outils de génomique et de sélection analytiques, devraient améliorer la mise en œuvre et l’adoption de la sélection moléculaire dans les pays en développement&nbsp;». Ils ajoutent que «&nbsp;la formation continue de sélectionneurs et de généticiens à la génomique moderne et aux approches de sélection moléculaire, ainsi que leur maintien dans les pays en développement, combinés à un appui institutionnel et gouvernemental adéquat, seront cruciaux pour l’intégration durable et efficace de la sélection assistée par la génomique dans les programmes d’amélioration des cultures afin de garantir la sécurité alimentaire dans les pays en développement&nbsp;».<i>Nature Biotechnology</i> 30, 1172–1176 (2012).</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/La-genomique-peut-elle-stimuler-la-productivite-des-cultures-orphelines">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Afrique-de-l-Est-les-agriculteurs-non-consultes-a-propos-d-un-projet-de-politique-sur-la-protection-des-obtentions-vegetales" title="Afrique de l’Est : les agriculteurs non consultés à propos d’un projet de politique sur la protection des obtentions végétales " alt="link">Afrique de l’Est : les agriculteurs non consultés à propos d’un projet de politique sur la protection des obtentions végétales </a></h2>
+
+	
+					<p>Des agriculteurs d’Afrique de l’Est ont remis une pétition à l’Organisation régionale africaine de la propriété intellectuelle (ARIPO) à la suite de la proposition de celle-ci concernant un projet de cadre politique et réglementaire harmonisé au niveau régional pour la protection des obtentions végétales. Ce projet obligera les petits exploitants agricoles d’Afrique de l’Est à acheter toutes leurs semences auprès de firmes multinationales et à arrêter d’utiliser des semences issues de récoltes précédentes. Le groupe d’exploitants agricoles incrimine la procédure suivie pour l’élaboration de ce projet, ainsi que l’impact négatif que son adoption pourrait avoir sur les petits exploitants agricoles, la sécurité alimentaire et la biodiversité agricole. Le projet permettra aux bureaux régionaux de l’ARIPO d’administrer les droits des obtenteurs au nom de l’ensemble des États contractants. Il permettra en outre à l’Union africaine (UA) d’ouvrir des débats sur la production, l’importation et l’exportation des cultures génétiquement modifiées en Afrique lors du prochain sommet de l’UA qui se tiendra en janvier 2013. Des observateurs et des représentants de la société civile ont vivement critiqué cette situation, dans la mesure où ils n’ont pas réellement pu participer au processus de négociation, et demandent à l’ARIPO de mener des consultations approfondies avec l’ensemble des parties prenantes concernées et de ne pas presser les gouvernements d’adopter ce projet législatif.(<a href="http://www.ip-watch.org/2012/11/05/upov-hails-benefits-of-plant-variety-protection-civil-society-frustrated/" target="_blank">IP-Watch</a>, 5/11/2012 et <i><a href="http://www.theeastafrican.co.ke/news/EA-farmers-want-to-breed-their-own-seeds/-/2558/1644708/-/8r9kob/-/index.html" target="_blank">The East African</a></i>, 16/12/2012)</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/Afrique-de-l-Est-les-agriculteurs-non-consultes-a-propos-d-un-projet-de-politique-sur-la-protection-des-obtentions-vegetales">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/20"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/60"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements">1</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/20">2</a></span>
+            
+        <span class="current">3</span>
+
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/60">4</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/80">5</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/100">6</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/120">7</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/140">8</a></span>
+                              <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/160">9</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie/Developpements/(offset)/260">14</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":410,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

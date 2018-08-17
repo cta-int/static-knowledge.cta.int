@@ -1,0 +1,1343 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Publications / Biodiversité agricole / S&amp;T et défis agricoles / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/(offset)/20" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/S-T-Issues/Biodiversity/Relevant-publications">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles">S&T et défis agricoles</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">Biodiversité agricole</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Publications</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Publications</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Plusieurs-facons-d-ameliorer-la-conservation-et-l-utilisation-des-varietes-de-cultures-traditionnelles" title="Plusieurs façons d’améliorer la conservation et l’utilisation des variétés de cultures traditionnelles" alt="link">Plusieurs façons d’améliorer la conservation et l’utilisation des variétés de cultures traditionnelles</a></h2>
+
+	
+					<p>Devra Jarvis de Bioversity International et ses collègues ont examiné dans quelle mesure il était nécessaire de mener des études sur 1) l’évaluation de la diversité au sein des exploitations agricoles ; 2) l’accès à la diversité et à l’information ; 3) l’ampleur de l’utilisation des matériels et des informations disponibles ; et 4) les avantages obtenus par les exploitants ou la communauté agricole de l’utilisation de la diversité des cultures, afin de déterminer les différentes façons d’aider les agriculteurs et les communautés agricoles à garantir la conservation de leurs variétés traditionnelles et la diversité génétique dans leurs systèmes de production. Deux thèmes sont mis en exergue dans leur article. Premièrement, toute description ou analyse menée dans les quatre principaux domaines (évaluation, accès, utilisation et avantage) peut mener – et mènera très probablement – à la mise en œuvre de différentes actions. Deuxièmement, la décision de mettre en œuvre une action spécifique, et donc de garantir sa réussite, reposera sur les connaissances et la capacité de direction des exploitants et de la communauté agricole pour évaluer les avantages de cette action. Cela montre en outre l’importance des activités (mises en place par des organisations ou des agences locales, nationales ou internationales) de renforcement des institutions locales afin de permettre aux agriculteurs d’assumer un rôle plus important dans la gestion de leurs propres ressources.(<a href="http://www.bioversityinternational.org/index.php?id=7038" target="_blank">Bioversity International</a>, 10/12/2012)</p>
+							<p><span class="date">8/02/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Plusieurs-facons-d-ameliorer-la-conservation-et-l-utilisation-des-varietes-de-cultures-traditionnelles">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Ressources-genetiques-de-teff-accords-specifiques-sur-l-acces-et-le-partage-des-avantages-constatations-et-enseignements-tires" title="Ressources génétiques de teff : accords spécifiques sur l’accès et le partage des avantages - constatations et enseignements tirés" alt="link">Ressources génétiques de teff : accords spécifiques sur l’accès et le partage des avantages - constatations et enseignements tirés</a></h2>
+
+	
+					<p>Ce rapport traite d’un accord sur l’accès aux ressources génétiques de teff en Éthiopie et du partage juste et équitable des avantages découlant de leur utilisation. Cet accord était considéré comme une phase pilote pour la mise en ouvre de la Convention sur la diversité biologique pour ce qui est de l’accès et du partage des avantages. Il n’a pas été appliqué. Peu de possibilités se sont donc offertes à l’Éthiopie pour générer et partager les avantages découlant de l’utilisation des ressources génétiques de teff. Ce rapport présente une analyse approfondie des événements survenus dans le cadre de cet accord ainsi qu’un brevet sur la transformation du teff.&nbsp;<a href="http://www.fni.no/abs/publication-50.html" target="_blank">http://www.fni.no/abs/publication-50.html</a>&nbsp;&nbsp;&nbsp;(FNI, 2012)&nbsp;&nbsp;&nbsp;</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Ressources-genetiques-de-teff-accords-specifiques-sur-l-acces-et-le-partage-des-avantages-constatations-et-enseignements-tires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Guide-relatif-a-la-reglementation-europeenne-sur-la-commercialisation-des-semences-et-des-materiels-de-multiplication-vegetale-dans-le-contexte-de-la-biodiversite-agricole" title="Guide relatif à la réglementation européenne sur la commercialisation des semences et des matériels de multiplication végétale dans le contexte de la biodiversité agricole" alt="link">Guide relatif à la réglementation européenne sur la commercialisation des semences et des matériels de multiplication végétale dans le contexte de la biodiversité agricole</a></h2>
+
+	
+					<p>Ce rapport élaboré par le Fridtjof Institute (FNI, Nansen, Norvège) présente la législation européenne sur la commercialisation des semences et des matériels de multiplication végétale et décrit dans quelle mesure celle-ci influence la biodiversité agricole. Il examine les principes des douze directives fondamentales de l’UE dans ce domaine et les trois directives qui prévoient des dérogations pour la conservation et l’utilisation durable des ressources phytogénétiques pour l’alimentation et l’agriculture. Ce rapport examine en outre les questions relatives à l’application d’une telle réglementation en Europe, ses effets sur la biodiversité agricole, le contenu et les conséquences de la directive de l’UE qui prévoit des dérogations pour la conservation des différentes variétés. &nbsp;<a href="http://www.fni.no/publ/biodiversity.html#eu_seed_legislation" target="_blank">http://www.fni.no/publ/biodiversity.html#eu_seed_legislation</a>&nbsp;&nbsp;(FNI, 08/2012)&nbsp;</p>
+							<p><span class="date">7/03/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Guide-relatif-a-la-reglementation-europeenne-sur-la-commercialisation-des-semences-et-des-materiels-de-multiplication-vegetale-dans-le-contexte-de-la-biodiversite-agricole">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Diversite-genetique-parmi-des-varietes-locales-de-manioc-privilegiees-par-les-agriculteurs-en-Ouganda" title="Diversité génétique parmi des variétés locales de manioc privilégiées par les agriculteurs en Ouganda " alt="link">Diversité génétique parmi des variétés locales de manioc privilégiées par les agriculteurs en Ouganda </a></h2>
+
+	
+					<p>Cette étude a été réalisée en vue de déterminer la diversité génétique parmi 51 variétés locales de manioc (<i>Manihot esculenta</i>) et 15 accessions élites cultivées en Ouganda. L’évaluation de la diversité génétique a révélé un total de 154 allèles, dont 24 % étaient des allèles uniques présents dans les races locales seulement. Introduire ces races locales à allèles uniques dans les systèmes d’amélioration du manioc permettra d’augmenter les chances de produire les cultivars élites privilégiés par les agriculteurs. L’étude montre également que la différenciation génétique trouvée parmi les accessions de différentes régions représente une occasion de constituer des groupes hétérotiques dans le programme d’amélioration.&nbsp;&nbsp;(<a href="http://www.ajol.info/index.php/acsj/article/view/78715" target="_blank"><i>African Crop Science Journal</i></a>, Vol. 20, 2012)&nbsp;</p>
+							<p><span class="date">10/04/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Diversite-genetique-parmi-des-varietes-locales-de-manioc-privilegiees-par-les-agriculteurs-en-Ouganda">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Rapport-de-synthese-du-2e-symposium-international-sur-les-especes-vegetales-sous-utilisees" title="Rapport de synthèse du 2e symposium international sur les espèces végétales sous-utilisées " alt="link">Rapport de synthèse du 2e symposium international sur les espèces végétales sous-utilisées </a></h2>
+
+	
+					<p>Ce rapport contient 89 articles portant sur les nouvelles pistes de recherche, les stratégies et les pratiques liées à la conservation et à l’utilisation des ressources génétiques des espèces végétales sous-utilisées, et notamment les fruits tropicaux. Le 2e symposium international sur les espèces végétales sous-utilisées s’est déroulé à Kuala Lumpur en juin 2011. Le rapport dresse une liste des travaux consacrés&nbsp;aux thématiques suivantes : systèmes semenciers communautaires, cultures vivrières indigènes, espèces végétales sous-utilisées, fruits et légumes tropicaux, dialogue politique et questions relatives aux brevets, sécurité alimentaire et nutritionnelle, biotechnologie, entre autres.<a href="http://www.ishs.org/ishs-book/979" target="_self">http://www.ishs.org/ishs-book/979</a>(ISHS, Mars 2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Rapport-de-synthese-du-2e-symposium-international-sur-les-especes-vegetales-sous-utilisees">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Les-facteurs-affectant-l-acces-aux-ressources-genetique-aquacoles-et-leur-protection" title="Les facteurs affectant l’accès aux ressources génétique aquacoles et leur protection" alt="link">Les facteurs affectant l’accès aux ressources génétique aquacoles et leur protection</a></h2>
+
+	
+					<p>Les acteurs du secteur de l’aquaculture sont en proie à de nouvelles difficultés liées à l’accès à un prix abordable au matériel génétique amélioré et à la mobilisation de fonds nécessaires et suffisants pour les programmes de sélection durables. La propriété publique ou le financement public semblent constituer des mesures importantes pour équilibrer ces objectifs. C’est notamment le cas durant les premières phases de mise en œuvre des programmes appliqués de sélection aquacole. Cette étude examine dans quelle mesure les acteurs de cette filière accèdent au matériel génétique aquacole et protègent les innovations introduites dans le domaine de la sélection. L’auteur cherche à savoir comment les stratégies institutionnelles, les développements technologiques et les cadres de réglementation internationaux peuvent affecter ces options.(<a href="http://www.fni.no/publ/biodiversity.html#agr?utm_source=K4DNewsletterFR&amp;utm_medium=Link&amp;utm_campaign=K4D_FR_April2013" target="_blank">FNI</a>, 03/2013)</p>
+							<p><span class="date">22/05/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Les-facteurs-affectant-l-acces-aux-ressources-genetique-aquacoles-et-leur-protection">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Affirmer-les-droits-des-agriculteurs-sur-les-ressources-phytogenetiques-reussites-et-pratiques-exemplaires" title="Affirmer les droits des agriculteurs sur les ressources phytogénétiques : réussites et pratiques exemplaires " alt="link">Affirmer les droits des agriculteurs sur les ressources phytogénétiques : réussites et pratiques exemplaires </a></h2>
+
+	
+					<p>Cet ouvrage écrit par des chercheurs du Fridtjof Nansen Institute (FNI), en Norvège, offrent aux décideurs politiques et aux praticiens un cadre conceptuel pour comprendre les droits des &nbsp;agriculteurs concernant les ressources phytogénétiques et le partage de ces ressources. L’ouvrage compile un certain nombre de réussites illustrant comment les éléments qui forment les &nbsp;bases des droits des agriculteurs sur les ressources phytogénétiques peuvent être respectés dans la pratique. Ces réussites (en provenance d’Ethiopie, du Mali et du Zimbabwe, entre &nbsp;autres) décrivent dans quelle mesure des progrès considérables ont été réalisés sur plusieurs aspects de la charte des droits des agriculteurs, à savoir&nbsp;: la conservation, l’utilisation, &nbsp;l’échange et la vente de semences de ferme; la protection des savoirs traditionnels; le partage des bénéfices; et la participation au processus décisionnel.(Routledge, 18/06/2013)&nbsp;</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Affirmer-les-droits-des-agriculteurs-sur-les-ressources-phytogenetiques-reussites-et-pratiques-exemplaires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/La-genomique-des-animaux-d-elevage" title="La génomique des animaux d’élevage	     " alt="link">La génomique des animaux d’élevage	     </a></h2>
+
+	
+					<p>Des chercheurs de l’École Polytechnique Fédérale de Lausanne, en Suisse, étudient dans quelle mesure les caractéristiques géographiques et environnementales &nbsp;affectent la structure génétique des cheptels dans le monde afin d’établir une corrélation entre les modèles de variation génétique et les variables géographique. Ils &nbsp;explorent le potentiel d’un certain nombre de marqueurs moléculaires différents, à partir de sources génétiques, de l’ADN mitochondrial aux chromosomes Y, pour la &nbsp;génomique des animaux d’élevage. Dans les études réalisées sur des animaux d’élevage, les principaux systèmes de marqueurs sont le polymorphisme de longueur &nbsp;de fragments amplifiés (AFPL, combinant la digestion de l’ADN et l’amplification par réaction de polymérase en chaîne), les microsatellites (marqueurs dans l’ADN &nbsp;nucléaire), l’analyse de l’ADN mitochondrial (analyse des marqueurs à héritage uniparental), les polymorphismes de nucléotides individuels (SNP) et la variation du &nbsp;nombre de copies (CNV). Tout comme les phytogénéticiens, qui analysent les plantes sauvages apparentées et les plantes sous-utilisées afin de découvrir des &nbsp;gènes utiles, les spécialistes de l’élevage ont analysé les génomes de races locales/indigènes afin d’associer des loci uniques avec des paramètres &nbsp;environnementaux. Cet effort peut aider à améliorer les troupeaux très affectés par les changements rapides et constants de l’environnement. &nbsp; &nbsp; &nbsp;<a href="http://infoscience.epfl.ch/record/175402/files/InTech-Landscape_genomics_in_livestock.pdf?version=1" target="_self">http://infoscience.epfl.ch/record/175402/files/InTech-Landscape_genomics_in_livestock.pdf?version=1</a>&nbsp; &nbsp; &nbsp;(via EPFL, 2013) &nbsp; &nbsp;</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/La-genomique-des-animaux-d-elevage">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Comment-exploiter-les-sciences-et-biotechnologies-vegetales-pour-reduire-les-carences-en-micronutriments" title="Comment exploiter les sciences et biotechnologies végétales pour réduire les carences en micronutriments? " alt="link">Comment exploiter les sciences et biotechnologies végétales pour réduire les carences en micronutriments? </a></h2>
+
+	
+					<p>Irene Murgia et ses collègues du Département de Biosciences de l’Università degli Studi di Milano (Italie) proposent les articles les plus récents sur les avancées en matière de biofortification pour augmenter la teneur en micronutriment de certaines cultures. Ils présentent également un aperçu des différentes stratégies qui pourraient être adoptées pour produire des cultures vivrières de base riches en micronutriments. Certaines des grandes questions soulevées dans ces articles sont liées aux vitamines (Bs, C et D), aux micronutriments contenant des métaux (fer, zinc et manganèse) et à l’iode. Les articles présentés ici montrent dans quelle mesure les connaissances dans le domaine du métabolisme végétal, de la physiologie des plantes et de la biologie moléculaire pourraient permettre d’améliorer la qualité nutritionnelle des aliments dérivés des plantes. Les auteurs mettent en outre l’accent sur les efforts multidisciplinaires nécessaires pour relever les défis que constituent la sécurité alimentaire et la malnutrition par carence en micronutriments. &nbsp;&nbsp;<a href="http://www.frontiersin.org/Journal/10.3389/fpls.2013.00429/full" target="_self">http://www.frontiersin.org/Journal/10.3389/fpls.2013.00429/full</a>&nbsp;&nbsp;(<i>Front. Plant Sci, </i>6/11/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Comment-exploiter-les-sciences-et-biotechnologies-vegetales-pour-reduire-les-carences-en-micronutriments">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Le-developpement-durable-de-l-elevage-repose-sur-la-diversite" title="Le développement durable de l’élevage repose sur la diversité  " alt="link">Le développement durable de l’élevage repose sur la diversité  </a></h2>
+
+	
+					<p>Une vaste étude conduite par Mario Herrero et ses collègues de l’Institut international de recherche sur l’élevage (ILRI), en collaboration avec l’Organisation de la recherche scientifique et industrielle du Commonwealth (CSIRO) et l’Institut international pour l’analyse des systèmes appliqués (IIASA), montre que les animaux de nombreux pays en développement nécessitent beaucoup plus d’aliments pour produire un kilo de protéines que dans les pays industrialisés. L’étude révèle également que la volaille et la viande de porc sont produits d’une manière bien plus efficace que le lait ou le bœuf, et que les émissions de gaz à effet de serre varient largement selon le type d’animal et son alimentation. Il s’agit d’une évaluation détaillée de ce que mangent les vaches, les moutons, les cochons, les volailles et les autres animaux d’élevage dans différentes régions du monde. Elle évalue par ailleurs comment ces animaux convertissent les aliments consommés en lait, œufs et viande, et la quantité de gaz à effet de serre qu’ils produisent. L’article présente le portrait le plus détaillé jamais dressé des écosystèmes où l’on pratique l’élevage, et constitue une base appropriée pour examiner les questions relatives au développement durable du secteur de l’élevage.&nbsp;&nbsp;<a href="http://www.pnas.org/content/early/2013/12/13/1321844111.full.pdf" target="_self">http://www.pnas.org/content/early/2013/12/13/1321844111.full.pdf</a><a href="http://paepard.blogspot.nl/2014/01/livestock-sustainability-through.html" target="_self">http://paepard.blogspot.nl/2014/01/livestock-sustainability-through.html</a>(PNAS via PAEPARD, 16/12/2013)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Le-developpement-durable-de-l-elevage-repose-sur-la-diversite">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Vers-une-alimentation-mondialisee-davantage-de-nourriture-diversite-reduite-et-plus-de-risques-associes" title="Vers une alimentation mondialisée : davantage de nourriture, diversité réduite et plus de risques associés   " alt="link">Vers une alimentation mondialisée : davantage de nourriture, diversité réduite et plus de risques associés   </a></h2>
+
+	
+					<p>Cette étude approfondie menée par Colin Khoury du Centre international d’agriculture tropicale (CIAT), en collaboration avec des chercheurs d’autres instituts, fait apparaître les changements intervenus dans l’importance relative des différentes plantes cultivées dans les approvisionnements alimentaires nationaux à l’échelon mondial au cours des 50 dernières années. Cette étude de l’approvisionnement alimentaire à l’échelon mondial décrit de manière détaillée et confirme pour la première fois ce que les experts soupçonnaient depuis longtemps : au cours des cinq dernières décennies, les régimes alimentaires humains ont suivi un rythme de croissance similaire (moyenne mondiale de 36 %) et la tendance ne montre aucun signe de ralentissement, ce qui entraîne de lourdes conséquences pour la nutrition humaine et la sécurité alimentaire dans le monde. L’étude fait apparaître que le recours accru à un nombre limité de cultures alimentaires peut également contribuer à favoriser l’obésité, les maladies cardiovasculaires et le diabète, largement associés à une modification des habitudes alimentaires dans le monde. Nombre de cultures d’importance considérable à l’échelon régional – dont les céréales comme le sorgho, le millet et le seigle, ainsi que les plantes à racines et tubercules comme la patate douce, le manioc et l’igname – ont perdu du terrain. D’autres cultures céréalières et maraîchères importantes au niveau local – pour lesquelles des données comparables au niveau mondial ne sont pas disponibles – ont subi le même sort. L’autre danger d’avoir un panier alimentaire plus homogène est qu’il rend l’agriculture plus vulnérable aux principales menaces comme la sécheresse, les insectes nuisibles et les maladies, qui risquent de s’aggraver dans de nombreuses régions du monde en raison du changement climatique. &nbsp;Note de l’éditeur : les chercheurs et les politiques peuvent-ils faire fi de la mondialisation des régimes alimentaires et du recours à un nombre limité de cultures ? Les implications pour l’avenir de la sécurité alimentaire et nutritionnelle sont lourdes de conséquences, que ce soit pour les économies ou l’environnement naturel. Des efforts de recherche similaires devraient être consentis en faveur de l’élevage – reportez-vous à l’article de Patterson. J’ai lu il y a quelques semaines que des chercheurs chinois avaient commencé à examiner les conséquences de la perte des ressources génétiques autochtones, qui sont plus résilientes, pour l’alimentation et l’agriculture.Autres informations pertinentes: <a href="http://www.ciatnews.cgiar.org/wp-content/uploads/2014/03/New_study_on_increasing_homogeneity_within_global_food_supplies.pdf" target="_blank">Communiqué de presse</a>, <a href="http://www.ciatnews.cgiar.org/2014/03/03/globalized-diet-more-food-less-diversity-more-associated-risks/" target="_blank">CIAT News</a>, <a href="http://agro.biodiver.se/2014/03/globalized-diets-paper-globalizes" target="_blank">Agricultural Biodiversity Weblog</a> et une article à <a href="http://www.pnas.org/content/early/2014/02/26/1313490111.abstract" target="_blank">CrossMark.</a>(CIAT, 29/01/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Vers-une-alimentation-mondialisee-davantage-de-nourriture-diversite-reduite-et-plus-de-risques-associes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Nouvelles-bioressources-vegetales-applications-dans-la-production-alimentaire-la-medecine-et-les-cosmetiques" title="Nouvelles bioressources végétales: applications dans la production alimentaire, la médecine et les cosmétiques   " alt="link">Nouvelles bioressources végétales: applications dans la production alimentaire, la médecine et les cosmétiques   </a></h2>
+
+	
+					<p>Ameenah Gurib-Fakim est la rédactrice d’un nouvel ouvrage intitulé <i>Nouvelles bioressources végétales&nbsp;: applications dans la production alimentaire, la médecine et les cosmétiques</i>, récemment publié par John Wiley &amp; Son. Source d’informations fiables sur les espèces végétales sous-utilisées, cet ouvrage comble une lacune majeure en ce sens qu’il permet de comprendre la relation entre l’être humain et les plantes sous-utilisées. Après une section introductive qui définit le cadre avec un aperçu de l’importance historique et législative des espèces végétales sous-utilisées, les quatre principaux chapitres sont consacrés à l’application potentielle des nouvelles bioressources végétales dans la production alimentaire, la médecine et les cosmétiques. L’ouvrage aborde en outre les aspects économiques, sociaux et culturels des espèces végétales sous-utilisées et vise à attirer davantage l’attention sur ces espèces et les initiatives de conservation. Il met par ailleurs en lumière les questions clés relatives aux ressources génétiques des espèces végétales sous-utilisées et réunit des universitaires internationaux autour de cette question. &nbsp; &nbsp;(<a href="http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118460618.html" target="_self">Wiley-Blackwell</a>, 04/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Nouvelles-bioressources-vegetales-applications-dans-la-production-alimentaire-la-medecine-et-les-cosmetiques">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Vitamine-A-promouvoir-les-strategies-alimentaires" title="Vitamine A : promouvoir les stratégies alimentaires   " alt="link">Vitamine A : promouvoir les stratégies alimentaires   </a></h2>
+
+	
+					<p>Ted Greiner, professeur en nutrition de l’Université de Hanyang, en Corée du Sud, explique pourquoi les stratégies alimentaires visant à lutter contre les carences en vitamine A continuent d’être passées sous silence par les gouvernements et les bailleurs de fonds. La manière de percevoir ce type de stratégies a été largement influencée par les partisans d’une supplémentation en micronutriments. Ceci expliquant en partie cela, selon lui. Les stratégies alimentaires peuvent être perçues comme étant concurrentielles ou gênantes et sont donc critiquées, considérées comme non démontrées voire même inefficaces. Greiner montre au contraire que la supplémentation ne parvient pas à améliorer le statut en vitamine A et qu’il n’existe aucune preuve d’un impact solide sur la mortalité infantile en milieu réel. Une grande variété d’aliments communs et indigènes s’avèrent bien plus efficaces pour améliorer le statut en vitamine A même dans le cadre d’essais de courte durée. Les stratégies alimentaires sont difficiles à mettre en œuvre et à évaluer et n’ont pas d’effet mesurable immédiat. Mais contrairement à la supplémentation, elles suscitent l’adhésion de la communauté toute entière, sont sans danger pour la femme enceinte, n’ont aucun effet secondaire, sont durables et procurent de nombreux avantages en plus de l’amélioration du statut en vitamine A. Du point de vue des pays, des communautés et des familles qui produisent des aliments riches en vitamine A, les avantages économiques l’emporteraient probablement sur les coûts. &nbsp; &nbsp;&nbsp;(<a href="http://www.fao.org/3/a-as565e.pdf " target="_self">FAO et WHO</a>, 2013) &nbsp;&nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Vitamine-A-promouvoir-les-strategies-alimentaires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Conservation-de-l-agrobiodiversite-et-selection-vegetale-Ajustement-des-droits-de-propriete-intellectuelle-vers-la-durabilite-et-l-equite-dans-le-domaine-public" title="Conservation de l’agrobiodiversité et sélection végétale – Ajustement des droits de propriété intellectuelle : vers la durabilité et l’équité dans le domaine public   " alt="link">Conservation de l’agrobiodiversité et sélection végétale – Ajustement des droits de propriété intellectuelle : vers la durabilité et l’équité dans le domaine public   </a></h2>
+
+	
+					<p>Depuis l’Accord sur les ADPIC et la mise en application interprétative dominante de ses normes minimales, les acteurs qui utilisent, conservent et améliorent la biodiversité agricole sont confrontés à un système très réglementé des droits de propriété intellectuelle qui a été vivement critiqué. Toutefois, ces critiques n’ont guère suscité le changement réglementaire suggéré. Dans cette thèse de doctorat, Fulya Batur explique que cela est dû au manque de contextualisation socio-technologique des lois applicables et de l’interprétation judiciaire. En effet, la propriété intellectuelle s’applique à des contextes d’innovation très différents et touche tous ceux qui œuvrent à l’amélioration des plantes&nbsp;: sélectionneurs, obtenteurs conventionnels du secteur privé, biologistes moléculaires du secteur public, start-ups spécialisées et géants de la biotechnologie intégrée. &nbsp;(APBREBES, 04/2014)&nbsp;</p>
+							<p><span class="date">22/02/2015</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Conservation-de-l-agrobiodiversite-et-selection-vegetale-Ajustement-des-droits-de-propriete-intellectuelle-vers-la-durabilite-et-l-equite-dans-le-domaine-public">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Utilisation-des-ressources-ecologiques-autochtones-pour-lutter-contre-les-ravageurs-en-Afrique" title="Utilisation des ressources écologiques autochtones pour lutter contre les ravageurs en Afrique " alt="link">Utilisation des ressources écologiques autochtones pour lutter contre les ravageurs en Afrique </a></h2>
+
+	
+					<p>La protection actuelle des cultures fondée sur une utilisation de pesticides agrochimiques n’a eu qu’un impact marginal sur la productivité des petits exploitants agricoles, dont beaucoup ne peuvent se permettre d’acheter ces produits chimiques importés. Une solution alternative consiste à exploiter les ressources biologiques disponibles localement, comme les prédateurs naturels des insectes endémiques et les pesticides végétaux autochtones. Cet article présente deux exemples d’utilisation de ressources locales – une plante pesticide, <i>Tephrosia vogelii</i>, et le baculovirus, <i>Spodoptera exempta nucleopolyhedrovirus </i>(<i>SpexNPV</i>); les deux peuvent être produits localement et se sont révélées très prometteuses lors d’essais (outils peu coûteux et efficaces pour lutter contre les ravageurs en Afrique), leur utilisation se généralise et fait l’objet d’une étude menée par des réseaux de chercheurs africains. Bien que ces deux exemples s’annoncent prometteurs, des défis importants doivent être surmontés afin de développer des systèmes de production, d’approvisionnement et de commercialisation économiquement viables et durables. L’environnement réglementaire doit en outre évoluer pour faciliter l’homologation de nouveaux produits et la mise en place de chaînes d’approvisionnement appropriées qui partagent équitablement les bénéfices de ces ressources avec les communautés locales qui les produisent. &nbsp;&nbsp;(<i>Food Security</i>, 26/11/2014)<b>Télécharger cet article.</b></p>
+							<p><span class="date">22/02/2015</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Utilisation-des-ressources-ecologiques-autochtones-pour-lutter-contre-les-ravageurs-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Conservation-de-l-agrobiodiversite-et-selection-vegetale-Ajustement-des-droits-de-propriete-intellectuelle-vers-la-durabilite-et-l-equite-dans-le-domaine-public2" title="Conservation de l’agrobiodiversité et sélection végétale – Ajustement des droits de propriété intellectuelle : vers la durabilité et l’équité dans le domaine public    " alt="link">Conservation de l’agrobiodiversité et sélection végétale – Ajustement des droits de propriété intellectuelle : vers la durabilité et l’équité dans le domaine public    </a></h2>
+
+	
+					<p>Depuis l’Accord sur les ADPIC et la mise en application interprétative dominante de ses normes minimales, les acteurs qui utilisent, conservent et améliorent la biodiversité agricole sont confrontés à un système très réglementé des droits de propriété intellectuelle qui a été vivement critiqué. Toutefois, ces critiques n’ont guère suscité le changement réglementaire suggéré. Dans cette thèse de doctorat, Fulya Batur explique que cela est dû au manque de contextualisation socio-technologique des lois applicables et de l’interprétation judiciaire. En effet, la propriété intellectuelle s’applique à des contextes d’innovation très différents et touche tous ceux qui œuvrent à l’amélioration des plantes&nbsp;: sélectionneurs, obtenteurs conventionnels du secteur privé, biologistes moléculaires du secteur public, start-ups spécialisées et géants de la biotechnologie intégrée. &nbsp; &nbsp;(APBREBES, 04/2014)</p>
+							<p><span class="date">7/03/2015</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Conservation-de-l-agrobiodiversite-et-selection-vegetale-Ajustement-des-droits-de-propriete-intellectuelle-vers-la-durabilite-et-l-equite-dans-le-domaine-public2">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Faire-face-au-changement-climatique-le-role-des-ressources-genetiques-pour-l-alimentation-et-l-agriculture" title="Faire face au changement climatique : le rôle des ressources génétiques pour l’alimentation et l’agriculture  " alt="link">Faire face au changement climatique : le rôle des ressources génétiques pour l’alimentation et l’agriculture  </a></h2>
+
+	
+					<p>Les ressources génétiques ont un rôle crucial à jouer pour nourrir la planète, notamment à l’heure où le changement climatique progresse plus rapidement que prévu, et il reste encore beaucoup à faire pour étudier, préserver et exploiter la biodiversité qui est à la base de la production alimentaire dans le monde. Les auteurs de ce nouvel ouvrage publié par la FAO estiment que la capacité des plantes et des animaux d’élevage à résister aux conditions volatiles et s’adapter aux changements de l’environnement est le résultat direct de leur diversité génétique. Toutefois, il convient de déployer des efforts plus importants pour étudier et utiliser cette diversité comme un véritable mécanisme d’adaptation, mais aussi élaborer et mettre en œuvre des politiques de soutien à cet effet. En particulier, il est tout aussi important d’améliorer les connaissances, la conservation et l’utilisation des espèces sauvages apparentées, car elles sont susceptibles d’avoir des caractères génétiques pouvant être utilisés pour développer des cultures adaptées aux systèmes alimentaires affectés par le changement climatique. (Rural 21, 03/02/2015)<a href="http://www.fao.org/3/a-i3866e.pdf" target="_blank">Télécharger l’ouvrage</a>.</p>
+							<p><span class="date">10/03/2015</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/Faire-face-au-changement-climatique-le-role-des-ressources-genetiques-pour-l-alimentation-et-l-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/(offset)/40"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications">1</a></span>
+            
+        <span class="current">2</span>
+
+                      <span class="other"><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole/Publications/(offset)/40">3</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":731,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1180 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                            
+<title>Knowledge for development</title>
+<!--<title>The ethics of animal production and sustainability / Feature articles / Livestock / Commodities / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Over the last 50 years, the ethical values around animal production have steadily changed, mainly through widespread adoption of industrial and intensive practices. Industrialisation and pro-productionism have taken precedence over agrarian values and farming methods emphasising material prosperity. This has displaced the ethos of independent, community farmers and pastoralists as stewards of the land and farm animals.&amp;nbsp; Food safety, quality control, animal welfare and traceability practi..."/><meta name="keywords" content=", science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="/" title="Knowledge front page"/>
+<link rel="Index" href="/"/>
+<link rel="Search" href="/content/search" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/layout/set/print/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Produits-de-base/Betail/Articles-de-fond/L-ethique-en-matiere-de-production-animale-et-de-durabilite">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/en">Home</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers/Commodities">Commodities</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers/Commodities/Livestock">Livestock</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/en/Dossiers/Commodities/Livestock/Feature-articles">Feature articles</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">The ethics of animal...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image">
+										
+						
+
+    
+                <div class="imageleft">
+    
+    
+                                                                                                                                     <a href="/var/knowledge/storage/images/dossiers/cta-and-s-t/cta-s-t-programme/commissioned-articles-2016/the-ethics-of-animal-production-and-sustainability/904500-1-eng-GB/The-ethics-of-animal-production-and-sustainability.jpg" rel="lightbox[]">        <img src="/var/knowledge/storage/images/dossiers/cta-and-s-t/cta-s-t-programme/commissioned-articles-2016/the-ethics-of-animal-production-and-sustainability/904500-1-eng-GB/The-ethics-of-animal-production-and-sustainability_contentfront.jpg" width="185" height="139" style="border: 0px  ;" alt="By Adam Ward, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=12539868" title="By Adam Ward, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=12539868"/>
+        </a>
+    
+    
+            </div>
+    
+    																					</div>
+	
+					<div class="content-intro-text">
+						<h1>The ethics of animal production and sustainability</h1>
+													<p class="author"><strong>Author:</strong>
+								Andreia De Paula Vieira, and Raymond Anthony</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							29/04/2016</p>
+																									<p class="intro">Introduction:</p>
+							<p>Over the last 50 years, the ethical values around animal production have steadily changed, mainly through widespread adoption of industrial and intensive practices. Industrialisation and pro-productionism have taken precedence over agrarian values and farming methods emphasising material prosperity. This has displaced the ethos of independent, community farmers and pastoralists as stewards of the land and farm animals.&nbsp; Food safety, quality control, animal welfare and traceability practices are overarching norms and have become sites of political and economic contest, as producers and multinational agribusinesses seek to maximise product quality and economic profitability.</p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/en/layout/set/print/content/view/full/27084">Print</a>
+																						| <a href="#comment">Comments</a>
+													</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<p class=" text-center"><b>The ethics of animal production and sustainability</b></p><p class=" text-center">
+Andreia De Paula Vieira,&nbsp; <br/>School of Business and Communication, Universidade Positivo, Brazil</p><p class=" text-center">
+Raymond Anthony,<br/>Department of Philosophy, University of Alaska Anchorage, USA</p><p>
+<b>Introduction</b><br/>Contemporary global animal production is influenced by <i>competing paradigms of agriculture</i> (Thompson, 2010): pro-productionism and agrarianism. These paradigms are informed by ethical values of the main stakeholders and factors such as changing socio-economic conditions, availability of ecosystem resources, impact of international trade agreements, scientific research and technology, citizen education, production and farming sector training and education, local and international food policies and laws, and climatic and environmental challenges.&nbsp;</p><p>Over the last 50 years, the ethical values around animal production have steadily changed, mainly through widespread adoption of industrial and intensive practices. Industrialisation and pro-productionism have taken precedence over agrarian values and farming methods emphasising material prosperity (Thompson, 2008). This has displaced the ethos of independent, community farmers and pastoralists as stewards of the land and farm animals.&nbsp; Farmers and producers everywhere are driven by market forces into adopting intensified animal production and vertical integration approaches and to be more business-oriented. Today, food safety, quality control, animal welfare and traceability practices are overarching norms and have become sites of political and economic contest, as producers and multinational agribusinesses seek to maximise product quality and economic profitability.&nbsp;</p><p>While many farmers and producers in developing countries may be encouraged by global partners to increase local animal production for both domestic and possibly export markets by adopting industrialisation models, in our view, there is much that they and their agrarian-based societies can offer towards promoting the social, environmental and economic sustainability of food systems and local economies. They have the capacity to innovate and provide alternative resilient and sustainable solutions to respond to the demands for modernizing animal production systems. For example, traditional agrarian approaches can provide judicious place-based solutions in response to challenges raised by climate change, risks posed by intraspecies and transboundary production-based diseases widespread in CAFOs (concentrated animal feed operations) or requirements for strict energy, nutrient and waste management, and for intelligent use of natural resources.&nbsp;</p><p>Specific issues for animal agriculture following rapid industrialization in predominantly agrarian societies include: pressure to adopt contract farming; loss of the right to own the land; limited cooperation between smallholder farmers and industrially integrated production and distribution actors in the food chain; local ways of preserving the environment and reducing waste, and household and community food security in the context of human dignity; uncertain added-value market opportunities for smallholders and medium-scale farmers in local and global trading; and challenges to pastoralist practices that depend on close human-animal interactions and good animal welfare. Furthermore, global and national policies that ignore the unique characteristics of local food economics and the important contributions of agrarian societies to food security and income generation may trap producers and their households that are already in poverty (Pinstrup-Andersen and Watson II, 2011). Here, farmers and producers struggle to keep the transaction costs of improving production and processing practices low, to participate in effective training towards professionalization for themselves in tandem with food processors and others animal production workers, and to engage in shared governance of the local food system.&nbsp; Changes in agricultural paradigms towards greater globalization of food can also influence trust between producers and consumers (and of policymakers and scientists); produce ambiguous relationships with the agro-ecological commons; with differing conceptions of harm and risk; and coincide with competing ethical frameworks and varying accounts of sustainability (Anthony, 2012).</p><p>
+<b>Animal production and social justice </b><br/>The demand for animal products is anticipated to rise substantially in the developing world (Alexandratos and Bruinsma, 2012). What will the farming methods that ACP countries adopt reveal about their value commitments? Historically, upscaling production without social justice has disproportionally impacted marginalised peoples, the poor and minorities. Underrepresented peoples and communities may also evaluate implications for ecological integrity and sustainability differently. How should ACP countries balance regional food security and gain market access for their commodities? The (ethical) balance of our duties to animals and farmers (regardless of farm sizes and investments in technology), future generations and to ensuring the resilience of agro-ecological places is paramount.</p><p>Equitable distribution of burdens and benefits, a cornerstone idea in ethics and social or distributive justice (Rawls, 2001), can be the ethical framework to empower smallholder producers in developing countries to change their circumstances and build a promising animal production future. Social justice questions around animal production have four main components (adapted from Miller, 2003): <i>Need</i>, regarding basic necessities and who has obligations to protect them if a citizen risks harm and/or if her/his capacity to function well is threatened or impeded; <i>Desert</i>, regarding just compensation for performance; and <i>Equity</i>, the social ideal that society regards and treats its members as equals, and that benefits such as certain rights (e.g., right to food) should be taken seriously and be shared/distributed equally. Meanwhile, the Procedural justice component concerns moral pluralism and whether a community has adequate political, ethical and economic representation. This component centres on ethical forms of public engagement, and emphasises the adequacy or trustworthiness of deliberative processes, namely, whether certain viewpoints may be unrepresented, unfairly represented or dismissed or trivialised.</p><p>As the world confronts changing values and technologies in animal production, social justice can help orient local animal production and food policies to lift everyone out of poverty into a promising future. Industrial and intensification models should not disadvantage citizens participating in or impacted by animal production. Initially, modernisation should entail meeting the informed demands of local consumers for animal-sourced foods that match regionally informed production chain values.</p><p>Modernisation should not merely mimic existing industrialisation initiatives, but reflect existing agrarian and pastoralist commitments and local food styles and collective food choices, especially where more sustainable and healthy. This could become an important source of innovation and yield added-value products globally. Local innovation could distribute the burdens and benefits of food production more equitably.</p><p>The relevance of <i>Need</i>, <i>Desert </i>and <i>Equity </i>in participatory processes of governance regarding agriculture can be seen in how globalisation and industrialisation of the animal production sector have influenced countries. Through globalisation, the livestock market has experienced growth in domestic demand and created opportunities for producers in developing regions to participate in export markets. This, in turn, has led to modest increases in per capita income, infrastructural and technological change, including vertical integration, the rise of contract farming and urgency in addressing household and community food security. The relevance of <i>procedural justice </i>here concerns whether there is adequate representation of food styles (i.e., “a food regime that is part of a lifestyle”, Korthals, 2012, p. 111) and choices (e.g., as reflection in the production and availability of different food products and related processes) in the dominant food culture (Korthals, 2012).</p><p>For example, how are the collective food choices of ACP countries heard in the production chain and market, and are the food styles and choices reflected adequately realized in food production, preparation, trade and consumption? Procedural justice challenges the market place, the production sector and policy makers to be vigilant in addressing local food choices and styles, where a one-size-fits-all food system is deleterious to the livelihoods of rural communities and the health and nutrition of citizen-consumers internationally.&nbsp; Procedural justice underscores the importance of maintaining open discussions and deliberations with producers and consumers in developing countries confronting modernisation and agricultural industrialization, since the welfare of livestock and sustainability of agricultural practices are inextricably related to fundamental rights such as the right to food and adequate nutrition, livelihood and decent work conditions, and to essential common ingredients for flourishing, such as biodiversity and ecosystem resources (UN Social and Economic Council, 1999).</p><p>
+<b>Social Justice and Specific Sustainability Concerns Involving Animal Production</b><br/>How can social justice inform public policy discussions over ethics of animal production and sustainability? Does the global sector benefit all stakeholders (even the worse off) equitably? (see <a href="http://brusselsbriefings.net/past-briefings/n12-livestock/" target="_self">http://brusselsbriefings.net/past-briefings/n12-livestock/</a>)</p><p>A social justice focus can motivate judicious consideration of which contemporary agricultural technologies and systems to adopt, and should form the basis of engagement strategies between national governments, regional policymakers, producers and farmers, trading partners, scientists, universities and international and local funding agencies. To build sustainability frameworks that respond to ACP countries’ own values, the region’s policymakers and industry agents must consider the ethical implications of animal welfare practices, potential impact of biotechnologies on animals, the environment and the public, public health, food safety and quality, workers’ health and safety, direct and indirect impacts on the local agro-ecological commons and surrounding ecosystems and wildlife, local of production facilities and impacts on poor or rural communities. This focus will permit more innovation and move sustainable animal production practices forward both locally and globally, without creating undue burdens for smaller producers and community-oriented farmers.</p><p>The globalisation of food raises specific social justice questions, such as: “What are the predominant norms guiding global animal agriculture and how have they influenced local policies and practices?”; “What impact has colonisation had on adoption of technological and policy innovations?”; “How are property rights being challenged by industrialisation and intensification?”; “Are the pervasive ethical norms driving food and agricultural policies, research funding, science and technology promoting the social justice ends of sustainability, health and nutritional security?”; “How does institutional corruption and fragmentation of responsibility impede national governments, regional policy makers and science, technology and innovation (ST&amp;I) organisations from assisting those who participate in livestock production?”; “Is there equitable distribution of benefits and burdens for all those impacted by animal agriculture?”; “E.g., how might lack of transparency and inclusion, truancy of accountability, diffusion of responsibility, neglect and violations of individual rights, environmental degradation, poor animal welfare, overuse of pharmaceuticals and chemicals impact how burdens and benefits are shared?”; “What should be the corrective stance for developing countries, including Africa, the Caribbean and the Pacific (ACP)?”</p><p>
+<b>Major constraints to livestock development in ACP countries: Ethics and Practice</b><br/>Asiedu et al. (2009) identify major challenges for ACP member states in addressing livestock food demands, climate change and market quality challenges. The development of livestock production differs between ACP countries and developing countries in Asia and South America and even between ACP countries. Local production systems, institutional constraints, policies and current practices will challenge the direction and form that sustainability will take. Advances in animal biology, biotechnology, information and communication technologies, the sustainable management of environmental and animal resources, food quality, selection of trade linkages to pursue, among others must meet local realities, needs, demands, capacities and impacts in the short and long term. The ethical norms underlying choices and their consequences for different local populations must be considered.</p><p>Ethical governance and policies that promote sustainability should include participatory processes from local, traditional and vulnerable farmers and communities and consider how social justice and innovation is addressed through investments in agricultural development (see EC SEC 2010/379). ACP countries can build resilient and sustainable animal production systems as local or regional attempts to innovate by: revisiting traditional foodways and cultural differences; addressing the impact of colonisation, historical resource extraction and socio-spatial mobility expansion methods on their surrounding environments; (re)conceptualising local land-human-animal relationships; identifying current local demands by consulting stakeholders; adopting agriculture-related technologies; and inviting foreign investment and aid organisations to partner with local producers, policymakers and scientifically instructed agricultural advocates.</p><p>
+<b>Paving the Way for Ethically Conscious Animal Production</b><br/>Animals are investment sinks and sources of cash income in times of need, providers of transport for goods and services, and central to many socio-cultural events and ceremonies (FAO, 2009). Production capacity is much lower in the ACP than in other developing nations. Low ACP growth rates of livestock (FAO, 2006) are particularly challenging for producers interested in improving their global market access. From a social justice perspective, to optimise livestock production and promote innovative local solutions, underlying values and preferences that guide livestock production must be understood, as must the interplay between values and science, technology, energy, environmental and biophysical factors, cultural mores and societal expectations about animal production, policy-making and trade (UNSCD, 2012).</p><p>For different ACP countries, focusing on the relationship between values and economically, environmentally and socially sustainable solutions will help support local animal agriculture. Including local farmers in the more upstream aspect of the knowledge transfer process and in public-private sponsored research endeavours will promote their interests and identify how local resources, feed, and breeds can be employed successfully so farmers can discover practicable solutions for themselves. For example, appealing to local and indigenous knowledge to track nutrients, water and grazing areas is an invaluable management strategy that can innovate and possibly contribute to increases in livestock productivity (Scoones, 1995).</p><p>While developing countries may be encouraged by global partners to increase local animal production for both domestic and possibly export markets by adopting industrialisation models, in our view, gradual adoption will permit innovation and move sustainable animal production practices forward both locally and globally. Before adoption, animal producers must be able to engage with national governments, regional policymakers, trading partners, scientists, universities and international and local funding agencies to build sustainability frameworks that respond to their own values. Policymakers and industry agents must consider the ethical implications of animal welfare practices, potential impact of biotechnologies on animals, the environment and the public, public health, food safety and quality, workers’ health and safety, direct and indirect impacts on the local agro-ecological commons and surrounding ecosystems and wildlife, local of production facilities and impacts on poor or rural communities.</p><p>The following are some significant attempts to promote stakeholder engagement towards meaningful solutions. They acknowledge the centrality of animal welfare for social justice, sustainability and sustainable development and include: “<a href="ftp://ftp.fao.org/docrep/fao/011/i0483e/i0483e00.pdf" target="_self">Capacity building to implement good animal welfare practice</a>”; &quot;<a href="http://www.fao.org/ag/againfo/home/en/news_archive/2014_Animal_Welfare_at_the_Heart_of_Sustainability.html" target="_self">Animal welfare: The Pleasure of Respecting Rights</a>&quot;; and “<a href="http://www.fao.org/docrep/014/ba0027e/ba0027e00.pdf." target="_self">Guide to good dairy farming practice</a>”.</p><p>
+<b>Participatory Science: A Choice for the Governance of Ethical Animal Production</b><br/>A better understanding of values in local enterprise development around animal production and between all sectors of the food chain of the economic, environmental, nutritional, and social advantages conferred by livestock production on ACP countries is urgent so that knowledge can be co-created with farmers and important research partnerships can be (re)imagined. The scientific communities in ACP countries, with policy makers, governing authorities, the industry, the public and producers can shape how science is incorporated in ethical decision-making to benefit both animals and local producers. Moreover, training ACP producers will require transferring local scientific knowledge to existing structures such as cooperatives, other animal production sectors, and to extension agents who support small producers and local subsistence farmers. Stakeholders innovating in and for the sector must be sensitive to regional problems and solutions, including the plight of local smallholder farmers and those outside the traditional chains of production-consumption but also impacted by decisions about animal agriculture through globalisation, such as international animal welfare and trade standards.</p><p>Regional dialogues should establish value-aware and practicable sustainability frameworks and identify short- and long-term priorities to promote research and innovation. The framework must involve key constituents in the animal food chain: producers (those who employ production systems of high and low external inputs), transporters, slaughterhouses, processing plants, scientists (to design the technical aspects of different animal production systems, to ensure animal care and good husbandry practices as well as environmental stewardship), policymakers (that can develop access to regional and international markets and anticipate costs and benefits), agricultural economists and designers (that can develop informed marketing campaigns and educational materials that reflect the strengths of local communities and current science), the government, private sectors and NGOs (that could provide information to ensure ethical governance).</p><p>
+<b>Conclusion</b><br/>Multidisciplinary research will identify ACP countries’ capacities, potential for growth, future vision, and local agricultural values. Doing so will help national governments and policymakers to understand the benefits of agrarian values in producing agricultural products/commodities, and the importance of producing high-quality products locally without harming local folkways and attending to the needs of local consumers and those in the animal production value chain. Innovations in agronomy, animal science, veterinary medicine, environmental sciences, (human and animal) geography, information and communication technologies, and precision agriculture will enable data collection, monitoring and development of novel husbandry practices for animals, a better integration of different crop-livestock-forest-caretaker cultures, the development of contingency plans to overcome sanitary, food safety, animal welfare issues, a better promotion of carbon sequestration strategies, and carefully researched soil and water management programmes to prevent desertification due to climate change.</p><p>The development and use of proven and robust sustainability pathways, such as the Sustainability Assessment of Food and Agriculture systems (SAFA) (<a href="http://www.fao.org/nr/sustainability/sustainability-assessments-safa/en/" target="_self">http://www.fao.org/nr/sustainability/sustainability-assessments-safa/en/</a>), can help engage communities for food and livelihood security and create sustainable or responsible commodities that take into account responsible consumers that are efficient users of resources and can minimise waste. These are crucial social justice expectations, as we pursue meaningful and ethical lives through food and agricultural pathways.</p><p><b>References </b></p><p>Alexandratos, N. and Bruinsma, J. 2012. World Agriculture towards 2030/2050: The 2012 Revision. ESA Working paper No. 12-03. Food and Agriculture Organization of the United Nations, Rome, Italy. http://www.fao.org/fileadmin/templates/esa/Global_persepctives/world_ag_2030_50_2012_rev.pdf [Accessed 3 January 2015].</p><p>Anthony, R. 2012. Building a sustainable future for animal agriculture: an environmental virtue ethic of care approach within the philosophy of technology. Journal of Agricultural and Environmental Ethics (Special Supplement on Sustainable Food Production and Ethics), 25(2): 123-144.</p><p>Asiedu, F., Gouro, A. S., Ndlovu, L., Nuru, H. and Lameta, K. 2009. Improving livestock development in ACP countries: The role of science, technology and innovation in addressing the challenges to food security and economic empowerment. edited by Francis, J. CTA, Technical Centre for Agricultural and Rural Cooperation, Wageningen, Netherlands. <a href="http://knowledge.cta.int/content/download/21263/255792/file/Livestock+Policy+Brief+Final_090529.pdf " target="_self">http://knowledge.cta.int/content/download/21263/255792/file/Livestock+Policy+Brief+Final_090529.pdf </a>[Accessed 3 January 2015].</p><p>EC SEC 2010/379. An EU Policy Framework to Assist Developing Countries in Addressing Food Security Challenges. Commission to the Council and the European Parliament, Brussels, Belgium. <a href="http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52010DC0127" target="_self">http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52010DC0127</a> [Accessed 3 January 2015].</p><p>FAO. 2006. Companion document: Comprehensive Africa Agriculture Development Programme: Integrating livestock, forestry and fisheries sub-sectors, African Union and NEPAD. Food and Agriculture Organization of the United Nations, Rome, Italy.</p><p>FAO. 2009. The State of Food and Agriculture 2009: Towards a Responsible Livestock Future. Food and Agriculture Organization of the United Nations, Rome, Italy.</p><p>Korthals, M. 2012. Two evils in food country: Hunger and the lack of representation in (Ed.) Kaplan, D. The Philosophy of Food, University of California Press, Berkeley, CA, 103-121.</p><p>Miller, D. 2003. Principles of Social Justice. Harvard University Press, Cambridge, MA, USA.</p><p>Pinstrup-Andersen, P. and Watson II, D. 2011. Food Policy for Developing Countries: The Role of Government is Global, National and Local Food Systems. Cornell University Press, Ithaca.&nbsp;</p><p>Rawls, J. 2001. Justice as Fairness: A Restatement. Kelly, E. (ed). Harvard University Press, Cambridge, MA, USA</p><p>Scoones, I. 1995. Exploiting heterogeneity: habitat use by cattle in the communal areas of Zimbabwe. Journal of Arid Environments, 29: 221-237.</p><p>Thompson, P.B. 2008. The ethics of intensification: Agricultural development and cultural change (The International Library of Environmental, Agricultural and Food Ethics). Springer, Dordrecht, The Netherlands.</p><p>Thompson, P.B. 2010. The agrarian vision: Sustainability and environmental ethics. University of Kentucky Press, Lexington, KY, USA.</p><p>UNCSD. 2012. Report of the United Nations Conference on Sustainable Development.</p><p>UN Economic and Social Council, 1999. The right to adequate food (Art 11). E/C.12/1999/5.Geneva: UN Office of the United Nations High Commission for Human Rights.</p><p>
+_______________<br/>
+Commissioned by: Technical Centre for Agricultural and Rural Cooperation ACP-EU (CTA)<br/>
+Published by: CTA, http://knowledge.cta.int/ <br/>
+Edited by: J.A. Francis, CTA <br/>
+Citation: CTA 2016. http://knowledge.cta.int/, “author” accessed on “date.” <br/>Copyright CTA 2016. Articles and material published on Knowledge for Development http://knowledge.cta.int/ can be freely reproduced, provided that authors and source are fully acknowledged.</p>
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+					<p>
+				<span class="stdtext">
+					Related documents:
+				</span>
+			</p>
+			<ul>
+				<li><a href="/content/download/60927/904506/file/Vieira+et+al_Ethics+of+animal+production+and+sustainability_EN_CTA.pdf">Download PDF</a>&nbsp;(661.34 kB)</li>
+			</ul>
+			
+				
+
+		<strong class="date_small">29/04/2016</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+					
+<a id="comment"></a>
+<div id="comments">
+				<h3>No Comments available.</h3>
+		
+			Please <a href="/user/register">log in</a> to make your comment.  In order to log in you may have to first <a href="/user/login">register</a>.
+	<br class="clear">
+</div>			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+				
+<div id="column-right">
+			
+																																																														<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/Dossiers/Commodities/Livestock">Livestock</a></li>
+							<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">CTA S&T programme</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+		 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/en/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":331,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

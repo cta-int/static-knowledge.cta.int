@@ -1,0 +1,1416 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Fellowships, grants &amp; calls / CTA and S&amp;T / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/100" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="active">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/CTA-and-S-T">CTA and S&T</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Fellowships, grants &...</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Fellowships, grants & calls</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Australian-Masters-level-Scholarship-Awards" title="Australian Masters-level Scholarship Awards" alt="link">Australian Masters-level Scholarship Awards</a></h2>
+
+	
+					<p><b>Deadline: 31 March 2013 </b>As part of its development cooperation agenda in Africa, the Australian government is providing up to 380 Masters scholarships for eligible candidates from 28 African countries. These scholarships, commencing in 2014, are aimed at increasing the capacity of Africans to promote development in their home country and are focused on priority development areas including Agriculture and Food Security; Health; Natural Resource Management including Mining Governance; Water and Sanitation; and Public Policy. The call for applications is now open. For more information about the scholarships, visit the <a href="http://adsafrica.com.au/scholarship.php" target="_blank">Australian Awards website</a>.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Australian-Masters-level-Scholarship-Awards">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-candidates-Stage-methodologique-d-appui-a-l-innovation-en-agriculture-familiale-6th-edition" title="Call for candidates: 'Stage méthodologique d'appui à l'innovation en agriculture familiale', 6th edition" alt="link">Call for candidates: 'Stage méthodologique d'appui à l'innovation en agriculture familiale', 6th edition</a></h2>
+
+	
+					<p><b>Deadline: 18 January 2013</b> The course is open to 20 participants. 14 scholarships are available from CUD and 6 additional places are available to candidates with an alternative source of funding for scholarship (CTB bursary, financing sought by your own care). Nominations must be send according to the selected option (with or without CUD scholarship) directly to the CUD or ADG. You can find the necessary information and forms <a href="http://www.ong-adg.be/spip/10502161-Lancement-des.html" target="_blank">here</a>.The terms and scholarship application form for the CUD (Coopération universitaire au développement, Belgium) are also available <a href="http://www.cud.be/content/view/446/203/lang,/%C3%A0" target="_blank">on their website</a>.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-candidates-Stage-methodologique-d-appui-a-l-innovation-en-agriculture-familiale-6th-edition">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Partnerships-for-Enhanced-Engagement-in-Research-PEER-Science" title="Partnerships for Enhanced Engagement in Research (PEER) Science" alt="link">Partnerships for Enhanced Engagement in Research (PEER) Science</a></h2>
+
+	
+					<p><b>Deadline: 4 December 2012</b> The United States Agency for International Development (USAID) and the National Sciences Foundation (NSF) are working together to support the second cycle of Partnerships for Enhanced Engagement in Research (PEER) Science. PEER Science is a competitive grants programme that invites scientists in developing countries to apply for funds to support research and capacity-building activities on topics of importance to USAID and conducted in partnership with their NSF-funded collaborators. Areas in which both NSF and USAID have strong mutual interests include, but are not limited to, the following:
+
+
+Food security topics such as agricultural development, fisheries, and plant genomics;&nbsp;
+
+Climate change impacts such as water sustainability, hydrology, ocean acidification, climate process and modelling, and environmental engineering;&nbsp;
+
+Other development topics including disaster mitigation, biodiversity, water, and renewable energy.
+
+
+Find all the necessary information <a href="http://sites.nationalacademies.org/PGA/dsc/peerscience/PGA_071743" target="_blank">here</a>.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Partnerships-for-Enhanced-Engagement-in-Research-PEER-Science">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposals-of-the-ACP-Science-and-Technology-Programme-launched" title="Call for Proposals of the ACP Science and Technology Programme launched" alt="document">Call for Proposals of the ACP Science and Technology Programme launched</a></h2>
+
+	
+	
+	
+	
+					<p>Deadline for the submission of applications: 7 February 2013.The ACP S&amp;T Programme is glad to announce the launch of the new open Call for Proposals of the Programme (08/10/2012). This second Call builds upon the lessons learnt from the first Call for Proposals launched in 2008.</p>
+							<p><span class="date">17/10/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposals-of-the-ACP-Science-and-Technology-Programme-launched">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-proposals-6th-Plant-KBBE-Plant-Alliance-for-Novel-Technologies-towards-implementing-the-Knowledge-Based-Bio-Economy-in-Europe" title="Call for proposals 6th Plant KBBE ‘Plant Alliance for Novel Technologies - towards implementing the Knowledge-Based Bio-Economy in Europe’ " alt="link">Call for proposals 6th Plant KBBE ‘Plant Alliance for Novel Technologies - towards implementing the Knowledge-Based Bio-Economy in Europe’ </a></h2>
+
+	
+					<p><b>Deadline: 15 October 2012</b>Plant-KBBE) is funded in partnership between <a href="http://www.agence-nationale-recherche.fr/en/research-programmes/aap-en/plant-kbbe-plant-alliance-for-novel-technologies-towards-implementing-the-knowledge-based-bio-economy-in-europe-2012/nc/ " target="_blank">ANR</a> (Agence Nationale de la Recherche), the Ministry of Economy and Competitiveness (MINECO) in Spain, the Federal Ministry of Education and Research (BMBF) in Germany and the FCT (Fundação para a Ciênca e a Tecnologia) in Portugal. This new 2012 call for proposals has been developed to promote competitive, novel plant production systems and agriculture in sustainable conditions. The objectives are to develop i) transnational cooperation in application-oriented plant genome research, ii) novel approaches for the improvement of crop plants and algae, and iii) their use in agricultural and industrial innovations. Focal points of Plant-KBBE are the application of research results in industrial practice, the strengthening of the competitiveness of the involved businesses, and the reinforcement of the cooperation between public research and industry. The 2012 call deals with ‘Food and Feed: crop yields and nutrition security in the context of climate change’. Research topics are: 1) Yield stability; 2) Plant health; and 3) Adaptation to pressures from the environment, phenotypic plasticity.</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-proposals-6th-Plant-KBBE-Plant-Alliance-for-Novel-Technologies-towards-implementing-the-Knowledge-Based-Bio-Economy-in-Europe">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposal-PhD-research-grants-on-climate-change-mitigation-in-smallholder-agriculture2" title="Call for Proposal: PhD research grants on climate change mitigation in smallholder agriculture" alt="link">Call for Proposal: PhD research grants on climate change mitigation in smallholder agriculture</a></h2>
+
+	
+					<p><b>Deadline: 30 September 2012</b>The Climate Food and Farming (CLIFF) Research Network is an initiative of the CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS) in collaboration with the University of Copenhagen and Aarhus University. The aim of the CLIFF network is to build the capacity of young scientists, generate new and rigorous knowledge for climate change mitigation in small-scale farming and food systems and facilitate the sharing of this knowledge. For the current call, enrolled PhD students are invited to submit applications for research grants of up to USD 5000. The grants should support PhD research on greenhouse gas (GHG) emissions and carbon (C) sequestration associated with climate change mitigation in food production systems in developing countries. Specifically, these grants must be used to support field measurements, sample analyses and modelling related expenses.</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposal-PhD-research-grants-on-climate-change-mitigation-in-smallholder-agriculture2">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/PhD-programme-in-Germany-on-Global-Food-Security" title="PhD programme in Germany on Global Food Security" alt="link">PhD programme in Germany on Global Food Security</a></h2>
+
+	
+					<p><b>Deadline: 29 September 2012</b>The <a href="https://fsc.uni-hohenheim.de/" target="_self">Food Security Center</a> (FSC) at the University of Hohenheim, Germany, invites applications for the PhD programme ‘Global Food Security. In 2013, FSC will award up to 20 PhD and post-doctoral scholarships to candidates from developing countries. Conducted in English, the PhD programme seeks to support development-oriented agricultural sciences as they relate to food security. It will start in September 2013 and will last for 37 months, until September 2016.<a href="https://fsc.uni-hohenheim.de/77489" target="_self">https://fsc.uni-hohenheim.de/77489</a> via <a href="http://www.cropsforthefuture.org/2012/08/phd-program-in-germany-on-global-food-security" target="_blank">Crops for the future</a></p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/PhD-programme-in-Germany-on-Global-Food-Security">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/TWAS-Fellowships-for-Research-and-Advanced-Training-for-Developing-Country" title="TWAS Fellowships for Research and Advanced Training for Developing Country" alt="link">TWAS Fellowships for Research and Advanced Training for Developing Country</a></h2>
+
+	
+					<p><b>Deadline: 1 October 2012</b>The academy of science for developing country (<a href="http://twas.ictp.it/prog/exchange/fells/fellows-adv/twas-fells " target="_blank">TWAS</a>) offers fellowships to young scientists in developing countries to enable them to spend between three and twelve months at a research institution in a developing country other than their own. The purpose of these fellowships is to enhance the research capacity of promising scientists, especially those at the beginning of their research career, helping them to foster linkages for further collaboration. The fellowships are for research and advanced training. They are offered to young scientists holding at least an MSc or equivalent degree. Eligible applicants for the fellowships are young scientists working in any area of natural sciences who are citizens of a developing country and are employed by a research institution in a developing country. There is no age limit however preference is given to young scientists at the beginning of their research career and those working in Least Developed Countries.&nbsp;</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/TWAS-Fellowships-for-Research-and-Advanced-Training-for-Developing-Country">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Application-Fellowships-to-study-in-Africa" title="Call for Application - Fellowships to study in Africa" alt="link">Call for Application - Fellowships to study in Africa</a></h2>
+
+	
+					<p><b>Deadline: 5 October 2012</b>UT/ITC is a technical partner in the Intra-ACP Mobility Scheme (see <a href="http://intra-acp.polytechnic.edu.na/" target="_self">http://intra-acp.polytechnic.edu.na</a>/). There are two ‘Calls for Applications’ for African residents and/or nationals to study in the following African universities: Ardhi (Tanzania), Buea (Cameroon), Hawassa (Ethiopia), Makerere (Uganda), KNUST (Ghana), North-west (South Africa), Polytechnic of Namibia, (Namibia) and Free State (South Africa). You can find the Master’s Mobility Scholarships via: <a href="http://intra-acp.polytechnic.edu.na/?q=Masters" target="_self">http://intra-acp.polytechnic.edu.na/?q=Masters</a>, and the PhD Mobility Scholarships via: <a href="http://intra-acp.polytechnic.edu.na/?q=PHD" target="_self">http://intra-acp.polytechnic.edu.na/?q=PHD</a>.The deadline to apply for a PhD or MSc fellowship for Africans to study in Africa: 5 October 2012.</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Application-Fellowships-to-study-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposal-PhD-research-grants-on-climate-change-mitigation-in-smallholder-agriculture" title="Call for Proposal: PhD research grants on climate change mitigation in smallholder agriculture" alt="link">Call for Proposal: PhD research grants on climate change mitigation in smallholder agriculture</a></h2>
+
+	
+					<p><b>Deadline: 30 September 2012</b>The Climate Food and Farming (CLIFF) Research Network is an initiative of the CGIAR Research Program on Climate Change, Agriculture and Food Security (CCAFS) in collaboration with the University of Copenhagen and Aarhus University. The aim of the CLIFF network is to build the capacity of young scientists, generate new and rigorous knowledge for climate change mitigation in small-scale farming and food systems and facilitate the sharing of this knowledge. For the current call, we invite enrolled PhD students to submit applications for research grants of up to USD 5000. The grants should support PhD research on greenhouse gas (GHG) emissions and carbon (C) sequestration associated with climate change mitigation in food production systems in developing countries. Specifically, these grants must be used to support field measurements, sample analyses and modelling related expenses.(Thanks <a href="http://ccafs.cgiar.org/news/careers-and-calls/call-proposal-phd-research-grants-climate-change-mitigation-smallholder" target="_blank">CCAFS</a>, 24/8/2012)</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Proposal-PhD-research-grants-on-climate-change-mitigation-in-smallholder-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/International-Conference-System-Dynamics-and-Innovation-in-Food-Networks" title="International Conference System Dynamics and Innovation in Food Networks " alt="event">International Conference System Dynamics and Innovation in Food Networks </a></h2>
+
+	
+	
+					<p><b>Dates: 18-22 February 2013</b><b>Venue: Innsbruck-Igls, Austria</b>This conference’s objective is to provide an interdisciplinary and creative discussion environment that generates new ideas for innovative and multidisciplinary research. Its focus is on the analysis of the food system dynamics and interdependencies; the identification of drivers for sustainable system dynamics in the decision sphere of the system actors (e.g. chain management, consumers, agencies, policy, etc.); and on the identification and promotion of potential system innovations.Call for papers deadline is 15 October 2012.</p>
+					<p><span class="date">Monday 18 February 2013 - Friday 22 February 2013</p><div class="cnt">
+	<a class="event" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/International-Conference-System-Dynamics-and-Innovation-in-Food-Networks">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/New-project-and-call-for-evidence-at-EASAC-Planting-the-future-opportunities-and-challenges-for-sustainable-crop-development" title="New project and call for evidence at EASAC: ‘Planting the future: opportunities and challenges for sustainable crop development’ " alt="link">New project and call for evidence at EASAC: ‘Planting the future: opportunities and challenges for sustainable crop development’ </a></h2>
+
+	
+					<p>EASAC – the European Academies Science Advisory Council – announced late July 2012 the new project to address genetics and the sustainable intensification of agriculture, covering science and technology in the context of EU food security and EU-global relationship. It is meant to explore the implications of alternative policy decisions on bioscience strategies in agriculture. One of the work streams is to collect evidence on the applications of molecular biosciences in agriculture in African countries.EASAC invites contributions of written evidence to this project, to be submitted by 30 September 2012.(<a href="http://www.easac.eu/biosciences/reports-and-statements/detail-view/article/announcement.html" target="_blank">EASAC</a>, 24/7/2012)</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/New-project-and-call-for-evidence-at-EASAC-Planting-the-future-opportunities-and-challenges-for-sustainable-crop-development">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Application-Master-s-and-Doctoral-Mobility-Scholarships" title="Call for Application - Master's and Doctoral Mobility Scholarships" alt="link">Call for Application - Master's and Doctoral Mobility Scholarships</a></h2>
+
+	
+					<p>The deadline is 5 October 2012.The Intra-ACP Mobility Scheme, see <a href="http://intra-acp.polytechnic.edu.na/" target="_blank">http://intra-acp.polytechnic.edu.na/</a>.There are two ‘Calls for Applications’ for African residents and/or nationals to study in the following African universities: Ardhi (Tanzania), Buea (Cameroon), Hawassa (Ethiopia), Makerere (Uganda), KNUST (Ghana), North-west (South Africa), Polytechnic of Namibia, (Namibia) and Free State (South Africa).You can find the Master’s Mobility Scholarships via: <a href="http://intra-acp.polytechnic.edu.na/?q=Masters" target="_blank">http://intra-acp.polytechnic.edu.na/?q=Masters</a>, and the PhD Mobility Scholarships via: <a href="http://intra-acp.polytechnic.edu.na/?q=PHD" target="_blank">http://intra-acp.polytechnic.edu.na/?q=PHD</a>.&nbsp;</p>
+							<p><span class="date">6/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-Application-Master-s-and-Doctoral-Mobility-Scholarships">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Update-Announcement-of-Semi-Finalists-CTA-FARA-IFS-ANAFE-RUFORUM-NEPAD-AGRA-3rd-Africa-Wide-Women-and-Young-Professionals-in-Science-Competitions" title="Update: Announcement of Semi-Finalists -- CTA/ FARA/ IFS/ ANAFE/ RUFORUM/ NEPAD/ AGRA 3rd Africa Wide Women and Young Professionals in Science Competitions" alt="document">Update: Announcement of Semi-Finalists -- CTA/ FARA/ IFS/ ANAFE/ RUFORUM/ NEPAD/ AGRA 3rd Africa Wide Women and Young Professionals in Science Competitions</a></h2>
+
+	
+	
+	
+	
+					<p>The Expert panel for the 3rd Africa wide science competitions has selected the semi-finalists from among the 316 abstracts received in response to the calls launched in May 2012. During the second Expert Panel meeting which took place at FARA Secretariat in Ghana from 12-14 July 2012; 55 abstracts (26 for Women and 29 for Young Professionals in Science) were chosen using the established criteria; logic (10%), content (20%), communication (20%), impact (20%), innovation (15%) and originality (15%). A complete list of all the semi-finalists, their research topics and country of origin can be downloaded. All semi-finalists and other unsuccessful entrants have been informed of the outcomes of the selection process.&nbsp;</p>
+							<p><span class="date">28/08/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Update-Announcement-of-Semi-Finalists-CTA-FARA-IFS-ANAFE-RUFORUM-NEPAD-AGRA-3rd-Africa-Wide-Women-and-Young-Professionals-in-Science-Competitions">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-applications-for-AWARD-Fellowships" title="Call for applications for AWARD Fellowships" alt="link">Call for applications for AWARD Fellowships</a></h2>
+
+	
+					<p>
+&nbsp;
+The African Women in Agricultural Research and Development (AWARD) have announced the <a href="http://aline.us4.list-manage.com/track/click?u=45c2a91403875776d2f062efe&amp;id=6a9ab5c637&amp;e=0d255af39b" target="_self">call for applications</a> for the fifth round of AWARD Fellowships. Since 2008, more than 2,200 applicants have competed for a place in this prestigious program that equips female scientists to advance in their careers and further their research. Please encourage qualified applicants whom you know to apply by September 7, 2012.AWARD has also launched a new monthly e-newsletter, <a href="http://aline.us4.list-manage.com/track/click?u=45c2a91403875776d2f062efe&amp;id=5db7b49257&amp;e=0d255af39b" id="__mce_tmp" target="_self">AWARD News</a>, and hopes you enjoy reading about African women agricultural scientists, and their contributions to food security and poverty alleviation across the continent.</p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-applications-for-AWARD-Fellowships">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Impact-Research-and-Science-in-Africa-IMPRESSA-Awards-2012-Competition" title="Impact Research and Science in Africa (IMPRESSA) Awards 2012 Competition" alt="link">Impact Research and Science in Africa (IMPRESSA) Awards 2012 Competition</a></h2>
+
+	
+					<p>Deadline for nomination: 29 August 2012&nbsp;The Regional Universities Forum for Capacity Building in Agriculture (RUFORUM) announces the 2012 Impact Research and Science in Africa (IMPRESSA) Awards competition. The objective of IMPRESSA is to recognize outstanding researchers and scientists who have made significant contribution in the field of agricultural research and science for development in Africa, including human and institutional development. The 2012 IMPRESSA Awards competition will be restricted to agricultural researchers and scientists from the 29 RUFORUM Member Universities.&nbsp; Participation in the competition is by peer nomination. Both individuals and teams whose work, done in sub-Saharan Africa and has contributed to the objectives of IMPRESSA are eligible for nomination.<a href="http://www.ruforum.org/news/competition-announcement-impressa-awards-2012" target="_self">http://www.ruforum.org/news/competition-announcement-impressa-awards-2012</a></p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Impact-Research-and-Science-in-Africa-IMPRESSA-Awards-2012-Competition">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Vavilov-Frankel-Fellowships-2013-Call-for-Research-Proposals" title="Vavilov Frankel Fellowships 2013 - Call for Research Proposals" alt="link">Vavilov Frankel Fellowships 2013 - Call for Research Proposals</a></h2>
+
+	
+					<p>
+Two Fellowships, for up to US$ 20,000 each, will be available for 2013 to carry out research from 3 to 12 months on a wide range of&nbsp;topics related to the conservation and use of plant genetic resources in developing countries.This year's themes focus on :
+
+
+Use of agrobiodiversity as an instrument for climate change adaptation
+
+Research to enhance the conservation of genetic resources of a tree species important to the livelihoods of the rural poor
+
+Sustainable diets for improved nutrition and health
+
+Policy research in support of implementation of the International Treaty for Plant Genetic Resources for Food and Agriculture
+
+Gene discovery in crop wild relatives
+
+Facilitating better use of genebank materials
+
+Researching neglected and underutilized species for food and nutrition security
+
+Applying economics to agrobiodiversity conservation, sustainable use and policy analysis
+
+Management of&nbsp;<i>Musa</i>&nbsp;diseases through a better understanding of specific host-pathogen interactions and co-evolution
+
+
+The fellowships are supported by&nbsp;<a href="http://bioversityinternational.us2.list-manage.com/track/click?u=a3c69ad035899a990ca78d48b&amp;id=9c1ab08474&amp;e=aa91ee19d7" target="_blank">Pioneer Hi-Bred</a><a href="http://bioversityinternational.us2.list-manage.com/track/click?u=a3c69ad035899a990ca78d48b&amp;id=4098727a73&amp;e=aa91ee19d7" target="_blank">&nbsp;International Inc</a>, United States and the&nbsp;<a href="http://bioversityinternational.us2.list-manage.com/track/click?u=a3c69ad035899a990ca78d48b&amp;id=8f5290484c&amp;e=aa91ee19d7" target="_blank">Grains Research and Development Corporation (GRDC)</a>, Australia.</p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Vavilov-Frankel-Fellowships-2013-Call-for-Research-Proposals">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/AusAID-launches-new-development-research-awards-scheme-in-Africa" title=" AusAID launches new development research awards scheme in Africa" alt="document"> AusAID launches new development research awards scheme in Africa</a></h2>
+
+	
+	
+	
+	
+					<p>Consistent with AusAID’s development activities in Africa, research proposals will be considered in five thematic areas:
+
+
+Agriculture and Food Security
+
+Mining for development
+
+Peace, conflict and security
+
+Maternal and child health
+
+Water and sanitation 
+
+
+Within these themes, research proposals will need to demonstrate that they respond to African priorities and agendas, and address issues of importance to African governments, researchers and communities. Proposals that reflect partnerships between African and international researchers will be well regarded.<a href="/Media/Multimedia/Guidelines-Australia-new-research-awards-in-Africa" target="_blank">Download the guidelines</a>.</p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/AusAID-launches-new-development-research-awards-scheme-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Intern-Stagiare-at-CTA-Science-Technology-Innovation-in-the-Policies-Markets-and-ICTs-PMI-Programme" title="Intern/Stagiare at CTA – Science, Technology &amp; Innovation in the Policies, Markets and ICTs (PMI) Programme" alt="document">Intern/Stagiare at CTA – Science, Technology &amp; Innovation in the Policies, Markets and ICTs (PMI) Programme</a></h2>
+
+	
+	
+	
+	
+					<p><b>Deadline for application: September 17, 2012</b></p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Intern-Stagiare-at-CTA-Science-Technology-Innovation-in-the-Policies-Markets-and-ICTs-PMI-Programme">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-papers-International-Conference-on-Science-and-Technology-for-Economic-Diversification-INSCITED-2013" title="Call for papers: International Conference on Science and Technology for Economic Diversification (INSCITED) 2013" alt="document">Call for papers: International Conference on Science and Technology for Economic Diversification (INSCITED) 2013</a></h2>
+
+	
+	
+	
+	
+					<p>Dates: <i>Dates: 05 - 07 June 2013 </i>Venue: Port of Spain, TrinidadThe National Institute of Higher Education, Research, Science and Technology (NIHERST), Trinidad and Tobago, and CSIR-National Institute of Science Technology &amp; Development Studies (NISTADS), India, invites participation in their first joint conference entitled ‘International Conference on Science and Technology for Economic Diversification INSCITED 2013’. The conference seeks to promote scientific research collaboration between India, Trinidad &amp; Tobago and other emerging economies facing similar developmental challenges.</p>
+							<p><span class="date">24/08/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/Call-for-papers-International-Conference-on-Science-and-Technology-for-Economic-Diversification-INSCITED-2013">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/80"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/120"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">1</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/20">2</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/40">3</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/60">4</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/80">5</a></span>
+            
+        <span class="current">6</span>
+
+                      <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/120">7</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/140">8</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/160">9</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/180">10</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/200">11</a></span>
+                              <span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/220">12</a></span>
+            <span class="other">...</span><span class="other"><a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls/(offset)/440">23</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":317,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

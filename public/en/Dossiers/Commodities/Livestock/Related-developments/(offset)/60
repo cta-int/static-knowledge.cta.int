@@ -1,0 +1,1398 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Related developments / Livestock / Commodities / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/en" title="Knowledge front page" />
+<link rel="Index" href="/en" />
+<link rel="Search" href="/en/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/en/layout/set/print/Dossiers/Commodities/Livestock/Related-developments/(offset)/60" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/en">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/en/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/en/About/About">About</a> | </li>
+							<li><a href="/en/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/en/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Produits-de-base/Betail/Developpements">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/en/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/en/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/en/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/en/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/en/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/en/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/en/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/en/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/en">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers/Commodities">Commodities</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/en/Dossiers/Commodities/Livestock">Livestock</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Related developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Related developments</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Scientists-take-on-global-livestock-threat-to-reduce-poverty-and-increase-food-security" title="Scientists take on global livestock threat to reduce poverty and increase food security" alt="link">Scientists take on global livestock threat to reduce poverty and increase food security</a></h2>
+
+	
+					<p>A new research programme of € 15 million was launched on 15 February 2010 to find sustainable solutions to the animal diseases that threaten food security and help to build scientific capacity in the developing world to meet future challenges in this field. Under this programme, the Biotechnology and Biological Sciences Research Council (BBSRC) and the Department for International Development (DFID), with a contribution from the Scottish Government, have joined forces to fund 16 new projects that bring together world-class UK researchers with institutions in the developing world. (Source: BBSRC , 15 February 2010)</p>
+							<p><span class="date">22/03/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Scientists-take-on-global-livestock-threat-to-reduce-poverty-and-increase-food-security">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Scottish-and-Kenyan-research-groups-collaborate-to-improve-control-of-deadly-cattle-disease-in-Africa" title="Scottish and Kenyan research groups collaborate to improve control of deadly cattle disease in Africa" alt="link">Scottish and Kenyan research groups collaborate to improve control of deadly cattle disease in Africa</a></h2>
+
+	
+					<p>Recent studies of East Coast fever have shown that the so-called ‘protective’ proteins of the causative parasite—that is, the antigenic molecules that are recognized by the T lymphocytes of the bovine immune system and thus help animals fight development of disease—vary among the different strains of the parasite that exist in the field. This project will build on these advances to investigate the nature and extent of variability in these antigens between parasite strains. This knowledge will help scientists understand the factors that determine which parasite strains induce protective immune responses in animals that have been vaccinated. Results of the project should provide methods for maintaining high quality of the current live vaccine and identifying parasite strains that could be incorporated into an improved second-generation live vaccine. (Source: ILRI, 17 February 2010)</p>
+							<p><span class="date">2/03/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Scottish-and-Kenyan-research-groups-collaborate-to-improve-control-of-deadly-cattle-disease-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/African-livestock-can-triumph-in-the-face-of-climate-change" title="African livestock can triumph in the face of climate change" alt="link">African livestock can triumph in the face of climate change</a></h2>
+
+	
+					<p>Africa's livestock producers are proving resilient to climate change and generating huge economic benefits for their nations and regions, researchers said in a book published on the 31th of January by the International Institute for Environment and Development (IIED) and SOS Sahel. The book shows how pastoralism is a major economic player and contributor to many African economies and one whose importance is only set to grow as climate change takes hold. The book shows how livestock play a key role in the economic prosperity in African's drylands by supporting hundreds of millions of people, and a massive meat and leather industry. 'What is remarkable is that these benefits all arise from animals fed solely on natural pasture,' said Ced Hesse, a researcher at IIED and one of the book's authors. (Source: IIED, 3 February 2010)</p>
+							<p><span class="date">1/03/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/African-livestock-can-triumph-in-the-face-of-climate-change">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="/en/Dossiers/Commodities/Livestock/Related-developments/Sustainable-Animal-Production-in-the-Tropics-Farming-in-a-Changing-World" title="Sustainable Animal Production in the Tropics… Farming in a Changing World " alt="event">Sustainable Animal Production in the Tropics… Farming in a Changing World </a></h2>
+
+	
+	
+					<p><b>Global Animal Production </b>is facing significant challenges over the next few decades if it is to meet the increasing demand for protein from a growing world population given the threat of climatic change and changing social expectations. In the Tropics these challenges are even larger as this is where high population growth is often combined with a rising demand for livestock products. Scientists, farmers and policymakers need to work together to identify innovative solutions. Opportunities exist in 3 key areas: - animal breeding, - feed and forage resources, - farming systems that match territory and global markets. 
+From <b>November</b> <b>15 to 18, 2010</b> the SAPT2010 Conference will hold 3 sessions on the following subjects: 
+1) Adaptation capacities of livestock to a changing environment 
+2) Local feeds their value and strategic use 3) Sustainable and integrated livestock farming systems. 
+Centering on tropical and subtropical humid areas, world renowned experts will present talks on their research results in these different fields. Conference participants will be able to share knowledge and good practice, identify relevant solutions and fix priorities to meet livestock challenges. Gaps in scientific knowledge will also be identified to highlight future research needs.
+Submitted Papers : A 1-page summary that would fit in one of the 3 sessions is welcome. <b>The deadline is May 15, 2010.</b> Proposals will be reviewed by the Scientific Committee and chosen for either a plenary oral, short presentation or poster. A special poster discussion session will be held at the end of each session.
+For more information see our web site: <a href="https://colloque.inra.fr/sapt2010_eng/" target="_blank">https://colloque.inra.fr/sapt2010_eng/</a>We look forward to your participation in this exciting event.</p>
+					<p><span class="date">Monday 15 November 2010 - Thursday 18 November 2010</p><div class="cnt">
+	<a class="event" href="/en/Dossiers/Commodities/Livestock/Related-developments/Sustainable-Animal-Production-in-the-Tropics-Farming-in-a-Changing-World">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/A-new-option-for-managing-climate-risk-in-Africa" title="A new option for managing climate risk in Africa" alt="link">A new option for managing climate risk in Africa</a></h2>
+
+	
+					<p>Thousands of herders in arid areas of northern Kenya will soon be able to buy livestock insurance, based on a first-of-its-kind program in Africa. The program was announced on January 22 in northern Kenya’s Marsabit District by the International Livestock Research Institute (ILRI), microfinance pioneer Equity Bank and African insurance provider UAP Insurance Ltd. Insuring the livestock of pastoralist families has long been considered impossible because of the difficulty of verifying deaths of animals, which move over vast tracts of land in search of food. ILRI and its partners have overcome this impediment by combining the use of satellite images of vegetation with monthly surveys of livestock deaths to pinpoint the level of forage reduction that will cause animals to die. (Source: CGIAR, 22 January 2010)</p>
+							<p><span class="date">4/02/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/A-new-option-for-managing-climate-risk-in-Africa">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Livestock-trade-is-culprit-in-sleeping-sickness-spread" title="Livestock trade is culprit in sleeping sickness spread " alt="link">Livestock trade is culprit in sleeping sickness spread </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/uganda-livestock/291960-1-eng-GB/Uganda-livestock.jpg" rel="lightbox[]" >	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Scientists baffled by the continued spread of sleeping sickness through Uganda have discovered that it is livestock markets that are driving the disease. A team from Uganda and the United Kingdom analysed the incidence of the serious Rhodesian form of sleeping sickness, which is carried by cattle, in two newly affected districts. The team looked at nearly 700 villages in the two districts. The research shows that livestock markets are a major risk to disease control. The scientists calculated the vulnerability of a village to sleeping sickness by mapping how close it was to various risk factors such as areas where tsetse flies — which transmit the disease — are likely to live. The research was published in <a href="http://www.plosntds.org/article/info%3Adoi%2F10.1371%2Fjournal.pntd.0000563" target="_blank">PLoS Neglected Tropical Diseases</a> (Source: All Africa, 22 January 2010)</p>
+							<p><span class="date">4/02/2010</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Livestock-trade-is-culprit-in-sleeping-sickness-spread">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Deadly-cattle-plague-on-the-brink-of-eradication" title="Deadly cattle plague on the brink of eradication" alt="link">Deadly cattle plague on the brink of eradication</a></h2>
+
+	
+					<p>Rinderpest, one of the deadliest cattle diseases, is set to become the first animal disease to be eradicated from the planet. The FAO announced November 30th that it expects, along with the World Organisation for Animal Health and other partners, to declare the disease wiped out in the next 18 months. Cattle plague, as rinderpest is also known, has killed millions of cows and other hoofed animals. It is caused by a virus and spreads through contact, and by water and food contaminated with the dung of infected animals. The disease can kill all infected animals in an outbreak, losing farmers money and food. (Source: SciDev.net, December 9, 2009)</p>
+							<p><span class="date">21/12/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Deadly-cattle-plague-on-the-brink-of-eradication">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Climate-food-and-developing-country-livestock-farmers" title="Climate, food and developing country livestock farmers" alt="link">Climate, food and developing country livestock farmers</a></h2>
+
+	
+					<p>Livestock researchers believe that rather than rid the world of livestock it’s preferable to find ways to farm animals more efficiently, profitably and sustainably, according to a new short film (see article) prepared by the ILRI on livestock and climate change. “Looking at the livestock emissions as a whole, if you aggregate that into one, you are missing a big difference between developing and developed countries,” says ILRI director general Carlos Sere in the film. “In developed economies, which mainly have a commercial livestock sector, we can apply a range of policies and instruments to reduce emissions. Reducing livestock-related greenhouse gas emissions in poor countries is possible, but we need to be aware of the stark trade-offs. We might end up with many more poor people and hungry children.”(Source: CGIAR, December 9, 2009)</p>
+							<p><span class="date">21/12/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Climate-food-and-developing-country-livestock-farmers">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/The-Role-of-Livestock-for-ACP-countries-challenges-and-opportunities-ahead" title="The Role of Livestock for ACP countries: challenges and opportunities ahead " alt="link">The Role of Livestock for ACP countries: challenges and opportunities ahead </a></h2>
+
+	
+					<p>The twelfth Brussels Development Briefing was held on 1st July 2009 and dealt with “The Role of Livestock for ACP countries: challenges and opportunities ahead”. This Briefing discussed key issues on livestock for ACP countries and reviewed the role of livestock for ACP economies and the drivers of change. Different people amongst whom Mr. Carlos Seré, the Director General of the International Livestock Research Institute (ILRI) and Dr. Francis Asiedu from the Caribbean Agriculture Research and Development Institute (CARDI) gave their view on the topic in a video-message. (Brussels Development Briefings, 13 July 2009)</p>
+							<p><span class="date">23/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/The-Role-of-Livestock-for-ACP-countries-challenges-and-opportunities-ahead">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/New-and-improved-VetMed-Resource-has-now-launched" title="New and improved VetMed Resource has now launched!" alt="link">New and improved VetMed Resource has now launched!</a></h2>
+
+	
+					<p>CABI's <a href="http://www.vetmedresource.org/" target="_blank">VetMed Resource</a>, the most comprehensive online veterinary information service available, now has a new look. The authoritative content contained in VetMed Resource - which includes over 1.3 million records covering veterinary and animal health research from 1972 to the present - stays the same, but it has been made more discoverable due to a new design and improved navigation across the site. The platform will be made open access for 2 months. Free access will turn off Monday 31 August.
+ 
+  </p>
+							<p><span class="date">10/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/New-and-improved-VetMed-Resource-has-now-launched">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Africa-Livestock-may-do-better-than-crops" title="Africa: Livestock may do better than crops" alt="link">Africa: Livestock may do better than crops</a></h2>
+
+	
+					<p>
+The stresses of climate-induced crop failures could be avoided if more small farmers in Africa also raised livestock, say researchers. Climate change will result in a 10-20% drop in yield for crops such as beans, maize and millet in Africa's drylands by 2050, researchers from the Kenya-based International Livestock Research Institute (ILRI) and the United Kingdom's Waen Associates found. But many farmers in some of the affected areas could keep livestock to increase their incomes and reduce their vulnerability, the researchers say. The researchers warn that the change to livestock farming must be done sustainably, for example by limiting the number of livestock in an area during dry conditions so the pasture can recover quickly when rains come. Mario Herrero, ILRI's systems analyst, acknowledges that an increase in livestock would increase greenhouse gas emissions but says the impact from the alternative - of herders migrating and cutting down forest to grow crops - could be worse. (Source: ILRI, 03 June 2009) </p>
+							<p><span class="date">3/07/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Africa-Livestock-may-do-better-than-crops">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/FAO-launches-new-interactive-livestock-production-and-health-statistics-atlas" title="FAO launches new interactive livestock production and health statistics atlas" alt="link">FAO launches new interactive livestock production and health statistics atlas</a></h2>
+
+	
+					<p>An online electronic atlas has been launched by FAO that provides detailed research data and information on global livestock production and health statistics. The Global Livestock Production and Health Atlas (GLiPHA) offers users the unique opportunity to view sub-national statistics relating to the livestock sector, which can be viewed cartographically, against a back-drop of selected maps, such as livestock densities, land-use and topography. Data may also be displayed and exported as tables and charts. The objectives of GLiPHA are to facilitate access to livestock sector information for analysis and informed decision making, and to increase awareness of sector-related social, health and environmental issues. GLiPHA draws on data managed within the Global Livestock Impact Mapping (GLIMS) – a global, sub-national data warehouse containing a multitude of livestock-sector related information.</p>
+							<p><span class="date">11/06/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/FAO-launches-new-interactive-livestock-production-and-health-statistics-atlas">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/New-policy-briefs-on-agriculture-forestry-and-fisheries-from-the-DFID-RIU-Programme" title="New policy briefs on agriculture, forestry and fisheries from the DFID RIU Programme" alt="link">New policy briefs on agriculture, forestry and fisheries from the DFID RIU Programme</a></h2>
+
+	
+					<p>E-GFAR, March 2009. A series of policy briefs on new options for agriculture, fisheries, and forestry are available here from the RIU Programme. RIU aims to encourage partners in both the developed and developing worlds to invest more in their communication efforts. These Policy Briefs were produced to illustrate how complex subjects can be explained briefly and simply to busy infomediaries and policy makers/shapers. The series showcases new technologies, policies and approaches and demonstrates the importance of investing in high-quality scientific communication and knowledge management. Only in this way will useful technologies be widely adopted, helping the people that they were intended to help and contributing to the achievement of the Millennium Development Goals. </p>
+							<p><span class="date">17/04/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/New-policy-briefs-on-agriculture-forestry-and-fisheries-from-the-DFID-RIU-Programme">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Agriculture-Future-Scenarios-for-Southern-Africa-The-Livestock-Sector-in-Zambia-and-Rising-Food-Prices" title="Agriculture: Future Scenarios for Southern Africa – The Livestock Sector in Zambia and Rising Food Prices" alt="link">Agriculture: Future Scenarios for Southern Africa – The Livestock Sector in Zambia and Rising Food Prices</a></h2>
+
+	
+					<p>By Humphrey Mulemba, IISD, 2009. The briefing aims to explore the forces of rising food prices and their impact on Zambia’s livestock sector. The agriculture, in particular the livestock, sector is critical to the alleviation of poverty in the country although serious livestock diseases have intermittently hit the livestock industry for more than two decades.</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Agriculture-Future-Scenarios-for-Southern-Africa-The-Livestock-Sector-in-Zambia-and-Rising-Food-Prices">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Determinants-and-implications-of-the-growing-scale-of-livestock-farms-in-four-fast-growing-developing-countries" title="Determinants and implications of the growing scale of livestock farms in four fast-growing developing countries" alt="link">Determinants and implications of the growing scale of livestock farms in four fast-growing developing countries</a></h2>
+
+	
+					<p>
+By Christopher L. Delgado, Clare A. Narrod, and Marites M. Tiongco, IFPRI 2008 
+Human population growth, increasing urbanization, and rising incomes have fueled
+unprecedented growth in the demand for livestock products in the developing world.This creates pressures on world feedgrain and oilseed markets, but presents opportunities for poor people who rear, process, or market livestock products to enhance their livelihoods. However, large-scale, industrialized forms of poultry, pig, and dairy production are also growing rapidly to compete for these new markets, and poor people may find it increasingly difficult to compete.</p>
+							<p><span class="date">24/03/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Determinants-and-implications-of-the-growing-scale-of-livestock-farms-in-four-fast-growing-developing-countries">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Ethiopia-Climate-change-taking-toll-on-livestock-in-southern-lowlands" title="Ethiopia: Climate change taking toll on livestock in southern lowlands" alt="link">Ethiopia: Climate change taking toll on livestock in southern lowlands</a></h2>
+
+	
+					<p>Climate change-induced livestock diseases are causing more illness and death of livestock in southern lowlands of the country, a study conducted to assess the local level of impacts of climate change said. The study entitled: Climate Change-Induced Hazards, Impacts and Responses in Southern Ethiopia, carried out in the southern lowlands of Ethiopia's three selected zones- Borena, Guji and Omo Zones- in the Oromia SNNP regions said climatic change impacts on livelihoods particularly increased vulnerability to poverty and food insecurity as livestock possession of households during the past 20 years shows an overall decline. (Source: Binyam Tamene, Daily Monitor, 15 February 2009)</p>
+							<p><span class="date">24/02/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Ethiopia-Climate-change-taking-toll-on-livestock-in-southern-lowlands">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Tanzania-Maasai-cattle-cause-global-warming" title="Tanzania: Maasai cattle cause global warming" alt="link">Tanzania: Maasai cattle cause global warming</a></h2>
+
+	
+					<p>
+A recent study visit to Maasai land in Arusha revealed that people who keep large numbers of cattle contribute to global warming and therefore to climate change significantly. This refers particularly to local people in Maasai land, Mwanza and Mara Regions in Tanzania.Scientists caution that climate change will cause serious starvation among other disasters because dry and hot areas will become drier and hotter. In the end, land in such areas will become less productive as regards agriculture. (Source: Ramadhani Kupaza, the Arusha Times, 7 February 2009)</p>
+							<p><span class="date">24/02/2009</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Tanzania-Maasai-cattle-cause-global-warming">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Common-land-shared-success-in-Kenya" title="Common land, shared success in Kenya" alt="link">Common land, shared success in Kenya</a></h2>
+
+	
+					<p>Land division and individual entitlements have brought an end to the traditional community-managed open rangeland in much of the arid and semi-arid areas of East Africa. But the Olkiramatian Group Ranch in southern Kenya - with a population of about 10,000 - is attracting increasing interest from pastoralists and conservationists alike (Source: The New Agriculturist, November 2008).</p>
+							<p><span class="date">1/12/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Common-land-shared-success-in-Kenya">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Madagascar-Balancing-poor-communities-and-conservation" title="Madagascar: Balancing poor communities and conservation" alt="link">Madagascar: Balancing poor communities and conservation</a></h2>
+
+	
+					<p>Madagascar is entering uncharted waters in its bid to implement ambitious projects in partnership with poor local communities that will more than triple existing conservation areas. The Indian Ocean island is renowned for its unique and abundant terrestrial biodiversity, but its marine environment, which includes extensive coral reefs, mangroves and sea grass beds, has remained relatively unknown. The plan includes more than tripling the size of Madagascar’s protected areas, from 1.7 million hectares to 6 million hectares, with a focus on marine environments and upgrading the protection of marine resources (Source: IRIN, 1 August 2008). </p>
+							<p><span class="date">8/09/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Madagascar-Balancing-poor-communities-and-conservation">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Livestock-a-neglected-major-contributor-to-climate-change" title="Livestock, a neglected major contributor to climate change" alt="link">Livestock, a neglected major contributor to climate change</a></h2>
+
+	
+					<p>Livestock has for long been a major source of food for humanity the world over. But with increased debate on climate change, scientists are beginning to weigh cost-benefit of livestock to the debate as it is a major contributor of the dangerous greenhouse gas into the atmosphere. Land use and agriculture alone contributes to a third of the greenhouse gas emission into the atmospher,where land takes 18% and agriculture 14%. According to a 2006 United Nations initiative, the livestock industry is one of the largest contributors to environmental degradation worldwide and modern practices of raising animals for food contributes on a massive scale to air and water pollution, land degradation, climate change and loss of biodiversity (Source: by Pius Sawa, African Science News Service, 28 June 2008).</p>
+							<p><span class="date">29/07/2008</span></p>
+	<div class="cnt">
+	<a class="link" href="/en/Dossiers/Commodities/Livestock/Related-developments/Livestock-a-neglected-major-contributor-to-climate-change">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/en/Dossiers/Commodities/Livestock/Related-developments/(offset)/40"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/en/Dossiers/Commodities/Livestock/Related-developments/(offset)/80"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/en/Dossiers/Commodities/Livestock/Related-developments">1</a></span>
+                              <span class="other"><a href="/en/Dossiers/Commodities/Livestock/Related-developments/(offset)/20">2</a></span>
+                              <span class="other"><a href="/en/Dossiers/Commodities/Livestock/Related-developments/(offset)/40">3</a></span>
+            
+        <span class="current">4</span>
+
+                      <span class="other"><a href="/en/Dossiers/Commodities/Livestock/Related-developments/(offset)/80">5</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/en/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/en/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/en/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/en/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/en/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/en/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/en/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/en/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/en/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/en/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/en/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/en/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/en/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":294,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

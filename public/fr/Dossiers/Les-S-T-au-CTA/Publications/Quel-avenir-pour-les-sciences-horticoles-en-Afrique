@@ -1,0 +1,1225 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Quel avenir pour les sciences horticoles en Afrique ? / Publications / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Au Kenya, toutefois, l’horticulture est devenue le sous-secteur le plus important du secteur agricole; elle est non seulement une source importante d’alimentation et de recettes d’exportation, mais a également contribué à créer de nombreux nouveaux emplois. Les universités kenyanes ont ainsi établi des départements d’horticulture et vu augmenté le nombre d’inscriptions d’étudiants de premier cycle en sciences horticoles."/><meta name="keywords" content=", connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Publications/Quel-avenir-pour-les-sciences-horticoles-en-Afrique" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Selected-publications/What-is-the-Future-of-Horticultural-Science-in-Africa">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/fr">Accueil</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Les-S-T-au-CTA">Les S&amp;T au CTA</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications">Publications</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Quel avenir pour les...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image">
+																		
+															
+								
+
+    
+                <div class="imageleft">
+    
+    
+                                                                                                                                     <a href="/var/knowledge/storage/images/media/images/horticulrure_kariuki_small_9255985716_78250a9e5b_m/771372-1-eng-GB/horticulrure_kariuki_small_9255985716_78250a9e5b_m.jpg" rel="lightbox[]">        <img src="/var/knowledge/storage/images/media/images/horticulrure_kariuki_small_9255985716_78250a9e5b_m/771372-1-eng-GB/horticulrure_kariuki_small_9255985716_78250a9e5b_m_contentfront.jpg" width="185" height="123" style="border: 0px  ;" alt="horticulrure_kariuki_small_9255985716_78250a9e5b_m" title="horticulrure_kariuki_small_9255985716_78250a9e5b_m"/>
+        </a>
+    
+    
+            </div>
+    
+    																					
+															</div>
+	
+					<div class="content-intro-text">
+						<h1>Quel avenir pour les sciences horticoles en Afrique ?</h1>
+													<p class="author"><strong>Author:</strong>
+								Wariara Kariuki, Jomo Kenyatta University of Agriculture and Technology, Kenya</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							11/01/2015</p>
+																									<p class="intro">Introduction:</p>
+							
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/horticulrure_kariuki_small_9255985716_78250a9e5b_m/771372-1-eng-GB/horticulrure_kariuki_small_9255985716_78250a9e5b_m.jpg" rel="lightbox[]">	
+	  </a>
+	
+		
+			
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	<p>Au Kenya, toutefois, l’horticulture est devenue le sous-secteur le plus important du secteur agricole; elle est non seulement une source importante d’alimentation et de recettes d’exportation, mais a également contribué à créer de nombreux nouveaux emplois. Les universités kenyanes ont ainsi établi des départements d’horticulture et vu augmenté le nombre d’inscriptions d’étudiants de premier cycle en sciences horticoles.</p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/fr/layout/set/print/content/view/full/25713">Print</a>
+																				</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<p><b>Introduction</b></p><p>Il est indéniable que l’horticulture – en tant que discipline scientifique et artistique et en termes de contribution à l’alimentation, à la santé, à la protection/conservation de l’environnement, à l’enseignement, au bien-être psychique, aux loisirs, à l’architecture et aux activités socioculturelles – joue un rôle très important dans le bien-être humain (<a href="http://www.aiph.org/site/index_en.cfm?act=download.aanbieden&amp;dl=132" target="_self">http://www.aiph.org/site/index_en.cfm?act=download.aanbieden&amp;dl=132</a>). Selon le nouveau président de la Société internationale des sciences horticoles (ISHS), le professeur Rod Drew, «&nbsp;<i>l’agriculture fournit des protéines, des glucides et des cultures de base, certes, mais sans l’horticulture, notre vie serait relativement fade. L’horticulture donne de la couleur, elle dégage d’agréables senteurs et nous offre tous les effets salutaires d’une alimentation équilibrée&nbsp;» </i>(traduction de l’anglais) (<a href="http://www.ishs.org/news" target="_self">http://www.ishs.org/news</a>).</p><p>Lors du Congrès international d’horticulture de 2014, qui s’est tenu à Brisbane, en Australie, les conférenciers n’ont laissé aucun doute sur l’importance de l’horticulture au XXI<sup>e</sup> siècle. La vidéo révolutionnaire intitulée «&nbsp;Harvesting the Sun&nbsp;» (Récolter le soleil) du professeur Errol Hewett, ancien membre du conseil d’administration de l’ISHS, explique l’horticulture de manière très simple. Elle démontre l’importance économique, sociale et communautaire de l’horticulture et des sciences horticoles. Elle explique que l’horticulture est une source durable d’aliments sains et nutritifs et une source de revenus ayant un rôle critique dans l’embellissement de notre environnement et l’amélioration de notre bien-être. <a href="https://www.youtube.com/user/HorticulturalScience" target="_self">https://www.youtube.com/user/HorticulturalScience</a></p><p>De nombreux produits horticoles sont riches en vitamines, en minéraux et en composés phytochimiques. Par exemple, les légumes feuilles vert foncé et les fruits à chair jaune comme les citrouilles et les mangues sont recommandés pour combler les carences en vitamine A, l’une des causes principales de cécité chez les enfants africains. D’après un rapport conjoint de l’Organisation pour l’alimentation et l’agriculture (FAO) et de l’Organisation mondiale de la santé (OMS), manger au moins 400&nbsp;g de fruits et légumes frais par jour contribue à réduire les carences en micronutriments et à prévenir les maladies chroniques associées à l’alimentation et aux modes de vie malsains des milieux urbains (OMS, 2004).</p><p>Pourtant, les professionnels de l’horticulture s’accordent à dire que nous ne parlons pas assez de l’importance de l’horticulture pour le bien-être humain. Dans de nombreux pays, les écoles/facultés d’agriculture ont été absorbées par les écoles des sciences de la vie ou des sciences de la terre. Ainsi, l’horticulture n’est étudiée que lorsque des cultures spécifiques sont abordées dans l’enseignement et la recherche, mais pas comme un sujet d’étude à part entière (Bogers, 2006).</p><p>Au Kenya, l’horticulture est devenue le sous-secteur le plus important du secteur agricole et génère plus de 300&nbsp;millions de dollars de revenus en devises étrangères. La production horticole totale avoisine les 3&nbsp;millions de tonnes. En 2012, la valeur totale des exportations horticoles était de 87&nbsp;milliards Ksh (1 milliard USD), avec 380&nbsp;000&nbsp;millions de tonnes de produits exportés (HCDA, 2013). En 2012, la valeur totale du marché intérieur dans le secteur de l’horticulture s’élevait à 217&nbsp;milliards Ksh (2,5&nbsp;milliards USD), avec une superficie de 662&nbsp;835&nbsp;ha et une production totale de 12,6&nbsp;millions de tonnes. Par rapport à 2011, la valeur, la surface et la production totales ont respectivement augmenté de 6, 9 et 38&nbsp;% (HCDA, 2013). Les citoyens sont, pour la plupart, conscients du fait que l’horticulture est une industrie lucrative. Cette tendance se manifeste également par le nombre croissant d’universités kenyanes qui créent des départements spécialisés en horticulture et par l’augmentation du nombre d’inscriptions en premier cycle dans les sciences horticoles.</p><p><b>L’horticulture comme solution aux problèmes socioéconomiques de l’Afrique</b></p><p>La population jeune d’Afrique progresse plus rapidement que dans n’importe quelle autre région du monde. En 2010, la population âgée de moins de 30 ans était estimée à 695&nbsp;millions, soit près de 68&nbsp;% de la population totale du continent. D’ici à 2030, ce chiffre pourrait atteindre 986&nbsp;millions. On estime qu’au cours de la décennie actuelle, il faudrait créer 74&nbsp;millions d’emplois uniquement pour éviter que le chômage des jeunes ne progresse (FAO, 2012). L’horticulture permet de créer des emplois locaux, de réduire les coûts de transport des aliments et la pollution, de réaliser des ceintures vertes autour des villes et de recycler les déchets urbains pour en faire des ressources productives (FAO, 2012). Ce premier rapport d’étape sur la situation actuelle de l’horticulture urbaine et périurbaine en Afrique (FAO, 2012) conclut que la production commerciale de fruits et légumes est un moyen de subsistance pour des milliers de citadins africains et une source de nourriture pour des millions d’autres.</p><p>Outre la production alimentaire urbaine, la plupart des villes d’Afrique orientale ont en commun le fait que de nombreuses pépinières installées en bordure de routes proposent des semis de fruits et de légumes ainsi que des plantes ornementales. Ces pépinières offrent un moyen de subsistance à bon nombre de personnes, notamment aux jeunes issus des milieux urbains et des zones rurales environnantes. Les avantages sont décuplés par les produits et services auxiliaires à la production et à l’utilisation des cultures horticoles, tels que les intrants agricoles, les services financiers et les services d’aménagement du paysage nécessaires.</p><p>Au Kenya, de nombreux jeunes se lancent en tant qu’entrepreneurs dans l’horticulture. On y retrouve de jeunes diplômés dans différents domaines (pour la plupart, sans rapport avec l’horticulture) et de jeunes citadins de classe moyenne et moyenne supérieure, comme l’indique «&nbsp;Seeds of Gold&nbsp;», une publication conjointe de l’Université Egerton et du Daily Nation, entre autres médias (http://www.nation.co.ke). Ce scénario est également relaté dans un article intitulé «&nbsp;Youth Changing the Face of Agriculture in&nbsp;Kenya&nbsp;» (http://blog.plantwise.org/2014/05/19/youth-changing-the-face-of-agriculture-in-kenya/). On peut s’attendre à ce que davantage de diplômés de l’enseignement supérieur choisissent les sciences horticoles dans les universités kenyanes. Cependant, la croissance risque d’être lente et progressive, étant donné qu’il semble que, pour réussir en tant qu’horticulteur, aucun diplôme en agriculture n’est requis.</p><p>Dans son troisième rapport sur l’état des villes africaines, le Programme des Nations Unies pour les établissements humains (ONU-Habitat) invite à adopter une nouvelle conception de l’urbanisme africain et notamment à mettre en œuvre une croissance à la fois plus verte et plus durable fondée sur des solutions propres à l’Afrique pour répondre aux défis urbains actuels et futurs du continent (ONU-Habitat, 2013). Le rapport de la FAO (2012) entend apporter une contribution au débat en attirant l’attention des responsables de l’élaboration des politiques sur l’horticulture urbaine et périurbaine (HUP) et sur la façon dont elle peut contribuer au développement de villes plus vertes en Afrique. On pourrait définir l’horticulture urbaine et périurbaine comme un «&nbsp;système alimentaire local&nbsp;» fournissant aux populations urbaines une large gamme de produits horticoles – principalement des fruits et légumes, mais également des herbes, des racines, des tubercules, des plantes ornementales et des champignons (FAO, 2012).</p><p>Plus précisément, la FAO indique que l’HUP contribue à la santé humaine, à la sécurité alimentaire, aux moyens de subsistance durables, à une augmentation des revenus et donc, à une baisse des niveaux de pauvreté, ainsi qu’à des environnements plus propres. L’HUP peut également contribuer à atténuer le changement climatique en réduisant la chaleur dans les villes, en augmentant la séquestration de carbone et en absorbant les gaz nocifs dans l’environnement urbain (AIPH, 2006).</p><p><b>Potentiel de croissance des sciences horticoles en Afrique</b></p><p>Plusieurs forums internationaux envisagent la création d’une formation en horticulture, en particulier dans l’enseignement supérieur, citons notamment&nbsp;: les congrès de l’ISHS (2006, 2010, 2014), les congrès horticoles pour toute l’Afrique (1<sup>er</sup>, 2009, et 2<sup>e</sup>, 2012), le Séminaire international sur l’enseignement supérieur pour le développement de l’horticulture et le 2<sup>e</sup> Symposium européen d’horticulture d’Angers, France (2012), la conférence Enseignement supérieur agricole en Afrique, 2012 à Wageningen. Tous constatent qu’il faut améliorer la visibilité de l’horticulture et le soutien à l’enseignement agricole/horticole en Afrique. Cela a abouti au financement de projets tels qu’EDULINK (http://www.acp-edulink.eu), ECOHORT (http://www.ecohort.agreenium.org), HORTINLEA (http://www.hortinlea.org), PAEPARD (http://www.paepard.org) et le Projet de mobilité universitaire intra-ACP (http://eacea.ec.europa.eu/intra_acp_mobility), qui, pour la plupart, proposent une aide aux étudiants africains de troisième cycle. Certains se centrent uniquement sur l’horticulture, tandis que d’autres ont des avantages directs pour l’horticulture. On espère que ces jeunes diplômés contribueront au développement de programmes de sciences horticoles axés sur le marché qui attireront les étudiants. Des informations utiles sur l’état de l’enseignement des sciences horticoles dans l’horticulture africaine sont résumées par l’Initiative mondiale pour l’horticulture (<a href="http://www.globalhort.org/activities/capacity-building" target="_self">http://www.globalhort.org/activities/capacity-building</a>).</p><p><b>Opportunités pour les sciences horticoles</b></p><p>Les défis d’aujourd’hui constituent également des opportunités pour l’horticulture. Les horticulteurs ont un rôle essentiel à jouer pour relever ces défis, lesquels incluent&nbsp;:<i>&nbsp;</i></p><p><i>L’augmentation de la population urbaine</i><b> </b></p><p>La FAO estime que d’ici 2020, sur les 30&nbsp;villes qui connaîtront la croissance la plus rapide à l’échelle mondiale, 24 se trouveront sur le continent africain (FAO, 2012). En l’espace de 18 ans, la population urbaine de l’Afrique subsaharienne devrait doubler et atteindre près de 600&nbsp;millions de personnes. Il faudra alors nourrir et fournir des espaces verts à cette population.</p><p><i>La sécurité alimentaire et nutritionnelle</i></p><p>La proportion de personnes sous-alimentées en Afrique est de 21&nbsp;% et de 23,8&nbsp;% en Afrique subsaharienne (FAO, FIDA et PAM, 2014). La FAO décrit la sous-alimentation comme un état, se prolongeant pendant au moins un an, dans lequel se trouve une personne qui ne parvient pas à se procurer assez de nourriture. La sous-alimentation se définit comme un niveau d’apport alimentaire insuffisant pour satisfaire les besoins énergétiques alimentaires. L’Afrique subsaharienne abrite aujourd’hui plus d’un quart des personnes sous-alimentées dans le monde, puisqu’elle compte 38&nbsp;millions de personnes souffrant de la faim de plus qu’en 1990/1992 (FAO, FIDA et PAM, 2014).</p><p><i>Des moyens de subsistance durables</i></p><p>L’horticulture contribue grandement aux moyens de subsistance dans de nombreuses zones rurales d’Afrique. Les industries manufacturières et de services, fréquentes dans les zones urbaines, ne sont pas en mesure de répondre de manière adéquate aux besoins de la population grandissante et il faudra créer davantage d’emplois. La forte valeur ajoutée et les hauts rendements de l’horticulture en feront une excellente source de moyens d’existence face à l’augmentation des populations urbaines.</p><p><i>Le besoin d’un environnement de bonne qualité</i></p><p>La plupart des gens, notamment dans les zones urbaines, passent énormément de temps dans des espaces intérieurs. De nombreux matériaux utilisés dans la construction et dans l’ameublement dégagent des substances toxiques comme du benzène et du formaldéhyde. Les plantes ornementales sont capables de nettoyer l’air, en absorbant ces toxines et en libérant des sous-produits inoffensifs. Les espaces intérieurs et extérieurs devront être aménagés par des professionnels afin d’améliorer la qualité de vie des citadins, en particulier pour nettoyer l’air et en raison de la pollution accrue prévue.</p><p><i>La durabilité environnementale</i></p><p>Cette notion recouvre des aspects importants tels que la pureté de l’air, la non-pollution de l’eau et la préservation de la biodiversité. Les scientifiques horticoles et les paysagistes contribuent grandement à l’adaptation au changement climatique et à son atténuation. Les vastes zones de paysage naturel et les espaces aménagés sont garnis d’arbres, d’arbustes et de couvertures végétales qui contribuent à la séquestration du carbone, à l’absorption des substances nocives de l’atmosphère et au refroidissement (AIPH, 2006). Cela participe à l’atténuation des effets du changement climatique.</p><p>D’après les recommandations d’ONU-Habitat (2013), les villes devraient maximiser les avantages naturels des sites (lumière du soleil, plans d’eau, vents, etc.) et planifier la restauration des écosystèmes. Elles pourraient par exemple optimiser les parcs publics, le front de mer et les zones «&nbsp;vertes&nbsp;» à des fins récréatives et productives. Avec la hausse de la production horticole, et même agricole, pour répondre aux besoins des populations croissantes, la demande en ressources naturelles va elle aussi augmenter. Des technologies seront nécessaires pour permettre une utilisation efficace et réduite des ressources naturelles ainsi que la conservation de la biodiversité, l’utilisation réduite d’intrants, le développement de cultures résistantes à la sécheresse et nécessitant moins d’eau pour pousser. Il est indispensable de mettre au point des variétés améliorées/à haut rendement si l’on souhaite accroître le rendement par unité de ressource comme la terre, l’eau et les nutriments. Les scientifiques horticoles devront impérativement concevoir des technologies de production capables de garantir la durabilité de l’environnement.</p><p><i>Espaces verts</i></p><p>De nombreux pays africains ont enregistré une croissance économique vigoureuse et soutenue au cours de la dernière décennie, ce qui laisse espérer une nouvelle ère de prospérité partagée (ONU-Habitat, 2013). Cette situation a entraîné un accroissement de la classe moyenne, comme c’est le cas au Kenya. Ces citoyens demandent des villes «&nbsp;vertes&nbsp;» (notamment des espaces verts et des zones résidentielles vertes). Les parcs et les espaces verts sont associés à une meilleure qualité de vie en milieu urbain (ONU-Habitat, 2013&nbsp;; AIPH, 2006). À Praia, la capitale du Cap-Vert où ces espaces sont très rares, un petit square public ouvert depuis peu est devenu un lieu incontournable de divertissement, de loisir et de socialisation (ONU-Habitat, 2013).</p><p><b>Conclusion</b></p><p>En ce qui concerne les sciences horticoles en Afrique, je suis plutôt optimiste. Le Kenya, dont le cas a été examiné ici, est un parfait exemple de pays africain en développement. On ne saurait trop insister sur la contribution de l’horticulture au bien-être économique, sanitaire, social, psychique et environnemental des êtres humains.</p><p>Face aux besoins de sécurité alimentaire, de protection/conservation de l’environnement et d’industrialisation, tout gouvernement africain sérieux doit investir davantage dans l’agriculture, et en particulier dans l’horticulture, y compris dans l’enseignement. Les progrès en matière de coopération, d’échange d’informations et de recherche conjointe contribueront grandement au brillant avenir des sciences horticoles en Afrique.</p><p><b>Bibliographie</b></p><p>AIPH (Association internationale des producteurs de l’horticulture). 2006. <i>Flowers and Plants – more than just beautiful</i>. Consulté le 16/10/14 sur http://<a href="http://www.aiph.org/" target="_self">www.aiph.org</a></p><p>Bogers, R.P.&nbsp;2007. <i>The future of horticultural science and education: A European perspective</i>. Chronica Horticulturae, 47 (2), 4-6.</p><p>FAO. 2012. <i>Growing greener cities in Africa. First status report on urban and peri-urban horticulture in Africa</i>. Organisation des Nations unies pour l’alimentation et l’agriculture, Rome, Italie.</p><p>FAO, IFAD et WFP. 2014. <i>The state of food insecurity in the world 2014.</i></p><p><i>Strengthening the enabling environment for food security and nutrition</i>.</p><p>Organisation des Nations unies pour l’alimentation et l’agriculture, Rome, Italie.</p><p>HCDA. 2013. <i>Expert Statistics. Horticultural Crops Development Authority.</i> Consulté le 16/10/14 sur <a href="http://www.hcda.ck.ke/" target="_self">http://www.hcda.ck.ke</a></p><p>OMS. 2004. <i>Food and health in Europe: A new basis for action</i>. Robertson, A., Tirado, C., Lobstein, T., Jermini, M., Knai, C., Jensen, J.H., Ferro-Luzzi, A. et James, W.P.T. (éd.) WHO regional publications, European series, n° 96. <a href="http://www.google.co.uk/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;sqi=2&amp;ved=0CCEQFjAA&amp;url=http%3A%2F%2Fwww.who.int%2Ffr%2F&amp;ei=gIeFVNvxGcT2UPfHg9AD&amp;usg=AFQjCNGgs9GXLFoi4LbJ2rFkyRMIJfj1sA&amp;sig2=toJhZpBS6iBTaJqHKlz1jA&amp;bvm=bv.80642063,d.d24" target="_self">Organisation mondiale de la santé</a>, Genève, Suisse.</p><p>Consulté le 16/10/14 sur http://www.euro.who.int/__data/assets/pdf_file/0005/74417/E82161.pdf</p><p>ONU-Habitat. 2013. <i>The state of African cities. Prosperity of Cities 2012/2013</i>. ONU-Habitat, Nairobi, Kenya.</p><p>Consulté le 16/10/14 sur <a href="http://mirror.unhabitat.org/pmss/listItemDetails.aspx?publicationID=3387" target="_self">http://mirror.unhabitat.org/pmss/listItemDetails.aspx?publicationID=3387</a></p>
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+				
+
+		<strong class="date_small">11/01/2015</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+			 
+				
+			
+<div id="column-right">
+			
+										<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">Publications</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+					 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":782,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

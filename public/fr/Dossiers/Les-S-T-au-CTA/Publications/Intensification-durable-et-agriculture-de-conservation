@@ -1,0 +1,1736 @@
+
+	
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Intensification durable et agriculture de conservation  / Publications / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Dans son article de fond, Amir Kassam affirme que le système de cultures sans labour, qui implique l’utilisation d’un paillis à la surface du sol et la diversification des cultures, connu sous l’appellation « agriculture de conservation », transforme de manière fondamentale les pratiques agricoles et la gestion de la base des ressources terrestres, le paysage et l’environnement. Partisan de cette approche, Kassam note que l’agricultu..."/><meta name="keywords" content=", connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge"/>
+<link rel="Index" href="/fr"/>
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Publications/Intensification-durable-et-agriculture-de-conservation" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body class="default">
+
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Selected-publications/Sustainable-Intensification-and-Conservation-Agriculture">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class="path_link" href="/fr">Accueil</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers">Dossiers</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Les-S-T-au-CTA">Les S&amp;T au CTA</a>
+																<span class="path_delimiter">&gt;</span>
+													<a class="path_link" href="/fr/Dossiers/Les-S-T-au-CTA/Publications">Publications</a>
+																<span class="path_delimiter">&gt;</span>
+													<span class="path_current">Intensification durab...</span>
+													</div> 
+
+		<div id="content-columns">
+			<div id="column-left">
+
+								<div id="content-intro" class="roundedbordersbottom">
+					
+					<div class="content-image">
+																		
+															
+								
+
+    
+                <div class="imageleft">
+    
+    
+                                                                                                                                     <a href="/var/knowledge/storage/images/media/images/kassim-si-ca-k4d/537392-1-eng-GB/Kassim-SI-CA-K4D.jpg" rel="lightbox[]">        <img src="/var/knowledge/storage/images/media/images/kassim-si-ca-k4d/537392-1-eng-GB/Kassim-SI-CA-K4D_contentfront.jpg" width="185" height="115" style="border: 0px  ;" alt="Kassim SI &amp; CA K4D" title="Kassim SI &amp; CA K4D"/>
+        </a>
+    
+    
+            </div>
+    
+    																					
+															</div>
+	
+					<div class="content-intro-text">
+						<h1>Intensification durable et agriculture de conservation </h1>
+													<p class="author"><strong>Author:</strong>
+								Amir Kassam, modérateur, Global Platform for CA Community of Practice, FAO (Rome), animateur, Land Husbandry Group, Tropical Agriculture Association, Royaume-Uni et professeur invité, Ecole d’Agriculture, Stratégie et Développement, Université de Reading, Royaume-Uni</p>
+																								
+													<p class="date"><strong>Date:</strong>
+							01/10/2013</p>
+																									<p class="intro">Introduction:</p>
+							<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="/var/knowledge/storage/images/media/images/kassim-si-ca-k4d/537392-1-eng-GB/Kassim-SI-CA-K4D.jpg" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Dans son article de fond, Amir Kassam affirme que le système de cultures sans labour, qui implique l’utilisation d’un paillis à la surface du sol et la diversification des cultures, connu sous l’appellation « agriculture de conservation », transforme de manière fondamentale les pratiques agricoles et la gestion de la base des ressources terrestres, le paysage et l’environnement. Partisan de cette approche, Kassam note que l’agriculture de conservation contribue à renforcer les services écosystémiques et participe à la résilience des écosystèmes, mais offre également certains avantages économiques et environnementaux qu’il serait difficile voire impossible à obtenir avec l’agriculture conventionnelle.</p><p>
+&nbsp;&nbsp;Selon lui, l'agriculture de conservation s'inscrit dans le paradigme de l'intensification durable. Cette intensification, lorsque définie dans son sens le plus large, englobe production et écologie, encourage les produits biologiques fabriqués et utilisés sans gaspillage. Elle tient compte de l'identité et des aspirations culturelles des populations, reconnait les organisations et l'équité sociale, et les besoins d'une croissance économique. L'agriculture de conservation n'est pas une 'intensification' dans le sens classique d'une plus grande utilisation des intrants, mais plutôt une intensification des connaissances appliquées, des compétences et pratiques de gestion pour une utilisation judicieuse et complémentaire d'intrants de différent types. Il y voit un nouveau défi pour la science et la politique du 21e siècle. Cette agriculture doit permettre de produire plus avec moins, avec un minimum de pollution, aider la réhabilitation terres dégradées et abandonnées, et préserver et optimiser l'utilisation des ressources hydriques et biologiques.</p><p>
+&nbsp;&nbsp;L'agriculture de conservation est dorénavant pratiquée sur 125 millions d’hectares (environ 9 % des terres cultivables) sur tous les continents, dont près de la moitié dans les pays en développement, notamment en Afrique (Kenya, Lesotho, Malawi, Mozambique, Tanzanie, Zambie et Zimbabwe). Selon l’auteur, l’agriculture de conservation peut contribuer à l’objectif de l’intensification durable, mais des efforts en matière de recherche et de vulgarisation devront être accomplis afin d’éclairer le processus de formulation et de mise en œuvre de stratégies.</p>
+						
+						
+						
+						<br/>&nbsp;
+					</div> 
+					<br class="cl">
+				</div> 
+				 
+			
+				<div id="content-item">
+											<div class="box-content">
+							<a class="storylist" href="/fr/layout/set/print/content/view/full/18848">Print</a>
+																						| <a href="#comment">Commentaires</a>
+													</div> 
+						<br class="cl">
+		
+					 
+	
+				</div> 
+			
+				<div id="main-content" class="content view">					
+
+	                          
+			
+
+	<!-- BEGIN BODY TEXT -->	
+	
+			<div class="stdtext">	
+			
+<a name="eztoc537194_1" id="eztoc537194_1"></a><h2 class=" text-center"><b>Intensification durable et Agriculture de conservation</b><b>&nbsp;</b></h2><p class=" text-center"><b>-</b></p><p class=" text-center"><b>Amir Kassam</b></p><p class=" text-center"><b>-</b></p><p class=" text-center">Modérateur de la plateforme mondiale pour la communauté de pratique de l’agriculture de conservation, Organisation des Nations Unies pour l'alimentation et l'agriculture</p><p class=" text-center">Organisateur de la Land Husbandry Group, Tropical Agriculture Association, Royaume-Uni</p><p class=" text-center">Professeur invité à l’École d’Agriculture, de Politique et de Développement de l’Université de Reading, Royaume-Uni</p><p class=" text-center">-</p><p><b>Introduction</b><i>&nbsp;</i></p><p>Le système agricole sans labour impliquant la couverture des sols et la diversification des cultures, appelé agriculture de conservation (AC), est en train de bouleverser les pratiques agricoles et la gestion des ressources territoriales, du paysage et de l’environnement. L’AC renforce les services et la résilience des écosystèmes, et offre des avantages économiques et environnementaux supplémentaires qu’il serait difficile, voire impossible d’atteindre avec l’agriculture conventionnelle de travail du sol. &nbsp;</p><p>L’AC est pratiquée sur 125 millions d’hectares (soit environ 9&nbsp;% des terres cultivées) sur tous les continents, et s’est accrue à raison de 8 à 9 millions d’hectares par an ces dernières années (Tableau 1). Quelque 50&nbsp;% concernent les pays en développement, y compris les pays ACP, à savoir le Kenya, le Lesotho, le Malawi, le Mozambique, la Tanzanie, la Zambie et le Zimbabwe (Tableau 2). L’AC peut aider les agriculteurs à obtenir une intensification durable, en améliorant dans le même temps les rendements, l’efficacité, la résilience et les services écosystémiques (voir Encadré&nbsp;1). &nbsp;</p><p>Étant donné que l’AC peut contribuer à l’objectif d’intensification durable, il est nécessaire d’effectuer davantage de recherches et un plus grand effort de vulgarisation sur tous les aspects de l’AC afin de documenter l’élaboration des politiques et les stratégies de développement. <i>&nbsp;</i></p><p><i>&nbsp;</i></p><p><b>Qu’est-ce que l’intensification durable? &nbsp;</b></p><p>Le terme «&nbsp;intensification durable&nbsp;» s’est imposé ces dernières années et si sa définition peut varier, il peut être envisagé au sens large ou strict. La définition stricte s’applique à la poursuite du double objectif de rendements plus élevés (production) et d’efficacité de la productivité avec moins de conséquences négatives sur l’environnement, tout en renforçant la résilience et le capital naturel et en améliorant le flux de services environnementaux.<i>&nbsp;</i>Cela comprend le développement de systèmes de production intégrés et la gestion du paysage dans les zones pluviales et irriguées. Le concept renferme toute une gamme de services écosystémiques, notamment&nbsp;: le maintien de la santé des sols, de la qualité de l’eau potable et de l’air, le contrôle de l’érosion et d’autres formes de dégradation des sols, la protection des cycles de l’eau, des nutriments et du carbone, les services de pollinisation et autres tels que la protection des paysages, des habitats et de la biodiversité pour le fonctionnement des écosystèmes. &nbsp;</p><p>Dans un contexte plus large, l’intensification durable comprendrait les aspects ci-dessus, les produits biologiques fournis aux et utilisés par les consommateurs avec un gaspillage alimentaire minimum, ainsi que les dimensions humaines et économiques des aspirations socio-culturelles, des organisations, de l’équité sociale et de la croissance économique. Elle implique également l’amélioration des capacités des personnes et de leurs institutions tant formelles qu’informelles à fournir et utiliser des intrants de manière efficace, à gérer les systèmes, à distribuer et utiliser efficacement les produits de manière à éviter le gaspillage excessif, et à tirer parti des services écosystémiques de grande échelle qui profitent aussi bien aux producteurs qu’aux consommateurs. &nbsp;</p><p>Quelle que soit la définition de l’intensification durable, il est nécessaire d’obtenir des rendements accrus par des moyens qui respectent les ressources et l’environnement, ou même qui les améliorent. Ces dernières années, la situation a commencé à évoluer avec la diffusion des systèmes d’AC. &nbsp;</p><p><b>L’intensification de la production au 20<sup>e</sup> siècle</b></p><p>La majorité de la recherche agricole passée et présente, visant l’augmentation de la productivité, de l’accès au marché et des avantages économiques pour les producteurs et d’autres fournisseurs de services, s’appuie sur une approche étroite de hausse du rendement (productivité de la surface) pour atteindre les objectifs de développement. Même lorsque des approches commerciales axées sur le marché sont utilisées, les objectifs de développement sont étroitement définis en termes de «&nbsp;solution miracle&nbsp;» ou de produits pouvant être viables sur le plan commercial. Cela correspond à l’utilisation d’une gamme restreinte d’intrants technologiques&nbsp;: semences modernes, produits agrochimiques, labour et autres formes de mécanisation, vaccins et médicaments. La viabilité commerciale repose souvent sur des bénéfices économiques partiellement chiffrés pour le producteur et les négociants, qui ne prennent généralement pas en compte les coûts sociaux et économiques des effets externes négatifs associés, tels que l’érosion des sols, la dégradation des sols et la perte de la santé des sols, la pollution chimique de l’eau et de l’environnement, l’augmentation des émissions de gaz à effet de serre, ainsi que la destruction des habitats et de la biodiversité. Ainsi, les coûts plus généraux ne bénéficient pas de l’attention qu’ils méritent lors de la phase de conception et de mise en œuvre, ce qui conduit à un développement sous-optimal des ressources des foyers et des communautés, du milieu environnant et des services écosystémiques d’un côté, et du tissu socio-culturel et du capital social de l’autre. Les bénéficiaires, dans la plupart des cas les petits exploitants démunis, et leurs gouvernements, la communauté de la recherche au service du développement et les organismes d’aide/donateurs, sont également perdants. L’élaboration des implications scientifiques et politiques de l’intensification durable reposant sur les notions et principes de l’AC nécessite une compréhension de la science agricole et de la base de connaissances élargie, ainsi que du cadre politique actuel. &nbsp;</p><p>Le paradigme de la productivité agricole et les systèmes associés à la Révolution verte ont augmenté la production alimentaire et d’autres produits agricoles dans les pays industrialisés et dans certains pays en développement. Ce modèle technologique «&nbsp;industriel&nbsp;» entrées-sorties (également connu sous le nom de technologies à base scientifique ou technologies à base de données factuelles), partait du principe que, si davantage de sorties sont nécessaires, davantage d’entrées doivent intervenir. Le postulat implicite était que les systèmes de production agricole sont pour l’essentiel fermés. Il a été guidé par les trois principes suivants: &nbsp;</p><p>(a)&nbsp;&nbsp;&nbsp; l’amélioration du potentiel génétique des cultures et animaux; &nbsp;</p><p>(b)&nbsp;&nbsp; &nbsp;une plus large application d’intrants externes sous forme de produits agrochimiques pour la nutrition des plantes et la lutte antiparasitaire (mauvaises herbes, agents pathogènes, insectes, parasites); &nbsp;</p><p>(c)&nbsp;&nbsp;&nbsp; une perturbation mécanique accrue des sols et terrains pour l’établissement de cultures et d’autres activités agricoles. &nbsp;</p><p>Cela a entraîné certes une augmentation des rendements et de la production totale, mais aussi une productivité des facteurs visiblement sous-optimale et des plafonds de rendements agronomiques et économiques inférieurs au niveau optimal, de plus en plus difficiles à gérer et plus coûteux à maintenir au fil du temps, parallèlement à l’augmentation des effets externes négatifs et des inefficacités ainsi qu’à la diminution de la productivité des facteurs de production. Pire encore, des conséquences négatives sont apparues, à savoir: &nbsp;</p>
+<ul>
+
+<li>une perte en termes de matières organiques du sol, porosité, aération, biote (ce qui correspond à une baisse de la santé du sol), entraînant l’effondrement de la structure du sol et l’imperméabilisation des sols, souvent accompagnés d’un compactage mécanique et d’une baisse du niveau d'infiltration, suivis par des engorgements et inondations (Illustration 1); &nbsp;&nbsp;</li>
+
+<li>une perte d’eau (ruissellement) et de sol (sédiment); &nbsp;&nbsp;</li>
+
+<li>une perte de zone d'enracinement, entraînant un système de racines appauvri et une perte de résilience et de relation fonctionnelle avec les biotes du sol; &nbsp;</li>
+
+<li>une perte en termes de temps, semences, engrais, pesticides (érosion et lixiviation); &nbsp;</li>
+
+<li>une capacité amoindrie à absorber et libérer progressivement l’eau et les substances nutritives; &nbsp;</li>
+
+<li>une efficacité amoindrie des engrais minéraux&nbsp;: «&nbsp;Les cultures ont développé une dépendance aux engrais&nbsp;»; &nbsp;<i>&nbsp;</i></li>
+
+<li>une perte de la biodiversité au sein de l’écosystème, au-dessus et en dessous de la surface du sol;&nbsp;</li>
+
+<li>davantage de problèmes de parasites liés à la dégradation des chaînes alimentaires pour les micro-organismes et du contrôle naturel des parasites; &nbsp;</li>
+
+<li>un déclin de l’efficacité des intrants et de la productivité des facteurs, une diminution des rendements; &nbsp;</li>
+
+<li>une résilience réduite, une durabilité réduite; &nbsp;</li>
+
+<li>une faible capacité d'adaptation face au changement climatique, aucune contribution à son atténuation; &nbsp;</li>
+
+<li>des coûts de production inutilement élevés, une productivité et des profits agricoles réduits, et des services écosystémiques dégradés; &nbsp;</li>
+
+<li>des technologies souvent peu rentables et inaccessibles pour les agriculteurs démunis, ce qui rend les interventions de développement inutilement coûteuses. &nbsp;</li>
+
+</ul>
+<p>Par conséquent, si le modèle a contribué à l’intensification et a permis à l'approvisionnement alimentaire mondial de conserver son avance par rapport à la progression de la demande mondiale, l’inquiétude grandit face aux graves conséquences environnementales, économiques et sociales. À l’évidence, l’agriculture du 21<sup>e</sup> siècle ne peut pas se calquer sur l’agriculture de la deuxième moitié du 20<sup>e</sup> siècle, car le défi consiste aujourd’hui à produire plus avec moins tout en causant le moins de dégâts possible à l’environnement et aux ressources disponibles et en améliorant le flux de services écosystémiques. En outre, pour faire face aux défis posés par les ressources limitées dans le domaine de la biodiversité, des terres et de l’eau, il est nécessaire de réhabiliter les surfaces agricoles qui ont été dégradées et/ou abandonnées en raison des abus commis par le passé, et de conserver et optimiser l’utilisation des ressources en eau et en biodiversité restantes. Il s’agit là du nouveau défi que devront relever la science et la politique. Alors que l’agriculture peut être traitée comme un système fermé avec des perturbations mécaniques et chimiques intensives qui viennent altérer et perturber l'équilibre, les fonctions et les services de l'écosystème, cette situation conduit en réalité à un déséquilibre dans lequel la dégradation de la biodiversité et du potentiel écologique des sols et de l’environnement crée des limites de productivité inférieures et sous-optimales ainsi qu’une résilience du système sous-optimale, ce qui va à l’encontre de l’amélioration des ressources naturelles disponibles et du renforcement de la durabilité. &nbsp;</p><p><b>Agriculture de conservation et intensification durable &nbsp;</b></p><p>L’AC s’inscrit dans le paradigme de l’intensification durable consistant à produire plus avec moins&nbsp;; il s’agit d’améliorer les ressources et leur productivité ainsi que la capacité des services écosystémiques au fil du temps. Ainsi, l’intensification ne doit pas être entendue au sens classique d’une utilisation accrue des intrants mais plutôt comme l’intensification du savoir, des compétences et des pratiques de gestion, et une utilisation complémentaire appropriée et judicieuse des autres intrants. La production des produits et services écosystémiques désirés est basée sur trois principes indissociables et sur des données empiriques, et les preuves scientifiques mettent de plus en plus en évidence une transformation vers des systèmes agro-écologiques. Ces principes sont les suivants: &nbsp;</p><p>(i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; éviter la perturbation mécanique des sols par un ensemencement direct et une plantation dans des sols non labourés, pour améliorer et conserver les matières organiques, la structure et les biopores des sols, ainsi que la santé générale des sols avec la biodiversité et les fonctions écosystémiques associées; &nbsp;</p><p>(ii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; maintenir en continu une couverture organique de protection sur la surface des sols, à l’aide de résidus de récolte et de cultures de couverture (légumineuses et non-légumineuses) afin de protéger la surface des sols, de conserver l’eau et les substances nutritives, d’accroître la quantité d’azote fixé biologiquement, de minimiser le ruissellement et l'érosion, de promouvoir l'activité biologique des sols et de contribuer à la gestion intégrée des mauvaises herbes, des agents pathogènes, des insectes et des parasites; &nbsp;&nbsp;</p><p>(iii)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;cultiver un plus large éventail d'espèces végétales – annuelles et vivaces – en associations, séquences et rotations pouvant inclure des arbres, arbustes, pâturages et cultures, afin d’optimiser la nutrition des cultures et d’améliorer la résilience du système.</p><p>Les pratiques fondées sur ces principes et soutenues par de «&nbsp;bonnes pratiques agricoles&nbsp;» offrent une fondation écologique solide à tout système de production pluvial ou irrigué, notamment les cultures arables, horticoles, l’agroforesterie, les plantations, les pâturages, les systèmes mixtes et associant l'agriculture et l'élevage, les rendant ainsi durables sur le plan écologique tout en les prédisposant à répondre efficacement à toute application d’intrant de production pour atteindre l’intensification. Ils fonctionnent en synergie pour produire des résultats positifs en termes de productivité individuelle et globale des facteurs, et de résilience.&nbsp;</p><p>La relation entre les composantes de l’AC et les conditions et avantages souhaités au niveau des sols et des agro-écosystèmes sont recensés dans le Tableau 3. Par exemple, la plupart des bénéfices liés à la composante sans labour et à la composante de paillis ne sont pas forcément possibles avec l’agriculture de travail du sol. Le critère principal est l'instauration d'un environnement favorable dans la zone d’enracinement à la plus grande profondeur possible. Les racines fonctionnent efficacement et sans restriction pour absorber les substances nutritives des végétaux et l’eau, et interagissent avec une série de microorganismes bénéfiques au rendement agricole. L’eau pénètre ainsi dans le sol de manière à ce que&nbsp;: (a) les plantes souffrent rarement de stress hydrique, qui limiterait leur croissance potentielle&nbsp;; et (b) les eaux résiduelles passent dans les eaux souterraines et le débit des cours d'eau, et non pas au-dessus de la surface par ruissellement. Une activité biologique favorable, notamment celle des racines des plantes, se produit ainsi dans le sol, où elle maintient et reconstitue l’architecture du sol, lutte contre les agents pathogènes potentiels du sol, contribue à la formation de matières organiques et de diverses sortes d’humus, et aide à l’absorption, la rétention, la chélation et la libération progressive de substances nutritives végétales. La caractéristique clé d’un écosystème du sol durable repose sur les actions biotiques envers la matière organique dans des sols suffisamment poreux. Ainsi, «&nbsp;l’efficacité de la conservation&nbsp;» englobe non seulement la conservation des sols et de l’eau, mais également les bases biotiques de la durabilité. Les principes de l’AC s’appliquent de manière universelle à tous les paysages agricoles et toutes les utilisations de sol avec des pratiques adaptées au contexte local. &nbsp;</p><p><b>Quelles sont les implications d’une agriculture à faibles intrants avec l’AC pour l’environnement et les agriculteurs? &nbsp;</b></p><p>L’agriculture à faibles intrants fondée sur le labour telle qu’elle est actuellement pratiquée, que ce soit manuellement ou par traction animale, n’est ni durable ni optimale, comme nous l’expliquions précédemment. L’utilisation manuelle d’une houe a le même effet sur la santé et les fonctions du sol qu’un système avec charrue tiré par animal (Illustration 2) ou par tracteur, et crée une dépression compacte «&nbsp;houe et pieds&nbsp;» sous le sol déstructuré. Cela constitue un piège d'équilibre de bas niveau, avec une faible productivité malgré l’achat d’intrants en semences et engrais, et une pénibilité accrue pour l’agriculteur, car à chaque saison le sol dégradé doit être ameubli mécaniquement, alors que les avantages temporaires du labour disparaissent rapidement. Pour les agriculteurs, cette situation entraîne un faible retour sur la terre et le travail, des risques d’échec plus élevés en raison des stress abiotiques et biotiques, et une performance sous-optimale, ce qui les conduit à abandonner la terre pour en chercher de nouvelles, voire même à cesser leur activité. &nbsp;</p><p>Le nouveau paradigme de l’AC visant à atteindre une nouvelle forme de «&nbsp;Révolution verte&nbsp;» qui soit durable s’enracine de plus en plus à l’échelle mondiale. Du point de vue agro-écologique, ce paradigme est plus en harmonie avec la nature et les processus naturels, et implique une participation plus responsable de la part des agriculteurs car il représente moins une «&nbsp;boîte noire&nbsp;» industrielle imposée aux agriculteurs et aux organismes publics, notamment concernant les secteurs de l’éducation, de la recherche et de la vulgarisation. Si de nombreux agronomes et socio-économistes conventionnels continuent à défendre les méthodes agricoles actuelles basées sur le labour, des approches agro-écologiques sont mises à l’épreuve et se développent sur tous les continents&nbsp;; les agriculteurs sont au cœur de cette transformation et constituent l’une des forces motrices de ce processus d’adaptation. L’AC (un concept au-delà de l'agriculture sans labour) est un parfait exemple de l’approche d’intensification durable basée sur l’agro-écologie, qui nécessite des niveaux moins élevés de tous les intrants de production comme l’énergie, les semences, les produits agro-chimiques, les machines et le temps, et offre une plus grande productivité que les systèmes non basés sur l’AC. &nbsp;</p><p>L’AC fonctionne tout aussi bien avec les variétés traditionnelles et nécessite beaucoup moins d’engrais inorganiques. Elle peut fonctionner sans engrais s’il existe une source de substances nutritives obtenues par la combinaison de légumineuses comme plantes de couverture dans le système de culture et une source organique de substances nutritives végétales. Dans les situations de faibles intrants, l’adoption de l’AC permet également de réduire graduellement le travail lié au désherbage car les sols deviennent plus sains à mesure qu’ils retrouvent leur biodiversité et que leur structure se développe, en partie parce que la banque de semences des mauvaises herbes, lorsqu’elle est laissée intacte dans le sol, va pourrir au fil du temps, et parce que le paillis à la surface du sol et les cultures de couverture suppriment les mauvaises herbes. Ainsi, l’AC offre une approche alternative pour atteindre l’intensification durable dans l’agriculture à faibles intrants en utilisant des variétés traditionnelles et des méthodes de conservation de la fertilité du sol. L’AC permet de passer d'une agriculture sur brûlis à un simple système de paillis, lequel peut au fil du temps être amélioré par l’introduction de légumineuses et de cultures de couverture et l’accroissement de la biodiversité des cultures et du bétail.</p><p><b>Quelles sont les implications au niveau scientifique et politique? &nbsp;</b></p><p>Lorsque les agriculteurs passent de la culture de labour à l’AC, certains bénéfices de type économique et environnemental peuvent être attendus, et apparaissent au fil du temps. Ces avantages varient en fonction de plusieurs facteurs, notamment&nbsp;: les conditions et la variabilité agro-climatiques durant et entre les saisons, le drainage et l’état de santé initial des sols sous les systèmes de labour, la taille de l’exploitation et la source d’énergie agricole, la technicité des systèmes de culture, les niveaux de rendement sous les systèmes de labour, le savoir-faire de l’agriculteur en matière d’AC et l’accès aux intrants de production, l’équipement et les machines, la compétition pour les résidus de récolte en tant que nourriture pour le bétail et les arrangements au niveau de l’exploitation et de la communauté pour son amélioration et sa gestion. &nbsp;</p><p>En général, les bénéfices de l’AC peuvent inclure&nbsp;: une hausse de la productivité des facteurs et des rendements (en fonction des niveaux de rendement constatés et de l’étendue de la dégradation des sols); jusqu’à 70&nbsp;% de diminution des combustibles fossiles utilisés ou du travail manuel&nbsp;; une réduction de l’utilisation des engrais pouvant atteindre 50&nbsp;%&nbsp;; une réduction de 20&nbsp;% minimum de l’emploi de pesticides et d’herbicides&nbsp;; une baisse de quelque 30&nbsp;% des besoins en eau&nbsp;; et une réduction des dépenses pour les machines agricoles. En outre, il est possible d’améliorer l’adaptabilité des systèmes de culture, des exploitations et des paysages aux changements climatiques en raison de l’amélioration des relations d’humidité sol/plantes, tout en contribuant à l’atténuation des changements climatiques par une plus grande séquestration du carbone et une diminution des émissions de gaz à effet de serre. Grâce à la plus grande infiltration des eaux de pluie et à la diminution du ruissellement et de l’érosion du sol, l’AC peut également réduire les risques d’inondations, augmenter la qualité et la quantité des ressources en eau et faire baisser les coûts d’entretien de l’infrastructure. &nbsp;</p><p>Ainsi, les implications scientifiques et politiques clés de l’intensification durable basée sur les systèmes d’AC seraient liées au renforcement de la capacité des organismes compétents des secteurs public, privé et civil dans le but de modifier les systèmes alimentaires et agricoles conventionnels actuels, qui devront passer d’une situation économique et environnementale sous-optimale à un statut adapté à leur finalité. Si les connaissances scientifiques actuelles en matière d’agriculture se concentrent sur les systèmes basés sur le labour, les efforts doivent aujourd’hui s’orienter sur les systèmes d’AC et veiller à ce que les résultats soient largement diffusés. &nbsp;</p><p><b>Quels sont les domaines clés de la recherche et de la vulgarisation à explorer?</b></p><p>Les futurs paysages agricoles doivent être multifonctionnels et durables sur le plan écologique. La recherche environnementale et sociale est nécessaire pour faciliter l'intégration des fondements écologiques et sociaux de l’intensification durable des systèmes de production et des systèmes alimentaires et agricoles. Ceux-ci peuvent également faciliter l’intensification de la production en faveur des pauvres et le développement des systèmes d'exploitation agricole, ainsi que les objectifs de sécurité alimentaire et nutritionnelle des ménages et de la planète, et les services écosystémiques basés sur les paysages ou les terrains. &nbsp;</p><p>La recherche et la vulgarisation doivent être renforcées dans tous les aspects de la gestion de l’AC, biophysique et agronomique, socio-économique et politique, par rapport aux associations, séquences et rotations de cultures. La recherche et la vulgarisation dans les pays ACP devraient expliquer les fondements des performances supérieures atteintes avec l’AC, et identifier les options de gestion des systèmes de culture pour tous les types d’énergie agricole – manuelle, avec des animaux de trait et mécanisée – susceptibles d’optimiser ces bénéfices. &nbsp;</p><p>La recherche et la vulgarisation doivent également expliquer et utiliser les liens opérationnels entre l’augmentation de la production et de la productivité des facteurs et la maîtrise simultanée de la santé du sol, des services écosystémiques et de l’amélioration de la résilience au niveau de la plante, de la culture, du système de culture et de l’exploitation. L’eau, le carbone, les substances nutritives, le sol et les biotes du sol, la biodiversité et les services liés aux paysages sont tout à fait pertinents pour faire face à la plupart des contraintes mondiales en termes d’insécurité alimentaire, de flambée des prix, de dégradation des terres et de la biodiversité, de pénurie de ressources et de changement climatique. Les approches et méthodologies de l’AC pour l’intensification durable offrent des options de développement en faveur des pauvres efficaces et abordables, capables d’intégrer et de rassembler les aspects environnementaux et sociaux avec les aspects technologiques et liés à la productivité, tout en offrant de meilleures opportunités pour la recherche participative et la planification, conception et mise en œuvre de la vulgarisation. Ces approches et méthodologies devraient s’inscrire dans les recherches et stratégies de vulgarisation de chaque pays de façon à ce que les informations, notamment l'aspect économique de l’AC, soient disponibles pour contribuer à formuler et mettre en œuvre des initiatives de développement abordables en faveur des pauvres et en vue de l’intensification durable. &nbsp;</p><p>Ces initiatives devraient comprendre des méthodologies adaptées à la culture locale dans le cadre de la recherche biophysique, technologique et politique. Il est nécessaire d’encourager la recherche sur les modèles d’organisation sociale des agriculteurs et de leurs familles, ainsi que sur l’analyse institutionnelle. Il faut également mettre en place un apprentissage institutionnel dans des domaines tels que la formation et l’activation de capital social, les facteurs d’action collective, la gestion des ressources au niveau de la communauté et du groupe et les études sur l’impact social de la recherche. La façon dont les relations politiques et de pouvoir influencent l’adoption de la technologie par les producteurs sera un autre domaine de recherche. Ensuite, il faudra produire des recommandations en matière de politique sociale et de stratégie pour l’intensification équitable. &nbsp;</p><p>Un domaine où l’expertise pourrait être renforcée est celui de l’intensification et des systèmes de production durables, avec une expérience et une expertise pratiques concernant les services hydrographiques liés à l’AC, la gestion de la compensation du carbone, la gestion durable des sols et des paysages. La recherche et la vulgarisation sociales nécessitant à la fois une expertise dans le domaine de la sociologie rurale et de l’anthropologie sociale&nbsp;; en même temps, des connaissances concernant le rôle des variables sociales et culturelles dans l’intensification durable et équitable en faveur des pauvres sont essentielles.&nbsp;</p><p><b>Perspectives d’avenir &nbsp;</b></p><p>L’adoption de l’AC s’accompagne de contraintes qui doivent être surmontées avant une diffusion et une adoption à grande échelle. Par exemple, sa mise en œuvre peut être difficile lors des premières années dans certaines zones semi-arides et sur des sols très argileux et compactés et des terres mal drainées. Le contrôle des nuisibles et des maladies peut également poser problème lorsque des résidus de récolte sont laissés sur le sol, et l’utilisation de pesticides et d’herbicides peut s’avérer nécessaire, tout du moins dans les premières années, dans des situations limitées par la main-d’œuvre et le paillis où l’instauration d’une stratégie de gestion intégrée des mauvaises herbes peut nécessiter plus de temps. Les utilisations concurrentes de la biomasse pour l’alimentation du bétail, la couverture du sol en paillis ou en tant que substrat pour la vie du sol peuvent être problématiques. Il peut être nécessaire d’aborder d’autres enjeux socio-économiques dépendant de zones géographiques précises, comme le risque perçu de perte de productivité lors des premières années ou la possibilité de déplacement ou de réaffectation de la main-d’œuvre rémunérée vers de nouvelles activités. Pour les exploitations plus importantes, le manque d’équipement approprié pour l’ensemencement et l'épandage d'engrais à travers le paillis de surface peut poser problème. &nbsp;</p><p>La diffusion internationale de l’AC offre des enseignements montrant que les obstacles évoqués ci-dessus peuvent être et sont effectivement surmontés par les agriculteurs, riches ou pauvres, à la tête d’exploitations petites ou grandes, par le biais de solutions formulées à l’échelle locale en partenariat avec une série de parties prenantes des secteurs public et privé, et selon des méthodes d’adoption et de transformation différentes, en fournissant des enseignements pour la recherche, la politique et la pratique. &nbsp;</p><p>Il existe plusieurs façons de soutenir le déploiement de l’AC: &nbsp;</p>
+<ul>
+
+<li>Demander le soutien initial des pouvoirs publics sous forme de subventions afin de faciliter l’accès à un équipement agricole approprié et de réduire le risque potentiel de perte de productivité lors des premières années suivant le passage à l’AC. &nbsp;</li>
+
+<li>Encourager les gouvernements à revoir leurs politiques agricoles et à mettre en œuvre des réformes institutionnelles qui soutiennent le déploiement de l’AC, en particulier en Afrique subsaharienne, où le développement de ce type d’agriculture est peut-être le plus urgent. &nbsp;</li>
+
+<li>Développer des programmes à grande échelle offrant aux agriculteurs de l’AC une rémunération pour leur fourniture de services écosystémiques comme la séquestration du carbone, des services hydrographiques pour la qualité et la quantité des ressources en eau, le contrôle de l’érosion des sols et la réduction des risques d’inondation, et l’amélioration des services de pollinisation. &nbsp;</li>
+
+<li>Financer des programmes de recherche et de vulgarisation pratiques plus innovants pour relever les défis liés au sol, à l’agronomie et à l’élevage par le biais des universités et des organismes de recherche. &nbsp;</li>
+
+<li>Réviser les cursus agricoles universitaires pour y inclure un enseignement destiné à la prochaine génération d’agriculteurs et de praticiens du développement agricole et portant sur l’AC en tant que pratique agricole alternative et durable. &nbsp;</li>
+
+</ul>
+<p>Pour tirer pleinement parti des avantages offerts par l’AC, toutes les parties prenantes doivent se mobiliser pour faciliter le processus de transformation, comme c’est déjà le cas dans des pays tels que l’Argentine, l’Australie, le Brésil, le Canada, le Paraguay et les États-Unis. Cependant, une réponse plus structurée aux opportunités de l’AC exige un réalignement des institutions agricoles, de plus grands investissements dans la recherche, la vulgarisation et l’éducation, ainsi que l’apport de preuves pour mettre à jour les politiques de développement agricole et ainsi permettre l’intégration de l’AC. &nbsp;</p><p><b>Lectures complémentaires</b></p><p>FAO. 2011.<b>&nbsp;</b>Save and Grow: A Policymakers Guide to the Sustainable Intensification of Smallholder Crop Production. FAO, Rome, Italie.</p><p>Goddard, T., Zoebisch; M.A., Gan, T.Y., Ellis, W., Watson, A. et Sombatpanit, S. (Eds.) 2007.<b>&nbsp;</b>No-Till Farming Systems. Special Bulletin 3. World Association of Soil and Water Conservation, Bangkok, Thaïlande.</p><p>
+Government Office for Science<b>, </b>UK. 2011. Foresight.<b>&nbsp;</b>Future of Food and Farming. The Government Office for Science, Londres, Royaume-Uni.<br/>&nbsp;<a href="http://www.bis.gov.uk/assets/foresight/docs/food-and-farming/11-546-future-of-food-and-farming-report.pdf" target="_self">http://www.bis.gov.uk/assets/foresight/docs/food-and-farming/11-546-future-of-food-and-farming-report.pdf</a>.</p><p>Lal, R. et Stewart, B.A. (Ed.) 2013. Principles of Sustainable Management in Agroecosystems. CRC Press, Taylor &amp; Francis Group, Boca Raton, Florida, États-Unis.&nbsp;</p>
+<div class="object-center">
+<div class="clear"></div>
+
+
+<!-- ****************** Begin image ****************** -->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="200">
+<tr>
+
+<!-- Spacer left --> <!-- End spacer -->
+
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+  
+<!-- Begin image and caption -->  
+<td>
+	<table border="0" cellpadding="0" cellspacing="1">
+	<tr><td><a href="/var/knowledge/storage/images/media/images/amir-kassam-1-cta-cabi-k4d-source-is-wolfgang-sturny/539882-1-eng-GB/Amir-Kassam-1-CTA-CABI-K4D-Source-is-Wolfgang-Sturny.jpg" rel="lightbox[]">	<img border="0" src="/var/knowledge/storage/images/media/images/amir-kassam-1-cta-cabi-k4d-source-is-wolfgang-sturny/539882-1-eng-GB/Amir-Kassam-1-CTA-CABI-K4D-Source-is-Wolfgang-Sturny_medium.jpg" width="200" height="124">
+	  </a></td>
+	<tr>
+		<td></td>
+			</tr>
+	</table>
+  	
+</td>
+<!-- End image and caption -->
+</tr>
+</table>
+</td>
+
+<!-- Begin spacer right -->	<td rowspan="99"><img src="/design/knowledge/images/www-onepixel-trans.gif" border="0" width="7" height="1"/></td> <!-- End spacer -->
+  
+
+</tr>
+</table>
+<!-- ****************** End image ****************** -->
+
+	</div><p><b>Illustration 1: </b>Le tassement du sol et la perte de la capacité d’infiltration de l’eau causés par un labour régulier du sol entraînent un drainage difficile et des inondations suite à un orage dans un champ labouré (à droite), mais pas d’inondations dans le champ sans labour (à gauche). Photographie prise en juin 2004 dans la parcelle de suivi à long terme «&nbsp;Oberacker&nbsp;» à Zollikofen, près de Berne, en Suisse, dans le cadre d’un projet initié en 1994 par Swiss No-till. Les trois trous remplis d’eau dans le champ sans labour sont le résultat d’échantillons de sol prélevés pour des «&nbsp;tests de bêche&nbsp;» avant l’orage (<i>Source</i>&nbsp;: Wolfgang Sturny).&nbsp;</p><p><b>Illustration 2&nbsp;: </b>Encensement direct de paillis avec un semoir-cultivateur à traction animale en Zambie (<i>Source</i>&nbsp;: Josef Kienzle). &nbsp;</p><table class="default" border="0" cellpadding="2" cellspacing="0" width="100%" summary="Dummy">
+<tr>
+<td valign="top">  &nbsp;
+  </td>
+</tr>
+
+<tr>
+<td valign="top">  &nbsp;
+  </td>
+</tr>
+
+<tr>
+<td valign="top">  &nbsp;
+  </td>
+</tr>
+
+<tr>
+<td valign="top">  &nbsp;
+  </td>
+</tr>
+
+</table>
+<p>-</p><p><b>Tableau 1:</b> Répartition mondiale des superficies de l’AC par continent.</p><table class="renderedtable" border="1" cellpadding="2" cellspacing="0" width="798">
+<tr>
+<td width="200" valign="top">  <b>Continent</b>
+  </td><td width="200" valign="top">  <b><b><b>Superficie (ha)</b></b></b>
+  </td><td width="200" valign="top">  <b><b><b>Pourcentage du total</b></b></b>
+  </td><td width="200" valign="top">  <b><b><b>AC en pourcentage des terres arables et cultivables</b></b></b>
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Amérique du Sud
+  </td><td width="200" valign="top">  55,464,100
+  </td><td width="200" valign="top">  45
+  </td><td width="200" valign="top">  57.3
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Amérique du Nord
+  </td><td width="200" valign="top">  39,981,000
+  </td><td width="200" valign="top">  32
+  </td><td width="200" valign="top">  15.4
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Australie et Nouvelle-Zélande
+  </td><td width="200" valign="top">  17,162,000
+  </td><td width="200" valign="top">  14
+  </td><td width="200" valign="top">  69.0
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Asie
+  </td><td width="200" valign="top">  4,723,000
+  </td><td width="200" valign="top">  4
+  </td><td width="200" valign="top">  0.9
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Russie et Ukraine
+  </td><td width="200" valign="top">  5,100,000
+  </td><td width="200" valign="top">  4
+  </td><td width="200" valign="top">  3.3
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Europe
+  </td><td width="200" valign="top">  1,351,900
+  </td><td width="200" valign="top">  1
+  </td><td width="200" valign="top">  0.5
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  Afrique
+  </td><td width="200" valign="top">  1,012,840
+  </td><td width="200" valign="top">  1
+  </td><td width="200" valign="top">  0.3
+  </td>
+</tr>
+
+<tr>
+<td width="200" valign="top">  <b>Monde</b>
+  </td><td width="200" valign="top">  <b>124,794,840</b>
+  </td><td width="200" valign="top">  <b>100</b>
+  </td><td width="200" valign="top">  <b>8.8</b>
+  </td>
+</tr>
+
+</table>
+<p>&nbsp;-</p><p><b>Tableau 2:</b> Adoption de l’AC dans les pays africains.</p><table class="renderedtable" border="1" cellpadding="2" cellspacing="0">
+<tr>
+<td width="245" valign="top">  <b><b>Pays</b></b>
+  </td><td width="201" valign="top">  <b><b>Superficie de l’AC (ha)</b></b>
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Ghana
+  </td><td width="201" valign="top">  30,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Kenya
+  </td><td width="201" valign="top">  33,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Lesotho
+  </td><td width="201" valign="top">  2,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Malawi
+  </td><td width="201" valign="top">  16,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Madagascar
+  </td><td width="201" valign="top">  6,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Maroc
+  </td><td width="201" valign="top">  4,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Mozambique
+  </td><td width="201" valign="top">  152,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Namibie
+  </td><td width="201" valign="top">  340
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Afrique du Sud
+  </td><td width="201" valign="top">  368,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Soudan
+  </td><td width="201" valign="top">  10,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Tanzanie
+  </td><td width="201" valign="top">  25,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Tunisie
+  </td><td width="201" valign="top">  8,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Zambie
+  </td><td width="201" valign="top">  200,000
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  Zimbabwe
+  </td><td width="201" valign="top">  139,300
+  </td>
+</tr>
+
+<tr>
+<td width="245" valign="top">  <b>Total</b>
+  </td><td width="201" valign="top">  <b>993,640</b>
+  </td>
+</tr>
+
+</table>
+<p>-</p><p><b>Tableau 3:</b> Effets des composantes des systèmes de production appliquées pleinement et conjointement sur la durabilité et les services éco-systémiques.</p><table class="renderedtable" border="1" cellpadding="2" cellspacing="0" width="812">
+<tr>
+<td width="247" valign="top">  <p class=" text-right"><b>&nbsp;</b><b>&nbsp;</b></p><p class=" text-right"><b><b>Composante du système</b></b><b>&nbsp;</b><b>►</b></p><p class=" text-right"><b>&nbsp;</b></p><p><b><b>À atteindre</b> ▼</b></p>
+  </td><td width="128" valign="top">  
+<b>Couverture de paillis</b><br/><b>&nbsp;(résidus de récolte, cultures de couverture, engrais verts)</b>
+  </td><td width="128" valign="top">  
+<b>Zéro labour</b><br/><b>&nbsp;(perturbation minimale des sols ou aucune perturbation)</b>
+  </td><td width="128" valign="top">  
+<b>Légumineuses</b><br/><b>&nbsp;(en tant que cultures pour fixer l’azote et fournir des substances nutritives)</b>
+  </td><td width="128" valign="top">  
+<b><b>Rotation des cultures</b></b><br/><b><b>&nbsp;(pour diverses fins utiles)</b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Favoriser des conditions «&nbsp;tapis forestier&nbsp;» optimales</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Diminuer la perte d'humidité par évaporation de la surface du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Diminuer la perte par évaporation des couches supérieures du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b>Limiter l’oxydation des matières organiques du sol, la perte de CO<sub>2</sub></b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter le tassement dû à des pluies intenses, au passage des pieds et des machines</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter les variations de température à la surface du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Fournir un apport régulier de matières organiques en tant que substrat pour l’activité des organismes du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Accroître et conserver les niveaux d’azote dans les zones d’enracinement</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Accroître la CEC des zones d’enracinement</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Maximiser l’infiltration des eaux de pluie, minimiser le ruissellement</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter les pertes de sol par le ruissellement, le vent</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Favoriser et maintenir les couches naturelles des horizons du sol par l’action des biotes du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter les mauvaises herbes</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Augmenter le rythme de production de biomasse</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Accélérer la récupération de la porosité des sols par les biotes du sol</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Diminuer l’apport de travail</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter les intrants en combustible et en énergie</b></b>
+  </td><td width="128" valign="top">  <b>&nbsp;</b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Recycler les substances nutritives</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Limiter les menaces exercées par les agents pathogènes et les insectes</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  &nbsp;
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Rétablir les conditions et la dynamique des sols dégradés</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+<tr>
+<td width="247" valign="top">  <b><b>Services de pollinisation</b></b>
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td><td width="128" valign="top">  √
+  </td>
+</tr>
+
+</table>
+<p>-</p><p><b>Encadré&nbsp;1: </b>Le cas de l’AC au Kenya et en Tanzanie</p><table class="renderedtable" border="1" cellpadding="2" cellspacing="0">
+<tr>
+<td width="798" valign="top">  <p>En 2004, le projet d’AC du SARD (Sustained Rural Development) a introduit le concept de l’AC dans des régions rurales du nord de la Tanzanie et dans des régions de l’ouest et du centre du Kenya, où l’on avait constaté une dégradation généralisée des sols, une faible fertilité du sol et une forte érosion des sols en raison de la mauvaise couverture et des faibles niveaux de matières organiques. Les objectifs de développement de ce projet consistaient à améliorer la sécurité alimentaire et les moyens de subsistance en milieu rural des petits et moyens agriculteurs, par le biais d'écoles pratiques d'agriculture, dans lesquelles toutes les contraintes de production sont recensées et où les agriculteurs et les dirigeants de la communauté sont impliqués dans l’apprentissage de l’AC. La région couvrait environ quatre zones agro-écologiques, des Upper Highlands jusqu’aux Lower Midlands, où les conditions climatiques correspondent à un gradient altitudinal en termes de pluviométrie (400 à 2&nbsp;200&nbsp;mm/an), de température et de fertilité du sol. Plus l’altitude est élevée, plus la pluviométrie est importante et moins la dégradation des sols est prononcée. &nbsp;</p><p>En 2008, des évaluations participatives réalisées par des agriculteurs ont montré que les bénéfices financiers nets pouvaient être plus élevés avec l’AC qu’avec le labour traditionnel, principalement en raison de la charge de travail et de temps réduite, des plus petites quantités d’engrais nécessaires pour maintenir les rendements, ainsi que des coûts réduits du carburant pour les opérations de labour et de pulvérisation. Les petits exploitants (2,5 à 10&nbsp;ha) représentaient environ 20&nbsp;000 hectares de parcelles, avec des systèmes de culture mixtes recourant au travail manuel ou aux animaux de trait. Ils combinaient la culture sans labour et la couverture permanente des sols avec des cultures de couverture de légumineuses telles que&nbsp;<i>Dolichos lablab</i>et des pois d'Angole. En 2008, des résultats positifs ont pu être quantifiés pour les populations de vers de terre, la biomasse et les rendements en grains. &nbsp;</p><p>Une évaluation de l’impact en Tanzanie en 2011 a montré que l’AC avait permis de restituer aux sols appauvris les substances nutritives qui leur faisaient défaut. L'utilisation efficace des ressources en eau a suivi l’amélioration du cycle d’infiltration, de conservation et d’absorption de l’eau. La dégradation des terres avait diminué grâce à l’élimination du labour, l’utilisation de couvertures du sol et la construction de diguettes. Les agriculteurs s’étaient adaptés aux effets du changement climatique comme en témoignaient les écarts remarquables de rendements entre l’AC et l’agriculture conventionnelle lors des périodes de faible pluviosité. Grâce à des rapports sorties-entrées plus élevés et à l’amélioration de l’efficacité des terres et du travail, les petits exploitants peuvent faire un meilleur usage des ressources limitées, accroître les rendements et constituer du capital financier par la vente des surplus de production. Le capital naturel a augmenté grâce à l’AC parce que la tendance à la dégradation et à l’érosion qui conduisait à une baisse des rendements a pu être inversée. &nbsp;</p><p>À travers la génération de capital naturel et financier, les petits exploitants ont pu investir dans le capital humain et physique comme l’éducation des enfants, des conditions de santé améliorées par une meilleure alimentation et de meilleurs soins de santé, ainsi que dans l’amélioration de leur foyer avec par exemple des murs et une toiture durables et l’achat de panneaux solaires. Avec l’accroissement des bénéfices tirés des rendements plus élevés, les petits exploitants ont également investi dans des pratiques d’élevage plus lucratives, notamment avec des vaches laitières et de la volaille. L’adoption de l’AC leur a permis de ne plus passer la majeure partie de leur temps à cultiver la terre, mais de se consacrer plus au bétail, ce qui témoigne des gains de temps liés à l’AC et des opportunités offertes par ce type d’agriculture pour générer plus de revenus grâce au bétail. Ensemble, les parties prenantes ont pu surmonter l’obstacle que représentait le conflit potentiel de l’utilisation des résidus de récolte, et ceci grâce à la formation des agriculteurs en matière de gestion du bétail et grâce à la mise en œuvre et l’application des règlements visant la protection des terres par l’interdiction du pâturage. &nbsp;</p><p>Jusqu'en 2011, avec le soutien des pouvoirs publics et des ONG, la diffusion de l’AC a atteint 33&nbsp;000 hectares au Kenya et 25&nbsp;000 hectares en Tanzanie, principalement pour des petites exploitations.&nbsp;</p><p>Article tiré du site Web de la FAO sur l’Agriculture de Conservation (http://www.fao.org/ag/ca/)</p>
+  </td>
+</tr>
+
+</table>
+
+		</div>
+		
+	<!-- END BODY TEXT -->
+		
+			
+		
+	
+	
+			
+					<p>
+				<span class="stdtext">
+					Related documents:
+				</span>
+			</p>
+			<ul>
+				<li><a href="/fr/content/download/37487/537203/file/Amir+Kassam+final+%28clean%29_FR.doc">Download DOC</a>&nbsp;(254,00 kB)</li>
+			</ul>
+			
+				
+
+		<strong class="date_small">01/10/2013</strong>
+		<br/><br/>
+		<div class="break"></div>
+		
+					
+<a id="comment"></a>
+<div id="comments">
+				<h3>No Comments available.</h3>
+		
+			Please <a href="/fr/user/register">log in</a> to make your comment.  In order to log in you may have to first <a href="/fr/user/login">register</a>.
+	<br class="clear">
+</div>			
+
+					<br class="clear">
+				</div> 
+			</div>
+			
+			 
+				
+			
+<div id="column-right">
+			
+																																																																																																																																																																																																																																																																														<div class="box highlight blue">
+		<div class="box-header">
+			<h3>Related dossier(s)</h3>
+		</div> 
+		<div class="box-content">
+			<ul>
+							<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">Publications</a></li>
+							<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">Le programme 'S&T' au CTA</a></li>
+							<li><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">Les systèmes d’innovation</a></li>
+							<li><a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">Biodiversité agricole</a></li>
+							<li><a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">L'eau pour l'agriculture</a></li>
+							<li><a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">La protection des sols</a></li>
+						</ul>
+		</div> 
+		
+	</div> 
+	 
+
+		
+								 
+
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+								<br class="cl">
+				<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+			
+			
+		</div> 
+		
+		<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":880,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

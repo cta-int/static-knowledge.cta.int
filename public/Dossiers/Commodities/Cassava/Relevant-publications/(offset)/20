@@ -1,0 +1,1401 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Relevant publications / Cassava / Commodities / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="" /><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development" />    
+
+<link rel="Home" href="/" title="Knowledge front page" />
+<link rel="Index" href="/" />
+<link rel="Search" href="/content/search" title="Search Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/layout/set/print/Dossiers/Commodities/Cassava/Relevant-publications/(offset)/20" media="print" title="Printable version" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/About/Contact-Us">Contact</a> | </li>
+			<li><a href="/About/About">About</a> | </li>
+							<li><a href="/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/About/Content-syndication-on-this-website">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/fr/Dossiers/Produits-de-base/Manioc/Publications">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/Dossiers/CTA-and-S-T">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Policy">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/Dossiers/S-T-Issues">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/Dossiers/Commodities">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-policy-briefs">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ACP-young-professionals-and-women">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/ASTI-case-study-reports">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Developments">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-events">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Fellowships-grants-calls">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-jobs-opportunities">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/Selected-publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/CTA-and-S-T/S-T-organisations">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/Africa">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/International">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Caribbean">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="/Dossiers/CTA-and-S-T/S-T-organisations/The-Pacific">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="/Dossiers/S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/EU-agricultural-S-T-dialogue">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Ethics">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Financing-ARD">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Foresighting">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Innovation-systems">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Intellectual-property">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Measuring-the-impact-of-agricultural-research">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Research-collaboration-in-a-globalised-world">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Policy/Reshaping-tertiary-agricultural-education">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Agroforestry">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biodiversity">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Biotechnology">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Climate-change">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Dryland-agriculture">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-safety">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Food-security">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Indigenous-knowledge-systems">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Innovations-in-tropical-food-processing">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Nanotechnology">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Improving-nutrition-outcomes">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Phosphorus-depletion">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Remote-sensing-and-GIS">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Seed-systems">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Soil-health">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/S-T-Issues/Water">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/Dossiers/Commodities/Biofuels">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Cassava">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Dairy">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fisheries">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Herbs-and-medicinal-plants">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Livestock">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Other-commodities">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Bananas">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="/Dossiers/Commodities/Other-commodities/Coffee">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Rethinking-the-rice-value-chain">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Enhancing-the-sorghum-value-chain">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Sugarcane">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/Dossiers/Commodities/Vegetables">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/Commodities">Commodities</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/Dossiers/Commodities/Cassava">Cassava</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Relevant publications</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Relevant publications</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/The-cassava-transformation-Africa-s-best-kept-secret" title="The cassava transformation: Africa's best-kept secret" alt="document">The cassava transformation: Africa's best-kept secret</a></h2>
+
+	
+	
+	
+	
+					<p> Data collected from 281 villages in Congo (Kinshasa), Cote d'Ivoire, Ghana, Nigeria, Tanzania, and Uganda as part of the Collaborative Study of Cassava in Africa (COSCA, 1989-1997) show that new high-yielding TMS varieties have transformed cassava from a low-yielding, famine-reserve crop to a low-cost, high-yielding cash crop for both rural and urban consumers. As the TMS varieties increased farm level cassava yields by 40% without the addition of fertilizer, they were quickly adopted by farmers in Nigeria, Ghana, and elsewhere in the 1980s and 1990s. The 5 common myths and half-truths that have contributed to the low priority that cassava has been given in research and food production programmes are discussed and the policy implications of the COSCA findings are outlined. Other subjects include: (1) cassava's roles as famine-reserve crop, rural and urban food staple, cash crop, industrial raw material, and livestock feed; (2) cassava varieties; (3) pests and diseases; (4) yield and production trends; (5) plant breeding and farmer-led research; (6) agronomic practices; (7) the preparation of fresh roots, dried roots, pasta products, granulated products, and leaves; (8) mechanized processing; (9) shifts in gender roles; (10) consumption and income elasticity of demand; (11) pre- and post-harvest losses; and (12) cassava-based malt beer and ethanol production.</p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/The-cassava-transformation-Africa-s-best-kept-secret">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Grouping-locations-for-efficient-cassava-evaluation-in-Malawi" title="Grouping locations for efficient cassava evaluation in Malawi" alt="document">Grouping locations for efficient cassava evaluation in Malawi</a></h2>
+
+	
+	
+	
+	
+					<p> In Malawi, environmental heterogeneity requires the costly assessment of new cassava genotypes at many sites. A study was conducted to test the feasibility of selecting only a few locations for cassava evaluation that would be representative of all the agro-ecologies in which cassava is grown in Malawi. Enormous environmental effects, largely contributed by the interaction between season and location, were manifested. Genotype x environment interaction (GEI), due largely to a third level interaction (genotype x season x location), was highly significant for all the traits studied. A principal component analysis scatter plot showed no particular grouping of environments, but a pair-wise comparison showed that some of the locations had limited GEI, indicating that it would be sufficient to use one of these sites for evaluating these traits. The value of the residual was often large, probably as an effect of environmental heterogeneity in the test sites. Cassava genetic improvement will continue to be slow if Malawi is used as a single breeding zone. A much finer grouping of the locations and the use of smaller plot sizes would allow more clones to be tested at more sites for the same cost. Locations may be selected for intensive breeding work from those that give the best discrimination between genotypes while having insignificant GEI in a relatively large number of environments. From authors' summary.</p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Grouping-locations-for-efficient-cassava-evaluation-in-Malawi">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-On-farm-testing-of-selected-cassava-clones" title="Africa: On-farm testing of selected cassava clones" alt="document">Africa: On-farm testing of selected cassava clones</a></h2>
+
+	
+	
+	
+	
+					<p> In 2000 and 2001, on-farm trials were carried out at 7 sites on Unguja and PembaIslands of Zanzibar, Tanzania, to evaluate improved clones of cassava under farmers' conditions for their resistance to pests and diseases, yield, and other characteristics preferred by farmers. The local bred breeding lines ZNZ/98/010, ZNZ/98/036, ZNZ/98/084, ZNZ/98/043, and ZNZ/98/034 were compared with Boma (local best) and an introduced variety, H.46106/27. It was found that farmers preferred the clones ZNZ/98/036, ZNZ/98/034, and ZNZ/98/084 because of their sweetness, disease resistance, root yields, and dry matter content. From authors' summary. <i>African Crop Science Journal (Uganda), v. 12(3), special issue, p. 283-288</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-On-farm-testing-of-selected-cassava-clones">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Cassava-and-sweetpotato-yield-assessment-in-Malawi" title="Africa: Cassava and sweetpotato yield assessment in Malawi" alt="document">Africa: Cassava and sweetpotato yield assessment in Malawi</a></h2>
+
+	
+	
+	
+	
+					<p> A survey was conducted among about 180 farmers in NkhataBay, Lilongwe East, Mulanje, Mzimba, and Lilongwe West, in Malawi to fill gaps in existing baseline information on the varieties of cassava and sweet potato grown, the sources of planting material, processing, household utilization, and yields. Farmers mainly grow local cassava varieties with their own gardens as the main source of planting materials. Several varieties of sweet potato are grown with Kenya (bred in Tanzania) as the most popular. Cassava and sweet potato are grown for food and cash. In some area cassava stems are used as fuel wood. Most farmers do not store fresh cassava roots, but process them into &quot;makaka&quot; (non-fermented dried chips), &quot;kanyakaska&quot; and &quot;kadonoska&quot;, or sell them fresh. Processing of sweet potato is limited to boiling and roasting. Most farmers store sweet potato, but this is constrained by sweet potato weevil damage and rotting. Root yields ranged from 13.1 to 31.4 t/ha for cassava, and from 10.2 to 14.0 t/ha for sweet potato. Unavailability of acceptable improved varieties, high incidence of pests and diseases, and poor cultural practices are the main causes of relatively low yields. From authors' summary. <i>African Crop Science Journal (Uganda), v. 12(3), special issue, p. 295-303</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Cassava-and-sweetpotato-yield-assessment-in-Malawi">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/How-to-start-a-cassava-field-practical-guide-for-promoting-integrated-management" title="How to start a cassava field: practical guide for promoting integrated management" alt="document">How to start a cassava field: practical guide for promoting integrated management</a></h2>
+
+	
+	
+	
+	
+					<p> A field guide was elaborated to help extension workers in advising farmers to: (1) choose appropriate sites for cassava cultivation; (2) improve soil fertility; (3) select the best cassava varieties; and (4) plant healthy cuttings. A prospective cassava field must have dense vegetation, a loamy soil texture, and no or only a slight slope. The best varieties are rich in dry matter, brittle, conserve well in the soil, are well adapted to the zone, produce tubers early and are easy to process. Only use healthy cuttings from the central, brown part of the stem. The cuttings should be 20-25 cm long with 5-8 nodes. Parts that are affected by pest insects should be dipped in hot water for 5-10 min and treated with a pesticide. If not, plant the cuttings horizontally. Make ridges in fields affected by waterlogging. Plant the cuttings vertically in sandy soils and inclined in loamy soils. In pure stands the spacing should be 1 m. In the case of intercropping, use adequate spacing.</p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/How-to-start-a-cassava-field-practical-guide-for-promoting-integrated-management">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Effectiveness-of-cassava-plastic-storage-technology-and-marketability-of-plastic-packed-cassava-roots" title="Effectiveness of cassava plastic storage technology and marketability of plastic-packed cassava roots" alt="document">Effectiveness of cassava plastic storage technology and marketability of plastic-packed cassava roots</a></h2>
+
+	
+	
+	
+	
+					<p> The effectiveness of plastic packaging and fungicide treatment in prolonging the shelf-life of fresh cassava roots for marketing was verified and the acceptability of the plastic-packed cassava (PPC) among urban consumers was determined, using CebuCity and TaclobanCity in the Philippines as pilot sites. Of the 1911 packs delivered to the different outlets, 1769 packs (93%) were sold. In the follow-up survey, it was found that the PPC was generally acceptable among urban consumers. All of the 380 respondents indicated that they would like to continue buying PPC. Among the reasons cited were: the roots remained fresh even if they were stocked for several days (36.8%); the roots tasted sweet and juicy when cooked (32.6%); and the price (15 pesos/pack of 2 kg) was reasonable (18.7%). Marketing PPC directly to the consumers gave the highest return on investment of 189%. From authors' summary. <i>Annals of Tropical Research (Philippines), v. 24(1) p. 71-89</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Effectiveness-of-cassava-plastic-storage-technology-and-marketability-of-plastic-packed-cassava-roots">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Field-experiments-in-Cameroon-on-cassava-mosaic-virus-disease-and-the-reversion-phenomenon-in-susceptible-and-resistant-cassava-cultivars" title="Africa: Field experiments in Cameroon on cassava mosaic virus disease and the reversion phenomenon in susceptible and resistant cassava cultivars" alt="document">Africa: Field experiments in Cameroon on cassava mosaic virus disease and the reversion phenomenon in susceptible and resistant cassava cultivars</a></h2>
+
+	
+	
+	
+	
+					<p> During 1994-1996, field experiments were conducted under contrasting ecological conditions at 2 sites in southern Cameroon to study the reversion phenomenon in cassava, in particular the extent to which the virus causing cassava mosaic disease (CMD) was absent from cuttings collected from CMD-affected plants. Cuttings were taken from the basal, middle and upper portions of the stems of diseased plants of susceptible and partially resistant cassava cultivars. The proportions of disease-free shoots developing from the different batches of cuttings were recorded to indicate the extent of reversion. This was significantly less frequent in cv. Red Local (5-43%) than in the susceptible cv. Bambui Local (65%) and cv. Improved (70%), which is partially resistant. Reversion was higher with cuttings collected from the youngest portions of the stem compared with older portions and with short cuttings (5, 10 cm) compared with those 20 or 25 cm long. There was a significant negative correlation between symptom severity in different cultivars and the extent of reversion. This was greater at the lowland site than at mid-altitude. To assess the effect of CMD in cassava the Disease Index (DI) was developed. It was found that the DI could be used to identify cultivars on the basis of their ability to revert from CMD and the severity of CMD on the non-reverted plants. From authors' summary. <i>International Journal of Pest Management (UK), v. 46(3) p. 211-217</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Field-experiments-in-Cameroon-on-cassava-mosaic-virus-disease-and-the-reversion-phenomenon-in-susceptible-and-resistant-cassava-cultivars">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Field-reaction-of-cassava-genotypes-to-anthracnose-bacterial-blight-cassava-mosaic-disease-and-their-effects-on-yield" title="Africa: Field reaction of cassava genotypes to anthracnose, bacterial blight, cassava mosaic disease and their effects on yield" alt="document">Africa: Field reaction of cassava genotypes to anthracnose, bacterial blight, cassava mosaic disease and their effects on yield</a></h2>
+
+	
+	
+	
+	
+					<p> In south-western Nigeria, 13 cassava genotypes were evaluated for anthracnose (CAD; <i>Colletotrichum gloeosporioides</i>), bacterial blight (CBB; <i>Xanthomonas campestris</i>) and cassava mosaic disease (CMD) incidence and severity, and their effects on yield, for 3 consecutive planting seasons. There were significant differences in CAD, CBB and CMD incidence and severity among the cassava genotypes across the planting seasons. Yield assessment showed significant differences among the genotypes in storage root number, plant stand, root fresh weight and dry matter content. There was no significant variation in tuber rot among the genotypes, and 80% of the genotypes did not show any tuber root rot when harvested 12 months after planting. The CBB and CAD incidences were significantly and positively correlated, whereas CBB and CMD incidences were not significantly correlated. The CAD and CMD incidence and severity were highly correlated. The CBB incidence was negatively correlated with storage root weight and fresh root tuber number. The CMD severity showed a significant negative correlation with storage root weight. Cassava genotypes TMS30001, 30211 and 88/01087 showed a stable resistance over 3 planting seasons to CAD, CBB and CMD. From authors' summary. <i>African Crop Science Journal (Uganda), v. 8(2) p. 179-186</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Field-reaction-of-cassava-genotypes-to-anthracnose-bacterial-blight-cassava-mosaic-disease-and-their-effects-on-yield">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Cassava-brown-streak-disease-a-review-of-present-knowledge-and-research-needs" title="Africa: Cassava brown streak disease: a review of present knowledge and research needs" alt="document">Africa: Cassava brown streak disease: a review of present knowledge and research needs</a></h2>
+
+	
+	
+	
+	
+					<p> The literature on cassava brown streak disease (CBSD) is reviewed and areas that require further research are identified. Cassava is an important subsistence food crop in Africa where it is affected by 2 main virus diseases, cassava mosaic disease (CMD) and CBSD. The CBSD occurs mainly on the East African coast, and although the disease was first reported in 1936, it has received much less attention than CMD. The aetiology and epidemiology of CBSD are still not fully elucidated, and no insect vector has been identified. There is renewed interest in CBSD owing to the discovery of its widespread occurrence in southern Tanzania and Mozambique, where the associated symptom of root necrosis is a major cause of economic loss in the cassava crop. The whiteflies <i>Bemisia afer</i> and <i>Bemisia tabaci</i> are the leading candidates as the vector of CBSV, and one of the most pressing research needs is transmission tests with these insects. In addition, it should be determined if common weeds such as <i>Datura stramonium</i>, which is susceptible to sap transmission, can be infected by vector transmission. New diagnostic methods need to be tested in Tanzania and elsewhere and used to try to detect cassava brown streak virus in symptomless plants. From authors' summary. <i>International Journal of Pest Management (UK), v. 49(3) p. 225-234</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Cassava-brown-streak-disease-a-review-of-present-knowledge-and-research-needs">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Disease-control-in-cassava-an-extension-guide-on-integrated-management" title="Disease control in cassava: an extension guide on integrated management" alt="document">Disease control in cassava: an extension guide on integrated management</a></h2>
+
+	
+	
+	
+	
+					<p> An extension manual on integrated management of cassava diseases is presented. It is based on the experiences obtained by the Ecologically Sustainable Cassava Plant Protection (ESCaPP) project in West Africa from 1993 to 1997. The symptoms, transmission, alternative host crops of the following diseases are described: cassava mosaic virus, bacterial blight, anthracnose, necrosis, leaf spots ( <i>Cercospora </i>spp.), brown streak disease and root rot. Other subjects include: (1) types of damage due to diseases; (2) the plant parts and development stages that are attacked; (4) seasonality and frequency of disease incidence; (5) disease resistance; (6) integrated control methods. It is advised to avoid planting cassava late in the rainy season. Cuttings should be selected from healthy plants or plant parts.</p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Disease-control-in-cassava-an-extension-guide-on-integrated-management">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Host-plant-resistance-to-whiteflies-with-emphasis-on-cassava-as-a-case-study" title="Host plant resistance to whiteflies with emphasis on cassava as a case study" alt="document">Host plant resistance to whiteflies with emphasis on cassava as a case study</a></h2>
+
+	
+	
+	
+	
+					<p> Host plant resistance (HPR) to whiteflies is rare in cultivated crops. A literature search revealed that HPR research with the <i>Bemisia tabaci</i>/ <i>Bemisia argentifolii</i> complex has increased considerably in recent years, but large-scale screening of a wide selection of genotypes is limited. At the International Centre for Tropical Agriculture (CIAT) in Colombia, more than 5000 cassava clones have been evaluated for resistance to <i>Aleurotrachelus socialis</i>. Several cultivars with high levels of resistance have been identified. Nymphal mortality was highest on the resistant cassava clone, M Ecu 72 (72.5%) and lowest on the susceptible clones CMC 40 (33%) and M Bra 12 (25%). When feeding on resistant genotypes, <i>A. socialis</i> had less oviposition, longer development periods, reduced size and higher mortality than when feeding on susceptible ones. Mortality is highest during the nymphal stages. Several whitefly resistant hybrids have been developed using M Ecu 72 as the resistant female parent. Three hybrids are being evaluated for release by the Colombian Ministry of Agriculture and Rural Development. From abstract Elsevier Science Journal. <i>Crop Protection (UK), v. 20(9), special issue, p. 813-823</i> </p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Host-plant-resistance-to-whiteflies-with-emphasis-on-cassava-as-a-case-study">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Cassava-biology-production-and-utilization" title="Cassava: biology, production and utilization" alt="document">Cassava: biology, production and utilization</a></h2>
+
+	
+	
+	
+	
+					<p> Information on the origin, distribution, botany, physiology, genetics, breeding, crop protection and processing of cassava is presented. Other subjects include: (1) taxonomy; (2) cassava in South America and the Caribbean; (3) cassava in Africa; (4) cassava in Asia and the Pacific; (5) agronomy and cropping systems; (6) cassava mineral nutrition and fertilization; (7) crop improvement; (8) genetic resources and conservation; (9) cassava biotechnology; (10) arthropod pests; (11) viruses and virus diseases; (12) bacterial, fungal and nematode diseases; (13) cassava utilization, storage and small-scale processing; and (14) cassava utilization in food, feed and industry.</p>
+							<p><span class="date">5/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Cassava-biology-production-and-utilization">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Life-cycle-economic-analysis-of-fuel-ethanol-derived-from-cassava-in-southwest-China" title="Life cycle economic analysis of fuel ethanol derived from cassava in southwest China" alt="document">Life cycle economic analysis of fuel ethanol derived from cassava in southwest China</a></h2>
+
+	
+	
+	
+	
+					<p> For energy security and environmental improvement reasons, the Chinese government is developing biomass ethanol as one of its transportation fuels. Cassava is a good feedstock to produce this ethanol because it has a high starch content and it is abundant in the southern provinces. A computer-based cost model has been developed to assess the life cycle economics of ethanol produced from cassava. The results are compared to gasoline as a base-line case. Although ethanol fuel is not currently competitive with conventional gasoline, these life cycle cost results indicate that, at present market prices, ethanol has the potential to be competitive if there are incentives and improved cassava yields. In addition, this renewable energy could help to alleviate poverty, improve land utilization and bring energy independence in Guangxi province in southeast China. This computer model will be an important tool for the energy policy makers to understand whether an energy alternative is cost-competitive, as well as providing a way to find appropriate measures throughout the entire life cycle that optimizes the process and removes the economic barriers. <a href="http://www.ingentaconnect.com/content/els/13640321;jsessionid=7dtfspiqg0mod.victoria" target="_blank"> <b>Download document</b> </a>  <i>Access to this article is through a website external to IngentaConnect. You may be required to register and activate access/purchase before you can obtain the full text.</i> </p>
+							<p><span class="date">4/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Life-cycle-economic-analysis-of-fuel-ethanol-derived-from-cassava-in-southwest-China">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Client-led-Agro-industrial-Action-Development-The-Case-of-Cassava-Starch-in-Cauca-Valley-Colombia" title="Client-led Agro-industrial Action Development: The Case of Cassava Starch in Cauca Valley, Colombia" alt="document">Client-led Agro-industrial Action Development: The Case of Cassava Starch in Cauca Valley, Colombia</a></h2>
+
+	
+	
+	
+	
+					<p> When complex organizational, institutional, technical (production, processing) and market constraints and needs are being faced by limited resources, innovative R&amp;D methodologies are required for appropriate, efficient and effective solutions. In 1996, more than 200 cassava starch processing households were being faced by a myriad of problems regarding their small agro-industries, resulting in poor social &amp; economic conditions. This was further aggrevated by serious public order problems due to violent actions of ' <i>guerilla</i>' groups throughout Cauca Valley, Colombia. Demands for intervention from farmer/processor groups and local institutions led to an innovative R&amp;D action plan. Several principal approaches were combined for this R&amp;D action plan: <i>(i) integration of the </i><i>principal actors and activities in the production to consumption chain; (ii) integration of </i><i>client opinions with expert analyses; (iii) prioritization and consensus among stakeholders;and (iv) optimization of project resources efficiency.</i>  <a href="http://webapp.ciat.cgiar.org/agroempresas/pdf/clientled-agroindustrial_valley_cauca.pdf" target="_blank"> <b>Download PDF</b> </a> </p>
+							<p><span class="date">4/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Client-led-Agro-industrial-Action-Development-The-Case-of-Cassava-Starch-in-Cauca-Valley-Colombia">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/New-Challenges-In-The-Cassava-Transformation-In-Nigeria-And-Ghana" title="New Challenges In The Cassava Transformation In Nigeria And Ghana" alt="document">New Challenges In The Cassava Transformation In Nigeria And Ghana</a></h2>
+
+	
+	
+	
+	
+					<p> In Nigeria and Ghana, four key factors are driving the cassava transformation. First, the IITA’ s new high-yielding Tropical Manioc Selection (TMS) varieties boosted cassava yield by 40 percent without fertilizer application. Second, high consumer demand for cassava by rural and urban households fueled the producer incentive to plant more land to cassava. Third, the use of the mechanical grater to prepare <i>gari </i>released labor, especially female labor, from processing for planting more cassava. Fourth, the Africa-wide biological control program averted the devastating cassava mealybug epidemic. Summarized, the key lesson from the 40 years, form the early 1960s to early 2000s, of the cassava transformation in Nigeria and Ghana is that cassava is a powerful poverty fighter in Africa. Enhancing the value of cassava as a powerful poverty fighter in Africa poses the following challenges to the African political leaders and policy makers and to cassava researchers and donors: The resumption of long-term core research funding for cassava research in Africa is critical and urgent; (2) If any cassava harvesting or peeling machine designed for smallholders can be identified anywhere in the world it should be urgently put to on-farm test in Africa with a view to adapt, fabricate, and diffuse it to farmers if confirmed suitable in the on-farm testing; (3) If available machines cannot be confirmed suitable for the smallholder use, cassava breeding and engineering research should be initiated with engineers and breeders working hand in hand to develop cassava varieties that can be harvested and processed mechanically and the harvesting and the processing machines for the smallholders (4) African governments need to encourage their private sectors, for example with intellectual property rights protection, to make the necessary investments in developing technologies for expanded use of cassava as raw material in the livestock feed, food, and non-food industries within Africa. ( <i>EPTD Discussion Papers contain preliminary material and research results and are circulated prior to a full peer review in order to stimulate discussion and critical comment. It is expected that most Discussion Papers will eventually be published in some other form and that their contents may also be revised</i><i>)</i>  <a href="http://www.ifpri.org/divs/eptd/dp/papers/eptdp118.pdf" target="_blank">Download PDF</a> </p>
+							<p><span class="date">4/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/New-Challenges-In-The-Cassava-Transformation-In-Nigeria-And-Ghana">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Genome-mapping-in-cassava-improvement-Challenges-achievements-and-opportunities" title="Genome mapping in cassava improvement: Challenges, achievements and opportunities" alt="document">Genome mapping in cassava improvement: Challenges, achievements and opportunities</a></h2>
+
+	
+	
+	
+	
+					<p> Breeding goals of yield increases, root quality improvement, and disease resistance in cassava are considerably slowed down by biological characteristics of the crop, which includes a long growth cycle, a heterozygous genetic background and a poor knowledge of the organization of crop diversity. These factors severely hamper the speed and ease of moving around useful genes in cassava. The consequences are that cassava production fails to keep up with demand, especially in regions where over 90% of yield is consumed as food, leading to an increase in acreage of cassava fields mostly into marginal lands. The advent of molecular markers, genome studies and plant genetic transformation holds promise of providing ways around breeding obstacles in long growth cycle and heterozygous crops. A number of these new tools, including a molecular genetic map, markers linked to disease resistance genes, and marker-aided studies of complex traits now exist or are being developed for cassava at CIAT. Large scale sequencing and mapping of expressed sequence tags (ESTs) have been initiated, towards a transcript map of cassava and the implementation of the candidate-gene approach to complex trait mapping. A cassava bacterial artificial chromosome (BAC) library has also been constructed to expedite positional cloning of genes, known only by their phenotypes and their position relative to markers on a molecular genetic map and complementation studies of candidate loci. Studies of genes that control traits of agronomic importance, and their allelic diversity in nature, provides powerful tools for understanding the basis of crop performance and improvement. <a href="http://www.springerlink.com/(sakltn55wbravi55c5dkgo45)/app/home/contribution.asp?referrer=parent&amp;backto=issue,19,19;journal,74,151;linkingpublicationresults,1:102881,1" target="_blank">Download document</a> </p>
+							<p><span class="date">4/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Genome-mapping-in-cassava-improvement-Challenges-achievements-and-opportunities">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Development-and-application-of-transgenic-technologies-in-cassava" title="Development and application of transgenic technologies in cassava" alt="document">Development and application of transgenic technologies in cassava</a></h2>
+
+	
+	
+	
+	
+					<p> The capacity to integrate transgenes into the tropical root crop cassava ( <i>Manihot esculenta</i> Crantz) is now established and being utilized to generate plants expressing traits of agronomic interest. The tissue culture and gene transfer systems currently employed to produce these transgenic cassava have improved significantly over the past 5 years and are assessed and compared in this review. Programs are underway to develop cassava with enhanced resistance to viral diseases and insects pests, improved nutritional content, modified and increased starch metabolism and reduced cyanogenic content of processed roots. Each of these is described individually for the underlying biology the molecular strategies being employed and progress achieved towards the desired product. Important advances have occurred, with transgenic plants from several laboratories being prepared for field trails. <a href="http://www.springerlink.com/(yqam2w45fhvkw3f3000nsr45)/app/home/contribution.asp?referrer=parent&amp;backto=issue,16,16;journal,21,152;linkingpublicationresults,1:100330,1" target="_blank">Download document</a> </p>
+							<p><span class="date">4/04/2006</span></p>
+	<div class="cnt">
+	<a class="document" href="/Dossiers/Commodities/Cassava/Relevant-publications/Development-and-application-of-transgenic-technologies-in-cassava">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Application-of-cassava-in-fermented-products" title="Application of cassava in fermented products " alt="link">Application of cassava in fermented products </a></h2>
+
+	
+					<p> 
+ <b> <i>Cassava Alcohol</i> </b> 
+Cassava is one of the richest fermentable substances for the production of alcohol. The fresh roots contain about 30 percent starch and 5 percent sugars, and the dried roots contain about 80 percent fermentable substances which are equivalent to rice as a source of alcohol. 
+Ethyl alcohol is produced from many carbohydrate materials.
+ <a href="http://www.foodmarketexchange.com/profile/cp_index.htm">http://www.foodmarketexchange.com/profile/cp_index.htm</a> 
+The data center is part of Foodmarket Exchange.com, the first e-foodmarket in Southeast Asia.Biz Dimension Co., Ltd. is the leading service provider of e-procurement and e-auction in Thailand. </p>
+							<p><span class="date">3/04/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Application-of-cassava-in-fermented-products">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Caribbean-Non-food-uses-of-cassava" title="Caribbean: Non-food uses of cassava" alt="link">Caribbean: Non-food uses of cassava</a></h2>
+
+	
+					<p> At this <a href="http://www.caribbeanfoodemporium.co.uk/cassavauses3.htm" target="_blank">Caribbean web site</a> which is mainly about food and cooking one will also find a quite extensive explanation of all kind of non-food uses of cassava. The following are some of the major uses of dextrins in nonfood industries: Corrugated cardboard manufacture; remoistening gums; Wallpaper and other home uses; Foundry; Well drilling; Paper industry; Textile industry; Wood furniture; Fermented products.</p>
+							<p><span class="date">3/04/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Caribbean-Non-food-uses-of-cassava">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Sustainable-uptake-of-cassava-as-an-industrial-commodity-in-Ghana" title="Africa: Sustainable uptake of cassava as an industrial commodity in Ghana" alt="link">Africa: Sustainable uptake of cassava as an industrial commodity in Ghana</a></h2>
+
+	
+					<p> The project Portfolio of CPHP online provides an overview of projects undertaken or being undertaken. Below a project summary is given of a two year project on market opportunities of cassava in Ghana from the beginning of 2003 to the end of 2004. Cassava is a key crop in Ghana, and is important to low-income farmers (including many women). Cassava surpluses increased from 2 to 3.5 million metric tonnes between 1995 and 2001. Needs assessment studies have highlighted farmers concerns to expand market opportunities for cassava. Market opportunities (food, paperboard, plywood, textiles, industrial alcohol) exist in Ghana that would enable cassava to contribute significantly to poor people’s livelihoods. This project seeks to improve rural livelihoods, through industrialisation of cassava, via the establishment of an integrated supply chain to provide manufacturers with an assured supply of consistent quality cassava products at a competitive price.</p>
+							<p><span class="date">3/04/2006</span></p>
+	<div class="cnt">
+	<a class="link" href="/Dossiers/Commodities/Cassava/Relevant-publications/Africa-Sustainable-uptake-of-cassava-as-an-industrial-commodity-in-Ghana">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/Dossiers/Commodities/Cassava/Relevant-publications"><span class="text">&laquo;&nbsp;Previous</span></a></span>
+       
+            <span class="next"><a href="/Dossiers/Commodities/Cassava/Relevant-publications/(offset)/40"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="/Dossiers/Commodities/Cassava/Relevant-publications">1</a></span>
+            
+        <span class="current">2</span>
+
+                      <span class="other"><a href="/Dossiers/Commodities/Cassava/Relevant-publications/(offset)/40">3</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/Dossiers/CTA-and-S-T/K4D-e-Newsletters">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/About/Contact-Us">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/About/Content-syndication-on-this-website">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-March-2015">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="/About/Content-syndication-on-this-website"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/Dossiers/Is-the-innovation-systems-approach-the-answer-to-inclusive-development">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="/Dossiers/CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="/Dossiers/S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="/Dossiers/Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":681,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

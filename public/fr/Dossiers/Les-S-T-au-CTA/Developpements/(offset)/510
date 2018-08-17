@@ -1,0 +1,1524 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Développements / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA" /><meta name="description" content="Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;amp;T pout le développment." /><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA" />    
+
+<link rel="Home" href="/fr" title="Page de garde Knowledge" />
+<link rel="Index" href="/fr" />
+<link rel="Search" href="/fr/content/search" title="Recherche Knowledge" />
+<link rel="Shortcut icon" href="/design/knowledge/images/favicon.ico" type="image/x-icon" />
+<link rel="Alternate" href="/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/510" media="print" title="Version imprimable" />
+<link rel="stylesheet" type="text/css" href="/design/base/stylesheets/core.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/knowledge.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/global.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/addthis_widget.css" media="screen" />
+<link rel="shortcut icon" href="/design/knowledge/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="/design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="/design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="/fr">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="/fr/A-Propos/Nous-contacter">Contact</a> | </li>
+			<li><a href="/fr/A-Propos/A-propos">About</a> | </li>
+							<li><a href="/fr/user/login">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="/fr/A-Propos/A-propos-de-RSS">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="/en/Dossiers/CTA-and-S-T/Developments">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText" />
+		<input src="/design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok " />
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="/fr/Dossiers/Les-S-T-au-CTA">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-politiques-agricoles">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="/fr/Dossiers/S-T-et-defis-agricoles">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="/fr/Dossiers/Produits-de-base">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="/fr/Blogs">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Bourses-et-appels">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">
+						<span class="active">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Etudes-de-cas-STIA">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Evenements">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Offres-d-emploi">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Afrique">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="/fr/maps/items">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Monde">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Les-S-T-au-CTA/Publications">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-propriete-intellectuelle">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-prospective">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/La-science-et-l-ethique">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-politiques-agricoles/Les-systemes-d-innovation">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agroforesterie">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biodiversite-agricole">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Biotechnologie">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Resilience-aux-changements-climatiques">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-sanitaire-des-aliments">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-eau-pour-l-agriculture">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Nanotechnologies">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Ameliorer-la-nutrition">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/L-epuisement-du-phosphore">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/La-protection-des-sols">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Systemes-de-semences">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Securite-alimentaire">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Bananes">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Autres-produits-de-base/Cafe">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Biocarburants">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Betail">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="/fr/Dossiers/Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Canne-a-sucre">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Fruits">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Legumes">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Manioc">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Produits-laitiers">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Peches">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="/fr/Dossiers/Produits-de-base/Epices-et-plantes-medicinales">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="/fr">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="/fr/Dossiers/Les-S-T-au-CTA">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				<p>Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;T pout le développment.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Portail-sur-le-changement-climatique-dans-le-Pacifique" title="Portail sur le changement climatique dans le Pacifique" alt="link">Portail sur le changement climatique dans le Pacifique</a></h2>
+
+	
+					<p>Le Secrétariat du Programme régional pour l’environnement dans le Pacifique (SPREP), en collaboration avec ses différents partenaires, a développé un site de référence abritant toutes les informations sur le changement climatique dans la région du Pacifique (<a href="http://www.pacificclimatechange.net/" target="_blank">PCCP</a>).Il vise à s’assurer que la quantité importante d’informations liées au changement climatique et que les outils produits par les institutions régionales et nationales de la région des îles du Pacifique sont disponibles et accessibles facilement et d’une manière conviviale. Il servira de plate-forme pour permettre aux institutions et gouvernements de la région de partager les informations facilement accessibles via des répertoires d’informations, tels que le <a href="http://oos.soest.hawaii.edu/pacioos/" target="_blank">Système mondial d’observation de l’océan</a> dans les îles du Pacifique. Une évolution est également prévue pour intégrer un module de formation aux systèmes d’information géographique (SIG).</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Portail-sur-le-changement-climatique-dans-le-Pacifique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-solution-souterraine-pour-les-plants-de-riz-prives-d-elements-nutritifs" title="Une solution souterraine pour les plants de riz privés d’éléments nutritifs" alt="link">Une solution souterraine pour les plants de riz privés d’éléments nutritifs</a></h2>
+
+	
+					<p>Une équipe de chercheurs internationaux a découvert un gène qui permettrait d’accroître le rendement du riz de 20 % en augmentant son absorption de phosphates. Dénommé PSTOL1 (pour «&nbsp;Phosphorus Starvation Tolerance&nbsp;», ce gène favorise une bonne croissance des racines dans des sols à faible teneur en phosphore. Selon Sigrid Heuer, chercheur principal à l’Institut international de recherche sur le riz (IRRI) aux Philippines et chef de l’équipe qui a publié l’étude dans la revue <i>Nature</i> (Août 2012), la faible teneur en phosphore des sols affecte environ la moitié des terres de culture dans le monde. Les sols affectés requièrent un apport supplémentaire d’engrais phosphatés pour les rendre productifs.&nbsp;(Extrait de <a href="http://www.scidev.net/en/agriculture-and-environment/news/phosphorus-uptake-gene-could-boost-rice-yields-.html" target="_self">Scidev</a>, 30/8/2012; <a href="http://www.sciencedaily.com/releases/2012/08/120823113124.htm" target="_blank">ScienceDaily</a>; <a href="http://www.isaaa.org/kc/cropbiotechupdate/article/default.asp?ID=10048" target="_blank">ISAAA</a>)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Une-solution-souterraine-pour-les-plants-de-riz-prives-d-elements-nutritifs">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-chercheurs-lancent-le-nouveau-Traqueur-de-rouille-pour-surveiller-le-champignon-mortel-du-ble-dans-27-pays" title="Des chercheurs lancent le nouveau « Traqueur de rouille » pour surveiller le champignon mortel du blé dans 27 pays" alt="link">Des chercheurs lancent le nouveau « Traqueur de rouille » pour surveiller le champignon mortel du blé dans 27 pays</a></h2>
+
+	
+					<p>Réunis début septembre lors d’un colloque mondial organisé à Pékin par la Borlaug Global Rust Initiative (BGRI), les plus grands spécialistes mondiaux du blé ont annoncé une percée dans leur capacité de traçage de l’Ug99, un agent pathogène mortel capable d’opérer des mutations rapides, appelé rouille de la tige, qui menace les champs de blé de l’Afrique de l’Est à l’Asie du Sud. Le «&nbsp;Traqueur de rouille&nbsp;», qui utilise des données émanant des champs et des laboratoires, fournies par les agriculteurs et les scientifiques, pourrait désormais surveiller le champignon sur 42 millions d’hectares de cultures de blé dans 27 pays en développement situés sur la trajectoire de souches si virulentes – pouvant potentiellement être transportées par les vents – qu’elles pourraient détruire des champs entiers de blé. Consultez <a href="http://www.eurekalert.org/pub_releases/2012-08/bc-rln082412.php" target="_blank">le rapport intégral</a> sur Eurekalert. (31/8/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-chercheurs-lancent-le-nouveau-Traqueur-de-rouille-pour-surveiller-le-champignon-mortel-du-ble-dans-27-pays">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-varietes-resistantes-au-striga-pour-accroitre-les-rendements-du-sorgho-en-Afrique" title="Des variétés résistantes au striga pour accroître les rendements du sorgho en Afrique" alt="link">Des variétés résistantes au striga pour accroître les rendements du sorgho en Afrique</a></h2>
+
+	
+					<p>L’Association pour le renforcement de la recherche agricole en Afrique de l’Est et en Afrique centrale (ASARECA) <a href="http://www.asareca.org/content/hope-african-sorghum-farmers-striga-resistant-variety-released-0" target="_blank">a annoncé</a> l’approbation et la diffusion de quatre nouvelles variétés de sorgho résistantes au striga. Développées par l’ASARECA, l’Agricultural Research Corporation (Soudan) et l’ICRISAT, ces variétés ont l’avantage d’être libres de droits. En juin 2012, après examen minutieux, ces variétés ont été déclarées prêtes pour une utilisation publique par le comité de diffusion de l’Agricultural Research Corporation of Sudan.(<a href="http://www.asareca.org/content/hope-african-sorghum-farmers-striga-resistant-variety-released-0" target="_blank">ASARECA</a>, 7/8/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-varietes-resistantes-au-striga-pour-accroitre-les-rendements-du-sorgho-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Identification-des-zones-propices-aux-cultures-avec-les-satellites-Landsat" title="Identification des zones propices aux cultures avec les satellites Landsat" alt="link">Identification des zones propices aux cultures avec les satellites Landsat</a></h2>
+
+	
+					<p>Les agriculteurs utilisent des cartes élaborées à partir de données gratuites fournies par les satellites Landsat de la NASA et de l’U.S. Geological Survey's identifiant les zones propices ou non aux cultures. Détenteur du record de durée d’observation continue de la Terre depuis l’espace, le système Landsat est essentiel pour quiconque – chercheur ou agriculteur – désire obtenir des données par mois et par année sur l’évolution de la surface de la Terre.Cet article de presse décrit comment les agriculteurs américains utilisent les images d’archives du programme Landsat pour évaluer la productivité de leurs champs et les aider à planifier les types de cultures appropriés en fonction des caractéristiques des sols et de la réflectance des cultures.&nbsp;(<a href="http://www.nasa.gov/mission_pages/landsat/news/sweet-spot.html" target="_blank">NASA</a>, 27/9/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Identification-des-zones-propices-aux-cultures-avec-les-satellites-Landsat">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/iMarine-une-approche-innovante-de-partage-des-donnees-et-des-connaissances-pour-la-mise-en-aeuvre-de-mesures-de-conservation-et-de-gestion-durable-des-ressources-halieutiques" title="iMarine : une approche innovante de partage des données et des connaissances pour la mise en œuvre de mesures de conservation et de gestion durable des ressources halieutiques" alt="link">iMarine : une approche innovante de partage des données et des connaissances pour la mise en œuvre de mesures de conservation et de gestion durable des ressources halieutiques</a></h2>
+
+	
+					<p><a href="/fr/www.i-marine.eu" target="_blank">iMarine</a> fournit une e-infrastructure de premier plan pour aider les chercheurs en biodiversité, les gestionnaires des pêches, les statisticiens et les conservationnistes, ainsi que des organisations clés telles que la FAO (l’Organisation des Nations Unies pour l’Agriculture et l’Alimentation), le WorldFisher Center et le CGIAR. Ces diverses communautés de spécialistes ont besoin de données multidisciplinaires et informatisées, de modèles de prédiction et de validation complexes, mais n’ont bien souvent pas accès à de telles ressources.Financé par la Commission européenne au titre du 7ème programme-cadre de recherche, iMarine permet d’améliorer la connaissance des océans, de gérer et de protéger leurs vastes ressources et d’en tirer parti durablement.&nbsp;(<a href="http://cordis.europa.eu/wire/index.cfm?fuseaction=article.Detail&amp;rcn=31468" target="_blank">CORDIS</a>, 7/8/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/iMarine-une-approche-innovante-de-partage-des-donnees-et-des-connaissances-pour-la-mise-en-aeuvre-de-mesures-de-conservation-et-de-gestion-durable-des-ressources-halieutiques">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Nouveau-groupe-consultatif-sur-la-peche-au-sein-du-Comite-permanent-pour-la-recherche-agronomique-SCAR-Fish" title="Nouveau groupe consultatif sur la pêche au sein du Comité permanent pour la recherche agronomique (SCAR – Fish) " alt="link">Nouveau groupe consultatif sur la pêche au sein du Comité permanent pour la recherche agronomique (SCAR – Fish) </a></h2>
+
+	
+					<p>Le Comité permanent pour la recherche agronomique (SCAR) a convenu en 2012 de constituer un groupe stratégique dont la mission sera de conseiller la Commission et les Etats membres sur les politiques et les thématiques de recherche afin de mieux coordonner et de guider ces activités à l’appui de la politique commune de pêche révisée. La première réunion du SCAR-Fish a eu lieu le 14 juin 2012. <a href="http://ec.europa.eu/research/agriculture/scar/pdf/report_from_1_meeting_SCAR-Fish.pdf" target="_blank">Cliquez ici</a> pour télécharger le rapport de la première réunion du SCAR-Fish.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Nouveau-groupe-consultatif-sur-la-peche-au-sein-du-Comite-permanent-pour-la-recherche-agronomique-SCAR-Fish">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Collab4Safety-un-partenariat-de-recherche-mondial-sur-la-securite-sanitaire-des-aliments" title="Collab4Safety : un partenariat de recherche mondial sur la sécurité sanitaire des aliments" alt="link">Collab4Safety : un partenariat de recherche mondial sur la sécurité sanitaire des aliments</a></h2>
+
+	
+					<p>La complexité croissante et la mondialisation de l’approvisionnement alimentaire ont un impact sur la sécurité sanitaire de nos aliments. Cela peut avoir des conséquences sur la santé du consommateur, les systèmes de production alimentaire et les relations commerciales. Collab4Safety, un projet de recherche mené par l’Institut pour la sécurité sanitaire des aliments (RIKILT, Pays-Bas) et l’Université de Wageningen (WUR), répertoriera des informations sur la recherche, les méthodes de recherche, les connaissances et l’innovation, les activités de formation et la législation dans le domaine de la sécurité sanitaire des aliments dans les pays participants (Pays-Bas, Royaume-Uni, France, Portugal, Russie, Pologne, Chine et Brésil). Des similitudes et des différences seront identifiées, et des recommandations sur une possible collaboration et la mise en œuvre de mesures de prévention et de contrôle dans les chaînes alimentaires seront formulées.(<a href="http://www.wageningenuniversity.nl/UK/newsagenda/news/Global_food_safety_partnership.htm" target="_blank">Wageningen UR</a>, 9/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Collab4Safety-un-partenariat-de-recherche-mondial-sur-la-securite-sanitaire-des-aliments">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Le-genie-genetique-ne-permet-pas-de-pallier-le-probleme-de-la-secheresse-qui-menace-l-agriculture" title="Le génie génétique ne permet pas de pallier le problème de la sécheresse qui menace l’agriculture" alt="link">Le génie génétique ne permet pas de pallier le problème de la sécheresse qui menace l’agriculture</a></h2>
+
+	
+					<p><a href="http://www.ucsusa.org/food_and_agriculture/our-failing-food-system/genetic-engineering/high-and-dry.html" target="_blank">Cette publication</a> de l’Union des Scientifiques Concernés (UCS) est le troisième d’une série de rapports mettant en avant les limites du génie génétique et soulignant l’importance d’accroître l’investissement public pour promouvoir les technologies agricoles les plus efficaces. La part du lion revient au secteur agricole, qui représente environ 70 % de tous les prélèvements d’eau à l’échelle mondiale. Les inquiétudes quant aux conflits entre production alimentaire et les autres utilisations de l’eau sont bien réelles.Et au-delà de cette concurrence pour l’accès à l’eau afin de satisfaire les besoins humains, il y a les besoins en eau des organismes aquatiques, tels que les poissons d’eau douce très prisés des pêcheurs sportifs, qui injectent des dizaines de milliers de dollars dans les économies locales. Il est donc vital de trouver les moyens de protéger la production alimentaire et les moyens de subsistance des agriculteurs contre les dévastations dues à la sécheresse – et de réduire les besoins en eau de l’agriculture. L’Union des Scientifiques Concernés a analysé les perspectives d’amélioration des cultures de sorte qu’il soit possible de diminuer les besoins en eau et les pertes pendant les périodes sèches. L’UCS s’est intéressée au génie génétique des cultures – la manipulation en laboratoires des gènes provenant de sources diverses afin de modifier les plantes. Les praticiens ont testé le potentiel du génie génétique à lutter contre les sécheresses. Les entreprises spécialisées dans les biotechnologies, dont Monsanto, se sont engagées à proposer de nouvelles variétés de cultures mises au point grâce aux nouveaux gènes qui leur permettent de pousser en conditions de sécheresse. L’industrie biotechnologique laisse également entendre que le génie génétique peut contribuer à réduire les besoins en eau des plantes même dans des conditions normales – favorisant ainsi des cultures plus rentables par goutte d’eau. L’UCS n’a toutefois constaté aucun progrès significatif sur les cultures favorisant une utilisation plus rationnelle de l’eau. En outre, nous avons découvert que les perspectives globales du génie génétique pour pallier le problème de la sécheresse qui menace l’agriculture et relever les défis liés à l’utilisation de l’eau étaient tout au plus modestes.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Le-genie-genetique-ne-permet-pas-de-pallier-le-probleme-de-la-secheresse-qui-menace-l-agriculture">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-utilisation-de-pesticides-augmente-avec-les-mauvaises-herbes-resistantes-aux-herbicides-qui-compromettent-les-rendements-d-importantes-cultures-GM" title="L’utilisation de pesticides augmente avec les mauvaises herbes résistantes aux herbicides qui compromettent les rendements d’importantes cultures GM" alt="link">L’utilisation de pesticides augmente avec les mauvaises herbes résistantes aux herbicides qui compromettent les rendements d’importantes cultures GM</a></h2>
+
+	
+					<p>Il ressort d’une nouvelle étude menée par Charles Benbrook, professeur de recherche à l’Université d’Etat de Washington aux Etats-Unis, que l’utilisation d’herbicides dans la production de trois cultures génétiquement modifiées (GM) tolérantes aux herbicides – du coton, du soja et du maïs – a en réalité augmenté. Ces résultats se fondent sur une analyse de données publiques du Service national des statistiques agricoles du Département de l’Agriculture des Etats-Unis. Il s’agit de la première analyse des impacts des cultures GM tolérantes aux herbicides sur l’utilisation de pesticides qui a été revue par les pairs et publiée. Benbrook a évoqué une forte corrélation entre l’apparition et la propagation de mauvaises herbes résistantes aux virus et l’augmentation de l’utilisation d’herbicides. Aux Etats-Unis, environ 95 % des superficies cultivées de soja et de coton, et plus de 85 % pour le maïs, sont des variétés génétiquement modifiées pour la résistance aux herbicides. «&nbsp;Les mauvaises herbes résistantes sont devenues un problème majeur pour de nombreux agriculteurs qui dépendent des cultures GM, et augmentent à présent d’environ 25 % les quantités d’herbicides nécessaires chaque année&nbsp;», a-t-il indiqué. L’analyse de Benbrook a montré que si les cultures tolérantes aux herbicides ont bien fonctionné au départ, l’excès de dépendance a pu entraîner des changements chez les communautés d’adventices et la propagation de mauvaises herbes résistantes qui ont forcé les agriculteurs à augmenter les taux d’application d’herbicides, accroître la fréquence des pulvérisations et ajouter de nouveaux herbicides. L’étude a été publiée dans la revue <i>Environmental Sciences Europe</i>. (<a href="http://cahnrsnews.wsu.edu/2012/10/01/pesticide-use-rises-as-herbicide-resistant-weeds-undermine-performance-of-major-ge-crops-new-wsu-study-shows/" target="_blank">Article</a> résumé par le <a href="http://www.merid.org/en/Content/Topics/Agriculture_and_Food_Security.aspx" target="_blank">Meridian Institute</a>, Septembre 2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-utilisation-de-pesticides-augmente-avec-les-mauvaises-herbes-resistantes-aux-herbicides-qui-compromettent-les-rendements-d-importantes-cultures-GM">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-la-recherche-communautaire-dans-l-enseignement-superieur" title="Promouvoir la recherche communautaire dans l’enseignement supérieur" alt="link">Promouvoir la recherche communautaire dans l’enseignement supérieur</a></h2>
+
+	
+					<p>Thierry Claudien Uhawenimana, chargé des relations publiques et de la communication à l’Institut de Santé de Kigali, au Rwanda, a écrit un commentaire intéressant sur l’importance et la nécessité de promouvoir la recherche communautaire dans les programmes de sciences naturelles des universités et d’autres établissements d’enseignement supérieur. Uhawenimana cite les efforts déployés par l’Institut de Santé de Kigali, l’Université nationale du Rwanda et les universités ougandaises pour renforcer les programmes de sensibilisation des étudiants dans le secteur de la santé publique.Le succès, les défis et les innovations récentes dans le domaine servent d’exemples précieux pour d’autres programmes, comme dans les sciences agricoles, en vue de développer ou de renforcer les activités de sensibilisation sur des groupes cibles particuliers.(<a href="http://goo.gl/8XyK9" target="_blank">DRUSSA</a> via <a href="http://www.universityworldnews.com/article.php?story=20120822164106621" target="_blank">University Worlds News</a>, 16/8/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Promouvoir-la-recherche-communautaire-dans-l-enseignement-superieur">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Programme-de-valorisation-de-la-recherche-et-du-developpement-en-Afrique-subsaharienne-DRUSSA" title="Programme de valorisation de la recherche et du développement en Afrique subsaharienne (DRUSSA)" alt="link">Programme de valorisation de la recherche et du développement en Afrique subsaharienne (DRUSSA)</a></h2>
+
+	
+					<p>Le programme de valorisation de la recherche et du développement en Afrique subsaharienne (DRUSSA) offre un appui direct aux universités, tant au niveau individuel et institutionnel qu’au niveau des systèmes, en vue d’améliorer la participation et l’impact sur le processus d’élaboration des politiques et des pratiques. Le programme a été conçu pour renforcer les capacités existantes qui pourront être pérennisées par les universités elles-mêmes à long terme. 24 universités d’Afrique subsaharienne participent au programme DRUSSA.Il propose une plate-forme numérique, DRUSSA Online, afin de cibler tous les segments d’audience en Afrique subsaharienne, mais aussi dans le monde entier. Ce programme de cinq ans a été élaboré en octobre 2011. Le partenariat DRUSSA est composé de trois entités : l’Association des universités du Commonwealth (ACU) basée au Royaume-Uni, le Centre de recherche sur l’évaluation, la science et la technologie (CREST) de l’Université de Stellenbosch, en Afrique du Sud, et l’Organisation Systems Design (OSD) en Afrique du Sud. Ce programme est financé par le Département britannique de la coopération internationale (DFID). Il vise notamment à promouvoir la mise en application de la recherche, un domaine universitaire émergent qui requiert des capacités individuelles spécialisées, alignées aux structures organisationnelles et aux processus de gestion stratégique en vue d’optimiser les conditions de diffusion et de mise en application des résultats de la recherche scientifique.Visite (<a href="http://www.drussa.net/" target="_blank">www.drussa.net</a>)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Programme-de-valorisation-de-la-recherche-et-du-developpement-en-Afrique-subsaharienne-DRUSSA">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/CropWat-calculer-les-besoins-en-eau-et-en-irrigation-a-partir-de-donnees-sur-le-sol-le-climat-et-les-cultures" title="CropWat : calculer les besoins en eau et en irrigation à partir de données sur le sol, le climat et les cultures" alt="link">CropWat : calculer les besoins en eau et en irrigation à partir de données sur le sol, le climat et les cultures</a></h2>
+
+	
+					<p>CROPWAT 8.0 pour Windows est un logiciel informatique qui permet de calculer les besoins en eau et en irrigation des cultures, à partir de données sur le sol, le climat et les cultures. Le programme permet en outre de déterminer les heures d’irrigation et de rééquilibrage hydrique pour différentes cultures en fonction du climat et du type de sol. <a href="http://www.fao.org/nr/water/infores_databases_cropwat.html" target="_blank">CROPWAT 8.0</a> peut également être utilisé pour évaluer les pratiques d’irrigation des agriculteurs et donner une estimation de la performance des systèmes de culture en conditions pluviales et irriguées.&nbsp;</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/CropWat-calculer-les-besoins-en-eau-et-en-irrigation-a-partir-de-donnees-sur-le-sol-le-climat-et-les-cultures">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Projet-CuveWaters-gestion-integree-des-ressources-en-eau-en-Namibie" title="Projet CuveWaters : gestion intégrée des ressources en eau en Namibie " alt="link">Projet CuveWaters : gestion intégrée des ressources en eau en Namibie </a></h2>
+
+	
+					<p>Le <a href="http://www.cuvewaters.net/Home.5.0.html" target="_blank">projet CuveWaters</a> établit un système de gestion intégrée des ressources en eau (GIRE) dans le bassin Cuvelai-Etosha au nord de la Namibie. En collaboration avec des partenaires sur le terrain et des utilisateurs potentiels, les chercheurs développent et mettent en œuvre des techniques de collecte et de stockage des eaux de pluie, de désalinisation, d’assainissement et de réutilisation de l’eau. Le projet CuveWaters applique une approche transdisciplinaire dans laquelle la science et la technologie sont liées aux connaissances pratiques des populations locales.CuveWaters est un projet de recherche international commun <a href="http://www.isoe.de/en/media-activities/news-single/water-for-namibia-innovative-technologies-for-africas-dry-regions" target="_blank">dirigé par l’ISOE</a> (Institut de recherche socio-écologique), en coopération avec l’Université de technologie de Darmstadt en Allemagne, la Desert Research Foundation (DRFN) et le ministère de l’Agriculture, de l’Eau et des Forêts (MAWF) en Namibie. Ce projet est financé par le ministère fédéral allemand de l’éducation et de la recherche (BMBF). Il couvre déjà la période de 2006 à 2013. Une troisième phase est d’ores et déjà prévue.&nbsp;</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Projet-CuveWaters-gestion-integree-des-ressources-en-eau-en-Namibie">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/ONU-d-autres-experts-mettent-en-garde-contre-la-faillite-de-l-eau-dans-de-nombreuses-regions-du-monde-apres-avoir-evalue-200-projets-majeurs-lies-a-l-eau" title="ONU : d’autres experts mettent en garde contre « la faillite de l’eau » dans de nombreuses régions du monde après avoir évalué 200 projets majeurs liés à l’eau" alt="link">ONU : d’autres experts mettent en garde contre « la faillite de l’eau » dans de nombreuses régions du monde après avoir évalué 200 projets majeurs liés à l’eau</a></h2>
+
+	
+					<p>Une étude de près de 200 projets majeurs internationaux liés à l’eau mis en œuvre au cours des 20 dernières années a permis d’identifier un certain nombre de défis existants et émergents et de déterminer dans quelle mesure la science pouvait y remédier. Le Fonds pour l’environnement mondial (FEM), le plus important bailleur de fonds mondial pour les projets visant à améliorer l’environnement et à promouvoir le développement durable, travaille en collaboration avec l’Université des Nations Unies et le Programme des Nations Unies pour l’environnement (PNUE) pour tirer les enseignements d’un portefeuille de projets d’exploitation de ressources en eau transfrontalières impliquant des investissements de plus de 7 milliards de dollars EU.&nbsp;Selon le <a href="http://www.inweh.unu.edu/River/IWScienceReports.htm" target="_blank">rapport</a>, la gestion insuffisante et parfois incohérente des demandes d’utilisation d’eau destinée à la consommation humaine et des systèmes aquatiques met en danger les systèmes sociaux et écologiques.(<a href="http://www.eurekalert.org/pub_releases/2012-09/unu-ewo092012.php" target="_blank">EurekAlert</a>, 23/9/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/ONU-d-autres-experts-mettent-en-garde-contre-la-faillite-de-l-eau-dans-de-nombreuses-regions-du-monde-apres-avoir-evalue-200-projets-majeurs-lies-a-l-eau">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Centre-des-services-scientifiques-pour-le-changement-climatique-et-la-gestion-adaptative-des-terres-en-Afrique-australe-SASSCAL" title="Centre des services scientifiques pour le changement climatique et la gestion adaptative des terres en Afrique australe (SASSCAL)" alt="link">Centre des services scientifiques pour le changement climatique et la gestion adaptative des terres en Afrique australe (SASSCAL)</a></h2>
+
+	
+					<p>Le <a href="http://www.sasscal.org/" target="_blank">SASSCAL</a> est une initiative commune de l’Angola, du Botswana, de la Namibie, de l’Afrique du Sud, de la Zambie et de l’Allemagne pour répondre aux défis du changement global. Il a pour mission de mener des recherches axées sur les problèmes de l’adaptation aux changements climatiques et de la gestion durable des terres dans la région, et de fournir des conseils fondés sur des preuves à tous les décideurs et acteurs pour améliorer les conditions de vie des gens et contribuer à la création d’une société africaine basée sur les connaissances.Afin de répondre aux besoins des groupes cibles tels que les décideurs politiques et l’administration gouvernementale, les agriculteurs, les praticiens et autres acteurs régionaux et locaux concernés par le changement climatique, trois objectifs majeurs ont été fixés : 1) Trans-disciplinaire, la recherche orientée à l’application pour les gens, 2) Services et conseils pour les hommes politiques, les décideurs et les acteurs, et 3) Renforcement des capacités. En parallèle à cette initiative en Afrique australe, également en Afrique de l’Ouest, un Centre du service scientifique oust-africain pour le climat et l’utilisation adaptée des terres (<a href="http://www.wascal.org/" target="_blank">WASCAL</a>)&nbsp;est en cours d’élaboration.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Centre-des-services-scientifiques-pour-le-changement-climatique-et-la-gestion-adaptative-des-terres-en-Afrique-australe-SASSCAL">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/UN-report-provides-update-on-sustainable-agricultural-policies-and-practices" title="UN report provides update on sustainable agricultural policies and practices" alt="link">UN report provides update on sustainable agricultural policies and practices</a></h2>
+
+	
+					<p>L’Assemblée générale des Nations Unies a publié <a href="http://www.un.org/esa/dsd/susdevtopics/sdt_pdfs/SG%20Report%20on%20Agriculture%20Development%20and%20Food%20Security.pdf" target="_blank">un rapport</a> du Secrétaire général sur le développement de l’agriculture et la sécurité alimentaire qui examine les défis à relever pour assurer la sécurité alimentaire et nutritionnelle, ainsi que les progrès accomplis dans la mise en œuvre de politiques et de pratiques agricoles durables fondées sur les <a href="http://www.fao.org/fileadmin/templates/wsfs/Summit/Docs/Declaration/WSFS09_Draft_Declaration.pdf" target="_self">cinq Principes de Rome pour une sécurité alimentaire mondiale durable</a>.Ce document décrit l’état actuel de l’insécurité alimentaire et nutritionnelle, les causes structurelles de la faim et de la malnutrition, et les impacts environnementaux, comme le changement climatique. Il met en avant la faible productivité et le manque d’investissements dans l’agriculture à petite échelle, la dégradation des terres et les pénuries d’eau.(<a href="http://africasd.iisd.org/news/un-report-provides-update-on-sustainable-agricultural-policies-and-practices/" target="_blank">Services d’information de l’IISD</a> – Couverture régionale Afrique, 10/8/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/UN-report-provides-update-on-sustainable-agricultural-policies-and-practices">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Cultiver-avec-moins-de-pesticides-l-examen-des-pesticides-existants-sur-le-marche-de-l-UE-et-les-defis-qui-en-resultent-pour-l-agriculture-britannique" title="Cultiver avec moins de pesticides : l’examen des pesticides existants sur le marché de l’UE et les défis qui en résultent pour l’agriculture britannique" alt="link">Cultiver avec moins de pesticides : l’examen des pesticides existants sur le marché de l’UE et les défis qui en résultent pour l’agriculture britannique</a></h2>
+
+	
+					<p>La politique de l’Union européenne est orientée vers une réduction significative de l’utilisation des pesticides à court et moyen terme. Avec les directives actuelles de la Commission européenne sur l’enregistrement et l’utilisation des pesticides, certains produits importants de protection des cultures ne sont plus disponibles sur le marché britannique. Le processus d’évaluation continu pourrait entraîner le retrait de la vente de nombreux pesticides les plus couramment utilisés dans le secteur agricole au Royaume-Uni.Etant donné que la nouvelle législation est déjà entrée en vigueur et qu’aucune décision ne précise encore les conditions de retrait de la vente des pesticides, il est difficile de savoir si l’utilisation des pesticides en zones agricoles présente des risques et quelle stratégie adopter pour se conformer aux lois en vigueur et élaborer des plans de lutte contre les organismes nuisibles. La Grande-Bretagne ainsi que d’autres Etats membres de l’UE seront amenés à produire plus de nourriture de façon rentable et durable en utilisant moins de pesticides, tout en essayant d’éviter les fortes augmentations de prix.Le gouvernement britannique a adopté une approche essentiellement volontaire de réduction des pesticides et de mise en œuvre d’une gestion intégrée des ravageurs. L’agriculture britannique est face à un défi de taille. Elle repose sur un petit nombre d’ingrédients actifs, avec un risque conséquent plus élevé de résistance aux pesticides chez les ravageurs visés. Les agriculteurs devront mieux appréhender les pratiques de gestion intégrée des ravageurs et avoir accès à des informations et à un appui technique pour maintenir le niveau actuel de production de denrées alimentaires. Cette étude présente une synthèse de la législation sur les pesticides au sein de l’UE, décrit son impact potentiel sur la gestion des organismes nuisibles et montre dans quelle mesure l’agriculture britannique tente de relever le défi de cultiver avec moins de pesticides.<a href="http://gala.gre.ac.uk/7337/" target="_self">http://gala.gre.ac.uk/7337/</a></p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Cultiver-avec-moins-de-pesticides-l-examen-des-pesticides-existants-sur-le-marche-de-l-UE-et-les-defis-qui-en-resultent-pour-l-agriculture-britannique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Systeme-africain-d-information-sur-les-pertes-post-recolte-APHLIS" title="Système africain d’information sur les pertes post-récolte (APHLIS) " alt="link">Système africain d’information sur les pertes post-récolte (APHLIS) </a></h2>
+
+	
+					<p>Les estimations sur les pertes post-récolte sont des données importantes pour les décideurs, les professionnels de la sécurité alimentaire chargés de faire l’estimation des approvisionnements céréaliers et les professionnels du secteur de l’agriculture qui proposent, ou mettent en place, des interventions en vue de réduire ces pertes. Avant l’introduction du système d’information <a href="http://www.aphlis.net/" target="_blank">APHLIS</a>, l’origine et la justification de chiffres utilisés pour faire des ajustements pour les PPR n’étaient pas bien fondées. Le nouveau système a été mis en place pour générer des chiffres pour les PPR de céréales d’une manière totalement transparente et qui puisse permettre la mise à jour des estimations de PPR dès que de nouvelles données deviennent disponibles. Le système d’information APHLIS a été créée dans le cadre du projet intitulé «&nbsp;<i>Post harvest Losses Database for Food Balance Sheet Operations</i>&nbsp;».La plate-forme APHLIS offre des estimations sur les pertes post-récolte (PPR) – des pertes de poids % - pour les cultures céréalières de l’Afrique subsaharienne, pour les pays et leurs provinces. La calculatrice PPR qui rend ces estimations peut également être téléchargée par les utilisateurs en tant que feuille de calcul et les valeurs par défaut peuvent être modifiées selon les préférences de l’utilisateur. Un guide d’utilisation est aussi téléchargeable. Les données sur lesquelles ce système est basé a été soumis par des experts locaux qui, ensemble, forment le Réseau APHLIS.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Systeme-africain-d-information-sur-les-pertes-post-recolte-APHLIS">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Diminuer-de-moitie-les-pertes-post-recolte-pour-nourrir-un-milliard-de-personnes-supplementaires" title="Diminuer de moitié les pertes post-récolte pour nourrir un milliard de personnes supplémentaires" alt="link">Diminuer de moitié les pertes post-récolte pour nourrir un milliard de personnes supplémentaires</a></h2>
+
+	
+					<p>Il serait possible de préserver les ressources naturelles de notre planète et d’améliorer la qualité de vie en général en rendant la chaîne de production alimentaire plus efficace et en diminuant la quantité de déchets alimentaires. Pour la première fois, des chercheurs de l’Université d’Aalto, en Finlande, ont démontré une estimation valide pour le nombre de personnes qui pourraient être nourries si le gaspillage alimentaire était contrôlé. La population mondiale est aujourd’hui estimée à 7 milliards d’individus. Une diminution de moitié des pertes post-récolte permettrait de nourrir un milliard de personnes supplémentaires, et ce en réduisant un infime pourcentage de ces pertes à l’échelon mondial.(<a href="http://www.eurekalert.org/pub_releases/2012-10/au-ht101012.php" target="_blank">EurekAlert</a>, 10/10/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Diminuer-de-moitie-les-pertes-post-recolte-pour-nourrir-un-milliard-de-personnes-supplementaires">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-nouveau-modele-Web-pour-le-partage-des-bases-de-donnees-scientifiques-pourrait-apporter-d-enormes-avantages" title="Un nouveau modèle Web pour le partage des bases de données scientifiques pourrait apporter d’énormes avantages" alt="link">Un nouveau modèle Web pour le partage des bases de données scientifiques pourrait apporter d’énormes avantages</a></h2>
+
+	
+					<p>Un groupe de chercheurs américains a proposé de créer un nouveau réseau de données en libre accès basé sur Internet pour aider les chercheurs et les décideurs politiques du monde entier à transformer les connaissances existantes en applications et technologies réelles, mais aussi améliorer les politiques de science et d’innovation. Les auteurs de <a href="http://www.sciencemag.org/content/338/6104.toc" target="_blank">l’article</a> paru le 12 octobre 2012 dans la revue <i>Science</i> ont déclaré que la concrétisation de ce projet résidait notamment dans l’élaboration parallèle d’un ensemble de normes unifiées régissant les bases de données et les plates-formes – par exemple, en utilisant un identificateur unique pour les chercheurs, afin d’éviter toute confusion lorsque l’on effectue une recherche textuelle sur un nom.(<a href="http://www.eurekalert.org/pub_releases/2012-10/osu-nwm100812.php" target="_blank">EurekAlert</a>, 11/10/2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Un-nouveau-modele-Web-pour-le-partage-des-bases-de-donnees-scientifiques-pourrait-apporter-d-enormes-avantages">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-chercheurs-agronomes-des-pays-du-G20-s-entendent-pour-partager-les-donnees-de-la-recherche" title="Les chercheurs agronomes des pays du G20 s’entendent pour partager les données de la recherche" alt="link">Les chercheurs agronomes des pays du G20 s’entendent pour partager les données de la recherche</a></h2>
+
+	
+					<p>Réunis au Mexique fin septembre, les chercheurs agronomes originaires de la plupart des pays du G20 sont parvenus à un accord pour partager les données de la recherche dans le but d’accentuer le rythme de la recherche et de la production agricoles. Ils se sont accordés à reconnaître que, pour nourrir une population mondiale en constante augmentation, tous les pays doivent prendre conscience de l’importance d’un engagement à long terme en faveur de la recherche agricole, tout en notant le risque de double emploi. Catherine Woteki, Sous-secrétaire d’Etat à l’Agriculture chargée de la recherche, de l’éducation et de l’économie, et chercheur principal au Département américain de l’Agriculture (USDA), a déclaré que «&nbsp;les récents partenariats de recherche internationaux ont été cruciaux pour relever certains défis, tels que la lutte contre la rouille du blé et l’augmentation de la productivité du blé, la lutte contre la contamination des aliments par les aflatoxines et le séquençage des génomes de cultures importantes. Le groupe reconnaît toutefois que, dans la mesure où ces partenariats continuaient de se développer, certains objectifs fixés dans le cadre de ces partenariats pourraient faire double emploi. Certains pays et partenariats collaboratifs pourraient de même investir dans des projets de recherche déjà mis en œuvre au sein d’autres institutions qui ne sont pas membres de ces partenariats, et tous deux pourraient tirer profit d’une efficacité accrue et d’un partage des données et des résultats&nbsp;». Selon elle, si des actions de revitalisation de la recherche au service du développement agricole ont bel et bien été menées depuis la flambée des prix des denrées alimentaires en 2008, la plupart des budgets alloués à la recherche dans les pays en développement ont connu une stagnation. La Chine a augmenté son budget pour la recherche agricole, a-t-elle ajouté. Les chercheurs ont convenu de se réunir de nouveau chaque année. Faudrait-il, par ailleurs, envisager d’inviter des chercheurs originaires de pays ACP non membres du G20&nbsp;?(<a href="http://goo.gl/OZ0iG" target="_blank">Article</a> résumé par le <a href="http://www.merid.org/en/Content/Topics/Agriculture_and_Food_Security.aspx" target="_blank">Meridian Institute</a>, Septembre 2012)</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Les-chercheurs-agronomes-des-pays-du-G20-s-entendent-pour-partager-les-donnees-de-la-recherche">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-innovation-ouverte-au-service-de-la-durabilite" title="L’innovation ouverte au service de la durabilité" alt="link">L’innovation ouverte au service de la durabilité</a></h2>
+
+	
+					<p>L’innovation ouverte n’a pas suscité toute l’attention requise dans les discussions politiques sur le rôle de l’innovation en faveur d’un avenir plus durable, une question particulièrement importante qui a été soulevée lors du Sommet Rio+20 au Brésil. Plate-forme web de la propriété intellectuelle, le GX se fonde sur l’idée selon laquelle l’innovation ouverte peut favoriser des pratiques commerciales plus durables.<a href="http://ictsd.org/i/publications/135555/" target="_blank">Cette note d’orientation</a> s’inscrit dans le cadre d’un vaste effort visant à analyser les spécificités du GX et à explorer les enseignements qui pourraient être tirés de son expérience en termes de réflexion sur l’innovation, la propriété intellectuelle et la durabilité. Elle montre notamment dans quelle mesure le GX illustre bien l’utilité et les limites de l’innovation ouverte au service de la durabilité. Elle suggère par ailleurs un certain nombre de pistes pour renforcer les efforts similaires à travers notamment : a) une sensibilisation et une prise de conscience sur les échanges de propriété intellectuelle; b) une augmentation des ressources dédiées à ces échanges; c) le passage d’un échange légal de brevets vers une collaboration accrue entre innovateurs.</p>
+							<p><span class="date">19/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-innovation-ouverte-au-service-de-la-durabilite">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-ressources-pour-acceder-a-toute-la-litterature-botanique-sur-le-Web" title="Des ressources pour accéder à toute la littérature botanique sur le Web" alt="link">Des ressources pour accéder à toute la littérature botanique sur le Web</a></h2>
+
+	
+					<p>Le Weblog sur la biodiversité agricole a publié un mémo utile pour tous ceux qui souhaitent accéder en ligne à des ressources scientifiques sur l’ethnobotanique et les collections de matériel génétique, avec un lien vers une <a href="http://www.kew.org/science/ecbot/kent.html" target="_blank">page web</a> maintenue par l’Université du Kent et proposant une compilation de bases de données en ligne, de moteurs de recherche, de listes de contrôle, de bibliothèques d’images, etc. à l’attention des étudiants en ethnobotanique.Pour les collecteurs de matériel génétique, Agro.biodiver.se propose également un lien vers le Portail d’information sur les banques de gènes de plantes cultivées (<i><a href="http://goo.gl/4oxs9" target="_blank">Crop Genebank Knowledge Base</a></i>) et sa page intitulée «&nbsp;Sources d’informations publiées sur les espèces de plantes sauvages&nbsp;», synthèse des nouvelles connaissances, procédures, meilleures pratiques et références en matière de diversité végétale. Il explique en outre comment et où vérifier la taxonomie/le nom des espèces, mais aussi trouver la littérature botanique informatisée ainsi que des guides sur la flore.(<a href="http://agro.biodiver.se/" target="_blank">Agro.biodiver.se</a>, 9/10/2012)</p>
+							<p><span class="date">25/10/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Des-ressources-pour-acceder-a-toute-la-litterature-botanique-sur-le-Web">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-Agence-nationale-de-la-recherche-scientifique-appliquee-ANRSA-du-Senegal-cherche-a-vulgariser-ses-travaux" title="L'Agence nationale de la recherche scientifique appliquée (ANRSA) du Sénégal cherche à vulgariser ses travaux" alt="link">L'Agence nationale de la recherche scientifique appliquée (ANRSA) du Sénégal cherche à vulgariser ses travaux</a></h2>
+
+	
+					<p>Lors du visite guide avec la presse en août 2012, l'Agence nationale de la recherche scientifique appliquée (Anrsa), représentée par sa directrice générale Sophie Aïssatou Gladima Siby, a expliqué qu’elle souhaitait maintenant vulgariser les resultats des recherches enterprisent ces dernières années pour le benefice de la population du pays, en particulier en ce qui a trait au development de l’agriculture. « Des sessions de formation seront tenues à l'intention des chercheurs, des producteurs, des élèves et d'autres cibles intéressés par la recherche appliquée pour les familiariser aux technologies novatrices », a indiqué la directrice de l'agence.(via AllAfrica, 17/8/2012)<a href="http://fr.allafrica.com/stories/201208170800.html" target="_self">http://fr.allafrica.com/stories/201208170800.html</a></p>
+							<p><span class="date">26/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/L-Agence-nationale-de-la-recherche-scientifique-appliquee-ANRSA-du-Senegal-cherche-a-vulgariser-ses-travaux">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-du-premier-programme-de-cooperation-scientifique-Afrique-Bresil-France-pour-lutter-contre-la-desertification-en-Afrique" title="Lancement du premier programme de coopération scientifique Afrique-Brésil-France pour lutter contre la désertification en Afrique" alt="link">Lancement du premier programme de coopération scientifique Afrique-Brésil-France pour lutter contre la désertification en Afrique</a></h2>
+
+	
+					<p>Initiative originale de coopération Sud-Sud-Nord financée conjointement par le Brésil, l’Afrique et la France, ce programme de recherche vise à structurer une communauté scientifique tricontinentale pour lutter contre la désertification en Afrique, développer les capacités scientifiques de ce continent et renforcer les liens entre science et société, afin de contribuer à une gestion durable des zones arides et semi-arides en Afrique.(IRD, 4/6/2012)FR: <a href="http://www.ird.fr/toute-l-actualite/actualites/communiques-et-dossiers-de-presse/rio-20-l-ird-et-l-aird-se-mobilisent" target="_blank">http://www.ird.fr/toute-l-actualite/actualites/communiques-et-dossiers-de-presse/rio-20-l-ird-et-l-aird-se-mobilisent</a></p>
+							<p><span class="date">24/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-du-premier-programme-de-cooperation-scientifique-Afrique-Bresil-France-pour-lutter-contre-la-desertification-en-Afrique">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Atelier-de-lancement-CTA-WUR-septembre-2012-Developpement-integre-du-secteur-des-semences-ISSD-en-Afrique-Phase-II-Pratiques-programmes-et-politiques-visant-a-promouvoir-l-entrepreneuriat-dans-le-secteur-des-semences" title="Atelier de lancement CTA/WUR, septembre 2012 – « Développement intégré du secteur des semences (ISSD) en Afrique – Phase II : Pratiques, programmes et politiques visant à promouvoir l’entrepreneuriat dans le secteur des semences" alt="document">Atelier de lancement CTA/WUR, septembre 2012 – « Développement intégré du secteur des semences (ISSD) en Afrique – Phase II : Pratiques, programmes et politiques visant à promouvoir l’entrepreneuriat dans le secteur des semences</a></h2>
+
+	
+	
+	
+	
+					<p>Le Centre technique de coopération agricole et rurale ACP-UE (CTA) propose de tirer profit des atouts de la première phase du projet de Développement intégré du secteur des semences (ISSD) qui a été mise en œuvre par un consortium conduit par le Centre du développement et de l’innovation (CDI) de l’Université de Wageningen (WUR), la Commission de l’Union africaine / Programme semences et biotechnologies pour l’Afrique, Plantum NL et Self Help Africa (SHA), avec l’appui d’universités africaines durant la seconde phase du projet. L’objectif de la Phase II est de promouvoir le développement d’un secteur semencier dynamique, commercial et pluraliste en Afrique. Les objectifs spécifiques s’articulent comme suit : 1) réaliser une étude et évaluer les pratiques des entrepreneurs semenciers à différents niveaux&nbsp;; 2) évaluer les programmes et les politiques mis en place dans ce domaine&nbsp;; 3) explorer et documenter les moyens par lesquels les pratiques, programmes et politiques peuvent être renforcés afin de promouvoir l’entrepreneuriat semencier&nbsp;; 4) renforcer la capacité des professionnels du secteur des semences à promouvoir l’entrepreneuriat dans ce secteur&nbsp;; 5) renforcer la capacité des universités à jouer un rôle de facilitation et d’impulsion en faveur de la sécurité alimentaire et de l’entrepreneuriat dans le secteur semencier.Le projet sera mis en œuvre dans les pays suivants : Burundi, Éthiopie, Ghana, Malawi, Mali, Mozambique, Ouganda, Rwanda et Zambie. Le développement intégré du secteur semencier privilégie le pluralisme, au lieu d’une approche linéaire, en association le développement du secteur privé à la sécurité alimentaire et semencière. Il prend en considération les variations entre les chaînes de valeur des semences et s’attache à rendre les programmes et les politiques semenciers plus cohérents avec les pratiques des agriculteurs et la diversité des entrepreneurs du secteur des semences. Au terme de la première phase du projet ISSD Afrique en 2010-2011, les résultats ont été validés lors d’ateliers nationaux multi-parties prenantes.Les principales conclusions de l’atelier ont été les suivantes&nbsp;: 1) la coexistence de multiples systèmes semenciers&nbsp;; 2) les systèmes semenciers requièrent des politiques et des programmes ciblés pour permettre leur développement&nbsp;; 3) le secteur des semences en Afrique doit faire face à un certain nombre de défis communs quant à la clarification des rôles et responsabilités des secteurs public et privé, des ONG et de la société civile&nbsp;; 4) la transition de systèmes de distribution de semences d’urgence par les pouvoirs publics et les ONG vers des systèmes durables orientés vers le marché.</p>
+							<p><span class="date">1/10/2012</span></p>
+	<div class="cnt">
+	<a class="document" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Atelier-de-lancement-CTA-WUR-septembre-2012-Developpement-integre-du-secteur-des-semences-ISSD-en-Afrique-Phase-II-Pratiques-programmes-et-politiques-visant-a-promouvoir-l-entrepreneuriat-dans-le-secteur-des-semences">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Organisation-de-recherche-scientifique-des-Samoa-SROS" title="Organisation de recherche scientifique des Samoa (SROS) " alt="link">Organisation de recherche scientifique des Samoa (SROS) </a></h2>
+
+	
+					<p>L’Organisation de recherche scientifique des Samoa (anciennement Institut de recherche et développement des Samoa - RDIS) est une nouvelle initiative gouvernementale qui se propose de mener des recherches scientifiques et techniques, et de mettre au point des technologies au profit de l’industrie et de l’économie des Samoa. Il s’agit d’une instance indépendante régie selon les dispositions du SROS Act de 2008. Elle a pour vocation d’aider les agriculteurs et les entreprises grâce à la recherche scientifique et technique dans le but d’apporter une valeur ajoutée aux ressources locales, en vue de stimuler l’économie nationale. Il est indispensable d’ajouter de la valeur à la production alimentaire des Samoa afin d’utiliser pleinement les ressources locales (produits agricoles), de générer des revenus, de créer des emplois et de réduire les importations. Il est également nécessaire d’exploiter les ressources énergétiques renouvelables dans le but de resserrer les coûts énergétiques élevés. Toutes les activités de recherche de l’organisation sont orientées vers ces objectifs. Les travaux de recherche du SROS sur <a href="http://www.ingentaconnect.com/content/sphs/sphr/2011/00000007/00000002/art00003 " target="_blank">la gestion des maladies post-récolte</a>, entre autres, sont mondialement reconnus.<a href="http://www.sros.org.ws/default.aspx " target="_self">http://www.sros.org.ws/default.aspx</a></p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Organisation-de-recherche-scientifique-des-Samoa-SROS">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Reseau-international-sur-les-aracees-comestibles" title="Réseau international sur les aracées comestibles" alt="link">Réseau international sur les aracées comestibles</a></h2>
+
+	
+					<p>Le Réseau international sur les aracées comestibles (<a href="http://ediblearoids.org/Home.aspx " target="_blank">INEA</a>) est un consortium mondial de scientifiques et de producteurs qui a été formé pour travailler sur les genres <i>Colocasia</i> et <i>Xanthosoma</i> dans le cadre d’un projet intitulé «&nbsp;<i>Adapting Clonally Propagated Crops to Climatic and Commercial Change</i>&nbsp;». Appuyé par l’Union européenne pendant cinq ans, l’INEA utilisera les aracées comestibles comme modèle pour améliorer les cultures à propagation clonale sous les tropiques, qui s’adaptent difficilement aux nouvelles conditions environnementales car il est rare qu’elles fleurissent ou produisent des graines. Pour surmonter les contraintes telles que le changement climatique, les ravageurs et les maladies ou encore les besoins du marché, le réseau INEA aidera les pays à préserver la diversité génétique des plantes cultivées, à définir des stratégies de sélection et à démontrer l’utilité des biotechnologies modernes pour ce travail. Un réseau de chercheurs et d’agriculteurs sera constitué pour échanger des informations et du matériel génétique sous l’égide des traités internationaux.</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Reseau-international-sur-les-aracees-comestibles">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-de-l-Atlas-des-risques-et-catastrophes-naturelles-dans-les-Caraibes" title="Lancement de l’Atlas des risques et catastrophes naturelles dans les Caraïbes" alt="link">Lancement de l’Atlas des risques et catastrophes naturelles dans les Caraïbes</a></h2>
+
+	
+					<p>Cet outil, lancé par l’Université des West Indies (UWI), permet d’améliorer la prise de décision pour réduire les impacts économiques et sociaux liés aux risques naturels dans la région. L’Atlas des risques et catastrophes naturelles dans les Caraïbes a été conçu pour répondre aux besoins de données fiables, nécessaires au développement de stratégies de gestion des risques dans les Caraïbes.(<a href="http://www.caribbean360.com/index.php/news/jamaica_news/591866.html#ixzz24ksryal2" target="_blank">Caribbean 360</a>, 25/6/2012)</p>
+							<p><span class="date">14/09/2012</span></p>
+	<div class="cnt">
+	<a class="link" href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/Lancement-de-l-Atlas-des-risques-et-catastrophes-naturelles-dans-les-Caraibes">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl" />
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/480"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/540"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements">1</a>...
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/300">11</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/330">12</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/360">13</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/390">14</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/420">15</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/450">16</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/480">17</a></span>
+            
+        <span class="current">18</span>
+
+                      <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/540">19</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/570">20</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/600">21</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/630">22</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/660">23</a></span>
+                              <span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/690">24</a></span>
+            <span class="other">...</span><span class="other"><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/2460">83</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked/><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="http://knowledge.cta.int/fr/content/view/full/10094"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="/fr/A-Propos/Nous-contacter">
+					<img src="/design/knowledge/images/email-icon-small.png" alt="" />
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="/design/knowledge/images/t_logo.png" alt="" />
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="/design/knowledge/images/f_logo.png" alt="" />
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="/fr/A-Propos/A-propos-de-RSS">
+					<img src="/design/knowledge/images/rss-icon-small.png" alt="" />
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value="" />
+	<br />
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value="" />
+	<br />
+	<br />
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login" />
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user" />
+	
+	</form>
+<br />						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="/fr/Blogs/Judith-s-blog">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-mars-2015">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="/fr/Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="/fr/A-Propos/A-propos-de-RSS"><img src="/design/knowledge/images/rss-icon-small.png" alt="" /> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="/fr/Dossiers/Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="/fr/about/Legal_Notice" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org"><img alt="ACP" src="/design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu"><img alt="EU" src="/design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":331,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
