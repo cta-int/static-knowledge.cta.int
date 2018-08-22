@@ -1,0 +1,1388 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/Produits-de-base/Betail/Developpements by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:39:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Bétail / Produits de base / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="../../../../fr.html" title="Page de garde Knowledge"/>
+<link rel="Index" href="../../../../fr.html"/>
+<link rel="Search" href="../../../content/search.html" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="../../../../design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="http://knowledge.cta.int/fr/layout/set/print/Dossiers/Produits-de-base/Betail/Developpements" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="../../../../design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="../../../../design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int/">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="../../../../fr.html">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="../../../A-Propos/Nous-contacter.html">Contact</a> | </li>
+			<li><a href="../../../A-Propos/A-propos.html">About</a> | </li>
+							<li><a href="../../../user/login.html">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="../../../A-Propos/A-propos-de-RSS.html">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="../../../../en/Dossiers/Commodities/Livestock/Related-developments.html">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="http://knowledge.cta.int/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="../../../../design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="../../Les-S-T-au-CTA.html">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-et-politiques-agricoles.html">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-et-defis-agricoles.html">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="../../Produits-de-base.html">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="../../../Blogs.html">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP.html">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation.html">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Bourses-et-appels.html">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Developpements.html">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Etudes-de-cas-STIA.html">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Evenements.html">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Infolettres-K4D.html">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Offres-d-emploi.html">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Annuaire-des-organismes.html">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Afrique.html">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes.html">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="../../../maps/items.html">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Monde.html">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique.html">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA.html">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Publications.html">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise.html">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover.html">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production.html">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture.html">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole.html">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche.html">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole.html">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-propriete-intellectuelle.html">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-prospective.html">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole.html">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-science-et-l-ethique.html">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC.html">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural.html">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Les-systemes-d-innovation.html">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Agroforesterie.html">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Biodiversite-agricole.html">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Biotechnologie.html">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Resilience-aux-changements-climatiques.html">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Securite-sanitaire-des-aliments.html">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides.html">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/L-eau-pour-l-agriculture.html">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Nanotechnologies.html">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Ameliorer-la-nutrition.html">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes.html">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/L-epuisement-du-phosphore.html">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/La-protection-des-sols.html">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux.html">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Systemes-de-semences.html">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Securite-alimentaire.html">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux.html">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-defis-agricoles/Teledetection-et-SIG.html">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../Autres-produits-de-base.html">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="../Autres-produits-de-base/Bananes.html">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="../Autres-produits-de-base/Cafe.html">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Biocarburants.html">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Betail.html">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP.html">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Canne-a-sucre.html">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Fruits.html">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Une-autre-approche-de-la-chaine-de-valeur-du-riz.html">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Legumes.html">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Manioc.html">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Produits-laitiers.html">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Peches.html">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Ameliorer-la-chaine-de-valeur-du-sorgho.html">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Epices-et-plantes-medicinales.html">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="../../../../fr.html">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../../Dossiers.html">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../Produits-de-base.html">Produits de base</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../Betail.html">Bétail</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Aliments-pour-animaux-des-producteurs-a-la-pointe-de-la-technologie.html" title="Aliments pour animaux : des producteurs à la pointe de la technologie " alt="link">Aliments pour animaux : des producteurs à la pointe de la technologie </a></h2>
+
+	
+					<p>Pour l’industrie de l’alimentation animale, les nouveaux dispositifs portables représentent un moyen d’échapper à la dichotomie entre laboratoire et terrain. Eliminant la nécessité d’expédier les échantillons vers des laboratoires centralisés, les analyseurs portatifs transmettent rapidement des résultats exploitables là où cela est nécessaire. La capacité à procéder à des tests en de multiples points de la chaîne d’approvisionnement s’avère importante pour la traçabilité et la qualité. Pour les fabricants d’aliments pour animaux, la demande d’efficacité, de transparence et de performance accrues ne pourra que s’accroître. Afin de garder une longueur d’avance sur la concurrence, et de réduire les coûts liés aux procédures de contrôle de la qualité, le secteur continuera de s’adapter et les technologies telles que la spectroscopie proche infrarouge portable jouera à l’avenir un rôle de plus en plus important. L’amélioration de l’efficacité de part en part de la chaîne d’approvisionnement permettra aux producteurs d’aliments pour animaux d’atteindre des niveaux de croissance sans précédent. (AllAboutFeed.com, 19/12/2014)</p>
+							<p><span class="date">10/03/2015</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Aliments-pour-animaux-des-producteurs-a-la-pointe-de-la-technologie.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Les-algues-auraient-une-valeur-nutritionnelle-prometteuse-pour-l-alimentation-animale.html" title="Les algues auraient une valeur nutritionnelle prometteuse pour l’alimentation animale   " alt="link">Les algues auraient une valeur nutritionnelle prometteuse pour l’alimentation animale   </a></h2>
+
+	
+					<p>Une opportunité prometteuse existe pour les espèces d’algues spécifiques, sur la base de l’analyse de la valeur nutritionnelle. L’étude menée par le Centre pour l’alimentation animale de l’Université de Wageningen (WUR), aux Pays-Bas, a évalué la valeur nutritionnelle de diverses espèces d’algues en Europe et l’influence d’un procédé de bioraffinage sur la valeur des résidus. Les résultats de l’étude soulignent l’importance d’une sélection adéquate d’espèces mais aussi la nécessité de poursuivre les travaux en vue de confirmer ces résultats basés sur la digestibilité in vivo et les études de performance. &nbsp;&nbsp;(AllAboutFeed.com, 01/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Les-algues-auraient-une-valeur-nutritionnelle-prometteuse-pour-l-alimentation-animale.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Base-de-donnees-mondiale-l-analyse-du-genome-de-bovins-vue-en-detail.html" title="Base de données mondiale : l’analyse du génome de bovins vue en détail   " alt="link">Base de données mondiale : l’analyse du génome de bovins vue en détail   </a></h2>
+
+	
+					<p>La connaissance détaillée des variations du génome des bovins s’est nettement améliorée grâce à la création d’une base de données mondiale qui contient des données sur les races Angus, Holstein, Jersey et Fleckvieh, et les génomes de plus de 1&nbsp;200 animaux. La nouvelle base de données de première génération, qui sera en accès libre, est constituée de génomes séquencés pour un certain nombre de taureaux et repose sur de nouvelles techniques de séquençage. Les résultats de ces travaux de recherche menés par Hans D. Daetwyler du Department of Environment and Primary Industries, en Australie, ont été publiés dans la revue <i>Nature Genetics</i>. Des chercheurs d’autres pays sont encouragés à s’associer au projet afin d’assurer un flux continu de données. Les principaux taureaux ont des filles dans le monde entier&nbsp;; la force de ce projet réside donc dans l’intégration de toutes les données au sein d’une même base. &nbsp; &nbsp;(ScienceDaily, 03/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Base-de-donnees-mondiale-l-analyse-du-genome-de-bovins-vue-en-detail.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Modeles-d-adaptation-du-genome-du-mouton-aux-pressions-selectives-generees-par-le-climat.html" title="Modèles d’adaptation du génome du mouton aux pressions sélectives générées par le climat   " alt="link">Modèles d’adaptation du génome du mouton aux pressions sélectives générées par le climat   </a></h2>
+
+	
+					<p>Contrairement à de nombreuses études visant à trouver des preuves de sélection uniquement au moyen de données génétiques de l’ensemble d’une population, Feng-Hua Lv, de l’Académie chinoise des sciences (Chine), en collaboration avec une équipe de chercheurs internationaux, a criblé le génome du mouton afin d’identifier des signaux de sélection en intégrant des données génétiques et climatiques. Selon les chercheurs, l’adaptation aux climats locaux a influé sur la répartition spatiale de certaines variantes génétiques et, par conséquent, ces loci aident probablement le mouton à s’adapter aux problèmes environnementaux. De nouvelles études moléculaires et fonctionnelles sur les gènes candidats proches de marqueurs significatifs aideront à élucider l’architecture génétique des caractéristiques adaptatives résultant du climat chez le mouton et d’autres animaux d’élevage. &nbsp;&nbsp;(École polytechnique fédérale de Lausanne, 01/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Modeles-d-adaptation-du-genome-du-mouton-aux-pressions-selectives-generees-par-le-climat.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Des-animaux-d-elevage-capables-de-survivre-au-changement-climatique.html" title="Des animaux d’élevage capables de survivre au changement climatique    " alt="link">Des animaux d’élevage capables de survivre au changement climatique    </a></h2>
+
+	
+					<p>Un rapport du <i>Los Angeles Times</i> décrit les efforts déployés par Carl Schmidt et ses collègues de l’Université du Delaware (États-Unis) pour développer des poulets résistants à la chaleur. Ils tentent de cartographier le code génétique des poulets africains à cou nu afin de déterminer si leur capacité de résistance à la chaleur peut être introduite dans les élevages de poulets aux États-Unis. &nbsp; &nbsp;<a href="http://www.latimes.com/nation/la-na-climate-chickens-20140504-story.html#page=1" target="_self">http://www.latimes.com/nation/la-na-climate-chickens-20140504-story.html#page=1</a>&nbsp; &nbsp;&nbsp;(<i>Los Angeles Times</i>, 03/05/2014) &nbsp; &nbsp;Note de l’éditeur&nbsp;: Julius Kofi Hagan, du Département des sciences animales de l’École d’agriculture de l’Université de Cape Coast, au Ghana, s’est vu décerner le troisième prix du concours Jeunes professionnels et sciences pour ses travaux de recherche sur la reproduction de races de volailles très productives en milieu tropical chaud et humide. L’étude menée dans le cadre de ce programme de reproduction a permis d’introduire deux gènes tolérants à la chaleur – les traits neck (<i>Na</i>), cou nu, et frizzle (<i>F</i>), frisées – chez les pondeuses Lohman Brown, un volatile importé d’origine hybride, afin de les rendre plus productives au Ghana. Comment partager les bénéfices tirés de la mise au point de variétés améliorées aux États-Unis à partir de ressources phytogénétiques en Afrique&nbsp;? Quels sont les instruments politiques à disposition&nbsp;? Le Professeur Luke Mumba a informé <i>Connaissances pour le développement</i> que des efforts étaient actuellement déployés sur le continent africain pour protéger et dans le même temps utiliser de manière durable la biodiversité et les savoirs autochtones de l’Afrique.&nbsp;Grâce au soutien du NEPAD/SANBio, le Centre des ressources phytogénétiques de la SADC a publié en juin 2013 des directives sur les ressources phytogénétiques pour l’alimentation et l’agriculture (<a href="http://www.spgrc.org.zm/" target="_self">www.spgrc.org.zm</a>).&nbsp;Au niveau continental, la Commission de l’UA travaille sur des directives visant à réglementer l’accès, l’utilisation et la protection de la biodiversité et des savoirs autochtones. &nbsp; &nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Des-animaux-d-elevage-capables-de-survivre-au-changement-climatique.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Ameliorer-l-alimentation-du-betail-pour-lutter-contre-le-changement-climatique-et-l-insecurite-alimentaire.html" title="Améliorer l’alimentation du bétail pour lutter contre le changement climatique et l’insécurité alimentaire   " alt="link">Améliorer l’alimentation du bétail pour lutter contre le changement climatique et l’insécurité alimentaire   </a></h2>
+
+	
+					<p>Des travaux de recherche menés par l’Institut international pour l’analyse des systèmes appliqués (IIASA, Autriche) révèlent que, chez le bétail, le passage d’une alimentation à base de pâturages naturels à un régime complété par des aliments de meilleure qualité permettra de réduire les émissions de gaz à effet de serre (GES) de 23&nbsp;% d’ici 2030. Si la réduction de viande dans les régimes alimentaires est souvent considérée comme un moyen permettant de réduire les émissions de GES, l’article explique que, au cours des années à venir, il sera plus rentable pour les exploitants de mettre en place des systèmes de production mixtes – systèmes herbagers et aliments de meilleure qualité – que d’avoir recours à une production purement herbagère. Cela permettrait en effet de réduire de 23&nbsp;% les émissions liées à l’utilisation des terres au cours des deux prochaines décennies sans devoir mettre en œuvre une politique explicite en matière de lutte contre le changement climatique. D’après cette nouvelle étude, la hausse du coût des terrains et l’augmentation continue des rendements agricoles entraîneront une amélioration de l’alimentation animale. De tels régimes alimentaires sont une aubaine non seulement du point de vue de la possibilité de réduction des émissions de GES, mais aussi du point de vue de la maximisation des profits des exploitations et de la production alimentaire. &nbsp; &nbsp;<a href="http://www.iiasa.ac.at/web/home/about/news/20140225-PNAS.html" target="_self">http://www.iiasa.ac.at/web/home/about/news/20140225-PNAS.html</a>&nbsp; &nbsp;(IIASA, 25/02/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Ameliorer-l-alimentation-du-betail-pour-lutter-contre-le-changement-climatique-et-l-insecurite-alimentaire.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/L-efficience-de-l-elevage-extensif-en-milieu-difficile.html" title="L’efficience de l’élevage extensif en milieu difficile   " alt="link">L’efficience de l’élevage extensif en milieu difficile   </a></h2>
+
+	
+					<p>Une récente étude conduite par le CIRAD dans quatre régions du monde montre que des systèmes laitiers extensifs au Mali peuvent être plus efficients que des systèmes intensifs à La Réunion, et d’une efficience comparable à celle de systèmes semi-intensifs de l’Ouest de la France. Ce résultat a été obtenu avec la méthode Emergy, qui évalue, avec une même unité, toutes les ressources utilisées au regard de la production, alimentaire et non alimentaire. Cette méthode permet de mieux prendre en compte la complexité et la multifonctionnalité des systèmes d’élevage, notamment des élevages extensifs. La méthode Emergy est un outil que les décideurs gagneraient à utiliser pour élaborer des politiques d’élevage adaptées à chaque contexte et pour pouvoir ainsi répondre à la demande croissante de produits d’origine animale. &nbsp; &nbsp;<a href="http://www.cirad.fr/en/news/all-news-items/articles/2014/ca-vient-de-sortir/perspective-25-emergy-method-shows-the-efficiency-of-extensive-livestock-systems" target="_self">http://www.cirad.fr/en/news/all-news-items/articles/2014/ca-vient-de-sortir/perspective-25-emergy-method-shows-the-efficiency-of-extensive-livestock-systems</a>&nbsp; &nbsp;(CIRAD, 07/02/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/L-efficience-de-l-elevage-extensif-en-milieu-difficile.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Proteines-de-lait-provenant-des-races-Holstein-tres-bonnes-productrices-une-source-d-intolerance-au-lactose.html" title="Protéines de lait provenant des races Holstein, très bonnes productrices : une source d’intolérance au lactose   " alt="link">Protéines de lait provenant des races Holstein, très bonnes productrices : une source d’intolérance au lactose   </a></h2>
+
+	
+					<p>Les humains présentant des symptômes d’intolérance au lactose seraient incapables de digérer la protéine&nbsp;A1, que l’on retrouve fréquemment dans le lait des races Holstein, très bonnes productrices, élevées dans les laiteries industrielles des États-Unis et parfois d’Europe. La protéine&nbsp;A1 est beaucoup moins présente dans le lait des races Jersey, Guernsey et de la plupart des races asiatiques et africaines chez lesquelles la protéine&nbsp;A2 est prédominante. La différence entre les protéines&nbsp;A1 et A2 est subtile. Chez les vaches laitières européennes, la caséine bêta&nbsp;A2 s’est transformée en caséine bêta&nbsp;A1 il y a plusieurs milliers d’années. Il y a deux codes génétiques pour la caséine bêta, ce qui signifie que les vaches modernes peuvent être soit purement A2, soit des hybrides&nbsp;A1/A2, soit purement A1. Le lait de chèvre et le lait humain contiennent uniquement de la caséine bêta&nbsp;A2&nbsp;; pourtant, tout le monde n’aime pas forcément le goût du lait de chèvre, qui contient comparativement moins de vitamine&nbsp;B12 – un élément nutritif essentiel qui contribue à la formation des globules rouges. &nbsp;&nbsp;Note de l’éditeur&nbsp;: une autre raison de favoriser les races locales pour la production laitière&nbsp;? Dans les pays en développement, il se pourrait bien que le choix des produits laitiers par les consommateurs soit déterminé par la teneur en protéines&nbsp;A2. &nbsp;&nbsp;<a href="http://www.motherjones.com/environment/2014/03/a1-milk-a2-milk-america" target="_self">http://www.motherjones.com/environment/2014/03/a1-milk-a2-milk-america</a>&nbsp; &nbsp;(<i>Mother Jones</i>, 12/03/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Proteines-de-lait-provenant-des-races-Holstein-tres-bonnes-productrices-une-source-d-intolerance-au-lactose.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Developpement-integre-et-durable-de-l-aquaculture-en-Sierra-Leone.html" title="Développement intégré et durable de l’aquaculture en Sierra Leone   " alt="link">Développement intégré et durable de l’aquaculture en Sierra Leone   </a></h2>
+
+	
+					<p>Olapade Olufemi Julius, professeur de gestion des pêches et de l’aquaculture de l’Université Njala (Sierra Leone) et coordonnateur régional au CORAF/WECARD, décrit le projet rizipisciculture, production porcine et avicole qui a été lancé récemment en Sierra Leone. Grâce à la mise en place d’interventions technologiques appropriées compatibles avec l’expérience du terrain, on espère que cette technique agricole et aquacole intégrée favorisera une utilisation judicieuse et économique de l’eau, des sols et des autres ressources. Dans le cadre de tels systèmes, les composantes du cycle des éléments nutritifs des exploitations sont utilisées plus efficacement. &nbsp;&nbsp;<a href="http://goo.gl/zg9Ijm" target="_self">http://goo.gl/zg9Ijm</a>&nbsp; &nbsp;(DRUSSA, 24/01/2014)</p>
+							<p><span class="date">10/04/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Developpement-integre-et-durable-de-l-aquaculture-en-Sierra-Leone.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/L-evolution-des-cycles-de-l-azote-et-du-phosphore-dans-l-agriculture-due-a-la-production-animale-sur-la-periode-1900-2050.html" title="L’évolution des cycles de l’azote et du phosphore dans l’agriculture due à la production animale sur la période 1900–2050 " alt="link">L’évolution des cycles de l’azote et du phosphore dans l’agriculture due à la production animale sur la période 1900–2050 </a></h2>
+
+	
+					<p>Les systèmes de production de l’agriculture et de l’élevage sont la principale cause des modifications des cycles de l’azote et du phosphore occasionnées par les activités humaines dans le monde. Ce rapport de recherche élaboré par Mario Herrero de l’ILRI est un inventaire détaillé spatialement explicite des bilans azote et phosphore dans les systèmes de production de l’agriculture et de l’élevage. Il montre qu’au début du 20ème siècle, les bilans des éléments nutritifs étaient équilibrés ou en surplus, et qu’entre 1900 et 1950, les surplus d’azote dans les sols mondiaux avaient presque été multipliés par 8. Entre 1950 et 2000, le surplus mondial d’azote a augmenté de presque 400 % et le surplus mondial de phosphore de plus de 500 %. Le surplus d’azote constitue une perte environnementale et le surplus de phosphore s’accumule dans le sol. Malgré une récupération rapide de l’azote et du phosphore par les cultures et l’élevage, les surplus mondiaux d’éléments nutritifs continuent d’augmenter. Une gestion alternative des systèmes de production de l’élevage montre qu’en combinant l’intensification, l’intégration du fumier animal dans la production agricole et l’apport en azote et en phosphore d’origine animale, il est possible de réduire effectivement les flux d’éléments nutritifs. L’évolution de l’alimentation humaine (remplacement du bœuf par la volaille ou le porc) permet de réduire les flux d’éléments nutritifs dans les pays où la production de ruminants est intensive. &nbsp; &nbsp; &nbsp;<a href="http://www.pnas.org/content/110/52/20882.full" target="_self">http://www.pnas.org/content/110/52/20882.full</a>&nbsp; &nbsp;&nbsp;(<i>PNAS</i>, 24/12/2013) &nbsp; &nbsp;</p>
+							<p><span class="date">27/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/L-evolution-des-cycles-de-l-azote-et-du-phosphore-dans-l-agriculture-due-a-la-production-animale-sur-la-periode-1900-2050.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Consultation-d-experts-sur-la-gestion-des-maladies-transfrontalieres-ayant-un-impact-sur-l-agriculture-dans-la-region-Asie-Pacifique-comptes-rendus-et-recommandations" title="Consultation d’experts sur la gestion des maladies transfrontalières ayant un impact sur l’agriculture dans la région Asie-Pacifique : comptes rendus et recommandations " alt="link">Consultation d’experts sur la gestion des maladies transfrontalières ayant un impact sur l’agriculture dans la région Asie-Pacifique : comptes rendus et recommandations </a></h2>
+
+	
+					<p>Afin d’établir une plate-forme commune destinée à lutter contre les maladies transfrontalières, le programme de biotechnologie de l’Association des institutions de recherche agricole de l’Asie et du Pacifique (APAARI), connu sous le nom de Consortium Asie-Pacifique sur les biotechnologies agricoles (APCoAB), en collaboration avec le Conseil indien de la recherche agricole (ICAR), a organisé cette consultation d’experts du 10 au 12 octobre 2012 à New Delhi. Les participants ont fait le point sur l’occurrence et l’impact des maladies transmises par les tiques, les progrès réalisés dans la R&amp;D, les besoins actuels et futurs pour gérer ces maladies en vue d’atténuer leur impact. Parmi les principales recommandations concernant les maladies transfrontalières chez les plantes, les animaux et les poissons, ainsi que leur gestion dans la région, figurent une meilleure documentation et un renforcement des capacités de diagnostic des maladies transmises par les tiques, de la surveillance au niveau régional, la fiabilité des banques d’antigènes, ainsi que le renforcement des infrastructures de préparation et de réponse rapide.&nbsp;<a href="http://www.apaari.org/publications/tbds-201.html" target="_self">http://www.apaari.org/publications/tbds-201.html</a>(APAARI, 01/12/2013)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Consultation-d-experts-sur-la-gestion-des-maladies-transfrontalieres-ayant-un-impact-sur-l-agriculture-dans-la-region-Asie-Pacifique-comptes-rendus-et-recommandations">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Politiques-relatives-aux-maladies-des-animaux-d-elevage-construire-des-ponts-entre-les-sciences-animales-et-l-economie.html" title="Politiques relatives aux maladies des animaux d’élevage : construire des ponts entre les sciences animales et l’économie " alt="link">Politiques relatives aux maladies des animaux d’élevage : construire des ponts entre les sciences animales et l’économie </a></h2>
+
+	
+					<p>En juin 2013, l’OCDE a organisé la conférence intitulée «&nbsp;Les politiques relatives aux maladies des animaux d’élevage : construire des ponts entre les sciences animales et l’économie&nbsp;». Cette conférence a examiné comment l’économie et les sciences animales peuvent contribuer à gérer les risques de maladies des animaux d’élevage d’une manière efficace et exhaustive. Les quatre thèmes couverts étaient les suivants : 1) comment entamer un dialogue constructif afin de réduire et de gérer les incertitudes; 2) l’évaluation économique de l’impact des maladies animales et des mesures de contrôle; 3) l’impact des politiques sur les incitations économiques pour les éleveurs et le système alimentaire; et 4) l’élaboration de politiques et la communication dans un monde incertain. Une recommandation précise que les économistes, les épidémiologistes et les décideurs politiques doivent communiquer de façon claire afin d’élaborer des politiques de gestion des maladies des animaux d’élevage plus efficaces. Toutes les présentations et les actes de la conférence sont disponibles en ligne.&nbsp;&nbsp;<a href="http://www.lcirah.ac.uk/node/139" target="_self">http://www.lcirah.ac.uk/node/139</a><a href="http://www.oecd.org/tad/agricultural-policies/livestock-diseases-2013.htm" target="_self">http://www.oecd.org/tad/agricultural-policies/livestock-diseases-2013.htm</a>(LCIRAH, 12/2013)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Politiques-relatives-aux-maladies-des-animaux-d-elevage-construire-des-ponts-entre-les-sciences-animales-et-l-economie.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Faire-payer-des-droits-sur-l-utilisation-non-humaine-des-antibiotiques-dans-l-agriculture-et-l-aquaculture.html" title="Faire payer des droits sur l’utilisation non-humaine des antibiotiques dans l’agriculture et l’aquaculture " alt="link">Faire payer des droits sur l’utilisation non-humaine des antibiotiques dans l’agriculture et l’aquaculture </a></h2>
+
+	
+					<p>Aidan Hollis, professeur d’économie de l’Université de Calgary (Canada) et Ziana Ahmed, co-auteur, ont publié les résultats de leurs travaux de recherche sur les moyens viables d’éviter une crise sanitaire induite par l’utilisation abusive des antibiotiques dans le secteur. Ils proposent de faire payer des droits d’utilisation aux acteurs qui utilisent des antibiotiques à des fins non-humaines et font le parallèle avec les droits de coupes des forestiers et les redevances des compagnies pétrolières. Une telle pratique permettrait de dissuader l’utilisation d’antibiotiques de faible valeur, des coûts plus élevés encourageant les agriculteurs à améliorer leurs méthodes de gestion des animaux et à adopter de meilleurs substituts comme médicaments, notamment les vaccins. La forme la plus efficace serait d’adopter un traité international, selon Hollis. Un tel traité respecterait la conformité internationale, dans la mesure où les gouvernements ont tendance à être motivés par les perspectives de recettes.&nbsp;&nbsp;<a href="http://www.eurekalert.org/pub_releases/2013-12/uoc-rse122313.php" target="_self">http://www.eurekalert.org/pub_releases/2013-12/uoc-rse122313.php</a>(EurekAlert, 25/12/2013)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Faire-payer-des-droits-sur-l-utilisation-non-humaine-des-antibiotiques-dans-l-agriculture-et-l-aquaculture.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="event" href="Developpements/6e-Conference-sur-l-agriculture-animale-en-Afrique.html" title="6e Conférence sur l’agriculture animale en Afrique " alt="event">6e Conférence sur l’agriculture animale en Afrique </a></h2>
+
+	
+	
+					<p>Date : 27–30 octobre 2014&nbsp;&nbsp;&nbsp;&nbsp;Lieu : Kenyatta International Conference Centre, Nairobi (Kenya)&nbsp;&nbsp;&nbsp;&nbsp;Date limite du second et dernier appel à propositions : 31 mars 2014&nbsp;&nbsp;&nbsp;Organisée par l’Animal Production Society of Kenya (APSK) et le Ministère de l’Agriculture, de l’Elevage et de la Pêche, en collaboration avec l’AASAP (All Africa Society for Animal Production), cette conférence aura pour thème «&nbsp;L’agriculture animale en Afrique&nbsp;: macro-tendances et opportunités futures&nbsp;».&nbsp;&nbsp;&nbsp;L’objectif prioritaire de la conférence est de permettre aux chercheurs africains, ainsi qu’aux acteurs du secteur de l’élevage, d’examiner le rôle potentiel de l’agriculture animale dans le but d’améliorer les moyens d’existence en Afrique. Les participants à ce grand rassemblement seront en outre amenés à répondre aux questions portant sur les domaines thématiques qui seront abordés. A la fin de la conférence, des recommandations spécifiques devraient être formulées afin de répondre aux questions majeures.&nbsp;&nbsp;</p>
+					<p><span class="date">lundi 27 octobre 2014 - jeudi 30 octobre 2014</p><div class="cnt">
+	<a class="event" href="Developpements/6e-Conference-sur-l-agriculture-animale-en-Afrique.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Des-chercheurs-percent-le-secret-de-la-resistance-des-tiques-du-betail-aux-pesticides.html" title="Des chercheurs percent le secret de la résistance des tiques du bétail aux pesticides " alt="link">Des chercheurs percent le secret de la résistance des tiques du bétail aux pesticides </a></h2>
+
+	
+					<p>Grâce au traitement fréquent du bétail contre les acariens parasites – pesticides utilisés contre les tiques et les mites – principalement l’amitraz, les ivermectines et les pyréthroïdes, les tiques sont devenus de plus en plus résistants aux pesticides. Nicholas Jonsson, de l’Institut de biodiversité, de santé animale et de médecine comparée de l’Université de Glasgow (Royaume-Uni), et ses collègues de l’Université du Queensland (Australie), ont découvert comment les tiques parviennent à développer une résistance à l’un de ces principaux pesticides. Les chercheurs sont parvenus à identifier la base génétique d’au moins une forme de résistance à l’amitraz, ce qui permettra de mettre au point un test génétique de résistance. Ces travaux de recherche ouvrent la voie à de nouveaux tests génétiques de résistance qui aideront les agriculteurs à prendre les bonnes décisions en matière de lutte contre les tiques. Cela permettra également de tester l’efficacité des stratégies de gestion de la résistance lors d’études empiriques sur le terrain et en laboratoire. &nbsp;&nbsp;<a href="http://www.eurekalert.org/pub_releases/2013-10/uog-sus100713.php" target="_self">http://www.eurekalert.org/pub_releases/2013-10/uog-sus100713.php</a>&nbsp; &nbsp;(EurekAlert, 07/10/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Des-chercheurs-percent-le-secret-de-la-resistance-des-tiques-du-betail-aux-pesticides.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Une-race-bovine-africaine-contiendrait-des-defenses-contre-la-trypanosomose.html" title=" Une race bovine africaine contiendrait des défenses contre la trypanosomose " alt="link"> Une race bovine africaine contiendrait des défenses contre la trypanosomose </a></h2>
+
+	
+					<p>Une race bovine naine d’Afrique de l’Ouest, les Baoulés, semble moins affectée par la maladie que les autres. Les scientifiques à l’origine de cette découverte ont mis au point une technique permettant d’identifier les parasites responsables de la trypanosomose et même de détecter en une seule fois trois formes différentes du parasite. Les informations recueillies sont extrêmement précieuses pour les vétérinaires et les éleveurs dans la mesure où chaque type de trypanosomose présente un degré de progression de la maladie légèrement différent et nécessite un traitement bien particulier. Les chercheurs ont prélevé des échantillons de sang sur trois types de bovins : des Baoulés, des Zébus indiens et des croisements issus de ces deux races. Il semblerait que le système immunitaire des Baoulés tolère des niveaux plus élevés du parasite sanguin. Une fois infectées, les Baoulés développent de la fièvre et perdent du poids mais ne meurent pas forcément. &nbsp; &nbsp;<a href="http://www.sciencedaily.com/releases/2013/09/130927092346.htm" target="_self">http://www.sciencedaily.com/releases/2013/09/130927092346.htm</a>&nbsp; &nbsp;(ScienceDaily, 27/09/2013)</p>
+							<p><span class="date">5/11/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Une-race-bovine-africaine-contiendrait-des-defenses-contre-la-trypanosomose.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Le-surpaturage-favorise-la-recrudescence-acridienne.html" title="Le surpâturage favorise la recrudescence acridienne  " alt="link">Le surpâturage favorise la recrudescence acridienne  </a></h2>
+
+	
+					<p>Une équipe de chercheurs originaires de l’Arizona et du Colorado, et des universités McGill et Yale, ont lancé un projet collaboratif pour savoir comment le comportement humain, les forces du marché et les écosystèmes interagissent au fil du temps avec les invasions de criquets. Les chercheurs réaliseront des études en Chine, au Sénégal et en Australie. Ils prennent appui sur des recherches antérieures (menées en Chine) ayant démontré que le surpâturage favorisait la recrudescence acridienne, notamment parce qu’il diminue la quantité d’azote nécessaire à la croissance des plantes. &nbsp;&nbsp;<a href="http://phys.org/news/2013-09-sustainable-ways-locust-outbreaks-worldwide.html" target="_self">http://phys.org/news/2013-09-sustainable-ways-locust-outbreaks-worldwide.html</a>&nbsp; &nbsp;(Phys.org, 30/09/2013) &nbsp;</p>
+							<p><span class="date">5/11/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Le-surpaturage-favorise-la-recrudescence-acridienne.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/L-hypothese-selon-laquelle-une-vache-a-besoin-d-un-apport-energetique-eleve-avant-velage-contestee.html" title="L’hypothèse selon laquelle une vache a besoin d’un apport énergétique élevé avant vêlage contestée   " alt="link">L’hypothèse selon laquelle une vache a besoin d’un apport énergétique élevé avant vêlage contestée   </a></h2>
+
+	
+					<p>Phil Cardoso, chercheur en sciences animales, et ses collègues du College of Agricultural, Consumer and Environmental Sciences (ACES) de l’Université de l’Illinois, &nbsp;ont mené une expérience destinée à établir une comparaison entre les vaches nourries avant vêlage avec des aliments contenant la teneur en énergie recommandée &nbsp;et celles qui sont nourries avec des aliments contenant seulement 80 % de la quantité de produit énergétique. Les résultats ont révélé que les vaches nourries avec &nbsp;des aliments à valeur énergétique réduite étaient plus reproductives après vêlage&nbsp;; elles mettent bas environ 10 jours avant celles qui ont reçu une alimentation trop &nbsp;énergétique. &nbsp; &nbsp; &nbsp;<a href="http://www.alphagalileo.org/ViewItem.aspx?ItemId=133665&amp;CultureCode=en" target="_self">http://www.alphagalileo.org/ViewItem.aspx?ItemId=133665&amp;CultureCode=en</a>&nbsp; &nbsp; &nbsp;(AlphaGalileo, 14/08/2013) &nbsp; &nbsp;</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/L-hypothese-selon-laquelle-une-vache-a-besoin-d-un-apport-energetique-eleve-avant-velage-contestee.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Genetique-genomique-et-modification-genetique-ce-que-l-avenir-nous-reserve-en-matiere-de-production-animale.html" title="Génétique, génomique et modification génétique : ce que l’avenir nous réserve en matière de production animale " alt="link">Génétique, génomique et modification génétique : ce que l’avenir nous réserve en matière de production animale </a></h2>
+
+	
+					<p>Le Professeur David Hume, Directeur du Roling Institute de l’Université d’Edimbourg (Royaume-Uni), examine les défis à relever pour répondre à la demande de produits d’origine animale tout &nbsp;en réduisant l’impact environnemental global de ces produits. Selon Hume, il y a peu de chances pour que la variabilité génétique existant au sein des espèces animales continue de &nbsp;générer le taux de gain génétique ou le nombre de descendants obtenus par le passé. Il faudra d’autres types d’animaux génétiquement modifiés. Hume estime que la transgénèse (ou génie &nbsp;génétique) appliquée aux animaux, processus qui permet de produire les traits désirés, procurerait des avantages évidents au consommateur en termes de coût, de santé, de bien être des &nbsp;animaux et d’environnement, si les exigences réglementaires reposaient davantage sur des principes scientifiques que sur des faits établis. Il conclut que pour obtenir des gains de &nbsp;productivité durables, les gouvernements devront reconnaître la recherche en tant que «&nbsp;bien public&nbsp;», mais aussi investir massivement pour stimuler la R&amp;D dans le secteur de l’élevage.(BBSRC, 08/07/2013)</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Genetique-genomique-et-modification-genetique-ce-que-l-avenir-nous-reserve-en-matiere-de-production-animale.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Experimentation-d-un-systeme-simple-de-refroidissement-destine-aux-producteurs-laitiers-dans-les-zones-rurales-en-Ethiopie.html" title="Expérimentation d’un système simple de refroidissement destiné aux producteurs laitiers dans les zones rurales en Ethiopie " alt="link">Expérimentation d’un système simple de refroidissement destiné aux producteurs laitiers dans les zones rurales en Ethiopie </a></h2>
+
+	
+					<p>Lia Bardoel, étudiante en master spécialisé en design industriel de l’Université de technologie d’Eindhoven (Pays-Bas), a présenté ses travaux consacrés à un système de refroidissement à &nbsp;énergie solaire du lait ainsi que les études qu’elle a menées sur son utilisation dans les régions reculées. Le système de refroidissement vise à améliorer la qualité du lait issu de la traite du &nbsp;soir et donc les revenus des petits producteurs. Le système à énergie solaire installé dans les centres de collecte du lait produit de la glace que les producteurs peuvent emmener chez eux &nbsp;la journée pour refroidir le lait issu de la traite du soir avant de le rapporter au centre de collecte le jour suivant. Ce système, développé dans le cadre du projet LIVES (<i>Livestock and &nbsp;Irrigation Value chains for Ethiopian Smallholders</i>) en Ethiopie, a été conçu pour être raccordé au réseau d’alimentation électrique ou solaire. Une vidéo postée sur cette page web explique &nbsp;de manière plus détaillée comment le système de refroidissement fonctionne sur le terrain.&nbsp;&nbsp;</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Experimentation-d-un-systeme-simple-de-refroidissement-destine-aux-producteurs-laitiers-dans-les-zones-rurales-en-Ethiopie.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+            
+            <span class="next"><a href="Developpements/(offset)/20.html"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+    
+        <span class="current">1</span>
+
+                      <span class="other"><a href="Developpements/(offset)/20.html">2</a></span>
+                              <span class="other"><a href="Developpements/(offset)/40.html">3</a></span>
+                              <span class="other"><a href="Developpements/(offset)/60.html">4</a></span>
+                              <span class="other"><a href="Developpements/(offset)/80.html">5</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="../../../content/view/full/10094.html"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="../../Les-S-T-au-CTA/Infolettres-K4D.html">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="../../../A-Propos/Nous-contacter.html">
+					<img src="../../../../design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="../../../../design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="../../../../design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="../../../A-Propos/A-propos-de-RSS.html">
+					<img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="http://knowledge.cta.int/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="../../../Blogs/Judith-s-blog.html">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-mars-2015.html">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015.html">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development.html">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="../../../A-Propos/A-propos-de-RSS.html"><img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers.html">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs.143.d">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D.html">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="../../Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective.html">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015.html">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="../../../A-Propos/Notice-legale.html" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org/"><img alt="ACP" src="../../../../design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu/"><img alt="EU" src="../../../../design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":2018,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/Produits-de-base/Betail/Developpements by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:40:27 GMT -->
+</html>

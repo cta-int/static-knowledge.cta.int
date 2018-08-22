@@ -1,0 +1,1351 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from knowledge.cta.int/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS/Related-developments by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 19:56:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Related developments / Remote sensing and GIS / S&amp;T Issues / Dossiers / Home - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" science, technology, agriculture, ACP, development, rural development, rural, Africa, Pacific, Caribbean, S&amp;T, policy dialogue, agricultural development, scientific, research and development, technology, policy, science and technology for the development"/>    
+
+<link rel="Home" href="../../../../en.html" title="Knowledge front page"/>
+<link rel="Index" href="../../../../en.html"/>
+<link rel="Search" href="../../../content/search.html" title="Search Knowledge"/>
+<link rel="Shortcut icon" href="../../../../design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="http://knowledge.cta.int/en/layout/set/print/Dossiers/S-T-Issues/Remote-sensing-and-GIS/Related-developments" media="print" title="Printable version"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="../../../../design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="../../../../design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int/">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="../../../../en.html">
+		<span class="header-image-eng-GB">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="../../../About/Contact-Us.html">Contact</a> | </li>
+			<li><a href="../../../About/About.html">About</a> | </li>
+							<li><a href="../../../user/login.html">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="../../../About/Content-syndication-on-this-website.html">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="../../../../fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG/Developpements.html">Fran&ccedil;ais</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="http://knowledge.cta.int/en/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="../../../../design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="../../CTA-and-S-T.html">
+					<span class="">CTA and S&amp;T</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-Policy.html">
+					<span class="">S&amp;T Policy</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-Issues.html">
+					<span class="">S&amp;T Issues</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="../../Commodities.html">
+					<span class="">Commodities</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="../../../Blogs.html">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="../../CTA-and-S-T/ACP-policy-briefs.html">
+						<span class="">ACP policy briefs</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/ACP-young-professionals-and-women.html">
+						<span class="">ACP young professionals and women</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/ASTI-case-study-reports.html">
+						<span class="">ASTI case study reports</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/CTA-S-T-programme.html">
+						<span class="">CTA S&amp;T programme</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/Developments.html">
+						<span class="">Developments</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/Selected-events.html">
+						<span class="">Events</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/Fellowships-grants-calls.html">
+						<span class="">Fellowships, grants &amp; calls</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/Selected-jobs-opportunities.html">
+						<span class="">Job opportunities</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/K4D-e-Newsletters.html">
+						<span class="">K4D e-Newsletters</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/Selected-publications.html">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../CTA-and-S-T/S-T-organisations.html">
+						<span class="">S&amp;T organisations</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="../../CTA-and-S-T/S-T-organisations/Africa.html">Africa</a></dt><dd>A selection of S&amp;T organisations in Africa.</dd>
+						
+												
+						<dt><a href="../../../maps/items.html">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="../../CTA-and-S-T/S-T-organisations/International.html">International</a></dt><dd>A selection of international S&amp;T organizations.</dd>
+						
+												
+						<dt><a href="../../CTA-and-S-T/S-T-organisations/The-Caribbean.html">The Caribbean</a></dt><dd>A selection of S&amp;T organisations in the Caribbean.</dd>
+						
+												
+						<dt><a href="../../CTA-and-S-T/S-T-organisations/The-Pacific.html">The Pacific</a></dt><dd>A selection of S&amp;T organisations in the Pacific.</dd>
+						
+											</dl>
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../S-T-Policy/ACP-agricultural-S-T-dialogue.html">
+						<span class="">ACP S&amp;T dialogue</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-Policy/ACP-agricultural-S-T-dialogue/Demanding-Innovation.html">Demanding Innovation</a></dt><dd>Researchers in ACP countries are facing a growing range of challenges. They are required to respond effectively to the demands of policy makers, private sector investors and donor agencies, farmers and other stakeholders in the agri-food chain. They are being asked to deliver research outputs that will improve agricultural productivity, food quality and food safety, in order to increase their countries competitiveness in global markets, and contribute to food security, poverty alleviation and sustainable development. At the same time, researchers must be socially and ethically responsible and contribute to the advancement of science and technology. As the demands for accountability increase and the levels of funding diminish, researchers need to prioritize and strategize their responses.</dd>
+						
+												
+						<dt><a href="../../S-T-Policy/ACP-agricultural-S-T-dialogue/Differentiated-S-T-strategies-for-improving-productivity-of-ACP-farming-systems.html">Differentiated S&amp;T strategies for improving productivity of ACP farming systems</a></dt><dd>ACP farming systems are very diverse and the scientific community must be able to provide adequate responses to meet the varied needs of small subsistence farmers who make up the majority of the ACP farming community while simultaneously addressing the needs of the medium to large-scale farming enterprises to compete on price, quality, responsiveness to changing consumer demands and reliability in supply in all markets. Therein lies the challenge as there is no one-size fits all approach that will enable researchers to respond to the needs of small scale farmers who are primarily concerned with sustainable livelihoods or medium to large-scale farms who wish to remain competitive and take advantage of any opportunities despite deteriorating environmental conditions and trade and economic restrictions. Within the last few years, the ACP region has seen a resurgence of emphasis on family farms which are being valued not only for their contribution to maintaining social order but to environmental sustainability. This dossier provides guidance and lessons learned on the need for the ACP region to apply a differentiated strategic approach for using science to enhance the performance of ACP agricultural sector.</dd>
+						
+												
+						<dt><a href="../../S-T-Policy/ACP-agricultural-S-T-dialogue/Early-dialogues-on-S-T-policy.html">Early dialogues on S&amp;T policy</a></dt><dd>Some of the most relevant briefs, notes and documents related to the pre-2007 ACP Agricultural S&amp;T policy discussions.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/EU-agricultural-S-T-dialogue.html">
+						<span class="">EU S&amp;T dialogue</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Ethics.html">
+						<span class="">Ethics</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Financing-ARD.html">
+						<span class="">Financing ARD</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Foresighting.html">
+						<span class="">Foresighting</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/ICKM-MIS-ICT.html">
+						<span class="">ICKM / MIS / ICT</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-Policy/ICKM-MIS-ICT/ICT-for-transforming-research-for-agricultural-and-rural-development.html">ICT for transforming research for agricultural and rural development</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Innovation-systems.html">
+						<span class="">Innovation systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Intellectual-property.html">
+						<span class="">Intellectual property</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Measuring-the-impact-of-agricultural-research.html">
+						<span class="">Measuring the impact of agricultural research</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Participatory-approaches-in-ARD.html">
+						<span class="">Participatory R&amp;D</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Research-collaboration-in-a-globalised-world.html">
+						<span class="">Research collaboration</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-Policy/Reshaping-tertiary-agricultural-education.html">
+						<span class="">Tertiary agricultural education</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="../Agroforestry.html">
+						<span class="">Agroforestry</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Biodiversity.html">
+						<span class="">Biodiversity</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Biotechnology.html">
+						<span class="">Biotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Climate-change.html">
+						<span class="">Climate change</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Dryland-agriculture.html">
+						<span class="">Dryland agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Food-safety.html">
+						<span class="">Food safety</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Food-security.html">
+						<span class="">Food security</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Indigenous-knowledge-systems.html">
+						<span class="">Indigenous knowledge systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Innovations-in-tropical-food-processing.html">
+						<span class="">Innovations in tropical food processing </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Nanotechnology.html">
+						<span class="">Nanotechnology</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Improving-nutrition-outcomes.html">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Phosphorus-depletion.html">
+						<span class="">Phosphorus</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Reducing-Postharvest-Losses-A-Challenge-for-the-Scientific-Community.html">
+						<span class="">Postharvest losses</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Remote-sensing-and-GIS.html">
+						<span class="">Remote sensing / GIS</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Seed-systems.html">
+						<span class="">Seed systems</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Soil-health.html">
+						<span class="">Soil health </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Water.html">
+						<span class="">Water</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../Commodities/Biofuels.html">
+						<span class="">Biofuels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Cassava.html">
+						<span class="">Cassava</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Dairy.html">
+						<span class="">Dairy</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Fisheries.html">
+						<span class="">Fisheries</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Fruits.html">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Herbs-and-medicinal-plants.html">
+						<span class="">Herbs and medicinal plants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Livestock.html">
+						<span class="">Livestock</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../Commodities/Livestock/Enhancing-competitiveness-in-the-ACP-poultry-value-chain.html">Enhancing competitiveness in the ACP poultry value chain</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	The poultry value chain in Africa, Caribbean and the Pacific (ACP) countries involves both large-scale integrated enterprises and small-scale production systems. The former have benefited from capital investments, access to information and scientific research, whereas the latter remain isolated despite their significance. Family poultry comprises approximately 80% of the world's total poultry stock and plays a key role in many households in ACP countries for food and nutrition security, livelihoods and conservation of indigenous breeds. An analysis of the family poultry value chain, including its poor productivity and low financial and technical inputs, shows that it contrasts markedly with conditions in large-scale commercial poultry enterprises. Governments and researchers would be well advised to thoroughly review the family poultry value chains to identify priorities for science and innovation that can contribute to improved efficiency for the provision of eggs, live birds, fresh-chilled, frozen and other value-added poultry products.&nbsp;This summary is provided by CABI and CTA, July 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Other-commodities.html">
+						<span class="">Other commodities</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="../../Commodities/Other-commodities/Bananas.html">Bananas</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as banana are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+												
+						<dt><a href="../../Commodities/Other-commodities/Coffee.html">Coffee</a></dt><dd>The ACP Group of States need to adjust the approach to agricultural production, marketing and distribution to be able to compete in national, regional and international markets. Traditional commodities such as coffee are no longer assured of guaranteed prices and ready access to international markets. How then should the ACP region respond? Commodities, traditionally considered as food security crops are now being looked at in a different light. Can scientists assist the countries in making informed decisions to improve efficiency, cost effectiveness, quality and competitiveness?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Rethinking-the-rice-value-chain.html">
+						<span class="">Rice value chain</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Enhancing-the-sorghum-value-chain.html">
+						<span class="">Sorghum</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Sugarcane.html">
+						<span class="">Sugarcane</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Commodities/Vegetables.html">
+						<span class="">Vegetables</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="../../../../en.html">Home</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../../Dossiers.html">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../S-T-Issues.html">S&T Issues</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../Remote-sensing-and-GIS.html">Remote sensing and GIS</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Related developments</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Related developments</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Assessing-land-degradation-and-desertification-using-vegetation-index-data-current-frameworks-and-future-directions.html" title="Assessing land degradation and desertification using vegetation index data: current frameworks and future directions   " alt="link">Assessing land degradation and desertification using vegetation index data: current frameworks and future directions   </a></h2>
+
+	
+					<p>The scientific requirements for degradation and desertification monitoring systems are identified: (i) validation of methodologies in a robust and comparable manner and (ii) detection of degradation at minor intensities and magnitudes. Thomas Higginbottom and Elias Symeonakis of the School of Science and the Environment, Manchester Metropolitan University, UK apply the statistical and ecological frameworks for assessing land degradation and desertification using vegetation index data. They also review the development of multi-temporal analysis as a desertification assessment technique, with a focus on how current practice has been shaped by controversy and dispute. The techniques commonly employed are examined from both a statistical and ecological point of view, and recommendations are made for future research directions. The paper is part of the <i>Remote Sensing</i> Special Issue 'Remote Sensing of Land Degradation in Drylands'. &nbsp;&nbsp;(<i>Remote Sensing</i>, 10/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Assessing-land-degradation-and-desertification-using-vegetation-index-data-current-frameworks-and-future-directions.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Earth-observation-based-assessment-of-the-water-production-and-water-consumption-of-Nile-basin-agro-ecosystems.html" title="Earth observation based assessment of the water production and water consumption of Nile basin agro-ecosystems   " alt="link">Earth observation based assessment of the water production and water consumption of Nile basin agro-ecosystems   </a></h2>
+
+	
+					<p>The development of open-access Earth Observation databases, especially for information related to actual evapotranspiration, is urgently needed. Scientists from IWMI, UNESCO, Delft Technical University, and the EROS Centre explain how Earth Observation data in the public domain can be used to estimate net water production (rainfall (P) &gt; evapotranspiration (ET)) and net water consumption (ET &gt; P) of Nile Basin agro-ecosystems. Measurements of the Moderate Resolution Imaging Spectroradiometer (MODIS), Second Generation Meteosat (MSG), Tropical Rainfall Measurement Mission (TRMM) and various altimeters are used. The paper is part of the <i>Remote Sensing</i> Special Issue 'Earth Observation for Water Resource Management in Africa&nbsp;' and the fluxes, flows and storage changes presented form the basis for a global framework for describing monthly and annual water accounts in ungauged river basins. &nbsp; &nbsp;(<i>Remote Sensing</i>, 24/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Earth-observation-based-assessment-of-the-water-production-and-water-consumption-of-Nile-basin-agro-ecosystems.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Mapping-banana-plants-to-facilitate-plant-health-assessment.html" title="Mapping banana plants to facilitate plant health assessment    " alt="link">Mapping banana plants to facilitate plant health assessment    </a></h2>
+
+	
+					<p>A new mapping approach allows for better identification of banana plants that have been affected by Banana Bunchy Top Virus (genus: <i>Babuvirus</i>) that reduces plant growth and prevents banana production. Developed by Kasper Johansen of the Biophysical Remote Sensing Group, School of Geography, University of Queensland, Australia and colleagues, the approach is based on very high spatial resolution airborne orthophotos. Object-based image analysis is used to: (i) detect banana plants using edge and line detection approaches; (ii) produce accurate and realistic outlines around classified banana plants; and (iii) evaluate the mapping results. &nbsp;&nbsp;(<i>Remote Sensing</i>, 02/09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Mapping-banana-plants-to-facilitate-plant-health-assessment.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Global-scale-associations-of-vegetation-phenology-with-rainfall-and-temperature-at-high-spatio-temporal-resolution.html" title="Global-scale associations of vegetation phenology with rainfall and temperature at high spatio-temporal resolution   " alt="link">Global-scale associations of vegetation phenology with rainfall and temperature at high spatio-temporal resolution   </a></h2>
+
+	
+					<p>Recent research shows global phenology relationships to precipitation and land surface temperature at high spatial and temporal resolution over the period 2008–2011. Nicholas Clinton, Center for Earth System Science, Tsinghua University, China, and colleagues found that the response of phenology – periodic plant and animal life cycle events – to climatic variables is a vital indicator of changes in biosphere processes related to possible climate change. Their data showed distinct phenology patterns as a result of complex overlapping gradients of climate, ecosystem and land use/land cover. The data are consistent with broad-scale, coarse-resolution models of ecosystem limitations to moisture, temperature and irradiance. The researchers conclude that this type of data is useful as an input to the development of land use and land cover classifiers, and could also help in understanding the vulnerability of natural and anthropogenic landscapes to climate change. &nbsp; &nbsp;(<i>Remote Sensing</i>, 06/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Global-scale-associations-of-vegetation-phenology-with-rainfall-and-temperature-at-high-spatio-temporal-resolution.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/State-of-rain.html" title="State of rain   " alt="link">State of rain   </a></h2>
+
+	
+					<p>The US Geological Survey has released a satellite-based rainfall monitoring dataset specifically designed to support the early detection of drought around the world. Developed as a partnership between the USGS Earth Resources Observation and Science (EROS) Center and the University of California Santa Barbara (UCSB) Climate Hazards Group, this new dataset allows experts specializing in the early warning of drought and famine to monitor rainfall in near-real-time, at high resolution, over most of the globe (from 50°N to 50°S). The new dataset, named the Climate Hazards Group Infrared Precipitation with Stations (CHIRPS), reaches back to 1981 to place rainfall observed from space into the historical setting of over three decades of rainfall data collected at ground stations worldwide. CHIRPS data can be incorporated into climate models, along with other meteorological and environmental data, to project future agricultural and vegetation conditions. &nbsp;&nbsp;(Geospatial &amp; Engineering International Conference, 03/07/2014)</p>
+							<p><span class="date">2/09/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/State-of-rain.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Major-research-initiative-to-leverage-smallholder-agriculture-with-remote-sensing.html" title="Major research initiative to leverage smallholder agriculture with remote sensing   " alt="link">Major research initiative to leverage smallholder agriculture with remote sensing   </a></h2>
+
+	
+					<p>The Faculty of Geo-Information Science and Earth Observation (ITC) of the University of Twente, the Netherlands, has launched the Spurring a Transformation for Agriculture through Remote Sensing (STARS) project to identify how Earth observation data products may help improve current information and decision support systems in the smallholder farming in sub-Saharan Africa and South Asia. The project will be executed in close collaboration with research institutes in West and East Africa, Bangladesh, Australia, Mexico and the United States. Smallholder farmers often use small plots with variable boundaries, they often grow multiple crops and crop varieties on the plot at the same time, using a rich variety of farm practices. STARS will identify what remote sensing information is available for specific groups of smallholder farmers and how that information can be provided to inform decision making. STARS, which will last for 20 months, will develop open data products to be used by the wider research community. &nbsp;&nbsp;(ITC, 18/06/2014)</p>
+							<p><span class="date">2/09/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Major-research-initiative-to-leverage-smallholder-agriculture-with-remote-sensing.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Data-collected-by-satellites-can-accurately-measure-underground-water.html" title="Data collected by satellites can accurately measure underground water   " alt="link">Data collected by satellites can accurately measure underground water   </a></h2>
+
+	
+					<p>In a development that could revolutionize the management of precious groundwater around the world, Stanford researchers Jessica Reeves, Rosemary Knight, Howard Zebker and Peter Kitanidis have pioneered the use of satellites to accurately measure levels of water stored hundreds of feet below ground. Their findings were published recently in <i>Water Resources Research</i>. Until now, the only way a water manager could gather data about the state of water tables in a watershed was to drill monitoring wells. In their novel approach, the scientists used Interferometric Synthetic Aperture Radar (InSAR) to monitor changes in the elevation of Earth's surface. With this technology they could measure groundwater levels across vast areas without using lots of on-the-ground monitors. InSAR data could play a vital role in measuring seasonal changes in groundwater supply and help determine levels for sustainable water use. &nbsp;&nbsp;(Stanford University, 17/06/2014)</p>
+							<p><span class="date">28/07/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Data-collected-by-satellites-can-accurately-measure-underground-water.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/A-new-global-dataset-for-rainfall-monitoring-and-drought-early-warning.html" title="A new global dataset for rainfall monitoring and drought early warning    " alt="link">A new global dataset for rainfall monitoring and drought early warning    </a></h2>
+
+	
+					<p>A new dataset developed by UC Santa Barbara and the U.S. Geological Survey (USGS) can be used for environmental monitoring and drought and famine early warning. The Climate Hazards Group Infrared Precipitation with Stations (CHIRPS), a collaboration between UCSB’s Climate Hazards Group and USGS’s Earth Resources Observation and Science (EROS) combines rainfall data observed from space with more than three decades of rainfall data collected at ground stations worldwide. This dataset seeks to blend the best qualities of rainfall station observations, satellite temperature data and the unique spatial characteristics of rainfall to create the best available rainfall information for climate and agricultural monitoring. The new dataset allows experts to monitor rainfall in near real-time, at a high resolution, over most of the globe. CHIRPS data can be incorporated into climate models, along with other meteorological and environmental data, to project future agricultural and vegetation conditions. &nbsp;&nbsp;(UC Santa Barbara, 14/05/2014)</p>
+							<p><span class="date">28/07/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/A-new-global-dataset-for-rainfall-monitoring-and-drought-early-warning.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/FOODIE-Farm-oriented-open-data-in-Europe.html" title="FOODIE: Farm-oriented open data in Europe  " alt="link">FOODIE: Farm-oriented open data in Europe  </a></h2>
+
+	
+					<p>The key point of the FOODIE project is to create a platform in the cloud where spatial and non-spatial data related to the agricultural sector are available for agri-food stakeholders groups. The platform provides high-value applications and services for the support of planning and decision-making processes and offers an infrastructure for (i) building of an interacting and collaborative network; (ii) integrating existing open datasets related to agriculture; (iii) publishing of data and linking data of external agriculture data sources. FOODIE platform will provide access to (i) farming data such as maps, sampling data, yield, fertilisation, etc. (some of this data will be obtained from sensors on the farm and will have character of private data) andf (ii) land satellite images, environment and biodiversity information, agro-food statistical indicators, nature data, hydro-meteorological data, soil data, etc. &nbsp;&nbsp;(FOODIE Europe, 05/2014)</p>
+							<p><span class="date">21/07/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/FOODIE-Farm-oriented-open-data-in-Europe.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Unmanned-aerial-systems-in-farming-a-pilot-project-in-Cuba.html" title="Unmanned aerial systems in farming: a pilot project in Cuba    " alt="link">Unmanned aerial systems in farming: a pilot project in Cuba    </a></h2>
+
+	
+					<p>The popularity of unmanned aerial systems (UAS) is on the rise in many countries for a multitude of applications. In one such development, the UAS is rapidly becoming a tool for crop monitoring and management, which is essential for food security. GeoCuba has been successfully testing UAS technology for farming purposes. A pilot project conducted in Cuba in co-operation with the Russian firm Uniintex-Ginus has shown that a UAS is a flexible, low-cost solution, but it has also revealed some limitations. A UAS offers great flexibility to quickly acquire data in sufficient spatial resolution at low cost. However, the use of UASs is restricted to small areas. Moreover, flexibility has its limits as the use of a UAS for civilian applications is still subject to the same regulations as for manned aircrafts; permission must be requested a few days in advance. &nbsp;&nbsp;(<i><a href="http://www.gim-international.com/news/mapping/uas/id8009-uas_in_farming_a_pilot_project_in_cuba.html" target="_self">GIM Intenational</a></i>, 23/04/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Unmanned-aerial-systems-in-farming-a-pilot-project-in-Cuba.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Novel-system-to-detect-track-and-monitor-agricultural-drought-conditions.html" title="Novel system to detect, track and monitor agricultural drought conditions   " alt="link">Novel system to detect, track and monitor agricultural drought conditions   </a></h2>
+
+	
+					<p>To trace the dynamics around agricultural drought in the United States, Qiusheng Wu, a doctoral student and research assistant and Hongxing Liu, professor, both at the Department of Geography, University of Cincinnati, US, implemented an Event-based Spatial-Temporal Data Model (ESTDM) to detect, track and monitor drought conditions. The framework organised data into objects, sequences, processes and events. The data was collected from the European Space Agency’s (ESA) Soil Moisture and Ocean Salinity (SMOS) satellite, which was the first of its kind dedicated to measure moisture near the surface of the soil. The researchers examined patterns of spreading drought to develop predictions for future drought events. The prediction tool is now being prepared to use data from NASA's soon-to-be-launched Soil Moisture Active Passive (SMAP) satellite. &nbsp; &nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Novel-system-to-detect-track-and-monitor-agricultural-drought-conditions.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Near-real-time-frost-mapping-system-for-tea-plantations-in-Kenya.html" title="Near real-time frost mapping system for tea plantations in Kenya  " alt="link">Near real-time frost mapping system for tea plantations in Kenya  </a></h2>
+
+	
+					<p>RCMRD/SERVIR-Africa and the Tea Research Foundation of Kenya (TRFK) have developed and installed Wireless Sensor Networks (WSNs) in Kenya to support an automated frost mapping system to alert plantation managers of notable upcoming temperature changes. The near real-time frost mapping system identifies and displays frost-impacted areas by analysing night-time land surface temperature data from NASA's Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the Terra and Aqua satellites. Each morning, within a few hours of data collection, the system emails user-friendly maps identifying areas with high potential for frost to the Kenya Meteorological Service (KMS), TRFK, and agricultural insurance companies. In addition to the satellite data-derived products, the system will soon incorporate numerical prediction model forecasts to help map areas of potential frost up to 3 days in advance. &nbsp;<a href="https://servirglobal.net/Global/Articles/tabid/86/Article/1278/servir-helps-tea-farmers-in-kenya.aspx" target="_self">https://servirglobal.net/Global/Articles/tabid/86/Article/1278/servir-helps-tea-farmers-in-kenya.aspx</a>&nbsp;&nbsp;(SERVIR, 28/01/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Near-real-time-frost-mapping-system-for-tea-plantations-in-Kenya.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Launch-of-global-land-cover-SHARE-database-GLC-SHARE.html" title="Launch of global land cover SHARE database (GLC-SHARE)  " alt="link">Launch of global land cover SHARE database (GLC-SHARE)  </a></h2>
+
+	
+					<p>The FAO has launched a comprehensive geospatial database that standardises the information from numerous sources all over the world, using internationally accepted definitions. The harmonised land cover datasets cover most of the globe and provide information on eleven different types of land cover which have been gathered by different countries and organisations. The new database, the most-reliable global view of planetary land cover assembled to-date, could be used for land use forecast and climate change impact monitoring, for example. &nbsp;&nbsp;Press release: <a href="http://www.fao.org/news/story/en/item/216144/icode/" target="_self">http://www.fao.org/news/story/en/item/216144/icode/</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;SHARE website: <a href="http://www.glcn.org/databases/lc_glcshare_en.jsp" target="_self">http://www.glcn.org/databases/lc_glcshare_en.jsp</a>&nbsp; &nbsp;(FAO, 17/03/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Launch-of-global-land-cover-SHARE-database-GLC-SHARE.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Managing-fisheries-from-space-Google-Earth-improves-estimates-of-fishing-weirs-catches.html" title="Managing fisheries from space: Google Earth improves estimates of fishing weirs catches   " alt="link">Managing fisheries from space: Google Earth improves estimates of fishing weirs catches   </a></h2>
+
+	
+					<p>Dalal Al-Abdulrazzak and Daniel Pauly of the University of British Columbia, Canada, looked at recent technological advances that could help with the monitoring of fishery catches. Statistics submitted by countries to the FAO frequently neglect or under-report the contribution of small-scale fisheries, as well as illegal catches and discards. Trying to tackle this problem, the researchers have used freely available global satellite imagery via Google Earth, to count intertidal fishing weirs off the coast of six countries in the Persian Gulf. Combining the number of weirs with assumptions about daily catches and the length of the fishing season they estimated that the fishing gear contributed to a regional catch is up to six times higher than the officially reported catches. These results provide the first example of fisheries catch estimates from space, and point to the potential for remote-sensing approaches to validate catch statistics in fisheries. &nbsp; &nbsp;&nbsp;<a href="http://icesjms.oxfordjournals.org/content/early/2013/11/27/icesjms.fst178.1" target="_self">http://icesjms.oxfordjournals.org/content/early/2013/11/27/icesjms.fst178.1</a>&nbsp; &nbsp;&nbsp;(<i>ICES Journal of Marine Science</i>, 17/09/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">28/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Managing-fisheries-from-space-Google-Earth-improves-estimates-of-fishing-weirs-catches.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/SPIRITS-software.html" title="SPIRITS software   " alt="link">SPIRITS software   </a></h2>
+
+	
+					<p>SPIRITS (Software for the Processing and Interpretation of Remotely Sensed Image Time Series) was developed by VITO for the Monitoring Agricultural Resources unit (MARS) of the Joint Research Centre of the European Commission. The software facilitates the analysis of time series of low and medium resolution remote sensing images. SPIRITS is an integrated and flexible free software environment for analyzing satellite derived image time series in crop and vegetation monitoring. With this toolbox, time series of low and medium resolution sensors such as SPOT-Vegetation and MODIS-Terra/Aqua can be processed and examined. It can be used to perform and to automatize many spatial and temporal processing steps on time series and to extract spatially aggregated statistics. Vegetation indices and their anomalies can be rapidly mapped and statistics can be plotted and interpreted in seasonal graphs to be shared with analysts and decision makers. &nbsp; &nbsp;<a href="http://spirits.jrc.ec.europa.eu/?p=273" target="_self">http://spirits.jrc.ec.europa.eu/?p=273</a>&nbsp; &nbsp;&nbsp;(EC JRC, 06/11/2013)</p>
+							<p><span class="date">27/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/SPIRITS-software.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Land-cover-change-monitoring-using-Landsat-satellite-image-data-over-West-Africa-between-1975-and-1990.html" title="Land cover change monitoring using Landsat satellite image data over West Africa between 1975 and 1990" alt="link">Land cover change monitoring using Landsat satellite image data over West Africa between 1975 and 1990</a></h2>
+
+	
+					<p>In this report, Marian Vittek, Institute for Environment and Sustainability, Joint Research Centre of the European Commission, and colleagues examine land cover changes occurring between 1975 and 1990 in West Africa using a systematic sample of satellite imagery. Results reveal that in 1975 about 6% of West Africa was still covered by dense tree cover complemented with 12% of tree cover mosaic. Almost half of the area was covered by other wooded land and the remaining 32% was represented by other vegetation cover. Over the 1975–1990 period, the net annual change rate of cover was very low (less then -1%). On the other side, other vegetation cover increased annually by 0.70%, most probably due to the expansion of agricultural areas. This study demonstrates the potential of Landsat data for large scale land cover change assessment in West Africa and highlights the importance of consistent and systematic data processing methods with targeted image acquisition procedures for long-term monitoring. &nbsp;&nbsp;<a href="http://www.mdpi.com/2072-4292/6/1/658" target="_self">http://www.mdpi.com/2072-4292/6/1/658</a>&nbsp; &nbsp;(<i>Remote Sensing</i>, 07/01/2014)</p>
+							<p><span class="date">18/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Land-cover-change-monitoring-using-Landsat-satellite-image-data-over-West-Africa-between-1975-and-1990.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Image-time-series-processing-software-for-agriculture-monitoring.html" title="Image time series processing software for agriculture monitoring" alt="link">Image time series processing software for agriculture monitoring</a></h2>
+
+	
+					<p>Scientists at the Flemish Institute for Technology Research (VITO) in Belgium and colleagues from the European Commission’s Joint Research Centre have developed a stand-alone software package able to process time series of satellite images in near-real time. Data from remote sensing image series at high temporal and low spatial resolution can be used by the new SPIRITS software to assist in the monitoring of year-to-year variability in crop production and estimate the potential impact of detected anomalies on crop production and the sharing of this information with different audiences. The stand-alone toolbox was developed to produce clear and evidence-based information for crop production analysts and decision makers.&nbsp;&nbsp;<a href="http://mars.jrc.ec.europa.eu/Bulletins-Publications/Image-time-series-processing-software-for-agriculture-monitoring" target="_self">http://mars.jrc.ec.europa.eu/Bulletins-Publications/Image-time-series-processing-software-for-agriculture-monitoring</a>(EC JRC MARS, 09/01/2014)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Image-time-series-processing-software-for-agriculture-monitoring.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/A-survey-and-analysis-of-the-data-requirements-for-stakeholders-in-African-agriculture.html" title="A survey and analysis of the data requirements for stakeholders in African agriculture" alt="link">A survey and analysis of the data requirements for stakeholders in African agriculture</a></h2>
+
+	
+					<p>UK’s DFID conducted a broad survey of key stakeholders in sustainable African agriculture to assess current and emerging trends in data collection, processing, and dissemination. A key focus of the study was to assess the alignment of stakeholders’ perceived data needs with areas of decision uncertainty. Only 36% of respondents stated data needs that were consistent with their stated uncertainties and only 15% showed that perceived needs, uncertainties, and data gathering efforts are aligned. Data for soils were the most frequently cited, followed by data for markets, climate, biodiversity and poverty. Recommendations for improving the collection and use of data in African agriculture include building comprehensive, centralised web-enabled GIS databases and developing awareness of the key decisions and what data is needed to support them. &nbsp;&nbsp;&nbsp;<a href="http://agriculture.columbia.edu/2013/10/07/survey-identifies-emerging-trends-in-data-needed-for-sustainable-agriculture-in-africa/" target="_self">http://agriculture.columbia.edu/2013/10/07/survey-identifies-emerging-trends-in-data-needed-for-sustainable-agriculture-in-africa/</a>&nbsp; &nbsp;(Columbia University, 07/10/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/A-survey-and-analysis-of-the-data-requirements-for-stakeholders-in-African-agriculture.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/Mapping-the-life-cycle-of-crops.html" title="Mapping the life cycle of crops" alt="link">Mapping the life cycle of crops</a></h2>
+
+	
+					<p>With the help of GIS and spatial analysis, Zhe Guo and colleagues from HarvestChoice and IFPRI (International Food Policy Research Institute) designed a methodology to harmonise and geo-reference crop phenology data, resulting in the first generation of Crop Calendar products at the pixel scale (1 km2) for sub-Saharan Africa. Crop Calendars can be developed in one or two ways: through coarser, more traditional methods that rely on household surveys, country census data, and ground verifications; or via modern methods using remotely-sensed, time-series data. Both methods have their advantages and limitations, depending on the nature of the region and the quality of the information needed. A next step in this study is to evaluate Crop Calendar products derived from both ways and design a strategy to geo-reference and harmonise the two data. By combining phenology products derived from remote sensing and geo-referenced tabulation data, the quality of Crop Calendar products could substantially improve and better inform stakeholders from suppliers and growers to marketers and traders. &nbsp; &nbsp;<a href="http://harvestchoice.org/labs/time-sow-how-harvestchoice-mapping-life-cycle-crops" target="_self">http://harvestchoice.org/labs/time-sow-how-harvestchoice-mapping-life-cycle-crops</a>&nbsp; &nbsp;(HarvestChoice, 27/09/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/Mapping-the-life-cycle-of-crops.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Related-developments/The-potential-benefits-of-GIS-techniques-in-disease-and-pest-control.html" title="The potential benefits of GIS techniques in disease and pest control  " alt="link">The potential benefits of GIS techniques in disease and pest control  </a></h2>
+
+	
+					<p>This paper by IITA scientists presented at the 2010 International conference on Banana and Plantain in Africa illustrates the use of GIS tools on data collected to identify critical intervention areas to combat the spread of Banana Xanthomonas wilt (BXW). In a survey covering the Great Lakes region, on-farm incidence of the disease&nbsp; was&nbsp; monitored&nbsp; and&nbsp; precise&nbsp; GPS&nbsp; coordinates&nbsp; of&nbsp; each&nbsp; sampled&nbsp; field&nbsp; were recorded. This enabled accurate mapping of the disease and performing the various spatial&nbsp; analyses,&nbsp; permitting&nbsp; an&nbsp; understanding&nbsp; of&nbsp; the&nbsp; geographical&nbsp; distribution&nbsp; of BXW&nbsp; infection and the identification of target priority areas of interventions.&nbsp;<a href="http://www.banana2008.com/cms/details/acta/879_34.pdf" target="_self">http://www.banana2008.com/cms/details/acta/879_34.pdf</a> &nbsp;(IITA, 2010)&nbsp;</p>
+							<p><span class="date">5/11/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Related-developments/The-potential-benefits-of-GIS-techniques-in-disease-and-pest-control.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+            
+            <span class="next"><a href="Related-developments/(offset)/20.html"><span class="text">Next&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+    
+        <span class="current">1</span>
+
+                      <span class="other"><a href="Related-developments/(offset)/20.html">2</a></span>
+                              <span class="other"><a href="Related-developments/(offset)/40.html">3</a></span>
+                              <span class="other"><a href="Related-developments/(offset)/60.html">4</a></span>
+                              <span class="other"><a href="Related-developments/(offset)/80.html">5</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="../../../content/view/full/10094.html"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="../../CTA-and-S-T/K4D-e-Newsletters.html">
+				&raquo;
+				<strong>
+								Download latest
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="../../../About/Contact-Us.html">
+					<img src="../../../../design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="../../../../design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="../../../../design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="../../../About/Content-syndication-on-this-website.html">
+					<img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="http://knowledge.cta.int/en/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="../../../Blogs/Judith-s-blog.html">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-March-2015.html">
+											<i>Blog post:</i> Judith's pick - March 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015.html">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development.html">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+								<div class="box-header">
+			<h3><a href="../../../About/Content-syndication-on-this-website.html"><img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="../../Is-the-innovation-systems-approach-the-answer-to-inclusive-development.html">Is the innovation systems approach the answer to inclusive development?</a></li>
+									<li><a href="../../CTA-and-S-T/CTA-S-T-programme/Commissioned-articles-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers.html">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="../../S-T-Policy/Participatory-approaches-in-ARD/Feature-articles/Enhancing-private-sector-engagement-in-agricultural-research-and-development-in-eastern-Africa.html">Enhancing private sector engagement in agricultural research and development in eastern Africa</a></li>
+									<li><a href="../../S-T-Policy/Intellectual-property/Feature-articles/Intellectual-property-rights-in-plant-breeding-and-the-impact-on-agricultural-innovation.html">Intellectual property rights in plant breeding and the impact on agricultural innovation</a></li>
+									<li><a href="../../Commodities/Livestock/Feature-articles/The-ethics-of-animal-production-and-sustainability.html">The ethics of animal production and sustainability</a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="../../../About/Legal-Notice.html" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org/"><img alt="ACP" src="../../../../design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu/"><img alt="EU" src="../../../../design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":1116,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from knowledge.cta.int/en/Dossiers/S-T-Issues/Remote-sensing-and-GIS/Related-developments by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 19:57:13 GMT -->
+</html>

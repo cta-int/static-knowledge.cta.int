@@ -1,0 +1,1598 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/60 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 21:37:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	
+                    
+<title>Knowledge for development</title>
+<!--<title>Développements / Les S&amp;T au CTA / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content="Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;amp;T pout le développment."/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="../../../../../fr.html" title="Page de garde Knowledge"/>
+<link rel="Index" href="../../../../../fr.html"/>
+<link rel="Search" href="../../../../content/search.html" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="../../../../../design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="http://knowledge.cta.int/fr/layout/set/print/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/60" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="../../../../../design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../../../../../design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="../../../../../design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="../../../../../design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int/">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="../../../../../fr.html">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="../../../../A-Propos/Nous-contacter.html">Contact</a> | </li>
+			<li><a href="../../../../A-Propos/A-propos.html">About</a> | </li>
+							<li><a href="../../../../user/login.html">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="../../../../A-Propos/A-propos-de-RSS.html">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="../../../../../en/Dossiers/CTA-and-S-T/Developments.html">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="http://knowledge.cta.int/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="../../../../../design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="../../../Les-S-T-au-CTA.html">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../../S-T-et-politiques-agricoles.html">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../../S-T-et-defis-agricoles.html">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="../../../Produits-de-base.html">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="../../../../Blogs.html">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="../../Jeunesse-genre-et-les-S-T-dans-les-pays-ACP.html">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../ACP-et-S-T-Documents-d-orientation.html">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Bourses-et-appels.html">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Developpements.html">
+						<span class="active">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Etudes-de-cas-STIA.html">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Evenements.html">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Infolettres-K4D.html">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Offres-d-emploi.html">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Annuaire-des-organismes.html">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="../../Annuaire-des-organismes/Afrique.html">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="../../Annuaire-des-organismes/Caraibes.html">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="../../../../maps/items.html">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="../../Annuaire-des-organismes/Monde.html">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="../../Annuaire-des-organismes/Pacifique.html">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Le-programme-S-T-au-CTA.html">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Publications.html">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise.html">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover.html">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="../../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production.html">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="../../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture.html">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole.html">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche.html">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole.html">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/La-propriete-intellectuelle.html">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/La-prospective.html">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole.html">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/La-science-et-l-ethique.html">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC.html">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural.html">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-politiques-agricoles/Les-systemes-d-innovation.html">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Agroforesterie.html">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Biodiversite-agricole.html">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Biotechnologie.html">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Resilience-aux-changements-climatiques.html">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Securite-sanitaire-des-aliments.html">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Agriculture-sur-les-terres-arides.html">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/L-eau-pour-l-agriculture.html">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Nanotechnologies.html">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Ameliorer-la-nutrition.html">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Prevention-des-pertes-apres-recoltes.html">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/L-epuisement-du-phosphore.html">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/La-protection-des-sols.html">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Savoirs-agricoles-traditionels-et-locaux.html">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Systemes-de-semences.html">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Securite-alimentaire.html">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Innovations-dans-la-transformation-des-aliments-tropicaux.html">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../S-T-et-defis-agricoles/Teledetection-et-SIG.html">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../../Produits-de-base/Autres-produits-de-base.html">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="../../../Produits-de-base/Autres-produits-de-base/Bananes.html">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="../../../Produits-de-base/Autres-produits-de-base/Cafe.html">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Biocarburants.html">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Betail.html">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../../Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP.html">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Canne-a-sucre.html">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Fruits.html">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz.html">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Legumes.html">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Manioc.html">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Produits-laitiers.html">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Peches.html">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho.html">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../../Produits-de-base/Epices-et-plantes-medicinales.html">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="../../../../../fr.html">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../../../Dossiers.html">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../../Les-S-T-au-CTA.html">Les S&T au CTA</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				<p>Sélection de questions d'actualité pertinentes pour le dialogue politique consacré à la S&amp;T pout le développment.</p>
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Des-chercheurs-selectionnent-un-haricot-igname-riche-en-nutriments.html" title="Des chercheurs sélectionnent un haricot igname riche en nutriments     " alt="link">Des chercheurs sélectionnent un haricot igname riche en nutriments     </a></h2>
+
+	
+					<p>Le haricot igname d’Afrique est une culture orpheline à haute valeur nutritive sous-évaluée par les décideurs politiques. Les obtenteurs du Département de production agricole de l’Université Makerere ont sélectionné des haricots ignames pour mettre au point des variétés savoureuses ne contenant aucune substance toxique et adaptées aux zones agroécologiques de savane à hautes herbes. 31 nouvelles accessions ont été incluses dans la banque de gènes du CGIAR's Potato Center (CIP), et quelque 60 variétés cultivées par des paysans sont à présent stockées au CIP. Les chercheurs de l’Université Makerere et du NARO sont convaincus que le haricot igname contribuera à assurer la sécurité alimentaire parce qu’il est riche en protéines, en hydrates de carbone, en zinc et en fer, et qu’il améliore la fertilité du sol. &nbsp; &nbsp;(FarmBizAfrica, 11/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Des-chercheurs-selectionnent-un-haricot-igname-riche-en-nutriments.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Evaluer-la-degradation-des-terres-et-la-desertification-a-l-aide-des-donnees-de-l-indice-differentiel-de-vegetation-cadres-actuels-et-orientations-futures.html" title="Evaluer la dégradation des terres et la désertification à l’aide des données de l’indice différentiel de végétation : cadres actuels et orientations futures     " alt="link">Evaluer la dégradation des terres et la désertification à l’aide des données de l’indice différentiel de végétation : cadres actuels et orientations futures     </a></h2>
+
+	
+					<p>Les exigences scientifiques des systèmes de contrôle de la dégradation et de la désertification sont identifiées : 1) validation des méthodologies sur une base comparable et solide, et 2) détection de la dégradation à des intensités et magnitudes faibles. Thomas Higginbottom et Elias Symeonakis, de la Faculté des sciences et de l’environnement de l’Université métropolitaine de Manchester, au Royaume-Uni, appliquent le cadre statistique et écologique pour évaluer la dégradation des terres et la&nbsp; désertification à l’aide des données de l’indice différentiel de végétation. Ils passent également en revue le processus d’élaboration d’une analyse multitemporelle comme méthode d’évaluation de la désertification, en mettant l’accent sur la manière dont les pratiques actuelles furent façonnées par la controverse. Les méthodes communément employées sont examinées du point de vue statistique et écologique, et des recommandations sont formulées afin de déterminer les orientations futures de la recherche. Cet article est extrait du numéro spécial de <i>Remote Sensing</i> intitulé «&nbsp;La télédétection pour l’évaluation de la dégradation des terres en zones arides&nbsp;». &nbsp;&nbsp;(<i>Remote Sensing</i>, 10/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Evaluer-la-degradation-des-terres-et-la-desertification-a-l-aide-des-donnees-de-l-indice-differentiel-de-vegetation-cadres-actuels-et-orientations-futures.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Evaluation-de-la-production-et-de-la-consommation-d-eau-dans-les-agrosystemes-du-bassin-du-Nil-decoulant-de-l-observation-de-la-Terre.html" title="Evaluation de la production et de la consommation d’eau dans les agrosystèmes du bassin du Nil découlant de l’observation de la Terre      " alt="link">Evaluation de la production et de la consommation d’eau dans les agrosystèmes du bassin du Nil découlant de l’observation de la Terre      </a></h2>
+
+	
+					<p>Il s’avère urgent d’élaborer des bases de données d’observation de la Terre en libre accès, pour recueillir notamment des informations relatives à l’évapotranspiration. Des chercheurs de l’Institut international de gestion de l’eau, de l’UNESCO, de l’Université de technologie de Delft et du Centre EROS expliquent dans quelle mesure les données d’observation de la Terre du domaine public peuvent être exploitées pour estimer la production nette d’eau (pluviométrie (P) &gt; évapotranspiration (ET) et la consommation nette d’eau (ET&gt;P) dans les agrosystèmes du bassin du Nil. Le spectroradiomètre imageur à résolution modérée (MODIS), le programme Météosat de seconde génération (MSG), la mission de mesure des précipitations tropicales (TRMM) et de nombreux altimètres sont utilisés à cet effet. Cet article est extrait du numéro spécial du magazine <i>Remote Sensing </i>intitulé<i> «&nbsp;</i>Observation de la Terre pour la gestion des ressources en eau en Afrique&nbsp;» et les changements dans le stockage de l’eau forment la base d’un cadre global pour décrire les réserves d’eau mensuelles et annuelles dans les bassins versants non jaugés. &nbsp;&nbsp;(<i>Remote Sensing</i>, 24/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Evaluation-de-la-production-et-de-la-consommation-d-eau-dans-les-agrosystemes-du-bassin-du-Nil-decoulant-de-l-observation-de-la-Terre.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../L-agriculture-intelligente-face-au-climat-a-la-Grenade.html" title="L’agriculture intelligente face au climat à la Grenade     " alt="link">L’agriculture intelligente face au climat à la Grenade     </a></h2>
+
+	
+					<p>La Grenade est le seul pays des Caraïbes présenté dans une série de profils pays identifiant de prometteuses opportunités en matière d’agriculture intelligente face au climat ainsi que des outils financiers et institutionnels favorisant leur adoption. Elaborés par le Centre international d’agriculture tropicale (CIAT) et le Centre agronomique tropical de recherche et d'enseignement supérieur (CATIE), ces profils pays visent à encourager le débat au sein des pays, mais aussi à l’échelon mondial, sur «&nbsp;les possibilités d’investissement dans l’agriculture intelligente face au climat&nbsp;». Le présent article fournit des informations concises sur les aspects de l’agriculture intelligente face au climat liés à l’adaptation, à l’atténuation, à la productivité, aux institutions et au financement. Ces profils présentent en outre&nbsp;: le contexte national, y compris des faits majeurs sur l’agriculture et le changement climatique, les techniques et pratiques agricoles intelligentes face au climat, les institutions et les politiques dans ce domaine, le financement de l’agriculture intelligente face au changement climatique ainsi que des perspectives d’avenir. &nbsp; &nbsp;(CIAT, 24/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../L-agriculture-intelligente-face-au-climat-a-la-Grenade.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Examiner-le-role-des-sciences-du-climat-pour-faciliter-l-adaptation-a-long-terme-et-la-prise-de-decision-en-Afrique-subsaharienne.html" title="Examiner le rôle des sciences du climat pour faciliter l'adaptation à long terme et la prise de décision en Afrique subsaharienne   " alt="link">Examiner le rôle des sciences du climat pour faciliter l'adaptation à long terme et la prise de décision en Afrique subsaharienne   </a></h2>
+
+	
+					<p>Ce document de travail du Réseau de développement des connaissances (CDKN) présente une revue d’articles et de littérature «&nbsp;grise&nbsp;» sur les lacunes et les domaines de connaissance nécessaires en vue de renforcer les capacités des décideurs en Afrique. Il présente également le compte rendu d’un atelier qui a rassemblé des spécialistes africains et britanniques des sciences du climat et de l’adaptation au changement climatique en Afrique et d’un événement organisé en marge de la Conférence 2013 sur le changement climatique en Afrique. Les problèmes identifiés sont les suivants&nbsp;: le manque de données d’observation, l’incertitude des prévisions, l’impact et la vulnérabilité, la capacité à interpréter l’information climatique et à prendre des décisions dans un contexte d’incertitude. Les recommandations formulées en vue de relever ces défis comprennent : la mise en valeur des capacités scientifiques sur le continent africain, une meilleure application des résultats de la recherche, l’optimisation de la valeur ajoutée et l’amélioration de l’interface science-politique. Le compte rendu vise à identifier certaines lacunes scientifiques et en matière de capacité afin d’orienter le programme de recherche Future Climate For Africa (FCFA), financé par le DFID (Royaume-Uni) et la DGIS (Pays-Bas). &nbsp; &nbsp;(CDKN, 29/04/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Examiner-le-role-des-sciences-du-climat-pour-faciliter-l-adaptation-a-long-terme-et-la-prise-de-decision-en-Afrique-subsaharienne.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Utilisation-des-concepts-de-resilience-de-vulnerabilite-de-capacite-d-adaptation-pour-l-evaluation-des-systemes-agricoles.html" title="Utilisation des concepts de résilience, de vulnérabilité, de capacité d’adaptation pour l’évaluation des systèmes agricoles      " alt="link">Utilisation des concepts de résilience, de vulnérabilité, de capacité d’adaptation pour l’évaluation des systèmes agricoles      </a></h2>
+
+	
+					<p>Il existe un véritable chevauchement conceptuel entre la résilience, la vulnérabilité et la capacité d’adaptation, qui apparaissent comme des concepts dominants dans l’étude des troubles et des changements dans les systèmes socio-écologiques. Les auteurs, Daniel Callo-Concha et ses collègues du Centre de recherche sur le développement de l’Université de Bonn (ZEF), en Allemagne, affirment que les critères méthodologiques et opérationnels pour leur application ne peuvent être séparés sans ambiguïté. Selon eux, il est difficile d’identifier les principes directeurs de la mise en œuvre opérationnelle de chacun et soulignent que leur opérationnalisation requiert une logique dans les approches et protocoles visant à assurer leur utilisation cohérente. Ils concluent que l’intégration conceptuelle et opérationnelle de la résilience, de la vulnérabilité et de la capacité d’adaptation pourrait peut-être déboucher sur une représentation plus complète du comportement des systèmes agricoles dans des situations variables. &nbsp;&nbsp;(ZEF, 01/03/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Utilisation-des-concepts-de-resilience-de-vulnerabilite-de-capacite-d-adaptation-pour-l-evaluation-des-systemes-agricoles.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../La-hierarchie-des-gaspillages-alimentaires-comme-cadre-de-gestion-des-surplus-et-des-dechets-alimentaires.html" title="La hiérarchie des gaspillages alimentaires comme cadre de gestion des surplus et des déchets alimentaires    " alt="link">La hiérarchie des gaspillages alimentaires comme cadre de gestion des surplus et des déchets alimentaires    </a></h2>
+
+	
+					<p>Afin de mieux s’attaquer au problème du gaspillage et de tirer des avantages d’une meilleure utilisation des déchets alimentaires sur le plan environnemental et socio-économique, Effie Papargyropoulou suggère que les gaspillages alimentaires réels, par opposition aux surplus, soient classés comme «&nbsp;évitables&nbsp;» ou «&nbsp;non évitables&nbsp;». C’est ce qui ressort d’un nouveau cadre stratégique visant à réduire le gaspillage alimentaire tout au long de la chaîne d’approvisionnement, publié dans la revue britannique <i>Journal of Cleaner Production</i>. Afin d’élaborer leur cadre, Papargyropoulou, de l’Université technique de Malaisie, Johar Bahry (Malaisie) et leurs collègues ont interviewé 23 experts en alimentation. Ils ont identifié les réductions de surplus alimentaires comme étant la grande priorité pour diminuer le gaspillage de denrées alimentaires. Afin d’éviter les surplus, les agriculteurs pourraient ne produire que le strict nécessaire pour répondre aux besoins alimentaires et nutritionnels, les détaillants vendraient uniquement les quantités nécessaires, et les consommateurs n’achèteraient que ce dont ils ont réellement besoin. Les surplus non évitables devraient enfin être redistribués aux populations vivant sous le seuil de pauvreté alimentaire. &nbsp; &nbsp;(EC Environment, 10/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../La-hierarchie-des-gaspillages-alimentaires-comme-cadre-de-gestion-des-surplus-et-des-dechets-alimentaires.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Prolonger-la-duree-de-vie-des-cultures-grace-a-la-pollinisation.html" title="Prolonger la durée de vie des cultures grâce à la pollinisation   " alt="link">Prolonger la durée de vie des cultures grâce à la pollinisation   </a></h2>
+
+	
+					<p>S’il est montré que la pollinisation améliore la qualité des cultures, l’impact sur leur durée de vie n’a pas été étudié sur le plan quantitatif. Björn Klatt et ses collègues de l’Université de Lund, en Suède, ont étudié dans quelle mesure la durée de conservation, telle que représentée par la détérioration, la fermeté et le poids du fruit, change en fonction des limites de la pollinisation chez deux variétés de fraises européennes d’importance économique. L’efficacité limitée de la pollinisation entraîne une quantité moindre de fruits déformés. Les résultats de l’étude montrent que la pollinisation des cultures permet de réduire les pertes et le gaspillage, contribuant ainsi à améliorer la sécurité alimentaire à travers le monde. Par conséquent, les futurs travaux de recherche sur la pollinisation devront mettre l’accent non seulement sur les effets en matière de rendement, mais aussi sur la qualité des cultures. Une production agricole plus efficace permettrait de répondre à la demande alimentaire future. &nbsp; &nbsp;(<i>Agriculture and food security</i>, 2/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Prolonger-la-duree-de-vie-des-cultures-grace-a-la-pollinisation.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Faire-bon-usage-des-feuilles-de-manioc.html" title="Faire bon usage des feuilles de manioc   " alt="link">Faire bon usage des feuilles de manioc   </a></h2>
+
+	
+					<p>Les feuilles de manioc sont disponibles tout au long de l’année et devraient bénéficier de la même attention que les racines. Elles contiennent des quantités importantes de protéines et sont riches en vitamines B1, B2 et C, ainsi qu’en caroténoïdes et en minéraux. En fait, la quantité totale d’acides aminés essentiels présente dans les protéines des feuilles de manioc est celle d’un œuf de poule et est plus élevée que celle des feuilles d’épinard, du soja, de l’avoine ou du riz. Toxicité et antinutriments limitent en effet leur consommation alimentaire. Ces aspects toxiques et antinutritionnels doivent être jugulés pendant la transformation et avant la consommation humaine. Des chercheurs de l’Université d’Hohenheim étudient le meilleur moyen de traiter les feuilles de manioc afin de les transformer en source économique et durable de protéines et de micronutriments. Plusieurs méthodes de transformation des feuilles de manioc ont été mises au point. &nbsp; &nbsp;(<i>Rural21</i>, 08/09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Faire-bon-usage-des-feuilles-de-manioc.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../La-selection-naturelle-des-genes-peut-produire-du-mais-orange-riche-en-provitamine-A.html" title="La sélection naturelle des gènes peut produire du maïs orange riche en provitamine A   " alt="link">La sélection naturelle des gènes peut produire du maïs orange riche en provitamine A   </a></h2>
+
+	
+					<p>Des chercheurs ont identifié un ensemble de gènes qui pourraient être utilisés pour augmenter naturellement la teneur en provitamine A des grains de maïs. Cette découverte pourrait aider à lutter contre la carence en vitamine A dans les pays en développement et la dégénérescence maculaire qui touche les personnes âgées. Le professeur d’agronomie Torbert Rocheford et ses collègues de l’Université Purdue, aux Etats-Unis, ont découvert que les variations génétiques pourraient être sélectionnées pour transformer le maïs blanc en maïs orange biofortifié contenant des taux élevés de caroténoïdes provitamines A. Leur étude donne le profil génétique pour convertir de façon rapide et rentable du maïs blanc ou jaune en maïs orange riche en caroténoïdes en utilisant non pas des procédés transgéniques, mais des méthodes naturelles de sélection des plantes. &nbsp; &nbsp;(Purdue University, 06/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../La-selection-naturelle-des-genes-peut-produire-du-mais-orange-riche-en-provitamine-A.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Accroitre-la-consommation-des-legumes-feuilles-a-haute-valeur-nutritive-aux-Samoa-aux-iles-Salomon-et-dans-le-nord-de-l-Australie.html" title="Accroître la consommation des légumes-feuilles à haute valeur nutritive aux Samoa, aux îles Salomon et dans le nord de l’Australie   " alt="link">Accroître la consommation des légumes-feuilles à haute valeur nutritive aux Samoa, aux îles Salomon et dans le nord de l’Australie   </a></h2>
+
+	
+					<p>Si certains légumes-feuilles sont populaires dans des pays tels que les îles Salomon et Tonga, on ne connaît certes pas leurs bienfaits considérables pour la santé. Cette publication rend compte d’un projet destiné à accroître la consommation des légumes-feuilles à haute valeur nutritive aux Samoa, aux îles Salomon et dans le nord de l’Australie. Dirigé par Graham Lyons, de l’Université d’Adelaïde, en Australie méridionale, et Mary Taylor, consultante en développement agricole (Royaume-Uni), en collaboration avec leurs collègues, le projet a permis de : 1) documenter les connaissances et les opinions des populations locales sur la culture et la consommation des légumes-feuilles&nbsp;; 2) produire et distribuer des fiches d’information&nbsp;; 3) promouvoir les légumes-feuilles locaux via les médias dans les pays participants&nbsp;; 4) renforcer les capacités à l’échelon local&nbsp;; et 5) fournir des informations sur les méthodes de propagation optimales de l’aibika, un légume populaire, à partir d’un essai en champ réalisé aux Samoa. &nbsp; &nbsp;(ACIAR, 09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Accroitre-la-consommation-des-legumes-feuilles-a-haute-valeur-nutritive-aux-Samoa-aux-iles-Salomon-et-dans-le-nord-de-l-Australie.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Variabilite-climatique-et-consommation-alimentaire.html" title="Variabilité climatique et consommation alimentaire    " alt="link">Variabilité climatique et consommation alimentaire    </a></h2>
+
+	
+					<p>La hausse des températures a des effets néfastes sur la consommation alimentaire. En revanche, celle-ci n’est pas considérablement affectée par les variations pluviométriques. Ce document de travail élaboré par Sara Lazzaroni et Arjun S. Bedi, et publié par l’Institut international d’études sociales de l’Université Erasmus, aux Pays-Bas, repose sur des données de panel concernant deux périodes combinées à des données sur les précipitations, le nombre de jours de pluie et les températures maximales et minimales utilisées pour examiner l’impact des variations climatiques sur la consommation alimentaire dans les régions rurales de l’Ouganda. Bien que les observations résultant d’entretiens qualitatifs et des tendances de la production agricole indiquent que les ménages ont adopté des mesures d’atténuation, il en ressort que la hausse des températures est corrélée à une baisse des rendements agricoles et de la consommation de denrées alimentaires. &nbsp; &nbsp;(ISS, 04/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Variabilite-climatique-et-consommation-alimentaire.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../L-etude-des-plantes-contribuerait-au-developpement-des-cultures-face-au-changement-climatique.html" title="L’étude des plantes contribuerait au développement des cultures face au changement climatique   " alt="link">L’étude des plantes contribuerait au développement des cultures face au changement climatique   </a></h2>
+
+	
+					<p>Un nouveau modèle informatisé mettant en avant la croissance des plantes dans diverses conditions pourrait à l’avenir aider les chercheurs à développer des variétés à haut rendement dans des conditions environnementales particulières. Des chercheurs ont mis au point ce modèle afin d’analyser comment les variations de la lumière, la durée du jour, la température et le dioxyde de carbone dans l’atmosphère influent sur les mécanismes biologiques qui régulent la croissance et la floraison des plantes. Selon eux, certaines variétés végétales distribuent différemment les nutriments; leurs feuilles et leurs fruits sont plus petits mais plus abondants que d’autres. Le Professeur Andrew Millar, de la Faculté des Sciences biologiques de l’Université d’Edimbourg, a dirigé cette étude publiée dans la revue scientifique <i>Proceedings of the National Academy of Sciences</i>. &nbsp; &nbsp;(BBSRC, 08/09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../L-etude-des-plantes-contribuerait-au-developpement-des-cultures-face-au-changement-climatique.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Mieux-collecter-les-semences-pour-preserver-l-avenir-des-plantes.html" title="Mieux collecter les semences pour préserver l’avenir des plantes   " alt="link">Mieux collecter les semences pour préserver l’avenir des plantes   </a></h2>
+
+	
+					<p>La préservation de la diversité végétale repose sur une collecte des semences plus appropriée en fonction des espèces et des situations. Sur la base d’une nouvelle méthode appelée planification fondée sur la simulation, destinée à faire de nouvelles recommandations d’échantillonnage, cette étude montre l’inefficacité d’une approche uniforme de l’échantillonnage des semences. Publiant dans la revue <i>Biological Conservation</i>, des chercheurs de l’Institut national pour la synthèse mathématique et biologique de l’Université du Tennessee, aux Etats-Unis, recommandent aux collecteurs de sélectionner leurs populations végétales dans une zone large plutôt que dans une zone restreinte. Collecter environ 20 plants maternels au lieu de 50 permet de capter la grande majorité des variations génétiques. Cette méthode pourrait servir à affiner les lignes directrices pour la collecte des semences, ce qui permettrait d’améliorer encore le processus. &nbsp; &nbsp;(NIMBioS, 30/07/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Mieux-collecter-les-semences-pour-preserver-l-avenir-des-plantes.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Recifs-coralliens-les-gagnants-et-les-perdants.html" title="Récifs coralliens : les gagnants et les perdants   " alt="link">Récifs coralliens : les gagnants et les perdants   </a></h2>
+
+	
+					<p>Des chercheurs d’universités californiennes, hawaïennes et du New Hampshire ont analysé des données sur les écosystèmes de récifs coralliens fossiles et actuels dans deux zones des Caraïbes et cinq zones de la région Indo-Pacifique. Travaillant en étroite collaboration au sein du groupe de travail <i>Tropical Coral Reefs of the Future: Modelling Ecological Outcomes from the Analyses of Current and Historical Trends, </i>les chercheurs ont mis au point un modèle dynamique basé sur les caractéristiques afin d’analyser la performance écologique des écosystèmes de récifs coralliens face au réchauffement climatique. Ils ont découvert qu’un sous-ensemble d’espèces de coraux se développait rapidement, était plus petit et plus large sur le plan phénotypique, mais aussi plus résistant au stress, et se reproduisait facilement. S’il reste beaucoup à découvrir sur la manière dont fonctionne ce sous-ensemble, leurs recherches révèlent des résultats nuancés pour les récifs coralliens tropicaux, outre la perte quasi complète de la couverture de coraux vivants face au réchauffement des océans. &nbsp;&nbsp;(UCSB, 01/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Recifs-coralliens-les-gagnants-et-les-perdants.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Systeme-de-surveillance-en-temps-reel-pour-l-aquaculture-offshore.html" title="Système de surveillance en temps réel pour l’aquaculture offshore   " alt="link">Système de surveillance en temps réel pour l’aquaculture offshore   </a></h2>
+
+	
+					<p>Des chercheurs travaillant sur le projet Enviguard financé par l’UE élaborent un système de surveillance en temps réel pour l’aquaculture offshore, afin d’avertir les pisciculteurs et les conchyliculteurs des maladies imminentes. Appliqué à une bouée ancrée, ce petit dispositif remplit les mêmes fonctions qu’un laboratoire entièrement équipé pour déceler la présence de micro-algues toxiques, de virus et de contaminants chimiques. Trois capteurs différents permettent une surveillance simultanée des menaces potentielles. Cet outil peut permettre aux pisciculteurs d’empêcher d’éventuelles épidémies dans les élevages aquacoles. &nbsp; &nbsp;(Partnership for African Fisheries, 07/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Systeme-de-surveillance-en-temps-reel-pour-l-aquaculture-offshore.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Base-de-donnees-mondiale-l-analyse-du-genome-de-bovins-vue-en-detail.html" title="Base de données mondiale : l’analyse du génome de bovins vue en détail   " alt="link">Base de données mondiale : l’analyse du génome de bovins vue en détail   </a></h2>
+
+	
+					<p>La connaissance détaillée des variations du génome des bovins s’est nettement améliorée grâce à la création d’une base de données mondiale qui contient des données sur les races Angus, Holstein, Jersey et Fleckvieh, et les génomes de plus de 1&nbsp;200 animaux. La nouvelle base de données de première génération, qui sera en accès libre, est constituée de génomes séquencés pour un certain nombre de taureaux et repose sur de nouvelles techniques de séquençage. Les résultats de ces travaux de recherche menés par Hans D. Daetwyler du Department of Environment and Primary Industries, en Australie, ont été publiés dans la revue <i>Nature Genetics</i>. Des chercheurs d’autres pays sont encouragés à s’associer au projet afin d’assurer un flux continu de données. Les principaux taureaux ont des filles dans le monde entier&nbsp;; la force de ce projet réside donc dans l’intégration de toutes les données au sein d’une même base. &nbsp; &nbsp;(ScienceDaily, 03/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Base-de-donnees-mondiale-l-analyse-du-genome-de-bovins-vue-en-detail.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Composition-chimique-et-valeur-nutritive-des-varietes-de-sorgho-grain-pour-l-alimentation-animale-en-Tanzanie.html" title="Composition chimique et valeur nutritive des variétés de sorgho grain pour l’alimentation animale en Tanzanie    " alt="link">Composition chimique et valeur nutritive des variétés de sorgho grain pour l’alimentation animale en Tanzanie    </a></h2>
+
+	
+					<p>En Tanzanie, le sorgho grain présente une haute valeur nutritive et pourrait se substituer partiellement au maïs dans l’alimentation des volailles. Son utilisation pour l’alimentation des volailles requiert toutefois une amélioration stratégique afin de réduire les effets liés à de hauts niveaux de tannins condensés (facteurs antinutritionnels) dans les grains. Les recherches visant à évaluer le type, l’usage prévu, la composition nutritionnelle et les composants antinutritionnels du sorgho grain tanzanien disponible sur le marché ont été menées par des chercheurs du Département de production animale et d’infrastructures marketing du ministère du Développement de l’élevage et des pêches, et du Département des sciences et de la production animales de l’Université agronomique de Sokoine, en Tanzanie. &nbsp; &nbsp;(<i>Livestock Research for Rural Development</i>, 10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Composition-chimique-et-valeur-nutritive-des-varietes-de-sorgho-grain-pour-l-alimentation-animale-en-Tanzanie.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Biocapteurs-et-securite-sanitaire-des-aliments.html" title="Biocapteurs et sécurité sanitaire des aliments   " alt="link">Biocapteurs et sécurité sanitaire des aliments   </a></h2>
+
+	
+					<p>Ce numéro spécial de <i>Foods</i> est consacré aux travaux de recherche sur le développement et l’application de biocapteurs et de nouveaux capteurs couplés au prétraitement des échantillons pour la détection, l’identification et le criblage à haut débit de microorganismes pathogènes ou de toxines d’origine alimentaire afin d’améliorer la salubrité des aliments. Les biocapteurs peuvent être optiques, électriques, électrochimiques ou autres utilisant des réactifs d’étiquetage ou des méthodes d’interrogation sans marquage. Cette publication est éditée par Arun Bhunia, du Département des sciences alimentaires de l’Université Purdue, aux Etats-Unis. &nbsp; &nbsp;<a href="http://www.mdpi.com/2304-8158/3/3/491" target="_self">http://www.mdpi.com/2304-8158/3/3/491</a> and <a href="http://www.mdpi.com/2304-8158/3/3/511" target="_self">http://www.mdpi.com/2304-8158/3/3/511</a>(<i>Foods</i>, 19/10/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Biocapteurs-et-securite-sanitaire-des-aliments.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Document-de-consensus-sur-l-evaluation-de-la-securite-sanitaire-du-manioc-transgenique.html" title="Document de consensus sur l’évaluation de la sécurité sanitaire du manioc transgénique    " alt="link">Document de consensus sur l’évaluation de la sécurité sanitaire du manioc transgénique    </a></h2>
+
+	
+					<p>L’Organisation de coopération et de développement économiques (OCDE) a publié récemment un document de consensus sur la biologie du manioc afin de faciliter l’évaluation réglementaire des variétés transgéniques. Celui-ci vise à encourager le partage de l’information, à promouvoir les pratiques harmonisées et à éviter toute duplication d’efforts dans les pays. De temps à autre, l’OCDE produit des documents de consensus qui servent à identifier les éléments d’information scientifique dans l’évaluation des risques et de la sécurité environnementale des organismes transgéniques communs à l’ensemble de ses pays membres et à certains pays non membres. &nbsp; &nbsp;(OECD, 09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Document-de-consensus-sur-l-evaluation-de-la-securite-sanitaire-du-manioc-transgenique.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Cartographier-les-plants-de-bananes-pour-faciliter-l-evaluation-de-leur-sante.html" title="Cartographier les plants de bananes pour faciliter l’évaluation de leur santé    " alt="link">Cartographier les plants de bananes pour faciliter l’évaluation de leur santé    </a></h2>
+
+	
+					<p>Une nouvelle méthode de cartographie contribue à mieux identifier les plants de bananes atteints de la maladie due au «&nbsp;Banana Bunchy Top Virus&nbsp;» (genre : <i>Babuvirus</i>) qui réduit la croissance des plants et empêche la production de bananes. Développée par Kasper Johansen et ses collègues du groupe sur la télédétection en milieu biophysique de l’Université du Queensland, en Australie, l’approche est basée sur des orthophotos à très haute résolution spatiale. L’analyse d’images axée sur l’objet est utilisée pour&nbsp;: 1) détecter les plants de bananes à l’aide d’une technique de détection des bords et des lignes&nbsp;; 2) produire des esquisses réalistes et précises des plants de bananes classifiés&nbsp;; et 3) évaluer les résultats de la cartographie. &nbsp; &nbsp;(<i>Remote Sensing</i>, 02/09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Cartographier-les-plants-de-bananes-pour-faciliter-l-evaluation-de-leur-sante.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../SoilGrids1km-informations-sur-les-sols-mondiaux-basees-sur-une-cartographie-automatisee.html" title="SoilGrids1km : informations sur les sols mondiaux basées sur une cartographie automatisée   " alt="link">SoilGrids1km : informations sur les sols mondiaux basées sur une cartographie automatisée   </a></h2>
+
+	
+					<p>SoilGrids1km est un système tridimensionnel d’information sur les sols à une résolution d’un kilomètre contenant des prévisions spatiales pour sélectionner les propriétés des sols (à six profondeurs standard)&nbsp;: carbone organique du sol, pH du sol, particules de sable, de limon et d’argile, densité apparente, capacité d’échange cationique, fragments grossiers, stock de carbone dans le sol, profondeur du socle rocheux, groupes de sols de référence World Reference Base et taxonomie des sols USDA. Ces prévisions élaborées par Tomislsv Hengl et ses collègues de l’ISRIC - World Soil Information, Wageningen, aux Pays-Bas, sont basées sur des modèles de prévision spatiale qui ont été ajustés, par variable pédologique, au moyen des bases de données sur les profils de sols, mais aussi une sélection de 75 covariables environnementales représentant des facteurs de formation des sols. La version actuelle de SoilGrids1km a montré ses limites, à savoir : 1) faible corrélation entre les propriétés du sol et les variables explicatives en raison de différences d’échelle&nbsp;; 2) difficulté d’obtenir des covariables capturant les facteurs de formation des sols&nbsp;; 3) faible densité d’échantillonnage et regroupement spatial des emplacements de profils de sols. Toutefois, dans la mesure où le système SoilGrids est très hautement automatisé et flexible, il est possible d’obtenir des prévisions de plus en plus précises lorsque de nouvelles données sont disponibles. &nbsp; &nbsp;(<i>PLOS ONE</i>, 29/08/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../SoilGrids1km-informations-sur-les-sols-mondiaux-basees-sur-une-cartographie-automatisee.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Le-Big-Data-pour-les-programmes-scientifiques-internationaux-recommandations-et-actions.html" title="Le Big Data pour les programmes scientifiques internationaux : recommandations et actions   " alt="link">Le Big Data pour les programmes scientifiques internationaux : recommandations et actions   </a></h2>
+
+	
+					<p>Le Big Data présente des défis considérables et des opportunités notables pour les programmes de recherche transdisciplinaires internationaux, mais aussi les prestataires de services et d’infrastructures de données scientifiques. Les participants à un atelier international ont formulé une série de recommandations adressées aux partenaires qui parrainent les programmes de recherche internationaux de sorte que leurs bénéficiaires puissent tirer le meilleur parti de l’ère du Big Data. Ces recommandations se déclinent comme suit : 1) répondre à l’importance du Big Data&nbsp;; 2) exploiter les avantages du Big Data pour la société&nbsp;; 3) mieux faire comprendre le Big Data dans le cadre d’une collaboration internationale&nbsp;; 4) promouvoir l’accès universel au Big Data à travers la mise en place d’infrastructures de recherche à l’échelon mondial&nbsp;; 5) explorer et relever les défis inhérents à la gestion du Big Data, encourager le renforcement des capacités et le développement des compétences dans la science du Big Data&nbsp;; et 6) favoriser l’élaboration de politiques visant à maximiser l’exploitation du Big Data. Le CODATA, organe interdisciplinaire du Conseil international des unions scientifiques (CIUS), avait organisé cet atelier. &nbsp; &nbsp;(CODATA, 16/06/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Le-Big-Data-pour-les-programmes-scientifiques-internationaux-recommandations-et-actions.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Intensification-durable-de-l-agriculture-europeenne.html" title="Intensification durable de l’agriculture européenne   " alt="link">Intensification durable de l’agriculture européenne   </a></h2>
+
+	
+					<p>Ce rapport comporte la première analyse systématique de l’intensification durable du secteur agricole en Europe et indique que cela doit être le paradigme dans lequel la future politique agricole doit être élaborée au sein de l’UE. Trois points clés sont soulevés. Premièrement, l’intrant agricole qui doit être intensifié dans toute l’Europe est le suivant : les connaissances par hectare. Autrement dit, les connaissances en matière de gestion des écosystèmes délicats, les connaissances pour veiller à ce que les populations de pollinisateurs puissent se développer, les connaissances pour faire en sorte que la gestion de l’eau puisse contribuer à réduire au minimum les risques d’inondation, ainsi que les connaissances visant à produire plus de nourriture à l’hectare. Deuxièmement, l’UE doit élaborer un instrument de mesure des performances environnementales de l’agriculture. Il serait souhaitable de pouvoir s’inspirer d’une série d’indicateurs déjà développés, comme par exemple les indicateurs IRENA du Centre commun de recherche. Et troisièmement, outre une meilleure application des réglementations existantes en matière d’environnement et l’application de mesures politiques dans le cadre de la PAC, les changements de pratiques agricoles devront être initiés par les agriculteurs et les intervenants privés eux-mêmes. Ce rapport a été élaboré à l’initiative de la Fondation RISE (Rural Investment Support for Europe), reconnue d’utilité publique, et diffusé par le Centre d’études politiques européennes (CEPS). &nbsp; &nbsp;(PAEPARD, 24/06/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Intensification-durable-de-l-agriculture-europeenne.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="document" href="../Commentaires-sur-le-projet-de-note-d-orientation-CTA-ASARECA-intitulee-Systemes-semenciers-sciences-et-politiques.html" title="Commentaires sur le projet de note d’orientation CTA/ASARECA intitulée « Systèmes semenciers, sciences et politiques »" alt="document">Commentaires sur le projet de note d’orientation CTA/ASARECA intitulée « Systèmes semenciers, sciences et politiques »</a></h2>
+
+	
+	
+	
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="../../../../../var/knowledge/storage/images/media/images/cta-asareca-logo/733829-1-eng-GB/cta-asareca-logo.png" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Le projet de note d’orientation CTA/ASARECA intitulé «&nbsp;Systèmes semenciers, sciences et politiques&nbsp;» a été élaboré en collaboration avec plusieurs scientifiques africains et instances de réglementation sur le continent, avec le soutien du CTA, en faveur des universités d’Afrique subsaharienne sélectionnées. L’objectif était de réaliser une analyse FFPM (forces, faiblesses, possibilités, menaces) de leur contribution au développement de systèmes semenciers intégrés à compter de 2013. Les conclusions ont été&nbsp;documentées et seront prochainement publiées. Elles ont été présentées lors d’un événement parrainé par le CTA et organisé en marge de l’Assemblée générale de l’ASARECA au Burundi, en décembre 2013. Le projet de note d’orientation a été élaboré en début d’année et présenté aux intervenants du secteur privé ayant participé à un atelier ASARECA/EAGC au Kenya, en octobre 2014, visant à susciter l’intérêt, l’engagement et le soutien du secteur privé, mais aussi à mobiliser des fonds pour la recherche agricole et le développement technologique en Afrique de l’Est et en Afrique centrale. Vos commentaires sont les bienvenus.&nbsp;(knowledge[at]cta.int)&nbsp;</p>
+							<p><span class="date">26/11/2014</span></p>
+	<div class="cnt">
+	<a class="document" href="../Commentaires-sur-le-projet-de-note-d-orientation-CTA-ASARECA-intitulee-Systemes-semenciers-sciences-et-politiques.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Rapport-du-projet-de-synthese-CAAST-Net-concernant-l-impact-de-la-cooperation-bi-regionale-Afrique-UE-sur-les-defis-globaux-securite-alimentaire-et-nutritionnelle-changement-cl" title="Rapport du projet de synthèse CAAST-Net concernant l’impact de la coopération bi-régionale Afrique-UE sur les défis globaux : sécurité alimentaire et nutritionnelle, changement climatique et santé " alt="link">Rapport du projet de synthèse CAAST-Net concernant l’impact de la coopération bi-régionale Afrique-UE sur les défis globaux : sécurité alimentaire et nutritionnelle, changement climatique et santé </a></h2>
+
+	
+					<p>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+	<a href="../../../../../var/knowledge/storage/images/media/images/logo3/730718-1-eng-GB/logo.png" rel="lightbox[]">	
+	  </a>
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Le CTA est membre du consortium du projet financé dans le cadre du 7e Programme-cadre de l’Union européenne intitulé « Renforcer la coopération en matière de recherche et d’innovation entre l’Afrique subsaharienne et l’Union européenne en vue de relever les grands défis de ce monde » ou <a href="http://www.caast-net-plus.org/" target="_self">CAAST-Net Plus</a>. Ce projet consolide le partenariat Afrique-Europe dans le domaine de la science, de la technologie et de l’innovation, conclu dans le cadre de la stratégie conjointe Afrique-UE visant à stimuler la coopération bi-régionale en matière de science, de technologie et d’innovation (ST&amp;I). L’objectif étant d’offrir de meilleures perspectives concernant les priorités communes liées aux grands défis sociétaux : changement climatique, sécurité alimentaire et santé. L’an dernier, l’enquête en ligne destinée à analyser l’impact de la coopération Afrique-UE dans le domaine des ST&amp;I pour l’alimentation et de la sécurité alimentaire a été diffusée au sein de la communauté K4D. Des résumés des conclusions majeures et des recommandations sur l’analyse de l’impact de la coopération dans le domaine de la sécurité alimentaire et nutritionnelle, du changement climatique et de la santé sont <a href="http://www.caast-net-plus.org/object/news/994/attach/CAAST-Net_Plus_Analytical_Summaries_WP123_Global_Challenges.pdf" target="_self">désormais disponibles sur le site web</a>&nbsp;(PDF) du projet &nbsp;et font partie intégrante des <a href="http://www.caast-net-plus.org/object/news/994" target="_self">délibérations d’Entebbe</a> qui ont lieu le 24 et 25 novembre 2014. Une fois approuvés, les rapports complets seront également partagés sur le site.&nbsp;</p>
+							<p><span class="date">26/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Rapport-du-projet-de-synthese-CAAST-Net-concernant-l-impact-de-la-cooperation-bi-regionale-Afrique-UE-sur-les-defis-globaux-securite-alimentaire-et-nutritionnelle-changement-cl">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../L-agenda-mondial-de-la-recherche-sur-l-agriculture-intelligente-face-au-climat-une-base-scientifique-pour-agir.html" title="L’agenda mondial de la recherche sur l’agriculture intelligente face au climat : une base scientifique pour agir   " alt="link">L’agenda mondial de la recherche sur l’agriculture intelligente face au climat : une base scientifique pour agir   </a></h2>
+
+	
+					<p>Lors de la conférence scientifique mondiale&nbsp;2013 sur l’agriculture intelligente face au climat, des chercheurs ont identifié les lacunes à combler dans les connaissances en la matière, mais aussi élaboré des programmes de recherche interdisciplinaire et identifié un certain nombre d’actions scientifiques à entreprendre. L’agriculture intelligente face au climat permet de relever les défis qui consistent à répondre à la demande croissante en aliments, en fibres et en carburants en dépit du changement climatique et des opportunités moins nombreuses pour le développement de l’agriculture sur des terres supplémentaires. Kerri Steenwerth et ses collègues de l’Unité de recherche génétique et pathologique des cultures (<i>Crops Pathology and Genetics Research Unit, USDA</i>) mettent l’accent sur trois thèmes&nbsp;: 1) les systèmes agricoles et alimentaires&nbsp;; 2) les paysages et les questions régionales&nbsp;; et 3) les aspects institutionnels et politiques. Le premier thème comprend la physiologie et la génétique des cultures, l’atténuation et l’adaptation pour l’élevage et l’agriculture, les obstacles à l’adoption des pratiques agricoles intelligentes face au climat, la gestion des risques climatiques, l’énergie et les biocarburants. Le second thème inclut la modélisation de l’adaptation et de l’incertitude, le concept de multifonctionnalité agricole, les systèmes alimentaires et halieutiques, la biodiversité forestière, les services écosystémiques et l’exode rural face au changement climatique. Le troisième thème couvre l’adaptation de la recherche afin qu’elle fasse le lien entre les disciplines et l’intégration des contributions des acteurs afin d’établir un lien entre la science, l’action et la gouvernance. &nbsp;&nbsp;(<i>Agriculture &amp; Food Security</i>, 26/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../L-agenda-mondial-de-la-recherche-sur-l-agriculture-intelligente-face-au-climat-une-base-scientifique-pour-agir.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Modeles-d-adaptation-du-genome-du-mouton-aux-pressions-selectives-generees-par-le-climat.html" title="Modèles d’adaptation du génome du mouton aux pressions sélectives générées par le climat   " alt="link">Modèles d’adaptation du génome du mouton aux pressions sélectives générées par le climat   </a></h2>
+
+	
+					<p>Contrairement à de nombreuses études visant à trouver des preuves de sélection uniquement au moyen de données génétiques de l’ensemble d’une population, Feng-Hua Lv, de l’Académie chinoise des sciences (Chine), en collaboration avec une équipe de chercheurs internationaux, a criblé le génome du mouton afin d’identifier des signaux de sélection en intégrant des données génétiques et climatiques. Selon les chercheurs, l’adaptation aux climats locaux a influé sur la répartition spatiale de certaines variantes génétiques et, par conséquent, ces loci aident probablement le mouton à s’adapter aux problèmes environnementaux. De nouvelles études moléculaires et fonctionnelles sur les gènes candidats proches de marqueurs significatifs aideront à élucider l’architecture génétique des caractéristiques adaptatives résultant du climat chez le mouton et d’autres animaux d’élevage. &nbsp;&nbsp;(École polytechnique fédérale de Lausanne, 01/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Modeles-d-adaptation-du-genome-du-mouton-aux-pressions-selectives-generees-par-le-climat.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Caracterisation-morphologique-physiologique-et-moleculaire-de-la-tolerance-du-manioc-a-la-secheresse.html" title="Caractérisation morphologique, physiologique et moléculaire de la tolérance du manioc à la sécheresse   " alt="link">Caractérisation morphologique, physiologique et moléculaire de la tolérance du manioc à la sécheresse   </a></h2>
+
+	
+					<p>In this study multi­seasonal and locational field based trials were conducted in Kenya to identify drought-tolerant and drought-susceptible cassava genotypes. Cassava (<i>Manihot esculenta Crantz</i>) is inherently drought tolerant. Nevertheless, substantial genotypic variation exists for this characteristic. Field drought stress generally reduced cassava vegetative growth and productivity. In addition to other phenotypic parameters, storage root fresh weight was used as a primary criterion to discriminate between drought-tolerant and drought-susceptible genotypes. Charles Ochieng' Orek, researcher at ETH­Zurich, Switzerland, subsequently subjected the cassava gentoypes to further physiological and molecular categorisation under controlled water deficit assays. Categorisation of these morphological, physiological and molecular differences will establish an essential foundation for future development of drought-associated molecular markers for cassava. &nbsp;&nbsp;(Dr.Sc. thesis, ETH-Zurich, 2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Caracterisation-morphologique-physiologique-et-moleculaire-de-la-tolerance-du-manioc-a-la-secheresse.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="../Associations-a-grande-echelle-de-la-phenologie-de-la-vegetation-aux-precipitations-et-temperatures-a-haute-resolution-spatio-temporelle.html" title="Associations à grande échelle de la phénologie de la végétation aux précipitations et températures à haute résolution spatio-temporelle " alt="link">Associations à grande échelle de la phénologie de la végétation aux précipitations et températures à haute résolution spatio-temporelle </a></h2>
+
+	
+					<p>De récentes recherches montrent les liens entre variations de phénomènes périodiques et précipitations et températures de la surface terrestre à haute résolution spatio-temporelle sur la période&nbsp;2008-2011. Nicholas Clinton et ses collègues du Centre des sciences du système terrestre de l’Université de Tsinghua (Chine) estiment que la réponse de la phénologie (phénomènes périodiques du cycle de la vie animale et végétale) aux variables climatiques constitue un indicateur vital de la transformation de la biosphère pouvant être liée au changement climatique. Les résultats de leurs recherches révèlent des stades phénologiques distincts en raison d’un chevauchement complexe des gradients du climat, des écosystèmes et de l’utilisation des terres/du couvert terrestre. Les données sont conformes aux modèles de limites imposées par les écosystèmes (humidité, température et ensoleillement) à faible pouvoir de résolution et à grande échelle. Les chercheurs ont conclu que ces types de données étaient utiles au développement d’une classification de l’utilisation des terres et du couvert terrestre et permettraient par ailleurs de mieux comprendre la vulnérabilité des paysages naturels et anthropiques au changement climatique. &nbsp;&nbsp;(<i>Télédétection</i>, 06/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="../Associations-a-grande-echelle-de-la-phenologie-de-la-vegetation-aux-precipitations-et-temperatures-a-haute-resolution-spatio-temporelle.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+           <span class="previous"><a href="30.html"><span class="text">&laquo;&nbsp;Précédent</span></a></span>
+       
+            <span class="next"><a href="90.html"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+                      <span class="other"><a href="../../Developpements.html">1</a></span>
+                              <span class="other"><a href="30.html">2</a></span>
+            
+        <span class="current">3</span>
+
+                      <span class="other"><a href="90.html">4</a></span>
+                              <span class="other"><a href="120.html">5</a></span>
+                              <span class="other"><a href="150.html">6</a></span>
+                              <span class="other"><a href="180.html">7</a></span>
+                              <span class="other"><a href="210.html">8</a></span>
+                              <span class="other"><a href="240.html">9</a></span>
+            <span class="other">...</span><span class="other"><a href="2460.html">83</a></span>
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="../../../../content/view/full/10094.html"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="../../Infolettres-K4D.html">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="../../../../A-Propos/Nous-contacter.html">
+					<img src="../../../../../design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="../../../../../design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="../../../../../design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="../../../../A-Propos/A-propos-de-RSS.html">
+					<img src="../../../../../design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="http://knowledge.cta.int/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="../../../../Blogs/Judith-s-blog.html">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="../../../../Blogs/Judith-s-blog/Judith-s-pick-mars-2015.html">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../../Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015.html">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../../Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development.html">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="../../../../A-Propos/A-propos-de-RSS.html"><img src="../../../../../design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="../../Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers.html">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="../../Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs.143.d">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="../../Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D.html">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="../How-to-redefine-innovation-and-development-An-African-perspective.html">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="../The-Ocean-and-the-Human-Family-World-Oceans-Day-2015.html">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="../../../../A-Propos/Notice-legale.html" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org/"><img alt="ACP" src="../../../../../design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu/"><img alt="EU" src="../../../../../design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":1403,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/Les-S-T-au-CTA/Developpements/(offset)/60 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 21:39:24 GMT -->
+</html>

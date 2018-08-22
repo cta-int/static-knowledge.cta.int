@@ -1,0 +1,1388 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG/Developpements by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:28:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	
+                        
+<title>Knowledge for development</title>
+<!--<title>Développements / Télédétection et SIG / S&amp;T et défis agricoles / Dossiers / Accueil - Knowledge</title>-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><meta name="author" content="CTA"/><meta name="description" content=""/><meta name="keywords" content=" connaissances, savoir, acp, rural, d&amp;eacute;veloppement, agriculture, recherche scientifique, recherche, science, technologie, sciences et technologies, biotechnologie, biodiversit&amp;eacute;, S&amp;T, STI, Afrique, Cara&amp;iuml;bes, Pacifique, , &amp;eacute;ducation, laboratoire, champs, culture, agroforesterie, milieu rural, alimentation, post-r&amp;eacute;colte, technique agricole, indig&amp;egrave;ne, petite exploitation, pauvret&amp;eacute;, s&amp;eacute;cheresse, plantation, bio-ing&amp;eacute;nierie, OGM, CTA"/>    
+
+<link rel="Home" href="../../../../fr.html" title="Page de garde Knowledge"/>
+<link rel="Index" href="../../../../fr.html"/>
+<link rel="Search" href="../../../content/search.html" title="Recherche Knowledge"/>
+<link rel="Shortcut icon" href="../../../../design/knowledge/images/favicon.ico" type="image/x-icon"/>
+<link rel="Alternate" href="http://knowledge.cta.int/fr/layout/set/print/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG/Developpements" media="print" title="Version imprimable"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/base/stylesheets/core.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/knowledge.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/global.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/mega_menu.css"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/addthis_widget.css" media="screen"/>
+<link rel="shortcut icon" href="../../../../design/knowledge/images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="../../../../design/knowledge/stylesheets/lightbox.css"/>
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie6.css" /> <![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="screen" href="includes/style/ie7.css" /> <![endif]-->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/global.js"></script>
+<script type="text/javascript" src="../../../../design/knowledge/js/modernizr.js"></script>
+<script language="javascript" src="../../../../design/knowledge/js/lightbox.js"></script>
+<script src="https://valsplat.nl/clients/2852/invite.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-827424-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+<body>
+<div id="base"><div id="base-header">
+	<a href="http://www.cta.int/">
+		<div class="logo">
+			<h3>CTA</h3>
+		</div>
+	</a>
+	<a href="../../../../fr.html">
+		<span class="header-image-fre-FR">Knowledge for Development</span>
+	</a>
+	<div class="site-nav">
+		<ul>
+			<li><a href="../../../A-Propos/Nous-contacter.html">Contact</a> | </li>
+			<li><a href="../../../A-Propos/A-propos.html">About</a> | </li>
+							<li><a href="../../../user/login.html">Login</a> | </li>
+						
+			
+			<li style="color: white;"><a href="../../../A-Propos/A-propos-de-RSS.html">RSS</a> | </li>
+							<li style="color: white;"><a class="menu_item" href="../../../../en/Dossiers/S-T-Issues/Remote-sensing-and-GIS/Related-developments.html">English</a></li>
+						
+		</ul>
+	</div> 
+	<div class="site-search">
+		<form action="http://knowledge.cta.int/fr/content/search" method="get">
+		<label for="topSearch">Search</label>
+		<input id="topSearch" class="text" type="text" name="SearchText"/>
+		<input src="../../../../design/knowledge/images/btn_search.gif" class="search-button" type="image" name="OkButton" alt=" Ok "/>
+		</form>
+	</div> 
+</div> 
+								
+<div id="globalmenu" class="globalmenu" style="">
+
+	<div class="toplevel">
+		<ul>
+					<li class="first">
+				<a href="../../Les-S-T-au-CTA.html">
+					<span class="">Les S&amp;T au CTA</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-et-politiques-agricoles.html">
+					<span class="">S&amp;T et politiques agricoles</span>
+				</a>
+			</li>
+			
+					<li class="">
+				<a href="../../S-T-et-defis-agricoles.html">
+					<span class="">S&amp;T et défis agricoles</span>
+				</a>
+			</li>
+			
+					<li class="last">
+				<a href="../../Produits-de-base.html">
+					<span class="">Produits de base</span>
+				</a>
+			</li>
+			
+		
+		</ul>
+	</div>
+	
+	<div class="mega_menu_dropdown">
+					
+		
+																																																																																																																																						
+		
+				
+ 
+				
+	
+					<ul class=" 0">
+				
+									<li>
+												<a href="../../../Blogs.html">
+							<span class="">Blogs</span>
+						</a>
+					</li>
+								
+								
+																																																																																																																											
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Jeunesse-genre-et-les-S-T-dans-les-pays-ACP.html">
+						<span class="">ACP - Jeunesse, Genre et S&amp;T</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/ACP-et-S-T-Documents-d-orientation.html">
+						<span class="">ACP et S&amp;T - Documents d´orientation</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Bourses-et-appels.html">
+						<span class="">Bourses et appels</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Developpements.html">
+						<span class="">Développements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Etudes-de-cas-STIA.html">
+						<span class="">Etudes de cas STIA</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Evenements.html">
+						<span class="">Evénements</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Infolettres-K4D.html">
+						<span class="">Infolettres K4D</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Offres-d-emploi.html">
+						<span class="">Offres d'emploi</span>
+					</a>
+				
+															
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Annuaire-des-organismes.html">
+						<span class="">Organismes S&amp;T</span>
+					</a>
+				
+																																																																																																																																							
+										
+					<dl>
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Afrique.html">Afrique</a></dt><dd>Une selection des organisations de la S&amp;T en Afrique.</dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Caraibes.html">Caraïbes</a></dt><dd> Une selection des organisations de la S&amp;T dans les Caraïbes.</dd>
+						
+												
+						<dt><a href="../../../maps/items.html">Google Maps</a></dt><dd></dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Monde.html">Monde</a></dt><dd> Une selection des organisations internationales de la S&amp;T.</dd>
+						
+												
+						<dt><a href="../../Les-S-T-au-CTA/Annuaire-des-organismes/Pacifique.html">Pacifique</a></dt><dd>Une selection des organisations de la S&amp;T dans la region pacifique.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA.html">
+						<span class="">Programme S&amp;T du CTA</span>
+					</a>
+				
+																																																																																												
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Les-S-T-au-CTA/Publications.html">
+						<span class="">Publications</span>
+					</a>
+				
+																										
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class=" 1">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Collaboration-en-matiere-de-recherche-dans-un-monde-globalise.html">
+						<span class="">Collaboration en matière de recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - ACP</span>
+					</a>
+				
+																																																																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Appels-a-innover.html">Appels à innover</a></dt><dd>Les chercheurs sont continuellement confrontés au défi de répondre plus efficacement aux demandes formulées par les dirigeants, les investisseurs du secteur privé, les fondations de donateurs, les agriculteurs, les personnes intéressées ainsi que d'autres acteurs impliqués dans la chaîne agroalimentaire. Ils doivent fournir des résultats de recherche susceptibles d'améliorer la productivité, la qualité alimentaire et la sécurité alimentaire, dans le but d'atteindre un niveau concurrentiel dans les marchés mondiaux et de contribuer au développement durable tout en luttant contre la pauvreté. Ils doivent, en même temps, être responsables d'un point de vue social et éthique, et contribuer à l'avancement de la science et de la technologie. Comme les exigences de responsabilité augmentent et que les financements diminuent, il est nécessaire d'attribuer des priorités et des stratégies aux réponses.</dd>
+						
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Diversification-des-systemes-de-production.html">Diversification des systèmes de production</a></dt><dd>&nbsp;
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	Les systèmes de production agricole ACP sont très divers ; la communauté scientifique doit être capable de fournir des réponses adaptées aux différents besoins des petits exploitants qui constituent l’ossature de l’agriculture ACP. Elle doit en même temps répondre aux besoins des grandes et des moyennes exploitations qui doivent s’imposer sur tous les marchés en termes de prix, de qualité, de réactivité aux changements de la demande des consommateurs et de fiabilité de l’approvisionnement. C’est là que se trouve le défi : il n’y a en effet pas de panacée, pas d’approche universelle qui permettrait aux chercheurs de répondre aux besoins des petits agriculteurs – dont le premier souci reste la pérennité des besoins de subsistance – et en même temps des plus gros qui souhaitent, pour leur part, rester compétitifs et saisir toutes les opportunités en dépit du danger des dégradations à l’environnement et des contraintes commerciales et économiques. Durant ces dernières années, la région ACP a connu un regain d’intérêt pour les exploitations familiales : on reconnaît désormais leur valeur, aussi bien pour le maintien du tissu social qu’en ce qui concerne la conservation de l’environnement. Ce dossier fournit des points de repère et des leçons tirées de l’expérience en ce qui concerne la façon dont la région ACP doit appliquer une approche stratégique différenciée pour que la science soit mise au service de la performance du secteur agricole ACP.</dd>
+						
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/ACP-et-dialogue-S-T-agricoles/Premiers-dialogues-sur-les-politiques-S-T-et-l-agriculture.html">Premiers dialogues sur les politiques S&amp;T et l'agriculture</a></dt><dd>Ce dossier contient du matériel, des liens et des documents pertinents sur les discussions liées à la recherche agricole dans les pays ACP avant 2007.&nbsp;</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Dialogue-l-UE-et-les-S-T-agricoles.html">
+						<span class="">Dialogue S&amp;T agricoles - UE</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Enseignement-superieur-et-recherche-agricole.html">
+						<span class="">Enseignement supérieur et recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Financement-et-investissement-pour-la-recherche.html">
+						<span class="">Financement de la recherche</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Mesurer-l-impact-de-la-recherche-agricole.html">
+						<span class="">Mesurer l´impact de la recherche agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-propriete-intellectuelle.html">
+						<span class="">Propriété intellectuelle</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-prospective.html">
+						<span class="">Prospective</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Demarches-participatives-et-recherche-agricole.html">
+						<span class="">R&amp;D participatifs</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/La-science-et-l-ethique.html">
+						<span class="">Science et éthique</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC.html">
+						<span class="">Système d'information et TIC</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../S-T-et-politiques-agricoles/Les-systemes-de-gestion-d-information-et-les-TIC/Les-TIC-au-service-de-la-recherche-pour-l-agriculture-et-le-developpement-rural.html">Les TIC au service de la recherche pour l'agriculture et le développement rural</a></dt><dd>...</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../S-T-et-politiques-agricoles/Les-systemes-d-innovation.html">
+						<span class="">Systèmes d’innovation</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																																																																														
+		
+				
+ 
+				
+	
+					<ul class=" 2">
+				
+								
+								
+																																																																																																																																																																																	
+				<li>
+					
+					<a href="../Agroforesterie.html">
+						<span class="">Agroforesterie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Biodiversite-agricole.html">
+						<span class="">Biodiversité agricole</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Biotechnologie.html">
+						<span class="">Biotechnologie</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Resilience-aux-changements-climatiques.html">
+						<span class="">Climat et résilience</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Securite-sanitaire-des-aliments.html">
+						<span class="">Contrôle sanitaire</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Agriculture-sur-les-terres-arides.html">
+						<span class="">Désertification</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../L-eau-pour-l-agriculture.html">
+						<span class="">L'eau pour l'agriculture</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Nanotechnologies.html">
+						<span class="">Nanotechnologies</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Ameliorer-la-nutrition.html">
+						<span class="">Nutrition</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Prevention-des-pertes-apres-recoltes.html">
+						<span class="">Pertes après récolte</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../L-epuisement-du-phosphore.html">
+						<span class="">Phosphore</span>
+					</a>
+				
+																																																
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../La-protection-des-sols.html">
+						<span class="">Protection des sols</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Savoirs-agricoles-traditionels-et-locaux.html">
+						<span class="">Savoirs traditionels</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Systemes-de-semences.html">
+						<span class="">Systèmes de semences</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Securite-alimentaire.html">
+						<span class="">Sécurité alimentaire </span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Innovations-dans-la-transformation-des-aliments-tropicaux.html">
+						<span class="">Transformation des aliments tropicaux</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../Teledetection-et-SIG.html">
+						<span class="">Télédétection et SIG</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+					
+		
+																																																																																																																																																		
+		
+				
+ 
+				
+	
+					<ul class="last 3">
+				
+								
+								
+																																																																																																																																				
+				<li>
+					
+					<a href="../../Produits-de-base/Autres-produits-de-base.html">
+						<span class="">Autres produits de base</span>
+					</a>
+				
+																																																																																																											
+										
+					<dl>
+												
+						<dt><a href="../../Produits-de-base/Autres-produits-de-base/Bananes.html">Bananes</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que la banane ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+												
+						<dt><a href="../../Produits-de-base/Autres-produits-de-base/Cafe.html">Café</a></dt><dd>Le Groupe des États ACP doit adapter sa démarche de production, de commercialisation et de distribution agricole pour répondre aux exigences de la compétition nationale, régionale et internationale. Les produits de base traditionnels tels que le café ne peuvent plus bénéficier de prix garantis ni d’un accès immédiat aux marchés internationaux. Quelle doit donc être la réponse de la région ACP ? Les produits vivriers considérés traditionnellement comme garants de la sécurité alimentaire sont maintenant étudiés sous un nouveau jour. Les chercheurs peuvent-ils aider les pays à prendre des décisions avisées permettant d’améliorer l’efficacité, la rentabilité, la qualité et la compétitivité ?</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Biocarburants.html">
+						<span class="">Biocarburants</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Betail.html">
+						<span class="">Bétail</span>
+					</a>
+				
+																																																																																			
+										
+					<dl>
+												
+						<dt><a href="../../Produits-de-base/Betail/Ameliorer-la-competitivite-dans-la-chaine-de-valeur-avicole-ACP.html">Améliorer la compétitivité dans la chaîne de valeur avicole ACP</a></dt><dd>
+
+
+
+
+
+
+
+ 
+
+
+
+
+  
+  
+
+	
+		
+	  
+	
+	
+	
+	
+  	
+
+
+
+
+
+
+	 
+  
+
+
+
+
+
+	La chaîne de valeur avicole dans les pays ACP (Afrique, Caraïbes, Pacifique) implique à la fois les grandes entreprises intégrées et de petits systèmes de production. Les premières ont bénéficié d’investissements importants, d’un accès à l’information et à la recherche scientifique, tandis que les seconds restent isolés en dépit de leur importance. L’aviculture familiale représente environ 80 % du cheptel avicole mondial et joue un rôle déterminant pour de nombreux foyers dans les pays ACP, assurant sécurité alimentaire et nutritionnelle, des moyens de subsistance, ainsi que la conservation des espèces indigènes. Une analyse de la chaîne de valeur de l’aviculture familiale, intégrant sa productivité médiocre et la faiblesse des apports financiers et techniques, révèle un contraste marqué avec les conditions dont bénéficient les grandes entreprises avicoles commerciales. Les gouvernements et les chercheurs auraient intérêt à examiner en détail les chaînes de valeur de l’élevage familial de volailles afin d’identifier les priorités en matière de science et d’innovation qui pourraient contribuer à améliorer l’efficacité de l’approvisionnement en oufs, en oiseaux sur pied, réfrigérés, congelés et autres produits de la volaille à valeur ajoutée.Ce résumé est proposé par le CABI et le CTA, juillet 2012.</dd>
+						
+											</dl>
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Canne-a-sucre.html">
+						<span class="">Canne à sucre</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Fruits.html">
+						<span class="">Fruits</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Une-autre-approche-de-la-chaine-de-valeur-du-riz.html">
+						<span class="">La chaîne de valeur du riz</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Legumes.html">
+						<span class="">Légumes</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Manioc.html">
+						<span class="">Manioc</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Produits-laitiers.html">
+						<span class="">Produits laitiers</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Peches.html">
+						<span class="">Pêches</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Ameliorer-la-chaine-de-valeur-du-sorgho.html">
+						<span class="">Sorgho</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+												
+				<li>
+					
+					<a href="../../Produits-de-base/Epices-et-plantes-medicinales.html">
+						<span class="">Épices et plantes médicinales</span>
+					</a>
+				
+																																																											
+														
+				</li>
+	
+							
+			</ul>
+						
+		
+	</div> <!-- end mega_menu_dropdown -->
+</div> <!-- end globalmenu -->
+
+	<div id="base-content">
+		<div class="breadcrumb">You are in:
+												<a class=path_link href="../../../../fr.html">Accueil</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../../Dossiers.html">Dossiers</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../../S-T-et-defis-agricoles.html">S&T et défis agricoles</a>
+																<span class=path_delimiter>&gt;</span>
+													<a class=path_link href="../Teledetection-et-SIG.html">Télédétection et SIG</a>
+																<span class=path_delimiter>&gt;</span>
+													<span class=path_current>Développements</span>
+													</div> 
+
+		<div id="columns">
+			<div id="column-left">
+					 		
+		<div class="listing-header">
+										<h1>Développements</h1>
+				
+						<br class="cl"/>
+		</div> 
+		<div id="listing-items">
+			
+							
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Evaluer-la-degradation-des-terres-et-la-desertification-a-l-aide-des-donnees-de-l-indice-differentiel-de-vegetation-cadres-actuels-et-orientations-" title="Evaluer la dégradation des terres et la désertification à l’aide des données de l’indice différentiel de végétation : cadres actuels et orientations futures     " alt="link">Evaluer la dégradation des terres et la désertification à l’aide des données de l’indice différentiel de végétation : cadres actuels et orientations futures     </a></h2>
+
+	
+					<p>Les exigences scientifiques des systèmes de contrôle de la dégradation et de la désertification sont identifiées : 1) validation des méthodologies sur une base comparable et solide, et 2) détection de la dégradation à des intensités et magnitudes faibles. Thomas Higginbottom et Elias Symeonakis, de la Faculté des sciences et de l’environnement de l’Université métropolitaine de Manchester, au Royaume-Uni, appliquent le cadre statistique et écologique pour évaluer la dégradation des terres et la&nbsp; désertification à l’aide des données de l’indice différentiel de végétation. Ils passent également en revue le processus d’élaboration d’une analyse multitemporelle comme méthode d’évaluation de la désertification, en mettant l’accent sur la manière dont les pratiques actuelles furent façonnées par la controverse. Les méthodes communément employées sont examinées du point de vue statistique et écologique, et des recommandations sont formulées afin de déterminer les orientations futures de la recherche. Cet article est extrait du numéro spécial de <i>Remote Sensing</i> intitulé «&nbsp;La télédétection pour l’évaluation de la dégradation des terres en zones arides&nbsp;». &nbsp;&nbsp;(<i>Remote Sensing</i>, 10/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Evaluer-la-degradation-des-terres-et-la-desertification-a-l-aide-des-donnees-de-l-indice-differentiel-de-vegetation-cadres-actuels-et-orientations-">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Evaluation-de-la-production-et-de-la-consommation-d-eau-dans-les-agrosystemes-du-bassin-du-Nil-decoulant-de-l-observation-de-la-Terre.html" title="Evaluation de la production et de la consommation d’eau dans les agrosystèmes du bassin du Nil découlant de l’observation de la Terre      " alt="link">Evaluation de la production et de la consommation d’eau dans les agrosystèmes du bassin du Nil découlant de l’observation de la Terre      </a></h2>
+
+	
+					<p>Il s’avère urgent d’élaborer des bases de données d’observation de la Terre en libre accès, pour recueillir notamment des informations relatives à l’évapotranspiration. Des chercheurs de l’Institut international de gestion de l’eau, de l’UNESCO, de l’Université de technologie de Delft et du Centre EROS expliquent dans quelle mesure les données d’observation de la Terre du domaine public peuvent être exploitées pour estimer la production nette d’eau (pluviométrie (P) &gt; évapotranspiration (ET) et la consommation nette d’eau (ET&gt;P) dans les agrosystèmes du bassin du Nil. Le spectroradiomètre imageur à résolution modérée (MODIS), le programme Météosat de seconde génération (MSG), la mission de mesure des précipitations tropicales (TRMM) et de nombreux altimètres sont utilisés à cet effet. Cet article est extrait du numéro spécial du magazine <i>Remote Sensing </i>intitulé<i> «&nbsp;</i>Observation de la Terre pour la gestion des ressources en eau en Afrique&nbsp;» et les changements dans le stockage de l’eau forment la base d’un cadre global pour décrire les réserves d’eau mensuelles et annuelles dans les bassins versants non jaugés. &nbsp;&nbsp;(<i>Remote Sensing</i>, 24/10/2014)</p>
+							<p><span class="date">31/12/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Evaluation-de-la-production-et-de-la-consommation-d-eau-dans-les-agrosystemes-du-bassin-du-Nil-decoulant-de-l-observation-de-la-Terre.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Cartographier-les-plants-de-bananes-pour-faciliter-l-evaluation-de-leur-sante.html" title="Cartographier les plants de bananes pour faciliter l’évaluation de leur santé    " alt="link">Cartographier les plants de bananes pour faciliter l’évaluation de leur santé    </a></h2>
+
+	
+					<p>Une nouvelle méthode de cartographie contribue à mieux identifier les plants de bananes atteints de la maladie due au «&nbsp;Banana Bunchy Top Virus&nbsp;» (genre : <i>Babuvirus</i>) qui réduit la croissance des plants et empêche la production de bananes. Développée par Kasper Johansen et ses collègues du groupe sur la télédétection en milieu biophysique de l’Université du Queensland, en Australie, l’approche est basée sur des orthophotos à très haute résolution spatiale. L’analyse d’images axée sur l’objet est utilisée pour&nbsp;: 1) détecter les plants de bananes à l’aide d’une technique de détection des bords et des lignes&nbsp;; 2) produire des esquisses réalistes et précises des plants de bananes classifiés&nbsp;; et 3) évaluer les résultats de la cartographie. &nbsp; &nbsp;(<i>Remote Sensing</i>, 02/09/2014)</p>
+							<p><span class="date">27/11/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Cartographier-les-plants-de-bananes-pour-faciliter-l-evaluation-de-leur-sante.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Associations-a-grande-echelle-de-la-phenologie-de-la-vegetation-aux-precipitations-et-temperatures-a-haute-resolution-spatio-temporelle.2c4e.delaye" title="Associations à grande échelle de la phénologie de la végétation aux précipitations et températures à haute résolution spatio-temporelle " alt="link">Associations à grande échelle de la phénologie de la végétation aux précipitations et températures à haute résolution spatio-temporelle </a></h2>
+
+	
+					<p>De récentes recherches montrent les liens entre variations de phénomènes périodiques et précipitations et températures de la surface terrestre à haute résolution spatio-temporelle sur la période&nbsp;2008-2011. Nicholas Clinton et ses collègues du Centre des sciences du système terrestre de l’Université de Tsinghua (Chine) estiment que la réponse de la phénologie (phénomènes périodiques du cycle de la vie animale et végétale) aux variables climatiques constitue un indicateur vital de la transformation de la biosphère pouvant être liée au changement climatique. Les résultats de leurs recherches révèlent des stades phénologiques distincts en raison d’un chevauchement complexe des gradients du climat, des écosystèmes et de l’utilisation des terres/du couvert terrestre. Les données sont conformes aux modèles de limites imposées par les écosystèmes (humidité, température et ensoleillement) à faible pouvoir de résolution et à grande échelle. Les chercheurs ont conclu que ces types de données étaient utiles au développement d’une classification de l’utilisation des terres et du couvert terrestre et permettraient par ailleurs de mieux comprendre la vulnérabilité des paysages naturels et anthropiques au changement climatique. &nbsp;&nbsp;(<i>Télédétection</i>, 06/08/2014)</p>
+							<p><span class="date">29/10/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Associations-a-grande-echelle-de-la-phenologie-de-la-vegetation-aux-precipitations-et-temperatures-a-haute-resolution-spatio-temporelle.2c4e.delaye">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Surveillance-des-precipitations.html" title="Surveillance des précipitations    " alt="link">Surveillance des précipitations    </a></h2>
+
+	
+					<p>L'US Geological Survey a publié une base de données fournissant des informations détaillées sur la surveillance satellitaire des précipitations conçue spécifiquement pour l’alerte précoce des sécheresses dans le monde. Elaborée dans le cadre d'un partenariat entre l’USGS Earth Resources Observation and Science (EROS) Center et le Groupe sur les catastrophes climatiques de l'Université de Californie (Santa Barbara, UCSB), cette nouvelle base de données permet aux spécialistes de l’alerte précoce contre la sécheresse et la famine de surveiller les précipitations en temps quasi-réel, à haute résolution, presque partout sur la planète (de &nbsp;50° Nord à 50° Sud). La nouvelle base de données, nommée CHIRPS (Climate Hazards Group Infrared Precipitation with Stations), initialement élaborée en 1981, permet d’intégrer les images des précipitations observées depuis l’espace dans une base de données sur les précipitations collectées (depuis plus de trois décennies) dans des stations au sol à travers le monde. Les données CHIRPS peuvent être intégrées dans des modèles climatiques, avec d’autres données météorologiques et environnementales, afin de prévoir les conditions futures de l’agriculture et de la végétation. &nbsp;&nbsp;35 (Geospatial &amp; Engineering International Conference, 03/07/2014)</p>
+							<p><span class="date">2/09/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Surveillance-des-precipitations.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Teledetection-une-initiative-de-recherche-majeure-visant-a-developper-les-petites-exploitations-agricoles.html" title="Télédétection : une initiative de recherche majeure visant à développer les petites exploitations agricoles    " alt="link">Télédétection : une initiative de recherche majeure visant à développer les petites exploitations agricoles    </a></h2>
+
+	
+					<p>La Faculté des Sciences de l’information géographique et de l’observation de la Terre (ITC) de l'Université de Twente, aux Pays-Bas, a lancé le projet STARS (Spurring a Transformation for Agriculture through Remote Sensing) en vue d'identifier comment les données d'observation de la Terre peuvent aider à améliorer les informations actuelles et les systèmes d'appui à la décision dans l'agriculture à petite échelle en Afrique subsaharienne et en Asie du Sud. Le projet sera mis en œuvre en étroite collaboration avec des instituts de recherche en Afrique de l'Ouest et en Afrique de l'Est, au Bangladesh, en Australie, au Mexique et aux Etats-Unis. Les petits exploitants agricoles utilisent généralement de petites parcelles aux limites variables et y cultivent en même temps de nombreuses espèces et variétés, en ayant recours à des pratiques agricoles très diverses. STARS permettra d'identifier quelles sont les données de télédétection disponibles pour des groupes spécifiques de petits exploitants, mais aussi de déterminer dans quelle mesure ces données peuvent servir à éclairer le processus décisionnel. D'une durée de 20 mois, le projet permettra de produire des données ouvertes qui seront utilisées par la communauté de recherche dans son ensemble. &nbsp;&nbsp;(ITC, 18/06/2014)</p>
+							<p><span class="date">2/09/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Teledetection-une-initiative-de-recherche-majeure-visant-a-developper-les-petites-exploitations-agricoles.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Les-donnees-recueillies-par-satellites-permettent-de-mesurer-precisement-le-niveau-des-nappes-phreatiques.html" title="Les données recueillies par satellites permettent de mesurer précisément le niveau des nappes phréatiques   " alt="link">Les données recueillies par satellites permettent de mesurer précisément le niveau des nappes phréatiques   </a></h2>
+
+	
+					<p>Avec l’espoir de révolutionner la gestion des précieuses ressources en eau provenant des nappes phréatiques à travers le monde, des chercheurs de Stanford, Jessica Reeves, Rosemary Knight, Howard Zebker et Peter Kitanidis, ont été les premiers à mesurer le niveau des nappes d’eau à plusieurs centaines de mètres de profondeur à partir de données satellitaires. Les résultats de leurs recherches viennent d’être publiés dans <i>Water Resources Research</i>. Jusqu’ici, la seule façon pour un gestionnaire des ressources en eau de collecter des données sur l’état des nappes souterraines d’un bassin versant était de forer des puits d’observation. Dans le cadre de leur nouvelle approche, les chercheurs se sont servis d’un radar à synthèse d’ouverture interférométrique (InSAR) pour surveiller les variations du niveau d’élévation de la surface de la Terre. Grâce à cette technologie, ils ont pu mesurer le niveau des eaux souterraines dans de vastes zones sans l’aide de nombreux contrôleurs sur le terrain. Les données interférométriques pourraient jouer un rôle prépondérant en permettant de mesurer les variations saisonnières du niveau d’eau et de déterminer des niveaux adéquats pour assurer une utilisation durable de la ressource. &nbsp; &nbsp;(<i>Stanford University</i>, 17/06/2014)</p>
+							<p><span class="date">28/07/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Les-donnees-recueillies-par-satellites-permettent-de-mesurer-precisement-le-niveau-des-nappes-phreatiques.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Nouvelle-base-de-donnees-globale-pour-la-surveillance-des-precipitations-et-les-alertes-precoces-en-cas-de-secheresse.html" title="Nouvelle base de données globale pour la surveillance des précipitations et les alertes précoces en cas de sécheresse   " alt="link">Nouvelle base de données globale pour la surveillance des précipitations et les alertes précoces en cas de sécheresse   </a></h2>
+
+	
+					<p>Une nouvelle base de données élaborée par UC Santa Barbara et U.S. Geological Survey (USGS) peut être utilisée pour la surveillance de l’environnement et les alertes précoces contre la sécheresse et la famine. Le CHIRPS (<i>Climate Hazards Group Infrared Precipitation with Stations</i>), initiative concertée entre le groupe sur les aléas climatiques de l’UCSB et <i>Earth Resources Observation and Science</i> de l’USGS, regroupe les données des régimes pluviaux observés depuis l’espace avec plus de trois décennies de données sur les précipitations collectées par les stations au sol dans le monde. Cette base de données regroupe les meilleures données d’observation des stations pluviométriques avec les données satellitaires de température et les caractéristiques spatiales uniques des précipitations, en vue de générer les meilleures informations pluviométriques disponibles pour la surveillance du climat dans les zones agricoles. Cette nouvelle base de données permet aux experts de surveiller le régime des pluies en temps quasi-réel, à haute résolution, sur presque toute la planète. Ces données peuvent être intégrées dans des modèles climatiques, avec d’autres données météorologiques et environnementales, afin de prévoir les conditions futures de l’agriculture et de la végétation. &nbsp;&nbsp;(UC Santa Barbara, 14/05/2014)</p>
+							<p><span class="date">28/07/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Nouvelle-base-de-donnees-globale-pour-la-surveillance-des-precipitations-et-les-alertes-precoces-en-cas-de-secheresse.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Des-drones-au-service-de-l-agriculture-un-projet-pilote-a-Cuba.html" title="Des drones au service de l’agriculture: un projet pilote à Cuba   " alt="link">Des drones au service de l’agriculture: un projet pilote à Cuba   </a></h2>
+
+	
+					<p>La popularité des drones grandit dans bon nombre de pays, et ce pour une multitude d’applications. Ces drones deviennent rapidement un outil de suivi et de gestion des cultures, essentiel pour assurer la sécurité alimentaire. GeoCuba a testé avec succès la technologie des drones au service de l’agriculture. Un projet pilote mené à Cuba, en partenariat avec la firme russe Uniintex-Ginus, a révélé que le drone constituait une solution flexible à moindre coût, révélant toutefois certaines limites. Le drone offre une grande flexibilité pour l’acquisition des données dans une résolution spatiale suffisante à faible coût. L’utilisation des drones est toutefois limitée à de petites zones. En outre, la flexibilité a tout de même ses limites puisque l’utilisation civile des drones est encore soumise aux mêmes réglementations que pour les aéronefs avec équipage&nbsp;: des autorisations doivent être sollicitées plusieurs jours à l’avance. &nbsp; &nbsp;&nbsp;(<i><a href="http://www.gim-international.com/news/mapping/uas/id8009-uas_in_farming_a_pilot_project_in_cuba.html" target="_self">GIM Intenational</a></i>, 23/04/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Des-drones-au-service-de-l-agriculture-un-projet-pilote-a-Cuba.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Nouveau-systeme-de-detection-de-suivi-et-de-controle-des-conditions-de-secheresse-agricole.html" title="Nouveau système de détection, de suivi et de contrôle des conditions de sécheresse agricole   " alt="link">Nouveau système de détection, de suivi et de contrôle des conditions de sécheresse agricole   </a></h2>
+
+	
+					<p>Afin d’évaluer la dynamique de la sécheresse agricole aux États-Unis, Qiusheng Wu, étudiant en doctorat et assistant de recherche, et Hongsing Liu, professeur du Département de géographie de l’Université de Cincinnati, ont utilisé un modèle pour la gestion spatio-temporelle des données (ESTDM) dans le but de détecter, de suivre et de contrôler les conditions de sécheresse. Ce cadre a organisé les données en objets, séquences, processus et événements. Les données ont été collectées par le satellite SMOS (Mission d’étude de l’humidité des sols et de la salinité des océans) de l’Agence spatiale européenne (ESA), premier du genre à fournir une cartographie globale de l’humidité du sol. Les chercheurs ont examiné les épisodes de sécheresse afin d’établir des prévisions quant aux futures sécheresses. En cours d’élaboration, l’outil de prévision utilisera les données du satellite SMAP (<i>Soil Moisture Active Passive</i>) qui sera lancé prochainement. &nbsp; &nbsp;&nbsp;</p>
+							<p><span class="date">30/06/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Nouveau-systeme-de-detection-de-suivi-et-de-controle-des-conditions-de-secheresse-agricole.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Systeme-de-cartographie-du-gel-en-temps-quasi-reel-pour-les-plantations-de-the-au-Kenya.html" title="Système de cartographie du gel en temps quasi-réel pour les plantations de thé au Kenya   " alt="link">Système de cartographie du gel en temps quasi-réel pour les plantations de thé au Kenya   </a></h2>
+
+	
+					<p>RCMRD/SERVIR-Africa et la Fondation de recherche sur le thé du Kenya (TRFK) ont développé et mis en place des réseaux de capteurs sans fil au Kenya pour appuyer un système automatisé de cartographie du gel en temps quasi-réel destiné à alerter les responsables de plantations de thé en cas de changement notable des températures. Ce système identifie et affiche les zones touchées par le gel en analysant les données de températures au sol durant la nuit du spectroradiomètre imageur à résolution moyenne (MODIS) de la NASA installé à bord des satellites Terra et Aqua. Chaque matin, après avoir recueilli des données pendant quelques heures, le système transmet par email des cartes conviviales identifiant les zones à fort potentiel de gel aux Services météorologiques du Kenya (KMS), à la TRFK et aux compagnies d’assurance agricole. Outre les données dérivées de satellites, le système intégrera prochainement un modèle de prévision numérique pour aider à cartographier les zones présentant un potentiel de gel jusqu’à trois jours à l’avance. &nbsp;<a href="https://servirglobal.net/Global/Articles/tabid/86/Article/1278/servir-helps-tea-farmers-in-kenya.aspx" target="_self">https://servirglobal.net/Global/Articles/tabid/86/Article/1278/servir-helps-tea-farmers-in-kenya.aspx</a>&nbsp; &nbsp;(SERVIR, 28/01/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Systeme-de-cartographie-du-gel-en-temps-quasi-reel-pour-les-plantations-de-the-au-Kenya.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Lancement-de-la-base-de-donnees-Global-Land-Cover-SHARE-GLC-SHARE.html" title="Lancement de la base de données Global Land Cover SHARE (GLC-SHARE)   " alt="link">Lancement de la base de données Global Land Cover SHARE (GLC-SHARE)   </a></h2>
+
+	
+					<p>La FAO a publié une nouvelle base de données géospatiales exhaustive rassemblant des données provenant de multiples sources et harmonisées selon les définitions et normes acceptées à l’échelle internationale. Cette base de données sur la végétation mondiale fournit des informations sur onze niveaux de couverture végétale recueillies par divers pays et organisations. Au nombre des applications de la nouvelle base de données GLC-SHARE figurent notamment le suivi de l’évolution du couvert végétal et l’évaluation de l’impact du changement climatique. &nbsp;Communiqué de presse : <a href="http://www.fao.org/news/story/en/item/216144/icode/" target="_self">http://www.fao.org/news/story/en/item/216144/icode/</a>&nbsp;&nbsp;Portail SHARE : <a href="http://www.glcn.org/databases/lc_glcshare_en.jsp" target="_self">http://www.glcn.org/databases/lc_glcshare_en.jsp</a>&nbsp;&nbsp;(FAO, 17/03/2014)</p>
+							<p><span class="date">13/05/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Lancement-de-la-base-de-donnees-Global-Land-Cover-SHARE-GLC-SHARE.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Controler-la-peche-depuis-l-espace-Google-Earth-ameliore-les-estimations-sur-les-prises-autour-des-barrages-de-peche.html" title="Contrôler la pêche depuis l'espace : Google Earth améliore les estimations sur les prises autour des barrages de pêche   " alt="link">Contrôler la pêche depuis l'espace : Google Earth améliore les estimations sur les prises autour des barrages de pêche   </a></h2>
+
+	
+					<p>Dalal Al-Abdulrazzak et Daniel Pauly, de l'Université de Colombie Britannique au Canada, se sont penchés sur les avancées technologiques permettant de contrôler les prises de poisson. Les statistiques soumises par certains pays à la FAO ne tiennent pas compte bien souvent de la pêche artisanale ni des prises illégales et rejets de poissons. Pour tenter de résoudre ce problème, les chercheurs ont eu recours à l'imagerie satellite de Google Earth pour recenser les barrages de pêche le long de la côte du golfe Persique. En combinant le nombre de barrages avec les prises journalières supposées et la durée de la saison de pêche, les chercheurs ont prouvé que ces grands pièges pouvaient attraper six fois plus de poissons que ce qui est officiellement déclaré. Ces résultats constituent le premier exemple d'estimations sur les prises de poissons à partir de l’imagerie satellite; ils mettent également en avant le potentiel de validation des statistiques de pêche des systèmes de télédétection. &nbsp; &nbsp;&nbsp;<a href="http://icesjms.oxfordjournals.org/content/early/2013/11/27/icesjms.fst178.1" target="_self">http://icesjms.oxfordjournals.org/content/early/2013/11/27/icesjms.fst178.1</a>&nbsp; &nbsp;&nbsp;(<i>ICES Journal of Marine Science</i>, 17/09/2014) &nbsp;&nbsp;</p>
+							<p><span class="date">28/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Controler-la-peche-depuis-l-espace-Google-Earth-ameliore-les-estimations-sur-les-prises-autour-des-barrages-de-peche.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Logiciel-SPIRITS.html" title="Logiciel SPIRITS   " alt="link">Logiciel SPIRITS   </a></h2>
+
+	
+					<p>Le logiciel SPIRITS (logiciel de traitement et d’interprétation de séries temporelles d’images de télédétection) a été développé pour le VITO à l’intention de l’unité de prospective agricole (MARS) du Centre commun de recherche de la Commission européenne. Ce logiciel facilite l’analyse de séries temporelles d’images de télédétection à basse et moyenne résolution. SPIRITS est un logiciel gratuit, flexible et intégré permettant d’analyser les séries temporelles d’images satellites pour la surveillance des cultures et de la végétation. Grâce à cet outil, les séries temporelles d’images à faible et moyenne résolution acquises par des capteurs tels que SPOT-Vegetation et MODIS-Terra/Aqua peuvent être traitées et analysées. Il peut être utilisé pour automatiser les étapes de traitement spatial et temporel sur des séries chronologiques et extraire des statistiques spatialement agrégées. Les indices de végétation et leurs anomalies peuvent être rapidement cartographiés et des statistiques établies et interprétées dans des graphiques saisonniers qui seront communiqués aux analystes et aux décideurs. &nbsp; &nbsp; &nbsp;<a href="http://spirits.jrc.ec.europa.eu/?p=273" target="_self">http://spirits.jrc.ec.europa.eu/?p=273</a>&nbsp; &nbsp; &nbsp;(EC JRC, 06/11/2013) &nbsp; &nbsp;</p>
+							<p><span class="date">27/02/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Logiciel-SPIRITS.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Logiciel-de-traitement-de-series-temporelles-d-images-satellitaires-pour-le-suivi-de-l-agriculture.html" title="Logiciel de traitement de séries temporelles d’images satellitaires pour le suivi de l’agriculture " alt="link">Logiciel de traitement de séries temporelles d’images satellitaires pour le suivi de l’agriculture </a></h2>
+
+	
+					<p>Des chercheurs de l’Institut flamand pour la recherche technologique (VITO) en Belgique, en collaboration avec leurs homologues du Centre commun de recherche (CCR) de la Commission européenne, ont développé un logiciel indépendant capable de traiter des séries temporelles d’images satellite en temps quasi-réel. Les données issues du traitement des images obtenues par télédétection à une résolution spatiale et temporelles élevée peuvent être utilisées par le nouveau logiciel SPIRITS afin d’assurer le suivi des fluctuations d’une année sur l’autre de la production agricole et d’estimer l’impact potentiel des anomalies immédiatement détectées, et de partager ces informations à grande échelle. Ce logiciel indépendant a été développé afin de fournir des informations claires étayées par des recherches scientifiques aux analystes agricoles et aux décideurs politiques.&nbsp;&nbsp;<a href="http://mars.jrc.ec.europa.eu/Bulletins-Publications/Image-time-series-processing-software-for-agriculture-monitoring" target="_self">http://mars.jrc.ec.europa.eu/Bulletins-Publications/Image-time-series-processing-software-for-agriculture-monitoring</a>(EC JRC MARS, 09/01/2014)</p>
+							<p><span class="date">27/01/2014</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Logiciel-de-traitement-de-series-temporelles-d-images-satellitaires-pour-le-suivi-de-l-agriculture.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Enquete-et-analyse-des-besoins-de-donnees-des-acteurs-agricoles-en-Afrique.html" title="Enquête et analyse des besoins de données des acteurs agricoles en Afrique " alt="link">Enquête et analyse des besoins de données des acteurs agricoles en Afrique </a></h2>
+
+	
+					<p>Le DFID (Royaume-Uni) a mené une enquête à grande échelle auprès des acteurs du secteur de l’agriculture durable en Afrique afin d’évaluer les tendances actuelles et émergentes concernant la collecte, le traitement et la diffusion de données. L’enquête visait notamment à évaluer l’alignement des besoins de données ressentis sur les zones d’incertitude liée à la prise de décision. Seuls 36 % des répondants ont déclaré que ces besoins étaient liés à leurs incertitudes et seulement 15 % d’entre eux ont indiqué que les besoins ressentis étaient alignés sur les incertitudes et les efforts déployés pour collecter les données. Les données sur les sols ont été les plus fréquemment citées, suivies des données sur les marchés, le climat, la biodiversité et la pauvreté. Parmi les recommandations visant à améliorer la collecte et l’utilisation de données dans le secteur agricole en Afrique figurent notamment l’élaboration de bases de données SIG centralisées consultables en ligne, la prise de conscience des décisions clés et les informations nécessaires pour les soutenir. &nbsp;&nbsp;&nbsp;<a href="http://agriculture.columbia.edu/2013/10/07/survey-identifies-emerging-trends-in-data-needed-for-sustainable-agriculture-in-africa/" target="_self">http://agriculture.columbia.edu/2013/10/07/survey-identifies-emerging-trends-in-data-needed-for-sustainable-agriculture-in-africa/</a>&nbsp; &nbsp;(Columbia University, 07/10/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Enquete-et-analyse-des-besoins-de-donnees-des-acteurs-agricoles-en-Afrique.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Cartographier-le-cycle-de-vie-des-cultures.html" title="Cartographier le cycle de vie des cultures " alt="link">Cartographier le cycle de vie des cultures </a></h2>
+
+	
+					<p>A l’aide de l’outil SIG et de l’analyse spatiale, Zhe Guo et ses collègues d’HarvestChoice et de l’IFPRI (Institut international de recherche sur les politiques alimentaires) ont élaboré une méthode destinée à harmoniser et à géoréférencer les données de phénologie des cultures pour créer la première génération de produits liés aux calendriers des cultures à l’échelle du pixel (1 km²) en Afrique subsaharienne. Les calendriers des cultures peuvent être élaborés de deux façons&nbsp;: à l’aide de méthodes modernes utilisant des données de séries chronologiques obtenues par télédétection, ou via des méthodes un peu plus grossières et plus traditionnelles qui s’appuient sur des enquêtes menées auprès des ménages, des données de recensement au niveau national et des contrôles sur le terrain. Ces deux méthodes ont chacune leurs avantages et inconvénients, selon la nature de la région et de la qualité des informations requises. La prochaine étape de cette étude sera d’évaluer les produits liés à ces calendriers des cultures et d’élaborer une stratégie pour géoréférencer et harmoniser les deux types de données. En combinant les observations phénologiques par télédétection aux données de recensement géoréférencées, il serait possible d’améliorer considérablement la qualité de ces produits mais aussi de mieux informer les parties prenantes (fournisseurs, producteurs, courtiers et négociants, entre autres). &nbsp; &nbsp;<a href="http://harvestchoice.org/labs/time-sow-how-harvestchoice-mapping-life-cycle-crops" target="_self">http://harvestchoice.org/labs/time-sow-how-harvestchoice-mapping-life-cycle-crops</a>&nbsp; &nbsp;(HarvestChoice, 27/09/2013)</p>
+							<p><span class="date">17/12/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Cartographier-le-cycle-de-vie-des-cultures.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Le-groupe-de-travail-sur-l-interoperabilite-des-donnees-sur-le-ble-a-publie-un-projet-de-rapport.html" title="Le groupe de travail sur l’interopérabilité des données sur le blé a publié un projet de rapport    " alt="link">Le groupe de travail sur l’interopérabilité des données sur le blé a publié un projet de rapport    </a></h2>
+
+	
+					<p>Le groupe de travail sur l’interopérabilité des données sur le blé fait partie du groupe de travail sur les données agricoles au sein de la RDA (Research Data Alliance). &nbsp;Ce groupe sera attentif aux travaux des groupes de travail impliqués dans l’harmonisation des données, les métadonnées et la publication des données. Il interagira &nbsp;en outre avec les experts du Système d’information sur le blé et d’autres projets sur les plantes, tels que TransPLANT et agINFRA, qui reposent sur des &nbsp;technologies standards pour l’échange et la représentation des données. Le groupe de travail sur l’interopérabilité des données sur le blé tirera parti des mécanismes &nbsp;de collaboration existants, comme le CIARD, afin d’impliquer le plus possible l’ensemble des acteurs dans ses travaux de recherche. &nbsp; &nbsp; &nbsp;<a href="http://aims.fao.org/community/open-access/blogs/case-statement-wheat-data-interoperability-working-group" target="_self">http://aims.fao.org/community/open-access/blogs/case-statement-wheat-data-interoperability-working-group</a>&nbsp; &nbsp;&nbsp;(AIMS, 02/09/2013) &nbsp;</p>
+							<p><span class="date">20/09/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Le-groupe-de-travail-sur-l-interoperabilite-des-donnees-sur-le-ble-a-publie-un-projet-de-rapport.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Resoudre-le-dilemme-bresilien-cereales-en-abondance-capacites-insuffisantes-de-stockage.html" title="Résoudre le dilemme brésilien : céréales en abondance, capacités insuffisantes de stockage " alt="link">Résoudre le dilemme brésilien : céréales en abondance, capacités insuffisantes de stockage </a></h2>
+
+	
+					<p>Peter Goldsmith, économiste agricole à l’Université de l’Illinois, émet ses observations sur le manque de facilités de stockage (secteur privé et coopératives, notamment) dans les régions &nbsp;productrices de céréales au Brésil. Selon lui, «&nbsp;34 % des installations de stockage du soja ont une capacité insuffisante et la situation est aggravée par une augmentation rapide de la &nbsp;production de maïs, deuxième culture importante du pays&nbsp;». A l’aide d’un logiciel SIG pour déterminer les coordonnées des installations de stockage de céréales (commerciales, privées et &nbsp;coopératives), ses travaux de recherche ont permis de quantifier les capacités de stockage dans les zones insuffisamment desservies pour aider à localiser de nouveaux sites d’entreposage &nbsp;appropriés. Ce manque de facilités de stockage entraîne des pertes et des déchets, dus notamment au rejet des grains dans les champs après la récolte et au manque d’infrastructures de &nbsp;transport. La nature de la production régulière tout au long de l’année sous les tropiques contribue également à ces pertes.(University of Illinois, 09/07/2013)</p>
+							<p><span class="date">31/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Resoudre-le-dilemme-bresilien-cereales-en-abondance-capacites-insuffisantes-de-stockage.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+						
+						<p><div class="item">
+<h2><a class="listing" style="link" href="Developpements/Centre-regional-de-cartographie-des-ressources-pour-le-developpement-RCMRD2.html" title="Centre régional de cartographie des ressources pour le développement (RCMRD) " alt="link">Centre régional de cartographie des ressources pour le développement (RCMRD) </a></h2>
+
+	
+					<p>Le Centre régional de cartographie des ressources pour le développement (RCMRD) a été créé en 1975 à Nairobi, au Kenya, dans le but de fournir des informations géographiques de qualité ainsi que des produits et services de technologie d’information associés dans le domaine de la gestion de l’environnement et des ressources naturelles pour le développement durable dans les pays membres et au-delà. Le RCMRD est une organisation intergouvernementale composée de 18 États parties d’Afrique de l’Est et d’Afrique australe. &nbsp; &nbsp;(<a href="http://www.rcmrd.org/?utm_source=K4DNewsletterEN&amp;utm_medium=Link&amp;utm_campaign=K4D_EN_May2013" target="_self">RCMRD</a>, 2013)</p>
+							<p><span class="date">2/07/2013</span></p>
+	<div class="cnt">
+	<a class="link" href="Developpements/Centre-regional-de-cartographie-des-ressources-pour-le-developpement-RCMRD2.html">Read more...</a>
+</div>
+<br class="cl">
+</div>
+</p>
+											</div> 	
+	<br class="cl"/>
+<p>
+
+<div class="pagenavigator">
+<p>
+
+            
+            <span class="next"><a href="Developpements/(offset)/20.html"><span class="text">Suivant&nbsp;&raquo;</span></a></span>
+      
+<span class="pages">
+    
+        <span class="current">1</span>
+
+                      <span class="other"><a href="Developpements/(offset)/20.html">2</a></span>
+                              <span class="other"><a href="Developpements/(offset)/40.html">3</a></span>
+                              <span class="other"><a href="Developpements/(offset)/60.html">4</a></span>
+                              <span class="other"><a href="Developpements/(offset)/80.html">5</a></span>
+            
+</span>
+
+</p>
+<div class="break"></div>
+</div>
+
+ 
+</p>
+			</div> 
+			<div id="column-right">
+				
+<div id="column-right">
+	
+	
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>E-mail Newsletter</h3>
+		</div>
+		<div class="box-content">
+
+			<form id="subscription" action="http://lists.cta.int:81/subscribe/subscribe.tml" method="get" target="_blank">
+				<div class="content-view-children">
+					<div style="vertical-align:top;"><input id="newsletterbox" class="searchbox" type="text" size="13" name="email" value="E-mail Address" onClick="this.value='';"/> <input class="okbutton" type="submit" name="OkButton" value="  Ok  "></div>
+					<input type="radio" name="list" value="knowledge-en" checked /><small>&nbsp;English&nbsp;</small><input type="radio" name="list" value="knowledge-fr"/><small>&nbsp;Fran&ccedil;ais</small>
+					<input type="hidden" name="confirm" value="one"/>
+					<input type="hidden" name="url" value="../../../content/view/full/10094.html"/>
+				</div>
+			</form>
+
+			<p>
+			<a href="../../Les-S-T-au-CTA/Infolettres-K4D.html">
+				&raquo;
+				<strong>
+								Téléchargez l'infolettre
+								</strong>
+			</a>
+			</p>
+		</div>
+
+	</div> 
+	
+
+	
+
+	
+	<div class="box">
+		<div class="box-header">
+			<h3>Interact with us</h3>
+		</div>
+		<div class="box-content">
+
+			<div class="interact">
+				<a href="../../../A-Propos/Nous-contacter.html">
+					<img src="../../../../design/knowledge/images/email-icon-small.png" alt=""/>
+					<strong>
+						Contact us
+					</strong>
+				</a>
+			</div>
+			
+			
+			<div class="interact">
+				<a href="http://twitter.com/knowledge4dev" target="_blank">
+					<img src="../../../../design/knowledge/images/t_logo.png" alt=""/>
+					<strong>
+						Twitter
+					</strong>
+				</a>
+			</div>
+			
+			<div class="interact">
+				<a href="http://www.facebook.com/pages/Knowledge-for-Development/69728755793" target="_blank">
+					<img src="../../../../design/knowledge/images/f_logo.png" alt=""/>
+					<strong>
+						Facebook
+					</strong>
+				</a>
+			</div>
+
+			<div class="interact">
+				<a href="../../../A-Propos/A-propos-de-RSS.html">
+					<img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/>
+					<strong>
+						RSS Feeds
+					</strong>
+				</a>
+			</div>
+		</div>
+	</div> 
+
+		<div class="box">
+		<div class="box-header">
+			<h3>Members</h3>
+		</div>
+		<div class="box-content">
+							<form class="loginform" method="post" action="http://knowledge.cta.int/fr/user/login">
+	<label for="id1" class="inline-fixed">Username</label>
+	<input class="halfbox" type="text" size="10" name="Login" id="id1" value=""/>
+	<br/>
+	
+	<label for="id2" class="inline-fixed">Password</label>
+	<input class="halfbox" type="password" size="10" name="Password" id="id2" value=""/>
+	<br/>
+	<br/>
+	
+	<input class="stdbutton" type="submit" name="LoginButton" value="Login"/>
+	<input class="stdbutton" type="submit" name="RegisterButton" value="Register as new user"/>
+	
+	</form>
+<br/>						
+			
+		</div>
+	</div>
+	
+	
+	<div class="box highlight">
+		<div class="box-header">
+			<h3><a href="../../../Blogs/Judith-s-blog.html">Judith’s blog</a></h3>
+		</div>
+		<div class="box-content">
+						<ul>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-mars-2015.html">
+											<i>Blog post:</i> Judith's pick - mars 2015
+						<span class="tagline">(12/03/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Judith-s-pick-Early-February-2015.html">
+											<i>Blog post:</i> Judith's pick - Early February 2015
+						<span class="tagline">(05/02/2015)</span>
+					</a>
+				</li>
+							<li>
+										<a href="../../../Blogs/Judith-s-blog/Good-governance-local-ownership-Future-prospects-for-science-and-innovation-and-agriculture-led-development.html">
+											<i>Blog post:</i> Good governance & local ownership - Future prospects for science and innovation and agriculture-led development
+						<span class="tagline">(02/02/2015)</span>
+					</a>
+				</li>
+						</ul>
+					</div>
+	</div> 
+	
+	<div class="box">
+																																	<div class="box-header">
+			<h3><a href="../../../A-Propos/A-propos-de-RSS.html"><img src="../../../../design/knowledge/images/rss-icon-small.png" alt=""/> Latest updates</a></h3>
+		</div>
+		<div class="box-content">
+										<ul>
+									<li><a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/CTA-Top-20-Innovations-that-Benefit-Smallholder-Farmers.html">CTA Top 20 Innovations that Benefit Smallholder Farmers</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Le-programme-S-T-au-CTA/Articles-commandes-2016/Thon-peche-cotiere-beche-de-mer-et-developpement-de-l-aquaculture-dans-le-Pacifique-occidental-et-central-defis-actuels-et-besoins-futurs.143.d">Thon, pêche côtière, bêche-de-mer et développement de l’aquaculture dans le Pacifique occidental et central : défis actuels et besoins futurs</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Infolettres-K4D/Mars-Avril-2015-Infolettre-K4D.html">Mars/Avril 2015 Infolettre K4D </a></li>
+									<li><a href="../../Les-S-T-au-CTA/Developpements/How-to-redefine-innovation-and-development-An-African-perspective.html">How to redefine innovation and development: An African perspective</a></li>
+									<li><a href="../../Les-S-T-au-CTA/Developpements/The-Ocean-and-the-Human-Family-World-Oceans-Day-2015.html">The Ocean and the Human Family - World Oceans Day 2015 </a></li>
+								</ul>
+					</div>
+
+				</div>
+	
+
+<div class="banner-box">
+	<div class="box">
+		<div class="box-header">
+			<h3>Tweets by @Knowledge4Dev</h3>
+		</div>
+		<div class="box-content">
+			<a class="twitter-timeline" href="https://twitter.com/Knowledge4Dev" data-widget-id="337108456609832960">Tweets by @Knowledge4Dev</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="clear"></div>
+		</div>
+
+		<div class="clear"></div>
+	</div>
+</div></div> 
+			</div>
+			<br class="cl">
+			<div class="item last">
+	<div class="addthis">
+				<!-- ADDTHIS BUTTON BEGIN -->
+		<script type="text/javascript">
+		addthis_pub = 'knowledge_cta';
+		</script>
+		<a href="http://www.addthis.com/bookmark.php" onMouseOver="return addthis_open(this, '', '[URL]', '[TITLE]')" onMouseOut="addthis_close()" onClick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" alt=""/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+		<!-- ADDTHIS BUTTON END -->
+	</div>
+</div> 
+		</div> 
+	<br class="cl">
+	</div> 
+	<div id="base-footer">
+	<div class="footer-text">
+		<a href="../../../A-Propos/Notice-legale.html" class="footer">Legal Notice</a> | Copyright &copy; 2003-2018<a class="footer" href="http://www.cta.int/" target="_blank"> CTA</a>, Wageningen, Netherlands.
+	
+	</div>
+	<div class="footer-icons">
+		<a href="http://acpsec.org/"><img alt="ACP" src="../../../../design/knowledge/images/icon_acp.gif"></a>
+		<a href="http://europa.eu/"><img alt="EU" src="../../../../design/knowledge/images/icon_eu.gif"></a>
+	</div>
+</div> </div> 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"44f10573e2","applicationID":"20071670","transactionName":"Z1RXbUICXUJZBkBQXF4eYEtZTFpfXABMF0NYQQ==","queueTime":0,"applicationTime":2511,"atts":"SxNUGwoYTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from knowledge.cta.int/fr/Dossiers/S-T-et-defis-agricoles/Teledetection-et-SIG/Developpements by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:29:27 GMT -->
+</html>
